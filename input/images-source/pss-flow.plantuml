@@ -1,0 +1,36 @@
+@startuml
+group Functional data exchange
+    alt #LightGreen RADIO
+        == 1. Given the existing data, query the structured list of indications ==
+        EPD -> PSS : 
+        EPD -[hidden]-> PSS : "                                                         "
+        PSS -> QSI 
+        PSS -[hidden]-> QSI : "                                                         "
+'        EPD -> PSS : **GET /PlanDefinition/radiology/$requiredData**?age={}&gender={}&indication={}
+        'PSS -> QSI : GET /indictions
+        == 2. Reply with list of indications ==
+        QSI -> PSS 
+        PSS -> EPD 
+'        QSI -> PSS : Reply with indications
+'        PSS -> EPD : Reply with **CarePlan** + **Questionnaire** (Listing of **Coding** in "item[0].answerOption[].valueCoding")
+...
+        == 3. Send indications ==
+        EPD -> PSS 
+'        EPD -> PSS : **POST /PlanDefinition/radiology/$apply** (+ **QuestionnaireResponse** in payload)
+    else #LightBlue ANTIMICRO
+        EPD -> PSS
+'        EPD -> PSS : **GET /PlanDefinition/antimicrobien/$requiredData**?indication={indication} => **Operation**
+        == 4. Reply with list of required data ==
+        PSS -> EPD
+...
+'        PSS -> EPD :  Reply with **CarePlan** + **Questionnaire**
+        == 5. Send parameters to receive the recommended actions ==
+        EPD -> PSS
+'        EPD -> PSS : **POST /PlanDefinition/antimicrobien/$apply** (+ **QuestionnaireResponse** in payload) => **Operation**
+    end
+    == 6. Receive recommendations ==
+    PSS -> EPD
+'    PSS -> EPD : Reply with **GuidanceResponse**
+...
+end
+@enduml

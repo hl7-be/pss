@@ -7,15 +7,15 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example/ImplementationGuide/my-ig
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
+id: hl7.fhir.be.pss
+canonical: https://www.ehealth.fgov.be/standards/fhir/medication
+# url: http://example.com/fhir/example/ImplementationGuide/my-ig
+name: PrescriptionSearchSupport
+title: "Prescription Search Support"
 description: Example IG exercises many of the fields in a SUSHI configuration.
-status: active
+status: draft
 license: CC0-1.0
-date: 2020-02-26
+date: 2024-04-26
 version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
@@ -37,16 +37,16 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: HL7 Belgium 
+  url: https://www.hl7belgium.org
+  email: hl7belgium@hl7belgium.org
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Message Structure eHealth
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: message-structure@ehealth.fgov.be
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
@@ -131,7 +131,12 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 pages:
   index.xml:
     title: Home
-#  guidance.md:
+  functional-overview.md:
+    title: "Functional Overview"
+    radiology.md:
+      title: "Radiology"
+    antimicrobial.md:
+      title: "Radiology"
   changes.xml:
   downloads.xml:
 # The ImplementationGuide resource defines several other properties
