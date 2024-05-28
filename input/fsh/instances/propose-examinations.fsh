@@ -5,7 +5,4 @@ Usage: #example
 * status = #active
 * description = "Propose examinations based on the selected indication."
 * kind = #GuidanceResponse
-//* input.type = "QuestionnaireResponse"
-//* input.profile = "https://www.ehealth.fgov.be/standards/fhir/pss/fhir/StructureDefinition/questionnaireResponse-indication"
-//* output.type = "Bundle"
-//* output.profile = "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/examinations-bundle"
+* profile = "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/examinations-bundle"

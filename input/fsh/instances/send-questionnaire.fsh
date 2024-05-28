@@ -5,7 +5,4 @@ Usage: #example
 * status = #active
 * description = "ActivityDefinition to send a Questionnaire"
 * kind = #Questionnaire
-//* input.type = "Parameters"
-//* input.profile = "https://www.ehealth.fgov.be/standards/fhir/pss/fhir/StructureDefinition/indication-parameters"
-//* output.type = "Questionnaire"
-//* output.profile = "https://www.ehealth.fgov.be/standards/fhir/pss/fhir/StructureDefinition/antimicrobial-questionnaire"
+* profile = "https://www.ehealth.fgov.be/standards/fhir/pss/fhir/StructureDefinition/antimicrobial-questionnaire"
