@@ -2,7 +2,7 @@ Instance: careplan-radiology-step2
 InstanceOf: CarePlan
 * contained[+] = questionnaire-task
 * contained[+] = temp-patient
-//* contained[+] = indications-response
+* contained[+] = indications-response
 * status = #active
 * intent = #order
 * subject = Reference(temp-patient)
