@@ -9,9 +9,46 @@ InstanceOf: CarePlan
 * intent = #order
 * subject = Reference(temp-patient)
 * activity[+].reference = Reference(serviceRequest1)
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "score"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueInteger = 10
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "RelativeCost"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueString = "€€"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "RadiationLevel"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueInteger = 3
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "IsRequested"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueBoolean = true
+
+
+
 * activity[+].reference = Reference(serviceRequest2)
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "score"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueInteger = 10
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "RelativeCost"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueString = "€€€"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "RadiationLevel"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueInteger = 3
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "IsRequested"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueBoolean = false
+
 * activity[+].reference = Reference(serviceRequest3)
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "score"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueInteger = 10
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "RelativeCost"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueString = "€€"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "RadiationLevel"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueInteger = 3
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "IsRequested"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueBoolean = false
+
 * activity[+].reference = Reference(serviceRequest4)
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "score"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueInteger = 10
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "RelativeCost"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueString = "€€"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "RadiationLevel"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueInteger = 3
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][+].extension[code].valueCodeableConcept.text = "IsRequested"
+* activity[=].extension[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/be-ext-pss-metadata][=].extension[value].valueBoolean = false
 
 
 
