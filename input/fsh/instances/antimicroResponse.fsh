@@ -5,7 +5,12 @@ Usage: #example
 * entry[0].fullUrl = "urn:uuid:e134a22d-7c34-4964-9eea-a1b68c368122"
 * entry[=].resource = AB6
 * entry[+].fullUrl = "urn:uuid:ee0e86f7-75f6-41aa-a390-6a58112faadd"
-* entry[=].resource = Inline-Instance-for-undefined-1
+* entry[=].resource = ab6-parameters
+* entry[+].fullUrl = "urn:uuid:43bb1ab6-bdd9-49a1-8485-fcf0bb8e204c"
+* entry[=].resource = ab6-nl
+* entry[+].fullUrl = "urn:uuid:8cfd199a-577f-4e2b-acdd-26b93ac0fe34"
+* entry[=].resource = ab6-fr
+
 
 Instance: AB6
 InstanceOf: GuidanceResponse
@@ -15,8 +20,10 @@ Usage: #inline
 * reasonCode = $sct#921000172108 "Acute Keelpijn"
 * outputParameters = Reference(Parameters/ee0e86f7-75f6-41aa-a390-6a58112faadd)
 * id = "e134a22d-7c34-4964-9eea-a1b68c368122"
+* reasonReference[+] = Reference(urn:uuid:43bb1ab6-bdd9-49a1-8485-fcf0bb8e204c) "Acute keelpijn - NL"
+* reasonReference[+] = Reference(urn:uuid:8cfd199a-577f-4e2b-acdd-26b93ac0fe34) "Acute keelpijn - FR"
 
-Instance: Inline-Instance-for-undefined-1
+Instance: ab6-parameters
 InstanceOf: Parameters
 Usage: #inline
 * id = "ee0e86f7-75f6-41aa-a390-6a58112faadd"
@@ -86,3 +93,17 @@ Usage: #inline
 * parameter.part[=].part[=].part[=].valueString = "Niet aangewezen"
 * parameter.part[=].part[=].part[+].name = "FR"
 * parameter.part[=].part[=].part[=].valueString = "Non indiqué"
+
+Instance: ab6-nl
+InstanceOf: DocumentReference
+Usage: #inline
+* status = #current
+* content.attachment.url = "https://www.bcfi.be/nl/chapters/12?frag=8000036"
+* description = "Acute keelpijn - NL"
+
+Instance: ab6-fr
+InstanceOf: DocumentReference
+Usage: #inline
+* status = #current
+* content.attachment.url = "https://www.cbip.be/fr/chapters/12?frag=8000036"
+* description = "Acute keelpijn - FR"
