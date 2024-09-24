@@ -1,11 +1,11 @@
-Instance: antimicroIndicationSelection
+Instance: antimicroguidance-request
 InstanceOf: QuestionnaireResponse
 Usage: #example
 * status = #completed
 * item.linkId = "questionnaire"
 * item.item[0].linkId = "indication"
 * item.item[=].text = "Indication"
-* item.item[=].answer.valueCoding = $sct#921000172108
+* item.item[=].answer.valueCoding = $sct#921000172108 "Acute keelpijn"
 * item.item[+].linkId = "sp_alertSignals"
 * item.item[=].answer.valueBoolean = false
 * item.item[+].linkId = "sp_isSeverelyIll"

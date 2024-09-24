@@ -1,7 +1,6 @@
-Instance: be-op-antimicro-guidance-request
+Instance: be-op-antimicroguidance-request
 InstanceOf: OperationDefinition
 Usage: #definition
-* url = "https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/be-op-antimicro-guidance-request"
 * version = "1.0"
 * name = "AntimicroGuidance"
 * status = #active
