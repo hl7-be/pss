@@ -7,7 +7,7 @@ Usage: #example
 * entry[+].fullUrl = "urn:uuid:ee0e86f7-75f6-41aa-a390-6a58112faadd"
 * entry[=].resource = ee0e86f7-75f6-41aa-a390-6a58112faadd
 * entry[+].fullUrl = "urn:uuid:fd45eea5-eb11-4fd4-b3d4-a885b20ccb49"
-* entry[=].resource = operationOutcome
+* entry[=].resource = fd45eea5-eb11-4fd4-b3d4-a885b20ccb49
 
 Instance: e134a22d-7c34-4964-9eea-a1b68c368122
 InstanceOf: GuidanceResponse
@@ -17,6 +17,7 @@ Usage: #inline
 * reasonCode.coding = $sct#921000172108 "Acute Keelpijn"
 * reasonCode.coding.version = "http://snomed.info/sct/11000172109"
 * outputParameters = Reference(ee0e86f7-75f6-41aa-a390-6a58112faadd)
+* evaluationMessage = Reference(fd45eea5-eb11-4fd4-b3d4-a885b20ccb49)
 
 Instance: ee0e86f7-75f6-41aa-a390-6a58112faadd
 InstanceOf: Parameters
@@ -129,16 +130,30 @@ Usage: #inline
 * parameter.part[=].part[=].part[=].valueString = "Non indiqué"
 
 
-Instance: operationOutcome
+Instance: fd45eea5-eb11-4fd4-b3d4-a885b20ccb49
 InstanceOf: OperationOutcome
 * issue[+].severity = #information
 * issue[=].code = http://hl7.org/fhir/issue-type#informational
-* issue[=].diagnostics = "Acute keelpijn - NL"
+* issue[=].diagnostics = "Meer details op de BCFI site"
 * issue[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority"
 * issue[=].extension[=].valueUri = "https://www.bcfi.be/nl/chapters/12?frag=8000036"
 * issue[+].severity = #information
 * issue[=].code = http://hl7.org/fhir/issue-type#informational
-* issue[=].diagnostics = "Acute keelpijn - FR"
+* issue[=].diagnostics = "Plus de détails sur le site CBIP"  
 * issue[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/operationoutcome-authority"
 * issue[=].extension[=].valueUri = "https://www.cbip.be/fr/chapters/12?frag=8000036"
+* issue[+].severity = #warning
+* issue[=].code = http://hl7.org/fhir/issue-type#informational
+* issue[=].diagnostics = "f804e1b2-0128-4afb-8bec-6976fcddaefd"
+* issue[=].diagnostics.extension[+].extension[0].url = "lang"
+* issue[=].diagnostics.extension[=].extension[=].valueCode = urn:ietf:bcp:47#nl-BE
+* issue[=].diagnostics.extension[=].extension[+].url = "content"
+* issue[=].diagnostics.extension[=].extension[=].valueString = "Waarschuwing! De indicatie ‘Acute Keelpijn’ is niet langer up-to-date met de BAPCOC-richtlijnen."
+* issue[=].diagnostics.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* issue[=].diagnostics.extension[+].extension[0].url = "lang"
+* issue[=].diagnostics.extension[=].extension[=].valueCode = urn:ietf:bcp:47#fr-BE
+* issue[=].diagnostics.extension[=].extension[+].url = "content"
+* issue[=].diagnostics.extension[=].extension[=].valueString = "Attention ! L'indication 'Mal de gorge aigu' n'est plus à jour avec les directives BAPCOC."
+* issue[=].diagnostics.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+
 
