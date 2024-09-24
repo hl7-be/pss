@@ -1,149 +1,295 @@
-Alias: $icpc2 = http://www.who.int/classifications/icpc2
-Alias: $icd10 = http://www.who.int/classifications/icd10
-//Alias: $sct = http://snomed.info/sct
-
-Instance: requireddataforantimicro-response2
+Instance: requireddataforantimicro-response2 
 InstanceOf: Questionnaire
 Usage: #example
-* title = "Required Data for Antimicro"
-* title.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* title.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Vereiste data voor antimicrobiologie" 
-* title.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* title.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Données nécessaires pour antimicrobiologie" 
+* name = "requiredDataResponse"
+* title = "List of required data"
 * status = #active
-* subjectType = #Patient
-* item.linkId = "questionnaire"
-* item.type = #group
-* item.item[0].linkId = "sp_alertSignals"
-* item.item[=].type = #boolean
-* item.item[=].text = "Alert Signals"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Alarmsignalen" 
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Signaux d'alerte" 
-* item.item[+].linkId = "sp_isSeverelyIll"
-* item.item[=].type = #boolean
-* item.item[=].text = "The patient is severly ill"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "De patiënt is ernstig ziek" 
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Le patient est sérieusement malade" 
-* item.item[+].linkId = "sp_riskPatientGroup"
-* item.item[=].type = #group
-* item.item[=].text = "Risk patient"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Risico patiënt" 
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Patient à risque" 
-* item.item[=].item[0].linkId = "sp_riskPatient"
+* description = "Questionnaire containing a list of required data for the patient"
+* item.item[0].item[0].linkId = "sp_penicillinAllergy"
 * item.item[=].item[=].type = #boolean
-* item.item[=].item[=].text = "Risk patient"
-* item.item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Risico patient" 
-* item.item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Patient à risque" 
-* item.item[=].item[+].linkId = "sp_riskPatient_patientVariables"
+* item.item[=].item[=].text = "penicillinAllergy"
+* item.item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "Penicilline allergie"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "Allergie à la pénicilline"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[+].item.item[0].linkId = "pv_penicillinAllergy"
+* item.item[=].item[=].item.item[=].type = #choice
+* item.item[=].item[=].item.item[=].repeats = true
+* item.item[=].item[=].item.item[=].answerOption[0].valueCoding = $icd10#Z88.0
+* item.item[=].item[=].item.item[=].answerOption[+].valueCoding = $sct#91936005
+* item.item[=].item[=].item.item[=].answerOption[=].valueCoding.version = "http://snomed.info/sct/11000172109"
+* item.item[=].item[=].item.item[+].linkId = "pv_penicillinAllergy_override"
+* item.item[=].item[=].item.item[=].type = #boolean
+* item.item[=].item[=].item.item[=].text = "penicillinAllergy_override"
+* item.item[=].item[=].item.linkId = "pv_penicillinAllergy_proposals"
+* item.item[=].item[=].item.type = #group
+* item.item[=].item[=].linkId = "sp_penicillinAllergy_patientVariables"
 * item.item[=].item[=].type = #group
-* item.item[=].item[=].item[0].linkId = "pv_compromisedImmuneSystem_proposals"
-* item.item[=].item[=].item[=].type = #group
-* item.item[=].item[=].item[=].text = "Proposals for compromised immune system"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Voorstellen bij een verzwakt immuunsysteem" 
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Propositions pour un système d'immunité comprommitté" 
-* item.item[=].item[=].item[=].item[0].linkId = "pv_compromisedImmuneSystem"
+* item.item[=].item[=].repeats = true
+* item.item[=].linkId = "sp_penicillinAllergyGroup"
+* item.item[=].type = #group
+* item.item[+].item[0].linkId = "sp_breastfeeding"
+* item.item[=].item[=].type = #boolean
+* item.item[=].item[=].text = "breastfeeding"
+* item.item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "Borstvoeding"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "Allaitement"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[+].item.item[0].linkId = "pv_breastfeeding"
+* item.item[=].item[=].item.item[=].type = #choice
+* item.item[=].item[=].item.item[=].repeats = true
+* item.item[=].item[=].item.item[=].answerOption.valueCoding = $sct#169741004
+* item.item[=].item[=].item.item[=].answerOption.valueCoding.version = "http://snomed.info/sct/11000172109"
+* item.item[=].item[=].item.item[+].linkId = "pv_breastfeeding_override"
+* item.item[=].item[=].item.item[=].type = #boolean
+* item.item[=].item[=].item.linkId = "pv_breastfeeding_proposals"
+* item.item[=].item[=].item.type = #group
+* item.item[=].item[=].linkId = "sp_breastfeeding_patientVariables"
+* item.item[=].item[=].type = #group
+* item.item[=].item[=].repeats = true
+* item.item[=].linkId = "sp_breastfeedingGroup"
+* item.item[=].type = #group
+* item.item[+].item[0].linkId = "sp_exc_48hAbIntake_asp"
+* item.item[=].item[=].type = #boolean
+* item.item[=].item[=].text = "48hAbIntake"
+* item.item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "2 dagen antibiotica genomen"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "Prise d'antibiotiques pendant 2 jours"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[+].item[0].item[0].linkId = "pv_amoxicilline"
 * item.item[=].item[=].item[=].item[=].type = #choice
 * item.item[=].item[=].item[=].item[=].repeats = true
-* item.item[=].item[=].item[=].item[=].answerOption[0].valueCoding = $icpc2#B90
-* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $icd10#D70
-* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $sct#234532001
-* item.item[=].item[=].item[=].item[+].linkId = "pv_compromisedImmuneSystem_override"
+* item.item[=].item[=].item[=].item[=].text = "amoxicilline"
+* item.item[=].item[=].item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Amoxicilline"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Amoxicilline"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].answerOption.valueCoding = $atc#J01CA04
+* item.item[=].item[=].item[=].item[+].linkId = "pv_amoxicilline_override"
 * item.item[=].item[=].item[=].item[=].type = #boolean
-* item.item[=].item[=].item[+].linkId = "pv_oncologyPatient_proposals"
+* item.item[=].item[=].item[=].linkId = "pv_amoxicilline_proposals"
 * item.item[=].item[=].item[=].type = #group
-* item.item[=].item[=].item[=].text = "Proposals for an oncology patient"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Voorstellen voor een oncologiepatient" 
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Propositions pour un patient d'oncologie" 
-* item.item[=].item[=].item[=].item[0].linkId = "pv_oncologyPatient"
+* item.item[=].item[=].item[+].item[0].linkId = "pv_amoxicillineClav"
 * item.item[=].item[=].item[=].item[=].type = #choice
 * item.item[=].item[=].item[=].item[=].repeats = true
-* item.item[=].item[=].item[=].item[=].answerOption[0].valueCoding = $icpc2#R84
-* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $icd10#C00-C97
-* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $sct#763597000
-* item.item[=].item[=].item[=].item[+].linkId = "pv_oncologyPatient_override"
+* item.item[=].item[=].item[=].item[=].text = "amoxicillineClav"
+* item.item[=].item[=].item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Amoxicilline-clavulaanzuur"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Amoxicilline/Acide clavulanique"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].answerOption.valueCoding = $atc#J01CR02
+* item.item[=].item[=].item[=].item[+].linkId = "pv_amoxicillineClav_override"
 * item.item[=].item[=].item[=].item[=].type = #boolean
-* item.item[=].item[=].item[=].item[=].text = "Override oncology patient"
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Oncologiepatient buiten beschouwing laten" 
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Ne pas prendre en compte patient oncologie" 
-* item.item[=].item[=].item[+].linkId = "pv_historyAcuteJointRheumatism_proposals"
+* item.item[=].item[=].item[=].linkId = "pv_amoxicillineClav_proposals"
 * item.item[=].item[=].item[=].type = #group
-* item.item[=].item[=].item[=].text = "Proposals for a history of acute joint rheumatism"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Voorstellen voor een geschiedenis van acute gewrichtsreuma" 
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Propositions pour une histoire de rheumatisme des articulations" 
-* item.item[=].item[=].item[=].item[0].linkId = "pv_historyAcuteJointRheumatism"
+* item.item[=].item[=].item[+].item[0].linkId = "pv_moxifloxacine"
 * item.item[=].item[=].item[=].item[=].type = #choice
 * item.item[=].item[=].item[=].item[=].repeats = true
-* item.item[=].item[=].item[=].item[=].answerOption[0].valueCoding = $icd10#M02.8
-* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $sct#404684003
-* item.item[=].item[=].item[=].item[+].linkId = "pv_historyAcuteJointRheumatism_override"
-* item.item[=].item[=].item[=].item[=].text = "Override a history of acute joint rheumatism"
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Geschiedenis van acute gewrichtsreuma buiten beschouwing laten" 
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Ne pas prendre en compte l'histoire de rheumatisme acute des articulations" 
+* item.item[=].item[=].item[=].item[=].text = "moxifloxacine"
+* item.item[=].item[=].item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Moxifloxacine"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Moxifloxacine"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].answerOption.valueCoding = $atc#J01MA14
+* item.item[=].item[=].item[=].item[+].linkId = "pv_moxifloxacine_override"
 * item.item[=].item[=].item[=].item[=].type = #boolean
-* item.item[=].item[=].item[+].linkId = "pv_recentProthesticSurgery_proposals"
+* item.item[=].item[=].item[=].linkId = "pv_moxifloxacine_proposals"
 * item.item[=].item[=].item[=].type = #group
-* item.item[=].item[=].item[=].text = "Proposals for recent prosthetic surgery"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Voorstellen voor recente prostetische chirurgie" 
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Propositions pour une chirurgie prosthétique récente" 
-* item.item[=].item[=].item[=].item[0].linkId = "pv_recentProthesticSurgery"
+* item.item[=].item[=].item[+].item[0].linkId = "pv_otherAb_asp"
 * item.item[=].item[=].item[=].item[=].type = #choice
 * item.item[=].item[=].item[=].item[=].repeats = true
-* item.item[=].item[=].item[=].item[=].answerOption[0].valueCoding = $icpc2#A89
-* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $icd10#M96.6
-* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $sct#67270000
-* item.item[=].item[=].item[=].item[+].linkId = "pv_recentProthesticSurgery_override"
+* item.item[=].item[=].item[=].item[=].text = "otherAb"
+* item.item[=].item[=].item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Alle andere antibiotica"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Tous les autres antibiotiques"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].answerOption[0].valueCoding = $atc#J01A
+* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $atc#J01B
+* item.item[=].item[=].item[=].item[+].linkId = "pv_otherAb_override"
 * item.item[=].item[=].item[=].item[=].type = #boolean
-* item.item[=].item[=].item[=].item[=].text = "Override recent prosthetic surgery"
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Recente prosthetische chirurgie buiten beschouwing laten" 
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Ne pas prendre en compte la chirurgie prosthétique récente" 
-* item.item[=].item[=].item[+].linkId = "pv_heartValveDisease_proposals"
+* item.item[=].item[=].item[=].linkId = "pv_otherAb_proposals"
 * item.item[=].item[=].item[=].type = #group
-* item.item[=].item[=].item[=].text = "Proposals for heart valve disease"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Voorstellen voor hartklepaandoening" 
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].item[=].item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Propositions pour un problème de valve cardiaque" 
-* item.item[=].item[=].item[=].item[0].linkId = "pv_heartValveDisease"
-* item.item[=].item[=].item[=].item[=].type = #choice
-* item.item[=].item[=].item[=].item[=].repeats = true
-* item.item[=].item[=].item[=].item[=].answerOption[0].valueCoding = $icpc2#K83
-* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $icd10#I34
-* item.item[=].item[=].item[=].item[=].answerOption[+].valueCoding = $sct#44241007
-* item.item[=].item[=].item[=].item[+].linkId = "pv_heartValveDisease_override"
+* item.item[=].item[=].linkId = "sp_48hAbIntake_patientVariables"
+* item.item[=].item[=].type = #group
+* item.item[=].item[=].enableWhen.question = "sp_exc_48hAbIntake_asp"
+* item.item[=].item[=].enableWhen.operator = #=
+* item.item[=].item[=].enableWhen.answerBoolean = true
+* item.item[=].item[=].required = true
+* item.item[=].linkId = "sp_48hAbIntakeGroup"
+* item.item[=].type = #group
+* item.item[+].item[0].linkId = "sp_pregnant"
+* item.item[=].item[=].type = #boolean
+* item.item[=].item[=].text = "pregnant"
+* item.item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "Zwangerschap"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "Grossesse"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[+].item.item[0].linkId = "pv_pregnant"
+* item.item[=].item[=].item.item[=].type = #choice
+* item.item[=].item[=].item.item[=].repeats = true
+* item.item[=].item[=].item.item[=].answerOption[0].valueCoding = $icpc2#W78
+* item.item[=].item[=].item.item[=].answerOption[+].valueCoding = $icd10#Z88.0
+* item.item[=].item[=].item.item[=].answerOption[+].valueCoding = $sct#127364007
+* item.item[=].item[=].item.item[=].answerOption[=].valueCoding.version = "http://snomed.info/sct/11000172109"
+* item.item[=].item[=].item.item[+].linkId = "pv_pregnant_override"
+* item.item[=].item[=].item.item[=].type = #boolean
+* item.item[=].item[=].item.linkId = "pv_pregnant_proposals"
+* item.item[=].item[=].item.type = #group
+* item.item[=].item[=].linkId = "sp_pregnant_patientVariables"
+* item.item[=].item[=].type = #group
+* item.item[=].item[=].repeats = true
+* item.item[=].linkId = "sp_pregnantGroup"
+* item.item[=].type = #group
+* item.item[+].item[0].linkId = "sp_seriouslyIll_asp"
+* item.item[=].item[=].type = #boolean
+* item.item[=].item[=].text = "seriouslyIll"
+* item.item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "Ernstig ziek"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].text.extension[=].extension[=].valueString = "Gravement malade"
+* item.item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[+].item[0].item[0].linkId = "pv_ageOver65"
 * item.item[=].item[=].item[=].item[=].type = #boolean
-* item.item[+].linkId = "sp_nonIgEMediatedPeniAllergy"
-* item.item[=].type = #boolean
-* item.item[=].text = "Non IgE mediated Penicilline allergy"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Niet IgE gemedieerde penicilline allergie" 
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Allergie à la pénicilline non-médiée par IgE" 
-* item.item[+].linkId = "sp_igEMediatedPeniAllergy"
-* item.item[=].type = #boolean
-* item.item[=].text = "IgE mediated Penicilline allergy"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"nl-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "IgE gemedieerde penicilline allergie" 
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][+].extension[lang].valueCode = #"fr-BE"
-* item.item[=].text.extension[http://hl7.org/fhir/StructureDefinition/translation][=].extension[content].valueString = "Allergie à la pénicilline médiée par IgE" 
+* item.item[=].item[=].item[=].item[=].text = "ageOver65"
+* item.item[=].item[=].item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Leeftijd ≥ 65 jaar"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Âge ≥ 65 ans"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[+].linkId = "pv_ageOver65_override"
+* item.item[=].item[=].item[=].item[=].type = #boolean
+* item.item[=].item[=].item[=].linkId = "pv_ageOver65_proposals"
+* item.item[=].item[=].item[=].type = #group
+* item.item[=].item[=].item[+].item[0].linkId = "pv_confusion"
+* item.item[=].item[=].item[=].item[=].type = #boolean
+* item.item[=].item[=].item[=].item[=].text = "confusion"
+* item.item[=].item[=].item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Verwardheid"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Confusion"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[+].linkId = "pv_confusion_override"
+* item.item[=].item[=].item[=].item[=].type = #boolean
+* item.item[=].item[=].item[=].linkId = "pv_confusion_proposals"
+* item.item[=].item[=].item[=].type = #group
+* item.item[=].item[=].item[+].item[0].linkId = "pv_tachypnea_asp"
+* item.item[=].item[=].item[=].item[=].type = #boolean
+* item.item[=].item[=].item[=].item[=].text = "tachypnea"
+* item.item[=].item[=].item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Tachypnee ≥ 30/min"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Tachypnée ≥30/min"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[+].linkId = "pv_tachypnea_override"
+* item.item[=].item[=].item[=].item[=].type = #boolean
+* item.item[=].item[=].item[=].linkId = "pv_tachypnea_proposals"
+* item.item[=].item[=].item[=].type = #group
+* item.item[=].item[=].item[+].item[0].linkId = "pv_systolicBloodPressure_asp"
+* item.item[=].item[=].item[=].item[=].type = #boolean
+* item.item[=].item[=].item[=].item[=].text = "systolicBloodPressure"
+* item.item[=].item[=].item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Systolische bloeddruk <90"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Tension artérielle systolique <90"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[+].linkId = "pv_systolicBloodPressure_override"
+* item.item[=].item[=].item[=].item[=].type = #boolean
+* item.item[=].item[=].item[=].linkId = "pv_systolicBloodPressure_proposals"
+* item.item[=].item[=].item[=].type = #group
+* item.item[=].item[=].item[+].item[0].linkId = "pv_diastolicBloodPressure_asp"
+* item.item[=].item[=].item[=].item[=].type = #boolean
+* item.item[=].item[=].item[=].item[=].text = "diastolicBloodPressure"
+* item.item[=].item[=].item[=].item[=].text.extension[0].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #nl-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Diastolische bloeddruk ≤ 60 mmHg"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[=].text.extension[+].extension[0].url = "lang"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueCode = #fr-BE
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[+].url = "content"
+* item.item[=].item[=].item[=].item[=].text.extension[=].extension[=].valueString = "Tension diastolique ≤60 mmHg"
+* item.item[=].item[=].item[=].item[=].text.extension[=].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item.item[=].item[=].item[=].item[+].linkId = "pv_diastolicBloodPressure_override"
+* item.item[=].item[=].item[=].item[=].type = #boolean
+* item.item[=].item[=].item[=].linkId = "pv_diastolicBloodPressure_proposals"
+* item.item[=].item[=].item[=].type = #group
+* item.item[=].item[=].linkId = "sp_seriouslyIll_patientVariables"
+* item.item[=].item[=].type = #group
+* item.item[=].item[=].repeats = true
+* item.item[=].linkId = "sp_seriouslyIllGroup"
+* item.item[=].type = #group
+* item.linkId = "questionnaire"
+* item.type = #group 
