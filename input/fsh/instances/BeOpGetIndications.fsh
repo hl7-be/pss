@@ -1,8 +1,7 @@
-Instance: be-op-get-indications
+Instance: be-op-getIndications
 InstanceOf: OperationDefinition
 Usage: #definition
-* url = "https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/be-op-get-indications"
-* version = "1.0.0"
+* version = "1.0.1"
 * name = "GetIndications"
 * status = #active
 * kind = #operation
@@ -22,27 +21,29 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].type = #code
 * parameter[=].documentation = "Gender of the patient, possible values are: male, female, unknown"
-* parameter[+].name = #snomed_code
+* parameter[+].name = #indication_proposal
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "*"
 * parameter[=].type = #CodeableConcept
-* parameter[=].documentation = "The SNOMED code(s) for the condition(s)."
+* parameter[=].documentation = "The code(s) for the indication(s) from various coding systems (e.g., SNOMED, ICD-10, CPC-2)."
 * parameter[=].binding.strength = #required
-* parameter[=].binding.valueSet = "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/be-pss-indications"
+* parameter[=].binding.valueSet = "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/be-pss-condition-codes"
 * parameter[+].name = #freetext_indication
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "*"
 * parameter[=].type = #string
-* parameter[=].documentation = "The free text indication(s) of the patient's condition(s)."
-* parameter[+].name = #examination
+* parameter[=].documentation = "The free text description of the patient's indication(s)."
+* parameter[+].name = #examination_proposal
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].type = #integer
-* parameter[=].documentation = "Optional examination code"
-* parameter[+].name = #response
+* parameter[=].type = #CodeableConcept
+* parameter[=].documentation = "Proposed examination code(s) from various coding systems (e.g., internal, SNOMED, ICD-10, CPC-2)."
+* parameter[=].binding.strength = #required
+* parameter[=].binding.valueSet = "http://your-internal-system/qsi-examinations"
+* parameter[+].name = #return
 * parameter[=].use = #out
 * parameter[=].min = 1
 * parameter[=].max = "1"

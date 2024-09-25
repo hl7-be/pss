@@ -1,7 +1,6 @@
 Instance: be-op-radioguidance-request
 InstanceOf: OperationDefinition
 Usage: #definition
-* url = "https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/be-op-radioguidance-request"
 * version = "1.0"
 * name = "RadioGuidanceRequest"
 * status = #active
