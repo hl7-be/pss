@@ -1,7 +1,6 @@
 Instance: be-op-getIndications
 InstanceOf: OperationDefinition
 Usage: #definition
-* version = "1.0.1"
 * name = "GetIndications"
 * status = #active
 * kind = #operation
@@ -13,34 +12,34 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].type = #integer
 * parameter[=].documentation = "Age of the patient"
+* parameter[=].type = #Age
 * parameter[+].name = #gender
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].type = #code
 * parameter[=].documentation = "Gender of the patient, possible values are: male, female, unknown"
+* parameter[=].type = #code
 * parameter[+].name = #indication_proposal
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "*"
-* parameter[=].type = #CodeableConcept
 * parameter[=].documentation = "The code(s) for the indication(s) from various coding systems (e.g., SNOMED, ICD-10, CPC-2)."
+* parameter[=].type = #CodeableConcept
 * parameter[=].binding.strength = #required
 * parameter[=].binding.valueSet = "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/be-pss-condition-codes"
 * parameter[+].name = #freetext_indication
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "*"
-* parameter[=].type = #string
 * parameter[=].documentation = "The free text description of the patient's indication(s)."
-* parameter[+].name = #examination_proposal
+* parameter[=].type = #string
+* parameter[+].name = #intention
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].type = #CodeableConcept
 * parameter[=].documentation = "Proposed examination code(s) from various coding systems (e.g., internal, SNOMED, ICD-10, CPC-2)."
+* parameter[=].type = #CodeableConcept
 * parameter[=].binding.strength = #required
 * parameter[=].binding.valueSet = "http://your-internal-system/qsi-examinations"
 * parameter[+].name = #return
