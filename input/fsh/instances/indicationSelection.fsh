@@ -7,5 +7,5 @@ Usage: #example
 * item[=].text = "Indication selected by EPD"
 * item[=].answer.valueCoding = $qsi-indications#5000246 "Hoofdtrauma, ataxie"
 * item[+].linkId = "2"
-* item[=].text = "Examination"
+* item[=].text = "Intention"
 * item[=].answer.valueCoding = $qsi-examinations#114054 "CT, hoofd, met iv-contrast"

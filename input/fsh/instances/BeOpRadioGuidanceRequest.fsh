@@ -2,7 +2,7 @@ Instance: be-op-radioguidance-request
 InstanceOf: OperationDefinition
 Usage: #definition
 * version = "1.0"
-* name = "RadioGuidanceRequest"
+* name = "BeOpRadioGuidanceRequest"
 * status = #active
 * kind = #operation
 * code = #radioGuidanceRequest
