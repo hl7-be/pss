@@ -1,7 +1,6 @@
 Instance: be-op-antimicroguidance-request
 InstanceOf: OperationDefinition
 Usage: #definition
-* version = "1.0"
 * name = "AntimicroGuidance"
 * status = #active
 * kind = #operation
@@ -20,5 +19,5 @@ Usage: #definition
 * parameter[=].use = #out
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].type = #Bundle
 * parameter[=].documentation = "The operation returns a Bundle containing a GuidanceResponse and a Parameters resource."
+* parameter[=].type = #Bundle

@@ -5,7 +5,11 @@ Usage: #example
 * item.linkId = "questionnaire"
 * item.item[0].linkId = "indication"
 * item.item[=].text = "Indication"
+* item.item[=].answer.valueCoding.version = "http://snomed.info/sct/11000172109"
 * item.item[=].answer.valueCoding = $sct#921000172108 "Acute keelpijn"
+* item.item[+].linkId = "intention"
+* item.item[=].text = "intention"
+* item.item[=].answer.valueCoding = $atc#J01CA04 "Amoxicillin"
 * item.item[+].linkId = "sp_alertSignals"
 * item.item[=].answer.valueBoolean = false
 * item.item[+].linkId = "sp_isSeverelyIll"
@@ -19,6 +23,7 @@ Usage: #example
 * item.item[=].item[=].item[=].item.answer.valueBoolean = true
 * item.item[=].item[=].item[+].linkId = "pv_oncologyPatient_proposals"
 * item.item[=].item[=].item[=].item[0].linkId = "pv_oncologyPatient"
+* item.item[=].item[=].item[=].item[=].answer.valueCoding.version = "http://snomed.info/sct/11000172109"
 * item.item[=].item[=].item[=].item[=].answer.valueCoding = $sct#763597000
 * item.item[=].item[=].item[=].item[+].linkId = "pv_oncologyPatient_override"
 * item.item[=].item[=].item[=].item[=].answer.valueBoolean = false
