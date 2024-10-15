@@ -1,36 +1,46 @@
 @startuml
-group Functional data exchange
-    alt #LightGreen RADIO
-        == 1. Given the existing data, query the structured list of indications ==
-        EPD -> PSS : 
-        EPD -[hidden]-> PSS : "                                                         "
-        PSS -> QSI 
-        PSS -[hidden]-> QSI : "                                                         "
-'        EPD -> PSS : **GET /PlanDefinition/radiology/$requiredData**?age={}&gender={}&indication={}
+!pragma teoz true
+Title PSS Functional data exchange
+hide footbox
+
+group #DFE Service 1 - Given existing data, query the structured list of applicable indications
+        EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetDiagnoses.html GetDiagnoses]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getdiagnoses-data.html Bundle]]
+        & PSS -> QSI 
+        & PSS -[hidden]-> QSI : "                                      "
         'PSS -> QSI : GET /indictions
-        == 2. Reply with list of indications ==
+
+        activate PSS
+        activate QSI
         QSI -> PSS 
-        PSS -> EPD 
-'        QSI -> PSS : Reply with indications
-'        PSS -> EPD : Reply with **CarePlan** + **Questionnaire** (Listing of **Coding** in "item[0].answerOption[].valueCoding")
+        & PSS -> EPD: [[Bundle-getdiagnoses-return.html Propose Indications]]
+        deactivate PSS
+        deactivate QSI
+        |||
+end
 ...
-        == 3. Send indications ==
-        EPD -> PSS 
-'        EPD -> PSS : **POST /PlanDefinition/radiology/$apply** (+ **QuestionnaireResponse** in payload)
-    else #LightBlue ANTIMICRO
-        EPD -> PSS
-'        EPD -> PSS : **GET /PlanDefinition/antimicrobien/$requiredData**?indication={indication} => **Operation**
-        == 4. Reply with list of required data ==
-        PSS -> EPD
+group #def Service 2 - Given indications, query data to collect
+
+        EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetDataToCollect.html GetDataToCollect]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getdatatocollect-data.html Bundle]]
+
+        Activate PSS
+
+        PSS -> EPD: [[Bundle-getdatatocollect-return.html Propose data to collect]]
+        deactivate PSS
+        |||
+end
 ...
-'        PSS -> EPD :  Reply with **CarePlan** + **Questionnaire**
-        == 5. Send parameters to receive the recommended actions ==
-        EPD -> PSS
-'        EPD -> PSS : **POST /PlanDefinition/antimicrobien/$apply** (+ **QuestionnaireResponse** in payload) => **Operation**
-    end
-    == 6. Receive recommendations ==
-    PSS -> EPD
-'    PSS -> EPD : Reply with **GuidanceResponse**
-...
+group #fed Service 3 - Given some data (+ a procedure), request recommended procedures
+        EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetRecommendations.html GetRecommendations]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getrecommendations-data.html Bundle]]
+        & PSS --> QSI 
+        & PSS -[hidden]-> QSI : "                                      "
+
+        activate PSS
+        activate QSI
+        QSI --> PSS 
+        & PSS -> EPD: [[Bundle-getrecommendations-data.html Bundle with RequestGroup with options]]
+        deactivate PSS
+        deactivate QSI
+        |||
+
 end
 @enduml
