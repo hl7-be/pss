@@ -37,7 +37,7 @@ group #fed Service 3 - Given some data (+ a procedure), request recommended proc
         activate PSS
         activate QSI
         QSI --> PSS 
-        & PSS -> EPD: [[Bundle-getrecommendations-data.html Bundle with RequestGroup with options]]
+        & PSS -> EPD: [[Bundle-getrecommendations-return.html Bundle with RequestGroup with options]]
         deactivate PSS
         deactivate QSI
         |||
