@@ -4,6 +4,8 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 
 Instance: GetDiagnoses
 InstanceOf: PlanDefinition
+Description: "Get Diagnoses Data"
+
 Usage: #example
 * url = "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDiagnoses"
 * type = $plan-definition-type#eca-rule
@@ -36,8 +38,8 @@ Usage: #example
       * code[+] = $condition-category#problem-list-item
   * output[0]
     * type = #Task
-    * profile[0] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosistask"
-    * profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task"
+//    * profile[0] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosistask"
+//    * profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task"
   * output[+]
     * type = #Condition
     * profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"

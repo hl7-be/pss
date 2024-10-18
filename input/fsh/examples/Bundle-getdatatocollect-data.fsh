@@ -7,16 +7,19 @@ Instance: getdatatocollect-data
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry[0].resource = Y
+* entry[0].resource = patient-y
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad48"
 * entry[+].resource = lower-abdominal-pain
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad01"
 * entry[+].resource = frequent-urination-with-burning-sensation
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad02"
 
-Instance: Y
+Instance: patient-y
 InstanceOf: Patient
-Usage: #inline
+Description: "Patient Y"
+Usage: #example
 * active = true
 * gender = #female
-* birthDate = "1989-03-12"
 * deceasedBoolean = false
 
 Instance: lower-abdominal-pain
@@ -28,21 +31,21 @@ Usage: #inline
   * text = "Confirmed"
 * category = $condition-category#encounter-diagnosis "Encounter Diagnosis"
   * text = "Encounter Diagnosis"
-* code = $sct#XXXXXX "Lower abdominal pain"
+* code = $sct#54586004 "Lower abdominal pain"
   * text = "Lower abdominal pain"
-* subject = Reference(Y)
+* subject = Reference(patient-y)
 * onsetDateTime = "2024-10-13"
 
 Instance: frequent-urination-with-burning-sensation
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
   * text = "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
   * text = "Confirmed"
 * category = $condition-category#encounter-diagnosis "Encounter Diagnosis"
   * text = "Encounter Diagnosis"
-* code = $sct#XXXXXX "Frequent urination with burning sensation"
+* code = $sct#28442001 "Polyuria"
   * text = "Frequent urination with burning sensation"
-* subject = Reference(Y)
+* subject = Reference(patient-y)
 * onsetDateTime = "2024-10-13"

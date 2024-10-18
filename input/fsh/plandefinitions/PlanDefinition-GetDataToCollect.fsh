@@ -5,6 +5,8 @@ Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-v
 
 Instance: GetDataToCollect
 InstanceOf: PlanDefinition
+Description: "Get Data to Collect"
+
 Usage: #example
 * url = "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDataToCollect"
 * type = $plan-definition-type#eca-rule
@@ -38,4 +40,4 @@ Usage: #example
 * action.output[=].profile[0] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask"
 * action.output[=].profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task"
 * action.output[+].type = #Questionnaire
-* action.output[=].profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnaire"
+//* action.output[=].profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnaire"

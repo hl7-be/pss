@@ -10,10 +10,15 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry[0].resource = X
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad12"
 * entry[+].resource = bmi
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad13"
 * entry[+].resource = shortness-of-breath
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad14"
 * entry[+].resource = chest-pain
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad15"
 * entry[+].resource = impaired-kidney-function
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad16"
 
 // Instance: X
 // InstanceOf: Patient
@@ -44,7 +49,7 @@ Usage: #inline
   * text = "Confirmed"
 * category = $condition-category#encounter-diagnosis "Encounter Diagnosis"
   * text = "Encounter Diagnosis"
-* code = $sct#XXXXXX "Shortness of breath"
+* code = $sct#267036007 "Shortness of breath"
   * text = "Shortness of breath"
 * subject = Reference(X)
 * onsetDateTime = "2024-10-13"

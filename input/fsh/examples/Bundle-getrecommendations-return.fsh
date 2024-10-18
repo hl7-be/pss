@@ -3,12 +3,19 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry[0].resource = Inline-Instance-for-getrecommendations-return-1
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
 * entry[+].resource = nitrofurantoin
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
 * entry[+].resource = fosfomycin
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"
 * entry[+].resource = ciprofloxacin
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24"
 * entry[+].resource = ct-pulmonary-angiography
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad25"
 * entry[+].resource = ventilation-perfusion-scan
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26"
 * entry[+].resource = mri-with-gd-contrast
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad27"
 
 Instance: Inline-Instance-for-getrecommendations-return-1
 InstanceOf: RequestGroup
@@ -16,7 +23,7 @@ Usage: #inline
 * id = "getrecommendations-return"
 * status = #active
 * intent = #proposal
-* subject = Reference(Patient/X)
+* subject = Reference(X)
 * action[0]
   * textEquivalent = "Potential medications"
   * action[0]
@@ -52,7 +59,7 @@ Usage: #inline
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Nitrofurantoin 2x 100mg x 5 days"
-* subject = Reference(Patient/X)
+* subject = Reference(X)
 
 Instance: fosfomycin
 InstanceOf: MedicationRequest
@@ -66,7 +73,7 @@ Usage: #inline
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Fosfomycin, single 3g dose"
-* subject = Reference(Patient/X)
+* subject = Reference(X)
 
 Instance: ciprofloxacin
 InstanceOf: MedicationRequest
@@ -80,7 +87,7 @@ Usage: #inline
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Ciprofloxacin (250mg twice daily for 3 days)"
-* subject = Reference(Patient/X)
+* subject = Reference(X)
 
 Instance: ct-pulmonary-angiography
 InstanceOf: ServiceRequest
@@ -93,7 +100,7 @@ Usage: #inline
 * status = #active
 * intent = #proposal
 * code.text = "CT Pulmonary Angiography"
-* subject = Reference(Patient/X)
+* subject = Reference(X)
 
 Instance: ventilation-perfusion-scan
 InstanceOf: ServiceRequest
@@ -106,7 +113,7 @@ Usage: #inline
 * status = #active
 * intent = #proposal
 * code.text = "Ventilation-Perfusion (V/Q) Scan"
-* subject = Reference(Patient/X)
+* subject = Reference(X)
 
 Instance: mri-with-gd-contrast
 InstanceOf: ServiceRequest
@@ -119,4 +126,4 @@ Usage: #inline
 * status = #active
 * intent = #proposal
 * code.text = "MRI with Gd Contrast"
-* subject = Reference(Patient/X)
+* subject = Reference(X)

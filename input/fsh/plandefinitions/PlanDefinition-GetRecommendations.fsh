@@ -4,6 +4,8 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 
 Instance: GetRecommendations
 InstanceOf: PlanDefinition
+Description: "Get recommendations for potential treatments based on patient information"
+
 Usage: #example
 * url = "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetRecommendations"
 * type = $plan-definition-type#eca-rule

@@ -6,18 +6,26 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 Alias: $sct = http://snomed.info/sct
 
 Instance: getdiagnoses-data
+Description: "Get Diagnoses Data"
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry[0].resource = X
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad03"
 * entry[+].resource = bmi
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad04"
 * entry[+].resource = shortness-of-breath
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad05"
 * entry[+].resource = chest-pain
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad06"
 * entry[+].resource = impaired-kidney-function
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad07"
 
 Instance: X
 InstanceOf: Patient
-Usage: #inline
+Description: "Patient X"
+
+Usage: #example
 * active = true
 * gender = #male
 * birthDate = "1972-05-24"
@@ -44,7 +52,7 @@ Usage: #inline
   * text = "Confirmed"
 * category = $condition-category#encounter-diagnosis "Encounter Diagnosis"
   * text = "Encounter Diagnosis"
-* code = $sct#XXXXXX "Chest pain that worsens with deep breathing"
+* code = $sct#274664007 "Chest pain on breathing"
   * text = "Chest pain that worsens with deep breathing"
 * subject = Reference(X)
 * onsetDateTime = "2024-10-13"
@@ -58,7 +66,7 @@ Usage: #inline
   * text = "Confirmed"
 * category = $condition-category#encounter-diagnosis "Encounter Diagnosis"
   * text = "Encounter Diagnosis"
-* code = $sct#XXXXXX "Impaired kidney function"
+* code = $sct#723188008 "Renal insufficiency (disorder)"
   * text = "Impaired kidney function"
 * subject = Reference(X)
 * onsetDateTime = "2024-10-13"
