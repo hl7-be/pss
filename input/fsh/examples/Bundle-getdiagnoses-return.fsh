@@ -34,6 +34,7 @@ Usage: #inline
   * textEquivalent = "Potential diagnosis of Pneumothorax"
   * resource = Reference(propose-pneumothorax)
 
+
 Instance: propose-pulmonary-embolism
 InstanceOf: Task
 Usage: #example
@@ -45,15 +46,17 @@ Usage: #example
 * code = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
 * for = Reference(X)
 * input
-  * type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
-  * valueReference = Reference(proposed-diagnosis)
+  * type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis PE"
+  * valueReference = Reference(proposed-diagnosis-pe)
 
-Instance: proposed-diagnosis
+
+
+Instance: proposed-diagnosis-pe
 InstanceOf: Condition
 Description: "Proposed diagnosis of Pulmonary Embolism"
 Usage: #example
 
-* id = "proposed-diagnosis"
+* id = "proposed-diagnosis-pe"
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#provisional
@@ -64,6 +67,39 @@ Usage: #example
 * onsetDateTime = "2024-10-13"
 
 
+Instance: proposed-diagnosis-pt
+InstanceOf: Condition
+Description: "Proposed diagnosis of Pneumothorax"
+Usage: #example
+
+* id = "proposed-diagnosis-pt"
+* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#provisional
+* category = $condition-category#problem-list-item
+* code = $sct#59282003 "Pneumothorax"
+  * text = "Pneumothorax"
+* subject = Reference(X)
+* onsetDateTime = "2024-10-13"
+
+
+Instance: proposed-diagnosis-acs
+InstanceOf: Condition
+Description: "Proposed diagnosis of Acute Coronary Syndrome"
+Usage: #example
+
+* id = "proposed-diagnosis-acs"
+* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#provisional
+* category = $condition-category#problem-list-item
+* code = $sct#59282003 "Acute Coronary Syndrome"
+  * text = "Acute Coronary Syndrome"
+* subject = Reference(X)
+* onsetDateTime = "2024-10-13"
+
+
+
 Instance: propose-acute-coronary-syndrome
 InstanceOf: Task
 Usage: #inline
@@ -72,7 +108,7 @@ Usage: #inline
 //  * profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task"
 * contained
   * resourceType = "Condition"
-  * id = "proposed-diagnosis"
+  * id = "proposed-diagnosis-acs"
   * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
   * clinicalStatus = $condition-clinical#active
   * verificationStatus = $condition-ver-status#provisional
@@ -87,7 +123,7 @@ Usage: #inline
 * for = Reference(X)
 * input
   * type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
-  * valueReference = Reference(proposed-diagnosis)
+  * valueReference = Reference(proposed-diagnosis-acs)
 
 Instance: propose-pneumothorax
 InstanceOf: Task
@@ -97,7 +133,7 @@ Usage: #inline
 //  * profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task"
 * contained
   * resourceType = "Condition"
-  * id = "proposed-diagnosis"
+  * id = "proposed-diagnosis-pt"
   * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
   * clinicalStatus = $condition-clinical#active
   * verificationStatus = $condition-ver-status#provisional
@@ -112,4 +148,4 @@ Usage: #inline
 * for = Reference(X)
 * input
   * type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
-  * valueReference.reference = "Condition/proposed-diagnosis"
+  * valueReference.reference = "Condition/proposed-diagnosis-pt"

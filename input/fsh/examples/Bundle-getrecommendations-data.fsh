@@ -54,6 +54,21 @@ Usage: #inline
 * subject = Reference(X)
 * onsetDateTime = "2024-10-13"
 
+
+Instance: qr-pregnancy
+InstanceOf: QuestionnaireResponse
+Usage: #inline
+* questionnaire = "q-collect-pregnancy-status"
+* status = #completed
+* authored = "2024-10-13"
+* item[+]
+  * linkId = "1"
+  * answer[0].valueBoolean = true
+  * item[+]
+    * linkId = "2"
+    * answer[0].valueDate = "2024-10-13"
+
+
 // Instance: chest-pain
 // InstanceOf: Condition
 // Usage: #inline

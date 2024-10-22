@@ -133,6 +133,12 @@ Usage: #example
   * text = "Are you pregnant?"
   * type = #boolean
   * required = true
+  * item[+]
+    * linkId = "2"
+    * text = "LMP?"
+    * type = #date
+    * required = true
+
 
 
 
