@@ -1,0 +1,215 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/getdiagnoses-data> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "getdiagnoses-data"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad03"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad03> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad04"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad04> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad05"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad05> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad06"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad06> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad07"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad07> )
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad03> a fhir:Patient ;
+  fhir:id [ fhir:v "X"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_X\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient X</b></p><a name=\"X\"> </a><a name=\"hcX\"> </a><a name=\"X-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Male, DoB: 1972-05-24</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr></table></div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1972-05-24"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad04> a fhir:Observation ;
+  fhir:id [ fhir:v "bmi"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_bmi\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation bmi</b></p><a name=\"bmi\"> </a><a name=\"hcbmi\"> </a><a name=\"bmi-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 39156-5}\">BMI</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>effective</b>: 2024-10-13</p><p><b>value</b>: 35 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg/m2 = 'kg/m2')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] ) ;
+     fhir:text [ fhir:v "Vital Signs" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:39156-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "39156-5" ] ;
+       fhir:display [ fhir:v "Body mass index (BMI) [Ratio]" ]
+     ] ) ;
+     fhir:text [ fhir:v "BMI" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-10-13"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "35"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "kg/m2" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "kg/m2" ]
+  ] . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad05> a fhir:Condition ;
+  fhir:id [ fhir:v "shortness-of-breath"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_shortness-of-breath\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition shortness-of-breath</b></p><a name=\"shortness-of-breath\"> </a><a name=\"hcshortness-of-breath\"> </a><a name=\"shortness-of-breath-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 267036007}\">Shortness of breath</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] ) ;
+     fhir:text [ fhir:v "Active" ]
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] ) ;
+     fhir:text [ fhir:v "Confirmed" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] ) ;
+     fhir:text [ fhir:v "Encounter Diagnosis" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:267036007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "267036007" ] ;
+       fhir:display [ fhir:v "Shortness of breath" ]
+     ] ) ;
+     fhir:text [ fhir:v "Shortness of breath" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2024-10-13"^^xsd:date] . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad06> a fhir:Condition ;
+  fhir:id [ fhir:v "chest-pain"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_chest-pain\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition chest-pain</b></p><a name=\"chest-pain\"> </a><a name=\"hcchest-pain\"> </a><a name=\"chest-pain-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 274664007}\">Chest pain that worsens with deep breathing</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] ) ;
+     fhir:text [ fhir:v "Active" ]
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] ) ;
+     fhir:text [ fhir:v "Confirmed" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] ) ;
+     fhir:text [ fhir:v "Encounter Diagnosis" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:274664007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "274664007" ] ;
+       fhir:display [ fhir:v "Chest pain on breathing" ]
+     ] ) ;
+     fhir:text [ fhir:v "Chest pain that worsens with deep breathing" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2024-10-13"^^xsd:date] . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad07> a fhir:Condition ;
+  fhir:id [ fhir:v "impaired-kidney-function"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_impaired-kidney-function\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition impaired-kidney-function</b></p><a name=\"impaired-kidney-function\"> </a><a name=\"hcimpaired-kidney-function\"> </a><a name=\"impaired-kidney-function-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 723188008}\">Impaired kidney function</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] ) ;
+     fhir:text [ fhir:v "Active" ]
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] ) ;
+     fhir:text [ fhir:v "Confirmed" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] ) ;
+     fhir:text [ fhir:v "Encounter Diagnosis" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:723188008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "723188008" ] ;
+       fhir:display [ fhir:v "Renal insufficiency (disorder)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Impaired kidney function" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2024-10-13"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+
