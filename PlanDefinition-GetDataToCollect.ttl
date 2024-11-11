@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/PlanDefinition/GetDataToCollect> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "GetDataToCollect"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition GetDataToCollect</b></p><a name=\"GetDataToCollect\"> </a><a name=\"hcGetDataToCollect\"> </a><a name=\"GetDataToCollect-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-GetDataToCollect.html\">PlanDefinition: url = http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDataToCollect; version = 1.0.0; type = ECA Rule; status = active; date = 2024-11-11 17:31:26+0000; publisher = HL7 Belgium; contact = HL7 Belgium (https://www.hl7belgium.org, hl7belgium@hl7belgium.org),Message Structure eHealth (message-structure@ehealth.fgov.be(Work)); jurisdiction = World; copyright = </a></p><p><b>version</b>: 1.0.0</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>date</b>: 2024-11-11 17:31:26+0000</p><p><b>publisher</b>: HL7 Belgium</p><p><b>contact</b>: HL7 Belgium: <a href=\"https://www.hl7belgium.org\">https://www.hl7belgium.org</a>,<a href=\"mailto:hl7belgium@hl7belgium.org\">hl7belgium@hl7belgium.org</a>, Message Structure eHealth: <a href=\"mailto:message-structure@ehealth.fgov.be\">message-structure@ehealth.fgov.be</a></p><p><b>jurisdiction</b>: <span title=\"Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><blockquote><p><b>action</b></p><p><b>title</b>: Determine additional information required</p><p><b>description</b>: Given input data, including age, gender, symptoms, and suspected diagnoses, determine what additional information should be collected</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs determine-diagnosis}\">Determine Diagnosis</span></p><blockquote><p><b>input</b></p><p><b>type</b>: Patient</p><p><b>mustSupport</b>: birthDate, gender</p></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Observation</p><p><b>mustSupport</b>: category, code, value</p><h3>CodeFilters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Path</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>category</td><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html#observation-category-vital-signs\">Observation Category Codes vital-signs</a>: Vital Signs</td></tr></table></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Condition</p><p><b>mustSupport</b>: category, code, clinicalStatus, verificationStatus, onset</p><blockquote><p><b>codeFilter</b></p><p><b>path</b>: category</p><p><b>code</b>: <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html#condition-category-encounter-diagnosis\">Condition Category Codes encounter-diagnosis</a>: Encounter Diagnosis, <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html#condition-category-problem-list-item\">Condition Category Codes problem-list-item</a>: Problem List Item</p></blockquote></blockquote><blockquote><p><b>input</b></p><p><b>type</b>: Condition</p><h3>CodeFilters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Path</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>verificationStatus</td><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-ver-status.html#condition-ver-status-unconfirmed\">ConditionVerificationStatus unconfirmed</a>: Unconfirmed</td></tr></table></blockquote><h3>Outputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td style=\"display: none\">*</td><td>Task</td><td><a href=\"http://hl7.org/fhir/uv/cpg/2024Jan/StructureDefinition-cpg-questionnairetask.html\">CPG Questionnaire Task</a>, <a href=\"http://hl7.org/fhir/uv/cpg/2024Jan/StructureDefinition-cpg-task.html\">CPG Task</a></td></tr><tr><td style=\"display: none\">*</td><td>Questionnaire</td><td> </td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDataToCollect"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-11-11T17:31:26+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7belgium.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "hl7belgium@hl7belgium.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "message-structure@ehealth.fgov.be" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "Determine additional information required" ] ;
+     fhir:description [ fhir:v "Given input data, including age, gender, symptoms, and suspected diagnoses, determine what additional information should be collected" ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "determine-diagnosis" ]
+       ] )
+     ] ) ;
+     fhir:input ( [
+       fhir:type [ fhir:v "Patient" ] ;
+       fhir:mustSupport ( [ fhir:v "birthDate" ] [ fhir:v "gender" ] )
+     ] [
+       fhir:type [ fhir:v "Observation" ] ;
+       fhir:mustSupport ( [ fhir:v "category" ] [ fhir:v "code" ] [ fhir:v "value" ] ) ;
+       fhir:codeFilter ( [
+         fhir:path [ fhir:v "category" ] ;
+         fhir:code ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "vital-signs" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Condition" ] ;
+       fhir:mustSupport ( [ fhir:v "category" ] [ fhir:v "code" ] [ fhir:v "clinicalStatus" ] [ fhir:v "verificationStatus" ] [ fhir:v "onset" ] ) ;
+       fhir:codeFilter ( [
+         fhir:path [ fhir:v "category" ] ;
+         fhir:code ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "encounter-diagnosis" ]
+         ] [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "problem-list-item" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Condition" ] ;
+       fhir:codeFilter ( [
+         fhir:path [ fhir:v "verificationStatus" ] ;
+         fhir:code ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "unconfirmed" ]
+         ] )
+       ] )
+     ] ) ;
+     fhir:output ( [
+       fhir:type [ fhir:v "Task" ] ;
+       fhir:profile ( [
+         fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask>
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task>
+       ] )
+     ] [
+       fhir:type [ fhir:v "Questionnaire" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
