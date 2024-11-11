@@ -6,28 +6,27 @@ Functional overview of data exchange with PSS system - Radiology:
 
 <hr/>
 
-1. GetDiagnoses - request resource structure
+### GetDiagnoses - request resource structure
 <figure>
   {% include getDiagnoses-request.svg %}
 </figure>
 
 <hr/>
 
-2. GetDiagnoses - response resource structure
+### GetDiagnoses - response resource structure
 <figure>
   {% include getDiagnoses-response.svg %}
 </figure>
 
 <hr/>
-<hr/>
 
-3. GetRecommendation - request resource structure
+### GetRecommendation - request resource structure
 <figure>
   {% include getRecommendation-request-radiology.svg %}
 </figure>
 <hr/>
 
-4. GetReccommendation - response resource structure
+### GetRecommendation - response resource structure
 <figure>
   {% include getRecommendation-response-radiology.svg %}
 </figure>
