@@ -60,10 +60,7 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for `uri` and `version`.
 dependencies:
-   hl7.fhir.uv.cpg:
-    id: cpg
-    uri: https://build.fhir.org/ig/HL7/cqf-recommendations/ImplementationGuide/hl7.fhir.uv.cpg
-    version: current
+   hl7.fhir.uv.cpg: 2.0.0-draft
 #  hl7.fhir.us.core: 3.1.0
 #  hl7.fhir.us.mcode:
 #    id: mcode
@@ -108,11 +105,71 @@ dependencies:
 # use their own instead, they can use the mechanism below.  This will
 # create IG.definition.grouping entries and associate the individual
 # resource entries with the corresponding groupIds.
-#groups:
-#  GroupA:
-#    name: Group A
-#    description: The Alpha Group
-#    resources:
+groups:
+  Antibiology:
+    name: Antibiology
+    description: Antibiology PSS resource examples
+    resources:
+      - Bundle/getdatatocollect2-data
+      - Patient/patient-v
+      - vulvovaginitis
+      - AllergyIntolerance/allergy-to-sulfonamide
+      - MedicationRequest/proposal-clindamycin
+
+      - Bundle/getdatatocollect-return2
+      - RequestGroup/getdatatocollect-return2-v
+      - Task/collect-information2
+      - Questionnaire/q-collect-information2
+
+      - Bundle/getrecommendations2-data
+      - QuestionnaireResponse/qresponse-v
+      - Patient/patient-v
+
+      - Bundle/getrecommendations2-return
+      - RequestGroup/getrecommendations2-return-1
+      - MedicationRequest/metronidazol
+      - MedicationRequest/clindamycin
+      - MedicationRequest/fluconazol
+      - MedicationRequest/miconazol
+
+      
+
+
+
+
+  Radiology:
+    name: Radiology
+    description: Radiology PSS resource examples
+    resources: 
+      - Bundle/radiology-getdiagnoses
+      - Observation/ataxia
+      - ServiceRequest/ct-head-iv-contrast
+
+      - Bundle/radiology-getdiagnoses-return
+      - RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return
+      - Task/propose-stroke
+      - Condition/proposed-diagnosis-stroke
+      - Task/propose-infection
+      - Condition/proposed-diagnosis-infection
+      - Task/propose-head-trauma
+      - Condition/proposed-diagnosis-head-trauma
+      - Task/propose-slow-progression-ataxia
+      - Condition/proposed-diagnosis-slow-progression-ataxia
+      - Task/propose-post-trauma-ataxia
+      - Condition/proposed-diagnosis-post-trauma-ataxia
+
+      - Bundle/getrecommendations-data3
+      - Condition/proposed-diagnosis-head-trauma-v2
+      - ServiceRequest/ct-head-iv-contrast-v2
+
+      - Bundle/getrecommendations3-return
+      - RequestGroup/getrecommendations3-return-1
+      - ServiceRequest/ct-head-iv-contrast-v3
+      - ServiceRequest/ct-head-with-or-without-contrast-v3
+      - ServiceRequest/mr-head-without-contrast
+
+
+
 #    - StructureDefinition/animal-patient
 #    - StructureDefinition/arm-procedure
 #  GroupB:

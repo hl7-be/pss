@@ -1,31 +1,33 @@
 @startuml
 !pragma teoz true
-Title PSS Functional data exchange
+Title PSS Functional data exchange - Radiology
 hide footbox
 
 group #DFE Service 1 - Given existing data, query the structured list of applicable indications
         EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetDiagnoses.html GetDiagnoses]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getdiagnoses-data.html Bundle]]
         & PSS -> QSI 
         & PSS -[hidden]-> QSI : "                                      "
-        'PSS -> QSI : GET /indictions
-
+        'PSS -> QSI : GET /indications
         activate PSS
         activate QSI
+
+        note right of PSS
+See 1. below
+        end note
+
+       |||
+       ||| 
         QSI -> PSS 
-        & PSS -> EPD: [[Bundle-getdiagnoses-return.html Propose Indications]]
+        & PSS -> EPD: [[Bundle-getdiagnoses-return.html 1. Propose Indications]]
+
         deactivate PSS
         deactivate QSI
-        |||
-end
-...
-group #def Service 2 - Given indications, query data to collect
 
-        EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetDataToCollect.html GetDataToCollect]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getdatatocollect-data.html Bundle]]
+note right of PSS
+See 2. below
+end note
 
-        Activate PSS
 
-        PSS -> EPD: [[Bundle-getdatatocollect-return.html Propose data to collect]]
-        deactivate PSS
         |||
 end
 ...
@@ -36,10 +38,22 @@ group #fed Service 3 - Given some data (+ a procedure), request recommended proc
 
         activate PSS
         activate QSI
+
+note right of PSS
+See 3. below
+end note
+
+
         QSI --> PSS 
-        & PSS -> EPD: [[Bundle-getrecommendations-return.html Bundle with RequestGroup with options]]
+        & PSS -> EPD: [[Bundle-getrecommendations-return.html 2. Bundle with RequestGroup with options]]
+
         deactivate PSS
         deactivate QSI
+
+note right of PSS
+See 4. below
+end note
+
         |||
 
 end

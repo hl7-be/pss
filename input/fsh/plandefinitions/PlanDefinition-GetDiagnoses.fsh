@@ -5,7 +5,6 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 Instance: GetDiagnoses
 InstanceOf: PlanDefinition
 Description: "Get Diagnoses Data"
-
 Usage: #example
 * url = "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDiagnoses"
 * type = $plan-definition-type#eca-rule

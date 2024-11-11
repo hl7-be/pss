@@ -57,7 +57,7 @@ Usage: #inline
 
 Instance: qr-pregnancy
 InstanceOf: QuestionnaireResponse
-Usage: #inline
+Usage: #example
 * questionnaire = "q-collect-pregnancy-status"
 * status = #completed
 * authored = "2024-10-13"
