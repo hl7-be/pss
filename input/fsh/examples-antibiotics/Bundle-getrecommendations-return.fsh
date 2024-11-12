@@ -26,6 +26,7 @@ Usage: #example
 * subject = Reference(X)
 * action[0]
   * textEquivalent = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte..."
+  * selectionBehavior = #at-most-one
   * action[0]
     * textEquivalent = "Metronidazol Oraal"
     * resource = Reference(metronidazol)
