@@ -1,5 +1,5 @@
 Instance: antimicroResponse
-InstanceOf: Bundle
+InstanceOf: BeAntiMicroGuidanceBundle
 Usage: #example
 * type = #collection
 * entry[0].fullUrl = "urn:uuid:e134a22d-7c34-4964-9eea-a1b68c368122"
@@ -10,7 +10,7 @@ Usage: #example
 * entry[=].resource = fd45eea5-eb11-4fd4-b3d4-a885b20ccb49
 
 Instance: e134a22d-7c34-4964-9eea-a1b68c368122
-InstanceOf: GuidanceResponse
+InstanceOf: BeAntiMicroGuidanceResponse
 Usage: #inline
 * moduleUri = "/antimicroGuidanceRequest"
 * status = #success
@@ -20,114 +20,114 @@ Usage: #inline
 * evaluationMessage = Reference(fd45eea5-eb11-4fd4-b3d4-a885b20ccb49)
 
 Instance: ee0e86f7-75f6-41aa-a390-6a58112faadd
-InstanceOf: Parameters
+InstanceOf: BeAntiMicroSupportParameters
 Usage: #inline
-* parameter.name = "supportOptions"
-* parameter.part[0].name = "option"
-* parameter.part[=].part[0].name = "isIntended"
-* parameter.part[=].part[=].valueBoolean = false
-* parameter.part[=].part[+].name = "score"
-* parameter.part[=].part[=].valueInteger = 3
-* parameter.part[=].part[+].name = "instruction"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Feneticilline"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Phénéticilline"
-* parameter.part[=].part[+].name = "evidenceSummary"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Volwassenen en kind > 10 jaar: 1500 mg per dag in 3 giften. Kind 2-10 j: 750 mg per dag in drie giften. Kind < 2 jaar: 375 mg per dag in drie giften."
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Adultes et enfants > 10 ans : 1500 mg par jour en 3 prises. Enfant 2-10 ans : 750 mg par jour en 3 prises. Enfant < 2 ans : 375 mg par jour en 3 prises."
-* parameter.part[+].name = "option"
-* parameter.part[=].part[0].name = "isIntended"
-* parameter.part[=].part[=].valueBoolean = false
-* parameter.part[=].part[+].name = "score"
-* parameter.part[=].part[=].valueInteger = 3
-* parameter.part[=].part[+].name = "instruction"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Cefadroxil of Cefalexine"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Céfadroxil ou Céfalexine"
-* parameter.part[=].part[+].name = "evidenceSummary"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Eerste keuze alternatief Cefadroxil: Kind: 30 mg/kg per dag in 2 giften gedurende 7 dagen. Volwassene: 2 g per dag in 2 giften gedurende 7 dagen. Cefalexine: Volwassene: 2 g per dag in 2 giften gedurende 7 dagen."
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Alternative de premier choix : Céfadroxil : Enfant : 30 mg/kg par jour en 2 prises pendant 7 jours. Adulte : 2 g par jour en 2 prises pendant 7 jours. Céfalexine : Adulte : 2 g par jour en 2 prises pendant 7 jours."
-* parameter.part[+].name = "option"
-* parameter.part[=].part[0].name = "isIntended"
-* parameter.part[=].part[=].valueBoolean = true
-* parameter.part[=].part[+].name = "score"
-* parameter.part[=].part[=].valueInteger = 3
-* parameter.part[=].part[+].name = "instruction"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Amoxicilline"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Amoxicilline"
-* parameter.part[=].part[+].name = "evidenceSummary"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Tweede keuze alternatief: Kind: 75-100 mg/kg per dag in 3 giften gedurende 5 dagen. Volwassene: 3 g per dag in 3 giften gedurende 5 dagen."
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Alternative de deuxième choix : Enfant : 75-100 mg/kg par jour en 3 prises pendant 5 jours. Adulte : 3 g par jour en 3 prises pendant 5 jours."
-* parameter.part[+].name = "option"
-* parameter.part[=].part[0].name = "isIntended"
-* parameter.part[=].part[=].valueBoolean = false
-* parameter.part[=].part[+].name = "score"
-* parameter.part[=].part[=].valueInteger = 1
-* parameter.part[=].part[+].name = "instruction"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Amoxicilline-clavulaanzuur"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Amoxicilline-acide clavulanique"
-* parameter.part[=].part[+].name = "evidenceSummary"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Niet aangewezen"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Non indiqué"
-* parameter.part[+].name = "option"
-* parameter.part[=].part[0].name = "isIntended"
-* parameter.part[=].part[=].valueBoolean = false
-* parameter.part[=].part[+].name = "score"
-* parameter.part[=].part[=].valueInteger = 1
-* parameter.part[=].part[+].name = "instruction"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Chinolonen"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Quinolones"
-* parameter.part[=].part[+].name = "evidenceSummary"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Niet aangewezen"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Non indiqué"
-* parameter.part[+].name = "option"
-* parameter.part[=].part[0].name = "isIntended"
-* parameter.part[=].part[=].valueBoolean = false
-* parameter.part[=].part[+].name = "score"
-* parameter.part[=].part[=].valueInteger = 1
-* parameter.part[=].part[+].name = "instruction"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Macroliden"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Macrolides"
-* parameter.part[=].part[+].name = "evidenceSummary"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Niet aangewezen"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Non indiqué"
-* parameter.part[+].name = "option"
-* parameter.part[=].part[0].name = "isIntended"
-* parameter.part[=].part[=].valueBoolean = false
-* parameter.part[=].part[+].name = "score"
-* parameter.part[=].part[=].valueInteger = 1
-* parameter.part[=].part[+].name = "instruction"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Tetracyclinen"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Tétracyclines"
-* parameter.part[=].part[+].name = "evidenceSummary"
-* parameter.part[=].part[=].part[0].name = "NL"
-* parameter.part[=].part[=].part[=].valueString = "Niet aangewezen"
-* parameter.part[=].part[=].part[+].name = "FR"
-* parameter.part[=].part[=].part[=].valueString = "Non indiqué"
+* parameter[supportOptions].name = "supportOptions"
+* parameter[supportOptions].part[0].name = "option"
+* parameter[supportOptions].part[=].part[0].name = "isIntended"
+* parameter[supportOptions].part[=].part[=].valueBoolean = false
+* parameter[supportOptions].part[=].part[+].name = "score"
+* parameter[supportOptions].part[=].part[=].valueInteger = 3
+* parameter[supportOptions].part[=].part[+].name = "instruction"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Feneticilline"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Phénéticilline"
+* parameter[supportOptions].part[=].part[+].name = "evidenceSummary"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Volwassenen en kind > 10 jaar: 1500 mg per dag in 3 giften. Kind 2-10 j: 750 mg per dag in drie giften. Kind < 2 jaar: 375 mg per dag in drie giften."
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Adultes et enfants > 10 ans : 1500 mg par jour en 3 prises. Enfant 2-10 ans : 750 mg par jour en 3 prises. Enfant < 2 ans : 375 mg par jour en 3 prises."
+* parameter[supportOptions].part[+].name = "option"
+* parameter[supportOptions].part[=].part[0].name = "isIntended"
+* parameter[supportOptions].part[=].part[=].valueBoolean = false
+* parameter[supportOptions].part[=].part[+].name = "score"
+* parameter[supportOptions].part[=].part[=].valueInteger = 3
+* parameter[supportOptions].part[=].part[+].name = "instruction"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Cefadroxil of Cefalexine"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Céfadroxil ou Céfalexine"
+* parameter[supportOptions].part[=].part[+].name = "evidenceSummary"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Eerste keuze alternatief Cefadroxil: Kind: 30 mg/kg per dag in 2 giften gedurende 7 dagen. Volwassene: 2 g per dag in 2 giften gedurende 7 dagen. Cefalexine: Volwassene: 2 g per dag in 2 giften gedurende 7 dagen."
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Alternative de premier choix : Céfadroxil : Enfant : 30 mg/kg par jour en 2 prises pendant 7 jours. Adulte : 2 g par jour en 2 prises pendant 7 jours. Céfalexine : Adulte : 2 g par jour en 2 prises pendant 7 jours."
+* parameter[supportOptions].part[+].name = "option"
+* parameter[supportOptions].part[=].part[0].name = "isIntended"
+* parameter[supportOptions].part[=].part[=].valueBoolean = true
+* parameter[supportOptions].part[=].part[+].name = "score"
+* parameter[supportOptions].part[=].part[=].valueInteger = 3
+* parameter[supportOptions].part[=].part[+].name = "instruction"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Amoxicilline"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Amoxicilline"
+* parameter[supportOptions].part[=].part[+].name = "evidenceSummary"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Tweede keuze alternatief: Kind: 75-100 mg/kg per dag in 3 giften gedurende 5 dagen. Volwassene: 3 g per dag in 3 giften gedurende 5 dagen."
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Alternative de deuxième choix : Enfant : 75-100 mg/kg par jour en 3 prises pendant 5 jours. Adulte : 3 g par jour en 3 prises pendant 5 jours."
+* parameter[supportOptions].part[+].name = "option"
+* parameter[supportOptions].part[=].part[0].name = "isIntended"
+* parameter[supportOptions].part[=].part[=].valueBoolean = false
+* parameter[supportOptions].part[=].part[+].name = "score"
+* parameter[supportOptions].part[=].part[=].valueInteger = 1
+* parameter[supportOptions].part[=].part[+].name = "instruction"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Amoxicilline-clavulaanzuur"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Amoxicilline-acide clavulanique"
+* parameter[supportOptions].part[=].part[+].name = "evidenceSummary"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Niet aangewezen"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Non indiqué"
+* parameter[supportOptions].part[+].name = "option"
+* parameter[supportOptions].part[=].part[0].name = "isIntended"
+* parameter[supportOptions].part[=].part[=].valueBoolean = false
+* parameter[supportOptions].part[=].part[+].name = "score"
+* parameter[supportOptions].part[=].part[=].valueInteger = 1
+* parameter[supportOptions].part[=].part[+].name = "instruction"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Chinolonen"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Quinolones"
+* parameter[supportOptions].part[=].part[+].name = "evidenceSummary"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Niet aangewezen"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Non indiqué"
+* parameter[supportOptions].part[+].name = "option"
+* parameter[supportOptions].part[=].part[0].name = "isIntended"
+* parameter[supportOptions].part[=].part[=].valueBoolean = false
+* parameter[supportOptions].part[=].part[+].name = "score"
+* parameter[supportOptions].part[=].part[=].valueInteger = 1
+* parameter[supportOptions].part[=].part[+].name = "instruction"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Macroliden"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Macrolides"
+* parameter[supportOptions].part[=].part[+].name = "evidenceSummary"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Niet aangewezen"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Non indiqué"
+* parameter[supportOptions].part[+].name = "option"
+* parameter[supportOptions].part[=].part[0].name = "isIntended"
+* parameter[supportOptions].part[=].part[=].valueBoolean = false
+* parameter[supportOptions].part[=].part[+].name = "score"
+* parameter[supportOptions].part[=].part[=].valueInteger = 1
+* parameter[supportOptions].part[=].part[+].name = "instruction"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Tetracyclinen"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Tétracyclines"
+* parameter[supportOptions].part[=].part[+].name = "evidenceSummary"
+* parameter[supportOptions].part[=].part[=].part[0].name = "NL"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Niet aangewezen"
+* parameter[supportOptions].part[=].part[=].part[+].name = "FR"
+* parameter[supportOptions].part[=].part[=].part[=].valueString = "Non indiqué"
 
 
 Instance: fd45eea5-eb11-4fd4-b3d4-a885b20ccb49

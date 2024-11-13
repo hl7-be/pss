@@ -37,9 +37,9 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: HL7 Belgium 
-  url: https://www.hl7belgium.org
-  email: hl7belgium@hl7belgium.org
+  name: eHealth Platform
+  url: http://www.ehealth.fgov.be/
+  email: support@be-ehealth-standards.atlassian.net
 
 # ContactDetail is required by the template.
 contact:
@@ -110,6 +110,18 @@ resources:
   Questionnaire/requireddataforantimicro-response:
     name: Antimicrobial 1b
     description: "Antimicrobial step one: output"
+  Questionnaire/requireddataforantimicro-response2:
+    name: Antimicrobial 1b
+    description: "Antimicrobial step one: output (variant 2)"
+  Questionnaire/requireddataforantimicro-response3:
+    name: Antimicrobial 1b
+    description: "Antimicrobial step one: output (variant 3)"
+  QuestionnaireResponse/antimicroguidance-request:
+    name: Antimicrobial 2a
+    description: "Antimicrobial step two: input"
+  Bundle/antimicroResponse:
+    name: Antimicrobial 2b
+    description: "Antimicrobial step two: output"  
 
 # Groups can control certain aspects of the IG generation.  The IG
 # documentation recommends that authors use the default groups that
@@ -149,7 +161,7 @@ pages:
     radiology.md:
       title: "Radiology"
     antimicrobial.md:
-      title: "Radiology"
+      title: "Antimicrobial"
   changes.xml:
   downloads.xml:
 # The ImplementationGuide resource defines several other properties
