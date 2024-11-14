@@ -109,6 +109,15 @@ dependencies:
 # create IG.definition.grouping entries and associate the individual
 # resource entries with the corresponding groupIds.
 groups:
+  PlanDefinitions:
+    name: PlanDefinitions (services)
+    description: PlanDefinitions defining the service endpoints for using the HL7 CPG definitions.
+    resources:
+      - PlanDefinition/GetDataToCollect
+      - PlanDefinition/GetDiagnoses
+      - PlanDefinition/GetRecommendations
+
+
   Antibiology:
     name: Antibiology
     description: Antibiology PSS resource examples
