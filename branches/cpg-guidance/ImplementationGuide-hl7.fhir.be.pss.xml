@@ -35,9 +35,8 @@
   <description value="Example IG exercises many of the fields in a SUSHI configuration."/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-      <display value="World"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.be.pss"/>
@@ -62,7 +61,7 @@
   <dependsOn id="cpg">
     <uri value="https://build.fhir.org/ig/HL7/cqf-recommendations/ImplementationGuide/hl7.fhir.uv.cpg"/>
     <packageId value="hl7.fhir.uv.cpg"/>
-    <version value="2.0.0-ballot"/>
+    <version value="dev"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -266,7 +265,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -468,6 +467,10 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <grouping id="PlanDefinitions">
+      <name value="PlanDefinitions (services)"/>
+      <description value="PlanDefinitions defining the service endpoints for using the HL7 CPG definitions."/>
+    </grouping>
     <grouping id="Antibiology">
       <name value="Antibiology"/>
       <description value="Antibiology PSS resource examples"/>
@@ -649,7 +652,7 @@
         <valueString value="MedicationRequest"/>
       </extension>
       <reference>
-        <reference value="MedicationRequest/clindamycin"/>
+        <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24"/>
       </reference>
       <name value="Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin"/>
       <description value="Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin"/>
@@ -682,66 +685,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/collect-current-meds"/>
-      </reference>
-      <name value="collect-current-meds"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/collect-leukocytes"/>
-      </reference>
-      <name value="collect-leukocytes"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/collect-nitrites"/>
-      </reference>
-      <name value="collect-nitrites"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/collect-past-antibiotic-use"/>
-      </reference>
-      <name value="collect-past-antibiotic-use"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/collect-pregnancy-status"/>
-      </reference>
-      <name value="collect-pregnancy-status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/frequent-urination-with-burning-sensation"/>
-      </reference>
-      <name value="frequent-urination-with-burning-sensation"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PlanDefinition"/>
       </extension>
       <reference>
@@ -750,26 +693,7 @@
       <name value="GetDataToCollect"/>
       <description value="Get Data to Collect"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/getdatatocollect-data"/>
-      </reference>
-      <name value="getdatatocollect-data"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/getdatatocollect-return"/>
-      </reference>
-      <name value="getdatatocollect-return"/>
-      <exampleBoolean value="true"/>
+      <groupingId value="PlanDefinitions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -781,27 +705,7 @@
       <name value="GetDiagnoses"/>
       <description value="Get Diagnoses Data"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/getdiagnoses-data"/>
-      </reference>
-      <name value="getdiagnoses-data"/>
-      <description value="Get Diagnoses Data"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/getdiagnoses-return"/>
-      </reference>
-      <name value="getdiagnoses-return"/>
-      <exampleBoolean value="true"/>
+      <groupingId value="PlanDefinitions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -813,26 +717,7 @@
       <name value="GetRecommendations"/>
       <description value="Get recommendations for potential treatments based on patient information"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/getrecommendations-data"/>
-      </reference>
-      <name value="getrecommendations-data"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/getrecommendations-return"/>
-      </reference>
-      <name value="getrecommendations-return"/>
-      <exampleBoolean value="true"/>
+      <groupingId value="PlanDefinitions"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -847,106 +732,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Task/propose-pulmonary-embolism"/>
+        <reference value="StructureDefinition/ext-radiation-level-score"/>
       </reference>
-      <name value="propose-pulmonary-embolism"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/proposed-diagnosis-acs"/>
-      </reference>
-      <name value="proposed-diagnosis-acs"/>
-      <description value="Proposed diagnosis of Acute Coronary Syndrome"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/proposed-diagnosis-pe"/>
-      </reference>
-      <name value="proposed-diagnosis-pe"/>
-      <description value="Proposed diagnosis of Pulmonary Embolism"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/proposed-diagnosis-pt"/>
-      </reference>
-      <name value="proposed-diagnosis-pt"/>
-      <description value="Proposed diagnosis of Pneumothorax"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/q-collect-current-meds"/>
-      </reference>
-      <name value="q-collect-current-meds"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/q-collect-leukocytes"/>
-      </reference>
-      <name value="q-collect-leukocytes"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/q-collect-nitrites"/>
-      </reference>
-      <name value="q-collect-nitrites"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/q-collect-past-antibiotic-use"/>
-      </reference>
-      <name value="q-collect-past-antibiotic-use"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/q-collect-pregnancy-status"/>
-      </reference>
-      <name value="q-collect-pregnancy-status"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/qr-pregnancy"/>
-      </reference>
-      <name value="qr-pregnancy"/>
-      <exampleBoolean value="true"/>
+      <name value="Radiation level score"/>
+      <description value="The radiation level score."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1136,7 +929,7 @@
         <reference value="Bundle/getrecommendations-data3"/>
       </reference>
       <name value="Radiology - S3 Get Recommendations - Request- 1. request Bundle"/>
-      <description value="Radiology - S3 Get Recommendations Req - 1. request Bundle"/>
+      <description value="Radiology - S3 Get Recommendations - Request - 1. request Bundle"/>
       <exampleBoolean value="true"/>
       <groupingId value="Radiology"/>
     </resource>

@@ -1,272 +1,114 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 84, warn = 99, info = 20
+err = 0, warn = 40, info = 4
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
- Build Errors : 7 / 22 / 0
- /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-data : 0 / 2 / 4
- /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-return : 0 / 11 / 8
+ Build Errors : 1 / 4 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-return2 : 0 / 2 / 4
- /github/workspace/fsh-generated/resources/Bundle-getdatatocollect2-data : 3 / 0 / 5
- /github/workspace/fsh-generated/resources/Bundle-getdiagnoses-data : 0 / 6 / 8
- /github/workspace/fsh-generated/resources/Bundle-getdiagnoses-return : 1 / 3 / 9
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data : 0 / 6 / 8
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect2-data : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 3 / 5
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-return : 12 / 6 / 14
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations2-data : 5 / 1 / 6
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations2-return : 11 / 3 / 14
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations3-return : 4 / 3 / 4
- /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 3 / 5 / 4
- /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses-return : 5 / 5 / 7
- /github/workspace/fsh-generated/resources/Condition-frequent-urination-with-burning-sensation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-acs : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations2-data : 0 / 1 / 6
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations2-return : 0 / 3 / 10
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations3-return : 0 / 3 / 4
+ /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 6 / 4
+ /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses-return : 0 / 5 / 7
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-head-trauma : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-head-trauma-v2 : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-head-trauma-v2 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-infection : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-pe : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-post-trauma-ataxia : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-pt : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-slow-progression-ataxia : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-stroke : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-vulvovaginitis : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/MedicationRequest-clindamycin : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/MedicationRequest-fluconazol : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/MedicationRequest-miconazol : 2 / 0 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-fluconazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-miconazol : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-proposal-clindamycin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ataxia : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Patient-X : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-patient-v : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-patient-y : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-q-collect-current-meds : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information2 : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-q-collect-leukocytes : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-q-collect-nitrites : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-q-collect-past-antibiotic-use : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-q-collect-pregnancy-status : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-qr-pregnancy : 4 / 0 / 1
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information2 : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-return : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-return2-v : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations2-return-1 : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations3-return-1 : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations2-return-1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations3-return-1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v2 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v3 : 3 / 1 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast-v3 : 3 / 1 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-mr-head-without-contrast : 3 / 1 / 1
- /github/workspace/fsh-generated/resources/Task-collect-current-meds : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v3 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast-v3 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-mr-head-without-contrast : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ext-radiation-level-score : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Task-collect-information2 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-collect-leukocytes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-collect-nitrites : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-collect-past-antibiotic-use : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-collect-pregnancy-status : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-propose-head-trauma : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-propose-infection : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-propose-post-trauma-ataxia : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-propose-pulmonary-embolism : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-propose-slow-progression-ataxia : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-propose-stroke : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-head-trauma : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-infection : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-post-trauma-ataxia : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-slow-progression-ataxia : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-stroke : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/collect-current-meds.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/collect-leukocytes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/collect-nitrites.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/collect-past-antibiotic-use.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/collect-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/frequent-urination-with-burning-sensation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/getdatatocollect-data.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/getdatatocollect-return.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/getdiagnoses-return.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/getrecommendations-data.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/getrecommendations-return.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/propose-pulmonary-embolism.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/q-collect-current-meds.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/q-collect-leukocytes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/q-collect-nitrites.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/q-collect-past-antibiotic-use.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/q-collect-pregnancy-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/qr-pregnancy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Bundle-getrecommendations2-return.html#/html/body/div/div/div/div/div/div/blockquote/blockquote/table/tr/td/a at Line 177, column 1604: The link 'clindamycine' for "clindamycine" cannot be resolved
-ERROR: /github/workspace/output/Bundle-getrecommendations3-return.html#/html/body/div/div/div/div/div/div/blockquote/blockquote/p/a at Line 177, column 1086: The link 'ct-head-with-or-without-contrast' for "ct-head-with-or-without-contrast" cannot be resolved
-ERROR: /github/workspace/output/Bundle-getrecommendations3-return.html#/html/body/div/div/div/div/div/div/blockquote/blockquote/p/a at Line 177, column 1480: The link 'mr-head-without-contrast-v3' for "mr-head-without-contrast-v3" cannot be resolved
-ERROR: /github/workspace/output/Condition-proposed-diagnosis-head-trauma-v2.html#/html/body/div/div/div/div/div/div/p/a at Line 177, column 1171: The link 'x' for "x" cannot be resolved
-ERROR: /github/workspace/output/RequestGroup-getrecommendations2-return-1.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 177, column 1065: The link 'clindamycine' for "clindamycine" cannot be resolved
-ERROR: /github/workspace/output/RequestGroup-getrecommendations3-return-1.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 177, column 547: The link 'ct-head-with-or-without-contrast' for "ct-head-with-or-without-contrast" cannot be resolved
-ERROR: /github/workspace/output/RequestGroup-getrecommendations3-return-1.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 177, column 941: The link 'mr-head-without-contrast-v3' for "mr-head-without-contrast-v3" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-q-collect-information2-form.html: unexpected non-end of element null::div  at line 216 column 139
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide.json ==
-ERROR: AllergyIntolerance/allergy-to-sulfonamide: AllergyIntolerance.code.coding[0].display: Wrong Display Name 'sulfonamide' for http://snomed.info/sct#28442001. Valid display is one of 3 choices: 'Polyuria', 'Passes too much urine' or 'Polyuria (finding)' (for the language(s) 'en')
-ERROR: AllergyIntolerance/allergy-to-sulfonamide: AllergyIntolerance: Constraint failed: ait-1: 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.'
-== fsh-generated/resources/Bundle-getdatatocollect-data.json ==
-WARNING: Bundle/getdatatocollect-data: Bundle.entry[1].resource/*Condition/lower-abdominal-pain*/.subject: Entry 0 matches the reference Patient/patient-y by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad48 does not match the full target URL urn:uuid:patient-y by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-data: Bundle.entry[2].resource/*Condition/frequent-urination-with-burning-sensation*/.subject: Entry 0 matches the reference Patient/patient-y by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad48 does not match the full target URL urn:uuid:patient-y by Bundle resolution rules
-== fsh-generated/resources/Bundle-getdatatocollect-return.json ==
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-return-y*/.subject: Entry 6 matches the reference Patient/patient-y by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094adff does not match the full target URL urn:uuid:patient-y by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-return-y*/.action[0].resource: Entry 1 matches the reference Task/collect-pregnancy-status by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4c does not match the full target URL urn:uuid:collect-pregnancy-status by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-return-y*/.action[1].resource: Entry 2 matches the reference Task/collect-past-antibiotic-use by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4b does not match the full target URL urn:uuid:collect-past-antibiotic-use by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-return-y*/.action[2].resource: Entry 3 matches the reference Task/collect-current-meds by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4a does not match the full target URL urn:uuid:collect-current-meds by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-return-y*/.action[3].resource: Entry 4 matches the reference Task/collect-nitrites by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad49 does not match the full target URL urn:uuid:collect-nitrites by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-return-y*/.action[4].resource: Entry 5 matches the reference Task/collect-leukocytes by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad48 does not match the full target URL urn:uuid:collect-leukocytes by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[1].resource/*Task/collect-pregnancy-status*/.for: Entry 6 matches the reference Patient/patient-y by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094adff does not match the full target URL urn:uuid:patient-y by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[2].resource/*Task/collect-past-antibiotic-use*/.for: Entry 6 matches the reference Patient/patient-y by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094adff does not match the full target URL urn:uuid:patient-y by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[3].resource/*Task/collect-current-meds*/.for: Entry 6 matches the reference Patient/patient-y by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094adff does not match the full target URL urn:uuid:patient-y by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[4].resource/*Task/collect-nitrites*/.for: Entry 6 matches the reference Patient/patient-y by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094adff does not match the full target URL urn:uuid:patient-y by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-return: Bundle.entry[5].resource/*Task/collect-leukocytes*/.for: Entry 6 matches the reference Patient/patient-y by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094adff does not match the full target URL urn:uuid:patient-y by Bundle resolution rules
 == fsh-generated/resources/Bundle-getdatatocollect-return2.json ==
 WARNING: Bundle/getdatatocollect-return2: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-return2-v*/.subject: Entry 2 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
 WARNING: Bundle/getdatatocollect-return2: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-return2-v*/.action[0].resource: Entry 1 matches the reference Questionnaire/q-collect-information2 by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4c does not match the full target URL urn:uuid:q-collect-information2 by Bundle resolution rules
 == fsh-generated/resources/Bundle-getdatatocollect2-data.json ==
-ERROR: Bundle/getdatatocollect2-data: Bundle.entry[2].resource/*AllergyIntolerance/allergy-to-sulfonamide*/.code.coding[0].display: Wrong Display Name 'sulfonamide' for http://snomed.info/sct#28442001. Valid display is one of 3 choices: 'Polyuria', 'Passes too much urine' or 'Polyuria (finding)' (for the language(s) 'en')
-ERROR: Bundle/getdatatocollect2-data: Bundle.entry[2].resource/*AllergyIntolerance/allergy-to-sulfonamide*/: Constraint failed: ait-1: 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.'
-ERROR: Bundle/getdatatocollect2-data: Bundle: Constraint failed: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)'
-== fsh-generated/resources/Bundle-getdiagnoses-data.json ==
-WARNING: Bundle/getdiagnoses-data: Bundle.entry[1].resource/*Observation/bmi*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad03 does not match the full target URL urn:uuid:X by Bundle resolution rules
-WARNING: Bundle/getdiagnoses-data: Bundle.entry[1].resource/*Observation/bmi*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/getdiagnoses-data: Bundle.entry[2].resource/*Condition/shortness-of-breath*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad03 does not match the full target URL urn:uuid:X by Bundle resolution rules
-WARNING: Bundle/getdiagnoses-data: Bundle.entry[3].resource/*Condition/chest-pain*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad03 does not match the full target URL urn:uuid:X by Bundle resolution rules
-WARNING: Bundle/getdiagnoses-data: Bundle.entry[4].resource/*Condition/impaired-kidney-function*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad03 does not match the full target URL urn:uuid:X by Bundle resolution rules
-WARNING: Bundle/getdiagnoses-data: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
-== fsh-generated/resources/Bundle-getdiagnoses-return.json ==
-WARNING: Bundle/getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/getdiagnoses-return*/.action[0].resource: Entry 1 matches the reference Task/propose-pulmonary-embolism by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad09 does not match the full target URL urn:uuid:propose-pulmonary-embolism by Bundle resolution rules
-WARNING: Bundle/getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/getdiagnoses-return*/.action[1].resource: Entry 2 matches the reference Task/propose-acute-coronary-syndrome by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad10 does not match the full target URL urn:uuid:propose-acute-coronary-syndrome by Bundle resolution rules
-WARNING: Bundle/getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/getdiagnoses-return*/.action[2].resource: Entry 3 matches the reference Task/propose-pneumothorax by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad11 does not match the full target URL urn:uuid:propose-pneumothorax by Bundle resolution rules
-ERROR: Bundle/getdiagnoses-return: Bundle.entry[1].resource/*Task/propose-pulmonary-embolism*/.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis PE' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
-== fsh-generated/resources/Bundle-getrecommendations-data.json ==
-WARNING: Bundle/getrecommendations-data: Bundle.entry[1].resource/*Observation/bmi*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad12 does not match the full target URL urn:uuid:X by Bundle resolution rules
-WARNING: Bundle/getrecommendations-data: Bundle.entry[1].resource/*Observation/bmi*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/getrecommendations-data: Bundle.entry[2].resource/*Condition/shortness-of-breath*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad12 does not match the full target URL urn:uuid:X by Bundle resolution rules
-WARNING: Bundle/getrecommendations-data: Bundle.entry[3].resource/*Condition/chest-pain*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad12 does not match the full target URL urn:uuid:X by Bundle resolution rules
-WARNING: Bundle/getrecommendations-data: Bundle.entry[4].resource/*Condition/impaired-kidney-function*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad12 does not match the full target URL urn:uuid:X by Bundle resolution rules
-WARNING: Bundle/getrecommendations-data: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Bundle-getrecommendations-data3.json ==
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:X by Bundle resolution rules
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:X by Bundle resolution rules
-== fsh-generated/resources/Bundle-getrecommendations-return.json ==
-WARNING: Bundle/getrecommendations-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-return*/.action[0].action[0].resource: Entry 1 matches the reference MedicationRequest/nitrofurantoin by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:nitrofurantoin by Bundle resolution rules
-WARNING: Bundle/getrecommendations-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-return*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/fosfomycin by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:fosfomycin by Bundle resolution rules
-WARNING: Bundle/getrecommendations-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-return*/.action[0].action[2].resource: Entry 3 matches the reference MedicationRequest/ciprofloxacin by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24 does not match the full target URL urn:uuid:ciprofloxacin by Bundle resolution rules
-WARNING: Bundle/getrecommendations-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-return*/.action[1].action[0].resource: Entry 4 matches the reference ServiceRequest/ct-pulmonary-angiography by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad25 does not match the full target URL urn:uuid:ct-pulmonary-angiography by Bundle resolution rules
-WARNING: Bundle/getrecommendations-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-return*/.action[1].action[1].resource: Entry 5 matches the reference ServiceRequest/ventilation-perfusion-scan by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:ventilation-perfusion-scan by Bundle resolution rules
-WARNING: Bundle/getrecommendations-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-return*/.action[1].action[2].resource: Entry 6 matches the reference ServiceRequest/mri-with-gd-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad27 does not match the full target URL urn:uuid:mri-with-gd-contrast by Bundle resolution rules
-ERROR: Bundle/getrecommendations-return: Bundle.entry[1].resource/*MedicationRequest/nitrofurantoin*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations-return: Bundle.entry[1].resource/*MedicationRequest/nitrofurantoin*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-INFORMATION: Bundle/getrecommendations-return: Bundle.entry[1].resource/*MedicationRequest/nitrofurantoin*/.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/getrecommendations-return: Bundle.entry[2].resource/*MedicationRequest/fosfomycin*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations-return: Bundle.entry[2].resource/*MedicationRequest/fosfomycin*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-INFORMATION: Bundle/getrecommendations-return: Bundle.entry[2].resource/*MedicationRequest/fosfomycin*/.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/getrecommendations-return: Bundle.entry[3].resource/*MedicationRequest/ciprofloxacin*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations-return: Bundle.entry[3].resource/*MedicationRequest/ciprofloxacin*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-INFORMATION: Bundle/getrecommendations-return: Bundle.entry[3].resource/*MedicationRequest/ciprofloxacin*/.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/getrecommendations-return: Bundle.entry[4].resource/*ServiceRequest/ct-pulmonary-angiography*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations-return: Bundle.entry[4].resource/*ServiceRequest/ct-pulmonary-angiography*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-ERROR: Bundle/getrecommendations-return: Bundle.entry[5].resource/*ServiceRequest/ventilation-perfusion-scan*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations-return: Bundle.entry[5].resource/*ServiceRequest/ventilation-perfusion-scan*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-ERROR: Bundle/getrecommendations-return: Bundle.entry[6].resource/*ServiceRequest/mri-with-gd-contrast*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations-return: Bundle.entry[6].resource/*ServiceRequest/mri-with-gd-contrast*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
 == fsh-generated/resources/Bundle-getrecommendations2-data.json ==
-ERROR: Bundle/getrecommendations2-data: Bundle.entry[2].resource/*AllergyIntolerance/allergy-to-sulfonamide*/.code.coding[0].display: Wrong Display Name 'sulfonamide' for http://snomed.info/sct#28442001. Valid display is one of 3 choices: 'Polyuria', 'Passes too much urine' or 'Polyuria (finding)' (for the language(s) 'en')
-ERROR: Bundle/getrecommendations2-data: Bundle.entry[2].resource/*AllergyIntolerance/allergy-to-sulfonamide*/: Constraint failed: ait-1: 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.'
-ERROR: Bundle/getrecommendations2-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/: LinkId 'condition' not found in questionnaire
 WARNING: Bundle/getrecommendations2-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.subject: Entry 0 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
-ERROR: Bundle/getrecommendations2-data: Bundle: Constraint failed: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)'
-ERROR: Bundle/getrecommendations2-data: Bundle.entry[4].resource: LinkId 'condition' not found in questionnaire
 == fsh-generated/resources/Bundle-getrecommendations2-return.json ==
 WARNING: Bundle/getrecommendations2-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations2-return-1*/.action[0].action[0].resource: Entry 1 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations2-return-1*/.action[0].action[1].resource: Relative URLs must be of the format [ResourceName]/[id]. Encountered clindamycine
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations2-return-1*/.action[0].action[1].resource: Unable to resolve resource with reference 'clindamycine'
-WARNING: Bundle/getrecommendations2-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations2-return-1*/.action[0].action[2].resource: Entry 3 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
-WARNING: Bundle/getrecommendations2-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations2-return-1*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[1].resource/*MedicationRequest/metronidazol*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[1].resource/*MedicationRequest/metronidazol*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-INFORMATION: Bundle/getrecommendations2-return: Bundle.entry[1].resource/*MedicationRequest/metronidazol*/.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[2].resource/*MedicationRequest/clindamycin*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[2].resource/*MedicationRequest/clindamycin*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-INFORMATION: Bundle/getrecommendations2-return: Bundle.entry[2].resource/*MedicationRequest/clindamycin*/.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[3].resource/*MedicationRequest/fluconazol*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[3].resource/*MedicationRequest/fluconazol*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-INFORMATION: Bundle/getrecommendations2-return: Bundle.entry[3].resource/*MedicationRequest/fluconazol*/.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[4].resource/*MedicationRequest/miconazol*/.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: Bundle/getrecommendations2-return: Bundle.entry[4].resource/*MedicationRequest/miconazol*/.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-INFORMATION: Bundle/getrecommendations2-return: Bundle.entry[4].resource/*MedicationRequest/miconazol*/.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/getrecommendations2-return: Bundle: Constraint failed: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)'
+WARNING: Bundle/getrecommendations2-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations2-return-1*/.action[0].action[2].resource: Entry 3 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations2-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations2-return-1*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
 == fsh-generated/resources/Bundle-getrecommendations3-return.json ==
-ERROR: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[0].resource: Relative URLs must be of the format [ResourceName]/[id]. Encountered ct-head-with-or-without-contrast
-ERROR: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[0].resource: Unable to resolve resource with reference 'ct-head-with-or-without-contrast'
 WARNING: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[1].resource: The bundle contains no match for urn:uuid:ct-head-iv-contrast by the rules of Bundle reference resolution, but it has multiple resources that match ServiceRequest/ct-head-iv-contrast by resource type and id
 WARNING: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[1].resource: Entry 1 matches the reference ServiceRequest/ct-head-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ct-head-iv-contrast by Bundle resolution rules
 WARNING: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[1].resource: Entry 2 matches the reference ServiceRequest/ct-head-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:ct-head-iv-contrast by Bundle resolution rules
-ERROR: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[2].resource: Relative URLs must be of the format [ResourceName]/[id]. Encountered mr-head-without-contrast-v3
-ERROR: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[2].resource: Unable to resolve resource with reference 'mr-head-without-contrast-v3'
 == fsh-generated/resources/Bundle-radiology-getdiagnoses.json ==
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad03 does not match the full target URL urn:uuid:X by Bundle resolution rules
-ERROR: Bundle/radiology-getdiagnoses: Bundle.entry[2]: Bundle entry missing fullUrl
-ERROR: Bundle/radiology-getdiagnoses: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad03 does not match the full target URL urn:uuid:X by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-ERROR: Bundle/radiology-getdiagnoses: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
 == fsh-generated/resources/Bundle-radiology-getdiagnoses-return.json ==
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[0].resource: Entry 1 matches the reference Task/propose-stroke by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad09 does not match the full target URL urn:uuid:propose-stroke by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[1].resource: Entry 2 matches the reference Task/propose-infection by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad10 does not match the full target URL urn:uuid:propose-infection by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[2].resource: Entry 3 matches the reference Task/propose-head-trauma by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11 does not match the full target URL urn:uuid:propose-head-trauma by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[3].resource: Entry 4 matches the reference Task/propose-slow-progression-ataxia by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad12 does not match the full target URL urn:uuid:propose-slow-progression-ataxia by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[4].resource: Entry 5 matches the reference Task/propose-post-trauma-ataxia by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad13 does not match the full target URL urn:uuid:propose-post-trauma-ataxia by Bundle resolution rules
-ERROR: Bundle/radiology-getdiagnoses-return: Bundle.entry[1].resource/*Task/propose-stroke*/.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Stroke' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
-ERROR: Bundle/radiology-getdiagnoses-return: Bundle.entry[2].resource/*Task/propose-infection*/.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Infection' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
-ERROR: Bundle/radiology-getdiagnoses-return: Bundle.entry[3].resource/*Task/propose-head-trauma*/.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Head trauma' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
-ERROR: Bundle/radiology-getdiagnoses-return: Bundle.entry[4].resource/*Task/propose-slow-progression-ataxia*/.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Chronic or slow progression-ataxia' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
-ERROR: Bundle/radiology-getdiagnoses-return: Bundle.entry[5].resource/*Task/propose-post-trauma-ataxia*/.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Post-trauma ataxia' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
-== fsh-generated/resources/Condition-frequent-urination-with-burning-sensation.json ==
-== fsh-generated/resources/Condition-proposed-diagnosis-acs.json ==
-ERROR: Condition/proposed-diagnosis-acs: Condition.code.coding[0].display: Wrong Display Name 'Acute Coronary Syndrome' for http://snomed.info/sct#59282003. Valid display is one of 3 choices: 'Pulmonary embolism', 'Pulmonary embolism (disorder)' or 'PE - Pulmonary embolism' (for the language(s) 'en')
 == fsh-generated/resources/Condition-proposed-diagnosis-head-trauma.json ==
 WARNING: Condition/proposed-diagnosis-head-trauma: Condition.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-proposed-diagnosis-head-trauma-v2.json ==
 WARNING: Condition/proposed-diagnosis-head-trauma-v2: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
-ERROR: Condition/proposed-diagnosis-head-trauma-v2: Condition.subject: Unable to resolve resource with reference 'x'
-ERROR: Condition.text.div: Hyperlink 'x' at 'div/p/a' for 'x' does not resolve
 == fsh-generated/resources/Condition-proposed-diagnosis-infection.json ==
 WARNING: Condition/proposed-diagnosis-infection: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
-== fsh-generated/resources/Condition-proposed-diagnosis-pe.json ==
 == fsh-generated/resources/Condition-proposed-diagnosis-post-trauma-ataxia.json ==
 WARNING: Condition/proposed-diagnosis-post-trauma-ataxia: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
-== fsh-generated/resources/Condition-proposed-diagnosis-pt.json ==
-ERROR: Condition/proposed-diagnosis-pt: Condition.code.coding[0].display: Wrong Display Name 'Pneumothorax' for http://snomed.info/sct#59282003. Valid display is one of 3 choices: 'Pulmonary embolism', 'Pulmonary embolism (disorder)' or 'PE - Pulmonary embolism' (for the language(s) 'en')
 == fsh-generated/resources/Condition-proposed-diagnosis-slow-progression-ataxia.json ==
 WARNING: Condition/proposed-diagnosis-slow-progression-ataxia: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-proposed-diagnosis-stroke.json ==
 WARNING: Condition/proposed-diagnosis-stroke: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-vulvovaginitis.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
-WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
-== fsh-generated/resources/MedicationRequest-clindamycin.json ==
-INFORMATION: MedicationRequest/clindamycin: MedicationRequest.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: MedicationRequest/clindamycin: MedicationRequest.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: MedicationRequest/clindamycin: MedicationRequest.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
+== fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.json ==
 == fsh-generated/resources/MedicationRequest-fluconazol.json ==
-INFORMATION: MedicationRequest/fluconazol: MedicationRequest.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: MedicationRequest/fluconazol: MedicationRequest.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: MedicationRequest/fluconazol: MedicationRequest.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
 == fsh-generated/resources/MedicationRequest-metronidazol.json ==
-INFORMATION: MedicationRequest/metronidazol: MedicationRequest.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: MedicationRequest/metronidazol: MedicationRequest.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: MedicationRequest/metronidazol: MedicationRequest.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
 == fsh-generated/resources/MedicationRequest-miconazol.json ==
-INFORMATION: MedicationRequest/miconazol: MedicationRequest.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: MedicationRequest/miconazol: MedicationRequest.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: MedicationRequest/miconazol: MedicationRequest.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
 == fsh-generated/resources/MedicationRequest-proposal-clindamycin.json ==
 == fsh-generated/resources/Observation-ataxia.json ==
 WARNING: Observation/ataxia: Observation: Best Practice Recommendation: In general, all observations should have a performer
@@ -275,81 +117,32 @@ WARNING: Observation/ataxia: Observation: Best Practice Recommendation: In gener
 == fsh-generated/resources/Patient-patient-v.json ==
 == fsh-generated/resources/Patient-patient-y.json ==
 == fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
-WARNING: PlanDefinition.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
 INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/PlanDefinition-GetDiagnoses.json ==
-WARNING: PlanDefinition.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
 INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
-WARNING: PlanDefinition.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/Questionnaire-q-collect-current-meds.json ==
-WARNING: Questionnaire.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
 INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-q-collect-information2.json ==
-WARNING: Questionnaire.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
 INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/Questionnaire-q-collect-leukocytes.json ==
-WARNING: Questionnaire.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/Questionnaire-q-collect-nitrites.json ==
-WARNING: Questionnaire.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/Questionnaire-q-collect-past-antibiotic-use.json ==
-WARNING: Questionnaire.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/Questionnaire-q-collect-pregnancy-status.json ==
-WARNING: Questionnaire.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.be.pss, jurisdiction = urn:iso:std:iso:3166#BE instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#BE "null"')
-INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/QuestionnaireResponse-qr-pregnancy.json ==
-ERROR: QuestionnaireResponse/qr-pregnancy: QuestionnaireResponse.questionnaire: Canonical URLs must be absolute URLs if they are not fragment references (q-collect-pregnancy-status)
-ERROR: QuestionnaireResponse/qr-pregnancy: QuestionnaireResponse.item[0]: Constraint failed: qrs-1: 'Nested item can't be beneath both item and answer'
-ERROR: QuestionnaireResponse/qr-pregnancy: QuestionnaireResponse.item[0]: No response answer found for required item '2'
-ERROR: QuestionnaireResponse/qr-pregnancy: QuestionnaireResponse.item[0]: Items not of type group should not have items outside answers (use answer.item not .item)
 == fsh-generated/resources/QuestionnaireResponse-qresponse-v.json ==
-ERROR: QuestionnaireResponse/qresponse-v: QuestionnaireResponse: LinkId 'condition' not found in questionnaire
 == fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-return.json ==
 == fsh-generated/resources/RequestGroup-getdatatocollect-return2-v.json ==
 == fsh-generated/resources/RequestGroup-getrecommendations2-return-1.json ==
-ERROR: RequestGroup/getrecommendations2-return-1: RequestGroup.action[0].action[1].resource: Unable to resolve resource with reference 'clindamycine'
-ERROR: RequestGroup.text.div: Hyperlink 'clindamycine' at 'div/blockquote/table/tr/td/a' for 'clindamycine' does not resolve
 == fsh-generated/resources/RequestGroup-getrecommendations3-return-1.json ==
-ERROR: RequestGroup/getrecommendations3-return-1: RequestGroup.action[0].resource: Unable to resolve resource with reference 'ct-head-with-or-without-contrast'
-ERROR: RequestGroup/getrecommendations3-return-1: RequestGroup.action[2].resource: Unable to resolve resource with reference 'mr-head-without-contrast-v3'
-ERROR: RequestGroup.text.div: Hyperlink 'ct-head-with-or-without-contrast' at 'div/blockquote/p/a' for 'ct-head-with-or-without-contrast' does not resolve
-ERROR: RequestGroup.text.div: Hyperlink 'mr-head-without-contrast-v3' at 'div/blockquote/p/a' for 'mr-head-without-contrast-v3' does not resolve
 == fsh-generated/resources/ServiceRequest-ct-head-iv-contrast.json ==
 == fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v2.json ==
 == fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v3.json ==
-ERROR: ServiceRequest/ct-head-iv-contrast-v3: ServiceRequest.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: ServiceRequest/ct-head-iv-contrast-v3: ServiceRequest.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-ERROR: ServiceRequest/ct-head-iv-contrast-v3: ServiceRequest.extension[1]: Extension.url must be an absolute URL
 WARNING: ServiceRequest/ct-head-iv-contrast-v3: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast-v3.json ==
-ERROR: ServiceRequest/ct-head-with-or-without-contrast-v3: ServiceRequest.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: ServiceRequest/ct-head-with-or-without-contrast-v3: ServiceRequest.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-ERROR: ServiceRequest/ct-head-with-or-without-contrast-v3: ServiceRequest.extension[1]: Extension.url must be an absolute URL
 WARNING: ServiceRequest/ct-head-with-or-without-contrast-v3: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ServiceRequest-mr-head-without-contrast.json ==
-ERROR: ServiceRequest/mr-head-without-contrast: ServiceRequest.extension[0]: The extension http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating could not be found so is not allowed here
-ERROR: ServiceRequest/mr-head-without-contrast: ServiceRequest.extension[0].url: URL value 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating' does not resolve
-ERROR: ServiceRequest/mr-head-without-contrast: ServiceRequest.extension[1]: Extension.url must be an absolute URL
 WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-== fsh-generated/resources/Task-collect-current-meds.json ==
+== fsh-generated/resources/StructureDefinition-ext-radiation-level-score.json ==
+WARNING: StructureDefinition/ext-radiation-level-score: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ext-radiation-level-score'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/Task-collect-information2.json ==
-== fsh-generated/resources/Task-collect-leukocytes.json ==
-== fsh-generated/resources/Task-collect-nitrites.json ==
-== fsh-generated/resources/Task-collect-past-antibiotic-use.json ==
-== fsh-generated/resources/Task-collect-pregnancy-status.json ==
 == fsh-generated/resources/Task-propose-head-trauma.json ==
-ERROR: Task/propose-head-trauma: Task.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Head trauma' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
 == fsh-generated/resources/Task-propose-infection.json ==
-ERROR: Task/propose-infection: Task.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Infection' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
 == fsh-generated/resources/Task-propose-post-trauma-ataxia.json ==
-ERROR: Task/propose-post-trauma-ataxia: Task.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Post-trauma ataxia' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
-== fsh-generated/resources/Task-propose-pulmonary-embolism.json ==
-ERROR: Task/propose-pulmonary-embolism: Task.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis PE' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
 == fsh-generated/resources/Task-propose-slow-progression-ataxia.json ==
-ERROR: Task/propose-slow-progression-ataxia: Task.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Chronic or slow progression-ataxia' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')
 == fsh-generated/resources/Task-propose-stroke.json ==
-ERROR: Task/propose-stroke: Task.input[0].type.coding[0].display: Wrong Display Name 'Propose a diagnosis - Stroke' for http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#propose-diagnosis. Valid display is 'Propose a diagnosis' (for the language(s) 'en')

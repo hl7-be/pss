@@ -34,9 +34,8 @@
   "description" : "Example IG exercises many of the fields in a SUSHI configuration.",
   "jurisdiction" : [{
     "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "001",
-      "display" : "World"
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE"
     }]
   }],
   "packageId" : "hl7.fhir.be.pss",
@@ -66,7 +65,7 @@
     "id" : "cpg",
     "uri" : "https://build.fhir.org/ig/HL7/cqf-recommendations/ImplementationGuide/hl7.fhir.uv.cpg",
     "packageId" : "hl7.fhir.uv.cpg",
-    "version" : "2.0.0-ballot"
+    "version" : "dev"
   }],
   "definition" : {
     "extension" : [{
@@ -346,7 +345,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{
@@ -624,6 +623,11 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "grouping" : [{
+      "id" : "PlanDefinitions",
+      "name" : "PlanDefinitions (services)",
+      "description" : "PlanDefinitions defining the service endpoints for using the HL7 CPG definitions."
+    },
+    {
       "id" : "Antibiology",
       "name" : "Antibiology",
       "description" : "Antibiology PSS resource examples"
@@ -821,7 +825,7 @@
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
-        "reference" : "MedicationRequest/clindamycin"
+        "reference" : "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24"
       },
       "name" : "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin",
       "description" : "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin",
@@ -857,72 +861,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/collect-current-meds"
-      },
-      "name" : "collect-current-meds",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/collect-leukocytes"
-      },
-      "name" : "collect-leukocytes",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/collect-nitrites"
-      },
-      "name" : "collect-nitrites",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/collect-past-antibiotic-use"
-      },
-      "name" : "collect-past-antibiotic-use",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/collect-pregnancy-status"
-      },
-      "name" : "collect-pregnancy-status",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/frequent-urination-with-burning-sensation"
-      },
-      "name" : "frequent-urination-with-burning-sensation",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
@@ -930,29 +868,8 @@
       },
       "name" : "GetDataToCollect",
       "description" : "Get Data to Collect",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/getdatatocollect-data"
-      },
-      "name" : "getdatatocollect-data",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/getdatatocollect-return"
-      },
-      "name" : "getdatatocollect-return",
-      "exampleBoolean" : true
+      "exampleBoolean" : true,
+      "groupingId" : "PlanDefinitions"
     },
     {
       "extension" : [{
@@ -964,30 +881,8 @@
       },
       "name" : "GetDiagnoses",
       "description" : "Get Diagnoses Data",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/getdiagnoses-data"
-      },
-      "name" : "getdiagnoses-data",
-      "description" : "Get Diagnoses Data",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/getdiagnoses-return"
-      },
-      "name" : "getdiagnoses-return",
-      "exampleBoolean" : true
+      "exampleBoolean" : true,
+      "groupingId" : "PlanDefinitions"
     },
     {
       "extension" : [{
@@ -999,29 +894,8 @@
       },
       "name" : "GetRecommendations",
       "description" : "Get recommendations for potential treatments based on patient information",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/getrecommendations-data"
-      },
-      "name" : "getrecommendations-data",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/getrecommendations-return"
-      },
-      "name" : "getrecommendations-return",
-      "exampleBoolean" : true
+      "exampleBoolean" : true,
+      "groupingId" : "PlanDefinitions"
     },
     {
       "extension" : [{
@@ -1038,115 +912,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "Task/propose-pulmonary-embolism"
+        "reference" : "StructureDefinition/ext-radiation-level-score"
       },
-      "name" : "propose-pulmonary-embolism",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/proposed-diagnosis-acs"
-      },
-      "name" : "proposed-diagnosis-acs",
-      "description" : "Proposed diagnosis of Acute Coronary Syndrome",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/proposed-diagnosis-pe"
-      },
-      "name" : "proposed-diagnosis-pe",
-      "description" : "Proposed diagnosis of Pulmonary Embolism",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/proposed-diagnosis-pt"
-      },
-      "name" : "proposed-diagnosis-pt",
-      "description" : "Proposed diagnosis of Pneumothorax",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/q-collect-current-meds"
-      },
-      "name" : "q-collect-current-meds",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/q-collect-leukocytes"
-      },
-      "name" : "q-collect-leukocytes",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/q-collect-nitrites"
-      },
-      "name" : "q-collect-nitrites",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/q-collect-past-antibiotic-use"
-      },
-      "name" : "q-collect-past-antibiotic-use",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/q-collect-pregnancy-status"
-      },
-      "name" : "q-collect-pregnancy-status",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/qr-pregnancy"
-      },
-      "name" : "qr-pregnancy",
-      "exampleBoolean" : true
+      "name" : "Radiation level score",
+      "description" : "The radiation level score.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1352,7 +1125,7 @@
         "reference" : "Bundle/getrecommendations-data3"
       },
       "name" : "Radiology - S3 Get Recommendations - Request- 1. request Bundle",
-      "description" : "Radiology - S3 Get Recommendations Req - 1. request Bundle",
+      "description" : "Radiology - S3 Get Recommendations - Request - 1. request Bundle",
       "exampleBoolean" : true,
       "groupingId" : "Radiology"
     },

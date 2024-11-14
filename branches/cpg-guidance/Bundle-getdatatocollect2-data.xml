@@ -23,7 +23,7 @@
       <Condition>
         <id value="vulvovaginitis"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_vulvovaginitis"> </a><p class="res-header-id"><b>Generated Narrative: Condition vulvovaginitis</b></p><a name="vulvovaginitis"> </a><a name="hcvulvovaginitis"> </a><a name="vulvovaginitis-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 54586004}">Lower abdominal pain</span></p><p><b>subject</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_vulvovaginitis"> </a><p class="res-header-id"><b>Generated Narrative: Condition vulvovaginitis</b></p><a name="vulvovaginitis"> </a><a name="hcvulvovaginitis"> </a><a name="vulvovaginitis-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 54586004}">Lower abdominal pain</span></p><p><b>subject</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB: 1989-09-12</a></p><p><b>onset</b>: 2024-10-13</p></div>
         </text>
         <clinicalStatus>
           <coding>
@@ -70,15 +70,20 @@
       <AllergyIntolerance>
         <id value="allergy-to-sulfonamide"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AllergyIntolerance_allergy-to-sulfonamide"> </a><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance allergy-to-sulfonamide</b></p><a name="allergy-to-sulfonamide"> </a><a name="hcallergy-to-sulfonamide"> </a><a name="allergy-to-sulfonamide-en-US"> </a><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 28442001}">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AllergyIntolerance_allergy-to-sulfonamide"> </a><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance allergy-to-sulfonamide</b></p><a name="allergy-to-sulfonamide"> </a><a name="hcallergy-to-sulfonamide"> </a><a name="allergy-to-sulfonamide-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 91939003}">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>
         </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
         <code>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="28442001"/>
-            <display value="sulfonamide"/>
+            <code value="91939003"/>
+            <display value="Allergy to sulfonamide"/>
           </coding>
-          <text value="Allergy to sulfonamide"/>
         </code>
         <patient>
           <reference value="Patient/patient-y"/>
@@ -87,19 +92,19 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-2e639094ad02"/>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-2e639094ad12"/>
     <resource>
       <MedicationRequest>
         <id value="proposal-clindamycin"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_proposal-clindamycin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest proposal-clindamycin</b></p><a name="proposal-clindamycin"> </a><a name="hcproposal-clindamycin"> </a><a name="proposal-clindamycin-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:{http://snomed.info/sct 28442001}">Polyuria</span></p><p><b>subject</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_proposal-clindamycin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest proposal-clindamycin</b></p><a name="proposal-clindamycin"> </a><a name="hcproposal-clindamycin"> </a><a name="proposal-clindamycin-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:{http://www.whocc.no/atc G01AA10}">clindamycin</span></p><p><b>subject</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>
         </text>
         <status value="active"/>
         <intent value="proposal"/>
         <medicationCodeableConcept>
           <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="28442001"/>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="G01AA10"/>
           </coding>
         </medicationCodeableConcept>
         <subject>
