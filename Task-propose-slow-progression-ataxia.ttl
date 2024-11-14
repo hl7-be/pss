@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "propose-slow-progression-ataxia"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task propose-slow-progression-ataxia</b></p><a name=\"propose-slow-progression-ataxia\"> </a><a name=\"hcpropose-slow-progression-ataxia\"> </a><a name=\"propose-slow-progression-ataxia-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis - Chronic or slow progression-ataxia</span></td><td><a href=\"Condition-proposed-diagnosis-slow-progression-ataxia.html\">Condition Ataxia, Chronic or slow progression-ataxia</a></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task propose-slow-progression-ataxia</b></p><a name=\"propose-slow-progression-ataxia\"> </a><a name=\"hcpropose-slow-progression-ataxia\"> </a><a name=\"propose-slow-progression-ataxia-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-proposed-diagnosis-slow-progression-ataxia.html\">Condition Ataxia, Chronic or slow progression-ataxia</a></td></tr></table></div>"
   ] ; # 
   fhir:status [ fhir:v "requested"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
@@ -30,7 +30,7 @@
        fhir:coding ( [
          fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "propose-diagnosis" ] ;
-         fhir:display [ fhir:v "Propose a diagnosis - Chronic or slow progression-ataxia" ]
+         fhir:display [ fhir:v "Propose a diagnosis" ]
        ] )
      ] ;
      fhir:value [

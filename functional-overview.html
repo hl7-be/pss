@@ -19,6 +19,15 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -38,12 +47,30 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2"}
     h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
+
+        
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
 
 
         <div id="ig-status">
@@ -53,7 +80,7 @@
 
 
 
-  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+  <img alt="Belgium flag" src="assets/images/bel.svg" height="16" title="Belgium"/>
 
 
             </span>
@@ -140,290 +167,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#activity-examples" id="markdown-toc-activity-examples">Activity Examples</a></li>
-  <li><a href="#service-examples" id="markdown-toc-service-examples">Service Examples</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
 <figure>
-  <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="721px" preserveAspectRatio="none" style="width:677px;height:721px;background:#FFFFFF;" version="1.1" viewBox="0 0 677 721" width="677px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="237" x="242.5" y="27.9951">PSS Functional data exchange</text><rect fill="#DDFFEE" height="170.9297" style="stroke:#DDFFEE;stroke-width:1.0;" width="663" x="8" y="85.5938" /><rect fill="#DDEEFF" height="170.9297" style="stroke:#DDEEFF;stroke-width:1.0;" width="472" x="8" y="302.5234" /><rect fill="#FFEEDD" height="170.9297" style="stroke:#FFEEDD;stroke-width:1.0;" width="659" x="8" y="519.4531" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="45.5" x2="45.5" y1="73.5938" y2="270.5234" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="45.5" x2="45.5" y1="270.5234" y2="298.5234" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="45.5" x2="45.5" y1="298.5234" y2="487.4531" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="45.5" x2="45.5" y1="487.4531" y2="515.4531" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="45.5" x2="45.5" y1="515.4531" y2="714.3828" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="443.5" x2="443.5" y1="73.5938" y2="270.5234" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="443.5" x2="443.5" y1="270.5234" y2="298.5234" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="443.5" x2="443.5" y1="298.5234" y2="487.4531" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="443.5" x2="443.5" y1="487.4531" y2="515.4531" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="443.5" x2="443.5" y1="515.4531" y2="714.3828" /><rect fill="#FFFFFF" height="21.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="438.5" y="202.3906" /><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="438.5" y="411.3203" /><rect fill="#FFFFFF" height="21.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="438.5" y="636.25" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="629.5" x2="629.5" y1="73.5938" y2="270.5234" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="629.5" x2="629.5" y1="270.5234" y2="298.5234" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="629.5" x2="629.5" y1="298.5234" y2="487.4531" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="629.5" x2="629.5" y1="487.4531" y2="515.4531" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="629.5" x2="629.5" y1="515.4531" y2="714.3828" /><rect fill="#FFFFFF" height="34.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="624.5" y="202.3906" /><rect fill="#FFFFFF" height="34.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="624.5" y="636.25" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="43" x="24" y="42.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="31" y="62.292">EPD</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="41" x="423" y="42.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="430" y="62.292">PSS</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="37" x="611" y="42.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="618" y="62.292">QSI</text><path d="M8,85.5938 L655,85.5938 L655,92.7266 L645,102.7266 L8,102.7266 L8,85.5938 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="170.9297" style="stroke:#000000;stroke-width:1.5;" width="663" x="8" y="85.5938" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="602" x="23" y="98.6606">Service 1 - Given existing data, query the structured list of applicable indications</text><polygon fill="#181818" points="431.5,190.3906,441.5,194.3906,431.5,198.3906,435.5,194.3906" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="45.5" x2="437.5" y1="194.3906" y2="194.3906" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="52.5" y="128.7935">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="156" x="52.5" y="143.9263">POST /PlanDefinition/</text><a href="PlanDefinition-GetDiagnoses.html" target="_top" title="PlanDefinition-GetDiagnoses.html" xlink:actuate="onRequest" xlink:href="PlanDefinition-GetDiagnoses.html" xlink:show="new" xlink:title="PlanDefinition-GetDiagnoses.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="103" x="208.5" y="143.9263">GetDiagnoses</text></a><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="55" x="311.5" y="143.9263">/$apply</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="56.5" y="159.0591">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="84.5" y="174.1919">subject=Y</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="84.5" y="189.3247">data=</text><a href="Bundle-getdiagnoses-data.html" target="_top" title="Bundle-getdiagnoses-data.html" xlink:actuate="onRequest" xlink:href="Bundle-getdiagnoses-data.html" xlink:show="new" xlink:title="Bundle-getdiagnoses-data.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="44" x="124.5" y="189.3247">Bundle</text></a><polygon fill="#181818" points="617.5,190.3906,627.5,194.3906,617.5,198.3906,621.5,194.3906" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="443.5" x2="623.5" y1="194.3906" y2="194.3906" /><polygon fill="#181818" points="459.5,219.5234,449.5,223.5234,459.5,227.5234,455.5,223.5234" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="453.5" x2="623.5" y1="223.5234" y2="223.5234" /><polygon fill="#181818" points="56.5,219.5234,46.5,223.5234,56.5,227.5234,52.5,223.5234" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="50.5" x2="437.5" y1="223.5234" y2="223.5234" /><a href="Bundle-getdiagnoses-return.html" target="_top" title="Bundle-getdiagnoses-return.html" xlink:actuate="onRequest" xlink:href="Bundle-getdiagnoses-return.html" xlink:show="new" xlink:title="Bundle-getdiagnoses-return.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="124" x="62.5" y="218.4575">Propose Indications</text></a><path d="M8,302.5234 L425,302.5234 L425,309.6563 L415,319.6563 L8,319.6563 L8,302.5234 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="170.9297" style="stroke:#000000;stroke-width:1.5;" width="472" x="8" y="302.5234" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="372" x="23" y="315.5903">Service 2 - Given indications, query data to collect</text><polygon fill="#181818" points="426.5,407.3203,436.5,411.3203,426.5,415.3203,430.5,411.3203" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="45.5" x2="432.5" y1="411.3203" y2="411.3203" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="52.5" y="345.7231">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="156" x="52.5" y="360.856">POST /PlanDefinition/</text><a href="PlanDefinition-GetDataToCollect.html" target="_top" title="PlanDefinition-GetDataToCollect.html" xlink:actuate="onRequest" xlink:href="PlanDefinition-GetDataToCollect.html" xlink:show="new" xlink:title="PlanDefinition-GetDataToCollect.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="128" x="208.5" y="360.856">GetDataToCollect</text></a><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="55" x="336.5" y="360.856">/$apply</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="56.5" y="375.9888">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="84.5" y="391.1216">subject=Y</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="84.5" y="406.2544">data=</text><a href="Bundle-getdatatocollect-data.html" target="_top" title="Bundle-getdatatocollect-data.html" xlink:actuate="onRequest" xlink:href="Bundle-getdatatocollect-data.html" xlink:show="new" xlink:title="Bundle-getdatatocollect-data.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="44" x="124.5" y="406.2544">Bundle</text></a><polygon fill="#181818" points="56.5,436.4531,46.5,440.4531,56.5,444.4531,52.5,440.4531" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="50.5" x2="437.5" y1="440.4531" y2="440.4531" /><a href="Bundle-getdatatocollect-return.html" target="_top" title="Bundle-getdatatocollect-return.html" xlink:actuate="onRequest" xlink:href="Bundle-getdatatocollect-return.html" xlink:show="new" xlink:title="Bundle-getdatatocollect-return.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="147" x="62.5" y="435.3872">Propose data to collect</text></a><path d="M8,519.4531 L651,519.4531 L651,526.5859 L641,536.5859 L8,536.5859 L8,519.4531 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="170.9297" style="stroke:#000000;stroke-width:1.5;" width="659" x="8" y="519.4531" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="598" x="23" y="532.52">Service 3 - Given some data (+ a procedure), request recommended procedures</text><polygon fill="#181818" points="431.5,624.25,441.5,628.25,431.5,632.25,435.5,628.25" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="45.5" x2="437.5" y1="628.25" y2="628.25" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="52.5" y="562.6528">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="156" x="52.5" y="577.7856">POST /PlanDefinition/</text><a href="PlanDefinition-GetRecommendations.html" target="_top" title="PlanDefinition-GetRecommendations.html" xlink:actuate="onRequest" xlink:href="PlanDefinition-GetRecommendations.html" xlink:show="new" xlink:title="PlanDefinition-GetRecommendations.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" text-decoration="underline" textLength="163" x="208.5" y="577.7856">GetRecommendations</text></a><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="55" x="371.5" y="577.7856">/$apply</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="56.5" y="592.9185">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="84.5" y="608.0513">subject=Y</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="84.5" y="623.1841">data=</text><a href="Bundle-getrecommendations-data.html" target="_top" title="Bundle-getrecommendations-data.html" xlink:actuate="onRequest" xlink:href="Bundle-getrecommendations-data.html" xlink:show="new" xlink:title="Bundle-getrecommendations-data.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="44" x="124.5" y="623.1841">Bundle</text></a><polygon fill="#181818" points="617.5,624.25,627.5,628.25,617.5,632.25,621.5,628.25" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="443.5" x2="623.5" y1="628.25" y2="628.25" /><polygon fill="#181818" points="459.5,653.3828,449.5,657.3828,459.5,661.3828,455.5,657.3828" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="453.5" x2="623.5" y1="657.3828" y2="657.3828" /><polygon fill="#181818" points="56.5,653.3828,46.5,657.3828,56.5,661.3828,52.5,657.3828" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="50.5" x2="437.5" y1="657.3828" y2="657.3828" /><a href="Bundle-getrecommendations-return.html" target="_top" title="Bundle-getrecommendations-return.html" xlink:actuate="onRequest" xlink:href="Bundle-getrecommendations-return.html" xlink:show="new" xlink:title="Bundle-getrecommendations-return.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="248" x="62.5" y="652.3169">Bundle with RequestGroup with options</text></a></g></svg>
-  <figcaption>Functional overview of data exchange wtih PSS system</figcaption>
+  <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="721px" preserveAspectRatio="none" style="width:677px;height:721px;background:#FFFFFF;" version="1.1" viewBox="0 0 677 721" width="677px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="237" x="242.5" y="27.9951">PSS Functional data exchange</text><rect fill="#DDFFEE" height="170.9297" style="stroke:#DDFFEE;stroke-width:1.0;" width="663" x="8" y="85.5938" /><rect fill="#DDEEFF" height="170.9297" style="stroke:#DDEEFF;stroke-width:1.0;" width="472" x="8" y="302.5234" /><rect fill="#FFEEDD" height="170.9297" style="stroke:#FFEEDD;stroke-width:1.0;" width="659" x="8" y="519.4531" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="45.5" x2="45.5" y1="73.5938" y2="270.5234" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="45.5" x2="45.5" y1="270.5234" y2="298.5234" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="45.5" x2="45.5" y1="298.5234" y2="487.4531" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="45.5" x2="45.5" y1="487.4531" y2="515.4531" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="45.5" x2="45.5" y1="515.4531" y2="714.3828" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="443.5" x2="443.5" y1="73.5938" y2="270.5234" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="443.5" x2="443.5" y1="270.5234" y2="298.5234" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="443.5" x2="443.5" y1="298.5234" y2="487.4531" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="443.5" x2="443.5" y1="487.4531" y2="515.4531" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="443.5" x2="443.5" y1="515.4531" y2="714.3828" /><rect fill="#FFFFFF" height="21.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="438.5" y="202.3906" /><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="438.5" y="411.3203" /><rect fill="#FFFFFF" height="21.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="438.5" y="636.25" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="629.5" x2="629.5" y1="73.5938" y2="270.5234" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="629.5" x2="629.5" y1="270.5234" y2="298.5234" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="629.5" x2="629.5" y1="298.5234" y2="487.4531" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="629.5" x2="629.5" y1="487.4531" y2="515.4531" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="629.5" x2="629.5" y1="515.4531" y2="714.3828" /><rect fill="#FFFFFF" height="34.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="624.5" y="202.3906" /><rect fill="#FFFFFF" height="34.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="624.5" y="636.25" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="43" x="24" y="42.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="31" y="62.292">EPD</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="41" x="423" y="42.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="430" y="62.292">PSS</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="37" x="611" y="42.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="618" y="62.292">QSI</text><path d="M8,85.5938 L655,85.5938 L655,92.7266 L645,102.7266 L8,102.7266 L8,85.5938 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="170.9297" style="stroke:#000000;stroke-width:1.5;" width="663" x="8" y="85.5938" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="602" x="23" y="98.6606">Service 1 - Given existing data, query the structured list of applicable indications</text><polygon fill="#181818" points="431.5,190.3906,441.5,194.3906,431.5,198.3906,435.5,194.3906" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="45.5" x2="437.5" y1="194.3906" y2="194.3906" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="52.5" y="128.7935">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="314" x="52.5" y="143.9263">POST /PlanDefinition/GetDiagnoses/$apply</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="56.5" y="159.0591">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="84.5" y="174.1919">subject=Y</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="84.5" y="189.3247">data=Bundle</text><polygon fill="#181818" points="617.5,190.3906,627.5,194.3906,617.5,198.3906,621.5,194.3906" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="443.5" x2="623.5" y1="194.3906" y2="194.3906" /><polygon fill="#181818" points="459.5,219.5234,449.5,223.5234,459.5,227.5234,455.5,223.5234" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="453.5" x2="623.5" y1="223.5234" y2="223.5234" /><polygon fill="#181818" points="56.5,219.5234,46.5,223.5234,56.5,227.5234,52.5,223.5234" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="50.5" x2="437.5" y1="223.5234" y2="223.5234" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="62.5" y="218.4575">Propose Indications</text><path d="M8,302.5234 L425,302.5234 L425,309.6563 L415,319.6563 L8,319.6563 L8,302.5234 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="170.9297" style="stroke:#000000;stroke-width:1.5;" width="472" x="8" y="302.5234" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="372" x="23" y="315.5903">Service 2 - Given indications, query data to collect</text><polygon fill="#181818" points="426.5,407.3203,436.5,411.3203,426.5,415.3203,430.5,411.3203" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="45.5" x2="432.5" y1="411.3203" y2="411.3203" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="52.5" y="345.7231">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="339" x="52.5" y="360.856">POST /PlanDefinition/GetDataToCollect/$apply</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="56.5" y="375.9888">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="84.5" y="391.1216">subject=Y</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="84.5" y="406.2544">data=Bundle</text><polygon fill="#181818" points="56.5,436.4531,46.5,440.4531,56.5,444.4531,52.5,440.4531" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="50.5" x2="437.5" y1="440.4531" y2="440.4531" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="147" x="62.5" y="435.3872">Propose data to collect</text><path d="M8,519.4531 L651,519.4531 L651,526.5859 L641,536.5859 L8,536.5859 L8,519.4531 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="170.9297" style="stroke:#000000;stroke-width:1.5;" width="659" x="8" y="519.4531" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="598" x="23" y="532.52">Service 3 - Given some data (+ a procedure), request recommended procedures</text><polygon fill="#181818" points="431.5,624.25,441.5,628.25,431.5,632.25,435.5,628.25" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="45.5" x2="437.5" y1="628.25" y2="628.25" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="52.5" y="562.6528">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="374" x="52.5" y="577.7856">POST /PlanDefinition/GetRecommendations/$apply</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="56.5" y="592.9185">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="84.5" y="608.0513">subject=Y</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="84.5" y="623.1841">data=Bundle</text><polygon fill="#181818" points="617.5,624.25,627.5,628.25,617.5,632.25,621.5,628.25" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="443.5" x2="623.5" y1="628.25" y2="628.25" /><polygon fill="#181818" points="459.5,653.3828,449.5,657.3828,459.5,661.3828,455.5,657.3828" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="453.5" x2="623.5" y1="657.3828" y2="657.3828" /><polygon fill="#181818" points="56.5,653.3828,46.5,657.3828,56.5,661.3828,52.5,657.3828" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="50.5" x2="437.5" y1="657.3828" y2="657.3828" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="248" x="62.5" y="652.3169">Bundle with RequestGroup with options</text></g></svg>
+  <figcaption>Functional overview of data exchange with PSS system</figcaption>
 </figure>
-
-<h3 id="activity-examples">Activity Examples</h3>
-
-<p>The activity examples in this implementation guide provide simplified recommendations for each type of activity to support demonstration applications.</p>
-
-<h3 id="service-examples">Service Examples</h3>
-
-<p>The service examples in this implementation guide provide illustrations of the use of PlanDefinition to describe services where the logic is not expressed in a computable and shareable way, only the inputs and outputs of the service are described. For these examples, the PlanDefinition/$apply operation can still be used, but the implementation of the service is not shareable.</p>
-
-<h4 id="getdiagnoses">GetDiagnoses</h4>
-
-<p>A service that returns a set of possible indications, given patient data.</p>
-
-<h5 id="example-scenario">Example Scenario</h5>
-
-<p><strong>Input:</strong> Male 50yo, BMI=35, shortness of breath, chest pain that worsens with deep breathin, impaired kidney function
-<strong>Output:</strong> Possible indications will be</p>
-<ul>
-  <li>Pulmonary Embolism</li>
-  <li>Acute Coronary Syndrome</li>
-  <li>Pneumothorax</li>
-</ul>
-
-<h5 id="plandefinition">PlanDefinition</h5>
-
-<p><a href="PlanDefinition-GetDiagnoses.html">GetDiagnoses</a></p>
-
-<h5 id="request">Request</h5>
-
-<p>$apply:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Value</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>subject</td>
-      <td>Patient/X</td>
-      <td>A reference to a Patient resource created to provide the age and gender of the patient. This does not necessarily correspond to a Patient on the server or even an actual Patient, it is used to convey the information about the subject and provide a reference for the information provided to the service.</td>
-    </tr>
-    <tr>
-      <td>data</td>
-      <td>Bundle</td>
-      <td>Data provided to the service for evaluation. This example uses the single-bundle approach, but prefetch information can be used to specify more granular breakdowns of the input data to the service.</td>
-    </tr>
-    <tr>
-      <td>return</td>
-      <td>Bundle</td>
-      <td>Bundle containing a RequestGroup and the resulting propose-diagnosis tasks</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST [base]/PlanDefinition/GetDiagnoses/$apply
-</span></code></pre></div></div>
-
-<p>Body</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"input"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"subject"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/X"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"data"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueResource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"getdiagnoses-data"</span><span class="p">,</span><span class="w">
-                </span><span class="err">...</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p><a href="Bundle-getdiagnoses-data.html">GetDiagnoses-Data</a></p>
-
-<h5 id="response">Response</h5>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"output"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"return"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueResource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"getdiagnoses-return"</span><span class="p">,</span><span class="w">
-                </span><span class="err">...</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p><a href="Bundle-getdiagnoses-return.html">GetDiagnoses-Return</a></p>
-
-<h4 id="getdatatocollect">GetDataToCollect</h4>
-
-<h5 id="plandefinition-1">PlanDefinition</h5>
-
-<p><a href="PlanDefinition-GetDataToCollect.html">GetDataToCollect</a></p>
-
-<h5 id="request-1">Request</h5>
-
-<p>$apply:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Value</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>subject</td>
-      <td>Patient/X</td>
-      <td>A reference to a Patient resource created to provide the age and gender of the patient. This does not necessarily correspond to a Patient on the server or even an actual Patient, it is used to convey the information about the subject and provide a reference for the information provided to the service.</td>
-    </tr>
-    <tr>
-      <td>data</td>
-      <td>Bundle</td>
-      <td>Data provided to the service for evaluation. This example uses the single-bundle approach, but prefetch information can be used to specify more granular breakdowns of the input data to the service.</td>
-    </tr>
-    <tr>
-      <td>return</td>
-      <td>Bundle</td>
-      <td>Bundle containing a RequestGroup and the resulting collect-information task</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST [base]/PlanDefinition/GetDataToCollect/$apply
-</span></code></pre></div></div>
-
-<p>Body</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"input"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"subject"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/Y"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"data"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueResource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"getdatatocollect-data"</span><span class="p">,</span><span class="w">
-                </span><span class="err">...</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p><a href="Bundle-getdatatocollect-data.html">GetDataToCollect-Data</a></p>
-
-<h5 id="response-1">Response</h5>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"output"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"return"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueResource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"getdatatocollect-return"</span><span class="p">,</span><span class="w">
-                </span><span class="err">...</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p><a href="Bundle-getdatatocollect-return.html">GetDataToCollect-Return</a></p>
-
-<h4 id="getrecommendations">GetRecommendations</h4>
-
-<h5 id="plandefinition-2">PlanDefinition</h5>
-
-<p><a href="PlanDefinition-GetRecommendations.html">GetRecommendations</a></p>
-
-<h5 id="request-2">Request</h5>
-
-<p>$apply:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Value</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>subject</td>
-      <td>Patient/X</td>
-      <td>A reference to a Patient resource created to provide the age and gender of the patient. This does not necessarily correspond to a Patient on the server or even an actual Patient, it is used to convey the information about the subject and provide a reference for the information provided to the service.</td>
-    </tr>
-    <tr>
-      <td>data</td>
-      <td>Bundle</td>
-      <td>Data provided to the service for evaluation. This example uses the single-bundle approach, but prefetch information can be used to specify more granular breakdowns of the input data to the service.</td>
-    </tr>
-    <tr>
-      <td>return</td>
-      <td>Bundle</td>
-      <td>Bundle containing a RequestGroup and the resulting proposed medications and orders</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST [base]/PlanDefinition/GetRecommendations/$apply
-</span></code></pre></div></div>
-
-<p>Body</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"input"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"subject"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/X"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"data"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueResource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"getrecommendations-data"</span><span class="p">,</span><span class="w">
-                </span><span class="err">...</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p><a href="Bundle-getrecommendations-data.html">GetRecommendations-Data</a></p>
-
-<h5 id="response-2">Response</h5>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"output"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"return"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueResource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"getrecommendations-return"</span><span class="p">,</span><span class="w">
-                </span><span class="err">...</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p><a href="Bundle-getrecommendations-return.html">GetRecommendations-Return</a></p>
 
 
 
@@ -444,13 +195,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 12, 2024 19:15+0000">2024-11-12</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 14, 2024 19:39+0000">2024-11-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+            <!-- HL7 Belgium -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
                  
-                
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -461,7 +219,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -472,7 +230,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

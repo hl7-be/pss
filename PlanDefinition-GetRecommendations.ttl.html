@@ -21,6 +21,15 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -40,12 +49,30 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"5.53"}
-    h3,h4,h5,h6{--heading-prefix:"5.53"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.3"}
+    h3,h4,h5,h6{--heading-prefix:"5.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
+
+        
+<!-- HL7 Belgium -->
+<!-- draft -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
 
 
         <div id="ig-status">
@@ -55,7 +82,7 @@
 
 
 
-  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+  <img alt="Belgium flag" src="assets/images/bel.svg" height="16" title="Belgium"/>
 
 
             </span>
@@ -174,7 +201,7 @@
         
           Active
           
-            as of 2024-11-12
+            as of 2024-11-14
           
         
       </td>
@@ -203,7 +230,7 @@
   <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;GetRecommendations&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PlanDefinition GetRecommendations&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;GetRecommendations\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcGetRecommendations\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;GetRecommendations-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\&quot;PlanDefinition-GetRecommendations.html\&quot;&gt;PlanDefinition: url = http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetRecommendations; version = 1.0.0; type = ECA Rule; status = active; date = 2024-11-12 19:15:58+0000; publisher = HL7 Belgium; contact = HL7 Belgium (https://www.hl7belgium.org, hl7belgium@hl7belgium.org),Message Structure eHealth (message-structure@ehealth.fgov.be(Work)); jurisdiction = World; copyright = &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\&quot;&gt;ECA Rule&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2024-11-12 19:15:58+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: HL7 Belgium&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: HL7 Belgium: &lt;a href=\&quot;https://www.hl7belgium.org\&quot;&gt;https://www.hl7belgium.org&lt;/a&gt;,&lt;a href=\&quot;mailto:hl7belgium@hl7belgium.org\&quot;&gt;hl7belgium@hl7belgium.org&lt;/a&gt;, Message Structure eHealth: &lt;a href=\&quot;mailto:message-structure@ehealth.fgov.be\&quot;&gt;message-structure@ehealth.fgov.be&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://unstats.un.org/unsd/methods/m49/m49.htm 001}\&quot;&gt;World&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Determine potential treatments given relevant patient information&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Given input data, including age, gender, symptoms, diagnoses, and possible orders, determine potential treatments&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs guideline-based-care}\&quot;&gt;Guideline-based Care&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;mustSupport&lt;/b&gt;: birthDate, gender&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Observation&lt;/p&gt;&lt;p&gt;&lt;b&gt;mustSupport&lt;/b&gt;: category, code, value&lt;/p&gt;&lt;h3&gt;CodeFilters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Path&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;category&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html#observation-category-vital-signs\&quot;&gt;Observation Category Codes vital-signs&lt;/a&gt;: Vital Signs&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Condition&lt;/p&gt;&lt;p&gt;&lt;b&gt;mustSupport&lt;/b&gt;: category, code, clinicalStatus, verificationStatus, onset&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;codeFilter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: category&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html#condition-category-encounter-diagnosis\&quot;&gt;Condition Category Codes encounter-diagnosis&lt;/a&gt;: Encounter Diagnosis, &lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html#condition-category-problem-list-item\&quot;&gt;Condition Category Codes problem-list-item&lt;/a&gt;: Problem List Item&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: ServiceRequest&lt;/p&gt;&lt;p&gt;&lt;b&gt;mustSupport&lt;/b&gt;: category, code&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Outputs&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;ServiceRequest&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/uv/cpg/2024Jan/StructureDefinition-cpg-servicerequest.html\&quot;&gt;CPG Service Request&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;MedicationRequest&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/uv/cpg/2024Jan/StructureDefinition-cpg-medicationrequest.html\&quot;&gt;CPG Medicaiton Request&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: PlanDefinition GetRecommendations&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;GetRecommendations\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcGetRecommendations\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;GetRecommendations-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\&quot;PlanDefinition-GetRecommendations.html\&quot;&gt;PlanDefinition: url = http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetRecommendations; version = 1.0.0; type = ECA Rule; status = active; date = 2024-11-14 19:39:21+0000; publisher = HL7 Belgium; contact = HL7 Belgium (https://www.hl7belgium.org, hl7belgium@hl7belgium.org),Message Structure eHealth (message-structure@ehealth.fgov.be(Work)); jurisdiction = Belgium; copyright = &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\&quot;&gt;ECA Rule&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2024-11-14 19:39:21+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: HL7 Belgium&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: HL7 Belgium: &lt;a href=\&quot;https://www.hl7belgium.org\&quot;&gt;https://www.hl7belgium.org&lt;/a&gt;,&lt;a href=\&quot;mailto:hl7belgium@hl7belgium.org\&quot;&gt;hl7belgium@hl7belgium.org&lt;/a&gt;, Message Structure eHealth: &lt;a href=\&quot;mailto:message-structure@ehealth.fgov.be\&quot;&gt;message-structure@ehealth.fgov.be&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: &lt;span title=\&quot;Codes:{urn:iso:std:iso:3166 BE}\&quot;&gt;Belgium&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Determine potential treatments given relevant patient information&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Given input data, including age, gender, symptoms, diagnoses, and possible orders, determine potential treatments&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs guideline-based-care}\&quot;&gt;Guideline-based Care&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;mustSupport&lt;/b&gt;: birthDate, gender&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Observation&lt;/p&gt;&lt;p&gt;&lt;b&gt;mustSupport&lt;/b&gt;: category, code, value&lt;/p&gt;&lt;h3&gt;CodeFilters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Path&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;category&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html#observation-category-vital-signs\&quot;&gt;Observation Category Codes vital-signs&lt;/a&gt;: Vital Signs&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Condition&lt;/p&gt;&lt;p&gt;&lt;b&gt;mustSupport&lt;/b&gt;: category, code, clinicalStatus, verificationStatus, onset&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;codeFilter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: category&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html#condition-category-encounter-diagnosis\&quot;&gt;Condition Category Codes encounter-diagnosis&lt;/a&gt;: Encounter Diagnosis, &lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html#condition-category-problem-list-item\&quot;&gt;Condition Category Codes problem-list-item&lt;/a&gt;: Problem List Item&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;input&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: ServiceRequest&lt;/p&gt;&lt;p&gt;&lt;b&gt;mustSupport&lt;/b&gt;: category, code&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Outputs&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;ServiceRequest&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://build.fhir.org/ig/HL7/cqf-recommendations/StructureDefinition-cpg-servicerequest.html\&quot;&gt;CPG Service Request&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;MedicationRequest&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://build.fhir.org/ig/HL7/cqf-recommendations/StructureDefinition-cpg-medicationrequest.html\&quot;&gt;CPG Medication Request&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetRecommendations&quot;^^xsd:anyURI] ; # 
   <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;] ; # 
@@ -213,7 +240,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;eca-rule&quot; ]     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-11-12T19:15:58+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-11-14T19:39:21+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 Belgium&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 Belgium&quot; ] ;
@@ -231,9 +258,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.jurisdiction">fhir:jurisdiction</a> ( [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;001&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;World&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;BE&quot; ]     ] )
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action">fhir:action</a> ( [
 <a href="http://hl7.org/fhir/R4/plandefinition.html#PlanDefinition.action.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Determine potential treatments given relevant patient information&quot; ] ;
@@ -299,13 +325,20 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 12, 2024 19:15+0000">2024-11-12</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 14, 2024 19:39+0000">2024-11-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+            <!-- HL7 Belgium -->
+<!-- draft -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
                  
-                
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -316,7 +349,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -327,7 +360,6 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>
