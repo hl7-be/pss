@@ -1,7 +1,7 @@
 Instance: getrecommendations-data3
 InstanceOf: Bundle
 Title: "Radiology - S3 Get Recommendations - Request- 1. request Bundle"
-Description: "Radiology - S3 Get Recommendations Req - 1. request Bundle"
+Description: "Radiology - S3 Get Recommendations - Request - 1. request Bundle"
 Usage: #example
 * type = #collection
 * entry[0].resource = X
@@ -27,7 +27,7 @@ Usage: #example
 * verificationStatus = $condition-ver-status#provisional
 * category = $condition-category#problem-list-item
 * code.coding[0] = $qsi#5000246 "Head trauma"
-* subject = Reference(x)
+* subject = Reference(X)
 * onsetDateTime = "2024-10-13"
 
 

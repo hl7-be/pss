@@ -9,11 +9,11 @@ Usage: #example
 * entry[+].resource = vulvovaginitis
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad01"
 * entry[+].resource = allergy-to-sulfonamide
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad02"
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ada2"
 * entry[+].resource = proposal-clindamycin
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad02"
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad0b"
 * entry[+].resource = qresponse-v
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad02"
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ac02"
 
 
 Instance: qresponse-v
@@ -31,7 +31,7 @@ Usage: #example
 //   * linkId = "conditions"
 //   * answer[+].valueCoding = http://snomed.info/sct#419760006
 * item[0]
-  * linkId = "condition"
+  * linkId = "conditions"
   * item[0]
     * linkId = "condition1"
     * answer.valueBoolean = true

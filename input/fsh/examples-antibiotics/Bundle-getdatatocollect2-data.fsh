@@ -12,7 +12,7 @@ Usage: #example
 * entry[+].resource = allergy-to-sulfonamide
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad02"
 * entry[+].resource = proposal-clindamycin
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad02"
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad12"
 
 
 
@@ -47,9 +47,9 @@ InstanceOf: AllergyIntolerance
 Title: "Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"
 Description: "Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"
 Usage: #example
-* code = $sct#28442001 "sulfonamide"
-  * text = "Allergy to sulfonamide"
+* code = $sct#91939003 "Allergy to sulfonamide"
 * patient = Reference(patient-y)
+* clinicalStatus = $allergy-clinical#active
 
 
 Instance: proposal-clindamycin
@@ -57,8 +57,8 @@ InstanceOf: MedicationRequest
 Title: "Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"
 Description: "Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"
 Usage: #example
-//* code = $sct#28442001 "sulfonamide"
+//* code = $sct#28442001 "Allergy to sulfonamides"
 * subject = Reference(patient-y)
 * status = #active
 * intent = #proposal
-* medicationCodeableConcept = $sct#28442001
+* medicationCodeableConcept = $atc#G01AA10

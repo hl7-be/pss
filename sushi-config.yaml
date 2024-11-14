@@ -53,8 +53,7 @@ contact:
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
-
+jurisdiction: urn:iso:std:iso:3166#BE
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -63,7 +62,8 @@ dependencies:
   hl7.fhir.uv.cpg:
     id: cpg
     uri: https://build.fhir.org/ig/HL7/cqf-recommendations/ImplementationGuide/hl7.fhir.uv.cpg
-    version: 2.0.0-ballot
+#    version: 2.0.0-ballot
+    version: 2.0.0-draft
 #  hl7.fhir.us.core: 3.1.0
 #  hl7.fhir.us.mcode:
 #    id: mcode
@@ -131,7 +131,7 @@ groups:
       - Bundle/getrecommendations2-return
       - RequestGroup/getrecommendations2-return-1
       - MedicationRequest/metronidazol
-      - MedicationRequest/clindamycin
+      - MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24
       - MedicationRequest/fluconazol
       - MedicationRequest/miconazol
 
@@ -250,3 +250,4 @@ FSHOnly: false
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
+

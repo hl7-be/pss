@@ -1,3 +1,12 @@
+Extension: ext-radiation-level-score
+Id:        ext-radiation-level-score
+Title:     "Radiation level score"
+Description: "The radiation level score."
+* ^context[+].type = #element
+* ^context[=].expression = "ServiceRequest"
+* value[x] only Ratio  // 0 or more
+
+
 Instance: getrecommendations3-return
 InstanceOf: Bundle
 Title: "Radiology - S3 Get Recommendations - Response - 1. Bundle"
@@ -23,13 +32,13 @@ Usage: #example
 * subject = Reference(X)
 * action[0]
   * textEquivalent = "CD Head with or without contrast"
-  * resource = Reference(ct-head-with-or-without-contrast)
+  * resource = Reference(ct-head-with-or-without-contrast-v3)
 * action[+]
   * textEquivalent = "CD Head with IV contrast"
   * resource = Reference(ct-head-iv-contrast)
 * action[+]
   * textEquivalent = "CD Head with IV contrast"
-  * resource = Reference(mr-head-without-contrast-v3)
+  * resource = Reference(mr-head-without-contrast)
 
 
 Instance: ct-head-iv-contrast-v3
@@ -43,8 +52,7 @@ Usage: #example
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10
-* extension[+]
-  * url = "radiation-level-score"
+* extension[ext-radiation-level-score]
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10
@@ -65,8 +73,7 @@ Usage: #example
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10
-* extension[+]
-  * url = "radiation-level-score"
+* extension[ext-radiation-level-score]
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10
@@ -86,8 +93,8 @@ Usage: #example
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10
-* extension[+]
-  * url = "radiation-level-score"
+* extension[ext-radiation-level-score]
+//  * url = "http://hl7belgium.org/fhir/PSS/ext-radiation-level-score"
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10

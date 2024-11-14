@@ -4,7 +4,7 @@ Title PSS Functional data exchange
 hide footbox
 
 group #DFE Service 1 - Given existing data, query the structured list of applicable indications
-        EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetDiagnoses.html GetDiagnoses]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getdiagnoses-data.html Bundle]]
+        EPD -> PSS : \n**POST /PlanDefinition/GetDiagnoses/$apply**\n Payload:\n        subject=Y\n        data=Bundle
         & PSS -> QSI 
         & PSS -[hidden]-> QSI : "                                      "
         'PSS -> QSI : GET /indictions
@@ -12,7 +12,7 @@ group #DFE Service 1 - Given existing data, query the structured list of applica
         activate PSS
         activate QSI
         QSI -> PSS 
-        & PSS -> EPD: [[Bundle-getdiagnoses-return.html Propose Indications]]
+        & PSS -> EPD: Propose Indications
         deactivate PSS
         deactivate QSI
         |||
@@ -20,24 +20,24 @@ end
 ...
 group #def Service 2 - Given indications, query data to collect
 
-        EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetDataToCollect.html GetDataToCollect]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getdatatocollect-data.html Bundle]]
+        EPD -> PSS : \n**POST /PlanDefinition/GetDataToCollect/$apply**\n Payload:\n        subject=Y\n        data=Bundle
 
         Activate PSS
 
-        PSS -> EPD: [[Bundle-getdatatocollect-return.html Propose data to collect]]
+        PSS -> EPD: Propose data to collect
         deactivate PSS
         |||
 end
 ...
 group #fed Service 3 - Given some data (+ a procedure), request recommended procedures
-        EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetRecommendations.html GetRecommendations]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getrecommendations-data.html Bundle]]
+        EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$apply**\n Payload:\n        subject=Y\n        data=Bundle
         & PSS --> QSI 
         & PSS -[hidden]-> QSI : "                                      "
 
         activate PSS
         activate QSI
         QSI --> PSS 
-        & PSS -> EPD: [[Bundle-getrecommendations-return.html Bundle with RequestGroup with options]]
+        & PSS -> EPD: Bundle with RequestGroup with options
         deactivate PSS
         deactivate QSI
         |||

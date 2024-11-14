@@ -4,7 +4,7 @@ RuleSet: proposeDiagnosisTask(scenario,patient,diagnosisId,diagnosisName,qsiDiag
 * code = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
 * for = Reference({patient})
 * input
-  * type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis - {diagnosisName}"
+  * type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
   * valueReference = Reference(proposed-diagnosis-{diagnosisId})
 
 

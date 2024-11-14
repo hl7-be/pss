@@ -4,7 +4,7 @@ Title PSS Functional data exchange - Radiology
 hide footbox
 
 group #DFE Service 1 - Given existing data, query the structured list of applicable indications
-        EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetDiagnoses.html GetDiagnoses]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getdiagnoses-data.html Bundle]]
+        EPD -> PSS : \n**POST /PlanDefinition/GetDiagnoses/$apply**\n Payload:\n        subject=Y\n        data=Bundle
         & PSS -> QSI 
         & PSS -[hidden]-> QSI : "                                      "
         'PSS -> QSI : GET /indications
@@ -18,7 +18,7 @@ See 1. below
        |||
        ||| 
         QSI -> PSS 
-        & PSS -> EPD: [[Bundle-getdiagnoses-return.html 1. Propose Indications]]
+        & PSS -> EPD: 1. Propose Indications
 
         deactivate PSS
         deactivate QSI
@@ -32,7 +32,7 @@ end note
 end
 ...
 group #fed Service 3 - Given some data (+ a procedure), request recommended procedures
-        EPD -> PSS : \n**POST /PlanDefinition/[[PlanDefinition-GetRecommendations.html GetRecommendations]]/$apply**\n Payload:\n        subject=Y\n        data=[[Bundle-getrecommendations-data.html Bundle]]
+        EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$apply**\n Payload:\n        subject=Y\n        data=Bundle
         & PSS --> QSI 
         & PSS -[hidden]-> QSI : "                                      "
 
@@ -45,7 +45,7 @@ end note
 
 
         QSI --> PSS 
-        & PSS -> EPD: [[Bundle-getrecommendations-return.html 2. Bundle with RequestGroup with options]]
+        & PSS -> EPD: 2. Bundle with RequestGroup with options
 
         deactivate PSS
         deactivate QSI

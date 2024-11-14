@@ -8,12 +8,12 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
 * entry[+].resource = metronidazol
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
-* entry[+].resource = clindamycin
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"
+* entry[+].resource = 30551ce1-5a28-4356-b684-1e639094ad24
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24"
 * entry[+].resource = fluconazol
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26"
 * entry[+].resource = miconazol
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"
 
 Instance: getrecommendations2-return-1
 InstanceOf: RequestGroup
@@ -32,7 +32,7 @@ Usage: #example
     * resource = Reference(metronidazol)
   * action[+]
     * textEquivalent = "Fosfomycin (7/10), single 3g dose"
-    * resource = Reference(clindamycine)
+    * resource = Reference(30551ce1-5a28-4356-b684-1e639094ad24)
   * action[+]
     * textEquivalent = "Fluconazol Oraal"
     * resource = Reference(fluconazol)
@@ -61,8 +61,8 @@ Instance: clindamycin
 InstanceOf: MedicationRequest
 Title: "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin"
 Description: "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin"
-
 Usage: #example
+* id = "30551ce1-5a28-4356-b684-1e639094ad24"
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 * extension
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
