@@ -1,5 +1,5 @@
 Instance: radiogetindicationspayload
-InstanceOf: Parameters
+InstanceOf: BeRadiologyGetIndicationsInput
 Usage: #example
 * parameter[0].name = "age"
 * parameter[=].valueAge.value = 35

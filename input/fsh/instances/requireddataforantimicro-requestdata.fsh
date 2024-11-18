@@ -1,5 +1,5 @@
 Instance: requireddataforantimicro-requestdata
-InstanceOf: Parameters
+InstanceOf: BeAntiMicroGetIndicationsInput
 Usage: #example
 * parameter[0].name = "age"
 * parameter[=].valueAge.value = 35

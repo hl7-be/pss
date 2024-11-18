@@ -37,9 +37,9 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: HL7 Belgium 
-  url: https://www.hl7belgium.org
-  email: hl7belgium@hl7belgium.org
+  name: eHealth Platform
+  url: http://www.ehealth.fgov.be/
+  email: support@be-ehealth-standards.atlassian.net
 
 # ContactDetail is required by the template.
 contact:
@@ -91,12 +91,37 @@ jurisdiction: urn:iso:std:iso:3166#BE
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
-#resources:
-#  Patient/my-example-patient:
-#    name: My Example Patient
-#    description: An example Patient
-#    exampleBoolean: true
-#  Patient/bad-example: omit
+resources:
+  Parameters/radiogetindicationspayload:
+    name: Radio 1a
+    description: "Radiology step one: input"
+  Questionnaire/indications-response:
+    name: Radio 1b
+    description: "Radiology step one: output"
+  QuestionnaireResponse/indication-selection:
+    name: Radio 2a
+    description: "Radiology step two: input"
+  Bundle/radiology-response:
+    name: Radio 2b
+    description: "Radiology step two: output"  
+  Parameters/requireddataforantimicro-requestdata:
+    name: Antimicrobial 1a
+    description: "Antimicrobial step one: input"
+  Questionnaire/requireddataforantimicro-response:
+    name: Antimicrobial 1b
+    description: "Antimicrobial step one: output"
+  Questionnaire/requireddataforantimicro-response2:
+    name: Antimicrobial 1b
+    description: "Antimicrobial step one: output (variant 2)"
+  Questionnaire/requireddataforantimicro-response3:
+    name: Antimicrobial 1b
+    description: "Antimicrobial step one: output (variant 3)"
+  QuestionnaireResponse/antimicroguidance-request:
+    name: Antimicrobial 2a
+    description: "Antimicrobial step two: input"
+  Bundle/antimicroResponse:
+    name: Antimicrobial 2b
+    description: "Antimicrobial step two: output"  
 
 # Groups can control certain aspects of the IG generation.  The IG
 # documentation recommends that authors use the default groups that
@@ -136,7 +161,7 @@ pages:
     radiology.md:
       title: "Radiology"
     antimicrobial.md:
-      title: "Radiology"
+      title: "Antimicrobial"
   changes.xml:
   downloads.xml:
 # The ImplementationGuide resource defines several other properties
