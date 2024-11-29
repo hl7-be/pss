@@ -57,7 +57,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.0.2" ]
+     fhir:version [ fhir:v "6.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -73,11 +73,11 @@
   ] [
      fhir:id [ fhir:v "cpg" ] ;
      fhir:uri [
-       fhir:v "https://build.fhir.org/ig/HL7/cqf-recommendations/ImplementationGuide/hl7.fhir.uv.cpg"^^xsd:anyURI ;
-       fhir:link <https://build.fhir.org/ig/HL7/cqf-recommendations/ImplementationGuide/hl7.fhir.uv.cpg>
+       fhir:v "https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"^^xsd:anyURI ;
+       fhir:link <https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.cpg" ] ;
-     fhir:version [ fhir:v "dev" ]
+     fhir:version [ fhir:v "2.0.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
