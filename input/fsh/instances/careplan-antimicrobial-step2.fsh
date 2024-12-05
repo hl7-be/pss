@@ -2,7 +2,7 @@ Instance: careplan-antimicrobial-step2
 InstanceOf: CarePlan
 * contained[+] = antimicrobial-questionnaire-task
 * contained[+] = temp-patient
-* contained[+] = requireddataforantimicro-response
+//* contained[+] = requireddataforantimicro-response
 * status = #active
 * intent = #order
 * subject = Reference(temp-patient)
