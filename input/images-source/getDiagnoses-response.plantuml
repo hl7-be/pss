@@ -1,0 +1,38 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+package "Bundle" {
+  class "  RequestGroup  " as RG #cfc{
+  }
+
+    class "  Patient  " as P #cff{
+  }
+P .d. RG :"   "
+P .r. T : "         "
+P .. CD 
+'RG ".action" o-- T 
+T ".input" o-- CD
+  
+
+  class "  Task  " as T #ffd{
+  }
+
+
+  class " Condition " as CD #fdd{
+  }
+
+
+}
+legend
+Response is a Bundle containing
+* a RequestGroup
+* 0..N Tasks as a request
+** to consider a diagnosis (Condition)
+
+each Task is an option in RequestGroup
+Tasks indicate "please consider this Condition"
+endlegend
+
+@enduml

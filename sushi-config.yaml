@@ -8,7 +8,7 @@
 
 
 id: hl7.fhir.be.pss
-canonical: https://www.ehealth.fgov.be/standards/fhir/pss
+canonical: https://www.ehealth.fgov.be/standards/fhir/medication
 # url: http://example.com/fhir/example/ImplementationGuide/my-ig
 name: PrescriptionSearchSupport
 title: "Prescription Search Support"
@@ -53,13 +53,16 @@ contact:
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: urn:iso:std:iso:3166#BE 
-
+jurisdiction: urn:iso:std:iso:3166#BE
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for `uri` and `version`.
-#dependencies:
+dependencies:
+  hl7.fhir.uv.cpg:
+    id: cpg
+    uri: https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg
+    version: 2.0.0
 #  hl7.fhir.us.core: 3.1.0
 #  hl7.fhir.us.mcode:
 #    id: mcode
@@ -129,11 +132,80 @@ resources:
 # use their own instead, they can use the mechanism below.  This will
 # create IG.definition.grouping entries and associate the individual
 # resource entries with the corresponding groupIds.
-#groups:
-#  GroupA:
-#    name: Group A
-#    description: The Alpha Group
-#    resources:
+groups:
+  PlanDefinitions:
+    name: PlanDefinitions (services)
+    description: PlanDefinitions defining the service endpoints for using the HL7 CPG definitions.
+    resources:
+      - PlanDefinition/GetDataToCollect
+      - PlanDefinition/GetDiagnoses
+      - PlanDefinition/GetRecommendations
+
+
+  Antibiology:
+    name: Antibiology
+    description: Antibiology PSS resource examples
+    resources:
+      - Bundle/getdatatocollect2-data
+      - Patient/patient-v
+      - vulvovaginitis
+      - AllergyIntolerance/allergy-to-sulfonamide
+      - MedicationRequest/proposal-clindamycin
+
+      - Bundle/getdatatocollect-return2
+      - RequestGroup/getdatatocollect-return2-v
+      - Task/collect-information2
+      - Questionnaire/q-collect-information2
+
+      - Bundle/getrecommendations2-data
+      - QuestionnaireResponse/qresponse-v
+      - Patient/patient-v
+
+      - Bundle/getrecommendations2-return
+      - RequestGroup/getrecommendations2-return-1
+      - MedicationRequest/metronidazol
+      - MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24
+      - MedicationRequest/fluconazol
+      - MedicationRequest/miconazol
+
+      
+
+
+
+
+  Radiology:
+    name: Radiology
+    description: Radiology PSS resource examples
+    resources: 
+      - Bundle/radiology-getdiagnoses
+      - Observation/ataxia
+      - ServiceRequest/ct-head-iv-contrast
+
+      - Bundle/radiology-getdiagnoses-return
+      - RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return
+      - Task/propose-stroke
+      - Condition/proposed-diagnosis-stroke
+      - Task/propose-infection
+      - Condition/proposed-diagnosis-infection
+      - Task/propose-head-trauma
+      - Condition/proposed-diagnosis-head-trauma
+      - Task/propose-slow-progression-ataxia
+      - Condition/proposed-diagnosis-slow-progression-ataxia
+      - Task/propose-post-trauma-ataxia
+      - Condition/proposed-diagnosis-post-trauma-ataxia
+
+      - Bundle/getrecommendations-data3
+      - Condition/proposed-diagnosis-head-trauma-v2
+      - ServiceRequest/ct-head-iv-contrast-v2
+
+      - Bundle/getrecommendations3-return
+      - RequestGroup/getrecommendations3-return-1
+      - ServiceRequest/ct-head-iv-contrast-v3
+      - ServiceRequest/ct-head-with-or-without-contrast-v3
+      - ServiceRequest/mr-head-without-contrast
+
+
+
 #    - StructureDefinition/animal-patient
 #    - StructureDefinition/arm-procedure
 #  GroupB:
@@ -161,7 +233,7 @@ pages:
     radiology.md:
       title: "Radiology"
     antimicrobial.md:
-      title: "Antimicrobial"
+      title: "Antimicrobiology"
   changes.xml:
   downloads.xml:
 # The ImplementationGuide resource defines several other properties
@@ -211,3 +283,4 @@ FSHOnly: false
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
+
