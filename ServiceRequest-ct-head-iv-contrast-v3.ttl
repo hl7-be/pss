@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/ct-head-iv-contrast-v3> a fhir:ServiceRequest ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/ct-head-iv-contrast-v3> a fhir:ServiceRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ct-head-iv-contrast-v3"] ; # 
   fhir:meta [
@@ -36,7 +36,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] . # 
 

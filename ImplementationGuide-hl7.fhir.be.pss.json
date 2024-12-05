@@ -3,24 +3,24 @@
   "id" : "hl7.fhir.be.pss",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name=\"hl7.fhir.be.pss\"> </a><a name=\"hchl7.fhir.be.pss\"> </a><a name=\"hl7.fhir.be.pss-en-US\"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name=\"hl7.fhir.be.pss\"> </a><a name=\"hchl7.fhir.be.pss\"> </a><a name=\"hl7.fhir.be.pss-en-US\"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
   },
-  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss",
   "version" : "1.0.0",
   "name" : "PrescriptionSearchSupport",
   "title" : "Prescription Search Support",
   "status" : "draft",
   "date" : "2024-04-26",
-  "publisher" : "HL7 Belgium",
+  "publisher" : "eHealth Platform",
   "contact" : [{
-    "name" : "HL7 Belgium",
+    "name" : "eHealth Platform",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7belgium.org"
+      "value" : "http://www.ehealth.fgov.be/"
     },
     {
       "system" : "email",
-      "value" : "hl7belgium@hl7belgium.org"
+      "value" : "support@be-ehealth-standards.atlassian.net"
     }]
   },
   {
@@ -174,7 +174,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/pss/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -453,7 +453,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/pss/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -628,9 +628,9 @@
       "description" : "PlanDefinitions defining the service endpoints for using the HL7 CPG definitions."
     },
     {
-      "id" : "Antibiology",
-      "name" : "Antibiology",
-      "description" : "Antibiology PSS resource examples"
+      "id" : "Antimicrobiology",
+      "name" : "Antimicrobiology",
+      "description" : "Antimicrobiology PSS resource examples"
     },
     {
       "id" : "Radiology",
@@ -648,7 +648,7 @@
       "name" : "Antibiology - S2 Get data to collect - Request - 1. Patient V",
       "description" : "Antibiology - S2 Get data to collect - Request - 1 - Patient V",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -661,7 +661,7 @@
       "name" : "Antibiology - S2 Get data to collect - Request - 2. - Bundle",
       "description" : "Antibiology - S2 Get data to collect - Request - 2. Bundle",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -674,7 +674,7 @@
       "name" : "Antibiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis",
       "description" : "Antibiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -687,7 +687,7 @@
       "name" : "Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide",
       "description" : "Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -700,7 +700,7 @@
       "name" : "Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin",
       "description" : "Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -713,7 +713,7 @@
       "name" : "Antibiology - S2 Get data to collect - Response - 1. Bundle",
       "description" : "Antibiology - S2 Get data to collect - Response - 1. Bundle",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -726,7 +726,7 @@
       "name" : "Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup",
       "description" : "Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -739,7 +739,7 @@
       "name" : "Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information",
       "description" : "Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -752,7 +752,7 @@
       "name" : "Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire",
       "description" : "Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -765,7 +765,7 @@
       "name" : "Antibiology - S3 Get Recommendations - Request- 1. Bundle",
       "description" : "Antibiology - S3 Get Recommendations - Request- 1. Bundle",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -778,7 +778,7 @@
       "name" : "Antibiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse",
       "description" : "Antibiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -791,7 +791,7 @@
       "name" : "Antibiology - S3 Get Recommendations - Response - 1. Bundle",
       "description" : "Antibiology - S3 Get Recommendations - Response - 1. Bundle",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -804,7 +804,7 @@
       "name" : "Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
       "description" : "Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -817,7 +817,7 @@
       "name" : "Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol",
       "description" : "Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -830,7 +830,7 @@
       "name" : "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin",
       "description" : "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -843,7 +843,7 @@
       "name" : "Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol",
       "description" : "Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -856,7 +856,7 @@
       "name" : "Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol",
       "description" : "Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol",
       "exampleBoolean" : true,
-      "groupingId" : "Antibiology"
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -1293,6 +1293,15 @@
         "nameUrl" : "downloads.html",
         "title" : "Downloads",
         "generation" : "html"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "pattern.html"
+        }],
+        "nameUrl" : "pattern.html",
+        "title" : "Pattern",
+        "generation" : "markdown"
       }]
     },
     "parameter" : [{

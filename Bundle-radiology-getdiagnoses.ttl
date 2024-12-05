@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/radiology-getdiagnoses> a fhir:Bundle ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Bundle/radiology-getdiagnoses> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "radiology-getdiagnoses"] ; # 
   fhir:type [ fhir:v "collection"] ; # 
@@ -48,7 +48,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] . # 
 
@@ -64,7 +64,7 @@
      fhir:text [ fhir:v "CT Head with IV contrast" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] . # 
 

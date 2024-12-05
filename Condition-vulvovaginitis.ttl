@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Condition/vulvovaginitis> a fhir:Condition ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Condition/vulvovaginitis> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "vulvovaginitis"] ; # 
   fhir:text [
@@ -47,7 +47,7 @@
      fhir:text [ fhir:v "Lower abdominal pain" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-y> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-y> ;
      fhir:reference [ fhir:v "Patient/patient-y" ]
   ] ; # 
   fhir:onset [ fhir:v "2024-10-13"^^xsd:date] . # 

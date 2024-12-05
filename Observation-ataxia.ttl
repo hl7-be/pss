@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Observation/ataxia> a fhir:Observation ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Observation/ataxia> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ataxia"] ; # 
   fhir:text [
@@ -23,7 +23,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] . # 
 

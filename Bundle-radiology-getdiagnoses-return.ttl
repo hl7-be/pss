@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/radiology-getdiagnoses-return> a fhir:Bundle ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Bundle/radiology-getdiagnoses-return> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "radiology-getdiagnoses-return"] ; # 
   fhir:type [ fhir:v "collection"] ; # 
@@ -38,37 +38,37 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:action ( [
      fhir:textEquivalent [ fhir:v "Potential diagnosis of Stroke" ] ;
      fhir:resource [
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-stroke> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-stroke> ;
        fhir:reference [ fhir:v "Task/propose-stroke" ]
      ]
   ] [
      fhir:textEquivalent [ fhir:v "Potential diagnosis of infection" ] ;
      fhir:resource [
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-infection> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-infection> ;
        fhir:reference [ fhir:v "Task/propose-infection" ]
      ]
   ] [
      fhir:textEquivalent [ fhir:v "Potential diagnosis of Head trauma" ] ;
      fhir:resource [
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-head-trauma> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-head-trauma> ;
        fhir:reference [ fhir:v "Task/propose-head-trauma" ]
      ]
   ] [
      fhir:textEquivalent [ fhir:v "Potential diagnosis of Slow progression or chronic ataxia" ] ;
      fhir:resource [
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-slow-progression-ataxia> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-slow-progression-ataxia> ;
        fhir:reference [ fhir:v "Task/propose-slow-progression-ataxia" ]
      ]
   ] [
      fhir:textEquivalent [ fhir:v "Potential diagnosis of Post head trauma ataxia" ] ;
      fhir:resource [
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-post-trauma-ataxia> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-post-trauma-ataxia> ;
        fhir:reference [ fhir:v "Task/propose-post-trauma-ataxia" ]
      ]
   ] ) . # 
@@ -89,7 +89,7 @@
      ] )
   ] ; # 
   fhir:for [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:input ( [
@@ -102,7 +102,7 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-stroke> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-stroke> ;
        fhir:reference [ fhir:v "Condition/proposed-diagnosis-stroke" ]
      ]
   ] ) . # 
@@ -123,7 +123,7 @@
      ] )
   ] ; # 
   fhir:for [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:input ( [
@@ -136,7 +136,7 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-infection> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-infection> ;
        fhir:reference [ fhir:v "Condition/proposed-diagnosis-infection" ]
      ]
   ] ) . # 
@@ -157,7 +157,7 @@
      ] )
   ] ; # 
   fhir:for [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:input ( [
@@ -170,7 +170,7 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-head-trauma> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-head-trauma> ;
        fhir:reference [ fhir:v "Condition/proposed-diagnosis-head-trauma" ]
      ]
   ] ) . # 
@@ -191,7 +191,7 @@
      ] )
   ] ; # 
   fhir:for [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:input ( [
@@ -204,7 +204,7 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-slow-progression-ataxia> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-slow-progression-ataxia> ;
        fhir:reference [ fhir:v "Condition/proposed-diagnosis-slow-progression-ataxia" ]
      ]
   ] ) . # 
@@ -225,7 +225,7 @@
      ] )
   ] ; # 
   fhir:for [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:input ( [
@@ -238,7 +238,7 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-post-trauma-ataxia> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-post-trauma-ataxia> ;
        fhir:reference [ fhir:v "Condition/proposed-diagnosis-post-trauma-ataxia" ]
      ]
   ] ) . # 

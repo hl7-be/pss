@@ -3,7 +3,7 @@ PrescriptionSearchSupport : Validation Results
 
 err = 0, warn = 40, info = 4
 $--
-Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 1 / 4 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-return2 : 0 / 2 / 4
@@ -54,7 +54,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Task-propose-stroke : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/Questionnaire-q-collect-information2-form.html: unexpected non-end of element null::div  at line 216 column 139
+ERROR: /github/workspace/output/Questionnaire-q-collect-information2-form.html: unexpected non-end of element null::div  at line 239 column 139
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -65,7 +65,7 @@ WARNING: Bundle/getdatatocollect-return2: Bundle.entry[0].resource/*RequestGroup
 WARNING: Bundle/getdatatocollect-return2: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-return2-v*/.action[0].resource: Entry 1 matches the reference Questionnaire/q-collect-information2 by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4c does not match the full target URL urn:uuid:q-collect-information2 by Bundle resolution rules
 == fsh-generated/resources/Bundle-getdatatocollect2-data.json ==
 == fsh-generated/resources/Bundle-getrecommendations-data3.json ==
-WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.code.coding[0].system: A definition for CodeSystem 'https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:X by Bundle resolution rules
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:X by Bundle resolution rules
 == fsh-generated/resources/Bundle-getrecommendations2-data.json ==
@@ -92,17 +92,17 @@ WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*Request
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[3].resource: Entry 4 matches the reference Task/propose-slow-progression-ataxia by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad12 does not match the full target URL urn:uuid:propose-slow-progression-ataxia by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[4].resource: Entry 5 matches the reference Task/propose-post-trauma-ataxia by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad13 does not match the full target URL urn:uuid:propose-post-trauma-ataxia by Bundle resolution rules
 == fsh-generated/resources/Condition-proposed-diagnosis-head-trauma.json ==
-WARNING: Condition/proposed-diagnosis-head-trauma: Condition.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+WARNING: Condition/proposed-diagnosis-head-trauma: Condition.code.coding[0].system: A definition for CodeSystem 'https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-proposed-diagnosis-head-trauma-v2.json ==
-WARNING: Condition/proposed-diagnosis-head-trauma-v2: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+WARNING: Condition/proposed-diagnosis-head-trauma-v2: Condition.code.coding[0]: A definition for CodeSystem 'https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-proposed-diagnosis-infection.json ==
-WARNING: Condition/proposed-diagnosis-infection: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+WARNING: Condition/proposed-diagnosis-infection: Condition.code.coding[0]: A definition for CodeSystem 'https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-proposed-diagnosis-post-trauma-ataxia.json ==
-WARNING: Condition/proposed-diagnosis-post-trauma-ataxia: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+WARNING: Condition/proposed-diagnosis-post-trauma-ataxia: Condition.code.coding[0]: A definition for CodeSystem 'https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-proposed-diagnosis-slow-progression-ataxia.json ==
-WARNING: Condition/proposed-diagnosis-slow-progression-ataxia: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+WARNING: Condition/proposed-diagnosis-slow-progression-ataxia: Condition.code.coding[0]: A definition for CodeSystem 'https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-proposed-diagnosis-stroke.json ==
-WARNING: Condition/proposed-diagnosis-stroke: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+WARNING: Condition/proposed-diagnosis-stroke: Condition.code.coding[0]: A definition for CodeSystem 'https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-vulvovaginitis.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.json ==
@@ -139,7 +139,7 @@ WARNING: ServiceRequest/ct-head-with-or-without-contrast-v3: ServiceRequest.code
 WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/StructureDefinition-ext-radiation-level-score.json ==
 WARNING: StructureDefinition/ext-radiation-level-score: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
-WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ext-radiation-level-score'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/ext-radiation-level-score'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/Task-collect-information2.json ==
 == fsh-generated/resources/Task-propose-head-trauma.json ==
 == fsh-generated/resources/Task-propose-infection.json ==

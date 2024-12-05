@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/getrecommendations2-return> a fhir:Bundle ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Bundle/getrecommendations2-return> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "getrecommendations2-return"] ; # 
   fhir:type [ fhir:v "collection"] ; # 
@@ -35,7 +35,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:action ( [
@@ -44,25 +44,25 @@
      fhir:action ( [
        fhir:textEquivalent [ fhir:v "Metronidazol Oraal" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/metronidazol> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/metronidazol> ;
          fhir:reference [ fhir:v "MedicationRequest/metronidazol" ]
        ]
      ] [
        fhir:textEquivalent [ fhir:v "Fosfomycin (7/10), single 3g dose" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24> ;
          fhir:reference [ fhir:v "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24" ]
        ]
      ] [
        fhir:textEquivalent [ fhir:v "Fluconazol Oraal" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/fluconazol> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/fluconazol> ;
          fhir:reference [ fhir:v "MedicationRequest/fluconazol" ]
        ]
      ] [
        fhir:textEquivalent [ fhir:v "Miconazol lokaal" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/miconazol> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/miconazol> ;
          fhir:reference [ fhir:v "MedicationRequest/miconazol" ]
        ]
      ] )
@@ -99,7 +99,7 @@
      fhir:text [ fhir:v "Nitrofurantoin 2x 100mg x 5 days" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] . # 
 
@@ -134,7 +134,7 @@
      fhir:text [ fhir:v "Fosfomycin, single 3g dose" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] . # 
 
@@ -169,7 +169,7 @@
      fhir:text [ fhir:v "Fluconazol" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] . # 
 
@@ -204,7 +204,7 @@
      fhir:text [ fhir:v "Miconazol" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] . # 
 

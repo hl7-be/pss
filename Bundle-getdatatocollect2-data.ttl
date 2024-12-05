@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/getdatatocollect2-data> a fhir:Bundle ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Bundle/getdatatocollect2-data> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "getdatatocollect2-data"] ; # 
   fhir:type [ fhir:v "collection"] ; # 
@@ -74,7 +74,7 @@
      fhir:text [ fhir:v "Lower abdominal pain" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-y> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-y> ;
      fhir:reference [ fhir:v "Patient/patient-y" ]
   ] ; # 
   fhir:onset [ fhir:v "2024-10-13"^^xsd:date] . # 
@@ -100,7 +100,7 @@
      ] )
   ] ; # 
   fhir:patient [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-y> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-y> ;
      fhir:reference [ fhir:v "Patient/patient-y" ]
   ] . # 
 
@@ -120,7 +120,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-y> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-y> ;
      fhir:reference [ fhir:v "Patient/patient-y" ]
   ] . # 
 

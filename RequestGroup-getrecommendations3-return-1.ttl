@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/RequestGroup/getrecommendations3-return-1> a fhir:RequestGroup ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/RequestGroup/getrecommendations3-return-1> a fhir:RequestGroup ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "getrecommendations3-return-1"] ; # 
   fhir:text [
@@ -15,25 +15,25 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:action ( [
      fhir:textEquivalent [ fhir:v "CD Head with or without contrast" ] ;
      fhir:resource [
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/ct-head-with-or-without-contrast-v3> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/ct-head-with-or-without-contrast-v3> ;
        fhir:reference [ fhir:v "ServiceRequest/ct-head-with-or-without-contrast-v3" ]
      ]
   ] [
      fhir:textEquivalent [ fhir:v "CD Head with IV contrast" ] ;
      fhir:resource [
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/ct-head-iv-contrast> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/ct-head-iv-contrast> ;
        fhir:reference [ fhir:v "ServiceRequest/ct-head-iv-contrast" ]
      ]
   ] [
      fhir:textEquivalent [ fhir:v "CD Head with IV contrast" ] ;
      fhir:resource [
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/mr-head-without-contrast> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/mr-head-without-contrast> ;
        fhir:reference [ fhir:v "ServiceRequest/mr-head-without-contrast" ]
      ]
   ] ) . # 

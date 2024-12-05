@@ -3,25 +3,25 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.be.pss"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name="hl7.fhir.be.pss"> </a><a name="hchl7.fhir.be.pss"> </a><a name="hl7.fhir.be.pss-en-US"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name="hl7.fhir.be.pss"> </a><a name="hchl7.fhir.be.pss"> </a><a name="hl7.fhir.be.pss-en-US"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>
 </div></div>
   </text>
-  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss"/>
   <version value="1.0.0"/>
   <name value="PrescriptionSearchSupport"/>
   <title value="Prescription Search Support"/>
   <status value="draft"/>
   <date value="2024-04-26"/>
-  <publisher value="HL7 Belgium"/>
+  <publisher value="eHealth Platform"/>
   <contact>
-    <name value="HL7 Belgium"/>
+    <name value="eHealth Platform"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7belgium.org"/>
+      <value value="http://www.ehealth.fgov.be/"/>
     </telecom>
     <telecom>
       <system value="email"/>
-      <value value="hl7belgium@hl7belgium.org"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
     </telecom>
   </contact>
   <contact>
@@ -141,7 +141,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://www.ehealth.fgov.be/standards/fhir/medication/history.html"/>
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/pss/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -344,7 +344,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://www.ehealth.fgov.be/standards/fhir/medication/history.html"/>
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/pss/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -471,9 +471,9 @@
       <name value="PlanDefinitions (services)"/>
       <description value="PlanDefinitions defining the service endpoints for using the HL7 CPG definitions."/>
     </grouping>
-    <grouping id="Antibiology">
-      <name value="Antibiology"/>
-      <description value="Antibiology PSS resource examples"/>
+    <grouping id="Antimicrobiology">
+      <name value="Antimicrobiology"/>
+      <description value="Antimicrobiology PSS resource examples"/>
     </grouping>
     <grouping id="Radiology">
       <name value="Radiology"/>
@@ -489,7 +489,7 @@
       <name value="Antibiology - S2 Get data to collect - Request - 1. Patient V"/>
       <description value="Antibiology - S2 Get data to collect - Request - 1 - Patient V"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -501,7 +501,7 @@
       <name value="Antibiology - S2 Get data to collect - Request - 2. - Bundle"/>
       <description value="Antibiology - S2 Get data to collect - Request - 2. Bundle"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -513,7 +513,7 @@
       <name value="Antibiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"/>
       <description value="Antibiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -525,7 +525,7 @@
       <name value="Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"/>
       <description value="Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -537,7 +537,7 @@
       <name value="Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"/>
       <description value="Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -549,7 +549,7 @@
       <name value="Antibiology - S2 Get data to collect - Response - 1. Bundle"/>
       <description value="Antibiology - S2 Get data to collect - Response - 1. Bundle"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -561,7 +561,7 @@
       <name value="Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
       <description value="Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -573,7 +573,7 @@
       <name value="Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
       <description value="Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -585,7 +585,7 @@
       <name value="Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
       <description value="Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -597,7 +597,7 @@
       <name value="Antibiology - S3 Get Recommendations - Request- 1. Bundle"/>
       <description value="Antibiology - S3 Get Recommendations - Request- 1. Bundle"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -609,7 +609,7 @@
       <name value="Antibiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"/>
       <description value="Antibiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -621,7 +621,7 @@
       <name value="Antibiology - S3 Get Recommendations - Response - 1. Bundle"/>
       <description value="Antibiology - S3 Get Recommendations - Response - 1. Bundle"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -633,7 +633,7 @@
       <name value="Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
       <description value="Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -645,7 +645,7 @@
       <name value="Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol"/>
       <description value="Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -657,7 +657,7 @@
       <name value="Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin"/>
       <description value="Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -669,7 +669,7 @@
       <name value="Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol"/>
       <description value="Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -681,7 +681,7 @@
       <name value="Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol"/>
       <description value="Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1082,6 +1082,14 @@
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="pattern.html"/>
+        </extension>
+        <nameUrl value="pattern.html"/>
+        <title value="Pattern"/>
+        <generation value="markdown"/>
       </page>
     </page>
     <parameter>
