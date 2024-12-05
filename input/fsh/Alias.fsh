@@ -6,6 +6,6 @@ Alias: $sct = http://snomed.info/sct
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $loinc = http://loinc.org
 Alias: $icd10 = http://hl7.org/fhir/sid/icd-10
-Alias: $qsi = http://example
+Alias: $qsi = https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi
 Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs
 Alias: $atc = http://www.whocc.no/atc

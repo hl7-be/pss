@@ -8,7 +8,7 @@
 
 
 id: hl7.fhir.be.pss
-canonical: https://www.ehealth.fgov.be/standards/fhir/medication
+canonical: https://www.ehealth.fgov.be/standards/fhir/pss
 # url: http://example.com/fhir/example/ImplementationGuide/my-ig
 name: PrescriptionSearchSupport
 title: "Prescription Search Support"
@@ -94,37 +94,7 @@ dependencies:
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
-resources:
-  Parameters/radiogetindicationspayload:
-    name: Radio 1a
-    description: "Radiology step one: input"
-  Questionnaire/indications-response:
-    name: Radio 1b
-    description: "Radiology step one: output"
-  QuestionnaireResponse/indication-selection:
-    name: Radio 2a
-    description: "Radiology step two: input"
-  Bundle/radiology-response:
-    name: Radio 2b
-    description: "Radiology step two: output"  
-  Parameters/requireddataforantimicro-requestdata:
-    name: Antimicrobial 1a
-    description: "Antimicrobial step one: input"
-  Questionnaire/requireddataforantimicro-response:
-    name: Antimicrobial 1b
-    description: "Antimicrobial step one: output"
-  Questionnaire/requireddataforantimicro-response2:
-    name: Antimicrobial 1b
-    description: "Antimicrobial step one: output (variant 2)"
-  Questionnaire/requireddataforantimicro-response3:
-    name: Antimicrobial 1b
-    description: "Antimicrobial step one: output (variant 3)"
-  QuestionnaireResponse/antimicroguidance-request:
-    name: Antimicrobial 2a
-    description: "Antimicrobial step two: input"
-  Bundle/antimicroResponse:
-    name: Antimicrobial 2b
-    description: "Antimicrobial step two: output"  
+
 
 # Groups can control certain aspects of the IG generation.  The IG
 # documentation recommends that authors use the default groups that
@@ -142,9 +112,9 @@ groups:
       - PlanDefinition/GetRecommendations
 
 
-  Antibiology:
-    name: Antibiology
-    description: Antibiology PSS resource examples
+  Antimicrobiology:
+    name: Antimicrobiology
+    description: Antimicrobiology PSS resource examples
     resources:
       - Bundle/getdatatocollect2-data
       - Patient/patient-v
@@ -236,6 +206,7 @@ pages:
       title: "Antimicrobiology"
   changes.xml:
   downloads.xml:
+  pattern.md:
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
 # should follow the format defined in ImplementationGuide:
@@ -259,11 +230,17 @@ pages:
 # include a `menu.xml` file in input/includes.
 menu:
   Home: index.html
-#  Guidance: guidance.html
-  Artifacts: artifacts.html
+  Guidance: pattern.html
+  Functional: functional-overview.html
+  Artifacts:
+    Plandefinitions: artifacts.html#plandefinitions-services
+    Antimicrobiology: artifacts.html#antimicrobiology
+    Radiology: artifacts.html#radiology
+    Extensions: artifacts.html#structures-extension-definitions
+    Examples: artifacts.html#example-example-instances
   Downloads: downloads.html
   Changes: changes.html
-#  History: ../history.html
+  History: https://www.ehealth.fgov.be/standards/fhir/pss/history.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
