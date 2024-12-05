@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="getrecommendations2-return"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"/>
+    <resource>
+      <RequestGroup>
+        <id value="getrecommendations2-return-1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_getrecommendations2-return-1"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations2-return-1</b></p><a name="getrecommendations2-return-1"> </a><a name="hcgetrecommendations2-return-1"> </a><a name="getrecommendations2-return-1-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...</p><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>Metronidazol Oraal</td><td><a href="MedicationRequest-metronidazol.html">MedicationRequest: extension = 9 / 10; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style="display: none">*</td><td>Fosfomycin (7/10), single 3g dose</td><td><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.html">MedicationRequest: extension = 3 / 10; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style="display: none">*</td><td>Fluconazol Oraal</td><td><a href="MedicationRequest-fluconazol.html">MedicationRequest: extension = 1 / 10; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style="display: none">*</td><td>Miconazol lokaal</td><td><a href="MedicationRequest-miconazol.html">MedicationRequest: extension = 1 / 10; status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+        <action>
+          <textEquivalent value="Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte..."/>
+          <selectionBehavior value="at-most-one"/>
+          <action>
+            <textEquivalent value="Metronidazol Oraal"/>
+            <resource>
+              <reference value="MedicationRequest/metronidazol"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Fosfomycin (7/10), single 3g dose"/>
+            <resource>
+              <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Fluconazol Oraal"/>
+            <resource>
+              <reference value="MedicationRequest/fluconazol"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Miconazol lokaal"/>
+            <resource>
+              <reference value="MedicationRequest/miconazol"/>
+            </resource>
+          </action>
+        </action>
+      </RequestGroup>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"/>
+    <resource>
+      <MedicationRequest>
+        <id value="metronidazol"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_metronidazol"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest metronidazol</b></p><a name="metronidazol"> </a><a name="hcmetronidazol"> </a><a name="metronidazol-en-US"> </a><p><b>CPG Rating Extension</b>: 9/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Nitrofurantoin 2x 100mg x 5 days</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="9"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <text value="Nitrofurantoin 2x 100mg x 5 days"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24"/>
+    <resource>
+      <MedicationRequest>
+        <id value="30551ce1-5a28-4356-b684-1e639094ad24"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad24"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad24</b></p><a name="30551ce1-5a28-4356-b684-1e639094ad24"> </a><a name="hc30551ce1-5a28-4356-b684-1e639094ad24"> </a><a name="30551ce1-5a28-4356-b684-1e639094ad24-en-US"> </a><p><b>CPG Rating Extension</b>: 3/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Fosfomycin, single 3g dose</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="3"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <text value="Fosfomycin, single 3g dose"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26"/>
+    <resource>
+      <MedicationRequest>
+        <id value="fluconazol"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_fluconazol"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest fluconazol</b></p><a name="fluconazol"> </a><a name="hcfluconazol"> </a><a name="fluconazol-en-US"> </a><p><b>CPG Rating Extension</b>: 1/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Fluconazol</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="1"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <text value="Fluconazol"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"/>
+    <resource>
+      <MedicationRequest>
+        <id value="miconazol"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_miconazol"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest miconazol</b></p><a name="miconazol"> </a><a name="hcmiconazol"> </a><a name="miconazol-en-US"> </a><p><b>CPG Rating Extension</b>: 1/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Miconazol</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="1"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <text value="Miconazol"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+</Bundle>
