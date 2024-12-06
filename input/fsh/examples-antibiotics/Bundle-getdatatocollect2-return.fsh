@@ -100,12 +100,12 @@ Usage: #example
     * linkId = "condition2"
     * text = "Trichomonal vaginitis"
     * type = #boolean
-    * code = http://snomed.info/sct#276877003
+    * code.coding[+] = http://snomed.info/sct#276877003
   * item[+]
     * linkId = "condition3"
     * text = "Candidiasis of vagina"
     * type = #boolean
-    * code = http://snomed.info/sct#72934000
+    * code.coding[+] = http://snomed.info/sct#72934000
 
 
 * item[+]
@@ -116,6 +116,6 @@ Usage: #example
 * item[+]
   * linkId = "recurrent"
   * text = "Recurrent?"
-  * code = $sct#708126004
+  * code.coding[+] = $sct#708126004
   * type = #boolean
 

@@ -24,6 +24,7 @@ Usage: #example
 * active = true
 * gender = #female
 * deceasedBoolean = false
+* birthDate = "1988-10-10"
 
 Instance: vulvovaginitis
 InstanceOf: Condition
