@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="getdatatocollect-a-data"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48"/>
+    <resource>
+      <Patient>
+        <id value="patient-v"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-v"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-v</b></p><a name="patient-v"> </a><a name="hcpatient-v"> </a><a name="patient-v-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient Female, DoB: 1988-10-10</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr></table></div>
+        </text>
+        <active value="true"/>
+        <gender value="female"/>
+        <birthDate value="1988-10-10"/>
+        <deceasedBoolean value="false"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-2e639094ad01"/>
+    <resource>
+      <Condition>
+        <id value="vulvovaginitis"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_vulvovaginitis"> </a><p class="res-header-id"><b>Generated Narrative: Condition vulvovaginitis</b></p><a name="vulvovaginitis"> </a><a name="hcvulvovaginitis"> </a><a name="vulvovaginitis-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 54586004}">Lower abdominal pain</span></p><p><b>subject</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB: 1989-09-12</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+          <text value="Active"/>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="54586004"/>
+            <display value="Lower abdominal pain"/>
+          </coding>
+          <text value="Lower abdominal pain"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-y"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-2e639094ad02"/>
+    <resource>
+      <AllergyIntolerance>
+        <id value="allergy-to-sulfonamide"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="AllergyIntolerance_allergy-to-sulfonamide"> </a><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance allergy-to-sulfonamide</b></p><a name="allergy-to-sulfonamide"> </a><a name="hcallergy-to-sulfonamide"> </a><a name="allergy-to-sulfonamide-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 91939003}">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="91939003"/>
+            <display value="Allergy to sulfonamide"/>
+          </coding>
+        </code>
+        <patient>
+          <reference value="Patient/patient-y"/>
+        </patient>
+      </AllergyIntolerance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-2e639094ad12"/>
+    <resource>
+      <MedicationRequest>
+        <id value="proposal-clindamycin"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_proposal-clindamycin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest proposal-clindamycin</b></p><a name="proposal-clindamycin"> </a><a name="hcproposal-clindamycin"> </a><a name="proposal-clindamycin-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:{http://www.whocc.no/atc G01AA10}">clindamycin</span></p><p><b>subject</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="G01AA10"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/patient-y"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+</Bundle>

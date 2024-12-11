@@ -496,7 +496,7 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/getdatatocollect2-data"/>
+        <reference value="Bundle/getdatatocollect-a-data"/>
       </reference>
       <name value="Antibiology - S2 Get data to collect - Request - 2. - Bundle"/>
       <description value="Antibiology - S2 Get data to collect - Request - 2. Bundle"/>
@@ -544,7 +544,7 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/getdatatocollect-return2"/>
+        <reference value="Bundle/getdatatocollect-a-return"/>
       </reference>
       <name value="Antibiology - S2 Get data to collect - Response - 1. Bundle"/>
       <description value="Antibiology - S2 Get data to collect - Response - 1. Bundle"/>
@@ -556,7 +556,7 @@
         <valueString value="RequestGroup"/>
       </extension>
       <reference>
-        <reference value="RequestGroup/getdatatocollect-return2-v"/>
+        <reference value="RequestGroup/getdatatocollect-a-return-group"/>
       </reference>
       <name value="Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
       <description value="Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
@@ -568,7 +568,7 @@
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/collect-information2"/>
+        <reference value="Task/collect-information-a"/>
       </reference>
       <name value="Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
       <description value="Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
@@ -580,7 +580,7 @@
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/q-collect-information2"/>
+        <reference value="Questionnaire/q-collect-information-a"/>
       </reference>
       <name value="Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
       <description value="Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
@@ -592,7 +592,7 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/getrecommendations2-data"/>
+        <reference value="Bundle/getrecommendations-a-data"/>
       </reference>
       <name value="Antibiology - S3 Get Recommendations - Request- 1. Bundle"/>
       <description value="Antibiology - S3 Get Recommendations - Request- 1. Bundle"/>
@@ -616,7 +616,7 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/getrecommendations2-return"/>
+        <reference value="Bundle/getrecommendations-a-return"/>
       </reference>
       <name value="Antibiology - S3 Get Recommendations - Response - 1. Bundle"/>
       <description value="Antibiology - S3 Get Recommendations - Response - 1. Bundle"/>
@@ -628,7 +628,7 @@
         <valueString value="RequestGroup"/>
       </extension>
       <reference>
-        <reference value="RequestGroup/getrecommendations2-return-1"/>
+        <reference value="RequestGroup/getrecommendations-a-return-group"/>
       </reference>
       <name value="Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
       <description value="Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
@@ -682,6 +682,16 @@
       <description value="Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol"/>
       <exampleBoolean value="true"/>
       <groupingId value="Antibiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/condition-valueset"/>
+      </reference>
+      <name value="condition-valueset"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

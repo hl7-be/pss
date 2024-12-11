@@ -656,7 +656,7 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/getdatatocollect2-data"
+        "reference" : "Bundle/getdatatocollect-a-data"
       },
       "name" : "Antibiology - S2 Get data to collect - Request - 2. - Bundle",
       "description" : "Antibiology - S2 Get data to collect - Request - 2. Bundle",
@@ -708,7 +708,7 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/getdatatocollect-return2"
+        "reference" : "Bundle/getdatatocollect-a-return"
       },
       "name" : "Antibiology - S2 Get data to collect - Response - 1. Bundle",
       "description" : "Antibiology - S2 Get data to collect - Response - 1. Bundle",
@@ -721,7 +721,7 @@
         "valueString" : "RequestGroup"
       }],
       "reference" : {
-        "reference" : "RequestGroup/getdatatocollect-return2-v"
+        "reference" : "RequestGroup/getdatatocollect-a-return-group"
       },
       "name" : "Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup",
       "description" : "Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup",
@@ -734,7 +734,7 @@
         "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Task/collect-information2"
+        "reference" : "Task/collect-information-a"
       },
       "name" : "Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information",
       "description" : "Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information",
@@ -747,7 +747,7 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
-        "reference" : "Questionnaire/q-collect-information2"
+        "reference" : "Questionnaire/q-collect-information-a"
       },
       "name" : "Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire",
       "description" : "Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire",
@@ -760,7 +760,7 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/getrecommendations2-data"
+        "reference" : "Bundle/getrecommendations-a-data"
       },
       "name" : "Antibiology - S3 Get Recommendations - Request- 1. Bundle",
       "description" : "Antibiology - S3 Get Recommendations - Request- 1. Bundle",
@@ -786,7 +786,7 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/getrecommendations2-return"
+        "reference" : "Bundle/getrecommendations-a-return"
       },
       "name" : "Antibiology - S3 Get Recommendations - Response - 1. Bundle",
       "description" : "Antibiology - S3 Get Recommendations - Response - 1. Bundle",
@@ -799,7 +799,7 @@
         "valueString" : "RequestGroup"
       }],
       "reference" : {
-        "reference" : "RequestGroup/getrecommendations2-return-1"
+        "reference" : "RequestGroup/getrecommendations-a-return-group"
       },
       "name" : "Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
       "description" : "Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
@@ -857,6 +857,17 @@
       "description" : "Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol",
       "exampleBoolean" : true,
       "groupingId" : "Antibiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/condition-valueset"
+      },
+      "name" : "condition-valueset",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
