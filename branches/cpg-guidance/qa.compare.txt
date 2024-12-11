@@ -1,7 +1,7 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 12, warn = 46, info = 4
+err = 33, warn = 46, info = 4
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
  Build Errors : 1 / 5 / 0
@@ -9,11 +9,12 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 5
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return : 3 / 2 / 5
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 2 / 1 / 6
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return : 0 / 3 / 10
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return : 11 / 4 / 12
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 3 / 5
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations3-return : 0 / 3 / 4
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 6 / 4
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses-return : 0 / 5 / 7
+ /github/workspace/fsh-generated/resources/Communication-ab-advice : 10 / 0 / 2
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-head-trauma : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-head-trauma-v2 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-infection : 0 / 1 / 1
@@ -45,7 +46,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v3 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast-v3 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-mr-head-without-contrast : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ext-radiation-level-score : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ext-radiation-level-score : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Task-collect-information-a : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-propose-head-trauma : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-propose-infection : 0 / 0 / 1
@@ -74,9 +75,21 @@ ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*Questionnaire
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.subject: Entry 0 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
 ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource.item[0]: Items not of type group should not have items outside answers (use answer.item not .item)
 == fsh-generated/resources/Bundle-getrecommendations-a-return.json ==
-WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[0].resource: Entry 1 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
-WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[2].resource: Entry 3 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
-WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[0].resource: Entry 1 matches the reference Communication/ab-advice by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ab-advice by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[4].resource: Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/translation' definition allows for the types [] but found type code
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: Extension.extension: minimum required = 2, but only found 0 (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0)
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: Slice 'Extension.extension:lang': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: Slice 'Extension.extension:content': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: Extension.value[x]: max allowed = 0, but found 1 (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0)
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[0]: This element is not allowed by the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1]: This element is not allowed by the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/: MedicationRequest.intent: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/: MedicationRequest.medication[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.status: The value provided ('in-progress') was not found in the value set 'Medicationrequest  status' (http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'in-progress' in the ValueSet 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1'; The provided code '#in-progress' was not found in the value set 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1')
+ERROR: Bundle/getrecommendations-a-return: Bundle: Constraint failed: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)'
 == fsh-generated/resources/Bundle-getrecommendations-data3.json ==
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:X by Bundle resolution rules
@@ -98,6 +111,17 @@ WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*Request
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[2].resource: Entry 3 matches the reference Task/propose-head-trauma by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11 does not match the full target URL urn:uuid:propose-head-trauma by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[3].resource: Entry 4 matches the reference Task/propose-slow-progression-ataxia by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad12 does not match the full target URL urn:uuid:propose-slow-progression-ataxia by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[4].resource: Entry 5 matches the reference Task/propose-post-trauma-ataxia by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad13 does not match the full target URL urn:uuid:propose-post-trauma-ataxia by Bundle resolution rules
+== fsh-generated/resources/Communication-ab-advice.json ==
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/translation' definition allows for the types [] but found type code
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: Extension.extension: minimum required = 2, but only found 0 (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0)
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: Slice 'Extension.extension:lang': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: Slice 'Extension.extension:content': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: Extension.value[x]: max allowed = 0, but found 1 (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0)
+ERROR: Communication/ab-advice: Communication.payload[0]: This element is not allowed by the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0
+ERROR: Communication/ab-advice: Communication.payload[1]: This element is not allowed by the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0
+ERROR: Communication/ab-advice: Communication: MedicationRequest.intent: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
+ERROR: Communication/ab-advice: Communication: MedicationRequest.medication[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
+ERROR: Communication/ab-advice: Communication.status: The value provided ('in-progress') was not found in the value set 'Medicationrequest  status' (http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'in-progress' in the ValueSet 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1'; The provided code '#in-progress' was not found in the value set 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1')
 == fsh-generated/resources/Condition-proposed-diagnosis-head-trauma.json ==
 WARNING: Condition/proposed-diagnosis-head-trauma: Condition.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-proposed-diagnosis-head-trauma-v2.json ==
@@ -150,7 +174,6 @@ WARNING: ServiceRequest/ct-head-with-or-without-contrast-v3: ServiceRequest.code
 WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/StructureDefinition-ext-radiation-level-score.json ==
 WARNING: StructureDefinition/ext-radiation-level-score: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
-WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ext-radiation-level-score'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/Task-collect-information-a.json ==
 == fsh-generated/resources/Task-propose-head-trauma.json ==
 == fsh-generated/resources/Task-propose-infection.json ==

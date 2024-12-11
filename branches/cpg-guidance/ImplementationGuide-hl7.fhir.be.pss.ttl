@@ -719,14 +719,27 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Communication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Communication/ab-advice> ;
+         fhir:reference [ fhir:v "Communication/ab-advice" ]
+       ] ;
+       fhir:name [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice" ] ;
+       fhir:description [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:groupingId [ fhir:v "Antibiology" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "MedicationRequest" ]
        ] ) ;
        fhir:reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/metronidazol> ;
          fhir:reference [ fhir:v "MedicationRequest/metronidazol" ]
        ] ;
-       fhir:name [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol" ] ;
-       fhir:description [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol" ] ;
+       fhir:name [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol" ] ;
+       fhir:description [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ] ;
        fhir:groupingId [ fhir:v "Antibiology" ]
      ] [
@@ -738,8 +751,8 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24> ;
          fhir:reference [ fhir:v "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24" ]
        ] ;
-       fhir:name [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin" ] ;
-       fhir:description [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin" ] ;
+       fhir:name [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin" ] ;
+       fhir:description [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ] ;
        fhir:groupingId [ fhir:v "Antibiology" ]
      ] [
@@ -751,8 +764,8 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/fluconazol> ;
          fhir:reference [ fhir:v "MedicationRequest/fluconazol" ]
        ] ;
-       fhir:name [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol" ] ;
-       fhir:description [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol" ] ;
+       fhir:name [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol" ] ;
+       fhir:description [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ] ;
        fhir:groupingId [ fhir:v "Antibiology" ]
      ] [
@@ -764,8 +777,8 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/miconazol> ;
          fhir:reference [ fhir:v "MedicationRequest/miconazol" ]
        ] ;
-       fhir:name [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol" ] ;
-       fhir:description [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol" ] ;
+       fhir:name [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol" ] ;
+       fhir:description [ fhir:v "Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ] ;
        fhir:groupingId [ fhir:v "Antibiology" ]
      ] [

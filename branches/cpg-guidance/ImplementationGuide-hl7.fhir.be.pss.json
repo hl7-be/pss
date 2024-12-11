@@ -809,13 +809,26 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Communication"
+      }],
+      "reference" : {
+        "reference" : "Communication/ab-advice"
+      },
+      "name" : "Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice",
+      "description" : "Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice",
+      "exampleBoolean" : true,
+      "groupingId" : "Antibiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MedicationRequest"
       }],
       "reference" : {
         "reference" : "MedicationRequest/metronidazol"
       },
-      "name" : "Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol",
-      "description" : "Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol",
+      "name" : "Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol",
+      "description" : "Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol",
       "exampleBoolean" : true,
       "groupingId" : "Antibiology"
     },
@@ -827,8 +840,8 @@
       "reference" : {
         "reference" : "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24"
       },
-      "name" : "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin",
-      "description" : "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin",
+      "name" : "Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin",
+      "description" : "Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin",
       "exampleBoolean" : true,
       "groupingId" : "Antibiology"
     },
@@ -840,8 +853,8 @@
       "reference" : {
         "reference" : "MedicationRequest/fluconazol"
       },
-      "name" : "Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol",
-      "description" : "Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol",
+      "name" : "Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol",
+      "description" : "Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol",
       "exampleBoolean" : true,
       "groupingId" : "Antibiology"
     },
@@ -853,8 +866,8 @@
       "reference" : {
         "reference" : "MedicationRequest/miconazol"
       },
-      "name" : "Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol",
-      "description" : "Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol",
+      "name" : "Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol",
+      "description" : "Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol",
       "exampleBoolean" : true,
       "groupingId" : "Antibiology"
     },
