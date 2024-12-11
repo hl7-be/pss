@@ -6,6 +6,8 @@ Usage: #example
 * type = #collection
 * entry[0].resource = getrecommendations-a-return-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
+* entry[+].resource = ab-advice
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
 * entry[+].resource = metronidazol
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
 * entry[+].resource = 30551ce1-5a28-4356-b684-1e639094ad24
@@ -25,9 +27,11 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(X)
 * action[0]
-  * textEquivalent = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte..."
   * selectionBehavior = #at-most-one
   * action[0]
+    * textEquivalent = "Generic Antibiotic advice"
+    * resource = Reference(ab-advice)
+  * action[+]
     * textEquivalent = "Metronidazol Oraal"
     * resource = Reference(metronidazol)
   * action[+]
@@ -41,10 +45,36 @@ Usage: #example
     * resource = Reference(miconazol)
 
 
+Instance: ab-advice
+InstanceOf: Communication
+Title: "Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
+Description: "Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
+Usage: #example
+* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
+* extension
+  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
+  * valueRatio
+    * numerator.value = 3
+    * denominator.value = 3
+* status = #in-progress
+* payload[0].contentString = "Traitement antibiotique uniquemene en cas de symptômes dérangeants ou de risque accru de naissance prématurée..."
+  * extension
+    * url = "http://hl7.org/fhir/StructureDefinition/language"
+    * valueCode = #nl
+
+
+* payload[+].contentString = "Antibioticum behandeling etc... but in French"
+  * extension
+    * url = "http://hl7.org/fhir/StructureDefinition/translation"
+    * valueCode = #fr
+
+* subject = Reference(X)
+
+
 Instance: metronidazol
 InstanceOf: MedicationRequest
-Title: "Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.2. option 1 - metronidazol"
+Title: "Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
+Description: "Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 * extension
@@ -59,8 +89,8 @@ Usage: #example
 
 Instance: clindamycin
 InstanceOf: MedicationRequest
-Title: "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.3. option 2 - clindamycin"
+Title: "Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
+Description: "Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Usage: #example
 * id = "30551ce1-5a28-4356-b684-1e639094ad24"
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
@@ -77,8 +107,8 @@ Usage: #example
 
 Instance: fluconazol
 InstanceOf: MedicationRequest
-Title: "Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.4. option 3 - fluconazol"
+Title: "Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
+Description: "Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 * extension
@@ -94,8 +124,8 @@ Usage: #example
 
 Instance: miconazol
 InstanceOf: MedicationRequest
-Title: "Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.5. option 4 - miconazol"
+Title: "Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
+Description: "Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 * extension
