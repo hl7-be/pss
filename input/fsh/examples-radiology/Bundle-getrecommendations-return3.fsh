@@ -47,14 +47,13 @@ Title: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure opt
 Description: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"
 Usage: #example
 * meta.versionId = "v3"
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
+* extension[http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating]
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10
 * extension[ext-radiation-level-score]
   * valueRatio
-    * numerator.value = 9
+    * numerator.value = 2
     * denominator.value = 10
 * status = #active
 * intent = #proposal
@@ -68,14 +67,13 @@ Title: "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure opt
 Description: "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"
 Usage: #example
 * meta.versionId = "v3"
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
+* extension[http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating]
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10
 * extension[ext-radiation-level-score]
   * valueRatio
-    * numerator.value = 9
+    * numerator.value = 1
     * denominator.value = 10
 * status = #active
 * intent = #proposal
@@ -88,13 +86,11 @@ InstanceOf: ServiceRequest
 Title: "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"
 Description: "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"
 Usage: #example
-* extension[+]
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
+* extension[http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating]
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10
 * extension[ext-radiation-level-score]
-//  * url = "http://hl7belgium.org/fhir/PSS/ext-radiation-level-score"
   * valueRatio
     * numerator.value = 9
     * denominator.value = 10
