@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/proposal-clindamycin> a fhir:MedicationRequest ;
+<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/proposal-clindamycin> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "proposal-clindamycin"] ; # 
   fhir:text [
@@ -22,7 +22,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-y> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-y> ;
      fhir:reference [ fhir:v "Patient/patient-y" ]
   ] . # 
 

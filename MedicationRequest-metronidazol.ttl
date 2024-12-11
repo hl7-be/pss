@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/metronidazol> a fhir:MedicationRequest ;
+<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/metronidazol> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "metronidazol"] ; # 
   fhir:meta [
@@ -37,7 +37,7 @@
      fhir:text [ fhir:v "Nitrofurantoin 2x 100mg x 5 days" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] . # 
 

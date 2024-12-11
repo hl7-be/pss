@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-head-trauma> a fhir:Task ;
+<https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-head-trauma> a fhir:Task ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "propose-head-trauma"] ; # 
   fhir:text [
@@ -22,7 +22,7 @@
      ] )
   ] ; # 
   fhir:for [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:input ( [
@@ -35,7 +35,7 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-head-trauma> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-head-trauma> ;
        fhir:reference [ fhir:v "Condition/proposed-diagnosis-head-trauma" ]
      ]
   ] ) . # 

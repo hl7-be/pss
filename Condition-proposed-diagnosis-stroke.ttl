@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-stroke> a fhir:Condition ;
+<https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-stroke> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "proposed-diagnosis-stroke"] ; # 
   fhir:meta [
@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition proposed-diagnosis-stroke</b></p><a name=\"proposed-diagnosis-stroke\"> </a><a name=\"hcproposed-diagnosis-stroke\"> </a><a name=\"proposed-diagnosis-stroke-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi 3074220}\">Ataxia, Stroke</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition proposed-diagnosis-stroke</b></p><a name=\"proposed-diagnosis-stroke\"> </a><a name=\"hcproposed-diagnosis-stroke\"> </a><a name=\"proposed-diagnosis-stroke-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://example 3074220}\">Ataxia, Stroke</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></div>"
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
@@ -38,13 +38,13 @@
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "https://www.rcr.ac.uk/our-services/management-service-delivery/quality-standard-for-imaging-qsi"^^xsd:anyURI ] ;
+       fhir:system [ fhir:v "http://example"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "3074220" ] ;
        fhir:display [ fhir:v "Ataxia, Stroke" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/X> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
      fhir:reference [ fhir:v "Patient/X" ]
   ] ; # 
   fhir:onset [ fhir:v "2024-10-13"^^xsd:date] . # 
