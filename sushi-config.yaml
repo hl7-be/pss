@@ -121,23 +121,23 @@ groups:
     name: Antibiology
     description: Antibiology PSS resource examples
     resources:
-      - Bundle/getdatatocollect2-data
+      - Bundle/getdatatocollect-a-data
       - Patient/patient-v
       - vulvovaginitis
       - AllergyIntolerance/allergy-to-sulfonamide
       - MedicationRequest/proposal-clindamycin
 
-      - Bundle/getdatatocollect-return2
-      - RequestGroup/getdatatocollect-return2-v
-      - Task/collect-information2
-      - Questionnaire/q-collect-information2
+      - Bundle/getdatatocollect-a-return
+      - RequestGroup/getdatatocollect-a-return-group
+      - Task/collect-information-a
+      - Questionnaire/q-collect-information-a
 
-      - Bundle/getrecommendations2-data
+      - Bundle/getrecommendations-a-data
       - QuestionnaireResponse/qresponse-v
       - Patient/patient-v
 
-      - Bundle/getrecommendations2-return
-      - RequestGroup/getrecommendations2-return-1
+      - Bundle/getrecommendations-a-return
+      - RequestGroup/getrecommendations-a-return-group
       - MedicationRequest/metronidazol
       - MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24
       - MedicationRequest/fluconazol

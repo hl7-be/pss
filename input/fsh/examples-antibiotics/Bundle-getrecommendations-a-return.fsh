@@ -1,10 +1,10 @@
-Instance: getrecommendations2-return
+Instance: getrecommendations-a-return
 Title: "Antibiology - S3 Get Recommendations - Response - 1. Bundle"
 Description: "Antibiology - S3 Get Recommendations - Response - 1. Bundle"
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry[0].resource = getrecommendations2-return-1
+* entry[0].resource = getrecommendations-a-return-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
 * entry[+].resource = metronidazol
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
@@ -15,12 +15,12 @@ Usage: #example
 * entry[+].resource = miconazol
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"
 
-Instance: getrecommendations2-return-1
+Instance: getrecommendations-a-return-group
 InstanceOf: RequestGroup
 Title: "Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
 Description: "Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
 Usage: #example
-* id = "getrecommendations2-return-1"
+* id = "getrecommendations-a-return-group"
 * status = #active
 * intent = #proposal
 * subject = Reference(X)

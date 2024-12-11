@@ -1,13 +1,13 @@
 
-Instance: getdatatocollect-return2
+Instance: getdatatocollect-a-return
 InstanceOf: Bundle
 Title: "Antibiology - S2 Get data to collect - Response - 1. Bundle"
 Description: "Antibiology - S2 Get data to collect - Response - 1. Bundle"
 Usage: #example
 * type = #collection
-* entry[0].resource = getdatatocollect-return2-v
+* entry[0].resource = getdatatocollect-a-return-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4d"
-* entry[+].resource = q-collect-information2
+* entry[+].resource = q-collect-information-a
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4c"
 // * entry[+].resource = collect-patient_variables
 // * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4b"
@@ -15,7 +15,7 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094adff"
 
 
-Instance: getdatatocollect-return2-v
+Instance: getdatatocollect-a-return-group
 InstanceOf: RequestGroup
 Title: "Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"
 Description: "Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"
@@ -35,10 +35,10 @@ Usage: #example
 * subject = Reference(patient-v)
 * action[0]
   * textEquivalent = "Collect pregnancy status"
-  * resource = Reference(q-collect-information2)
+  * resource = Reference(q-collect-information-a)
 
 
-Instance: collect-information2
+Instance: collect-information-a
 Title: "Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
 Description: "Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
 InstanceOf: Task
@@ -50,62 +50,62 @@ Usage: #example
 * for = Reference(patient-y)
 * input
   * type = $cpg-activity-type-cs#collect-information "Collect information"
-  * valueReference.reference = Canonical(q-collect-information2)
+  * valueReference.reference = Canonical(q-collect-information-a)
 
 
 
 
-// Instance: contained-valueset
-// InstanceOf: ValueSet
-// Usage: #example
-// * status = #active
-// * expansion
-//   * contains[0]
-//     * code = http://snomed.info/sct#419760006
-//     * display = "Bacterial vaginosis"
-//   * contains[+]
-//     * code = http://snomed.info/sct#276877003
-//     * display = "Trichomonal vaginitis"
-//   * contains[+]
-//     * code = http://snomed.info/sct#72934000
-//     * display = "Candidiasis of vagina"
-//   * timestamp = "2015-06-22T13:56:07Z"
+Instance: condition-valueset
+InstanceOf: ValueSet
+Usage: #example
+* status = #active
+* expansion
+  * contains[0]
+    * code = http://snomed.info/sct#419760006
+    * display = "Bacterial vaginosis"
+  * contains[+]
+    * code = http://snomed.info/sct#276877003
+    * display = "Trichomonal vaginitis"
+  * contains[+]
+    * code = http://snomed.info/sct#72934000
+    * display = "Candidiasis of vagina"
+  * timestamp = "2015-06-22T13:56:07Z"
 
 
-Instance: q-collect-information2
+Instance: q-collect-information-a
 Title: "Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"
 Description: "Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"
 InstanceOf: Questionnaire
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity"
-//* contained = contained-valueset
+* contained = condition-valueset
 * status = #active
-// * item[0]
-//   * linkId = "conditions"
-//   * text = "Which conditions are you considering?"
-//   * type = #choice
-//   * repeats = true
-//   * answerValueSet = "#contained-valueset"
 * item[0]
   * linkId = "conditions"
   * text = "Which conditions are you considering?"
-  * type = #group
-  * repeats = false
-  * item[0]
-    * linkId = "condition1"
-    * text = "Bacterial vaginosis"
-    * type = #boolean
-    * code = http://snomed.info/sct#419760006
-  * item[+]
-    * linkId = "condition2"
-    * text = "Trichomonal vaginitis"
-    * type = #boolean
-    * code.coding[+] = http://snomed.info/sct#276877003
-  * item[+]
-    * linkId = "condition3"
-    * text = "Candidiasis of vagina"
-    * type = #boolean
-    * code.coding[+] = http://snomed.info/sct#72934000
+  * type = #choice
+  * repeats = true
+  * answerValueSet = "#condition-valueset"
+// * item[0]
+//   * linkId = "conditions"
+//   * text = "Which conditions are you considering?"
+//   * type = #group
+//   * repeats = false
+//   * item[0]
+//     * linkId = "condition1"
+//     * text = "Bacterial vaginosis"
+//     * type = #boolean
+//     * code = http://snomed.info/sct#419760006
+//   * item[+]
+//     * linkId = "condition2"
+//     * text = "Trichomonal vaginitis"
+//     * type = #boolean
+//     * code.coding[+] = http://snomed.info/sct#276877003
+//   * item[+]
+//     * linkId = "condition3"
+//     * text = "Candidiasis of vagina"
+//     * type = #boolean
+//     * code.coding[+] = http://snomed.info/sct#72934000
 
 
 * item[+]
@@ -116,6 +116,6 @@ Usage: #example
 * item[+]
   * linkId = "recurrent"
   * text = "Recurrent?"
-  * code.coding[+] = $sct#708126004
+  * code = $sct#708126004
   * type = #boolean
 

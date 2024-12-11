@@ -1,4 +1,4 @@
-Instance: getrecommendations2-data
+Instance: getrecommendations-a-data
 Title: "Antibiology - S3 Get Recommendations - Request- 1. Bundle"
 Description: "Antibiology - S3 Get Recommendations - Request- 1. Bundle"
 InstanceOf: Bundle
@@ -24,7 +24,7 @@ Description: "Antibiology - S3 Get Recommendations - Request- 1.1. Questionnaire
 Usage: #example
 * status = #completed
 * authored = "2023-10-18T19:20:20.913Z"
-* questionnaire = Canonical(q-collect-information2)
+* questionnaire = Canonical(q-collect-information-a)
 * subject = Reference(patient-v)
 
 // * item[+]

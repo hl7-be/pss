@@ -1,5 +1,5 @@
 
-Instance: getdatatocollect2-data
+Instance: getdatatocollect-a-data
 InstanceOf: Bundle
 Title: "Antibiology - S2 Get data to collect - Request - 2. - Bundle"
 Description: "Antibiology - S2 Get data to collect - Request - 2. Bundle"
