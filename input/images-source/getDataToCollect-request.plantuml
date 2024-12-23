@@ -9,20 +9,14 @@ package "Bundle" {
 
   class "  Patient  " as P #cff{
   }
-P .u. RG 
-P .r. T 
-P .u. CD 
+P .r. RG 
+P .d. T 
 
 
   class "  Allergy  " as T #cff{
   }
 
 RG -[hidden]- T 
-
-  class " Questionnaire " as CD #cff{
-  }
-
-T -[hidden]- CD
 
 }
 legend
