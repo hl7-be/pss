@@ -471,9 +471,9 @@
       <name value="PlanDefinitions (services)"/>
       <description value="PlanDefinitions defining the service endpoints for using the HL7 CPG definitions."/>
     </grouping>
-    <grouping id="Antibiology">
-      <name value="Antibiology"/>
-      <description value="Antibiology PSS resource examples"/>
+    <grouping id="Antimicrobiology">
+      <name value="Antimicrobiology"/>
+      <description value="Antimicrobiology PSS resource examples"/>
     </grouping>
     <grouping id="Radiology">
       <name value="Radiology"/>
@@ -486,10 +486,10 @@
       <reference>
         <reference value="Patient/patient-v"/>
       </reference>
-      <name value="Antibiology - S2 Get data to collect - Request - 1. Patient V"/>
-      <description value="Antibiology - S2 Get data to collect - Request - 1 - Patient V"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 1. Patient V"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 1 - Patient V"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -498,10 +498,10 @@
       <reference>
         <reference value="Bundle/getdatatocollect-a-data"/>
       </reference>
-      <name value="Antibiology - S2 Get data to collect - Request - 2. - Bundle"/>
-      <description value="Antibiology - S2 Get data to collect - Request - 2. Bundle"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 2. - Bundle"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 2. Bundle"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -510,10 +510,10 @@
       <reference>
         <reference value="Condition/vulvovaginitis"/>
       </reference>
-      <name value="Antibiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"/>
-      <description value="Antibiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -522,10 +522,10 @@
       <reference>
         <reference value="AllergyIntolerance/allergy-to-sulfonamide"/>
       </reference>
-      <name value="Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"/>
-      <description value="Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -534,10 +534,10 @@
       <reference>
         <reference value="MedicationRequest/proposal-clindamycin"/>
       </reference>
-      <name value="Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"/>
-      <description value="Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -546,10 +546,10 @@
       <reference>
         <reference value="Bundle/getdatatocollect-a-return"/>
       </reference>
-      <name value="Antibiology - S2 Get data to collect - Response - 1. Bundle"/>
-      <description value="Antibiology - S2 Get data to collect - Response - 1. Bundle"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -558,10 +558,10 @@
       <reference>
         <reference value="RequestGroup/getdatatocollect-a-return-group"/>
       </reference>
-      <name value="Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
-      <description value="Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -570,10 +570,10 @@
       <reference>
         <reference value="Task/collect-information-a"/>
       </reference>
-      <name value="Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
-      <description value="Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -582,10 +582,10 @@
       <reference>
         <reference value="Questionnaire/q-collect-information-a"/>
       </reference>
-      <name value="Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
-      <description value="Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -594,10 +594,10 @@
       <reference>
         <reference value="Bundle/getrecommendations-a-data"/>
       </reference>
-      <name value="Antibiology - S3 Get Recommendations - Request- 1. Bundle"/>
-      <description value="Antibiology - S3 Get Recommendations - Request- 1. Bundle"/>
+      <name value="Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -606,10 +606,10 @@
       <reference>
         <reference value="QuestionnaireResponse/qresponse-v"/>
       </reference>
-      <name value="Antibiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"/>
-      <description value="Antibiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"/>
+      <name value="Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -618,10 +618,10 @@
       <reference>
         <reference value="Bundle/getrecommendations-a-return"/>
       </reference>
-      <name value="Antibiology - S3 Get Recommendations - Response - 1. Bundle"/>
-      <description value="Antibiology - S3 Get Recommendations - Response - 1. Bundle"/>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -630,10 +630,10 @@
       <reference>
         <reference value="RequestGroup/getrecommendations-a-return-group"/>
       </reference>
-      <name value="Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
-      <description value="Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -642,10 +642,10 @@
       <reference>
         <reference value="Communication/ab-advice"/>
       </reference>
-      <name value="Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
-      <description value="Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -654,10 +654,10 @@
       <reference>
         <reference value="MedicationRequest/metronidazol"/>
       </reference>
-      <name value="Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"/>
-      <description value="Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"/>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -666,10 +666,10 @@
       <reference>
         <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24"/>
       </reference>
-      <name value="Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"/>
-      <description value="Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"/>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -678,10 +678,10 @@
       <reference>
         <reference value="MedicationRequest/fluconazol"/>
       </reference>
-      <name value="Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"/>
-      <description value="Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"/>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -690,10 +690,10 @@
       <reference>
         <reference value="MedicationRequest/miconazol"/>
       </reference>
-      <name value="Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
-      <description value="Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Antibiology"/>
+      <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
