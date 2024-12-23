@@ -1,6 +1,6 @@
 Instance: getrecommendations-a-return
-Title: "Antibiology - S3 Get Recommendations - Response - 1. Bundle"
-Description: "Antibiology - S3 Get Recommendations - Response - 1. Bundle"
+Title: "Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"
+Description: "Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
@@ -19,8 +19,8 @@ Usage: #example
 
 Instance: getrecommendations-a-return-group
 InstanceOf: RequestGroup
-Title: "Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
+Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
+Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
 Usage: #example
 * id = "getrecommendations-a-return-group"
 * status = #active
@@ -47,8 +47,8 @@ Usage: #example
 
 Instance: ab-advice
 InstanceOf: Communication
-Title: "Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
+Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
+Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 * extension
@@ -73,8 +73,8 @@ Usage: #example
 
 Instance: metronidazol
 InstanceOf: MedicationRequest
-Title: "Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
+Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
+Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 * extension
@@ -89,8 +89,8 @@ Usage: #example
 
 Instance: clindamycin
 InstanceOf: MedicationRequest
-Title: "Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
+Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
+Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Usage: #example
 * id = "30551ce1-5a28-4356-b684-1e639094ad24"
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
@@ -107,8 +107,8 @@ Usage: #example
 
 Instance: fluconazol
 InstanceOf: MedicationRequest
-Title: "Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
+Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
+Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 * extension
@@ -124,8 +124,8 @@ Usage: #example
 
 Instance: miconazol
 InstanceOf: MedicationRequest
-Title: "Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
-Description: "Antibiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
+Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
+Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 * extension

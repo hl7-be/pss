@@ -1,8 +1,8 @@
 
 Instance: getdatatocollect-a-return
 InstanceOf: Bundle
-Title: "Antibiology - S2 Get data to collect - Response - 1. Bundle"
-Description: "Antibiology - S2 Get data to collect - Response - 1. Bundle"
+Title: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
+Description: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
 Usage: #example
 * type = #collection
 * entry[0].resource = getdatatocollect-a-return-group
@@ -17,8 +17,8 @@ Usage: #example
 
 Instance: getdatatocollect-a-return-group
 InstanceOf: RequestGroup
-Title: "Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"
-Description: "Antibiology - S2 Get data to collect - Response - 1.1. RequestGroup"
+Title: "Antimicrobiology - S2 Get data to collect - Response - 1.1. RequestGroup"
+Description: "Antimicrobiology - S2 Get data to collect - Response - 1.1. RequestGroup"
 Usage: #example
 // * contained[+] = collect-pregnancy-status
 // * contained[+] = collect-past-antibiotic-use
@@ -39,8 +39,8 @@ Usage: #example
 
 
 Instance: collect-information-a
-Title: "Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
-Description: "Antibiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
+Title: "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
+Description: "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
 InstanceOf: Task
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask"
@@ -51,8 +51,6 @@ Usage: #example
 * input
   * type = $cpg-activity-type-cs#collect-information "Collect information"
   * valueReference.reference = Canonical(q-collect-information-a)
-
-
 
 
 Instance: condition-valueset
@@ -73,8 +71,8 @@ Usage: #example
 
 
 Instance: q-collect-information-a
-Title: "Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"
-Description: "Antibiology - S2 Get data to collect - Response - 1.3. Questionnaire"
+Title: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
+Description: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
 InstanceOf: Questionnaire
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity"

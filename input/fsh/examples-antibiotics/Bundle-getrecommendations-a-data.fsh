@@ -1,6 +1,6 @@
 Instance: getrecommendations-a-data
-Title: "Antibiology - S3 Get Recommendations - Request- 1. Bundle"
-Description: "Antibiology - S3 Get Recommendations - Request- 1. Bundle"
+Title: "Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"
+Description: "Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
@@ -18,8 +18,8 @@ Usage: #example
 
 Instance: qresponse-v
 InstanceOf: QuestionnaireResponse
-Title: "Antibiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"
-Description: "Antibiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"
+Title: "Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"
+Description: "Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"
 
 Usage: #example
 * status = #completed

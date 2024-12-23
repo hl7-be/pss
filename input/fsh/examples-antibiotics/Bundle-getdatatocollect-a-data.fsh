@@ -1,8 +1,8 @@
 
 Instance: getdatatocollect-a-data
 InstanceOf: Bundle
-Title: "Antibiology - S2 Get data to collect - Request - 2. - Bundle"
-Description: "Antibiology - S2 Get data to collect - Request - 2. Bundle"
+Title: "Antimicrobiology - S2 Get data to collect - Request - 2. - Bundle"
+Description: "Antimicrobiology - S2 Get data to collect - Request - 2. Bundle"
 Usage: #example
 * type = #collection
 * entry[0].resource = patient-v
@@ -18,8 +18,8 @@ Usage: #example
 
 Instance: patient-v
 InstanceOf: Patient
-Title: "Antibiology - S2 Get data to collect - Request - 1. Patient V"
-Description: "Antibiology - S2 Get data to collect - Request - 1 - Patient V"
+Title: "Antimicrobiology - S2 Get data to collect - Request - 1. Patient V"
+Description: "Antimicrobiology - S2 Get data to collect - Request - 1 - Patient V"
 Usage: #example
 * active = true
 * gender = #female
@@ -28,8 +28,8 @@ Usage: #example
 
 Instance: vulvovaginitis
 InstanceOf: Condition
-Title: "Antibiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"
-Description: "Antibiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"
+Title: "Antimicrobiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"
+Description: "Antimicrobiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"
 Usage: #example
 * id = "vulvovaginitis"
 * clinicalStatus = $condition-clinical#active "Active"
@@ -45,8 +45,8 @@ Usage: #example
 
 Instance: allergy-to-sulfonamide
 InstanceOf: AllergyIntolerance
-Title: "Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"
-Description: "Antibiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"
+Title: "Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"
+Description: "Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"
 Usage: #example
 * code = $sct#91939003 "Allergy to sulfonamide"
 * patient = Reference(patient-y)
@@ -55,8 +55,8 @@ Usage: #example
 
 Instance: proposal-clindamycin
 InstanceOf: MedicationRequest
-Title: "Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"
-Description: "Antibiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"
+Title: "Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"
+Description: "Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"
 Usage: #example
 //* code = $sct#28442001 "Allergy to sulfonamides"
 * subject = Reference(patient-y)
