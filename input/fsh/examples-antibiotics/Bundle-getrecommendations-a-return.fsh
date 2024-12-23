@@ -9,8 +9,8 @@ Usage: #example
 * entry[+].resource = ab-advice
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
 * entry[+].resource = metronidazol
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
-* entry[+].resource = 30551ce1-5a28-4356-b684-1e639094ad24
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ac22"
+* entry[+].resource = clindamycin
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24"
 * entry[+].resource = fluconazol
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26"
@@ -92,7 +92,7 @@ InstanceOf: MedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Usage: #example
-* id = "30551ce1-5a28-4356-b684-1e639094ad24"
+//* id = "30551ce1-5a28-4356-b684-1e639094ad24"
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 * extension
   * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"

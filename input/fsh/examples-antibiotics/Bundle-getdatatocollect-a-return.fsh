@@ -7,6 +7,8 @@ Usage: #example
 * type = #collection
 * entry[0].resource = getdatatocollect-a-return-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4d"
+* entry[+].resource = collect-information-a
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755"
 * entry[+].resource = q-collect-information-a
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4c"
 // * entry[+].resource = collect-patient_variables
@@ -34,8 +36,8 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(patient-v)
 * action[0]
-  * textEquivalent = "Collect pregnancy status"
-  * resource = Reference(q-collect-information-a)
+  * textEquivalent = "Collect information"
+  * resource = Reference(collect-information-a)
 
 
 Instance: collect-information-a
