@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "getdatatocollect-a-return-group"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getdatatocollect-a-return-group</b></p><a name=\"getdatatocollect-a-return-group\"> </a><a name=\"hcgetdatatocollect-a-return-group\"> </a><a name=\"getdatatocollect-a-return-group-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-v.html\">Anonymous Patient Female, DoB: 1988-10-10</a></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Collect pregnancy status</td><td><a href=\"Questionnaire-q-collect-information-a.html\">q-collect-information-a</a></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getdatatocollect-a-return-group</b></p><a name=\"getdatatocollect-a-return-group\"> </a><a name=\"hcgetdatatocollect-a-return-group\"> </a><a name=\"getdatatocollect-a-return-group-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-v.html\">Anonymous Patient Female, DoB: 1988-10-10</a></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Collect information</td><td><a href=\"Task-collect-information-a.html\">Task Collect information</a></td></tr></table></div>"
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
@@ -19,10 +19,10 @@
      fhir:reference [ fhir:v "Patient/patient-v" ]
   ] ; # 
   fhir:action ( [
-     fhir:textEquivalent [ fhir:v "Collect pregnancy status" ] ;
+     fhir:textEquivalent [ fhir:v "Collect information" ] ;
      fhir:resource [
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information-a> ;
-       fhir:reference [ fhir:v "Questionnaire/q-collect-information-a" ]
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/collect-information-a> ;
+       fhir:reference [ fhir:v "Task/collect-information-a" ]
      ]
   ] ) . # 
 
