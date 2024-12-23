@@ -1,15 +1,15 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 33, warn = 47, info = 4
+err = 35, warn = 47, info = 4
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
  Build Errors : 1 / 6 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 5
- /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return : 3 / 2 / 5
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return : 3 / 2 / 6
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 2 / 1 / 6
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return : 11 / 4 / 12
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return : 12 / 4 / 12
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 3 / 5
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations3-return : 0 / 3 / 4
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 6 / 4
@@ -23,7 +23,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-stroke : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-vulvovaginitis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-clindamycin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-fluconazol : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-miconazol : 0 / 0 / 1
@@ -39,7 +39,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-return : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-return-group : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-return-group : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations3-return-1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v2 : 0 / 0 / 1
@@ -66,18 +66,20 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 == fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide.json ==
 == fsh-generated/resources/Bundle-getdatatocollect-a-data.json ==
 == fsh-generated/resources/Bundle-getdatatocollect-a-return.json ==
-WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.subject: Entry 2 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
-WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.action[0].resource: Entry 1 matches the reference Questionnaire/q-collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4c does not match the full target URL urn:uuid:q-collect-information-a by Bundle resolution rules
-ERROR: Bundle/getdatatocollect-a-return: Bundle.entry[1].resource/*Questionnaire/q-collect-information-a*/.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[0]: Constraint failed: vsd-10: 'Must have a system if a code is present'
-ERROR: Bundle/getdatatocollect-a-return: Bundle.entry[1].resource/*Questionnaire/q-collect-information-a*/.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[1]: Constraint failed: vsd-10: 'Must have a system if a code is present'
-ERROR: Bundle/getdatatocollect-a-return: Bundle.entry[1].resource/*Questionnaire/q-collect-information-a*/.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[2]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.subject: Entry 3 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
+WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.action[0].resource: Entry 1 matches the reference Task/collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755 does not match the full target URL urn:uuid:collect-information-a by Bundle resolution rules
+ERROR: Bundle/getdatatocollect-a-return: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[0]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+ERROR: Bundle/getdatatocollect-a-return: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[1]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+ERROR: Bundle/getdatatocollect-a-return: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[2]: Constraint failed: vsd-10: 'Must have a system if a code is present'
 == fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
 ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.item[0]: Items not of type group should not have items outside answers (use answer.item not .item)
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.subject: Entry 0 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
 ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource.item[0]: Items not of type group should not have items outside answers (use answer.item not .item)
 == fsh-generated/resources/Bundle-getrecommendations-a-return.json ==
 WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[0].resource: Entry 1 matches the reference Communication/ab-advice by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ab-advice by Bundle resolution rules
-WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ac22 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[2].resource: Relative URLs must be of the format [ResourceName]/[id]. Encountered 30551ce1-5a28-4356-b684-1e639094ad24
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[2].resource: Unable to resolve resource with reference '30551ce1-5a28-4356-b684-1e639094ad24'
 WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[4].resource: Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
 ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/translation' definition allows for the types [] but found type code
@@ -90,7 +92,6 @@ ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communicati
 ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/: MedicationRequest.intent: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
 ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/: MedicationRequest.medication[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
 ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.status: The value provided ('in-progress') was not found in the value set 'Medicationrequest  status' (http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'in-progress' in the ValueSet 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1'; The provided code '#in-progress' was not found in the value set 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1')
-ERROR: Bundle/getrecommendations-a-return: Bundle: Constraint failed: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)'
 == fsh-generated/resources/Bundle-getrecommendations-data3.json ==
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:X by Bundle resolution rules
@@ -137,7 +138,7 @@ WARNING: Condition/proposed-diagnosis-slow-progression-ataxia: Condition.code.co
 WARNING: Condition/proposed-diagnosis-stroke: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-vulvovaginitis.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
-== fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.json ==
+== fsh-generated/resources/MedicationRequest-clindamycin.json ==
 == fsh-generated/resources/MedicationRequest-fluconazol.json ==
 == fsh-generated/resources/MedicationRequest-metronidazol.json ==
 == fsh-generated/resources/MedicationRequest-miconazol.json ==
@@ -164,6 +165,7 @@ ERROR: QuestionnaireResponse/qresponse-v: QuestionnaireResponse.item[0]: Items n
 == fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-return.json ==
 == fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group.json ==
 == fsh-generated/resources/RequestGroup-getrecommendations-a-return-group.json ==
+ERROR: RequestGroup/getrecommendations-a-return-group: RequestGroup.action[0].action[2].resource: Unable to resolve resource with reference '30551ce1-5a28-4356-b684-1e639094ad24'
 == fsh-generated/resources/RequestGroup-getrecommendations3-return-1.json ==
 == fsh-generated/resources/ServiceRequest-ct-head-iv-contrast.json ==
 == fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v2.json ==
