@@ -2,11 +2,12 @@ PrescriptionSearchSupport
 =========================================
 
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/condition-valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
-Generic: line 0, col 0, Error - unexpected non-end of element null::div  at line 217 column 140 (STRUCTURE)
+Generic: line 0, col 0, Error - unexpected non-end of element null::div  at line 218 column 140 (STRUCTURE)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return.json: line 0, col 0, Warning - Entry 2 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-v by Bundle resolution rules (REQUIRED)
 /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return.json: line 0, col 0, Warning - Entry 1 matches the reference Questionnaire/q-collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4c does not match the full target URL urn:uuid:q-collect-information-a by Bundle resolution rules (REQUIRED)
 /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return.json: line 37, col 18, Error - Constraint failed: vsd-10: 'Must have a system if a code is present' (INVARIANT)
@@ -68,9 +69,9 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect.json: line 0, col 0, Info - The resource PlanDefinition/GetDataToCollect could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses.json: line 0, col 0, Info - The resource PlanDefinition/GetDiagnoses could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations.json: line 0, col 0, Info - The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
-/github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a.json: line 1, col 11249, Error - Constraint failed: vsd-10: 'Must have a system if a code is present' (INVARIANT)
-/github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a.json: line 1, col 11304, Error - Constraint failed: vsd-10: 'Must have a system if a code is present' (INVARIANT)
-/github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a.json: line 1, col 11358, Error - Constraint failed: vsd-10: 'Must have a system if a code is present' (INVARIANT)
+/github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a.json: line 1, col 11248, Error - Constraint failed: vsd-10: 'Must have a system if a code is present' (INVARIANT)
+/github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a.json: line 1, col 11303, Error - Constraint failed: vsd-10: 'Must have a system if a code is present' (INVARIANT)
+/github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a.json: line 1, col 11357, Error - Constraint failed: vsd-10: 'Must have a system if a code is present' (INVARIANT)
 /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a.json: line 0, col 0, Info - The resource Questionnaire/q-collect-information-a could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v.json: line 11, col 6, Error - Items not of type group should not have items outside answers (use answer.item not .item) (STRUCTURE)
 /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v3.json: line 33, col 4, Warning - Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided (INVALID)
@@ -86,5 +87,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /github/workspace/fsh-generated/resources/ValueSet-condition-valueset.json: line 1, col 1757, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present (REQUIRED)
 /github/workspace/fsh-generated/resources/ValueSet-condition-valueset.json: line 0, col 0, Warning - The resource ValueSet/condition-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
 
-err = 33, warn = 46, info = 4
-IG Publisher Version: 1.8.1
+err = 33, warn = 47, info = 4
+IG Publisher Version: 1.8.3
