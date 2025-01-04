@@ -3,27 +3,12 @@
   "version": "1.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "BE",
-  "extensions": [
-    {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ext-radiation-level-score",
-      "title": "Radiation level score",
-      "types": [
-        "Ratio"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {},
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/language": [
       "Bundle.entry.resource.payload.contentString",
-      "Communication.payload.contentString"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
-      "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/translation": [
-      "Bundle.entry.resource.payload.contentString",
-      "Communication.payload.contentString"
+      "CommunicationRequest.payload.contentString"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -44,12 +29,8 @@
     ],
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating": [
       "Bundle.entry.resource",
-      "Communication",
-      "MedicationRequest",
-      "ServiceRequest"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ext-radiation-level-score": [
-      "ServiceRequest"
+      "CommunicationRequest",
+      "MedicationRequest"
     ]
   }
 }

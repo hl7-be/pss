@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "allergy-to-sulfonamide"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance allergy-to-sulfonamide</b></p><a name=\"allergy-to-sulfonamide\"> </a><a name=\"hcallergy-to-sulfonamide\"> </a><a name=\"allergy-to-sulfonamide-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91939003}\">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href=\"Patient-patient-y.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance allergy-to-sulfonamide</b></p><a name=\"allergy-to-sulfonamide\"> </a><a name=\"hcallergy-to-sulfonamide\"> </a><a name=\"allergy-to-sulfonamide-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91939003}\">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
@@ -28,8 +28,8 @@
      ] )
   ] ; # 
   fhir:patient [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-y> ;
-     fhir:reference [ fhir:v "Patient/patient-y" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-x> ;
+     fhir:reference [ fhir:v "Patient/patient-x" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

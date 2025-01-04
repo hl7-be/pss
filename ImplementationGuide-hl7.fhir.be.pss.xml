@@ -37,6 +37,7 @@
     <coding>
       <system value="urn:iso:std:iso:3166"/>
       <code value="BE"/>
+      <display value="Belgium"/>
     </coding>
   </jurisdiction>
   <packageId value="hl7.fhir.be.pss"/>
@@ -469,15 +470,11 @@
     </extension>
     <grouping id="PlanDefinitions">
       <name value="PlanDefinitions (services)"/>
-      <description value="PlanDefinitions defining the service endpoints for using the HL7 CPG definitions."/>
+      <description value="PlanDefinitions defining the service endpoints for using the PSS."/>
     </grouping>
     <grouping id="Antimicrobiology">
       <name value="Antimicrobiology"/>
       <description value="Antimicrobiology PSS resource examples"/>
-    </grouping>
-    <grouping id="Radiology">
-      <name value="Radiology"/>
-      <description value="Radiology PSS resource examples"/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -637,10 +634,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Communication"/>
+        <valueString value="CommunicationRequest"/>
       </extension>
       <reference>
-        <reference value="Communication/ab-advice"/>
+        <reference value="CommunicationRequest/ab-advice"/>
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
@@ -702,7 +699,8 @@
       <reference>
         <reference value="ValueSet/condition-valueset"/>
       </reference>
-      <name value="condition-valueset"/>
+      <name value="Antimicrobiology - Vaginitis-related conditions"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -714,18 +712,6 @@
       </reference>
       <name value="GetDataToCollect"/>
       <description value="Get Data to Collect"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="PlanDefinitions"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PlanDefinition"/>
-      </extension>
-      <reference>
-        <reference value="PlanDefinition/GetDiagnoses"/>
-      </reference>
-      <name value="GetDiagnoses"/>
-      <description value="Get Diagnoses Data"/>
       <exampleBoolean value="true"/>
       <groupingId value="PlanDefinitions"/>
     </resource>
@@ -746,307 +732,9 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/patient-y"/>
+        <reference value="Patient/patient-x"/>
       </reference>
-      <name value="patient-y"/>
-      <description value="Patient Y"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ext-radiation-level-score"/>
-      </reference>
-      <name value="Radiation level score"/>
-      <description value="The radiation level score."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/radiology-getdiagnoses"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Request - 1. Bundle"/>
-      <description value="Radiology - S1 Get Diagnoses - Request - 1. Bundle"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ataxia"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Request - 1.1. Observed data"/>
-      <description value="Radiology - S1 Get Diagnoses - Request - 1.1. Observed data"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/ct-head-iv-contrast"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Request - 1.2. Suggested Procedure"/>
-      <description value="Radiolog1 - S1 Get Diagnoses - Request - 1.2. Suggested procedure"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/radiology-getdiagnoses-return"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1. Bundle"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1. Bundle"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RequestGroup"/>
-      </extension>
-      <reference>
-        <reference value="RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/proposed-diagnosis-post-trauma-ataxia"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/propose-stroke"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/proposed-diagnosis-stroke"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/propose-infection"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/proposed-diagnosis-infection"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/propose-head-trauma"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/proposed-diagnosis-head-trauma"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/propose-slow-progression-ataxia"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.8. Task to propose diagnosis - Chronic or slow progression-ataxia"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.8 Task to propose diagnosis - Chronic or slow progression-ataxia"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/proposed-diagnosis-slow-progression-ataxia"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/propose-post-trauma-ataxia"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/getrecommendations-data3"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Request- 1. request Bundle"/>
-      <description value="Radiology - S3 Get Recommendations - Request - 1. request Bundle"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/proposed-diagnosis-head-trauma-v2"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma"/>
-      <description value="Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/ct-head-iv-contrast-v2"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/getrecommendations3-return"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RequestGroup"/>
-      </extension>
-      <reference>
-        <reference value="RequestGroup/getrecommendations3-return-1"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/ct-head-iv-contrast-v3"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/ct-head-with-or-without-contrast-v3"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/mr-head-without-contrast"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/X"/>
-      </reference>
-      <name value="X"/>
+      <name value="patient-x"/>
       <description value="Patient X"/>
       <exampleBoolean value="true"/>
     </resource>
@@ -1082,9 +770,9 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="antimicrobial.html"/>
+            <valueUrl value="antimicrobiology.html"/>
           </extension>
-          <nameUrl value="antimicrobial.html"/>
+          <nameUrl value="antimicrobiology.html"/>
           <title value="Antimicrobiology"/>
           <generation value="markdown"/>
         </page>

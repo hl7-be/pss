@@ -35,7 +35,8 @@
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
-      "code" : "BE"
+      "code" : "BE",
+      "display" : "Belgium"
     }]
   }],
   "packageId" : "hl7.fhir.be.pss",
@@ -625,17 +626,12 @@
     "grouping" : [{
       "id" : "PlanDefinitions",
       "name" : "PlanDefinitions (services)",
-      "description" : "PlanDefinitions defining the service endpoints for using the HL7 CPG definitions."
+      "description" : "PlanDefinitions defining the service endpoints for using the PSS."
     },
     {
       "id" : "Antimicrobiology",
       "name" : "Antimicrobiology",
       "description" : "Antimicrobiology PSS resource examples"
-    },
-    {
-      "id" : "Radiology",
-      "name" : "Radiology",
-      "description" : "Radiology PSS resource examples"
     }],
     "resource" : [{
       "extension" : [{
@@ -809,10 +805,10 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Communication"
+        "valueString" : "CommunicationRequest"
       }],
       "reference" : {
-        "reference" : "Communication/ab-advice"
+        "reference" : "CommunicationRequest/ab-advice"
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice",
       "description" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice",
@@ -879,7 +875,8 @@
       "reference" : {
         "reference" : "ValueSet/condition-valueset"
       },
-      "name" : "condition-valueset",
+      "name" : "Antimicrobiology - Vaginitis-related conditions",
+      "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
       "exampleBoolean" : true
     },
     {
@@ -892,19 +889,6 @@
       },
       "name" : "GetDataToCollect",
       "description" : "Get Data to Collect",
-      "exampleBoolean" : true,
-      "groupingId" : "PlanDefinitions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PlanDefinition"
-      }],
-      "reference" : {
-        "reference" : "PlanDefinition/GetDiagnoses"
-      },
-      "name" : "GetDiagnoses",
-      "description" : "Get Diagnoses Data",
       "exampleBoolean" : true,
       "groupingId" : "PlanDefinitions"
     },
@@ -927,332 +911,9 @@
         "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Patient/patient-y"
+        "reference" : "Patient/patient-x"
       },
-      "name" : "patient-y",
-      "description" : "Patient Y",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ext-radiation-level-score"
-      },
-      "name" : "Radiation level score",
-      "description" : "The radiation level score.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/radiology-getdiagnoses"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Request - 1. Bundle",
-      "description" : "Radiology - S1 Get Diagnoses - Request - 1. Bundle",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ataxia"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Request - 1.1. Observed data",
-      "description" : "Radiology - S1 Get Diagnoses - Request - 1.1. Observed data",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/ct-head-iv-contrast"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Request - 1.2. Suggested Procedure",
-      "description" : "Radiolog1 - S1 Get Diagnoses - Request - 1.2. Suggested procedure",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/radiology-getdiagnoses-return"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1. Bundle",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1. Bundle",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "RequestGroup"
-      }],
-      "reference" : {
-        "reference" : "RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/proposed-diagnosis-post-trauma-ataxia"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/propose-stroke"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/proposed-diagnosis-stroke"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/propose-infection"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/proposed-diagnosis-infection"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/propose-head-trauma"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/proposed-diagnosis-head-trauma"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/propose-slow-progression-ataxia"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.8. Task to propose diagnosis - Chronic or slow progression-ataxia",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.8 Task to propose diagnosis - Chronic or slow progression-ataxia",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/proposed-diagnosis-slow-progression-ataxia"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/propose-post-trauma-ataxia"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/getrecommendations-data3"
-      },
-      "name" : "Radiology - S3 Get Recommendations - Request- 1. request Bundle",
-      "description" : "Radiology - S3 Get Recommendations - Request - 1. request Bundle",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/proposed-diagnosis-head-trauma-v2"
-      },
-      "name" : "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma",
-      "description" : "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/ct-head-iv-contrast-v2"
-      },
-      "name" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast",
-      "description" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/getrecommendations3-return"
-      },
-      "name" : "Radiology - S3 Get Recommendations - Response - 1. Bundle",
-      "description" : "Radiology - S3 Get Recommendations - Response - 1. Bundle",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "RequestGroup"
-      }],
-      "reference" : {
-        "reference" : "RequestGroup/getrecommendations3-return-1"
-      },
-      "name" : "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
-      "description" : "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/ct-head-iv-contrast-v3"
-      },
-      "name" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast",
-      "description" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/ct-head-with-or-without-contrast-v3"
-      },
-      "name" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast",
-      "description" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/mr-head-without-contrast"
-      },
-      "name" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast",
-      "description" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/X"
-      },
-      "name" : "X",
+      "name" : "patient-x",
       "description" : "Patient X",
       "exampleBoolean" : true
     }],
@@ -1293,9 +954,9 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "antimicrobial.html"
+            "valueUrl" : "antimicrobiology.html"
           }],
-          "nameUrl" : "antimicrobial.html",
+          "nameUrl" : "antimicrobiology.html",
           "title" : "Antimicrobiology",
           "generation" : "markdown"
         }]
