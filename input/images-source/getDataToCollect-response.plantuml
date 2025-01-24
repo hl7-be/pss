@@ -1,0 +1,41 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+hide methods
+
+package "Bundle" {
+  class "  RequestGroup  " as RG #cfc{  }
+
+    class "  Patient  " as P #cff{
+  }
+P .u. RG 
+P .r. T 
+P .r. CD 
+
+
+  class "  Task  " as T #ffd{
+
+    }
+
+RG ".action" o-- T 
+
+  class " Questionnaire " as CD #fdd{  
+    
+  }
+
+T ".input" o-d- CD
+RG -r[hidden]- CD
+}
+
+legend
+Response is a Bundle containing
+* a RequestGroup
+* 0..N Tasks as a request
+** to present a list of questions (Questionnaire)
+
+each Task is an option in RequestGroup
+Tasks indicate "Please collect this data"
+endlegend
+
+@enduml
