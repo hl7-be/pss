@@ -96,26 +96,26 @@ Usage: #example
   * type = #choice
   * repeats = true
   * answerValueSet = "#condition-valueset"
-// * item[0]
-//   * linkId = "conditions"
-//   * text = "Which conditions are you considering?"
-//   * type = #group
-//   * repeats = false
-//   * item[0]
-//     * linkId = "condition1"
-//     * text = "Bacterial vaginosis"
-//     * type = #boolean
-//     * code = http://snomed.info/sct#419760006
-//   * item[+]
-//     * linkId = "condition2"
-//     * text = "Trichomonal vaginitis"
-//     * type = #boolean
-//     * code.coding[+] = http://snomed.info/sct#276877003
-//   * item[+]
-//     * linkId = "condition3"
-//     * text = "Candidiasis of vagina"
-//     * type = #boolean
-//     * code.coding[+] = http://snomed.info/sct#72934000
+* item[1]
+   * linkId = "riskpatient"
+   * text = "Which conditions are you considering?"
+   * type = #group
+   * repeats = false
+   * item[0]
+     * linkId = "condition1"
+     * text = "Bacterial vaginosis"
+     * type = #boolean
+     * code = http://snomed.info/sct#419760006
+   * item[+]
+     * linkId = "condition2"
+     * text = "Trichomonal vaginitis"
+     * type = #boolean
+     * code.coding[+] = http://snomed.info/sct#276877003
+   * item[+]
+     * linkId = "condition3"
+     * text = "Candidiasis of vagina"
+     * type = #boolean
+     * code.coding[+] = http://snomed.info/sct#72934000
 
 
 * item[+]
@@ -128,3 +128,4 @@ Usage: #example
   * text = "Recurrent?"
   * code = $sct#708126004
   * type = #boolean
+
