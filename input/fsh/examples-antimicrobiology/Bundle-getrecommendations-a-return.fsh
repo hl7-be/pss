@@ -63,7 +63,10 @@ Usage: #example
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/language"
     * valueCode = #nl
-* payload[+].contentString = "Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée..."
+* payload[+].contentString = "Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée: https://www.bcfi.be/nl/chapters/12?frag=8000010"
+* payload[=].contentString.extension[+].url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
+* payload[=].contentString.extension[=].valueString = "Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)"
+
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/language"
     * valueCode = #fr
@@ -84,11 +87,12 @@ Usage: #example
     * denominator.value = 3
 * status = #active
 * intent = #proposal
-* medicationCodeableConcept.text = "Nitrofurantoin 2x 100mg x 5 days"
+* medicationCodeableConcept.coding[+] = $atc#J01XD01
+* medicationCodeableConcept.text = "metronidazol"
 * subject = Reference(patient-x)
 
-// this is WIP
-* code = $atc#J01XE01
+// this is WIP - note the codes and names - Metronidazole XD01, Nitrofurantoin XE01
+
 * dosageInstruction.text = "Timing = 3 times a day for 7 days. Dosage depends on patient age: If age < 2 years, 375 mg; If age is between 2 and 10 years, 750 mg, if age > 10 years, 1500 mg"
 * dosageInstruction.timing.repeat[0]
   * frequency = 3
