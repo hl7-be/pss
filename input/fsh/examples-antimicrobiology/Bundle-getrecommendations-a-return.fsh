@@ -98,7 +98,7 @@ Usage: #example
   * frequency = 3
   * period = 1
   * periodUnit = #d
-  * boundsDuration = 2 #d
+  * boundsDuration = 7 #d
 
 
 Instance: clindamycin
