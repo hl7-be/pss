@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 14, info = 3-->
+<!-- broken links = 1, errors = 6, warn = 14, info = 3-->
 <head>
   <title>PrescriptionSearchSupport : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -46,7 +46,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for PrescriptionSearchSupport</h1>
- <p>Generated Tue Jan 28 16:44:15 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/medication">https://www.ehealth.fgov.be/standards/fhir/medication</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu Jan 30 12:45:24 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/medication">https://www.ehealth.fgov.be/standards/fhir/medication</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.9</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.be.pss, Canonical = https://www.ehealth.fgov.be/standards/fhir/medication</td></tr>
@@ -87,14 +87,14 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 14, info = 3, broken links = 0.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 6, warn = 14, info = 3, broken links = 1.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>5</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getdatatocollect-a-return"><b>/github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
@@ -102,8 +102,14 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-data"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-return"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-return"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return</b></a></td><td><b>3</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CommunicationRequest-ab-advice"><b>/github/workspace/fsh-generated/resources/CommunicationRequest-ab-advice</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-metronidazol"><b>/github/workspace/fsh-generated/resources/MedicationRequest-metronidazol</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-condition-valueset"><b>/github/workspace/fsh-generated/resources/ValueSet-condition-valueset</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -114,6 +120,9 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-q-collect-information-a-form.html">output&#8203;/Questionnaire-q-collect-information-a-form&#8203;.html</a></b></td><td><b>error</b></td><td><b>unexpected non-end of element null::div  at line 220 column 140</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
@@ -183,11 +192,49 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    <tr style="background-color: #ffebcc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*RequestGroup&#8203;/getrecommendations-a-return-group*&#8203;/&#8203;.action[0]&#8203;.action[4]&#8203;.resource</b></td><td><b>warning</b></td><td><b>Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU</span></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*CommunicationRequest&#8203;/ab-advice*&#8203;/&#8203;.payload[1]&#8203;.content&#8203;.ofType(string)&#8203;.extension[0] (l99&#8203;/c18)</b></td><td><b>error</b></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Extension_EXT_Type</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*MedicationRequest&#8203;/metronidazol*&#8203;/&#8203;.dosageInstruction[0]&#8203;.timing&#8203;.repeat&#8203;.bounds&#8203;.ofType(Duration) (l165&#8203;/c18)</b></td><td><b>error</b></td><td><b>Constraint failed: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/Duration#drt-1</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*MedicationRequest&#8203;/metronidazol*&#8203;/&#8203;.dosageInstruction[0]&#8203;.timing&#8203;.repeat&#8203;.bounds&#8203;.ofType(Duration) (l165&#8203;/c18)</b></td><td><b>error</b></td><td><b>Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/Quantity#qty-3</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CommunicationRequest-ab-advice"> </a>
+<h2><a href="CommunicationRequest-ab-advice.html">fsh-generated/resources/CommunicationRequest-ab-advice.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>CommunicationRequest: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CommunicationRequest&#8203;.payload[1]&#8203;.content&#8203;.ofType(string)&#8203;.extension[0] (l39&#8203;/c12)</b></td><td><b>error</b></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Extension_EXT_Type</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationRequest-metronidazol"> </a>
+<h2><a href="MedicationRequest-metronidazol.html">fsh-generated/resources/MedicationRequest-metronidazol.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html">CPG Medication Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest&#8203;.dosageInstruction[0]&#8203;.timing&#8203;.repeat&#8203;.bounds&#8203;.ofType(Duration) (l44&#8203;/c12)</b></td><td><b>error</b></td><td><b>Constraint failed: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/Duration#drt-1</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest&#8203;.dosageInstruction[0]&#8203;.timing&#8203;.repeat&#8203;.bounds&#8203;.ofType(Duration) (l44&#8203;/c12)</b></td><td><b>error</b></td><td><b>Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/Quantity#qty-3</span></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ValueSet-condition-valueset"> </a>
-<h2><a href="ValueSet-condition-valueset.html">fsh-generated/resources/ValueSet-condition-valueset.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+<h2><a href="ValueSet-condition-valueset.html">fsh-generated/resources/ValueSet-condition-valueset.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -239,6 +286,17 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Bundle-getrecommendations-a-return.html">fsh-generated/resources/Bundle-getrecommendations-a-return.json</a></td><td><b>Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXT_Type"> </a>
+<h2>Extension_EXT_Type</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-getrecommendations-a-return.html">fsh-generated/resources/Bundle-getrecommendations-a-return.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CommunicationRequest-ab-advice.html">fsh-generated/resources/CommunicationRequest-ab-advice.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string</b></td>
    </tr>
 </table>
 </body>
