@@ -23,5 +23,9 @@ Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 
 
 RuleSet: AddTranslation(lang,text)
-* extension[$translation].extension[lang].valueCode = #{lang}
-* extension[$translation].extension[content].valueString = "{text}"
+* extension[+]
+  * url = $translation
+  * extension[+].url = "lang"
+  * extension[=].valueCode = #{lang}
+  * extension[+].url = "content"
+  * extension[=].valueString = "{text}"
