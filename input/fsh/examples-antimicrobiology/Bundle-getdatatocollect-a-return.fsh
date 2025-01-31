@@ -104,15 +104,15 @@ Usage: #example
   * enableWhen[+]
     * question = "condition1"
     * operator = #=
-    * answerBoolean = "true"
+    * answerBoolean = true
   * enableWhen[+]
     * question = "condition2"
     * operator = #=
-    * answerBoolean = "true"
+    * answerBoolean = true
   * enableWhen[+]
     * question = "condition3"
     * operator = #=
-    * answerBoolean = "true"
+    * answerBoolean = true
 
   * enableBehavior = #any
     
