@@ -96,41 +96,43 @@ Usage: #example
   * type = #choice
   * repeats = true
   * answerValueSet = "#condition-valueset"
-* item[1]
+
+
+* item[+]
   * linkId = "riskpatient"
-  * text = "Which conditions are you considering?"
+  * text = "Is the patient a risk patient?"
   * type = #boolean
   * repeats = false
-  * enableWhen[+]
-    * question = "condition1"
-    * operator = #=
-    * answerBoolean = true
-  * enableWhen[+]
-    * question = "condition2"
-    * operator = #=
-    * answerBoolean = true
-  * enableWhen[+]
-    * question = "condition3"
-    * operator = #=
-    * answerBoolean = true
+  // * enableWhen[+]
+  //   * question = "condition1"
+  //   * operator = #=
+  //   * answerBoolean = true
+  // * enableWhen[+]
+  //   * question = "condition2"
+  //   * operator = #=
+  //   * answerBoolean = true
+  // * enableWhen[+]
+  //   * question = "condition3"
+  //   * operator = #=
+  //   * answerBoolean = true
 
-  * enableBehavior = #any
+  // * enableBehavior = #any
     
   * item[0]
     * linkId = "condition1"
     * text = "Bacterial vaginosis"
     * type = #boolean
-    * code = http://snomed.info/sct#419760006
+//    * code = http://snomed.info/sct#419760006
   * item[+]
     * linkId = "condition2"
     * text = "Trichomonal vaginitis"
     * type = #boolean
-    * code[+] = http://snomed.info/sct#276877003
+//    * code[+] = http://snomed.info/sct#276877003
   * item[+]
     * linkId = "condition3"
     * text = "Candidiasis of vagina"
     * type = #boolean
-    * code[+] = http://snomed.info/sct#72934000
+//    * code[+] = http://snomed.info/sct#72934000
 
 
 * item[+]

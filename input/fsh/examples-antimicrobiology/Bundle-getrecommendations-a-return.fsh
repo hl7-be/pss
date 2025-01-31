@@ -67,6 +67,9 @@ Usage: #example
 * payload[=].contentString.extension[+].url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
 * payload[=].contentString.extension[=].valueString = "Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)"
 
+* payload[=].contentString.extension[=].valueString
+  * insert AddTranslation(fr,some text in french [site BCFI](Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010\))
+
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/language"
     * valueCode = #fr
