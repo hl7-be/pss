@@ -103,6 +103,8 @@ Usage: #example
   * text = "Is the patient a risk patient?"
   * type = #boolean
   * repeats = false
+  * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible"
+  * extension[=].valueCode = #default-closed
   // * enableWhen[+]
   //   * question = "condition1"
   //   * operator = #=
