@@ -99,8 +99,23 @@ Usage: #example
 * item[1]
   * linkId = "riskpatient"
   * text = "Which conditions are you considering?"
-  * type = #group
+  * type = #boolean
   * repeats = false
+  * enableWhen[+]
+    * question = "condition1"
+    * operator = #=
+    * answerBoolean = "true"
+  * enableWhen[+]
+    * question = "condition2"
+    * operator = #=
+    * answerBoolean = "true"
+  * enableWhen[+]
+    * question = "condition3"
+    * operator = #=
+    * answerBoolean = "true"
+
+  * enableBehavior = #any
+    
   * item[0]
     * linkId = "condition1"
     * text = "Bacterial vaginosis"
