@@ -94,7 +94,7 @@ Usage: #example
   * linkId = "conditions"
   * text = "Which conditions are you considering?"
   * type = #choice
-  * repeats = true
+  * repeats = false
   * answerValueSet = "#condition-valueset"
 
 
