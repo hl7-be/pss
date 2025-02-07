@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="mr-head-without-contrast"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest mr-head-without-contrast</b></p><a name="mr-head-without-contrast"> </a><a name="hcmr-head-without-contrast"> </a><a name="mr-head-without-contrast-en-US"> </a><p><b>CPG Rating Extension</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating green}">Green</span></p><p><b>CPG Rating Extension</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating yellow}">Yellow</span></p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">MR, head, without IV contrast</span></p><p><b>subject</b>: <a href="Patient-patient-x.html">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>
+  </text>
+  <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating"/>
+        <code value="green"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating"/>
+        <code value="yellow"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <code value="114092"/>
+      <display value="MR, head, without IV contrast"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-x"/>
+  </subject>
+</ServiceRequest>

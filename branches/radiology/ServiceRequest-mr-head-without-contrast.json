@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "mr-head-without-contrast",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mr-head-without-contrast</b></p><a name=\"mr-head-without-contrast\"> </a><a name=\"hcmr-head-without-contrast\"> </a><a name=\"mr-head-without-contrast-en-US\"> </a><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating green}\">Green</span></p><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating yellow}\">Yellow</span></p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">MR, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
+        "code" : "green"
+      }]
+    }
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
+        "code" : "yellow"
+      }]
+    }
+  }],
+  "status" : "active",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [{
+      "code" : "114092",
+      "display" : "MR, head, without IV contrast"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-x"
+  }
+}
