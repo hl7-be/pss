@@ -793,6 +793,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded> ;
+         fhir:reference [ fhir:v "StructureDefinition/cpg-rating-coded" ]
+       ] ;
+       fhir:name [ fhir:v "CPG Rating Extension" ] ;
+       fhir:description [ fhir:v "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
@@ -828,6 +840,114 @@
        fhir:name [ fhir:v "patient-x" ] ;
        fhir:description [ fhir:v "Patient X" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/radiation-exposure-rating-vs> ;
+         fhir:reference [ fhir:v "ValueSet/radiation-exposure-rating-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Radiation exposure rating" ] ;
+       fhir:description [ fhir:v "Radiation exposure rating." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating> ;
+         fhir:reference [ fhir:v "CodeSystem/radiology-exposure-rating" ]
+       ] ;
+       fhir:name [ fhir:v "Radiation exposure rating" ] ;
+       fhir:description [ fhir:v "Radiation exposure rating." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/getrecommendations-r-return> ;
+         fhir:reference [ fhir:v "Bundle/getrecommendations-r-return" ]
+       ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1. Bundle" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1. Bundle" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RequestGroup" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/RequestGroup/getrecommendations-r-return-1> ;
+         fhir:reference [ fhir:v "RequestGroup/getrecommendations-r-return-1" ]
+       ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/ct-head-iv-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/ct-head-iv-contrast" ]
+       ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/ct-head-with-or-without-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/ct-head-with-or-without-contrast" ]
+       ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/mr-head-without-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/mr-head-without-contrast" ]
+       ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/recommendation-rating-vs> ;
+         fhir:reference [ fhir:v "ValueSet/recommendation-rating-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation rating" ] ;
+       fhir:description [ fhir:v "Recommendation rating." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating> ;
+         fhir:reference [ fhir:v "CodeSystem/recommendation-rating" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation rating" ] ;
+       fhir:description [ fhir:v "Recommendation rating." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
