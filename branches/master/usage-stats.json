@@ -10,6 +10,10 @@
       "Bundle.entry.resource.payload.contentString",
       "CommunicationRequest.payload.contentString"
     ],
+    "http://hl7.org/fhir/StructureDefinition/rendering-markdown": [
+      "Bundle.entry.resource.payload.contentString",
+      "CommunicationRequest.payload.contentString"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
     ],
@@ -31,6 +35,10 @@
       "Bundle.entry.resource",
       "CommunicationRequest",
       "MedicationRequest"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible": [
+      "Bundle.entry.resource.item",
+      "Questionnaire.item"
     ]
   }
 }

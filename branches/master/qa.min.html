@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 2, warn = 15, info = 3-->
+<!-- broken links = 0, errors = 12, warn = 15, info = 3-->
 <head>
   <title>PrescriptionSearchSupport : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -46,7 +46,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for PrescriptionSearchSupport</h1>
- <p>Generated Mon Feb 17 11:11:51 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/medication">https://www.ehealth.fgov.be/standards/fhir/medication</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Mon Feb 17 11:12:21 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/medication">https://www.ehealth.fgov.be/standards/fhir/medication</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.13</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.be.pss, Canonical = https://www.ehealth.fgov.be/standards/fhir/medication</td></tr>
@@ -87,7 +87,7 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 2, warn = 15, info = 3, broken links = 0.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 12, warn = 15, info = 3, broken links = 0.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -96,17 +96,26 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    <tr style="background-color: #EFFFEF">
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getdatatocollect-a-return"><b>/github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getdatatocollect-a-return"><b>/github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-data"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-return"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-return"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return</b></a></td><td><b>3</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CommunicationRequest-ab-advice"><b>/github/workspace/fsh-generated/resources/CommunicationRequest-ab-advice</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.be.pss"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-metronidazol"><b>/github/workspace/fsh-generated/resources/MedicationRequest-metronidazol</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-q-collect-information-a"><b>/github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-condition-valueset"><b>/github/workspace/fsh-generated/resources/ValueSet-condition-valueset</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -148,6 +157,12 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    <tr style="background-color: #ffebcc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*RequestGroup&#8203;/getdatatocollect-a-return-group*&#8203;/&#8203;.action[0]&#8203;.resource</b></td><td><b>warning</b></td><td><b>Entry 1 matches the reference Task/collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755 does not match the full target URL urn:uuid:collect-information-a by Bundle resolution rules</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU</span></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Questionnaire&#8203;/q-collect-information-a*&#8203;/&#8203;.item[1]&#8203;.extension[0] (l113&#8203;/c16)</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible could not be found so is not allowed here</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Extension_EXT_Unknown_NotHere</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Questionnaire&#8203;/q-collect-information-a*&#8203;/&#8203;.item[1]&#8203;.extension[0]&#8203;.url (l114&#8203;/c102)</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-data"> </a>
@@ -186,11 +201,33 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    <tr style="background-color: #ffebcc">
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*RequestGroup&#8203;/getrecommendations-a-return-group*&#8203;/&#8203;.action[0]&#8203;.action[4]&#8203;.resource</b></td><td><b>warning</b></td><td><b>Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_BUNDLE_POSSIBLE_MATCH_WRONG_FU</span></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*CommunicationRequest&#8203;/ab-advice*&#8203;/&#8203;.payload[0]&#8203;.content&#8203;.ofType(string)&#8203;.extension[1] (l92&#8203;/c18)</b></td><td><b>error</b></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Extension_EXT_Type</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*MedicationRequest&#8203;/metronidazol*&#8203;/&#8203;.dosageInstruction[0]&#8203;.timing&#8203;.repeat&#8203;.bounds&#8203;.ofType(Duration) (l167&#8203;/c18)</b></td><td><b>error</b></td><td><b>Constraint failed: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/Duration#drt-1</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*MedicationRequest&#8203;/metronidazol*&#8203;/&#8203;.dosageInstruction[0]&#8203;.timing&#8203;.repeat&#8203;.bounds&#8203;.ofType(Duration) (l167&#8203;/c18)</b></td><td><b>error</b></td><td><b>Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/Quantity#qty-3</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CommunicationRequest-ab-advice"> </a>
+<h2><a href="CommunicationRequest-ab-advice.html">fsh-generated/resources/CommunicationRequest-ab-advice.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>CommunicationRequest: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CommunicationRequest&#8203;.payload[0]&#8203;.content&#8203;.ofType(string)&#8203;.extension[1] (l32&#8203;/c12)</b></td><td><b>error</b></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Extension_EXT_Type</span></td>
+   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.be.pss"> </a>
-<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -207,9 +244,44 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationRequest-metronidazol"> </a>
+<h2><a href="MedicationRequest-metronidazol.html">fsh-generated/resources/MedicationRequest-metronidazol.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html">CPG Medication Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest&#8203;.dosageInstruction[0]&#8203;.timing&#8203;.repeat&#8203;.bounds&#8203;.ofType(Duration) (l44&#8203;/c12)</b></td><td><b>error</b></td><td><b>Constraint failed: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/Duration#drt-1</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MedicationRequest&#8203;.dosageInstruction[0]&#8203;.timing&#8203;.repeat&#8203;.bounds&#8203;.ofType(Duration) (l44&#8203;/c12)</b></td><td><b>error</b></td><td><b>Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/Quantity#qty-3</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Questionnaire-q-collect-information-a"> </a>
+<h2><a href="Questionnaire-q-collect-information-a.html">fsh-generated/resources/Questionnaire-q-collect-information-a.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></li><li>Questionnaire.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.extension[0] (l1&#8203;/c18998)</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible could not be found so is not allowed here</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Extension_EXT_Unknown_NotHere</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.extension[0]&#8203;.url (l1&#8203;/c18968)</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Resource</b></td><td><b>information</b></td><td><b>The resource Questionnaire/q-collect-information-a could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_ValueSet-condition-valueset"> </a>
-<h2><a href="ValueSet-condition-valueset.html">fsh-generated/resources/ValueSet-condition-valueset.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+<h2><a href="ValueSet-condition-valueset.html">fsh-generated/resources/ValueSet-condition-valueset.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -264,6 +336,28 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
    </tr>
 </table>
 <hr/>
+<a name="Extension_EXT_Type"> </a>
+<h2>Extension_EXT_Type</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-getrecommendations-a-return.html">fsh-generated/resources/Bundle-getrecommendations-a-return.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CommunicationRequest-ab-advice.html">fsh-generated/resources/CommunicationRequest-ab-advice.json</a></td><td><b>The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-getdatatocollect-a-return.html">fsh-generated/resources/Bundle-getdatatocollect-a-return.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-q-collect-information-a.html">fsh-generated/resources/Questionnaire-q-collect-information-a.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible could not be found so is not allowed here</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="IG_HL7_FMM_SHOULD"> </a>
 <h2>IG_HL7_FMM_SHOULD</h2>
  <table class="grid">
@@ -285,6 +379,17 @@ hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/Structu
  <table class="grid">
    <tr style="background-color: #ffeeee">
      <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json</a></td><td><b>HL7 Implementation Guides must state their owning workgroup explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-wg</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-getdatatocollect-a-return.html">fsh-generated/resources/Bundle-getdatatocollect-a-return.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-q-collect-information-a.html">fsh-generated/resources/Questionnaire-q-collect-information-a.json</a></td><td><b>URL value 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible' does not resolve</b></td>
    </tr>
 </table>
 </body>
