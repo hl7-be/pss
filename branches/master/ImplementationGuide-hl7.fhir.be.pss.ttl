@@ -1219,6 +1219,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet> ;
+         fhir:reference [ fhir:v "StructureDefinition/codeValueSet" ]
+       ] ;
+       fhir:name [ fhir:v "codeValueSet" ] ;
+       fhir:description [ fhir:v "Code ValueSet" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "PlanDefinition"
          ]
        ] ) ;
@@ -1269,6 +1287,24 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v "true"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes> ;
+         fhir:reference [ fhir:v "ValueSet/PregnancyCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Pregnancy Codes" ] ;
+       fhir:description [ fhir:v "Pregnancy Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
        ]
      ] ) ;
      fhir:page [

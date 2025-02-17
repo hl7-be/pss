@@ -1,6 +1,24 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
+      "version" : null,
+      "status" : "active",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "description" : "Pregnancy Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "description" : "Pregnancy Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
       "version" : "1.0.0",
       "status" : "active",
@@ -9,7 +27,7 @@
       "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"
     },
     {
-      "url" : "urn:uuid:4def8174-ee4e-4fda-a69a-9e1ea685058e",
+      "url" : "urn:uuid:09abc875-2dea-405d-a062-3e7686fb96ab",
       "version" : null,
       "status" : "active",
       "name" : "Conditions",
