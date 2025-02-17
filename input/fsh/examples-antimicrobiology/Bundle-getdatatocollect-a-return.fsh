@@ -1,25 +1,9 @@
-ValueSet: PregnancyCodes
-Title: "Pregnancy Codes"
-Description: "Pregnancy Codes"
-// Usage: #example
-* ^status = #active
-* http://hl7.org/fhir/sid/icd-10#Z33.1
-* $sct#87527008
-* $sct#127364007
-* $sct#72892002
-
-
-Extension: codeValueSet
-Description: "Code ValueSet"
-* value[x] only canonical
-
 
 Instance: getdatatocollect-a-return
 InstanceOf: Bundle
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
 Usage: #example
-
 * type = #collection
 * entry[0].resource = getdatatocollect-a-return-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4d"
@@ -104,8 +88,7 @@ Description: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questi
 InstanceOf: Questionnaire
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity"
-* contained[0] = condition-valueset
-* contained[+] = PregnancyCodes
+* contained = condition-valueset
 * status = #active
 * item[0]
   * linkId = "conditions"
@@ -140,11 +123,8 @@ Usage: #example
   * text = "Is the patient pregnant?"
   * code = $icd10#Z88.0
   * type = #boolean
-  * extension[codeValueSet].valueCanonical = Canonical(PregnancyCodes)
 * item[+]
   * linkId = "recurrent"
   * text = "Recurrent?"
   * code = $sct#708126004
   * type = #boolean
-
-
