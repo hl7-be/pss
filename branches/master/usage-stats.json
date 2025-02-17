@@ -3,12 +3,23 @@
   "version": "1.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "BE",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet",
+      "title": "codeValueSet",
+      "types": [
+        "canonical"
+      ]
+    }
+  ],
   "profiles": {},
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/language": [
       "Bundle.entry.resource.payload.contentString",
       "CommunicationRequest.payload.contentString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -27,10 +38,17 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating": [
       "Bundle.entry.resource",
       "CommunicationRequest",
       "MedicationRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet": [
+      "Bundle.entry.resource.item",
+      "Questionnaire.item"
     ]
   }
 }
