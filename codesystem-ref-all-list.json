@@ -1,26 +1,30 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "RadiologyExposureRatingCS",
-      "title" : "Radiation exposure rating",
-      "description" : "Radiation exposure rating.",
+      "url" : "http://hl7.org/fhir/sid/icd-10",
+      "version" : "2.1.1",
+      "status" : "retired",
+      "name" : "Icd10",
+      "title" : "ICD-10",
+      "description" : "International Classification of Diseases revision 10 (ICD 10)",
+      "oids" : ["2.16.840.1.113883.6.3"],
       "uses" : {
       },
-      "ValueSet-radiation-exposure-rating-vs.html" : "Radiation exposure rating"
+      "ValueSet-q-collect-information-a_PregnancyCodes.html" : "Pregnancy Codes",
+      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes"
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "RecommendationRatingCS",
-      "title" : "Recommendation rating",
-      "description" : "Recommendation rating.",
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-recommendation-rating-vs.html" : "Recommendation rating"
+      "ValueSet-q-collect-information-a_PregnancyCodes.html" : "Pregnancy Codes",
+      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes"
     }
   ]
 }

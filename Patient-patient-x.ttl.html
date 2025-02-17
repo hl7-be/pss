@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.27"}
-    h3,h4,h5,h6{--heading-prefix:"5.27"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.24"}
+    h3,h4,h5,h6{--heading-prefix:"5.24"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -86,7 +86,7 @@
 
 
 
-  <img alt="Belgium flag" src="assets/images/bel.svg" height="16" title="Belgium"/>
+  <img alt=" flag" src="assets/images/zwe.svg" height="16" title=""/>
 
 
             </span>
@@ -209,6 +209,7 @@
   <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
@@ -219,12 +220,15 @@
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;patient-x&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient patient-x&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;patient-x\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcpatient-x\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;patient-x-en-US\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient Female, DoB: 1989-09-12&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Known status of Patient\&quot;&gt;Deceased:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient patient-x&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;patient-x\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcpatient-x\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;patient-x-en-US\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Anonymous Patient Female, DoB: 1989-09-12&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Known status of Patient\&quot;&gt;Deceased:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
   ] ; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.active">fhir:active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">fhir:gender</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;female&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">fhir:birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;1989-09-12&quot;^^xsd:date] ; # 
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">fhir:deceased</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] . # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">fhir:deceased</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">a</a> fhir:boolean ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean
+  ] . # 
 
 </code></pre>
 
@@ -251,7 +255,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 7, 2025 08:52+0000">2025-02-07</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 17, 2025 11:04+0000">2025-02-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- HL7 Belgium -->

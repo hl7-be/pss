@@ -1,6 +1,24 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
+      "version" : null,
+      "status" : "active",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "description" : "Pregnancy Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "description" : "Pregnancy Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
       "version" : "1.0.0",
       "status" : "active",
@@ -9,29 +27,7 @@
       "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/radiation-exposure-rating-vs",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "RadiationExposureRatingVS",
-      "title" : "Radiation exposure rating",
-      "description" : "Radiation exposure rating.",
-      "systems" : [
-        "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating"
-      ]
-    },
-    {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/recommendation-rating-vs",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "RecommendationRatingVS",
-      "title" : "Recommendation rating",
-      "description" : "Recommendation rating.",
-      "systems" : [
-        "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating"
-      ]
-    },
-    {
-      "url" : "urn:uuid:f7b71489-ef57-4ce4-aa76-132b499688c8",
+      "url" : "urn:uuid:4a28c2b1-7007-48a7-a318-bf448863b6b6",
       "version" : null,
       "status" : "active",
       "name" : "Conditions",

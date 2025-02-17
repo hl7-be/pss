@@ -57,7 +57,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.1.0"/>
+    <version value="5.2.0"/>
   </dependsOn>
   <dependsOn id="cpg">
     <uri value="https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"/>
@@ -708,10 +708,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cpg-rating-coded"/>
+        <reference value="StructureDefinition/codeValueSet"/>
       </reference>
-      <name value="CPG Rating Extension"/>
-      <description value="A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."/>
+      <name value="codeValueSet"/>
+      <description value="Code ValueSet"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -754,98 +754,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/radiation-exposure-rating-vs"/>
+        <reference value="ValueSet/PregnancyCodes"/>
       </reference>
-      <name value="Radiation exposure rating"/>
-      <description value="Radiation exposure rating."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/radiology-exposure-rating"/>
-      </reference>
-      <name value="Radiation exposure rating"/>
-      <description value="Radiation exposure rating."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/getrecommendations-r-return"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RequestGroup"/>
-      </extension>
-      <reference>
-        <reference value="RequestGroup/getrecommendations-r-return-1"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/ct-head-iv-contrast"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/ct-head-with-or-without-contrast"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/mr-head-without-contrast"/>
-      </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/recommendation-rating-vs"/>
-      </reference>
-      <name value="Recommendation rating"/>
-      <description value="Recommendation rating."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/recommendation-rating"/>
-      </reference>
-      <name value="Recommendation rating"/>
-      <description value="Recommendation rating."/>
+      <name value="Pregnancy Codes"/>
+      <description value="Pregnancy Codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

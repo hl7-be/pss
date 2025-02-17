@@ -12,20 +12,6 @@
     "version" : "1.0.0"
   },
   {
-    "id" : "radiology-exposure-rating",
-    "type" : "CodeSystem",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
-    "version" : "1.0.0",
-    "name" : "RadiologyExposureRatingCS"
-  },
-  {
-    "id" : "recommendation-rating",
-    "type" : "CodeSystem",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
-    "version" : "1.0.0",
-    "name" : "RecommendationRatingCS"
-  },
-  {
     "id" : "hl7.fhir.be.pss",
     "type" : "ImplementationGuide",
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss",
@@ -39,11 +25,18 @@
     "version" : "1.0.0"
   },
   {
-    "id" : "cpg-rating-coded",
+    "id" : "codeValueSet",
     "type" : "StructureDefinition",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet",
     "version" : "1.0.0",
-    "name" : "CPGRatingCoded"
+    "name" : "codeValueSet"
+  },
+  {
+    "id" : "PregnancyCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
+    "version" : "1.0.0",
+    "name" : "PregnancyCodes"
   },
   {
     "id" : "condition-valueset",
@@ -51,19 +44,5 @@
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
     "version" : "1.0.0",
     "name" : "Conditions"
-  },
-  {
-    "id" : "radiation-exposure-rating-vs",
-    "type" : "ValueSet",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/radiation-exposure-rating-vs",
-    "version" : "1.0.0",
-    "name" : "RadiationExposureRatingVS"
-  },
-  {
-    "id" : "recommendation-rating-vs",
-    "type" : "ValueSet",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/recommendation-rating-vs",
-    "version" : "1.0.0",
-    "name" : "RecommendationRatingVS"
   }
 ]

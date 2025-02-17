@@ -5,13 +5,10 @@
   "jurisdiction": "BE",
   "extensions": [
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded",
-      "title": "CPG Rating Extension",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet",
+      "title": "codeValueSet",
       "types": [
-        "CodeableConcept",
-        "Quantity",
-        "Range",
-        "Ratio"
+        "canonical"
       ]
     }
   ],
@@ -41,14 +38,17 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating": [
       "Bundle.entry.resource",
       "CommunicationRequest",
       "MedicationRequest"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded": [
-      "Bundle.entry.resource",
-      "ServiceRequest"
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet": [
+      "Bundle.entry.resource.item",
+      "Questionnaire.item"
     ]
   }
 }
