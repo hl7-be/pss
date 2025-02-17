@@ -1,7 +1,7 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 10, warn = 14, info = 3
+err = 12, warn = 15, info = 3
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
  Build Errors : 0 / 5 / 0
@@ -12,7 +12,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return : 3 / 5 / 12
  /github/workspace/fsh-generated/resources/CommunicationRequest-ab-advice : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-vulvovaginitis : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-clindamycin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-fluconazol : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 2 / 0 / 1
@@ -57,6 +57,9 @@ ERROR: Bundle/getrecommendations-a-return: Bundle.entry[2].resource/*MedicationR
 ERROR: CommunicationRequest/ab-advice: CommunicationRequest.payload[0].content.ofType(string).extension[1]: The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string
 == fsh-generated/resources/Condition-vulvovaginitis.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide: HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide: HL7 Implementation Guides must state their owning workgroup explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+WARNING: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
 == fsh-generated/resources/MedicationRequest-clindamycin.json ==
 == fsh-generated/resources/MedicationRequest-fluconazol.json ==
 == fsh-generated/resources/MedicationRequest-metronidazol.json ==
