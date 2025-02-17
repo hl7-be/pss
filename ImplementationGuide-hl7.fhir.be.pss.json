@@ -882,18 +882,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/codeValueSet"
-      },
-      "name" : "codeValueSet",
-      "description" : "Code ValueSet",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
@@ -928,18 +916,6 @@
       "name" : "patient-x",
       "description" : "Patient X",
       "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/PregnancyCodes"
-      },
-      "name" : "Pregnancy Codes",
-      "description" : "Pregnancy Codes",
-      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
