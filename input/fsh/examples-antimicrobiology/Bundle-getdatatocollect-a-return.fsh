@@ -1,9 +1,25 @@
+ValueSet: PregnancyCodes
+Title: "Pregnancy Codes"
+Description: "Pregnancy Codes"
+// Usage: #example
+* ^status = #active
+* http://hl7.org/fhir/sid/icd-10#Z33.1
+* $sct#87527008
+* $sct#127364007
+* $sct#72892002
+
+
+Extension: codeValueSet
+Description: "Code ValueSet"
+* value[x] only canonical
+
 
 Instance: getdatatocollect-a-return
 InstanceOf: Bundle
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
 Usage: #example
+
 * type = #collection
 * entry[0].resource = getdatatocollect-a-return-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4d"
@@ -88,63 +104,46 @@ Description: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questi
 InstanceOf: Questionnaire
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity"
-* contained = condition-valueset
+* contained[0] = condition-valueset
+* contained[+] = PregnancyCodes
 * status = #active
 * item[0]
   * linkId = "conditions"
   * text = "Which conditions are you considering?"
   * type = #choice
-  * repeats = false
+  * repeats = true
   * answerValueSet = "#condition-valueset"
-
-
-* item[+]
-  * linkId = "riskpatient"
-  * text = "Is the patient a risk patient?"
-  * type = #boolean
-  * repeats = false
-  * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-collapsible"
-  * extension[=].valueCode = #default-closed
-  // * enableWhen[+]
-  //   * question = "condition1"
-  //   * operator = #=
-  //   * answerBoolean = true
-  // * enableWhen[+]
-  //   * question = "condition2"
-  //   * operator = #=
-  //   * answerBoolean = true
-  // * enableWhen[+]
-  //   * question = "condition3"
-  //   * operator = #=
-  //   * answerBoolean = true
-
-  // * enableBehavior = #any
-    
-  * item[0]
-    * linkId = "condition1"
-    * text = "Bacterial vaginosis"
-    * type = #boolean
-//    * code = http://snomed.info/sct#419760006
-  * item[+]
-    * linkId = "condition2"
-    * text = "Trichomonal vaginitis"
-    * type = #boolean
-//    * code[+] = http://snomed.info/sct#276877003
-  * item[+]
-    * linkId = "condition3"
-    * text = "Candidiasis of vagina"
-    * type = #boolean
-//    * code[+] = http://snomed.info/sct#72934000
-
+// * item[0]
+//   * linkId = "conditions"
+//   * text = "Which conditions are you considering?"
+//   * type = #group
+//   * repeats = false
+//   * item[0]
+//     * linkId = "condition1"
+//     * text = "Bacterial vaginosis"
+//     * type = #boolean
+//     * code = http://snomed.info/sct#419760006
+//   * item[+]
+//     * linkId = "condition2"
+//     * text = "Trichomonal vaginitis"
+//     * type = #boolean
+//     * code.coding[+] = http://snomed.info/sct#276877003
+//   * item[+]
+//     * linkId = "condition3"
+//     * text = "Candidiasis of vagina"
+//     * type = #boolean
+//     * code.coding[+] = http://snomed.info/sct#72934000
 
 * item[+]
   * linkId = "pregnancy"
   * text = "Is the patient pregnant?"
   * code = $icd10#Z88.0
   * type = #boolean
+  * extension[codeValueSet].valueCanonical = Canonical(PregnancyCodes)
 * item[+]
   * linkId = "recurrent"
   * text = "Recurrent?"
   * code = $sct#708126004
   * type = #boolean
+
 
