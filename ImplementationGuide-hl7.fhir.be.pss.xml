@@ -760,6 +760,28 @@
       <description value="Pregnancy Codes"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSRequest"/>
+      </reference>
+      <name value="PSS Request"/>
+      <description value="A request for PSS (Prescriber Support System) suggestions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponse"/>
+      </reference>
+      <name value="PSS Response"/>
+      <description value="A response from PSS providing recommendations."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
