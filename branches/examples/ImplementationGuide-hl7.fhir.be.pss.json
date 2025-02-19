@@ -940,6 +940,30 @@
       "name" : "Pregnancy Codes",
       "description" : "Pregnancy Codes",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSRequest"
+      },
+      "name" : "PSS Request",
+      "description" : "A request for PSS (Prescriber Support System) suggestions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSResponse"
+      },
+      "name" : "PSS Response",
+      "description" : "A response from PSS providing recommendations.",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

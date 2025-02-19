@@ -1306,6 +1306,42 @@
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSRequest" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Request" ] ;
+       fhir:description [ fhir:v "A request for PSS (Prescriber Support System) suggestions." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSResponse" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Response" ] ;
+       fhir:description [ fhir:v "A response from PSS providing recommendations." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

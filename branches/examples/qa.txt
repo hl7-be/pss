@@ -3,7 +3,7 @@ PrescriptionSearchSupport : Validation Results
 
 err = 8, warn = 21, info = 6
 IG Publisher Version: 1.8.13
-Generated Mon Feb 17 11:16:44 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+Generated Wed Feb 19 10:41:40 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 5
@@ -26,6 +26,8 @@ Generated Mon Feb 17 11:16:44 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-return-group : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSRequest : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponse : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-codeValueSet : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Task-collect-information-a : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 0 / 2 / 2
@@ -82,6 +84,8 @@ INFORMATION: Resource: The resource Questionnaire/q-collect-information-a could 
 == fsh-generated/resources/QuestionnaireResponse-qresponse-v.json ==
 == fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group.json ==
 == fsh-generated/resources/RequestGroup-getrecommendations-a-return-group.json ==
+== fsh-generated/resources/StructureDefinition-PSSRequest.json ==
+== fsh-generated/resources/StructureDefinition-PSSResponse.json ==
 == fsh-generated/resources/StructureDefinition-codeValueSet.json ==
 WARNING: StructureDefinition/codeValueSet: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 WARNING: StructureDefinition/codeValueSet: StructureDefinition.context[0]: Review the extension type for codeValueSet: extensions should not have a context of Element unless it's really intended that they can be used anywhere
