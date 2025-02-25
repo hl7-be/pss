@@ -1,3 +1,13 @@
+ValueSet: PregnancyCodes
+Title: "Pregnancy Codes"
+Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
+// Usage: #example
+* ^status = #active
+* http://hl7.org/fhir/sid/icd-10#Z33.1
+* $sct#87527008
+* $sct#127364007
+* $sct#72892002
+
 
 Instance: getdatatocollect-a-return
 InstanceOf: Bundle
@@ -85,7 +95,7 @@ Description: "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueS
 Instance: q-collect-information-a
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
-InstanceOf: Questionnaire
+InstanceOf: PSSDataAcquisitionForm
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity"
 * contained = condition-valueset
@@ -123,6 +133,7 @@ Usage: #example
   * text = "Is the patient pregnant?"
   * code = $icd10#Z88.0
   * type = #boolean
+  * extension[CodeValueSet].valueCanonical = Canonical(PregnancyCodes)
 * item[+]
   * linkId = "recurrent"
   * text = "Recurrent?"
