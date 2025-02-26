@@ -632,21 +632,13 @@
       "id" : "Antimicrobiology",
       "name" : "Antimicrobiology",
       "description" : "Antimicrobiology PSS resource examples"
-    }],
-    "resource" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/patient-v"
-      },
-      "name" : "Antimicrobiology - S2 Get data to collect - Request - 1. Patient V",
-      "description" : "Antimicrobiology - S2 Get data to collect - Request - 1 - Patient V",
-      "exampleBoolean" : true,
-      "groupingId" : "Antimicrobiology"
     },
     {
+      "id" : "Radiology",
+      "name" : "Radiology",
+      "description" : "Radiology PSS resource examples"
+    }],
+    "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
@@ -877,7 +869,8 @@
       },
       "name" : "Antimicrobiology - Vaginitis-related conditions",
       "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
-      "exampleBoolean" : true
+      "exampleBoolean" : true,
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -923,11 +916,25 @@
         "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Patient/patient-x"
+        "reference" : "Patient/patient-a"
       },
-      "name" : "patient-x",
-      "description" : "Patient X",
-      "exampleBoolean" : true
+      "name" : "patient-a",
+      "description" : "Patient A",
+      "exampleBoolean" : true,
+      "groupingId" : "Antimicrobiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/patient-r"
+      },
+      "name" : "patient-r",
+      "description" : "Patient R",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
     },
     {
       "extension" : [{
@@ -939,7 +946,8 @@
       },
       "name" : "Pregnancy Codes",
       "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Antimicrobiology"
     },
     {
       "extension" : [{
@@ -963,6 +971,30 @@
       },
       "name" : "PSS Rating Extension",
       "description" : "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pss-structured-rating"
+      },
+      "name" : "PSS Rating Extension",
+      "description" : "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pss-relevant-age"
+      },
+      "name" : "PSS Relevant Patien Age",
+      "description" : "The approximate, relevant age of the patient at the time of the search.",
       "exampleBoolean" : false
     },
     {
@@ -1048,6 +1080,71 @@
       "name" : "PSS Response Service Request",
       "description" : "The PSS Response Service Request is used when the PSS system returns a ServiceRequest",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/getrecommendations-r-return"
+      },
+      "name" : "Radiology - S3 Get Recommendations - Response - 1. Bundle",
+      "description" : "Radiology - S3 Get Recommendations - Response - 1. Bundle",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RequestGroup"
+      }],
+      "reference" : {
+        "reference" : "RequestGroup/getrecommendations-r-return-1"
+      },
+      "name" : "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
+      "description" : "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/ct-head-iv-contrast"
+      },
+      "name" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast",
+      "description" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/ct-head-with-or-without-contrast"
+      },
+      "name" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast",
+      "description" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/mr-head-without-contrast"
+      },
+      "name" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast",
+      "description" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
     }],
     "page" : {
       "extension" : [{

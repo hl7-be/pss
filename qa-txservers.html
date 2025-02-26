@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for PrescriptionSearchSupport</h1>
- <p>Generated Wed Feb 26 15:35:03 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/medication">https://www.ehealth.fgov.be/standards/fhir/medication</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">history</a>))</p>
+ <p>Generated Wed Feb 26 15:39:12 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/medication">https://www.ehealth.fgov.be/standards/fhir/medication</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -124,11 +124,32 @@
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|http://tx.hl7europe.eu/r4</td>
   </tr>
   <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/languages|4.0.1</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4, auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4, auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4]</td>
+  </tr>
+  <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/sid/icd-10</td>
     <td>auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/languages|4.0.1</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
@@ -245,7 +266,7 @@
 </table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 31. Code Systems used: </p>
+<p>Use Count: 34. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -286,7 +307,7 @@
   <tr>
     <td>http://unstats.un.org/unsd/methods/m49/m49.htm</td>
     <td>0</td>
-    <td>1</td>
+    <td>2</td>
     <td></td>
   </tr>
   <tr>
@@ -300,7 +321,7 @@
   <tr>
     <td>urn:ietf:bcp:47</td>
     <td>0</td>
-    <td>2</td>
+    <td>4</td>
     <td>
       <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>
     </td>
@@ -308,7 +329,7 @@
   <tr>
     <td>urn:iso:std:iso:3166</td>
     <td>3</td>
-    <td>1</td>
+    <td>2</td>
     <td>
       <a href="http://terminology.hl7.org/6.1.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
     </td>
@@ -316,7 +337,7 @@
   <tr>
     <td>urn:iso:std:iso:3166:-2</td>
     <td>1</td>
-    <td>1</td>
+    <td>2</td>
     <td>
       <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-iso3166-2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
     </td>

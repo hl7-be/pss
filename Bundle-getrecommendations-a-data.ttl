@@ -29,14 +29,21 @@
   ] ) . # 
 
 <urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48> a fhir:Patient ;
-  fhir:id [ fhir:v "patient-v"] ; # 
+  fhir:id [ fhir:v "patient-a"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-v\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-v</b></p><a name=\"patient-v\"> </a><a name=\"hcpatient-v\"> </a><a name=\"patient-v-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB: 1988-10-10</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-a</b></p><a name=\"patient-a\"> </a><a name=\"hcpatient-a\"> </a><a name=\"patient-a-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The approximate, relevant age of the patient at the time of the search.\"><a href=\"StructureDefinition-pss-relevant-age.html\">PSS Relevant Patien Age</a></td><td colspan=\"3\">36<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated]  codey = 'y')</span></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-relevant-age"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Age ;
+       fhir:value [ fhir:v "36"^^xsd:decimal ] ;
+       fhir:code [ fhir:v "y" ]
+     ]
+  ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:gender [ fhir:v "female"] ; # 
-  fhir:birthDate [ fhir:v "1988-10-10"^^xsd:date] ; # 
   fhir:deceased [
      a fhir:boolean ;
      fhir:v "false"^^xsd:boolean
@@ -46,7 +53,7 @@
   fhir:id [ fhir:v "vulvovaginitis"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_vulvovaginitis\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition vulvovaginitis</b></p><a name=\"vulvovaginitis\"> </a><a name=\"hcvulvovaginitis\"> </a><a name=\"vulvovaginitis-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 54586004}\">Lower abdominal pain</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><p><b>onset</b>: 2024-10-13</p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_vulvovaginitis\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition vulvovaginitis</b></p><a name=\"vulvovaginitis\"> </a><a name=\"hcvulvovaginitis\"> </a><a name=\"vulvovaginitis-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 54586004}\">Lower abdominal pain</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
@@ -82,8 +89,8 @@
      fhir:text [ fhir:v "Lower abdominal pain" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-x> ;
-     fhir:reference [ fhir:v "Patient/patient-x" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:reference [ fhir:v "Patient/patient-a" ]
   ] ; # 
   fhir:onset [
      a fhir:dateTime ;
@@ -94,7 +101,7 @@
   fhir:id [ fhir:v "allergy-to-sulfonamide"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_allergy-to-sulfonamide\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance allergy-to-sulfonamide</b></p><a name=\"allergy-to-sulfonamide\"> </a><a name=\"hcallergy-to-sulfonamide\"> </a><a name=\"allergy-to-sulfonamide-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91939003}\">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_allergy-to-sulfonamide\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance allergy-to-sulfonamide</b></p><a name=\"allergy-to-sulfonamide\"> </a><a name=\"hcallergy-to-sulfonamide\"> </a><a name=\"allergy-to-sulfonamide-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91939003}\">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
@@ -111,15 +118,15 @@
      ] )
   ] ; # 
   fhir:patient [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-x> ;
-     fhir:reference [ fhir:v "Patient/patient-x" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:reference [ fhir:v "Patient/patient-a" ]
   ] . # 
 
 <urn:uuid:30551ce1-5a28-4356-b684-2e639094ad0b> a fhir:MedicationRequest ;
   fhir:id [ fhir:v "proposal-clindamycin"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_proposal-clindamycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest proposal-clindamycin</b></p><a name=\"proposal-clindamycin\"> </a><a name=\"hcproposal-clindamycin\"> </a><a name=\"proposal-clindamycin-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_proposal-clindamycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest proposal-clindamycin</b></p><a name=\"proposal-clindamycin\"> </a><a name=\"hcproposal-clindamycin\"> </a><a name=\"proposal-clindamycin-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
@@ -131,8 +138,8 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-x> ;
-     fhir:reference [ fhir:v "Patient/patient-x" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:reference [ fhir:v "Patient/patient-a" ]
   ] . # 
 
 <urn:uuid:30551ce1-5a28-4356-b684-2e639094ac02> a fhir:QuestionnaireResponse ;
@@ -147,8 +154,8 @@
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-v> ;
-     fhir:reference [ fhir:v "Patient/patient-v" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:reference [ fhir:v "Patient/patient-a" ]
   ] ; # 
   fhir:authored [ fhir:v "2023-10-18T19:20:20.913Z"^^xsd:dateTime] ; # 
   fhir:item ( [
