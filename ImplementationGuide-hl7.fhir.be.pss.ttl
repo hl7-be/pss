@@ -1021,8 +1021,9 @@
        fhir:name [ fhir:v "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire" ] ;
        fhir:description [ fhir:v "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         a fhir:canonical ;
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSDataAcquisitionForm"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSDataAcquisitionForm>
        ] ;
        fhir:groupingId [ fhir:v "Antimicrobiology" ]
      ] [
@@ -1223,11 +1224,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet> ;
-         fhir:reference [ fhir:v "StructureDefinition/codeValueSet" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CodeValueSet> ;
+         fhir:reference [ fhir:v "StructureDefinition/CodeValueSet" ]
        ] ;
-       fhir:name [ fhir:v "codeValueSet" ] ;
-       fhir:description [ fhir:v "Code ValueSet" ] ;
+       fhir:name [ fhir:v "Code ValueSet" ] ;
+       fhir:description [ fhir:v "A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
@@ -1301,7 +1302,43 @@
          fhir:reference [ fhir:v "ValueSet/PregnancyCodes" ]
        ] ;
        fhir:name [ fhir:v "Pregnancy Codes" ] ;
-       fhir:description [ fhir:v "Pregnancy Codes" ] ;
+       fhir:description [ fhir:v "Pregnancy Codes - used for EHRs to consider pregnancy status" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSDataAcquisitionForm> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSDataAcquisitionForm" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Data Acquisition Form" ] ;
+       fhir:description [ fhir:v "The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-coded-rating> ;
+         fhir:reference [ fhir:v "StructureDefinition/pss-coded-rating" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Rating Extension" ] ;
+       fhir:description [ fhir:v "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
@@ -1319,7 +1356,25 @@
          fhir:reference [ fhir:v "StructureDefinition/PSSRequest" ]
        ] ;
        fhir:name [ fhir:v "PSS Request" ] ;
-       fhir:description [ fhir:v "A request for PSS (Prescriber Support System) suggestions." ] ;
+       fhir:description [ fhir:v "A request for PSS (Prescriber Support System) results." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PssRequestDataBundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/PssRequestDataBundle" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Request Data Bundle" ] ;
+       fhir:description [ fhir:v "The PSS Request Data Bundle is used to request data from the PSS system." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
@@ -1337,7 +1392,79 @@
          fhir:reference [ fhir:v "StructureDefinition/PSSResponse" ]
        ] ;
        fhir:name [ fhir:v "PSS Response" ] ;
-       fhir:description [ fhir:v "A response from PSS providing recommendations." ] ;
+       fhir:description [ fhir:v "A response containing the results from the PSS." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PssResponseBundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/PssResponseBundle" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Response Bundle" ] ;
+       fhir:description [ fhir:v "The PSS Response Bundle is used to return data from the PSS system." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSResponseMedicationRequest" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Response Medication Request" ] ;
+       fhir:description [ fhir:v "The PSS Response Medication Request is used when the PSS system returns a MedicationRequest" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSResponseRequestGroup" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Response Request Group" ] ;
+       fhir:description [ fhir:v "All PSS responses contain a PSS RequestGroup conformant to this profile." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSResponseServiceRequest" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Response Service Request" ] ;
+       fhir:description [ fhir:v "The PSS Response Service Request is used when the PSS system returns a ServiceRequest" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v "false"^^xsd:boolean
