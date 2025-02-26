@@ -23,7 +23,7 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4c"
 // * entry[+].resource = collect-patient_variables
 // * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4b"
-* entry[+].resource = patient-v
+* entry[+].resource = patient-a
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094adff"
 
 
@@ -44,7 +44,7 @@ Usage: #example
 // * contained[+] = q-collect-leukocytes
 * status = #active
 * intent = #proposal
-* subject = Reference(patient-v)
+* subject = Reference(patient-a)
 * action[0]
   * textEquivalent = "Collect information"
   * resource = Reference(collect-information-a)
@@ -59,7 +59,7 @@ Usage: #example
 * status = #requested
 * intent = #proposal
 * code = $cpg-activity-type-cs#collect-information "Collect information"
-* for = Reference(patient-x)
+* for = Reference(patient-a)
 * input
   * type = $cpg-activity-type-cs#collect-information "Collect information"
   * valueReference.reference = Canonical(q-collect-information-a)
@@ -97,6 +97,8 @@ Title: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnair
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
 InstanceOf: PSSDataAcquisitionForm
 Usage: #example
+
+* language = #nl-BE
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity"
 * contained = condition-valueset
 * status = #active
@@ -106,31 +108,13 @@ Usage: #example
   * type = #choice
   * repeats = true
   * answerValueSet = "#condition-valueset"
-// * item[0]
-//   * linkId = "conditions"
-//   * text = "Which conditions are you considering?"
-//   * type = #group
-//   * repeats = false
-//   * item[0]
-//     * linkId = "condition1"
-//     * text = "Bacterial vaginosis"
-//     * type = #boolean
-//     * code = http://snomed.info/sct#419760006
-//   * item[+]
-//     * linkId = "condition2"
-//     * text = "Trichomonal vaginitis"
-//     * type = #boolean
-//     * code.coding[+] = http://snomed.info/sct#276877003
-//   * item[+]
-//     * linkId = "condition3"
-//     * text = "Candidiasis of vagina"
-//     * type = #boolean
-//     * code.coding[+] = http://snomed.info/sct#72934000
-
 
 * item[+]
   * linkId = "pregnancy"
   * text = "Is the patient pregnant?"
+  * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "La patiente est enceinte?"
   * code = $icd10#Z88.0
   * type = #boolean
   * extension[CodeValueSet].valueCanonical = Canonical(PregnancyCodes)
@@ -139,3 +123,35 @@ Usage: #example
   * text = "Recurrent?"
   * code = $sct#708126004
   * type = #boolean
+
+
+// case 1: Known pathogen is optional
+*  item[+]
+  * linkId = "known_pathogen"
+  * text = "Known Pathogen?"
+  * type = #boolean
+
+
+*  item[+]
+  * linkId = "pathogen"
+  * text = "Pathogen - please indicate"
+  * type = #choice
+
+//  * answerValueSet ?? How to link values to valuesets of codes?
+//  * answerOption
+
+
+  * enableWhen
+    * question = "known_pathogen"
+    * operator = #=
+    * answerBoolean = true
+
+
+
+
+
+*  item[+]
+  * linkId = "pathogen"
+  * text = "Pathogen - please indicate"
+  * type = #choice
+

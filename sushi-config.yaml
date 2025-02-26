@@ -119,7 +119,7 @@ groups:
     description: Antimicrobiology PSS resource examples
     resources:
       - Bundle/getdatatocollect-a-data
-      - Patient/patient-v
+      - Patient/patient-a
       - vulvovaginitis
       - AllergyIntolerance/allergy-to-sulfonamide
       - MedicationRequest/proposal-clindamycin
@@ -128,10 +128,10 @@ groups:
       - RequestGroup/getdatatocollect-a-return-group
       - Task/collect-information-a
       - Questionnaire/q-collect-information-a
+      - ValueSet/condition-valueset
 
       - Bundle/getrecommendations-a-data
       - QuestionnaireResponse/qresponse-v
-      - Patient/patient-v
 
       - Bundle/getrecommendations-a-return
       - RequestGroup/getrecommendations-a-return-group
@@ -141,11 +141,13 @@ groups:
       - MedicationRequest/fluconazol
       - MedicationRequest/miconazol
 
-  # Radiology:
-  #   name: Radiology
-  #   description: Radiology PSS resource examples
-  #   resources: 
-  #     - Bundle/radiology-getdiagnoses
+  Radiology:
+    name: Radiology
+    description: Radiology PSS resource examples
+    resources: 
+      - Patient/patient-r
+
+#      - Bundle/radiology-getdiagnoses
   #     - Observation/ataxia
   #     - ServiceRequest/ct-head-iv-contrast
 
@@ -162,15 +164,16 @@ groups:
   #     - Task/propose-post-trauma-ataxia
   #     - Condition/proposed-diagnosis-post-trauma-ataxia
 
-  #     - Bundle/getrecommendations-data3
+      - Bundle/getrecommendations-r-return
+      - RequestGroup/getrecommendations-r-return-1
+      - ServiceRequest/ct-head-iv-contrast
+      - ServiceRequest/ct-head-with-or-without-contrast
+      - ServiceRequest/mr-head-without-contrast
   #     - Condition/proposed-diagnosis-head-trauma-v2
-  #     - ServiceRequest/ct-head-iv-contrast-v2
-
+      
   #     - Bundle/getrecommendations3-return
   #     - RequestGroup/getrecommendations3-return-1
   #     - ServiceRequest/ct-head-iv-contrast-v3
-  #     - ServiceRequest/ct-head-with-or-without-contrast-v3
-  #     - ServiceRequest/mr-head-without-contrast
 
 
 

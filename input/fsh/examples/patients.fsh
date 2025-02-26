@@ -1,19 +1,19 @@
 
-Instance: patient-x
+Instance: patient-a
 InstanceOf: Patient
-Description: "Patient X"
+Description: "Patient A"
 Usage: #example
 * active = true
 * gender = #female
 * deceasedBoolean = false
-* birthDate = "1989-09-12"
+* extension[PSSRelevantAge].valueAge = 36 #y
 
 
-// Instance: patient-y
-// InstanceOf: Patient
-// Description: "Patient Y"
-// Usage: #example
-// * active = true
-// * gender = #male
-// * birthDate = "1972-05-24"
-// * deceasedBoolean = false
+Instance: patient-r
+InstanceOf: Patient
+Description: "Patient R"
+Usage: #example
+* active = true
+* gender = #male
+* extension[PSSRelevantAge].valueAge = 53 #y
+* deceasedBoolean = false

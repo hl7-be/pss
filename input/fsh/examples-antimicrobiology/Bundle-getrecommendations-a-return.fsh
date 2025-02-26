@@ -25,7 +25,7 @@ Usage: #example
 * id = "getrecommendations-a-return-group"
 * status = #active
 * intent = #proposal
-* subject = Reference(patient-x)
+* subject = Reference(patient-a)
 * action[0]
   * selectionBehavior = #at-most-one
   * action[0]
@@ -62,13 +62,12 @@ Usage: #example
     * url = "http://hl7.org/fhir/StructureDefinition/language"
     * valueCode = #nl
 
-
 * payload[+].contentString = "Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée..."
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/language"
     * valueCode = #fr
 
-* subject = Reference(patient-x)
+* subject = Reference(patient-a)
 
 
 Instance: metronidazol
@@ -85,7 +84,8 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Nitrofurantoin 2x 100mg x 5 days"
-* subject = Reference(patient-x)
+* subject = Reference(patient-a)
+
 
 Instance: clindamycin
 InstanceOf: MedicationRequest
@@ -102,7 +102,7 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "clindamycin, single 3g dose"
-* subject = Reference(patient-x)
+* subject = Reference(patient-a)
 
 
 Instance: fluconazol
@@ -119,7 +119,7 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Fluconazol"
-* subject = Reference(patient-x)
+* subject = Reference(patient-a)
 
 
 Instance: miconazol
@@ -128,12 +128,16 @@ Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 -
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
-* extension
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
-  * valueRatio
-    * numerator.value = 1
+
+* extension[pss-structured-rating][+]
+  * extension[ratingType].valueCodeableConcept = #overall
+  * extension[ratingValue].valueRatio
+    * numerator.value = 3
     * denominator.value = 3
+  * extension[ratingText].valueMarkdown = "Not recommended"
+
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Miconazol"
-* subject = Reference(patient-x)
+* subject = Reference(patient-a)
+

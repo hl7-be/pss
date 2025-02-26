@@ -4,7 +4,7 @@ Title: "Antimicrobiology - S2 Get data to collect - Request - 2. - Bundle"
 Description: "Antimicrobiology - S2 Get data to collect - Request - 2. Bundle"
 Usage: #example
 * type = #collection
-* entry[0].resource = patient-v
+* entry[0].resource = patient-a
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48"
 * entry[+].resource = vulvovaginitis
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad01"
@@ -14,16 +14,6 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad12"
 
 
-
-Instance: patient-v
-InstanceOf: Patient
-Title: "Antimicrobiology - S2 Get data to collect - Request - 1. Patient V"
-Description: "Antimicrobiology - S2 Get data to collect - Request - 1 - Patient V"
-Usage: #example
-* active = true
-* gender = #female
-* deceasedBoolean = false
-* birthDate = "1988-10-10"
 
 Instance: vulvovaginitis
 InstanceOf: Condition
@@ -39,7 +29,7 @@ Usage: #example
   * text = "Encounter Diagnosis"
 * code = $sct#54586004 "Lower abdominal pain"
   * text = "Lower abdominal pain"
-* subject = Reference(patient-x)
+* subject = Reference(patient-a)
 * onsetDateTime = "2024-10-13"
 
 Instance: allergy-to-sulfonamide
@@ -48,7 +38,7 @@ Title: "Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy
 Description: "Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"
 Usage: #example
 * code = $sct#91939003 "Allergy to sulfonamide"
-* patient = Reference(patient-x)
+* patient = Reference(patient-a)
 * clinicalStatus = $allergy-clinical#active
 
 
@@ -58,7 +48,7 @@ Title: "Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered tr
 Description: "Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"
 Usage: #example
 //* code = $sct#28442001 "Allergy to sulfonamides"
-* subject = Reference(patient-x)
+* subject = Reference(patient-a)
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept = $atc#G01AA10
