@@ -1,0 +1,71 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "mr-head-without-contrast",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mr-head-without-contrast</b></p><a name=\"mr-head-without-contrast\"> </a><a name=\"hcmr-head-without-contrast\"> </a><a name=\"mr-head-without-contrast-en-US\"> </a><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">radiationexposure</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Whoa!....</p>\n</div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">overall</span></li><li>ratingValue: 1/3</li><li>ratingText: </li></ul></blockquote><div><p>Not recommended</p>\n</div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">MR, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\">Anonymous Patient Male, DoB Unknown</a></p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "ratingType",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "code" : "radiationexposure"
+        }]
+      }
+    },
+    {
+      "url" : "ratingValue",
+      "valueRatio" : {
+        "numerator" : {
+          "value" : 2
+        },
+        "denominator" : {
+          "value" : 3
+        }
+      }
+    },
+    {
+      "url" : "ratingText",
+      "valueMarkdown" : "Whoa!...."
+    }],
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-structured-rating"
+  },
+  {
+    "extension" : [{
+      "url" : "ratingType",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "code" : "overall"
+        }]
+      }
+    },
+    {
+      "url" : "ratingValue",
+      "valueRatio" : {
+        "numerator" : {
+          "value" : 1
+        },
+        "denominator" : {
+          "value" : 3
+        }
+      }
+    },
+    {
+      "url" : "ratingText",
+      "valueMarkdown" : "Not recommended"
+    }],
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-structured-rating"
+  }],
+  "status" : "active",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [{
+      "code" : "114092",
+      "display" : "MR, head, without IV contrast"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-r"
+  }
+}
