@@ -84,7 +84,7 @@
 
 
 
-  <img alt=" flag" src="assets/images/zwe.svg" height="16" title=""/>
+  <img alt="Belgium flag" src="assets/images/bel.svg" height="16" title="Belgium"/>
 
 
             </span>
@@ -173,7 +173,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Antimicrobiology</a>
       </li>
       <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#3">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#4">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#5">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -376,6 +388,136 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="3"> </a>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSRequest.html"
+                  title="StructureDefinition/PSSRequest">PSS Request</a>
+            </td>
+            <td>
+<p>A request for PSS (Prescriber Support System) results.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSResponse.html"
+                  title="StructureDefinition/PSSResponse">PSS Response</a>
+            </td>
+            <td>
+<p>A response containing the results from the PSS.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSDataAcquisitionForm.html"
+                  title="StructureDefinition/PSSDataAcquisitionForm">PSS Data Acquisition Form</a>
+            </td>
+            <td>
+<p>The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PssRequestDataBundle.html"
+                  title="StructureDefinition/PssRequestDataBundle">PSS Request Data Bundle</a>
+            </td>
+            <td>
+<p>The PSS Request Data Bundle is used to request data from the PSS system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PssResponseBundle.html"
+                  title="StructureDefinition/PssResponseBundle">PSS Response Bundle</a>
+            </td>
+            <td>
+<p>The PSS Response Bundle is used to return data from the PSS system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSResponseMedicationRequest.html"
+                  title="StructureDefinition/PSSResponseMedicationRequest">PSS Response Medication Request</a>
+            </td>
+            <td>
+<p>The PSS Response Medication Request is used when the PSS system returns a MedicationRequest</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSResponseRequestGroup.html"
+                  title="StructureDefinition/PSSResponseRequestGroup">PSS Response Request Group</a>
+            </td>
+            <td>
+<p>All PSS responses contain a PSS RequestGroup conformant to this profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSResponseServiceRequest.html"
+                  title="StructureDefinition/PSSResponseServiceRequest">PSS Response Service Request</a>
+            </td>
+            <td>
+<p>The PSS Response Service Request is used when the PSS system returns a ServiceRequest</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CodeValueSet.html"
+                  title="StructureDefinition/CodeValueSet">Code ValueSet</a>
+            </td>
+            <td>
+<p>A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pss-coded-rating.html"
+                  title="StructureDefinition/pss-coded-rating">PSS Rating Extension</a>
+            </td>
+            <td>
+<p>A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PregnancyCodes.html" title="ValueSet/PregnancyCodes">Pregnancy Codes</a>
+            </td>
+            <td>
+<p>Pregnancy Codes - used for EHRs to consider pregnancy status</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -418,7 +560,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 17, 2025 11:15+0000">2025-02-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 26, 2025 15:34+0000">2025-02-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- HL7 Belgium -->

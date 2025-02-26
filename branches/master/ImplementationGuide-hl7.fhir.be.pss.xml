@@ -581,7 +581,7 @@
       </reference>
       <name value="Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
       <description value="Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSDataAcquisitionForm"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -705,6 +705,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CodeValueSet"/>
+      </reference>
+      <name value="Code ValueSet"/>
+      <description value="A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PlanDefinition"/>
       </extension>
       <reference>
@@ -737,6 +748,116 @@
       <name value="patient-x"/>
       <description value="Patient X"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PregnancyCodes"/>
+      </reference>
+      <name value="Pregnancy Codes"/>
+      <description value="Pregnancy Codes - used for EHRs to consider pregnancy status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSDataAcquisitionForm"/>
+      </reference>
+      <name value="PSS Data Acquisition Form"/>
+      <description value="The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pss-coded-rating"/>
+      </reference>
+      <name value="PSS Rating Extension"/>
+      <description value="A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSRequest"/>
+      </reference>
+      <name value="PSS Request"/>
+      <description value="A request for PSS (Prescriber Support System) results."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PssRequestDataBundle"/>
+      </reference>
+      <name value="PSS Request Data Bundle"/>
+      <description value="The PSS Request Data Bundle is used to request data from the PSS system."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponse"/>
+      </reference>
+      <name value="PSS Response"/>
+      <description value="A response containing the results from the PSS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PssResponseBundle"/>
+      </reference>
+      <name value="PSS Response Bundle"/>
+      <description value="The PSS Response Bundle is used to return data from the PSS system."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseMedicationRequest"/>
+      </reference>
+      <name value="PSS Response Medication Request"/>
+      <description value="The PSS Response Medication Request is used when the PSS system returns a MedicationRequest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseRequestGroup"/>
+      </reference>
+      <name value="PSS Response Request Group"/>
+      <description value="All PSS responses contain a PSS RequestGroup conformant to this profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseServiceRequest"/>
+      </reference>
+      <name value="PSS Response Service Request"/>
+      <description value="The PSS Response Service Request is used when the PSS system returns a ServiceRequest"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
