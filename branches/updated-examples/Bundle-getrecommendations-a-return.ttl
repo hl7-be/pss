@@ -9,7 +9,17 @@
 <https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/getrecommendations-a-return> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "getrecommendations-a-return"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:value [ fhir:v "response1" ]
+  ] ; # 
   fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2025-02-20T00:00:00Z"^^xsd:dateTime] ; # 
   fhir:entry ( [
      fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"^^xsd:anyURI ] ;
      fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21> )
@@ -87,7 +97,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CommunicationRequest_ab-advice\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest ab-advice</b></p><a name=\"ab-advice\"> </a><a name=\"hcab-advice\"> </a><a name=\"ab-advice-en-US\"> </a><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p><blockquote><p><b>payload</b></p><p><b>content</b>: Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...</p></blockquote><blockquote><p><b>payload</b></p><p><b>content</b>: Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée...</p></blockquote></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CommunicationRequest_ab-advice\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest ab-advice</b></p><a name=\"ab-advice\"> </a><a name=\"hcab-advice\"> </a><a name=\"ab-advice-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html\">CPG Communication Request</a></p></div><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p><blockquote><p><b>payload</b></p><p><b>content</b>: Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...</p></blockquote><blockquote><p><b>payload</b></p><p><b>content</b>: Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée...</p></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"^^xsd:anyURI ] ;
@@ -142,7 +152,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_metronidazol\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest metronidazol</b></p><a name=\"metronidazol\"> </a><a name=\"hcmetronidazol\"> </a><a name=\"metronidazol-en-US\"> </a><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Nitrofurantoin 2x 100mg x 5 days</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_metronidazol\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest metronidazol</b></p><a name=\"metronidazol\"> </a><a name=\"hcmetronidazol\"> </a><a name=\"metronidazol-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Nitrofurantoin 2x 100mg x 5 days</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"^^xsd:anyURI ] ;
@@ -177,7 +187,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_clindamycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest clindamycin</b></p><a name=\"clindamycin\"> </a><a name=\"hcclindamycin\"> </a><a name=\"clindamycin-en-US\"> </a><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">clindamycin, single 3g dose</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_clindamycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest clindamycin</b></p><a name=\"clindamycin\"> </a><a name=\"hcclindamycin\"> </a><a name=\"clindamycin-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">clindamycin, single 3g dose</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"^^xsd:anyURI ] ;
@@ -212,7 +222,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_fluconazol\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest fluconazol</b></p><a name=\"fluconazol\"> </a><a name=\"hcfluconazol\"> </a><a name=\"fluconazol-en-US\"> </a><p><b>CPG Rating Extension</b>: 1/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Fluconazol</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_fluconazol\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest fluconazol</b></p><a name=\"fluconazol\"> </a><a name=\"hcfluconazol\"> </a><a name=\"fluconazol-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>CPG Rating Extension</b>: 1/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Fluconazol</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"^^xsd:anyURI ] ;
@@ -241,13 +251,16 @@
   fhir:id [ fhir:v "miconazol"] ; # 
   fhir:meta [
      fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest>
+     ] [
        fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
        fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_miconazol\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest miconazol</b></p><a name=\"miconazol\"> </a><a name=\"hcmiconazol\"> </a><a name=\"miconazol-en-US\"> </a><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">overall</span></li><li>ratingValue: 3/3</li><li>ratingText: </li></ul></blockquote><div><p>Not recommended</p>\n</div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Miconazol</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_miconazol\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest miconazol</b></p><a name=\"miconazol\"> </a><a name=\"hcmiconazol\"> </a><a name=\"miconazol-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSSResponseMedicationRequest.html\">PSS Response Medication Request</a>, <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">overall</span></li><li>ratingValue: 3/3</li><li>ratingText: </li></ul></blockquote><div><p>Not recommended</p>\n</div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Miconazol</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
@@ -276,7 +289,7 @@
          fhir:v "Not recommended"
        ]
      ] ) ;
-     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-structured-rating"^^xsd:anyURI ]
+     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 

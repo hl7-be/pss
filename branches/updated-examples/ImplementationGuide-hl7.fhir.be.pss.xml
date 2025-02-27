@@ -468,18 +468,210 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <grouping id="LogicalModels">
+      <name value="Logical Models"/>
+      <description value="Data Models representing the data structures and requirements for interoperability."/>
+    </grouping>
     <grouping id="PlanDefinitions">
       <name value="PlanDefinitions (services)"/>
-      <description value="PlanDefinitions defining the service endpoints for using the PSS."/>
+      <description value="PlanDefinitions defining the service endpoints for using the PSS. These have the inputs and outputs represented by the profiles"/>
+    </grouping>
+    <grouping id="Profiles">
+      <name value="Resource Profiles"/>
+      <description value="These define constraints on FHIR resources for systems conforming to this implementation guide"/>
+    </grouping>
+    <grouping id="Extensions">
+      <name value="Extensions"/>
+      <description value="These define additional elements that can be exchanged with the respective FHIR resources"/>
     </grouping>
     <grouping id="Antimicrobiology">
-      <name value="Antimicrobiology"/>
+      <name value="Examples - Antimicrobiology"/>
       <description value="Antimicrobiology PSS resource examples"/>
     </grouping>
     <grouping id="Radiology">
-      <name value="Radiology"/>
+      <name value="Examples - Radiology"/>
       <description value="Radiology PSS resource examples"/>
     </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSRequest"/>
+      </reference>
+      <name value="PSS Request"/>
+      <description value="A request for PSS (Prescriber Support System) results."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="LogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponse"/>
+      </reference>
+      <name value="PSS Response"/>
+      <description value="A response containing the results from the PSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="LogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/GetDataToCollect"/>
+      </reference>
+      <name value="GetDataToCollect"/>
+      <description value="Get Data to Collect"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="PlanDefinitions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/GetRecommendations"/>
+      </reference>
+      <name value="GetRecommendations"/>
+      <description value="Get recommendations for potential treatments based on patient information"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="PlanDefinitions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSRequestBundle"/>
+      </reference>
+      <name value="PSS Request Bundle"/>
+      <description value="The PSS Request Data Bundle is used to request data from the PSS system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseBundle"/>
+      </reference>
+      <name value="PSS Response Bundle"/>
+      <description value="The PSS Response Bundle is used to return data from the PSS system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSDataAcquisitionForm"/>
+      </reference>
+      <name value="PSS Data Acquisition Form"/>
+      <description value="The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseRequestGroup"/>
+      </reference>
+      <name value="PSS Response Request Group"/>
+      <description value="All PSS responses contain a PSS RequestGroup conformant to this profile."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseMedicationRequest"/>
+      </reference>
+      <name value="PSS Response Medication Request"/>
+      <description value="The PSS Response Medication Request is used when the PSS system returns a MedicationRequest"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseServiceRequest"/>
+      </reference>
+      <name value="PSS Response Service Request"/>
+      <description value="The PSS Response Service Request is used when the PSS system returns a ServiceRequest"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CodeValueSet"/>
+      </reference>
+      <name value="Code ValueSet"/>
+      <description value="A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Extensions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSStructuredRating"/>
+      </reference>
+      <name value="PSS Rating Extension"/>
+      <description value="A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Extensions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSRelevantAge"/>
+      </reference>
+      <name value="PSS Relevant Patient Age"/>
+      <description value="The approximate, relevant age of the patient at the time of the search."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Extensions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSCodedRating"/>
+      </reference>
+      <name value="PSS Rating Extension"/>
+      <description value="A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Extensions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-a"/>
+      </reference>
+      <name value="patient-a"/>
+      <description value="Example anonymised patient A"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
@@ -489,7 +681,7 @@
       </reference>
       <name value="Antimicrobiology - S2 Get data to collect - Request - 2. - Bundle"/>
       <description value="Antimicrobiology - S2 Get data to collect - Request - 2. Bundle"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -537,7 +729,7 @@
       </reference>
       <name value="Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"/>
       <description value="Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -578,6 +770,30 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/condition-valueset"/>
+      </reference>
+      <name value="Antimicrobiology - Vaginitis-related conditions"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PregnancyCodes"/>
+      </reference>
+      <name value="Pregnancy Codes"/>
+      <description value="Pregnancy Codes - used for EHRs to consider pregnancy status"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -585,7 +801,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -609,7 +825,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -681,66 +897,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Antimicrobiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/condition-valueset"/>
-      </reference>
-      <name value="Antimicrobiology - Vaginitis-related conditions"/>
-      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Antimicrobiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CodeValueSet"/>
-      </reference>
-      <name value="Code ValueSet"/>
-      <description value="A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PlanDefinition"/>
-      </extension>
-      <reference>
-        <reference value="PlanDefinition/GetDataToCollect"/>
-      </reference>
-      <name value="GetDataToCollect"/>
-      <description value="Get Data to Collect"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="PlanDefinitions"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PlanDefinition"/>
-      </extension>
-      <reference>
-        <reference value="PlanDefinition/GetRecommendations"/>
-      </reference>
-      <name value="GetRecommendations"/>
-      <description value="Get recommendations for potential treatments based on patient information"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="PlanDefinitions"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/patient-a"/>
-      </reference>
-      <name value="patient-a"/>
-      <description value="Patient A"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -751,142 +908,9 @@
         <reference value="Patient/patient-r"/>
       </reference>
       <name value="patient-r"/>
-      <description value="Patient R"/>
+      <description value="Example anonymised patient R"/>
       <exampleBoolean value="true"/>
       <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/PregnancyCodes"/>
-      </reference>
-      <name value="Pregnancy Codes"/>
-      <description value="Pregnancy Codes - used for EHRs to consider pregnancy status"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Antimicrobiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PSSDataAcquisitionForm"/>
-      </reference>
-      <name value="PSS Data Acquisition Form"/>
-      <description value="The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pss-coded-rating"/>
-      </reference>
-      <name value="PSS Rating Extension"/>
-      <description value="A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pss-structured-rating"/>
-      </reference>
-      <name value="PSS Rating Extension"/>
-      <description value="A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pss-relevant-age"/>
-      </reference>
-      <name value="PSS Relevant Patien Age"/>
-      <description value="The approximate, relevant age of the patient at the time of the search."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PSSRequest"/>
-      </reference>
-      <name value="PSS Request"/>
-      <description value="A request for PSS (Prescriber Support System) results."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PssRequestDataBundle"/>
-      </reference>
-      <name value="PSS Request Data Bundle"/>
-      <description value="The PSS Request Data Bundle is used to request data from the PSS system."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PSSResponse"/>
-      </reference>
-      <name value="PSS Response"/>
-      <description value="A response containing the results from the PSS."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PssResponseBundle"/>
-      </reference>
-      <name value="PSS Response Bundle"/>
-      <description value="The PSS Response Bundle is used to return data from the PSS system."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PSSResponseMedicationRequest"/>
-      </reference>
-      <name value="PSS Response Medication Request"/>
-      <description value="The PSS Response Medication Request is used when the PSS system returns a MedicationRequest"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PSSResponseRequestGroup"/>
-      </reference>
-      <name value="PSS Response Request Group"/>
-      <description value="All PSS responses contain a PSS RequestGroup conformant to this profile."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PSSResponseServiceRequest"/>
-      </reference>
-      <name value="PSS Response Service Request"/>
-      <description value="The PSS Response Service Request is used when the PSS system returns a ServiceRequest"/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -897,7 +921,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -909,7 +933,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -921,7 +945,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -933,7 +957,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -945,7 +969,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
       <groupingId value="Radiology"/>
     </resource>
     <page>

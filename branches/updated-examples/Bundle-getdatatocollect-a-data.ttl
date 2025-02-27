@@ -10,6 +10,12 @@
 <https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/getdatatocollect-a-data> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "getdatatocollect-a-data"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle>
+     ] )
+  ] ; # 
   fhir:type [ fhir:v "collection"] ; # 
   fhir:entry ( [
      fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48"^^xsd:anyURI ] ;
@@ -29,10 +35,10 @@
   fhir:id [ fhir:v "patient-a"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-a</b></p><a name=\"patient-a\"> </a><a name=\"hcpatient-a\"> </a><a name=\"patient-a-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The approximate, relevant age of the patient at the time of the search.\"><a href=\"StructureDefinition-pss-relevant-age.html\">PSS Relevant Patien Age</a></td><td colspan=\"3\">36<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated]  codey = 'y')</span></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-a</b></p><a name=\"patient-a\"> </a><a name=\"hcpatient-a\"> </a><a name=\"patient-a-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The approximate, relevant age of the patient at the time of the search.\"><a href=\"StructureDefinition-PSSRelevantAge.html\">PSS Relevant Patient Age</a></td><td colspan=\"3\">36<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated]  codey = 'y')</span></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-relevant-age"^^xsd:anyURI ] ;
+     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Age ;
        fhir:value [ fhir:v "36"^^xsd:decimal ] ;
