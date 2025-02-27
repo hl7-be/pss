@@ -1,5 +1,5 @@
 Extension: PSSCodedRating
-Id: pss-coded-rating
+//Id: pss-coded-rating
 Title: "PSS Rating Extension"
 Description: "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."
 Context: Resource, PlanDefinition.action
@@ -8,7 +8,7 @@ Context: Resource, PlanDefinition.action
 
 
 Extension: PSSStructuredRating
-Id: pss-structured-rating
+//Id: structured-rating
 Title: "PSS Rating Extension"
 Description: "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."
 Context: Resource, PlanDefinition.action

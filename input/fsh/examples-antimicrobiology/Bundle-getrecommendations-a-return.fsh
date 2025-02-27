@@ -1,8 +1,10 @@
 Instance: getrecommendations-a-return
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"
-InstanceOf: Bundle
+InstanceOf: PSSResponseBundle
 Usage: #example
+* identifier.value = "response1"
+* timestamp = "2025-02-20T00:00:00Z"
 * type = #collection
 * entry[0].resource = getrecommendations-a-return-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
@@ -123,13 +125,13 @@ Usage: #example
 
 
 Instance: miconazol
-InstanceOf: MedicationRequest
+InstanceOf: PSSResponseMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 
-* extension[pss-structured-rating][+]
+* extension[structured-rating][+]
   * extension[ratingType].valueCodeableConcept = #overall
   * extension[ratingValue].valueRatio
     * numerator.value = 3

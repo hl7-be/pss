@@ -1,7 +1,7 @@
 Instance: getrecommendations-a-data
 Title: "Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"
 Description: "Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"
-InstanceOf: Bundle
+InstanceOf: PSSRequestBundle
 Usage: #example
 * type = #collection
 * entry[0].resource = patient-a

@@ -1,7 +1,7 @@
 
 Instance: patient-a
 InstanceOf: Patient
-Description: "Patient A"
+Description: "Example anonymised patient A"
 Usage: #example
 * active = true
 * gender = #female
@@ -11,7 +11,7 @@ Usage: #example
 
 Instance: patient-r
 InstanceOf: Patient
-Description: "Patient R"
+Description: "Example anonymised patient R"
 Usage: #example
 * active = true
 * gender = #male

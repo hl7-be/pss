@@ -1,5 +1,5 @@
 Instance: getdatatocollect-a-data
-InstanceOf: Bundle
+InstanceOf: PSSRequestBundle
 Title: "Antimicrobiology - S2 Get data to collect - Request - 2. - Bundle"
 Description: "Antimicrobiology - S2 Get data to collect - Request - 2. Bundle"
 Usage: #example

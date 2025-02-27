@@ -1,5 +1,5 @@
-Profile: PssRequestDataBundle
-Title: "PSS Request Data Bundle"
+Profile: PSSRequestBundle
+Title: "PSS Request Bundle"
 Description: "The PSS Request Data Bundle is used to request data from the PSS system."
 Parent: Bundle
 
@@ -15,7 +15,7 @@ Parent: Bundle
 // * entry[entryPatient].resource only Patient
 //
 
-Profile: PssResponseBundle
+Profile: PSSResponseBundle
 Title: "PSS Response Bundle"
 Description: "The PSS Response Bundle is used to return data from the PSS system."
 Parent: Bundle
@@ -32,12 +32,16 @@ Parent: Bundle
 //
 
 Profile: PSSResponseServiceRequest
+Parent: ServiceRequest
 Title: "PSS Response Service Request"
 Description: "The PSS Response Service Request is used when the PSS system returns a ServiceRequest"
-Parent: MedicationRequest
 * subject 1..1 
 * subject only Reference(Patient)
 * intent = #proposal
+* extension contains 
+  http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
+  PSSCodedRating named coded-rating 0..1 and
+  PSSStructuredRating named structured-rating 0..*
 
 
 Profile: PSSResponseMedicationRequest
@@ -49,7 +53,8 @@ Parent: MedicationRequest
 * intent = #proposal
 * extension contains 
   http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
-  PSSCodedRating named coded-rating 0..1 
+  PSSCodedRating named coded-rating 0..1 and
+  PSSStructuredRating named structured-rating 0..*
 
 
 

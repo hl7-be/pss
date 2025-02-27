@@ -10,10 +10,12 @@ Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 
 
 Instance: getdatatocollect-a-return
-InstanceOf: Bundle
+InstanceOf: PSSResponseBundle
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
 Usage: #example
+* identifier.value = "response1"
+* timestamp = "2025-02-20T00:00:00Z"
 * type = #collection
 * entry[0].resource = getdatatocollect-a-return-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4d"

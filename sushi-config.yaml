@@ -105,21 +105,47 @@ dependencies:
 # create IG.definition.grouping entries and associate the individual
 # resource entries with the corresponding groupIds.
 groups:
+  LogicalModels:
+    name: Logical Models
+    description: Data Models representing the data structures and requirements for interoperability.
+    resources:
+      - StructureDefinition/PSSRequest
+      - StructureDefinition/PSSResponse
+
   PlanDefinitions:
     name: PlanDefinitions (services)
-    description: PlanDefinitions defining the service endpoints for using the PSS.
+    description: PlanDefinitions defining the service endpoints for using the PSS. These have the inputs and outputs represented by the profiles
     resources:
       - PlanDefinition/GetDataToCollect
-#      - PlanDefinition/GetDiagnoses
       - PlanDefinition/GetRecommendations
+
+  Profiles: 
+    name: Resource Profiles
+    description: These define constraints on FHIR resources for systems conforming to this implementation guide
+    resources:
+      - StructureDefinition/PSSRequestBundle
+      - StructureDefinition/PSSResponseBundle
+      - StructureDefinition/PSSDataAcquisitionForm
+      - StructureDefinition/PSSResponseRequestGroup
+      - StructureDefinition/PSSResponseMedicationRequest
+      - StructureDefinition/PSSResponseServiceRequest
+
+  Extensions: 
+    name: Extensions
+    description: These define additional elements that can be exchanged with the respective FHIR resources
+    resources:
+      - StructureDefinition/CodeValueSet
+      - StructureDefinition/PSSStructuredRating
+      - StructureDefinition/PSSRelevantAge
+      - StructureDefinition/PSSCodedRating
 
 
   Antimicrobiology:
-    name: Antimicrobiology
+    name: Examples - Antimicrobiology
     description: Antimicrobiology PSS resource examples
     resources:
-      - Bundle/getdatatocollect-a-data
       - Patient/patient-a
+      - Bundle/getdatatocollect-a-data
       - vulvovaginitis
       - AllergyIntolerance/allergy-to-sulfonamide
       - MedicationRequest/proposal-clindamycin
@@ -143,7 +169,7 @@ groups:
       - MedicationRequest/miconazol
 
   Radiology:
-    name: Radiology
+    name: Examples - Radiology
     description: Radiology PSS resource examples
     resources: 
       - Patient/patient-r
