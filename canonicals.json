@@ -32,11 +32,25 @@
     "name" : "CodeValueSet"
   },
   {
+    "id" : "PSSCodedRating",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSCodedRating",
+    "version" : "1.0.0",
+    "name" : "PSSCodedRating"
+  },
+  {
     "id" : "PSSDataAcquisitionForm",
     "type" : "StructureDefinition",
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSDataAcquisitionForm",
     "version" : "1.0.0",
     "name" : "PSSDataAcquisitionForm"
+  },
+  {
+    "id" : "PSSRelevantAge",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge",
+    "version" : "1.0.0",
+    "name" : "PSSRelevantAge"
   },
   {
     "id" : "PSSRequest",
@@ -46,11 +60,25 @@
     "name" : "PSSRequest"
   },
   {
+    "id" : "PSSRequestBundle",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
+    "version" : "1.0.0",
+    "name" : "PSSRequestBundle"
+  },
+  {
     "id" : "PSSResponse",
     "type" : "StructureDefinition",
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponse",
     "version" : "1.0.0",
     "name" : "PSSResponse"
+  },
+  {
+    "id" : "PSSResponseBundle",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle",
+    "version" : "1.0.0",
+    "name" : "PSSResponseBundle"
   },
   {
     "id" : "PSSResponseMedicationRequest",
@@ -74,37 +102,9 @@
     "name" : "PSSResponseServiceRequest"
   },
   {
-    "id" : "PssRequestDataBundle",
+    "id" : "PSSStructuredRating",
     "type" : "StructureDefinition",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PssRequestDataBundle",
-    "version" : "1.0.0",
-    "name" : "PssRequestDataBundle"
-  },
-  {
-    "id" : "PssResponseBundle",
-    "type" : "StructureDefinition",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PssResponseBundle",
-    "version" : "1.0.0",
-    "name" : "PssResponseBundle"
-  },
-  {
-    "id" : "pss-coded-rating",
-    "type" : "StructureDefinition",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-coded-rating",
-    "version" : "1.0.0",
-    "name" : "PSSCodedRating"
-  },
-  {
-    "id" : "pss-relevant-age",
-    "type" : "StructureDefinition",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-relevant-age",
-    "version" : "1.0.0",
-    "name" : "PSSRelevantAge"
-  },
-  {
-    "id" : "pss-structured-rating",
-    "type" : "StructureDefinition",
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-structured-rating",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating",
     "version" : "1.0.0",
     "name" : "PSSStructuredRating"
   },

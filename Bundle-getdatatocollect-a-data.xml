@@ -2,6 +2,9 @@
 
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="getdatatocollect-a-data"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"/>
+  </meta>
   <type value="collection"/>
   <entry>
     <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48"/>
@@ -9,9 +12,9 @@
       <Patient>
         <id value="patient-a"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-a"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-a</b></p><a name="patient-a"> </a><a name="hcpatient-a"> </a><a name="patient-a-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient Female, DoB Unknown</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="The approximate, relevant age of the patient at the time of the search."><a href="StructureDefinition-pss-relevant-age.html">PSS Relevant Patien Age</a></td><td colspan="3">36<span style="background: LightGoldenRodYellow"> (Details: [not stated]  codey = 'y')</span></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-a"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-a</b></p><a name="patient-a"> </a><a name="hcpatient-a"> </a><a name="patient-a-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient Female, DoB Unknown</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="The approximate, relevant age of the patient at the time of the search."><a href="StructureDefinition-PSSRelevantAge.html">PSS Relevant Patient Age</a></td><td colspan="3">36<span style="background: LightGoldenRodYellow"> (Details: [not stated]  codey = 'y')</span></td></tr></table></div>
         </text>
-        <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/pss-relevant-age">
+        <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge">
           <valueAge>
             <value value="36"/>
             <code value="y"/>

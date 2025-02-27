@@ -29,8 +29,6 @@
 
 <link href="assets/css/lforms.min.css" rel="stylesheet"/>
 
-<!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/colors.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -167,22 +165,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">PlanDefinitions (services)</a>
+         <a href="#1">Logical Models</a>
       </li>
       <li>
-         <a href="#2">Antimicrobiology</a>
+         <a href="#2">PlanDefinitions (services)</a>
       </li>
       <li>
-         <a href="#3">Radiology</a>
+         <a href="#3">Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Structures: Logical Models</a>
+         <a href="#4">Extensions</a>
       </li>
       <li>
-         <a href="#5">Structures: Resource Profiles</a>
+         <a href="#5">Examples - Antimicrobiology</a>
       </li>
       <li>
-         <a href="#6">Structures: Extension Definitions</a>
+         <a href="#6">Examples - Radiology</a>
       </li>
    </ul>
 </div>
@@ -191,8 +189,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Logical Models </h3>
+    <p>Data Models representing the data structures and requirements for interoperability.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSRequest.html"
+                  title="StructureDefinition/PSSRequest">PSS Request</a>
+            </td>
+            <td>
+<p>A request for PSS (Prescriber Support System) results.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSResponse.html"
+                  title="StructureDefinition/PSSResponse">PSS Response</a>
+            </td>
+            <td>
+<p>A response containing the results from the PSS.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>PlanDefinitions (services) </h3>
-    <p>PlanDefinitions defining the service endpoints for using the PSS.</p>
+    <p>PlanDefinitions defining the service endpoints for using the PSS. These have the inputs and outputs represented by the profiles</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -216,12 +240,126 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
-   <h3>Antimicrobiology </h3>
+   <a name="3"> </a>
+   <h3>Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSRequestBundle.html"
+                  title="StructureDefinition/PSSRequestBundle">PSS Request Bundle</a>
+            </td>
+            <td>
+<p>The PSS Request Data Bundle is used to request data from the PSS system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSResponseBundle.html"
+                  title="StructureDefinition/PSSResponseBundle">PSS Response Bundle</a>
+            </td>
+            <td>
+<p>The PSS Response Bundle is used to return data from the PSS system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSDataAcquisitionForm.html"
+                  title="StructureDefinition/PSSDataAcquisitionForm">PSS Data Acquisition Form</a>
+            </td>
+            <td>
+<p>The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSResponseRequestGroup.html"
+                  title="StructureDefinition/PSSResponseRequestGroup">PSS Response Request Group</a>
+            </td>
+            <td>
+<p>All PSS responses contain a PSS RequestGroup conformant to this profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSResponseMedicationRequest.html"
+                  title="StructureDefinition/PSSResponseMedicationRequest">PSS Response Medication Request</a>
+            </td>
+            <td>
+<p>The PSS Response Medication Request is used when the PSS system returns a MedicationRequest</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSResponseServiceRequest.html"
+                  title="StructureDefinition/PSSResponseServiceRequest">PSS Response Service Request</a>
+            </td>
+            <td>
+<p>The PSS Response Service Request is used when the PSS system returns a ServiceRequest</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Extensions </h3>
+    <p>These define additional elements that can be exchanged with the respective FHIR resources</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CodeValueSet.html"
+                  title="StructureDefinition/CodeValueSet">Code ValueSet</a>
+            </td>
+            <td>
+<p>A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSStructuredRating.html"
+                  title="StructureDefinition/PSSStructuredRating">PSS Rating Extension</a>
+            </td>
+            <td>
+<p>A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSRelevantAge.html"
+                  title="StructureDefinition/PSSRelevantAge">PSS Relevant Patient Age</a>
+            </td>
+            <td>
+<p>The approximate, relevant age of the patient at the time of the search.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSSCodedRating.html"
+                  title="StructureDefinition/PSSCodedRating">PSS Rating Extension</a>
+            </td>
+            <td>
+<p>A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Examples - Antimicrobiology </h3>
     <p>Antimicrobiology PSS resource examples</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-a.html" title="Patient/patient-a">patient-a</a>
+            </td>
+            <td>
+<p>Example anonymised patient A</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Bundle-getdatatocollect-a-data.html"
@@ -291,6 +429,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-condition-valueset.html"
+                  title="ValueSet/condition-valueset">Antimicrobiology - Vaginitis-related conditions</a>
+            </td>
+            <td>
+<p>Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PregnancyCodes.html" title="ValueSet/PregnancyCodes">Pregnancy Codes</a>
+            </td>
+            <td>
+<p>Pregnancy Codes - used for EHRs to consider pregnancy status</p>
 </td>
          </tr>
          <tr>
@@ -374,35 +529,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-condition-valueset.html"
-                  title="ValueSet/condition-valueset">Antimicrobiology - Vaginitis-related conditions</a>
-            </td>
-            <td>
-<p>Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-patient-a.html" title="Patient/patient-a">patient-a</a>
-            </td>
-            <td>
-<p>Patient A</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-PregnancyCodes.html" title="ValueSet/PregnancyCodes">Pregnancy Codes</a>
-            </td>
-            <td>
-<p>Pregnancy Codes - used for EHRs to consider pregnancy status</p>
-</td>
-         </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
-   <h3>Radiology </h3>
+   <a name="6"> </a>
+   <h3>Examples - Radiology </h3>
     <p>Radiology PSS resource examples</p>
 <table class="grid">
       <col style="width:20%"/>
@@ -412,7 +542,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="Patient-patient-r.html" title="Patient/patient-r">patient-r</a>
             </td>
             <td>
-<p>Patient R</p>
+<p>Example anonymised patient R</p>
 </td>
          </tr>
          <tr>
@@ -462,138 +592,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
-   <h3>Structures: Logical Models </h3>
-    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PSSRequest.html"
-                  title="StructureDefinition/PSSRequest">PSS Request</a>
-            </td>
-            <td>
-<p>A request for PSS (Prescriber Support System) results.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PSSResponse.html"
-                  title="StructureDefinition/PSSResponse">PSS Response</a>
-            </td>
-            <td>
-<p>A response containing the results from the PSS.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="5"> </a>
-   <h3>Structures: Resource Profiles </h3>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PSSDataAcquisitionForm.html"
-                  title="StructureDefinition/PSSDataAcquisitionForm">PSS Data Acquisition Form</a>
-            </td>
-            <td>
-<p>The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PssRequestDataBundle.html"
-                  title="StructureDefinition/PssRequestDataBundle">PSS Request Data Bundle</a>
-            </td>
-            <td>
-<p>The PSS Request Data Bundle is used to request data from the PSS system.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PssResponseBundle.html"
-                  title="StructureDefinition/PssResponseBundle">PSS Response Bundle</a>
-            </td>
-            <td>
-<p>The PSS Response Bundle is used to return data from the PSS system.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PSSResponseMedicationRequest.html"
-                  title="StructureDefinition/PSSResponseMedicationRequest">PSS Response Medication Request</a>
-            </td>
-            <td>
-<p>The PSS Response Medication Request is used when the PSS system returns a MedicationRequest</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PSSResponseRequestGroup.html"
-                  title="StructureDefinition/PSSResponseRequestGroup">PSS Response Request Group</a>
-            </td>
-            <td>
-<p>All PSS responses contain a PSS RequestGroup conformant to this profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PSSResponseServiceRequest.html"
-                  title="StructureDefinition/PSSResponseServiceRequest">PSS Response Service Request</a>
-            </td>
-            <td>
-<p>The PSS Response Service Request is used when the PSS system returns a ServiceRequest</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="6"> </a>
-   <h3>Structures: Extension Definitions </h3>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-CodeValueSet.html"
-                  title="StructureDefinition/CodeValueSet">Code ValueSet</a>
-            </td>
-            <td>
-<p>A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-pss-coded-rating.html"
-                  title="StructureDefinition/pss-coded-rating">PSS Rating Extension</a>
-            </td>
-            <td>
-<p>A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-pss-structured-rating.html"
-                  title="StructureDefinition/pss-structured-rating">PSS Rating Extension</a>
-            </td>
-            <td>
-<p>A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-pss-relevant-age.html"
-                  title="StructureDefinition/pss-relevant-age">PSS Relevant Patien Age</a>
-            </td>
-            <td>
-<p>The approximate, relevant age of the patient at the time of the search.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
 </div>
 
 </div>
@@ -612,7 +610,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 26, 2025 15:38+0000">2025-02-26</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 27, 2025 22:56+0000">2025-02-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- HL7 Belgium -->
