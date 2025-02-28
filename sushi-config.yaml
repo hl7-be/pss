@@ -173,35 +173,35 @@ groups:
     description: Radiology PSS resource examples
     resources: 
       - Patient/patient-r
+      - Bundle/radiology-getdiagnoses
+      - Observation/ataxia
+      - Bundle/radiology-getdiagnoses-return
+      - RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return
+      - Task/propose-stroke
+      - Condition/proposed-diagnosis-stroke
+      - Task/propose-infection
+      - Condition/proposed-diagnosis-infection
+      - Task/propose-head-trauma
+      - Condition/proposed-diagnosis-head-trauma
+      - Task/propose-slow-progression-ataxia
+      - Condition/proposed-diagnosis-slow-progression-ataxia
+      - Task/propose-post-trauma-ataxia
+      - Condition/proposed-diagnosis-post-trauma-ataxia
 
-#      - Bundle/radiology-getdiagnoses
-  #     - Observation/ataxia
-  #     - ServiceRequest/ct-head-iv-contrast
-
-  #     - Bundle/radiology-getdiagnoses-return
-  #     - RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return
-  #     - Task/propose-stroke
-  #     - Condition/proposed-diagnosis-stroke
-  #     - Task/propose-infection
-  #     - Condition/proposed-diagnosis-infection
-  #     - Task/propose-head-trauma
-  #     - Condition/proposed-diagnosis-head-trauma
-  #     - Task/propose-slow-progression-ataxia
-  #     - Condition/proposed-diagnosis-slow-progression-ataxia
-  #     - Task/propose-post-trauma-ataxia
-  #     - Condition/proposed-diagnosis-post-trauma-ataxia
+      - Bundle/getrecommendations-data3
+      - Condition/proposed-diagnosis-head-trauma-v2
+      - ServiceRequest/ct-head-iv-contrast-v2
 
       - Bundle/getrecommendations-r-return
       - RequestGroup/getrecommendations-r-return-1
       - ServiceRequest/ct-head-iv-contrast
       - ServiceRequest/ct-head-with-or-without-contrast
       - ServiceRequest/mr-head-without-contrast
-  #     - Condition/proposed-diagnosis-head-trauma-v2
+      - Condition/proposed-diagnosis-head-trauma-v2
       
-  #     - Bundle/getrecommendations3-return
-  #     - RequestGroup/getrecommendations3-return-1
-  #     - ServiceRequest/ct-head-iv-contrast-v3
-
+      - Bundle/getrecommendations-r-return
+      - RequestGroup/getrecommendations-r-return-1
+#      - ServiceRequest/ct-head-iv-contrast
 
 
 # The pages property corresponds to IG.definition.page. SUSHI can

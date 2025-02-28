@@ -9,6 +9,34 @@ Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 * $sct#72892002
 
 
+ValueSet: PathogenicAgents
+Title: "Pathogenic Agents"
+Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
+// Usage: #example
+* ^status = #active
+* $sct#123 "HPV"
+  * ^ extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
+* $sct#234
+* $sct#345
+
+
+
+
+ValueSet: PathogenicAgentHPV
+Title: "Pathogenic Agents"
+Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
+// Usage: #example
+* ^status = #active
+* $sct#123 "HPV"
+  * ^ extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
+* $sct#234
+* $sct#345
+
+
+
+
+
+
 Instance: getdatatocollect-a-return
 InstanceOf: PSSResponseBundle
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
