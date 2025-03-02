@@ -19,7 +19,12 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_getrecommendations-r-return-1"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-r-return-1</b></p><a name="getrecommendations-r-return-1"> </a><a name="hcgetrecommendations-r-return-1"> </a><a name="getrecommendations-r-return-1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-patient-r.html">Anonymous Patient Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CT Head with or without contrast</p><p><b>resource</b>: <a href="ServiceRequest-ct-head-with-or-without-contrast.html">ServiceRequest CT, head, without or without contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CT Head with IV contrast</p><p><b>resource</b>: <a href="ServiceRequest-ct-head-iv-contrast.html">ServiceRequest CT, head, without IV contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: MR Head without contrast</p><p><b>resource</b>: <a href="ServiceRequest-mr-head-without-contrast.html">ServiceRequest MR, head, without IV contrast</a></p></blockquote></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_getrecommendations-r-return-1"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-r-return-1</b></p><a name="getrecommendations-r-return-1"> </a><a name="hcgetrecommendations-r-return-1"> </a><a name="getrecommendations-r-return-1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-patient-r.html">Anonymous Patient Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title="Codes:">radiationexposure</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Whoa!....</p>
+</div><p><b>textEquivalent</b>: CT Head with or without contrast</p><p><b>resource</b>: <a href="ServiceRequest-ct-head-with-or-without-contrast.html">ServiceRequest CT, head, without or without contrast</a></p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title="Codes:">radiationexposure</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Whoa!....</p>
+</div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title="Codes:">overall</span></li><li>ratingValue: 1/3</li><li>ratingText: </li></ul></blockquote><div><p>Not recommended</p>
+</div><p><b>textEquivalent</b>: CT Head with IV contrast</p><p><b>resource</b>: <a href="ServiceRequest-ct-head-iv-contrast.html">ServiceRequest CT, head, without IV contrast</a></p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title="Codes:">radiationexposure</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Whoa!....</p>
+</div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title="Codes:">overall</span></li><li>ratingValue: 1/3</li><li>ratingText: </li></ul></blockquote><div><p>Not recommended</p>
+</div><p><b>textEquivalent</b>: MR Head without contrast</p><p><b>resource</b>: <a href="ServiceRequest-mr-head-without-contrast.html">ServiceRequest MR, head, without IV contrast</a></p></blockquote></div>
         </text>
         <status value="active"/>
         <intent value="proposal"/>
@@ -27,24 +32,160 @@
           <reference value="Patient/patient-r"/>
         </subject>
         <action>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating">
+            <extension url="ratingType">
+              <valueCodeableConcept>
+                <coding>
+                  <code value="radiationexposure"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+            <extension url="ratingValue">
+              <valueRatio>
+                <numerator>
+                  <value value="2"/>
+                </numerator>
+                <denominator>
+                  <value value="3"/>
+                </denominator>
+              </valueRatio>
+            </extension>
+            <extension url="ratingText">
+              <valueMarkdown value="Whoa!...."/>
+            </extension>
+          </extension>
           <textEquivalent value="CT Head with or without contrast"/>
           <resource>
             <reference value="ServiceRequest/ct-head-with-or-without-contrast"/>
           </resource>
         </action>
         <action>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating">
+            <extension url="ratingType">
+              <valueCodeableConcept>
+                <coding>
+                  <code value="radiationexposure"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+            <extension url="ratingValue">
+              <valueRatio>
+                <numerator>
+                  <value value="2"/>
+                </numerator>
+                <denominator>
+                  <value value="3"/>
+                </denominator>
+              </valueRatio>
+            </extension>
+            <extension url="ratingText">
+              <valueMarkdown value="Whoa!...."/>
+            </extension>
+          </extension>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating">
+            <extension url="ratingType">
+              <valueCodeableConcept>
+                <coding>
+                  <code value="overall"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+            <extension url="ratingValue">
+              <valueRatio>
+                <numerator>
+                  <value value="1"/>
+                </numerator>
+                <denominator>
+                  <value value="3"/>
+                </denominator>
+              </valueRatio>
+            </extension>
+            <extension url="ratingText">
+              <valueMarkdown value="Not recommended"/>
+            </extension>
+          </extension>
           <textEquivalent value="CT Head with IV contrast"/>
           <resource>
             <reference value="ServiceRequest/ct-head-iv-contrast"/>
           </resource>
         </action>
         <action>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating">
+            <extension url="ratingType">
+              <valueCodeableConcept>
+                <coding>
+                  <code value="radiationexposure"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+            <extension url="ratingValue">
+              <valueRatio>
+                <numerator>
+                  <value value="2"/>
+                </numerator>
+                <denominator>
+                  <value value="3"/>
+                </denominator>
+              </valueRatio>
+            </extension>
+            <extension url="ratingText">
+              <valueMarkdown value="Whoa!...."/>
+            </extension>
+          </extension>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating">
+            <extension url="ratingType">
+              <valueCodeableConcept>
+                <coding>
+                  <code value="overall"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+            <extension url="ratingValue">
+              <valueRatio>
+                <numerator>
+                  <value value="1"/>
+                </numerator>
+                <denominator>
+                  <value value="3"/>
+                </denominator>
+              </valueRatio>
+            </extension>
+            <extension url="ratingText">
+              <valueMarkdown value="Not recommended"/>
+            </extension>
+          </extension>
           <textEquivalent value="MR Head without contrast"/>
           <resource>
             <reference value="ServiceRequest/mr-head-without-contrast"/>
           </resource>
         </action>
       </RequestGroup>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"/>
+    <resource>
+      <ServiceRequest>
+        <id value="ct-head-with-or-without-contrast"/>
+        <meta>
+          <versionId value="v3"/>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_ct-head-with-or-without-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-head-with-or-without-contrast</b></p><a name="ct-head-with-or-without-contrast"> </a><a name="hcct-head-with-or-without-contrast"> </a><a name="ct-head-with-or-without-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT, head, without or without contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html">Anonymous Patient Male, DoB Unknown</a></p></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <code value="114054"/>
+            <display value="CT, head, without or without contrast"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-r"/>
+        </subject>
+      </ServiceRequest>
     </resource>
   </entry>
   <entry>
@@ -57,54 +198,8 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_ct-head-iv-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name="ct-head-iv-contrast"> </a><a name="hcct-head-iv-contrast"> </a><a name="ct-head-iv-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title="Codes:">radiationexposure</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Whoa!....</p>
-</div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title="Codes:">overall</span></li><li>ratingValue: 1/3</li><li>ratingText: </li></ul></blockquote><div><p>Not recommended</p>
-</div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html">Anonymous Patient Male, DoB Unknown</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_ct-head-iv-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name="ct-head-iv-contrast"> </a><a name="hcct-head-iv-contrast"> </a><a name="ct-head-iv-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html">Anonymous Patient Male, DoB Unknown</a></p></div>
         </text>
-        <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating">
-          <extension url="ratingType">
-            <valueCodeableConcept>
-              <coding>
-                <code value="radiationexposure"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
-          <extension url="ratingValue">
-            <valueRatio>
-              <numerator>
-                <value value="2"/>
-              </numerator>
-              <denominator>
-                <value value="3"/>
-              </denominator>
-            </valueRatio>
-          </extension>
-          <extension url="ratingText">
-            <valueMarkdown value="Whoa!...."/>
-          </extension>
-        </extension>
-        <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating">
-          <extension url="ratingType">
-            <valueCodeableConcept>
-              <coding>
-                <code value="overall"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
-          <extension url="ratingValue">
-            <valueRatio>
-              <numerator>
-                <value value="1"/>
-              </numerator>
-              <denominator>
-                <value value="3"/>
-              </denominator>
-            </valueRatio>
-          </extension>
-          <extension url="ratingText">
-            <valueMarkdown value="Not recommended"/>
-          </extension>
-        </extension>
         <status value="active"/>
         <intent value="proposal"/>
         <code>
@@ -120,69 +215,22 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"/>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77"/>
     <resource>
       <ServiceRequest>
-        <id value="ct-head-iv-contrast"/>
+        <id value="mr-head-without-contrast"/>
         <meta>
-          <versionId value="v3"/>
           <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_ct-head-iv-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title="Codes:">radiationexposure</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Whoa!....</p>
-</div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title="Codes:">overall</span></li><li>ratingValue: 1/3</li><li>ratingText: </li></ul></blockquote><div><p>Not recommended</p>
-</div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html">Anonymous Patient Male, DoB Unknown</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_mr-head-without-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest mr-head-without-contrast</b></p><a name="mr-head-without-contrast"> </a><a name="hcmr-head-without-contrast"> </a><a name="mr-head-without-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">MR, head, without IV contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html">Anonymous Patient Male, DoB Unknown</a></p></div>
         </text>
-        <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating">
-          <extension url="ratingType">
-            <valueCodeableConcept>
-              <coding>
-                <code value="radiationexposure"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
-          <extension url="ratingValue">
-            <valueRatio>
-              <numerator>
-                <value value="2"/>
-              </numerator>
-              <denominator>
-                <value value="3"/>
-              </denominator>
-            </valueRatio>
-          </extension>
-          <extension url="ratingText">
-            <valueMarkdown value="Whoa!...."/>
-          </extension>
-        </extension>
-        <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating">
-          <extension url="ratingType">
-            <valueCodeableConcept>
-              <coding>
-                <code value="overall"/>
-              </coding>
-            </valueCodeableConcept>
-          </extension>
-          <extension url="ratingValue">
-            <valueRatio>
-              <numerator>
-                <value value="1"/>
-              </numerator>
-              <denominator>
-                <value value="3"/>
-              </denominator>
-            </valueRatio>
-          </extension>
-          <extension url="ratingText">
-            <valueMarkdown value="Not recommended"/>
-          </extension>
-        </extension>
         <status value="active"/>
         <intent value="proposal"/>
         <code>
           <coding>
-            <code value="114055"/>
-            <display value="CT, head, without IV contrast"/>
+            <code value="114092"/>
+            <display value="MR, head, without IV contrast"/>
           </coding>
         </code>
         <subject>
