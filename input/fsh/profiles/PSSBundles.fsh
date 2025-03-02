@@ -38,10 +38,10 @@ Description: "The PSS Response Service Request is used when the PSS system retur
 * subject 1..1 
 * subject only Reference(Patient)
 * intent = #proposal
-* extension contains 
-  // http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
-  // PSSCodedRating named coded-rating 0..1 and
-  PSSStructuredRating named structured-rating 0..*
+// * extension contains 
+//   // http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
+//   // PSSCodedRating named coded-rating 0..1 and
+//   PSSStructuredRating named structured-rating 0..*
 
 
 Profile: PSSResponseMedicationRequest
@@ -51,10 +51,8 @@ Parent: CPGMedicationRequest
 * subject 1..1 
 * subject only Reference(CPGPatient)
 * intent = #proposal
-* extension contains 
-  http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
-  PSSCodedRating named coded-rating 0..1 and
-  PSSStructuredRating named structured-rating 0..*
+// * extension contains 
+//   PSSStructuredRating named structured-rating 0..*
 
 
 
