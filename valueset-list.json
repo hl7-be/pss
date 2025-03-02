@@ -1,6 +1,24 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PathogenicAgentHPV",
+      "title" : "Pathogenic Agents",
+      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgents",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PathogenicAgents",
+      "title" : "Pathogenic Agents",
+      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
       "version" : "1.0.0",
       "status" : "active",

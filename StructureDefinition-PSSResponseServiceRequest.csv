@@ -25,14 +25,6 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ServiceRequest.extension:cpg-rating","ServiceRequest.extension","cpg-rating","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating]]} {[]}
-","CPG Rating Extension","A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ServiceRequest.extension:coded-rating","ServiceRequest.extension","coded-rating","","",0,1,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSCodedRating]]} {[]}
-","PSS Rating Extension","A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ServiceRequest.extension:structured-rating","ServiceRequest.extension","structured-rating","","",0,*,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating]]} {[]}
 ","PSS Rating Extension","A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

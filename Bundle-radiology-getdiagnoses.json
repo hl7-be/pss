@@ -1,0 +1,129 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "radiology-getdiagnoses",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"]
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad03",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-r",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-r\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-r</b></p><a name=\"patient-r\"> </a><a name=\"hcpatient-r\"> </a><a name=\"patient-r-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Male, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The approximate, relevant age of the patient at the time of the search.\"><a href=\"StructureDefinition-PSSRelevantAge.html\">PSS Relevant Patient Age</a></td><td colspan=\"3\">53<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated]  codey = 'y')</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge",
+        "valueAge" : {
+          "value" : 53,
+          "code" : "y"
+        }
+      }],
+      "active" : true,
+      "gender" : "male",
+      "deceasedBoolean" : false
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad04",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "ataxia",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ataxia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ataxia</b></p><a name=\"ataxia\"> </a><a name=\"hcataxia\"> </a><a name=\"ataxia-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 20262006}\">Ataxia</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\">Anonymous Patient Male, DoB Unknown</a></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "20262006",
+          "display" : "Ataxia"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-r"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-3e631234ad04",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "ct-head-iv-contrast",
+      "meta" : {
+        "versionId" : "v3",
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name=\"ct-head-iv-contrast\"> </a><a name=\"hcct-head-iv-contrast\"> </a><a name=\"ct-head-iv-contrast-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">radiationexposure</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Whoa!....</p>\n</div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">overall</span></li><li>ratingValue: 1/3</li><li>ratingText: </li></ul></blockquote><div><p>Not recommended</p>\n</div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\">Anonymous Patient Male, DoB Unknown</a></p></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "ratingType",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "radiationexposure"
+            }]
+          }
+        },
+        {
+          "url" : "ratingValue",
+          "valueRatio" : {
+            "numerator" : {
+              "value" : 2
+            },
+            "denominator" : {
+              "value" : 3
+            }
+          }
+        },
+        {
+          "url" : "ratingText",
+          "valueMarkdown" : "Whoa!...."
+        }],
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+      },
+      {
+        "extension" : [{
+          "url" : "ratingType",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "code" : "overall"
+            }]
+          }
+        },
+        {
+          "url" : "ratingValue",
+          "valueRatio" : {
+            "numerator" : {
+              "value" : 1
+            },
+            "denominator" : {
+              "value" : 3
+            }
+          }
+        },
+        {
+          "url" : "ratingText",
+          "valueMarkdown" : "Not recommended"
+        }],
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "code" : "114055",
+          "display" : "CT, head, without IV contrast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-r"
+      }
+    }
+  }]
+}

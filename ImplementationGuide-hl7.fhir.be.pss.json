@@ -656,201 +656,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSRequest"
-      },
-      "name" : "PSS Request",
-      "description" : "A request for PSS (Prescriber Support System) results.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSResponse"
-      },
-      "name" : "PSS Response",
-      "description" : "A response containing the results from the PSS.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PlanDefinition"
-      }],
-      "reference" : {
-        "reference" : "PlanDefinition/GetDataToCollect"
-      },
-      "name" : "GetDataToCollect",
-      "description" : "Get Data to Collect",
-      "exampleBoolean" : true,
-      "groupingId" : "PlanDefinitions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PlanDefinition"
-      }],
-      "reference" : {
-        "reference" : "PlanDefinition/GetRecommendations"
-      },
-      "name" : "GetRecommendations",
-      "description" : "Get recommendations for potential treatments based on patient information",
-      "exampleBoolean" : true,
-      "groupingId" : "PlanDefinitions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSRequestBundle"
-      },
-      "name" : "PSS Request Bundle",
-      "description" : "The PSS Request Data Bundle is used to request data from the PSS system.",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSResponseBundle"
-      },
-      "name" : "PSS Response Bundle",
-      "description" : "The PSS Response Bundle is used to return data from the PSS system.",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSDataAcquisitionForm"
-      },
-      "name" : "PSS Data Acquisition Form",
-      "description" : "The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system.",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSResponseRequestGroup"
-      },
-      "name" : "PSS Response Request Group",
-      "description" : "All PSS responses contain a PSS RequestGroup conformant to this profile.",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSResponseMedicationRequest"
-      },
-      "name" : "PSS Response Medication Request",
-      "description" : "The PSS Response Medication Request is used when the PSS system returns a MedicationRequest",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSResponseServiceRequest"
-      },
-      "name" : "PSS Response Service Request",
-      "description" : "The PSS Response Service Request is used when the PSS system returns a ServiceRequest",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/CodeValueSet"
-      },
-      "name" : "Code ValueSet",
-      "description" : "A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSStructuredRating"
-      },
-      "name" : "PSS Rating Extension",
-      "description" : "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSRelevantAge"
-      },
-      "name" : "PSS Relevant Patient Age",
-      "description" : "The approximate, relevant age of the patient at the time of the search.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSCodedRating"
-      },
-      "name" : "PSS Rating Extension",
-      "description" : "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/patient-a"
-      },
-      "name" : "patient-a",
-      "description" : "Example anonymised patient A",
-      "exampleBoolean" : true,
-      "groupingId" : "Antimicrobiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -955,32 +760,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/condition-valueset"
-      },
-      "name" : "Antimicrobiology - Vaginitis-related conditions",
-      "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
-      "exampleBoolean" : true,
-      "groupingId" : "Antimicrobiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/PregnancyCodes"
-      },
-      "name" : "Pregnancy Codes",
-      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
-      "exampleBoolean" : false,
-      "groupingId" : "Antimicrobiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -1027,7 +806,7 @@
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
       "description" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
-      "exampleBoolean" : true,
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -1040,7 +819,7 @@
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice",
       "description" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice",
-      "exampleBoolean" : true,
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseCommunicationRequest",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -1098,6 +877,95 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/condition-valueset"
+      },
+      "name" : "Antimicrobiology - Vaginitis-related conditions",
+      "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
+      "exampleBoolean" : true,
+      "groupingId" : "Antimicrobiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CodeValueSet"
+      },
+      "name" : "Code ValueSet",
+      "description" : "A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts",
+      "exampleBoolean" : false,
+      "groupingId" : "Extensions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/GetDataToCollect"
+      },
+      "name" : "GetDataToCollect",
+      "description" : "Get Data to Collect",
+      "exampleBoolean" : true,
+      "groupingId" : "PlanDefinitions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/GetRecommendations"
+      },
+      "name" : "GetRecommendations",
+      "description" : "Get recommendations for potential treatments based on patient information",
+      "exampleBoolean" : true,
+      "groupingId" : "PlanDefinitions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PathogenicAgents"
+      },
+      "name" : "Pathogenic Agents",
+      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PathogenicAgentHPV"
+      },
+      "name" : "Pathogenic Agents",
+      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/patient-a"
+      },
+      "name" : "patient-a",
+      "description" : "Example anonymised patient A",
+      "exampleBoolean" : true,
+      "groupingId" : "Antimicrobiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -1105,6 +973,395 @@
       },
       "name" : "patient-r",
       "description" : "Example anonymised patient R",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PregnancyCodes"
+      },
+      "name" : "Pregnancy Codes",
+      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "exampleBoolean" : false,
+      "groupingId" : "Antimicrobiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSDataAcquisitionForm"
+      },
+      "name" : "PSS Data Acquisition Form",
+      "description" : "The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system.",
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSStructuredRating"
+      },
+      "name" : "PSS Rating Extension",
+      "description" : "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.",
+      "exampleBoolean" : false,
+      "groupingId" : "Extensions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSCodedRating"
+      },
+      "name" : "PSS Rating Extension",
+      "description" : "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.",
+      "exampleBoolean" : false,
+      "groupingId" : "Extensions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSRelevantAge"
+      },
+      "name" : "PSS Relevant Patient Age",
+      "description" : "The approximate, relevant age of the patient at the time of the search.",
+      "exampleBoolean" : false,
+      "groupingId" : "Extensions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSRequest"
+      },
+      "name" : "PSS Request",
+      "description" : "A request for PSS (Prescriber Support System) results.",
+      "exampleBoolean" : false,
+      "groupingId" : "LogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSRequestBundle"
+      },
+      "name" : "PSS Request Bundle",
+      "description" : "The PSS Request Data Bundle is used to request data from the PSS system.",
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSResponse"
+      },
+      "name" : "PSS Response",
+      "description" : "A response containing the results from the PSS.",
+      "exampleBoolean" : false,
+      "groupingId" : "LogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSResponseBundle"
+      },
+      "name" : "PSS Response Bundle",
+      "description" : "The PSS Response Bundle is used to return data from the PSS system.",
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSResponseCommunicationRequest"
+      },
+      "name" : "PSS Response Communication Request",
+      "description" : "All PSS responses contain a PSS Communication Request conformant to this profile.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSResponseMedicationRequest"
+      },
+      "name" : "PSS Response Medication Request",
+      "description" : "The PSS Response Medication Request is used when the PSS system returns a MedicationRequest",
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSResponseRequestGroup"
+      },
+      "name" : "PSS Response Request Group",
+      "description" : "All PSS responses contain a PSS RequestGroup conformant to this profile.",
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSResponseServiceRequest"
+      },
+      "name" : "PSS Response Service Request",
+      "description" : "The PSS Response Service Request is used when the PSS system returns a ServiceRequest",
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/radiology-getdiagnoses"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Request - 1. Bundle",
+      "description" : "Radiology - S1 Get Diagnoses - Request - 1. Bundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ataxia"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Request - 1.1. Observed data",
+      "description" : "Radiology - S1 Get Diagnoses - Request - 1.1. Observed data",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/radiology-getdiagnoses-return"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1. Bundle",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1. Bundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle",
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RequestGroup"
+      }],
+      "reference" : {
+        "reference" : "RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/proposed-diagnosis-post-trauma-ataxia"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/propose-stroke"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/proposed-diagnosis-stroke"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/propose-infection"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/proposed-diagnosis-infection"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/propose-head-trauma"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/proposed-diagnosis-head-trauma"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/propose-slow-progression-ataxia"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.8. Task to propose diagnosis - Chronic or slow progression-ataxia",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.8 Task to propose diagnosis - Chronic or slow progression-ataxia",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/proposed-diagnosis-slow-progression-ataxia"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/propose-post-trauma-ataxia"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/getrecommendations-data3"
+      },
+      "name" : "Radiology - S3 Get Recommendations - Request- 1. request Bundle",
+      "description" : "Radiology - S3 Get Recommendations - Request - 1. request Bundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/proposed-diagnosis-head-trauma-v2"
+      },
+      "name" : "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma",
+      "description" : "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/ct-head-iv-contrast-v2"
+      },
+      "name" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast",
+      "description" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast",
       "exampleBoolean" : true,
       "groupingId" : "Radiology"
     },

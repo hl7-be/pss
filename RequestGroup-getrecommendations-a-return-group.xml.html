@@ -52,8 +52,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.29"}
-    h3,h4,h5,h6{--heading-prefix:"5.29"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.26"}
+    h3,h4,h5,h6{--heading-prefix:"5.26"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -207,16 +207,119 @@
   <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup">RequestGroup</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;getrecommendations-a-return-group&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup&quot;/&gt;
+  &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: RequestGroup getrecommendations-a-return-group&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;getrecommendations-a-return-group&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcgetrecommendations-a-return-group&quot;&gt; &lt;/a&gt;&lt;a name=&quot;getrecommendations-a-return-group-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Proposal&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-patient-a.html&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;selectionBehavior&lt;/b&gt;: At Most One&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;TextEquivalent&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Resource&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Generic Antibiotic advice&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;CommunicationRequest-ab-advice.html&quot;&gt;CommunicationRequest: extension = 3 / 3; status = active&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Metronidazol Oraal&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;MedicationRequest-metronidazol.html&quot;&gt;MedicationRequest: extension = 3 / 3; status = active; intent = proposal; medication[x] = &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Clindamycin local&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;MedicationRequest-clindamycin.html&quot;&gt;MedicationRequest: extension = 3 / 3; status = active; intent = proposal; medication[x] = &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Fluconazol Oraal&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;MedicationRequest-fluconazol.html&quot;&gt;MedicationRequest: extension = 1 / 3; status = active; intent = proposal; medication[x] = &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Miconazol lokaal&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;MedicationRequest-miconazol.html&quot;&gt;MedicationRequest: extension = ; status = active; intent = proposal; medication[x] = &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: RequestGroup getrecommendations-a-return-group&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;getrecommendations-a-return-group&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcgetrecommendations-a-return-group&quot;&gt; &lt;/a&gt;&lt;a name=&quot;getrecommendations-a-return-group-en-US&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-PSSResponseRequestGroup.html&quot;&gt;PSS Response Request Group&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Proposal&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-patient-a.html&quot;&gt;Anonymous Patient Female, DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Supporting evidence: [BCFI](https://bcfi.be/nl)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;PSS Rating Extension&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;ratingType: &lt;span title=&quot;Codes:&quot;&gt;overall&lt;/span&gt;&lt;/li&gt;&lt;li&gt;ratingValue: 2/3&lt;/li&gt;&lt;li&gt;ratingText: &lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;p&gt;Recommended&lt;/p&gt;
+&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;PSS Rating Extension&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;ratingType: &lt;span title=&quot;Codes:&quot;&gt;overall&lt;/span&gt;&lt;/li&gt;&lt;li&gt;ratingValue: 2/3&lt;/li&gt;&lt;li&gt;ratingText: &lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;p&gt;Recommended&lt;/p&gt;
+&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;PSS Rating Extension&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;ratingType: &lt;span title=&quot;Codes:&quot;&gt;overall&lt;/span&gt;&lt;/li&gt;&lt;li&gt;ratingValue: 2/3&lt;/li&gt;&lt;li&gt;ratingText: &lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;p&gt;Recommended&lt;/p&gt;
+&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;PSS Rating Extension&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;ratingType: &lt;span title=&quot;Codes:&quot;&gt;overall&lt;/span&gt;&lt;/li&gt;&lt;li&gt;ratingValue: 2/3&lt;/li&gt;&lt;li&gt;ratingText: &lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;p&gt;Recommended&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;b&gt;selectionBehavior&lt;/b&gt;: At Most One&lt;/p&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;TextEquivalent&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Resource&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Generic Antibiotic advice&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;CommunicationRequest-ab-advice.html&quot;&gt;CommunicationRequest: status = active&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Metronidazol Oraal&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;MedicationRequest-metronidazol.html&quot;&gt;MedicationRequest: status = active; intent = proposal; medication[x] = metronidazole&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Clindamycin local&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;MedicationRequest-clindamycin.html&quot;&gt;MedicationRequest: status = active; intent = proposal; medication[x] = &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Fluconazol Oraal&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;MedicationRequest-fluconazol.html&quot;&gt;MedicationRequest: status = active; intent = proposal; medication[x] = &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Miconazol lokaal&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;MedicationRequest-miconazol.html&quot;&gt;MedicationRequest: status = active; intent = proposal; medication[x] = &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.intent">intent</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;proposal&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.subject">subject</a>&gt;<a href="Patient-patient-a.html" style="color: Maroon">&#x1F517;</a> 
     &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/patient-a&quot;/&gt;
   &lt;/subject&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.note">note</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Supporting evidence: [BCFI](https://bcfi.be/nl)&quot;/&gt;
+  &lt;/note&gt;
   &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.action">action</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.action.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingType&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;overall&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/valueCodeableConcept&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingValue&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueRatio</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Ratio#Ratio.numerator">numerator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
+          &lt;/numerator&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Ratio#Ratio.denominator">denominator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
+          &lt;/denominator&gt;
+        &lt;/valueRatio&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingText&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Recommended&quot;/&gt;
+      &lt;/extension&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.action.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingType&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;overall&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/valueCodeableConcept&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingValue&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueRatio</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Ratio#Ratio.numerator">numerator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
+          &lt;/numerator&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Ratio#Ratio.denominator">denominator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
+          &lt;/denominator&gt;
+        &lt;/valueRatio&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingText&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Recommended&quot;/&gt;
+      &lt;/extension&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.action.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingType&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;overall&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/valueCodeableConcept&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingValue&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueRatio</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Ratio#Ratio.numerator">numerator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
+          &lt;/numerator&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Ratio#Ratio.denominator">denominator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
+          &lt;/denominator&gt;
+        &lt;/valueRatio&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingText&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Recommended&quot;/&gt;
+      &lt;/extension&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.action.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingType&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;overall&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/valueCodeableConcept&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingValue&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueRatio</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Ratio#Ratio.numerator">numerator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;2&quot;/&gt;
+          &lt;/numerator&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Ratio#Ratio.denominator">denominator</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;3&quot;/&gt;
+          &lt;/denominator&gt;
+        &lt;/valueRatio&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ratingText&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Recommended&quot;/&gt;
+      &lt;/extension&gt;
+    &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.action.selectionBehavior">selectionBehavior</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;at-most-one&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.action.action">action</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/requestgroup.html#RequestGroup.action.textEquivalent">textEquivalent</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Generic Antibiotic advice&quot;/&gt;
@@ -273,7 +376,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 27, 2025 22:56+0000">2025-02-27</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Mar 2, 2025 19:27+0000">2025-03-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- HL7 Belgium -->

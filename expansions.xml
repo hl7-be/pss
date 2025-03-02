@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0393f3da-9be7-4dde-96f7-70ab81ed6a7b"/>
+  <id value="ab0516c9-cee9-4c20-901a-65771542c024"/>
   <meta>
-    <lastUpdated value="2025-02-27T22:56:30.583+00:00"/>
+    <lastUpdated value="2025-03-02T19:27:09.776+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="urn:uuid:301d535a-2818-4148-8276-1545e5dd8d77"/>
+    <fullUrl value="urn:uuid:ad70f35e-c932-4f75-affa-a418490daecf"/>
     <resource>
       <ValueSet>
         <id value="condition-valueset"/>
@@ -60,7 +60,7 @@
             </table>
           </div>
         </text>
-        <url value="urn:uuid:301d535a-2818-4148-8276-1545e5dd8d77"/>
+        <url value="urn:uuid:ad70f35e-c932-4f75-affa-a418490daecf"/>
         <version value="1.0.0"/>
         <name value="Conditions"/>
         <title value="Antimicrobiology - Vaginitis-related conditions"/>
@@ -84,6 +84,160 @@
             <code value="72934000"/>
             <display value="Candidiasis of vagina"/>
           </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Aug 2024</p>
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV"/>
+        <version value="1.0.0"/>
+        <name value="PathogenicAgentHPV"/>
+        <title value="Pathogenic Agents"/>
+        <status value="active"/>
+        <date value="2025-03-02T19:26:20+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4f72f9d7-0328-408d-9fc9-9ae1e67b9699"/>
+          <timestamp value="2025-03-02T19:27:39+00:00"/>
+          <total value="0"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgents"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Aug 2024</p>
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgents"/>
+        <version value="1.0.0"/>
+        <name value="PathogenicAgents"/>
+        <title value="Pathogenic Agents"/>
+        <status value="active"/>
+        <date value="2025-03-02T19:26:20+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4d56b6b0-f580-4193-81e3-777fd45b237a"/>
+          <timestamp value="2025-03-02T19:27:40+00:00"/>
+          <total value="0"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
         </expansion>
       </ValueSet>
     </resource>
@@ -150,7 +304,7 @@
         <name value="PregnancyCodes"/>
         <title value="Pregnancy Codes"/>
         <status value="active"/>
-        <date value="2025-02-27T22:55:39+00:00"/>
+        <date value="2025-03-02T19:26:20+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -159,8 +313,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8530880d-9ef8-4aa0-9fb8-fce95d3c75eb"/>
-          <timestamp value="2025-02-27T22:56:57+00:00"/>
+          <identifier value="urn:uuid:189d11d9-ed3b-4165-bc22-aaf503dfeee8"/>
+          <timestamp value="2025-03-02T19:27:40+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -279,7 +433,7 @@
         <title value="Antimicrobiology - Vaginitis-related conditions"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-02-27T22:55:39+00:00"/>
+        <date value="2025-03-02T19:26:20+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <name value="HL7 Belgium"/>
