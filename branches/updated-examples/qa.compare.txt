@@ -1,7 +1,7 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 17, warn = 86, info = 10
+err = 17, warn = 83, info = 10
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
  Build Errors : 0 / 5 / 0
@@ -10,9 +10,9 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return : 2 / 3 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 1 / 4 / 6
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return : 3 / 9 / 14
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 1 / 6 / 6
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-return : 0 / 9 / 7
- /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 1 / 9 / 5
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 1 / 4 / 6
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-return : 0 / 11 / 9
+ /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 1 / 7 / 5
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses-return : 0 / 5 / 7
  /github/workspace/fsh-generated/resources/CommunicationRequest-ab-advice : 1 / 0 / 4
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-head-trauma : 0 / 1 / 1
@@ -38,11 +38,11 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-return : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-return-group : 0 / 4 / 1
- /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-r-return-1 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-r-return-1 : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v2 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-mr-head-without-contrast : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-mr-head-without-contrast : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CodeValueSet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSCodedRating : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm : 0 / 0 / 2
@@ -108,27 +108,25 @@ ERROR: Bundle/getrecommendations-a-return: Bundle.entry[2].resource/*MedicationR
 ERROR: Bundle/getrecommendations-data3: Bundle.entry[0].resource/*Patient/patient-r*/.extension[0].value.ofType(Age): Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.subject: Entry 0 matches the reference Patient/patient-r by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:patient-r by Bundle resolution rules
-WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.subject: Entry 0 matches the reference Patient/patient-r by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:patient-r by Bundle resolution rules
 == fsh-generated/resources/Bundle-getrecommendations-r-return.json ==
-WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[1].resource: The bundle contains no match for urn:uuid:ct-head-iv-contrast by the rules of Bundle reference resolution, but it has multiple resources that match ServiceRequest/ct-head-iv-contrast by resource type and id
-WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[1].resource: Entry 1 matches the reference ServiceRequest/ct-head-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ct-head-iv-contrast by Bundle resolution rules
-WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[1].resource: Entry 2 matches the reference ServiceRequest/ct-head-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:ct-head-iv-contrast by Bundle resolution rules
-WARNING: Bundle/getrecommendations-r-return: Bundle.entry[1].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: Bundle/getrecommendations-r-return: Bundle.entry[1].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: Bundle/getrecommendations-r-return: Bundle.entry[1].resource/*ServiceRequest/ct-head-iv-contrast*/.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: Bundle/getrecommendations-r-return: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: Bundle/getrecommendations-r-return: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[0].extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[0].resource: Entry 1 matches the reference ServiceRequest/ct-head-with-or-without-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:ct-head-with-or-without-contrast by Bundle resolution rules
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[1].extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[1].extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[1].resource: Entry 2 matches the reference ServiceRequest/ct-head-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ct-head-iv-contrast by Bundle resolution rules
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[2].extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[2].extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[2].resource: Entry 3 matches the reference ServiceRequest/mr-head-without-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77 does not match the full target URL urn:uuid:mr-head-without-contrast by Bundle resolution rules
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[1].resource/*ServiceRequest/ct-head-with-or-without-contrast*/.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Bundle/getrecommendations-r-return: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[3].resource/*ServiceRequest/mr-head-without-contrast*/.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Bundle-radiology-getdiagnoses.json ==
 ERROR: Bundle/radiology-getdiagnoses: Bundle.entry[0].resource/*Patient/patient-r*/.extension[0].value.ofType(Age): Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/.subject: Entry 0 matches the reference Patient/patient-r by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad03 does not match the full target URL urn:uuid:patient-r by Bundle resolution rules
-WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.subject: Entry 0 matches the reference Patient/patient-r by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad03 does not match the full target URL urn:uuid:patient-r by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
@@ -185,18 +183,17 @@ WARNING: RequestGroup/getrecommendations-a-return-group: RequestGroup.action[0].
 WARNING: RequestGroup/getrecommendations-a-return-group: RequestGroup.action[0].extension[2].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: RequestGroup/getrecommendations-a-return-group: RequestGroup.action[0].extension[3].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/RequestGroup-getrecommendations-r-return-1.json ==
+WARNING: RequestGroup/getrecommendations-r-return-1: RequestGroup.action[0].extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: RequestGroup/getrecommendations-r-return-1: RequestGroup.action[1].extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: RequestGroup/getrecommendations-r-return-1: RequestGroup.action[1].extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: RequestGroup/getrecommendations-r-return-1: RequestGroup.action[2].extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: RequestGroup/getrecommendations-r-return-1: RequestGroup.action[2].extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ServiceRequest-ct-head-iv-contrast.json ==
-WARNING: ServiceRequest/ct-head-iv-contrast: ServiceRequest.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: ServiceRequest/ct-head-iv-contrast: ServiceRequest.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: ServiceRequest/ct-head-iv-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v2.json ==
 == fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast.json ==
-WARNING: ServiceRequest/ct-head-with-or-without-contrast: ServiceRequest.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: ServiceRequest/ct-head-with-or-without-contrast: ServiceRequest.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: ServiceRequest/ct-head-with-or-without-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ServiceRequest-mr-head-without-contrast.json ==
-WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.extension[1].extension[0].value.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/StructureDefinition-CodeValueSet.json ==
 == fsh-generated/resources/StructureDefinition-PSSCodedRating.json ==
