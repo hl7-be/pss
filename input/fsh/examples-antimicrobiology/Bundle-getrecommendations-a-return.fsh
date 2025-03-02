@@ -11,7 +11,7 @@ Usage: #example
 * entry[+].resource = ab-advice
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
 * entry[+].resource = metronidazol
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ac22"
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23"
 * entry[+].resource = clindamycin
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24"
 * entry[+].resource = fluconazol
@@ -20,7 +20,7 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"
 
 Instance: getrecommendations-a-return-group
-InstanceOf: RequestGroup
+InstanceOf: PSSResponseRequestGroup
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
 Usage: #example
@@ -36,38 +36,63 @@ Usage: #example
   * action[+]
     * textEquivalent = "Metronidazol Oraal"
     * resource = Reference(metronidazol)
+  * extension[structured-rating][+]
+    * extension[ratingType].valueCodeableConcept = #overall
+    * extension[ratingValue].valueRatio
+      * numerator.value = 2
+      * denominator.value = 3
+    * extension[ratingText].valueMarkdown = "Recommended"
+
   * action[+]
     * textEquivalent = "Clindamycin local"
     * resource = Reference(clindamycin)
+  * extension[structured-rating][+]
+    * extension[ratingType].valueCodeableConcept = #overall
+    * extension[ratingValue].valueRatio
+      * numerator.value = 2
+      * denominator.value = 3
+    * extension[ratingText].valueMarkdown = "Recommended"
   * action[+]
     * textEquivalent = "Fluconazol Oraal"
     * resource = Reference(fluconazol)
+  * extension[structured-rating][+]
+    * extension[ratingType].valueCodeableConcept = #overall
+    * extension[ratingValue].valueRatio
+      * numerator.value = 2
+      * denominator.value = 3
+    * extension[ratingText].valueMarkdown = "Recommended"
   * action[+]
     * textEquivalent = "Miconazol lokaal"
     * resource = Reference(miconazol)
+  * extension[structured-rating][+]
+    * extension[ratingType].valueCodeableConcept = #overall
+    * extension[ratingValue].valueRatio
+      * numerator.value = 2
+      * denominator.value = 3
+    * extension[ratingText].valueMarkdown = "Recommended"
+* note[0].text = "Supporting evidence: [BCFI](https://bcfi.be/nl)"
 
 
 Instance: ab-advice
-InstanceOf: CommunicationRequest
+InstanceOf: PSSResponseCommunicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
-* extension
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
-  * valueRatio
-    * numerator.value = 3
-    * denominator.value = 3
+// * extension[structured-rating][+]
+//   * extension[ratingType].valueCodeableConcept = #overall
+//   * extension[ratingValue].valueRatio
+//     * numerator.value = 3
+//     * denominator.value = 3
+//   * extension[ratingText].valueMarkdown = "Recommended"
 * status = #active
-* payload[0].contentString = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte..."
-  * extension
-    * url = "http://hl7.org/fhir/StructureDefinition/language"
-    * valueCode = #nl
-
-* payload[+].contentString = "Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée..."
-  * extension
-    * url = "http://hl7.org/fhir/StructureDefinition/language"
-    * valueCode = #fr
+// * payload[0].contentString = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte..."
+* payload[+].contentString
+  * extension[+]
+    * url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
+    * valueString = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)"
+    * valueString
+      * insert AddTranslation(fr-BE,Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010\))
 
 * subject = Reference(patient-a)
 
@@ -77,16 +102,19 @@ InstanceOf: MedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
-* extension
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
-  * valueRatio
-    * numerator.value = 3
-    * denominator.value = 3
 * status = #active
 * intent = #proposal
-* medicationCodeableConcept.text = "Nitrofurantoin 2x 100mg x 5 days"
+* medicationCodeableConcept.coding[+] = $atc#J01XD01
+* medicationCodeableConcept.text = "metronidazol"
 * subject = Reference(patient-a)
+
+// this is WIP - note the codes and names - Metronidazole XD01, Nitrofurantoin XE01
+* dosageInstruction.text = "Timing = 3 times a day for 7 days. Dosage depends on patient age: If age < 2 years, 375 mg; If age is between 2 and 10 years, 750 mg, if age > 10 years, 1500 mg"
+* dosageInstruction.timing.repeat[0]
+  * frequency = 3
+  * period = 1
+  * periodUnit = #d
+  * boundsDuration = 7 #d
 
 
 Instance: clindamycin
@@ -96,11 +124,13 @@ Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. opti
 Usage: #example
 //* id = "30551ce1-5a28-4356-b684-1e639094ad24"
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
-* extension
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
-  * valueRatio
-    * numerator.value = 3
-    * denominator.value = 3
+// * extension[structured-rating][+]
+//   * extension[ratingType].valueCodeableConcept = #radiationexposure
+//   * extension[ratingValue].valueRatio
+//     * numerator.value = 3
+//     * denominator.value = 3
+//   * extension[ratingText].valueMarkdown = "Recommended"
+
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "clindamycin, single 3g dose"
@@ -113,11 +143,6 @@ Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 -
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
-* extension
-  * url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"
-  * valueRatio
-    * numerator.value = 1
-    * denominator.value = 3
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Fluconazol"
@@ -131,12 +156,12 @@ Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. opti
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 
-* extension[structured-rating][+]
-  * extension[ratingType].valueCodeableConcept = #overall
-  * extension[ratingValue].valueRatio
-    * numerator.value = 3
-    * denominator.value = 3
-  * extension[ratingText].valueMarkdown = "Not recommended"
+// * extension[structured-rating][+]
+//   * extension[ratingType].valueCodeableConcept = #overall
+//   * extension[ratingValue].valueRatio
+//     * numerator.value = 3
+//     * denominator.value = 3
+//   * extension[ratingText].valueMarkdown = "Not recommended"
 
 * status = #active
 * intent = #proposal

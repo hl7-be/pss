@@ -17,3 +17,12 @@ RuleSet: proposeDiagnosisCondition(patient,diagnosisId,diagnosisName,qsiDiagnosi
 * code.coding[0] = $qsi#{qsiDiagnosisCode} "Ataxia, {diagnosisName}"
 * subject = Reference({patient})
 * onsetDateTime = "2024-10-13"
+
+
+RuleSet: AddTranslation(lang,text)
+* extension[+]
+  * url = $translation
+  * extension[+].url = "lang"
+  * extension[=].valueCode = #{lang}
+  * extension[+].url = "content"
+  * extension[=].valueString = "{text}"

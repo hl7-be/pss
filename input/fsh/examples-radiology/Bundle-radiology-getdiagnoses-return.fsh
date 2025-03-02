@@ -1,9 +1,11 @@
 Instance: radiology-getdiagnoses-return
 Title: "Radiology - S1 Get Diagnoses - Response - 1. Bundle"
 Description: "Radiology - S1 Get Diagnoses - Response - 1. Bundle"
-InstanceOf: Bundle
+InstanceOf: PSSResponseBundle
 Usage: #example
 * type = #collection
+* identifier.value = "someidentifier"
+* timestamp = "2025-02-20T00:00:00Z"
 * entry[0].resource = Inline-Instance-for-radiology-getdiagnoses-return
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad08"
 * entry[+].resource = propose-stroke

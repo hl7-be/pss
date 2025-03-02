@@ -11,7 +11,7 @@ Extension: PSSStructuredRating
 //Id: structured-rating
 Title: "PSS Rating Extension"
 Description: "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."
-Context: Resource, RequestGroup.activity
+Context: Resource, RequestGroup.action
 
 * extension contains
     ratingType 1..1 MS and

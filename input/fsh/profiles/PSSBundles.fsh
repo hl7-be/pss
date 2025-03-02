@@ -39,17 +39,17 @@ Description: "The PSS Response Service Request is used when the PSS system retur
 * subject only Reference(Patient)
 * intent = #proposal
 * extension contains 
-  http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
-  PSSCodedRating named coded-rating 0..1 and
+  // http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
+  // PSSCodedRating named coded-rating 0..1 and
   PSSStructuredRating named structured-rating 0..*
 
 
 Profile: PSSResponseMedicationRequest
 Title: "PSS Response Medication Request"
 Description: "The PSS Response Medication Request is used when the PSS system returns a MedicationRequest"
-Parent: MedicationRequest
+Parent: CPGMedicationRequest
 * subject 1..1 
-* subject only Reference(Patient)
+* subject only Reference(CPGPatient)
 * intent = #proposal
 * extension contains 
   http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
@@ -66,7 +66,16 @@ Parent: Questionnaire
 
 
 Profile: PSSResponseRequestGroup
+Parent: RequestGroup
 Title: "PSS Response Request Group"
 Description: "All PSS responses contain a PSS RequestGroup conformant to this profile."
-Parent: RequestGroup
 * subject 1..1
+* action
+  * extension contains 
+    PSSStructuredRating named structured-rating 0..*
+
+
+Profile: PSSResponseCommunicationRequest
+Parent: CPGCommunicationRequest
+Title: "PSS Response Communication Request"
+Description: "All PSS responses contain a PSS Communication Request conformant to this profile."

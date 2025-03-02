@@ -9,3 +9,4 @@ Alias: $icd10 = http://hl7.org/fhir/sid/icd-10
 Alias: $qsi = http://example
 Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs
 Alias: $atc = http://www.whocc.no/atc
+Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation

@@ -15,7 +15,7 @@ Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 // Usage: #example
 * ^status = #active
 * $sct#123 "HPV"
-  * ^ extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
+  * ^extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
 * $sct#234
 * $sct#345
 
@@ -28,7 +28,7 @@ Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 // Usage: #example
 * ^status = #active
 * $sct#123 "HPV"
-  * ^ extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
+  * ^extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
 * $sct#234
 * $sct#345
 

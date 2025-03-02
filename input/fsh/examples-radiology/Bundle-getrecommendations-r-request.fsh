@@ -1,5 +1,5 @@
 Instance: getrecommendations-data3
-InstanceOf: Bundle
+InstanceOf: PSSRequestBundle
 Title: "Radiology - S3 Get Recommendations - Request- 1. request Bundle"
 Description: "Radiology - S3 Get Recommendations - Request - 1. request Bundle"
 Usage: #example
