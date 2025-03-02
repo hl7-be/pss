@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "PSSStructuredRating"] ; # 
   fhir:title [ fhir:v "PSS Rating Extension"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-27T22:55:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-02T19:26:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Belgium" ] ;
@@ -58,7 +58,7 @@
      fhir:expression [ fhir:v "Resource" ]
   ] [
      fhir:type [ fhir:v "element" ] ;
-     fhir:expression [ fhir:v "PlanDefinition.action" ]
+     fhir:expression [ fhir:v "RequestGroup.action" ]
   ] ) ; # 
   fhir:type [ fhir:v "Extension"^^xsd:anyURI] ; # 
   fhir:baseDefinition [

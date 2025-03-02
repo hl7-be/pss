@@ -273,18 +273,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "ValueSet-PathogenicAgents.html" : "Pathogenic Agents",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
       "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
       "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
       "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
-      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
       "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes"
+      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "ValueSet-PathogenicAgentHPV.html" : "Pathogenic Agents",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/action-type",
@@ -297,6 +299,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-action-type.html" : "ActionType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/communication-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "CommunicationCategory",
+      "title" : "CommunicationCategory",
+      "description" : "Codes for general categories of communications such as alerts, instructions, etc.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1076"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-communication-category.html" : "CommunicationCategory"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
@@ -344,7 +358,20 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.1.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+      "http://terminology.hl7.org/6.1.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason",
+      "http://terminology.hl7.org/6.1.0/ValueSet-v3-ActReason.html" : "v3 Code System ActReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "ParticipationMode",
+      "title" : "ParticipationMode",
+      "description" : "A set of codes specifying the modality by which the Entity playing the Role is participating in the Act.\r\n\r\n*Examples:* Physically present, over the telephone, written communication.\r\n\r\n*Rationale:* Particularly for author (originator) participants this is used to specify whether the information represented by the act was initially provided verbally, (hand-)written, or electronically.\r\n\r\n*Open Issue:* There needs to be a reexamination of the hierarchies as there seems to be some muddling between ELECTRONIC and other concepts that involve electronic communication that are in other hierarchies.",
+      "oids" : ["2.16.840.1.113883.5.1064"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.1.0/ValueSet-v3-ParticipationMode.html" : "ParticipationMode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",

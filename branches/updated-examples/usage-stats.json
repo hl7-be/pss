@@ -103,6 +103,12 @@
         "title": "PSS Response Bundle"
       }
     ],
+    "CommunicationRequest": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseCommunicationRequest",
+        "title": "PSS Response Communication Request"
+      }
+    ],
     "MedicationRequest": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest",
@@ -123,6 +129,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.intent": [
+      "CommunicationRequest"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -135,7 +144,7 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/language": [
+    "http://hl7.org/fhir/StructureDefinition/rendering-markdown": [
       "Bundle.entry.resource.payload.contentString",
       "CommunicationRequest.payload.contentString"
     ],
@@ -145,6 +154,9 @@
     "http://hl7.org/fhir/StructureDefinition/translation": [
       "Bundle.entry.resource.item.text",
       "Questionnaire.item.text"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical": [
+      "CommunicationRequest"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -167,18 +179,20 @@
       "StructureDefinition.snapshot"
     ],
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating": [
-      "Bundle.entry.resource",
       "CommunicationRequest",
-      "MedicationRequest",
-      "ServiceRequest"
+      "MedicationRequest"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale": [
+      "CommunicationRequest",
+      "MedicationRequest"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CodeValueSet": [
       "Bundle.entry.resource.item",
-      "Questionnaire.item"
+      "Questionnaire.item",
+      "ValueSet.compose.include.concept"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSCodedRating": [
-      "MedicationRequest",
-      "ServiceRequest"
+      "MedicationRequest"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge": [
       "Bundle.entry.resource",
@@ -186,7 +200,9 @@
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.action",
       "MedicationRequest",
+      "RequestGroup.action",
       "ServiceRequest"
     ]
   }
