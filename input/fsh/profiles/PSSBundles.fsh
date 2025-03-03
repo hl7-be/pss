@@ -77,3 +77,14 @@ Profile: PSSResponseCommunicationRequest
 Parent: CPGCommunicationRequest
 Title: "PSS Response Communication Request"
 Description: "All PSS responses contain a PSS Communication Request conformant to this profile."
+
+Profile: PSSPatient
+Parent: CPGPatient
+
+* name.extension contains http://hl7.org/fhir/StructureDefinition/data-absent-reason named absent 1..1 
+
+* name.extension[absent].valueCode = #masked
+* name
+  * text 0..0
+  * family 0..0
+  * given 0..0

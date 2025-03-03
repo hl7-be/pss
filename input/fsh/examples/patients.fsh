@@ -1,6 +1,6 @@
 
 Instance: patient-a
-InstanceOf: Patient
+InstanceOf: PSSPatient
 Description: "Example anonymised patient A"
 Usage: #example
 * active = true
@@ -10,7 +10,7 @@ Usage: #example
 
 
 Instance: patient-r
-InstanceOf: Patient
+InstanceOf: PSSPatient
 Description: "Example anonymised patient R"
 Usage: #example
 * active = true
