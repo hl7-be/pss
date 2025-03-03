@@ -775,7 +775,7 @@
       </reference>
       <name value="patient-a"/>
       <description value="Example anonymised patient A"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -787,7 +787,7 @@
       </reference>
       <name value="patient-r"/>
       <description value="Example anonymised patient R"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -944,6 +944,16 @@
       <description value="The PSS Response Service Request is used when the PSS system returns a ServiceRequest"/>
       <exampleBoolean value="false"/>
       <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSPatient"/>
+      </reference>
+      <name value="PSSPatient"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

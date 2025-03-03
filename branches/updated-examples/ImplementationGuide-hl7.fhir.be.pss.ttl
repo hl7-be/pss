@@ -1328,8 +1328,9 @@
        fhir:name [ fhir:v "patient-a" ] ;
        fhir:description [ fhir:v "Example anonymised patient A" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         a fhir:canonical ;
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient>
        ] ;
        fhir:groupingId [ fhir:v "Antimicrobiology" ]
      ] [
@@ -1347,8 +1348,9 @@
        fhir:name [ fhir:v "patient-r" ] ;
        fhir:description [ fhir:v "Example anonymised patient R" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         a fhir:canonical ;
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient>
        ] ;
        fhir:groupingId [ fhir:v "Radiology" ]
      ] [
@@ -1597,6 +1599,23 @@
          fhir:v "false"^^xsd:boolean
        ] ;
        fhir:groupingId [ fhir:v "Profiles" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSPatient" ]
+       ] ;
+       fhir:name [ fhir:v "PSSPatient" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v "false"^^xsd:boolean
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
