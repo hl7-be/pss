@@ -93,6 +93,12 @@
         "title": "PSS Data Acquisition Form"
       }
     ],
+    "Patient": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient",
+        "title": "PSSPatient"
+      }
+    ],
     "Bundle": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
@@ -132,6 +138,10 @@
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.intent": [
       "CommunicationRequest"
     ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Bundle.entry.resource.name",
+      "Patient.name"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -149,6 +159,9 @@
       "CommunicationRequest.payload.contentString"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/translation": [

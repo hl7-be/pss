@@ -960,7 +960,7 @@
       },
       "name" : "patient-a",
       "description" : "Example anonymised patient A",
-      "exampleBoolean" : true,
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -973,7 +973,7 @@
       },
       "name" : "patient-r",
       "description" : "Example anonymised patient R",
-      "exampleBoolean" : true,
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient",
       "groupingId" : "Radiology"
     },
     {
@@ -1143,6 +1143,17 @@
       "description" : "The PSS Response Service Request is used when the PSS system returns a ServiceRequest",
       "exampleBoolean" : false,
       "groupingId" : "Profiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSPatient"
+      },
+      "name" : "PSSPatient",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

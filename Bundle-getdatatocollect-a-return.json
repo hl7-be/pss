@@ -16,7 +16,7 @@
       "id" : "getdatatocollect-a-return-group",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getdatatocollect-a-return-group\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getdatatocollect-a-return-group</b></p><a name=\"getdatatocollect-a-return-group\"> </a><a name=\"hcgetdatatocollect-a-return-group\"> </a><a name=\"getdatatocollect-a-return-group-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Collect information</td><td><a href=\"Task-collect-information-a.html\">Task Collect information</a></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getdatatocollect-a-return-group\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getdatatocollect-a-return-group</b></p><a name=\"getdatatocollect-a-return-group\"> </a><a name=\"hcgetdatatocollect-a-return-group\"> </a><a name=\"getdatatocollect-a-return-group-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-a.html\"> Female, DoB Unknown</a></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Collect information</td><td><a href=\"Task-collect-information-a.html\">Task Collect information</a></td></tr></table></div>"
       },
       "status" : "active",
       "intent" : "proposal",
@@ -38,7 +38,7 @@
       "id" : "collect-information-a",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_collect-information-a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task collect-information-a</b></p><a name=\"collect-information-a\"> </a><a name=\"hccollect-information-a\"> </a><a name=\"collect-information-a-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}\">Collect information</span></p><p><b>for</b>: <a href=\"Patient-patient-a.html\">Anonymous Patient Female, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}\">Collect information</span></td><td><a href=\"Questionnaire-q-collect-information-a.html\">q-collect-information-a</a></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_collect-information-a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task collect-information-a</b></p><a name=\"collect-information-a\"> </a><a name=\"hccollect-information-a\"> </a><a name=\"collect-information-a-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}\">Collect information</span></p><p><b>for</b>: <a href=\"Patient-patient-a.html\"> Female, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}\">Collect information</span></td><td><a href=\"Questionnaire-q-collect-information-a.html\">q-collect-information-a</a></td></tr></table></div>"
       },
       "status" : "requested",
       "intent" : "proposal",
@@ -176,9 +176,12 @@
     "resource" : {
       "resourceType" : "Patient",
       "id" : "patient-a",
+      "meta" : {
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient"]
+      },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-a</b></p><a name=\"patient-a\"> </a><a name=\"hcpatient-a\"> </a><a name=\"patient-a-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The approximate, relevant age of the patient at the time of the search.\"><a href=\"StructureDefinition-PSSRelevantAge.html\">PSS Relevant Patient Age</a></td><td colspan=\"3\">36<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated]  codey = 'y')</span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-a</b></p><a name=\"patient-a\"> </a><a name=\"hcpatient-a\"> </a><a name=\"patient-a-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSPatient.html\">PSSPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"> Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The approximate, relevant age of the patient at the time of the search.\"><a href=\"StructureDefinition-PSSRelevantAge.html\">PSS Relevant Patient Age</a></td><td colspan=\"3\">36<span style=\"background: LightGoldenRodYellow\"> (Details: [not stated]  codey = 'y')</span></td></tr></table></div>"
       },
       "extension" : [{
         "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge",
@@ -188,6 +191,12 @@
         }
       }],
       "active" : true,
+      "name" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "masked"
+        }]
+      }],
       "gender" : "female",
       "deceasedBoolean" : false
     }
