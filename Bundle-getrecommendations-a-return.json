@@ -18,8 +18,8 @@
         "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup"]
       },
       "text" : {
-        "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations-a-return-group\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-a-return-group</b></p><a name=\"getrecommendations-a-return-group\"> </a><a name=\"hcgetrecommendations-a-return-group\"> </a><a name=\"getrecommendations-a-return-group-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseRequestGroup.html\">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-a.html\"> Female, DoB Unknown</a></p><p><b>note</b>: Supporting evidence: [BCFI](https://bcfi.be/nl)</p><blockquote><p><b>action</b></p><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">overall</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Recommended</p>\n</div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">overall</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Recommended</p>\n</div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">overall</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Recommended</p>\n</div><blockquote><p><b>PSS Rating Extension</b></p><ul><li>ratingType: <span title=\"Codes:\">overall</span></li><li>ratingValue: 2/3</li><li>ratingText: </li></ul></blockquote><div><p>Recommended</p>\n</div><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Generic Antibiotic advice</td><td><a href=\"CommunicationRequest-ab-advice.html\">CommunicationRequest: status = active</a></td></tr><tr><td style=\"display: none\">*</td><td>Metronidazol Oraal</td><td><a href=\"MedicationRequest-metronidazol.html\">MedicationRequest: status = active; intent = proposal; medication[x] = metronidazole</a></td></tr><tr><td style=\"display: none\">*</td><td>Clindamycin local</td><td><a href=\"MedicationRequest-clindamycin.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Fluconazol Oraal</td><td><a href=\"MedicationRequest-fluconazol.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Miconazol lokaal</td><td><a href=\"MedicationRequest-miconazol.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>"
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations-a-return-group\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-a-return-group</b></p><a name=\"getrecommendations-a-return-group\"> </a><a name=\"hcgetrecommendations-a-return-group\"> </a><a name=\"getrecommendations-a-return-group-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseRequestGroup.html\">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-a.html\"> Female, DoB Unknown</a></p><p><b>note</b>: Supporting evidence: [BCFI](https://bcfi.be/nl)</p><blockquote><p><b>action</b></p><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td> </td><td>Generic Antibiotic advice</td><td><a href=\"CommunicationRequest-ab-advice.html\">CommunicationRequest: status = active</a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Metronidazol Oraal</td><td><a href=\"MedicationRequest-metronidazol.html\">MedicationRequest: status = active; intent = proposal; medication[x] = metronidazole</a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Clindamycin local</td><td><a href=\"MedicationRequest-clindamycin.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Fluconazol Oraal</td><td><a href=\"MedicationRequest-fluconazol.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Miconazol lokaal</td><td><a href=\"MedicationRequest-miconazol.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>"
       },
       "status" : "active",
       "intent" : "proposal",
@@ -30,110 +30,6 @@
         "text" : "Supporting evidence: [BCFI](https://bcfi.be/nl)"
       }],
       "action" : [{
-        "extension" : [{
-          "extension" : [{
-            "url" : "ratingType",
-            "valueCodeableConcept" : {
-              "coding" : [{
-                "code" : "overall"
-              }]
-            }
-          },
-          {
-            "url" : "ratingValue",
-            "valueRatio" : {
-              "numerator" : {
-                "value" : 2
-              },
-              "denominator" : {
-                "value" : 3
-              }
-            }
-          },
-          {
-            "url" : "ratingText",
-            "valueMarkdown" : "Recommended"
-          }],
-          "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
-        },
-        {
-          "extension" : [{
-            "url" : "ratingType",
-            "valueCodeableConcept" : {
-              "coding" : [{
-                "code" : "overall"
-              }]
-            }
-          },
-          {
-            "url" : "ratingValue",
-            "valueRatio" : {
-              "numerator" : {
-                "value" : 2
-              },
-              "denominator" : {
-                "value" : 3
-              }
-            }
-          },
-          {
-            "url" : "ratingText",
-            "valueMarkdown" : "Recommended"
-          }],
-          "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
-        },
-        {
-          "extension" : [{
-            "url" : "ratingType",
-            "valueCodeableConcept" : {
-              "coding" : [{
-                "code" : "overall"
-              }]
-            }
-          },
-          {
-            "url" : "ratingValue",
-            "valueRatio" : {
-              "numerator" : {
-                "value" : 2
-              },
-              "denominator" : {
-                "value" : 3
-              }
-            }
-          },
-          {
-            "url" : "ratingText",
-            "valueMarkdown" : "Recommended"
-          }],
-          "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
-        },
-        {
-          "extension" : [{
-            "url" : "ratingType",
-            "valueCodeableConcept" : {
-              "coding" : [{
-                "code" : "overall"
-              }]
-            }
-          },
-          {
-            "url" : "ratingValue",
-            "valueRatio" : {
-              "numerator" : {
-                "value" : 2
-              },
-              "denominator" : {
-                "value" : 3
-              }
-            }
-          },
-          {
-            "url" : "ratingText",
-            "valueMarkdown" : "Recommended"
-          }],
-          "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
-        }],
         "selectionBehavior" : "at-most-one",
         "action" : [{
           "textEquivalent" : "Generic Antibiotic advice",
@@ -142,24 +38,112 @@
           }
         },
         {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "overall"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 2
+                },
+                "denominator" : {
+                  "value" : 3
+                }
+              }
+            },
+            {
+              "url" : "ratingText",
+              "valueMarkdown" : "Recommended"
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+          }],
           "textEquivalent" : "Metronidazol Oraal",
           "resource" : {
             "reference" : "MedicationRequest/metronidazol"
           }
         },
         {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "overall"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 2
+                },
+                "denominator" : {
+                  "value" : 3
+                }
+              }
+            },
+            {
+              "url" : "ratingText",
+              "valueMarkdown" : "Recommended"
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+          }],
           "textEquivalent" : "Clindamycin local",
           "resource" : {
             "reference" : "MedicationRequest/clindamycin"
           }
         },
         {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "overall"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 2
+                },
+                "denominator" : {
+                  "value" : 3
+                }
+              }
+            },
+            {
+              "url" : "ratingText",
+              "valueMarkdown" : "Recommended"
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+          }],
           "textEquivalent" : "Fluconazol Oraal",
           "resource" : {
             "reference" : "MedicationRequest/fluconazol"
           }
         },
         {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "overall"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 2
+                },
+                "denominator" : {
+                  "value" : 3
+                }
+              }
+            },
+            {
+              "url" : "ratingText",
+              "valueMarkdown" : "Recommended"
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+          }],
           "textEquivalent" : "Miconazol lokaal",
           "resource" : {
             "reference" : "MedicationRequest/miconazol"
@@ -179,7 +163,7 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CommunicationRequest_ab-advice\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest ab-advice</b></p><a name=\"ab-advice\"> </a><a name=\"hcab-advice\"> </a><a name=\"ab-advice-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSSResponseCommunicationRequest.html\">PSS Response Communication Request</a>, <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html\">CPG Communication Request</a></p></div><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-patient-a.html\"> Female, DoB Unknown</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><code>Markdown: </code>Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CommunicationRequest_ab-advice\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest ab-advice</b></p><a name=\"ab-advice\"> </a><a name=\"hcab-advice\"> </a><a name=\"ab-advice-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSSResponseCommunicationRequest.html\">PSS Response Communication Request</a>, <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html\">CPG Communication Request</a></p></div><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-patient-a.html\"> Female, DoB Unknown</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><code>Markdown: </code><div><p>Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...: <a href=\"https://www.bcfi.be/nl/chapters/12?frag=8000010\">site BCFI</a></p>\n</div></td></tr></table></div>"
       },
       "status" : "active",
       "subject" : {
@@ -189,8 +173,8 @@
         "_contentString" : {
           "extension" : [{
             "url" : "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
-            "valueString" : "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)",
-            "_valueString" : {
+            "valueMarkdown" : "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)",
+            "_valueMarkdown" : {
               "extension" : [{
                 "extension" : [{
                   "url" : "lang",
@@ -235,6 +219,7 @@
           "repeat" : {
             "boundsDuration" : {
               "value" : 7,
+              "system" : "http://unitsofmeasure.org",
               "code" : "d"
             },
             "frequency" : 3,

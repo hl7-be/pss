@@ -34,6 +34,7 @@
          fhir:bounds [
            a fhir:Duration ;
            fhir:value [ fhir:v "7"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "d" ]
          ] ;
          fhir:frequency [ fhir:v "3"^^xsd:positiveInteger ] ;

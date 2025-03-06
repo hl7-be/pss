@@ -29,7 +29,7 @@
       "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating",
       "title": "PSS Rating Extension",
       "types": [
-        "CodeableConcept",
+        "code",
         "Quantity",
         "Ratio",
         "markdown",
@@ -209,8 +209,8 @@
       "Patient"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating": [
-      "Bundle.entry.resource.action",
-      "RequestGroup.action"
+      "Bundle.entry.resource.action.action",
+      "RequestGroup.action.action"
     ]
   }
 }

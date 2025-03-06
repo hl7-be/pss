@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "CodeValueSet"] ; # 
   fhir:title [ fhir:v "Code ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-03-06T11:49:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-06T20:18:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Belgium" ] ;
@@ -56,6 +56,12 @@
   fhir:context ( [
      fhir:type [ fhir:v "element" ] ;
      fhir:expression [ fhir:v "Questionnaire.item" ]
+  ] [
+     fhir:type [ fhir:v "element" ] ;
+     fhir:expression [ fhir:v "ValueSet.compose.include.concept" ]
+  ] [
+     fhir:type [ fhir:v "element" ] ;
+     fhir:expression [ fhir:v "ValueSet.expansion.contains" ]
   ] ) ; # 
   fhir:type [ fhir:v "Extension"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
