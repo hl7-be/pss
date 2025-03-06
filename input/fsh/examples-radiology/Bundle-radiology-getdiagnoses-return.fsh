@@ -39,20 +39,22 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(patient-r)
 * action[0]
-  * textEquivalent = "Potential diagnosis of Stroke"
-  * resource = Reference(propose-stroke)
-* action[+]
-  * textEquivalent = "Potential diagnosis of infection"
-  * resource = Reference(propose-infection)
-* action[+]
-  * textEquivalent = "Potential diagnosis of Head trauma"
-  * resource = Reference(propose-head-trauma)
-* action[+]
-  * textEquivalent = "Potential diagnosis of Slow progression or chronic ataxia"
-  * resource = Reference(propose-slow-progression-ataxia)
-* action[+]
-  * textEquivalent = "Potential diagnosis of Post head trauma ataxia"
-  * resource = Reference(propose-post-trauma-ataxia)
+  * selectionBehavior = #at-most-one 
+  * action[0]
+    * textEquivalent = "Potential diagnosis of Stroke"
+    * resource = Reference(propose-stroke)
+  * action[+]
+    * textEquivalent = "Potential diagnosis of infection"
+    * resource = Reference(propose-infection)
+  * action[+]
+    * textEquivalent = "Potential diagnosis of Head trauma"
+    * resource = Reference(propose-head-trauma)
+  * action[+]
+    * textEquivalent = "Potential diagnosis of Slow progression or chronic ataxia"
+    * resource = Reference(propose-slow-progression-ataxia)
+  * action[+]
+    * textEquivalent = "Potential diagnosis of Post head trauma ataxia"
+    * resource = Reference(propose-post-trauma-ataxia)
 
 
 

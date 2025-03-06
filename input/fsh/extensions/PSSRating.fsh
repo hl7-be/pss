@@ -1,3 +1,15 @@
+ValueSet: PSSRatingTypesVS
+Title: "Types of rating provided by the PSS system"
+Description:  "ValueSet - Types of rating provided by the PSS system"
+* include codes from system PSSRatingTypes
+
+CodeSystem: PSSRatingTypes
+Title: "CodeSystem: Types of rating provided by the PSS system"
+Description:  "CodeSystem: Types of rating provided by the PSS system"
+* #overall "Overall score"
+* #radiationexposure "Radiation exposure score"
+
+
 Extension: PSSCodedRating
 //Id: pss-coded-rating
 Title: "PSS Rating Extension"
@@ -11,14 +23,15 @@ Extension: PSSStructuredRating
 //Id: structured-rating
 Title: "PSS Rating Extension"
 Description: "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."
-Context: Resource, RequestGroup.action
+Context: Resource, RequestGroup.action, RequestGroup.action.action
 
 * extension contains
     ratingType 1..1 MS and
     ratingValue 0..1 MS and
     ratingText 0..1 MS
 
-* extension[ratingType].value[x] only CodeableConcept
+* extension[ratingType].value[x] only code
+* extension[ratingType].valueCode from PSSRatingTypesVS
 * extension[ratingValue].value[x] only Quantity or Ratio
 * extension[ratingText].value[x] only markdown
 

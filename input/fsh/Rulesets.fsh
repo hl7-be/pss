@@ -14,7 +14,7 @@ RuleSet: proposeDiagnosisCondition(patient,diagnosisId,diagnosisName,qsiDiagnosi
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#provisional
 * category = $condition-category#problem-list-item
-* code.coding[0] = $qsi#{qsiDiagnosisCode} "Ataxia, {diagnosisName}"
+* code.coding[0] = $PSSQSIConditions#{qsiDiagnosisCode} "Ataxia, {diagnosisName}"
 * subject = Reference({patient})
 * onsetDateTime = "2024-10-13"
 

@@ -26,7 +26,7 @@ Usage: #example
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#provisional
 * category = $condition-category#problem-list-item
-* code.coding[0] = $qsi#5000246 "Head trauma"
+* code.coding[0] = $PSSQSIConditions#5000246 "Head trauma"
 * subject = Reference(patient-r)
 * onsetDateTime = "2024-10-13"
 

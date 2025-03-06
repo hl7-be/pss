@@ -36,40 +36,40 @@ Usage: #example
   * action[+]
     * textEquivalent = "Metronidazol Oraal"
     * resource = Reference(metronidazol)
-  * extension[structured-rating][+]
-    * extension[ratingType].valueCodeableConcept = #overall
-    * extension[ratingValue].valueRatio
-      * numerator.value = 2
-      * denominator.value = 3
-    * extension[ratingText].valueMarkdown = "Recommended"
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #overall
+      * extension[ratingValue].valueRatio
+        * numerator.value = 2
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Recommended"
 
   * action[+]
     * textEquivalent = "Clindamycin local"
     * resource = Reference(clindamycin)
-  * extension[structured-rating][+]
-    * extension[ratingType].valueCodeableConcept = #overall
-    * extension[ratingValue].valueRatio
-      * numerator.value = 2
-      * denominator.value = 3
-    * extension[ratingText].valueMarkdown = "Recommended"
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #overall
+      * extension[ratingValue].valueRatio
+        * numerator.value = 2
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Recommended"
   * action[+]
     * textEquivalent = "Fluconazol Oraal"
     * resource = Reference(fluconazol)
-  * extension[structured-rating][+]
-    * extension[ratingType].valueCodeableConcept = #overall
-    * extension[ratingValue].valueRatio
-      * numerator.value = 2
-      * denominator.value = 3
-    * extension[ratingText].valueMarkdown = "Recommended"
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #overall
+      * extension[ratingValue].valueRatio
+        * numerator.value = 2
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Recommended"
   * action[+]
     * textEquivalent = "Miconazol lokaal"
     * resource = Reference(miconazol)
-  * extension[structured-rating][+]
-    * extension[ratingType].valueCodeableConcept = #overall
-    * extension[ratingValue].valueRatio
-      * numerator.value = 2
-      * denominator.value = 3
-    * extension[ratingText].valueMarkdown = "Recommended"
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #overall
+      * extension[ratingValue].valueRatio
+        * numerator.value = 2
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Recommended"
 * note[0].text = "Supporting evidence: [BCFI](https://bcfi.be/nl)"
 
 
@@ -80,7 +80,7 @@ Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. opti
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
 // * extension[structured-rating][+]
-//   * extension[ratingType].valueCodeableConcept = #overall
+//   * extension[ratingType].valueCode = #overall
 //   * extension[ratingValue].valueRatio
 //     * numerator.value = 3
 //     * denominator.value = 3
@@ -90,8 +90,8 @@ Usage: #example
 * payload[+].contentString
   * extension[+]
     * url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
-    * valueString = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)"
-    * valueString
+    * valueMarkdown = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)"
+    * valueMarkdown
       * insert AddTranslation(fr-BE,Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010\))
 
 * subject = Reference(patient-a)
@@ -113,8 +113,8 @@ Usage: #example
 * dosageInstruction.timing.repeat[0]
   * frequency = 3
   * period = 1
-  * periodUnit = #d
-  * boundsDuration = 7 #d
+  * periodUnit = #d 
+  * boundsDuration = 7 'd'
 
 
 Instance: clindamycin
@@ -125,7 +125,7 @@ Usage: #example
 //* id = "30551ce1-5a28-4356-b684-1e639094ad24"
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 // * extension[structured-rating][+]
-//   * extension[ratingType].valueCodeableConcept = #radiationexposure
+//   * extension[ratingType].valueCode = #radiationexposure
 //   * extension[ratingValue].valueRatio
 //     * numerator.value = 3
 //     * denominator.value = 3
@@ -157,7 +157,7 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
 
 // * extension[structured-rating][+]
-//   * extension[ratingType].valueCodeableConcept = #overall
+//   * extension[ratingType].valueCode = #overall
 //   * extension[ratingValue].valueRatio
 //     * numerator.value = 3
 //     * denominator.value = 3

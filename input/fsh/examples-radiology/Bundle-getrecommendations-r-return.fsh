@@ -1,3 +1,5 @@
+//Alias: $PSSQSIProcedures = 
+
 Instance: getrecommendations-r-return
 InstanceOf: PSSResponseBundle
 Title: "Radiology - S3 Get Recommendations - Response - 1. Bundle"
@@ -27,46 +29,49 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(patient-r)
 * action[0]
-  * textEquivalent = "CT Head with or without contrast"
-  * resource = Reference(ct-head-with-or-without-contrast)
-  * extension[structured-rating][+]
-    * extension[ratingType].valueCodeableConcept = #radiationexposure
-    * extension[ratingValue].valueRatio
-      * numerator.value = 2
-      * denominator.value = 3
-    * extension[ratingText].valueMarkdown = "Whoa!...."
+  * selectionBehavior = #at-most-one 
 
-* action[+]
-  * textEquivalent = "CT Head with IV contrast"
-  * resource = Reference(ct-head-iv-contrast)
-  * extension[structured-rating][+]
-    * extension[ratingType].valueCodeableConcept = #radiationexposure
-    * extension[ratingValue].valueRatio
-      * numerator.value = 2
-      * denominator.value = 3
-    * extension[ratingText].valueMarkdown = "Whoa!...."
-  * extension[structured-rating][+]
-    * extension[ratingType].valueCodeableConcept = #overall
-    * extension[ratingValue].valueRatio
-      * numerator.value = 1
-      * denominator.value = 3
-    * extension[ratingText].valueMarkdown = "Not recommended"
+  * action[0]
+    * textEquivalent = "CT Head with or without contrast"
+    * resource = Reference(ct-head-with-or-without-contrast)
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #radiationexposure
+      * extension[ratingValue].valueRatio
+        * numerator.value = 2
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Whoa!...."
 
-* action[+]
-  * textEquivalent = "MR Head without contrast"
-  * resource = Reference(mr-head-without-contrast)  
-  * extension[structured-rating][+]
-    * extension[ratingType].valueCodeableConcept = #radiationexposure
-    * extension[ratingValue].valueRatio
-      * numerator.value = 2
-      * denominator.value = 3
-    * extension[ratingText].valueMarkdown = "Whoa!...."
-  * extension[structured-rating][+]
-    * extension[ratingType].valueCodeableConcept = #overall
-    * extension[ratingValue].valueRatio
-      * numerator.value = 1
-      * denominator.value = 3
-    * extension[ratingText].valueMarkdown = "Not recommended"
+  * action[+]
+    * textEquivalent = "CT Head with IV contrast"
+    * resource = Reference(ct-head-iv-contrast)
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #radiationexposure
+      * extension[ratingValue].valueRatio
+        * numerator.value = 2
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Whoa!...."
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #overall
+      * extension[ratingValue].valueRatio
+        * numerator.value = 1
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Not recommended"
+
+  * action[+]
+    * textEquivalent = "MR Head without contrast"
+    * resource = Reference(mr-head-without-contrast)  
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #radiationexposure
+      * extension[ratingValue].valueRatio
+        * numerator.value = 2
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Whoa!...."
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #overall
+      * extension[ratingValue].valueRatio
+        * numerator.value = 1
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Not recommended"
 
 
 
@@ -80,7 +85,7 @@ Usage: #example
 * meta.versionId = "v3"
 * status = #active
 * intent = #proposal
-* code = #114054 "CT, head, without or without contrast"
+* code = $PSSQSIProcedures#114054 "CT, head, without or without contrast"
 * subject = Reference(patient-r)
 
 
@@ -91,13 +96,13 @@ Description: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedu
 Usage: #example
 * meta.versionId = "v3"
 // * extension[structured-rating][+]
-//   * extension[ratingType].valueCodeableConcept = #radiationexposure
+//   * extension[ratingType].valueCode = #radiationexposure
 //   * extension[ratingValue].valueRatio
 //     * numerator.value = 2
 //     * denominator.value = 3
 //   * extension[ratingText].valueMarkdown = "Whoa!...."
 // * extension[structured-rating][+]
-//   * extension[ratingType].valueCodeableConcept = #overall
+//   * extension[ratingType].valueCode = #overall
 //   * extension[ratingValue].valueRatio
 //     * numerator.value = 1
 //     * denominator.value = 3
@@ -105,7 +110,7 @@ Usage: #example
 
 * status = #active
 * intent = #proposal
-* code = #114055 "CT, head, without IV contrast"
+* code = PSSQSIProcedures#114055 "CT, head, without IV contrast"
 * subject = Reference(patient-r)
 
 
@@ -115,18 +120,18 @@ Title: "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure opt
 Description: "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"
 Usage: #example
 // * extension[structured-rating][+]
-//   * extension[ratingType].valueCodeableConcept = #radiationexposure
+//   * extension[ratingType].valueCode = #radiationexposure
 //   * extension[ratingValue].valueRatio
 //     * numerator.value = 2
 //     * denominator.value = 3
 //   * extension[ratingText].valueMarkdown = "Whoa!...."
 // * extension[structured-rating][+]
-//   * extension[ratingType].valueCodeableConcept = #overall
+//   * extension[ratingType].valueCode = #overall
 //   * extension[ratingValue].valueRatio
 //     * numerator.value = 1
 //     * denominator.value = 3
 //   * extension[ratingText].valueMarkdown = "Not recommended"
 * status = #active
 * intent = #proposal
-* code = #114092 "MR, head, without IV contrast"
+* code = PSSQSIProcedures#114092 "MR, head, without IV contrast"
 * subject = Reference(patient-r)

@@ -76,8 +76,10 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(patient-a)
 * action[0]
-  * textEquivalent = "Collect information"
-  * resource = Reference(collect-information-a)
+  * selectionBehavior = #at-most-one 
+  * action[0]
+    * textEquivalent = "Collect information"
+    * resource = Reference(collect-information-a)
 
 
 Instance: collect-information-a
@@ -167,7 +169,10 @@ Usage: #example
   * text = "Pathogen - please indicate"
   * type = #choice
 
-//  * answerValueSet ?? How to link values to valuesets of codes?
+  * answerValueSet = Canonical(PathogenicAgents)
+  
+  
+//  ?? How to link values to valuesets of codes?
 //  * answerOption
 
 
@@ -177,11 +182,29 @@ Usage: #example
     * answerBoolean = true
 
 
+// Cleanup qa
+// add unknown codesystem for QSI codes
+// add nesting to action
+// add documentation in action, not in note
+
+// NOT add extension 
 
 
 
 *  item[+]
-  * linkId = "pathogen"
+  * linkId = "pathogen2"
   * text = "Pathogen - please indicate"
   * type = #choice
+
+CodeSystem: PSSQSIProcedures
+Title: "PSS-QSI procedure codes"
+Description: "Procedure codes from the QSI system"
+* ^url = $PSSQSIProcedures 
+* ^content = #not-present
+
+CodeSystem: PSSQSIConditions
+Title: "PSS-QSI condition codes"
+Description: "Condition codes from the QSI system"
+* ^url = $PSSQSIConditions
+* ^content = #not-present
 

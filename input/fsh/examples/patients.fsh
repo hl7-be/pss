@@ -6,7 +6,7 @@ Usage: #example
 * active = true
 * gender = #female
 * deceasedBoolean = false
-* extension[PSSRelevantAge].valueAge = 36 #y
+* extension[PSSRelevantAge].valueAge = 36 'y'
 
 
 Instance: patient-r
@@ -15,5 +15,5 @@ Description: "Example anonymised patient R"
 Usage: #example
 * active = true
 * gender = #male
-* extension[PSSRelevantAge].valueAge = 53 #y
+* extension[PSSRelevantAge].valueAge = 53 'y'
 * deceasedBoolean = false
