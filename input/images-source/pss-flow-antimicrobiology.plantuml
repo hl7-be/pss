@@ -12,7 +12,7 @@ group #def Service 2 - Given indications, query data to collect
 See 1. below
         end note
 
-        PSS -> EPD: 1. Propose data to collect
+        PSS -> EPD: 1. Propose data to collect\nPayload:\n        subject=PSSPatient\n        data=PSSResponseBundle
         note right of PSS
 See 2. below
         end note
@@ -26,7 +26,7 @@ group #fed Service 3 - Given the requested data, request recommended medications
 See 3. below
         end note
         activate PSS
-        PSS -> EPD: 2. Bundle with RequestGroup with options
+        PSS -> EPD: 2. Bundle with RequestGroup with options\nPayload:\n        subject=PSSPatient\n        data=PSSResponseBundle
         note right of PSS
 See 4. below
         end note

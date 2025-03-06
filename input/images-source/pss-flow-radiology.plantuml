@@ -1,0 +1,36 @@
+@startuml
+!pragma teoz true
+Title PSS Functional data exchange
+hide footbox
+
+group #DFE Service 1 - Given existing data, query the structured list of applicable indications
+        EPD -> PSS : \n**POST /PlanDefinition/GetDiagnoses/$apply**\n Payload:\n        subject=PSSPatient\n        data=PSSRequestBundle
+        & PSS -> QSI 
+        & PSS -[hidden]-> QSI : "                                      "
+        'PSS -> QSI : GET /indictions
+
+        activate PSS
+        activate QSI
+        QSI -> PSS 
+        & PSS -> EPD: Propose Indications \nPayload:\n        subject=PSSPatient\n        data=PSSResponseBundle
+        deactivate PSS
+        deactivate QSI
+        |||
+end
+
+...
+group #fed Service 3 - Given some data (+ a procedure), request recommended procedures
+        EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$apply**\n Payload:\n        subject=Y\n        data=Bundle
+        & PSS --> QSI 
+        & PSS -[hidden]-> QSI : "                                      "
+
+        activate PSS
+        activate QSI
+        QSI --> PSS 
+        & PSS -> EPD: Reponse\nPayload:\n        subject=PSSPatient\n        data=PSSResponseBundle
+        deactivate PSS
+        deactivate QSI
+        |||
+
+end
+@enduml

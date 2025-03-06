@@ -10,8 +10,8 @@ Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 
 
 ValueSet: PathogenicAgents
-Title: "Pathogenic Agents"
-Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
+Title: "Pathogenic Agents list"
+Description: "Pathogenic agent codes"
 // Usage: #example
 * ^status = #active
 * $sct#123 "HPV"
@@ -23,8 +23,8 @@ Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 
 
 ValueSet: PathogenicAgentHPV
-Title: "Pathogenic Agents"
-Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
+Title: "Pathogenic Agents for HPV"
+Description: "Pathogenic agents associated with HPV"
 // Usage: #example
 * ^status = #active
 * $sct#123 "HPV"

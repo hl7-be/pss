@@ -116,6 +116,7 @@ groups:
     name: PlanDefinitions (services)
     description: PlanDefinitions defining the service endpoints for using the PSS. These have the inputs and outputs represented by the profiles
     resources:
+      - PlanDefinition/GetDiagnoses
       - PlanDefinition/GetDataToCollect
       - PlanDefinition/GetRecommendations
 

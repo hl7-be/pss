@@ -10,14 +10,24 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad08"
 * entry[+].resource = propose-stroke
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad09"
+* entry[+].resource = proposed-diagnosis-stroke
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad09"
 * entry[+].resource = propose-infection
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad10"
+* entry[+].resource = proposed-diagnosis-infection
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad10"
 * entry[+].resource = propose-head-trauma
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11"
+* entry[+].resource = proposed-diagnosis-head-trauma
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11"
 * entry[+].resource = propose-slow-progression-ataxia
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad12"
+* entry[+].resource = proposed-diagnosis-slow-progression-ataxia
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad12"
 * entry[+].resource = propose-post-trauma-ataxia
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad13"
+* entry[+].resource = proposed-diagnosis-post-trauma-ataxia
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad13"
 
 Instance: Inline-Instance-for-radiology-getdiagnoses-return
 Title: "Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options"
