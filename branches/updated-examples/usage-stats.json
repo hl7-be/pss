@@ -5,28 +5,28 @@
   "jurisdiction": "BE",
   "extensions": [
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CodeValueSet",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
       "title": "Code ValueSet",
       "types": [
         "canonical"
       ]
     },
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSCodedRating",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSCodedRating",
       "title": "PSS Rating Extension",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge",
       "title": "PSS Relevant Patient Age",
       "types": [
         "Age"
       ]
     },
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating",
       "title": "PSS Rating Extension",
       "types": [
         "code",
@@ -89,47 +89,47 @@
   "profiles": {
     "Questionnaire": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSDataAcquisitionForm",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm",
         "title": "PSS Data Acquisition Form"
       }
     ],
     "Patient": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient",
         "title": "PSS anonymised Patient"
       }
     ],
     "Bundle": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle",
         "title": "PSS Request Bundle"
       },
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle",
         "title": "PSS Response Bundle"
       }
     ],
     "CommunicationRequest": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseCommunicationRequest",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest",
         "title": "PSS Response Communication Request"
       }
     ],
     "MedicationRequest": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest",
         "title": "PSS Response Medication Request"
       }
     ],
     "RequestGroup": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup",
         "title": "PSS Response Request Group"
       }
     ],
     "ServiceRequest": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
         "title": "PSS Response Service Request"
       }
     ]
@@ -199,16 +199,16 @@
       "CommunicationRequest",
       "MedicationRequest"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CodeValueSet": [
+    "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet": [
       "Bundle.entry.resource.item",
       "Questionnaire.item",
       "ValueSet.compose.include.concept"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge": [
+    "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge": [
       "Bundle.entry.resource",
       "Patient"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating": [
+    "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating": [
       "Bundle.entry.resource.action.action",
       "RequestGroup.action.action"
     ]

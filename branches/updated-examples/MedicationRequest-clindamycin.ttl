@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/clindamycin> a fhir:MedicationRequest ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/clindamycin> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "clindamycin"] ; # 
   fhir:meta [
@@ -26,7 +26,7 @@
      fhir:text [ fhir:v "clindamycin, single 3g dose" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] . # 
 

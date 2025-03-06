@@ -6,19 +6,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV> a fhir:ValueSet ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PathogenicAgentHPV"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PathogenicAgentHPV</b></p><a name=\"PathogenicAgentHPV\"> </a><a name=\"hcPathogenicAgentHPV\"> </a><a name=\"PathogenicAgentHPV-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/123\">123</a></td><td>HPV</td></tr><tr><td><a href=\"http://snomed.info/id/234\">234</a></td><td/></tr><tr><td><a href=\"http://snomed.info/id/345\">345</a></td><td/></tr></table></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "PathogenicAgentHPV"] ; # 
   fhir:title [ fhir:v "Pathogenic Agents for HPV"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-03-06T20:18:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-06T20:59:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Belgium" ] ;
@@ -50,11 +50,11 @@
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
        fhir:concept ( [
          fhir:extension ( [
-           fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CodeValueSet"^^xsd:anyURI ] ;
+           fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:canonical ;
-             fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV"^^xsd:anyURI ;
-             fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV>
+             fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV"^^xsd:anyURI ;
+             fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV>
            ]
          ] ) ;
          fhir:code [ fhir:v "123" ] ;

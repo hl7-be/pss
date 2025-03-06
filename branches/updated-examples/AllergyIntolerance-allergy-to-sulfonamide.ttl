@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/AllergyIntolerance/allergy-to-sulfonamide> a fhir:AllergyIntolerance ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/AllergyIntolerance/allergy-to-sulfonamide> a fhir:AllergyIntolerance ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "allergy-to-sulfonamide"] ; # 
   fhir:text [
@@ -29,7 +29,7 @@
      ] )
   ] ; # 
   fhir:patient [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] . # 
 

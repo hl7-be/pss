@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/getrecommendations-a-return> a fhir:Bundle ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Bundle/getrecommendations-a-return> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "getrecommendations-a-return"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle>
      ] )
   ] ; # 
   fhir:identifier [
@@ -44,8 +44,8 @@
   fhir:id [ fhir:v "getrecommendations-a-return-group"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup>
      ] )
   ] ; # 
   fhir:text [
@@ -55,7 +55,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] ; # 
   fhir:note ( [
@@ -66,7 +66,7 @@
      fhir:action ( [
        fhir:textEquivalent [ fhir:v "Generic Antibiotic advice" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/CommunicationRequest/ab-advice> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/CommunicationRequest/ab-advice> ;
          fhir:reference [ fhir:v "CommunicationRequest/ab-advice" ]
        ]
      ] [
@@ -95,11 +95,11 @@
              fhir:v "Recommended"
            ]
          ] ) ;
-         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
        ] ) ;
        fhir:textEquivalent [ fhir:v "Metronidazol Oraal" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/metronidazol> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/metronidazol> ;
          fhir:reference [ fhir:v "MedicationRequest/metronidazol" ]
        ]
      ] [
@@ -128,11 +128,11 @@
              fhir:v "Recommended"
            ]
          ] ) ;
-         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
        ] ) ;
        fhir:textEquivalent [ fhir:v "Clindamycin local" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/clindamycin> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/clindamycin> ;
          fhir:reference [ fhir:v "MedicationRequest/clindamycin" ]
        ]
      ] [
@@ -161,11 +161,11 @@
              fhir:v "Recommended"
            ]
          ] ) ;
-         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
        ] ) ;
        fhir:textEquivalent [ fhir:v "Fluconazol Oraal" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/fluconazol> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/fluconazol> ;
          fhir:reference [ fhir:v "MedicationRequest/fluconazol" ]
        ]
      ] [
@@ -194,11 +194,11 @@
              fhir:v "Recommended"
            ]
          ] ) ;
-         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
        ] ) ;
        fhir:textEquivalent [ fhir:v "Miconazol lokaal" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/miconazol> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/miconazol> ;
          fhir:reference [ fhir:v "MedicationRequest/miconazol" ]
        ]
      ] )
@@ -208,8 +208,8 @@
   fhir:id [ fhir:v "ab-advice"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseCommunicationRequest"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseCommunicationRequest>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest>
      ] [
        fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"^^xsd:anyURI ;
        fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest>
@@ -221,7 +221,7 @@
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] ; # 
   fhir:payload ( [
@@ -270,7 +270,7 @@
      fhir:text [ fhir:v "metronidazol" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] ; # 
   fhir:dosageInstruction ( [
@@ -309,7 +309,7 @@
      fhir:text [ fhir:v "clindamycin, single 3g dose" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] . # 
 
@@ -332,7 +332,7 @@
      fhir:text [ fhir:v "Fluconazol" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] . # 
 
@@ -340,8 +340,8 @@
   fhir:id [ fhir:v "miconazol"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest>
      ] [
        fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
        fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest>
@@ -358,7 +358,7 @@
      fhir:text [ fhir:v "Miconazol" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] . # 
 

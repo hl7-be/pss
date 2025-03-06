@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-slow-progression-ataxia> a fhir:Task ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-slow-progression-ataxia> a fhir:Task ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "propose-slow-progression-ataxia"] ; # 
   fhir:text [
@@ -23,7 +23,7 @@
      ] )
   ] ; # 
   fhir:for [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-r> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-r> ;
      fhir:reference [ fhir:v "Patient/patient-r" ]
   ] ; # 
   fhir:input ( [
@@ -36,7 +36,7 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-slow-progression-ataxia> ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-slow-progression-ataxia> ;
        fhir:reference [ fhir:v "Condition/proposed-diagnosis-slow-progression-ataxia" ]
      ]
   ] ) . # 
