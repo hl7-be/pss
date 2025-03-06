@@ -1,6 +1,20 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "description" : "ValueSet - Types of rating provided by the PSS system",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PSSStructuredRating.html" : "PSS Rating Extension"
+    },
+    {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV",
       "version" : "1.0.0",
       "status" : "active",
@@ -16,7 +30,10 @@
       "name" : "PathogenicAgents",
       "title" : "Pathogenic Agents list",
       "description" : "Pathogenic agent codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "Questionnaire-q-collect-information-a.html" : "Questionnaire[https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information-a|1.0.0]"
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
@@ -36,7 +53,7 @@
       "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"
     },
     {
-      "url" : "urn:uuid:af3502db-f3ef-4eb8-b6dc-1257b145f2cf",
+      "url" : "urn:uuid:c6c13927-2fa0-451b-a403-4a31c7a652ea",
       "version" : null,
       "status" : "active",
       "name" : "Conditions",

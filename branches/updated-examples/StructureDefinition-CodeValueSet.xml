@@ -14,7 +14,7 @@
   <name value="CodeValueSet"/>
   <title value="Code ValueSet"/>
   <status value="draft"/>
-  <date value="2025-03-06T11:49:07+00:00"/>
+  <date value="2025-03-06T20:18:44+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <name value="HL7 Belgium"/>
@@ -54,6 +54,14 @@
   <context>
     <type value="element"/>
     <expression value="Questionnaire.item"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose.include.concept"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.expansion.contains"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

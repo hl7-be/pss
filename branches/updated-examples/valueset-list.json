@@ -1,6 +1,17 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "description" : "ValueSet - Types of rating provided by the PSS system",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes"
+      ]
+    },
+    {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV",
       "version" : "1.0.0",
       "status" : "active",

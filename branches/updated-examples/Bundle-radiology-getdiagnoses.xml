@@ -15,11 +15,12 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-r"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-r</b></p><a name="patient-r"> </a><a name="hcpatient-r"> </a><a name="patient-r-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"> Male, DoB Unknown</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="The approximate, relevant age of the patient at the time of the search."><a href="StructureDefinition-PSSRelevantAge.html">PSS Relevant Patient Age</a></td><td colspan="3">53<span style="background: LightGoldenRodYellow"> (Details: [not stated]  codey = 'y')</span></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-r"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-r</b></p><a name="patient-r"> </a><a name="hcpatient-r"> </a><a name="patient-r-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"> Male, DoB Unknown</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="The approximate, relevant age of the patient at the time of the search."><a href="StructureDefinition-PSSRelevantAge.html">PSS Relevant Patient Age</a></td><td colspan="3">53 y<span style="background: LightGoldenRodYellow"> (Details: UCUM  codey = 'y')</span></td></tr></table></div>
         </text>
         <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge">
           <valueAge>
             <value value="53"/>
+            <system value="http://unitsofmeasure.org"/>
             <code value="y"/>
           </valueAge>
         </extension>
@@ -66,12 +67,13 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_ct-head-iv-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name="ct-head-iv-contrast"> </a><a name="hcct-head-iv-contrast"> </a><a name="ct-head-iv-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_ct-head-iv-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name="ct-head-iv-contrast"> </a><a name="hcct-head-iv-contrast"> </a><a name="ct-head-iv-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114055}">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p></div>
         </text>
         <status value="active"/>
         <intent value="proposal"/>
         <code>
           <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures"/>
             <code value="114055"/>
             <display value="CT, head, without IV contrast"/>
           </coding>

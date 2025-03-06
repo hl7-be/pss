@@ -1244,6 +1244,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes> ;
+         fhir:reference [ fhir:v "CodeSystem/PSSRatingTypes" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem: Types of rating provided by the PSS system" ] ;
+       fhir:description [ fhir:v "CodeSystem: Types of rating provided by the PSS system" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "PlanDefinition"
          ]
        ] ) ;
@@ -1636,6 +1654,42 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Profiles" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSQSIConditions> ;
+         fhir:reference [ fhir:v "CodeSystem/PSSQSIConditions" ]
+       ] ;
+       fhir:name [ fhir:v "PSS-QSI condition codes" ] ;
+       fhir:description [ fhir:v "Condition codes from the QSI system" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSQSIProcedures> ;
+         fhir:reference [ fhir:v "CodeSystem/PSSQSIProcedures" ]
+       ] ;
+       fhir:name [ fhir:v "PSS-QSI procedure codes" ] ;
+       fhir:description [ fhir:v "Procedure codes from the QSI system" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -2062,6 +2116,24 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest>
        ] ;
        fhir:groupingId [ fhir:v "Radiology" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS> ;
+         fhir:reference [ fhir:v "ValueSet/PSSRatingTypesVS" ]
+       ] ;
+       fhir:name [ fhir:v "Types of rating provided by the PSS system" ] ;
+       fhir:description [ fhir:v "ValueSet - Types of rating provided by the PSS system" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

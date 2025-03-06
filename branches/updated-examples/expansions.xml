@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="41cbfbbf-f98d-4048-b0d0-3ca1c2ef6d93"/>
+  <id value="b2a1a03f-b6b9-447c-a49b-f0759dad3712"/>
   <meta>
-    <lastUpdated value="2025-03-06T11:49:52.948+00:00"/>
+    <lastUpdated value="2025-03-06T20:19:33.031+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="urn:uuid:af3502db-f3ef-4eb8-b6dc-1257b145f2cf"/>
+    <fullUrl value="urn:uuid:c6c13927-2fa0-451b-a403-4a31c7a652ea"/>
     <resource>
       <ValueSet>
         <id value="condition-valueset"/>
@@ -60,7 +60,7 @@
             </table>
           </div>
         </text>
-        <url value="urn:uuid:af3502db-f3ef-4eb8-b6dc-1257b145f2cf"/>
+        <url value="urn:uuid:c6c13927-2fa0-451b-a403-4a31c7a652ea"/>
         <version value="1.0.0"/>
         <name value="Conditions"/>
         <title value="Antimicrobiology - Vaginitis-related conditions"/>
@@ -83,6 +83,101 @@
             <system value="http://snomed.info/sct"/>
             <code value="72934000"/>
             <display value="Candidiasis of vagina"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-PSSRatingTypes.html">codesystem CodeSystem: Types of rating provided by the PSS system v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes-overall"> </a>  
+                  <a href="CodeSystem-PSSRatingTypes.html#PSSRatingTypes-overall">overall</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes-radiationexposure"> </a>  
+                  <a href="CodeSystem-PSSRatingTypes.html#PSSRatingTypes-radiationexposure">radiationexposure</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS"/>
+        <version value="1.0.0"/>
+        <name value="PSSRatingTypesVS"/>
+        <title value="Types of rating provided by the PSS system"/>
+        <status value="draft"/>
+        <date value="2025-03-06T20:18:44+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:44444766-47cf-43b9-a899-0fb6856f60d0"/>
+          <timestamp value="2025-03-06T20:20:08+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes"/>
+            <code value="overall"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes"/>
+            <code value="radiationexposure"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -120,7 +215,7 @@
         <name value="PathogenicAgentHPV"/>
         <title value="Pathogenic Agents for HPV"/>
         <status value="active"/>
-        <date value="2025-03-06T11:49:07+00:00"/>
+        <date value="2025-03-06T20:18:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -129,8 +224,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fa91d719-3a68-4824-97ac-dd624c3af62b"/>
-          <timestamp value="2025-03-06T11:50:17+00:00"/>
+          <identifier value="urn:uuid:2566e409-9f8a-496e-b62f-79a812debd3a"/>
+          <timestamp value="2025-03-06T20:20:08+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -197,7 +292,7 @@
         <name value="PathogenicAgents"/>
         <title value="Pathogenic Agents list"/>
         <status value="active"/>
-        <date value="2025-03-06T11:49:07+00:00"/>
+        <date value="2025-03-06T20:18:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -206,8 +301,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4d2d5910-54cd-49d3-92eb-ce9f8079f9ca"/>
-          <timestamp value="2025-03-06T11:50:17+00:00"/>
+          <identifier value="urn:uuid:bc8a54eb-ed7f-40ae-b665-bcdbce8faad6"/>
+          <timestamp value="2025-03-06T20:20:09+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -304,7 +399,7 @@
         <name value="PregnancyCodes"/>
         <title value="Pregnancy Codes"/>
         <status value="active"/>
-        <date value="2025-03-06T11:49:07+00:00"/>
+        <date value="2025-03-06T20:18:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -313,8 +408,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2edb5753-4f8d-4fbe-b96f-2d0a53b410ac"/>
-          <timestamp value="2025-03-06T11:50:17+00:00"/>
+          <identifier value="urn:uuid:8dbfee44-b63a-43f3-a9f4-a9dbc884bdcb"/>
+          <timestamp value="2025-03-06T20:20:09+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -433,7 +528,7 @@
         <title value="Antimicrobiology - Vaginitis-related conditions"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-03-06T11:49:07+00:00"/>
+        <date value="2025-03-06T20:18:44+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <name value="HL7 Belgium"/>

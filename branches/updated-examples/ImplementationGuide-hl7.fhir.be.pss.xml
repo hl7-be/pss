@@ -722,6 +722,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/PSSRatingTypes"/>
+      </reference>
+      <name value="CodeSystem: Types of rating provided by the PSS system"/>
+      <description value="CodeSystem: Types of rating provided by the PSS system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PlanDefinition"/>
       </extension>
       <reference>
@@ -967,6 +978,28 @@
       <description value="The PSS Response Service Request is used when the PSS system returns a ServiceRequest"/>
       <exampleBoolean value="false"/>
       <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/PSSQSIConditions"/>
+      </reference>
+      <name value="PSS-QSI condition codes"/>
+      <description value="Condition codes from the QSI system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/PSSQSIProcedures"/>
+      </reference>
+      <name value="PSS-QSI procedure codes"/>
+      <description value="Procedure codes from the QSI system"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1231,6 +1264,17 @@
       <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
       <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PSSRatingTypesVS"/>
+      </reference>
+      <name value="Types of rating provided by the PSS system"/>
+      <description value="ValueSet - Types of rating provided by the PSS system"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

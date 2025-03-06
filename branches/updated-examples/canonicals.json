@@ -18,6 +18,13 @@
     "version" : "1.0.0"
   },
   {
+    "id" : "PSSRatingTypes",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes",
+    "version" : "1.0.0",
+    "name" : "PSSRatingTypes"
+  },
+  {
     "id" : "hl7.fhir.be.pss",
     "type" : "ImplementationGuide",
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss",
@@ -129,6 +136,13 @@
     "name" : "PSSStructuredRating"
   },
   {
+    "id" : "PSSRatingTypesVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS",
+    "version" : "1.0.0",
+    "name" : "PSSRatingTypesVS"
+  },
+  {
     "id" : "PathogenicAgentHPV",
     "type" : "ValueSet",
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV",
@@ -155,5 +169,19 @@
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
     "version" : "1.0.0",
     "name" : "Conditions"
+  },
+  {
+    "id" : "PSSQSIConditions",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions",
+    "version" : "1.0.0",
+    "name" : "PSSQSIConditions"
+  },
+  {
+    "id" : "PSSQSIProcedures",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+    "version" : "1.0.0",
+    "name" : "PSSQSIProcedures"
   }
 ]

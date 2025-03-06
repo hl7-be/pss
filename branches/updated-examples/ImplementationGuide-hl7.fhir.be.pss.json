@@ -903,6 +903,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PSSRatingTypes"
+      },
+      "name" : "CodeSystem: Types of rating provided by the PSS system",
+      "description" : "CodeSystem: Types of rating provided by the PSS system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
@@ -1168,6 +1180,30 @@
       "description" : "The PSS Response Service Request is used when the PSS system returns a ServiceRequest",
       "exampleBoolean" : false,
       "groupingId" : "Profiles"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PSSQSIConditions"
+      },
+      "name" : "PSS-QSI condition codes",
+      "description" : "Condition codes from the QSI system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PSSQSIProcedures"
+      },
+      "name" : "PSS-QSI procedure codes",
+      "description" : "Procedure codes from the QSI system",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1454,6 +1490,18 @@
       "description" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast",
       "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest",
       "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PSSRatingTypesVS"
+      },
+      "name" : "Types of rating provided by the PSS system",
+      "description" : "ValueSet - Types of rating provided by the PSS system",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

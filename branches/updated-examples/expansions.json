@@ -1,12 +1,12 @@
 {
   "resourceType" : "Bundle",
-  "id" : "41cbfbbf-f98d-4048-b0d0-3ca1c2ef6d93",
+  "id" : "b2a1a03f-b6b9-447c-a49b-f0759dad3712",
   "meta" : {
-    "lastUpdated" : "2025-03-06T11:49:52.948+00:00"
+    "lastUpdated" : "2025-03-06T20:19:33.031+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "urn:uuid:af3502db-f3ef-4eb8-b6dc-1257b145f2cf",
+    "fullUrl" : "urn:uuid:c6c13927-2fa0-451b-a403-4a31c7a652ea",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "condition-valueset",
@@ -14,7 +14,7 @@
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet condition-valueset</b></p><a name=\"x-condition-valueset\"> </a><a name=\"x-hccondition-valueset\"> </a><a name=\"x-condition-valueset-en-US\"> </a><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr></table></div>"
       },
-      "url" : "urn:uuid:af3502db-f3ef-4eb8-b6dc-1257b145f2cf",
+      "url" : "urn:uuid:c6c13927-2fa0-451b-a403-4a31c7a652ea",
       "version" : "1.0.0",
       "name" : "Conditions",
       "title" : "Antimicrobiology - Vaginitis-related conditions",
@@ -42,6 +42,63 @@
     }
   },
   {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-PSSRatingTypes.html\">codesystem CodeSystem: Types of rating provided by the PSS system v1.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes-overall\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PSSRatingTypes.html#PSSRatingTypes-overall\">overall</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes-radiationexposure\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PSSRatingTypes.html#PSSRatingTypes-radiationexposure\">radiationexposure</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS",
+      "version" : "1.0.0",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "status" : "draft",
+      "date" : "2025-03-06T20:18:44+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:44444766-47cf-43b9-a899-0fb6856f60d0",
+        "timestamp" : "2025-03-06T20:20:08+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes",
+          "code" : "overall"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes",
+          "code" : "radiationexposure"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -54,7 +111,7 @@
       "name" : "PathogenicAgentHPV",
       "title" : "Pathogenic Agents for HPV",
       "status" : "active",
-      "date" : "2025-03-06T11:49:07+00:00",
+      "date" : "2025-03-06T20:18:44+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -63,8 +120,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fa91d719-3a68-4824-97ac-dd624c3af62b",
-        "timestamp" : "2025-03-06T11:50:17+00:00",
+        "identifier" : "urn:uuid:2566e409-9f8a-496e-b62f-79a812debd3a",
+        "timestamp" : "2025-03-06T20:20:08+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -111,7 +168,7 @@
       "name" : "PathogenicAgents",
       "title" : "Pathogenic Agents list",
       "status" : "active",
-      "date" : "2025-03-06T11:49:07+00:00",
+      "date" : "2025-03-06T20:18:44+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -120,8 +177,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4d2d5910-54cd-49d3-92eb-ce9f8079f9ca",
-        "timestamp" : "2025-03-06T11:50:17+00:00",
+        "identifier" : "urn:uuid:bc8a54eb-ed7f-40ae-b665-bcdbce8faad6",
+        "timestamp" : "2025-03-06T20:20:09+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -168,7 +225,7 @@
       "name" : "PregnancyCodes",
       "title" : "Pregnancy Codes",
       "status" : "active",
-      "date" : "2025-03-06T11:49:07+00:00",
+      "date" : "2025-03-06T20:18:44+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -177,8 +234,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2edb5753-4f8d-4fbe-b96f-2d0a53b410ac",
-        "timestamp" : "2025-03-06T11:50:17+00:00",
+        "identifier" : "urn:uuid:8dbfee44-b63a-43f3-a9f4-a9dbc884bdcb",
+        "timestamp" : "2025-03-06T20:20:09+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -254,7 +311,7 @@
       "title" : "Antimicrobiology - Vaginitis-related conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-03-06T11:49:07+00:00",
+      "date" : "2025-03-06T20:18:44+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "name" : "HL7 Belgium",
