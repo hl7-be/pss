@@ -1,0 +1,28 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+package "Bundle" {
+  class "  Condition  " as RG #cff{
+  }
+
+  class "  Patient  " as P #cff{
+  }
+P .r. RG 
+P .d. T 
+
+
+  class "  Allergy  " as T #cff{
+  }
+
+RG -[hidden]- T 
+
+}
+legend
+All data goes in as a
+Bundle of resources.
+Patient is anonymized.
+endlegend
+
+@enduml
