@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bf3bf5e1-b781-4602-9dc2-5b249dd806d0"/>
+  <id value="7c236d0b-a60d-49a3-a226-69d76bcfa3e4"/>
   <meta>
-    <lastUpdated value="2025-03-03T11:02:31.702+00:00"/>
+    <lastUpdated value="2025-03-06T11:30:19.391+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="urn:uuid:967a5991-0eaa-4e4f-b8b4-38caca83d396"/>
+    <fullUrl value="urn:uuid:867afd54-c338-4e54-82b2-3a8a789419fd"/>
     <resource>
       <ValueSet>
         <id value="condition-valueset"/>
@@ -15,7 +15,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet condition-valueset</b>
+              <b>ValueSet condition-valueset</b>
             </p>
             <a name="x-condition-valueset"> </a>
             <a name="x-hccondition-valueset"> </a>
@@ -60,7 +60,7 @@
             </table>
           </div>
         </text>
-        <url value="urn:uuid:967a5991-0eaa-4e4f-b8b4-38caca83d396"/>
+        <url value="urn:uuid:867afd54-c338-4e54-82b2-3a8a789419fd"/>
         <version value="1.0.0"/>
         <name value="Conditions"/>
         <title value="Antimicrobiology - Vaginitis-related conditions"/>
@@ -96,9 +96,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Aug 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p>
             <p>This value set contains 0 concepts</p>
             <table class="codes">
               <tr>
@@ -118,9 +118,9 @@
         <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV"/>
         <version value="1.0.0"/>
         <name value="PathogenicAgentHPV"/>
-        <title value="Pathogenic Agents"/>
+        <title value="Pathogenic Agents for HPV"/>
         <status value="active"/>
-        <date value="2025-03-03T11:01:42+00:00"/>
+        <date value="2025-03-06T11:29:33+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -129,8 +129,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6acf9fee-92ce-476d-9604-ef50e0372f47"/>
-          <timestamp value="2025-03-03T11:03:06+00:00"/>
+          <identifier value="urn:uuid:3655b3ff-30ff-42cd-a3cb-7b44ddcb372b"/>
+          <timestamp value="2025-03-06T11:30:50+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -155,11 +155,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
         </expansion>
       </ValueSet>
@@ -173,9 +173,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Aug 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p>
             <p>This value set contains 0 concepts</p>
             <table class="codes">
               <tr>
@@ -195,9 +195,9 @@
         <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgents"/>
         <version value="1.0.0"/>
         <name value="PathogenicAgents"/>
-        <title value="Pathogenic Agents"/>
+        <title value="Pathogenic Agents list"/>
         <status value="active"/>
-        <date value="2025-03-03T11:01:42+00:00"/>
+        <date value="2025-03-06T11:29:33+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -206,8 +206,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:26296434-259e-4789-8197-1b4437dca163"/>
-          <timestamp value="2025-03-03T11:03:06+00:00"/>
+          <identifier value="urn:uuid:e86d8a41-d123-44c3-ab13-3d91bb302123"/>
+          <timestamp value="2025-03-06T11:30:50+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -232,11 +232,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
         </expansion>
       </ValueSet>
@@ -250,13 +250,13 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion from tx.fhir.org based on:</p>
               <ul>
                 <li>codesystem ICD-10 version2019-covid-expanded</li>
-                <li>SNOMED CT 900000000000207008 edition 01-Aug 2024</li>
+                <li>SNOMED CT 900000000000207008 edition 01-Feb 2025</li>
               </ul>
             </div>
             <p>This value set contains 3 concepts</p>
@@ -304,7 +304,7 @@
         <name value="PregnancyCodes"/>
         <title value="Pregnancy Codes"/>
         <status value="active"/>
-        <date value="2025-03-03T11:01:42+00:00"/>
+        <date value="2025-03-06T11:29:33+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -313,8 +313,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dfada8c8-e960-4cd8-b4c3-0ee48fd7d892"/>
-          <timestamp value="2025-03-03T11:03:06+00:00"/>
+          <identifier value="urn:uuid:e878c401-2dde-4cb7-b7af-af36e078ab57"/>
+          <timestamp value="2025-03-06T11:30:50+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -351,11 +351,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -385,7 +385,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet condition-valueset</b>
+              <b>ValueSet condition-valueset</b>
             </p>
             <p>This value set expansion contains 3 concepts.</p>
             <table class="codes">
@@ -433,7 +433,7 @@
         <title value="Antimicrobiology - Vaginitis-related conditions"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-03-03T11:01:42+00:00"/>
+        <date value="2025-03-06T11:29:33+00:00"/>
         <publisher value="HL7 Belgium"/>
         <contact>
           <name value="HL7 Belgium"/>
