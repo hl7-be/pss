@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/RequestGroup/getdatatocollect-a-return-group> a fhir:RequestGroup ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/RequestGroup/getdatatocollect-a-return-group> a fhir:RequestGroup ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "getdatatocollect-a-return-group"] ; # 
   fhir:text [
@@ -16,7 +16,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] ; # 
   fhir:action ( [
@@ -24,7 +24,7 @@
      fhir:action ( [
        fhir:textEquivalent [ fhir:v "Collect information" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/collect-information-a> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/collect-information-a> ;
          fhir:reference [ fhir:v "Task/collect-information-a" ]
        ]
      ] )

@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.be.pss"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name="hl7.fhir.be.pss"> </a><a name="hchl7.fhir.be.pss"> </a><a name="hl7.fhir.be.pss-en-US"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name="hl7.fhir.be.pss"> </a><a name="hchl7.fhir.be.pss"> </a><a name="hl7.fhir.be.pss-en-US"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>
 </div></div>
   </text>
-  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss"/>
   <version value="1.0.0"/>
   <name value="PrescriptionSearchSupport"/>
   <title value="Prescription Search Support"/>
@@ -142,7 +142,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://www.ehealth.fgov.be/standards/fhir/medication/history.html"/>
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/pss/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -345,7 +345,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://www.ehealth.fgov.be/standards/fhir/medication/history.html"/>
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/pss/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -501,7 +501,7 @@
       </reference>
       <name value="Antimicrobiology - S2 Get data to collect - Request - 1. - Bundle"/>
       <description value="Antimicrobiology - S2 Get data to collect - Request - 1. Bundle"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -549,7 +549,7 @@
       </reference>
       <name value="Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"/>
       <description value="Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -585,7 +585,7 @@
       </reference>
       <name value="Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
       <description value="Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSDataAcquisitionForm"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -597,7 +597,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -621,7 +621,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -633,7 +633,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -645,7 +645,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseCommunicationRequest"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -693,7 +693,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -798,7 +798,7 @@
       </reference>
       <name value="patient-a"/>
       <description value="Example anonymised patient A"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -810,7 +810,7 @@
       </reference>
       <name value="patient-r"/>
       <description value="Example anonymised patient R"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -1010,7 +1010,7 @@
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Request - 1. Bundle"/>
       <description value="Radiology - S1 Get Diagnoses - Request - 1. Bundle"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -1034,7 +1034,7 @@
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1. Bundle"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1. Bundle"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -1178,7 +1178,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Request- 1. request Bundle"/>
       <description value="Radiology - S3 Get Recommendations - Request - 1. request Bundle"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -1214,7 +1214,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -1226,7 +1226,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -1238,7 +1238,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -1250,7 +1250,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>
@@ -1262,7 +1262,7 @@
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
       <groupingId value="Radiology"/>
     </resource>
     <resource>

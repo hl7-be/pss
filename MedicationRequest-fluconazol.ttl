@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/fluconazol> a fhir:MedicationRequest ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/fluconazol> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "fluconazol"] ; # 
   fhir:meta [
@@ -26,7 +26,7 @@
      fhir:text [ fhir:v "Fluconazol" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] . # 
 

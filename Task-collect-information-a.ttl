@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Task/collect-information-a> a fhir:Task ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Task/collect-information-a> a fhir:Task ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "collect-information-a"] ; # 
   fhir:text [
@@ -23,7 +23,7 @@
      ] )
   ] ; # 
   fhir:for [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] ; # 
   fhir:input ( [
@@ -36,8 +36,8 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information-a> ;
-       fhir:reference [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information-a" ]
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/q-collect-information-a> ;
+       fhir:reference [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/q-collect-information-a" ]
      ]
   ] ) . # 
 

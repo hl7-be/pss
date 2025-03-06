@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-stroke> a fhir:Condition ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-stroke> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "proposed-diagnosis-stroke"] ; # 
   fhir:meta [
@@ -45,7 +45,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-r> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-r> ;
      fhir:reference [ fhir:v "Patient/patient-r" ]
   ] ; # 
   fhir:onset [

@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/getrecommendations-r-return> a fhir:Bundle ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Bundle/getrecommendations-r-return> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "getrecommendations-r-return"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle>
      ] )
   ] ; # 
   fhir:identifier [
@@ -38,8 +38,8 @@
   fhir:id [ fhir:v "getrecommendations-r-return-1"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup>
      ] )
   ] ; # 
   fhir:text [
@@ -49,7 +49,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-r> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-r> ;
      fhir:reference [ fhir:v "Patient/patient-r" ]
   ] ; # 
   fhir:action ( [
@@ -80,11 +80,11 @@
              fhir:v "Whoa!...."
            ]
          ] ) ;
-         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
        ] ) ;
        fhir:textEquivalent [ fhir:v "CT Head with or without contrast" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/ct-head-with-or-without-contrast> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/ct-head-with-or-without-contrast> ;
          fhir:reference [ fhir:v "ServiceRequest/ct-head-with-or-without-contrast" ]
        ]
      ] [
@@ -113,7 +113,7 @@
              fhir:v "Whoa!...."
            ]
          ] ) ;
-         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "ratingType"^^xsd:anyURI ] ;
@@ -139,11 +139,11 @@
              fhir:v "Not recommended"
            ]
          ] ) ;
-         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
        ] ) ;
        fhir:textEquivalent [ fhir:v "CT Head with IV contrast" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/ct-head-iv-contrast> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/ct-head-iv-contrast> ;
          fhir:reference [ fhir:v "ServiceRequest/ct-head-iv-contrast" ]
        ]
      ] [
@@ -172,7 +172,7 @@
              fhir:v "Whoa!...."
            ]
          ] ) ;
-         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "ratingType"^^xsd:anyURI ] ;
@@ -198,11 +198,11 @@
              fhir:v "Not recommended"
            ]
          ] ) ;
-         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
        ] ) ;
        fhir:textEquivalent [ fhir:v "MR Head without contrast" ] ;
        fhir:resource [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/mr-head-without-contrast> ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/mr-head-without-contrast> ;
          fhir:reference [ fhir:v "ServiceRequest/mr-head-without-contrast" ]
        ]
      ] )
@@ -213,8 +213,8 @@
   fhir:meta [
      fhir:versionId [ fhir:v "v3" ] ;
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest>
      ] )
   ] ; # 
   fhir:text [
@@ -231,7 +231,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-r> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-r> ;
      fhir:reference [ fhir:v "Patient/patient-r" ]
   ] . # 
 
@@ -240,8 +240,8 @@
   fhir:meta [
      fhir:versionId [ fhir:v "v3" ] ;
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest>
      ] )
   ] ; # 
   fhir:text [
@@ -258,7 +258,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-r> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-r> ;
      fhir:reference [ fhir:v "Patient/patient-r" ]
   ] . # 
 
@@ -266,8 +266,8 @@
   fhir:id [ fhir:v "mr-head-without-contrast"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest>
      ] )
   ] ; # 
   fhir:text [
@@ -284,7 +284,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-r> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-r> ;
      fhir:reference [ fhir:v "Patient/patient-r" ]
   ] . # 
 

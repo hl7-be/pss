@@ -3,9 +3,9 @@
   "id" : "hl7.fhir.be.pss",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name=\"hl7.fhir.be.pss\"> </a><a name=\"hchl7.fhir.be.pss\"> </a><a name=\"hl7.fhir.be.pss-en-US\"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name=\"hl7.fhir.be.pss\"> </a><a name=\"hchl7.fhir.be.pss\"> </a><a name=\"hl7.fhir.be.pss-en-US\"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
   },
-  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss",
   "version" : "1.0.0",
   "name" : "PrescriptionSearchSupport",
   "title" : "Prescription Search Support",
@@ -175,7 +175,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/pss/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -454,7 +454,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/pss/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -663,7 +663,7 @@
       },
       "name" : "Antimicrobiology - S2 Get data to collect - Request - 1. - Bundle",
       "description" : "Antimicrobiology - S2 Get data to collect - Request - 1. Bundle",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -715,7 +715,7 @@
       },
       "name" : "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle",
       "description" : "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -754,7 +754,7 @@
       },
       "name" : "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire",
       "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSDataAcquisitionForm",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -767,7 +767,7 @@
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle",
       "description" : "Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -793,7 +793,7 @@
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle",
       "description" : "Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -806,7 +806,7 @@
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
       "description" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -819,7 +819,7 @@
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice",
       "description" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseCommunicationRequest",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -871,7 +871,7 @@
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol",
       "description" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -985,7 +985,7 @@
       },
       "name" : "patient-a",
       "description" : "Example anonymised patient A",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -998,7 +998,7 @@
       },
       "name" : "patient-r",
       "description" : "Example anonymised patient R",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient",
       "groupingId" : "Radiology"
     },
     {
@@ -1215,7 +1215,7 @@
       },
       "name" : "Radiology - S1 Get Diagnoses - Request - 1. Bundle",
       "description" : "Radiology - S1 Get Diagnoses - Request - 1. Bundle",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle",
       "groupingId" : "Radiology"
     },
     {
@@ -1241,7 +1241,7 @@
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1. Bundle",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1. Bundle",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle",
       "groupingId" : "Radiology"
     },
     {
@@ -1397,7 +1397,7 @@
       },
       "name" : "Radiology - S3 Get Recommendations - Request- 1. request Bundle",
       "description" : "Radiology - S3 Get Recommendations - Request - 1. request Bundle",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle",
       "groupingId" : "Radiology"
     },
     {
@@ -1436,7 +1436,7 @@
       },
       "name" : "Radiology - S3 Get Recommendations - Response - 1. Bundle",
       "description" : "Radiology - S3 Get Recommendations - Response - 1. Bundle",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle",
       "groupingId" : "Radiology"
     },
     {
@@ -1449,7 +1449,7 @@
       },
       "name" : "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
       "description" : "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup",
       "groupingId" : "Radiology"
     },
     {
@@ -1462,7 +1462,7 @@
       },
       "name" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast",
       "description" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
       "groupingId" : "Radiology"
     },
     {
@@ -1475,7 +1475,7 @@
       },
       "name" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast",
       "description" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
       "groupingId" : "Radiology"
     },
     {
@@ -1488,7 +1488,7 @@
       },
       "name" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast",
       "description" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseServiceRequest",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
       "groupingId" : "Radiology"
     },
     {

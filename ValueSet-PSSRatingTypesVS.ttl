@@ -6,19 +6,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS> a fhir:ValueSet ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PSSRatingTypesVS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PSSRatingTypesVS</b></p><a name=\"PSSRatingTypesVS\"> </a><a name=\"hcPSSRatingTypesVS\"> </a><a name=\"PSSRatingTypesVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-PSSRatingTypes.html\"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes</code></a></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PSSRatingTypesVS</b></p><a name=\"PSSRatingTypesVS\"> </a><a name=\"hcPSSRatingTypesVS\"> </a><a name=\"PSSRatingTypesVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-PSSRatingTypes.html\"><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "PSSRatingTypesVS"] ; # 
   fhir:title [ fhir:v "Types of rating provided by the PSS system"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-03-06T20:18:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-06T20:59:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Belgium" ] ;
@@ -47,7 +47,7 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"^^xsd:anyURI ]
      ] )
   ] . # 
 

@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/miconazol> a fhir:MedicationRequest ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/miconazol> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "miconazol"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest>
      ] [
        fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
        fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest>
@@ -29,7 +29,7 @@
      fhir:text [ fhir:v "Miconazol" ]
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-a> ;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/patient-a> ;
      fhir:reference [ fhir:v "Patient/patient-a" ]
   ] . # 
 

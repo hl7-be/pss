@@ -2,7 +2,7 @@
   "resourceType" : "Bundle",
   "id" : "getrecommendations-a-return",
   "meta" : {
-    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"]
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"]
   },
   "identifier" : {
     "value" : "response1"
@@ -15,7 +15,7 @@
       "resourceType" : "RequestGroup",
       "id" : "getrecommendations-a-return-group",
       "meta" : {
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseRequestGroup"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"]
       },
       "text" : {
         "status" : "generated",
@@ -58,7 +58,7 @@
               "url" : "ratingText",
               "valueMarkdown" : "Recommended"
             }],
-            "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
           }],
           "textEquivalent" : "Metronidazol Oraal",
           "resource" : {
@@ -86,7 +86,7 @@
               "url" : "ratingText",
               "valueMarkdown" : "Recommended"
             }],
-            "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
           }],
           "textEquivalent" : "Clindamycin local",
           "resource" : {
@@ -114,7 +114,7 @@
               "url" : "ratingText",
               "valueMarkdown" : "Recommended"
             }],
-            "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
           }],
           "textEquivalent" : "Fluconazol Oraal",
           "resource" : {
@@ -142,7 +142,7 @@
               "url" : "ratingText",
               "valueMarkdown" : "Recommended"
             }],
-            "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating"
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
           }],
           "textEquivalent" : "Miconazol lokaal",
           "resource" : {
@@ -158,7 +158,7 @@
       "resourceType" : "CommunicationRequest",
       "id" : "ab-advice",
       "meta" : {
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseCommunicationRequest",
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest",
         "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"]
       },
       "text" : {
@@ -280,7 +280,7 @@
       "resourceType" : "MedicationRequest",
       "id" : "miconazol",
       "meta" : {
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseMedicationRequest",
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest",
         "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
       },
       "text" : {

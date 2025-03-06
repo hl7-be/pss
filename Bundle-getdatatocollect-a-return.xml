@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="getdatatocollect-a-return"/>
   <meta>
-    <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponseBundle"/>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
   </meta>
   <identifier>
     <value value="response1"/>
@@ -64,7 +64,7 @@
             </coding>
           </type>
           <valueReference>
-            <reference value="https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information-a"/>
+            <reference value="https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/q-collect-information-a"/>
           </valueReference>
         </input>
       </Task>
@@ -76,7 +76,7 @@
       <Questionnaire>
         <id value="q-collect-information-a"/>
         <meta>
-          <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSDataAcquisitionForm"/>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm"/>
         </meta>
         <language value="nl-BE"/>
         <text>
@@ -127,8 +127,8 @@
           <answerValueSet value="#condition-valueset"/>
         </item>
         <item>
-          <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CodeValueSet">
-            <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes"/>
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet">
+            <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes"/>
           </extension>
           <linkId value="pregnancy"/>
           <code>
@@ -170,7 +170,7 @@
             <operator value="="/>
             <answerBoolean value="true"/>
           </enableWhen>
-          <answerValueSet value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgents"/>
+          <answerValueSet value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgents"/>
         </item>
         <item>
           <linkId value="pathogen2"/>
@@ -186,12 +186,12 @@
       <Patient>
         <id value="patient-a"/>
         <meta>
-          <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSPatient"/>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-a"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-a</b></p><a name="patient-a"> </a><a name="hcpatient-a"> </a><a name="patient-a-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"> Female, DoB Unknown</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="The approximate, relevant age of the patient at the time of the search."><a href="StructureDefinition-PSSRelevantAge.html">PSS Relevant Patient Age</a></td><td colspan="3">36 y<span style="background: LightGoldenRodYellow"> (Details: UCUM  codey = 'y')</span></td></tr></table></div>
         </text>
-        <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRelevantAge">
+        <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge">
           <valueAge>
             <value value="36"/>
             <system value="http://unitsofmeasure.org"/>

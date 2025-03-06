@@ -204,7 +204,7 @@ Age {[]} {[]}Period {[]} {[]}Duration {[]} {[]}Range {[]} {[]}Timing {[]} {[]}",
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"RequestGroup.action.action.extension:structured-rating","RequestGroup.action.action.extension","structured-rating","","",0,*,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSStructuredRating]]} {[]}
+"RequestGroup.action.action.extension:structured-rating","RequestGroup.action.action.extension","structured-rating","","",0,*,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating]]} {[]}
 ","PSS Rating Extension","A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

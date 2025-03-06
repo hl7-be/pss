@@ -1,9 +1,9 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 4, warn = 90, info = 14
+err = 0, warn = 90, info = 14
 $--
-Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 3 / 6
@@ -14,8 +14,8 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-return : 0 / 6 / 9
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 7 / 6
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses-return : 0 / 15 / 17
- /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIConditions : 2 / 2 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIProcedures : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIConditions : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIProcedures : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-PSSRatingTypes : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/CommunicationRequest-ab-advice : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-head-trauma : 0 / 1 / 1
@@ -136,17 +136,13 @@ WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[8].resource/*Conditi
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[9].resource/*Task/propose-post-trauma-ataxia*/.input[0].value.ofType(Reference): Entry 10 matches the reference Condition/proposed-diagnosis-post-trauma-ataxia by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-4e639094ad13 does not match the full target URL urn:uuid:proposed-diagnosis-post-trauma-ataxia by Bundle resolution rules
 WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[10].resource/*Condition/proposed-diagnosis-post-trauma-ataxia*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated
 == fsh-generated/resources/CodeSystem-PSSQSIConditions.json ==
-ERROR: CodeSystem.where(url = 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIConditions.json - the canonical URL (https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSQSIConditions) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions)
 INFORMATION: CodeSystem/PSSQSIConditions: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/PSSQSIConditions: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/PSSQSIConditions: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-ERROR: /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIConditions: URL Mismatch https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSQSIConditions vs https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions
 == fsh-generated/resources/CodeSystem-PSSQSIProcedures.json ==
-ERROR: CodeSystem.where(url = 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIProcedures.json - the canonical URL (https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSQSIProcedures) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures)
 INFORMATION: CodeSystem/PSSQSIProcedures: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/PSSQSIProcedures: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/PSSQSIProcedures: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-ERROR: /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIProcedures: URL Mismatch https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSQSIProcedures vs https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures
 == fsh-generated/resources/CodeSystem-PSSRatingTypes.json ==
 INFORMATION: CodeSystem/PSSRatingTypes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/PSSRatingTypes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -198,7 +194,7 @@ WARNING: ServiceRequest/ct-head-with-or-without-contrast: ServiceRequest.code.co
 WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-CodeValueSet.json ==
 == fsh-generated/resources/StructureDefinition-PSSCodedRating.json ==
-WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSCodedRating'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSCodedRating'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json ==
 INFORMATION: StructureDefinition/PSSDataAcquisitionForm: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated/resources/StructureDefinition-PSSPatient.json ==

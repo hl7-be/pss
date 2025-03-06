@@ -1,21 +1,21 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
       "version" : "1.0.0",
       "status" : "draft",
       "name" : "PSSRatingTypesVS",
       "title" : "Types of rating provided by the PSS system",
       "description" : "ValueSet - Types of rating provided by the PSS system",
       "systems" : [
-        "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes"
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"
       ],
       "uses" : {
       },
       "StructureDefinition-PSSStructuredRating.html" : "PSS Rating Extension"
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "PathogenicAgentHPV",
@@ -24,7 +24,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgents",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgents",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "PathogenicAgents",
@@ -33,10 +33,10 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "Questionnaire-q-collect-information-a.html" : "Questionnaire[https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information-a|1.0.0]"
+      "Questionnaire-q-collect-information-a.html" : "Questionnaire[https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/q-collect-information-a|1.0.0]"
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "PregnancyCodes",
@@ -45,7 +45,7 @@
       "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/condition-valueset",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "Conditions",
@@ -53,7 +53,7 @@
       "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"
     },
     {
-      "url" : "urn:uuid:c6c13927-2fa0-451b-a403-4a31c7a652ea",
+      "url" : "urn:uuid:ede819df-e975-445e-a2d2-9aa6068a5e88",
       "version" : null,
       "status" : "active",
       "name" : "Conditions",

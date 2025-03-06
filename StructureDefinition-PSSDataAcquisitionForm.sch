@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Questionnaire/f:item</sch:title>
     <sch:rule context="f:Questionnaire/f:item">
-      <sch:assert test="count(f:extension[@url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CodeValueSet']) &lt;= 1">extension with URL = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CodeValueSet': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet']) &lt;= 1">extension with URL = 'https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

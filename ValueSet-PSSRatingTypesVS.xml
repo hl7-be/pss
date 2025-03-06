@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="PSSRatingTypesVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PSSRatingTypesVS</b></p><a name="PSSRatingTypesVS"> </a><a name="hcPSSRatingTypesVS"> </a><a name="PSSRatingTypesVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-PSSRatingTypes.html"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PSSRatingTypesVS</b></p><a name="PSSRatingTypesVS"> </a><a name="hcPSSRatingTypesVS"> </a><a name="PSSRatingTypesVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-PSSRatingTypes.html"><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code></a></li></ul></div>
   </text>
-  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PSSRatingTypesVS"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS"/>
   <version value="1.0.0"/>
   <name value="PSSRatingTypesVS"/>
   <title value="Types of rating provided by the PSS system"/>
   <status value="draft"/>
-  <date value="2025-03-06T20:18:44+00:00"/>
+  <date value="2025-03-06T20:59:35+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <name value="HL7 Belgium"/>
@@ -41,7 +41,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/PSSRatingTypes"/>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"/>
     </include>
   </compose>
 </ValueSet>
