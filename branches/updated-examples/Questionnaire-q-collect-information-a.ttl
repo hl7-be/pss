@@ -27,7 +27,7 @@
      fhir:name [ fhir:v "Conditions" ] ;
      fhir:title [ fhir:v "Antimicrobiology - Vaginitis-related conditions" ] ;
      fhir:status [ fhir:v "active" ] ;
-     fhir:experimental [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:experimental [ fhir:v false ] ;
      fhir:description [ fhir:v "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet" ] ;
      fhir:expansion [
        fhir:timestamp [ fhir:v "2015-06-22T13:56:07Z"^^xsd:dateTime ] ;
@@ -49,7 +49,7 @@
   fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information-a"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-03-03T11:01:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-06T11:29:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Belgium" ] ;
@@ -79,7 +79,7 @@
      fhir:linkId [ fhir:v "conditions" ] ;
      fhir:text [ fhir:v "Which conditions are you considering?" ] ;
      fhir:type [ fhir:v "choice" ] ;
-     fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v true ] ;
      fhir:answerValueSet [ fhir:v "#condition-valueset"^^xsd:anyURI ]
   ] [
      fhir:extension ( [
@@ -137,7 +137,7 @@
        fhir:operator [ fhir:v "=" ] ;
        fhir:answer [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] )
   ] [

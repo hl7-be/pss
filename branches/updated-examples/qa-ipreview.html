@@ -20,7 +20,7 @@
     <ul>
       <li>
 
-          IG &copy; 2021+ HL7 Belgium.  Package hl7.fhir.be.pss#1.0.0 based on FHIR 4.0.1. Generated 2025-03-03 
+          IG &copy; 2021+ HL7 Belgium.  Package hl7.fhir.be.pss#1.0.0 based on FHIR 4.0.1. Generated 2025-03-06 
           
           
             
@@ -62,7 +62,7 @@ Links: Table of Contents |
   &lt;name value="PSSResponseMedicationRequest"/&gt;
   &lt;title value="PSS Response Medication Request"/&gt;
   &lt;status value="draft"/&gt;
-  &lt;date value="2025-03-03T11:01:42+00:00"/&gt;
+  &lt;date value="2025-03-06T11:29:33+00:00"/&gt;
   &lt;publisher value="HL7 Belgium"/&gt;
   &lt;contact&gt;
     &lt;name value="HL7 Belgium"/&gt;
@@ -2899,7 +2899,7 @@ fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p class=\"res-he
   fhir:name [ fhir:v "PSSResponseMedicationRequest"] ; # 
   fhir:title [ fhir:v "PSS Response Medication Request"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-03-03T11:01:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-03-06T11:29:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
 fhir:name [ fhir:v "HL7 Belgium" ] ;
@@ -2945,7 +2945,7 @@ fhir:uri [ fhir:v "http://hl7.org/v2"^^xsd:anyURI ] ;
 fhir:name [ fhir:v "HL7 v2 Mapping" ]
   ] ) ; # 
   fhir:kind [ fhir:v "resource"] ; # 
-  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:abstract [ fhir:v false] ; # 
   fhir:type [ fhir:v "MedicationRequest"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
 fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
@@ -3007,7 +3007,7 @@ fhir:link &lt;http://hl7.org/fhir/StructureDefinition/DomainResource&gt;        
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice"^^xsd:anyURI ] ;
 fhir:value [
 a fhir:boolean ;
-fhir:v "true"^^xsd:boolean           ]         ] [
+fhir:v true           ]         ] [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation"^^xsd:anyURI ] ;
 fhir:value [
 a fhir:markdown ;
@@ -3020,8 +3020,8 @@ fhir:xpath [ fhir:v "exists(f:text/h:div)" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/DomainResource&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "Entity. Role, or Act" ]       ] [
@@ -3049,8 +3049,8 @@ fhir:value [
 a fhir:url ;
 fhir:v "id"^^xsd:anyURI           ]         ] ) ;
 fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ]     ] [
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ]     ] [
 fhir:id [ fhir:v "MedicationRequest.meta" ] ;
 fhir:path [ fhir:v "MedicationRequest.meta" ] ;
 fhir:short [ fhir:v "Metadata about the resource" ] ;
@@ -3072,8 +3072,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ]     ] [
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ]     ] [
 fhir:id [ fhir:v "MedicationRequest.implicitRules" ] ;
 fhir:path [ fhir:v "MedicationRequest.implicitRules" ] ;
 fhir:short [ fhir:v "A set of rules under which this content was created" ] ;
@@ -3096,9 +3096,9 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v true ] ;
 fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation" ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ]     ] [
+fhir:isSummary [ fhir:v true ]     ] [
 fhir:id [ fhir:v "MedicationRequest.language" ] ;
 fhir:path [ fhir:v "MedicationRequest.language" ] ;
 fhir:short [ fhir:v "Language of the resource content" ] ;
@@ -3121,8 +3121,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ] ;
@@ -3162,8 +3162,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "Act.text?" ]       ] )     ] [
@@ -3181,8 +3181,8 @@ fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
 fhir:max [ fhir:v "*" ]       ] ;
       ( fhir:type [
 fhir:code [ fhir:v "Resource"^^xsd:anyURI ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "N/A" ]       ] )     ] [
@@ -3192,7 +3192,7 @@ fhir:slicing [
         ( fhir:discriminator [
 fhir:type [ fhir:v "value" ] ;
 fhir:path [ fhir:v "url" ]         ] ) ;
-fhir:ordered [ fhir:v "false"^^xsd:boolean ] ;
+fhir:ordered [ fhir:v false ] ;
 fhir:rules [ fhir:v "open" ]       ] ;
 fhir:short [ fhir:v "Extension" ] ;
 fhir:definition [ fhir:v "An Extension" ] ;
@@ -3221,8 +3221,8 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ]     ] [
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ]     ] [
 fhir:id [ fhir:v "MedicationRequest.extension:rationale" ] ;
 fhir:path [ fhir:v "MedicationRequest.extension" ] ;
 fhir:sliceName [ fhir:v "rationale" ] ;
@@ -3257,8 +3257,8 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ]     ] [
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ]     ] [
 fhir:id [ fhir:v "MedicationRequest.extension:rating" ] ;
 fhir:path [ fhir:v "MedicationRequest.extension" ] ;
 fhir:sliceName [ fhir:v "rating" ] ;
@@ -3293,8 +3293,8 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ]     ] [
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ]     ] [
 fhir:id [ fhir:v "MedicationRequest.modifierExtension" ] ;
 fhir:path [ fhir:v "MedicationRequest.modifierExtension" ] ;
 fhir:short [ fhir:v "Extensions that cannot be ignored" ] ;
@@ -3327,9 +3327,9 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v true ] ;
 fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them" ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "N/A" ]       ] )     ] [
@@ -3355,9 +3355,9 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.identifier" ]       ] [
@@ -3391,10 +3391,10 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v true ] ;
 fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid" ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isSummary [ fhir:v true ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -3437,8 +3437,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -3480,10 +3480,10 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v true ] ;
 fhir:isModifierReason [ fhir:v "This element changes the interpretation of all descriptive attributes. For example \"the time the request is recommended to occur\" vs. \"the time the request is authorized to occur\" or \"who is recommended to perform the request\" vs. \"who is authorized to perform the request" ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isSummary [ fhir:v true ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -3524,9 +3524,9 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -3566,9 +3566,9 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -3609,10 +3609,10 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v true ] ;
 fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because this element negates the request to occur (ie, this is a request for the medication not to be ordered or prescribed, etc)" ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "SubstanceAdministration.actionNegationInd" ]       ] )     ] [
@@ -3649,8 +3649,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v ".participation[typeCode=INF].role" ]       ] )     ] [
@@ -3680,9 +3680,9 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -3730,9 +3730,9 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.subject" ]       ] [
@@ -3771,9 +3771,9 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.context" ]       ] [
@@ -3810,9 +3810,9 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.supportingInfo" ]       ] [
@@ -3841,8 +3841,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.authoredOn" ]       ] [
@@ -3888,8 +3888,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.requester" ]       ] [
@@ -3933,8 +3933,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.performer" ]       ] [
@@ -3964,8 +3964,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -4008,8 +4008,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "w5" ] ;
 fhir:map [ fhir:v "FiveWs.who" ]       ] [
@@ -4037,8 +4037,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -4088,8 +4088,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.reasonReference" ]       ] [
@@ -4120,9 +4120,9 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:mustSupport [ fhir:v true ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.instantiates" ]       ] [
@@ -4149,8 +4149,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v ".outboundRelationship[typeCode=DEFN].target" ]       ] )     ] [
@@ -4184,8 +4184,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.basedOn" ]       ] [
@@ -4213,8 +4213,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.groupIdentifier" ]       ] [
@@ -4242,8 +4242,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -4284,8 +4284,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.insurance" ]       ] [
@@ -4312,8 +4312,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.note" ]       ] [
@@ -4343,8 +4343,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.occurrence[x]" ]       ] [
@@ -4371,8 +4371,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "script10.6" ] ;
 fhir:map [ fhir:v "Message/Body/NewRx/MedicationPrescribed/ExpirationDate" ]       ] [
@@ -4396,8 +4396,8 @@ fhir:value [
 a fhir:url ;
 fhir:v "string"^^xsd:anyURI           ]         ] ) ;
 fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "n/a" ]       ] )     ] [
@@ -4432,8 +4432,8 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "n/a" ]       ] )     ] [
@@ -4469,9 +4469,9 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v true ] ;
 fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "N/A" ]       ] )     ] [
@@ -4497,8 +4497,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "SubstanceAdministration -&gt; ActRelationship[sequenceNumber = '1'] -&gt; Supply" ]       ] )     ] [
@@ -4520,8 +4520,8 @@ fhir:value [
 a fhir:url ;
 fhir:v "string"^^xsd:anyURI           ]         ] ) ;
 fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "n/a" ]       ] )     ] [
@@ -4556,8 +4556,8 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "n/a" ]       ] )     ] [
@@ -4593,9 +4593,9 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v true ] ;
 fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "N/A" ]       ] )     ] [
@@ -4623,8 +4623,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "Supply.quantity[moodCode=RQO]" ]       ] )     ] [
@@ -4649,8 +4649,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "Supply.effectivetime[moodCode=RQO]" ]       ] )     ] [
@@ -4675,8 +4675,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "Supply.effectivetime[moodCode=RQO]" ]       ] )     ] [
@@ -4703,8 +4703,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "script10.6" ] ;
 fhir:map [ fhir:v "Message/Body/NewRx/MedicationPrescribed/Refills" ]       ] [
@@ -4732,8 +4732,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "script10.6" ] ;
 fhir:map [ fhir:v "Message/Body/NewRx/MedicationPrescribed/Quantity" ]       ] [
@@ -4765,8 +4765,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "script10.6" ] ;
 fhir:map [ fhir:v "Message/Body/NewRx/MedicationPrescribed/DaysSupply" ]       ] [
@@ -4796,8 +4796,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "script10.6" ] ;
 fhir:map [ fhir:v "Message/Body/NewRx/MedicationPrescribed/Substitutions" ]       ] [
@@ -4827,8 +4827,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "w5" ] ;
 fhir:map [ fhir:v "FiveWs.who" ]       ] [
@@ -4855,8 +4855,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "script10.6" ] ;
 fhir:map [ fhir:v "specific values within Message/Body/NewRx/MedicationPrescribed/Substitutions" ]       ] [
@@ -4880,8 +4880,8 @@ fhir:value [
 a fhir:url ;
 fhir:v "string"^^xsd:anyURI           ]         ] ) ;
 fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "n/a" ]       ] )     ] [
@@ -4916,8 +4916,8 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "n/a" ]       ] )     ] [
@@ -4953,9 +4953,9 @@ fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v true ] ;
 fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ] ;
-fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+fhir:isSummary [ fhir:v true ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v "N/A" ]       ] )     ] [
@@ -4982,8 +4982,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -5023,8 +5023,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
 fhir:binding [
         ( fhir:extension [
 fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -5067,8 +5067,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.replaces" ]       ] [
@@ -5102,8 +5102,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "rim" ] ;
 fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ]/source[classCode=ALRT,moodCode=EVN].value" ]       ] )     ] [
@@ -5132,8 +5132,8 @@ fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
 fhir:source [
 fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
 fhir:link &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+fhir:isModifier [ fhir:v false ] ;
+fhir:isSummary [ fhir:v false ] ;
       ( fhir:mapping [
 fhir:identity [ fhir:v "workflow" ] ;
 fhir:map [ fhir:v "Request.relevantHistory" ]       ] [
@@ -5175,7 +5175,7 @@ There are examples where a medication request may include the option of an oral 
   "name" : "PSSResponseMedicationRequest",
   "title" : "PSS Response Medication Request",
   "status" : "draft",
-  "date" : "2025-03-03T11:01:42+00:00",
+  "date" : "2025-03-06T11:29:33+00:00",
   "publisher" : "HL7 Belgium",
   "contact" : [
     {
@@ -8408,7 +8408,7 @@ Prescription Search Support, published by HL7 Belgium. This guide is not an auth
 
           IG &copy; 2021+           <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>
 .  Package hl7.fhir.be.pss#1.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Mon, Mar 3, 2025 11:02+0000">2025-03-03</span>
+. Generated           <span title="Thu, Mar 6, 2025 11:30+0000">2025-03-06</span>
 
                     <br/>
 

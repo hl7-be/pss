@@ -1,20 +1,20 @@
 {
   "resourceType" : "Bundle",
-  "id" : "bf3bf5e1-b781-4602-9dc2-5b249dd806d0",
+  "id" : "7c236d0b-a60d-49a3-a226-69d76bcfa3e4",
   "meta" : {
-    "lastUpdated" : "2025-03-03T11:02:31.702+00:00"
+    "lastUpdated" : "2025-03-06T11:30:19.391+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "urn:uuid:967a5991-0eaa-4e4f-b8b4-38caca83d396",
+    "fullUrl" : "urn:uuid:867afd54-c338-4e54-82b2-3a8a789419fd",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "condition-valueset",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet condition-valueset</b></p><a name=\"x-condition-valueset\"> </a><a name=\"x-hccondition-valueset\"> </a><a name=\"x-condition-valueset-en-US\"> </a><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet condition-valueset</b></p><a name=\"x-condition-valueset\"> </a><a name=\"x-hccondition-valueset\"> </a><a name=\"x-condition-valueset-en-US\"> </a><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr></table></div>"
       },
-      "url" : "urn:uuid:967a5991-0eaa-4e4f-b8b4-38caca83d396",
+      "url" : "urn:uuid:867afd54-c338-4e54-82b2-3a8a789419fd",
       "version" : "1.0.0",
       "name" : "Conditions",
       "title" : "Antimicrobiology - Vaginitis-related conditions",
@@ -47,14 +47,14 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Aug 2024</p><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgentHPV",
       "version" : "1.0.0",
       "name" : "PathogenicAgentHPV",
-      "title" : "Pathogenic Agents",
+      "title" : "Pathogenic Agents for HPV",
       "status" : "active",
-      "date" : "2025-03-03T11:01:42+00:00",
+      "date" : "2025-03-06T11:29:33+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -63,8 +63,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6acf9fee-92ce-476d-9604-ef50e0372f47",
-        "timestamp" : "2025-03-03T11:03:06+00:00",
+        "identifier" : "urn:uuid:3655b3ff-30ff-42cd-a3cb-7b44ddcb372b",
+        "timestamp" : "2025-03-06T11:30:50+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -89,11 +89,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }]
       }
     }
@@ -104,14 +104,14 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Aug 2024</p><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PathogenicAgents",
       "version" : "1.0.0",
       "name" : "PathogenicAgents",
-      "title" : "Pathogenic Agents",
+      "title" : "Pathogenic Agents list",
       "status" : "active",
-      "date" : "2025-03-03T11:01:42+00:00",
+      "date" : "2025-03-06T11:29:33+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -120,8 +120,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:26296434-259e-4789-8197-1b4437dca163",
-        "timestamp" : "2025-03-03T11:03:06+00:00",
+        "identifier" : "urn:uuid:e86d8a41-d123-44c3-ab13-3d91bb302123",
+        "timestamp" : "2025-03-06T11:30:50+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -146,11 +146,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }]
       }
     }
@@ -161,14 +161,14 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>codesystem ICD-10 version2019-covid-expanded</li><li>SNOMED CT 900000000000207008 edition 01-Aug 2024</li></ul></div><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-87527008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/87527008\">87527008</a></td><td>http://snomed.info/sct</td><td>Term pregnancy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-127364007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/127364007\">127364007</a></td><td>http://snomed.info/sct</td><td>Primigravida</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-72892002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72892002\">72892002</a></td><td>http://snomed.info/sct</td><td>Normal pregnancy</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>codesystem ICD-10 version2019-covid-expanded</li><li>SNOMED CT 900000000000207008 edition 01-Feb 2025</li></ul></div><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-87527008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/87527008\">87527008</a></td><td>http://snomed.info/sct</td><td>Term pregnancy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-127364007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/127364007\">127364007</a></td><td>http://snomed.info/sct</td><td>Primigravida</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-72892002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72892002\">72892002</a></td><td>http://snomed.info/sct</td><td>Normal pregnancy</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
       "version" : "1.0.0",
       "name" : "PregnancyCodes",
       "title" : "Pregnancy Codes",
       "status" : "active",
-      "date" : "2025-03-03T11:01:42+00:00",
+      "date" : "2025-03-06T11:29:33+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -177,8 +177,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dfada8c8-e960-4cd8-b4c3-0ee48fd7d892",
-        "timestamp" : "2025-03-03T11:03:06+00:00",
+        "identifier" : "urn:uuid:e878c401-2dde-4cb7-b7af-af36e078ab57",
+        "timestamp" : "2025-03-06T11:30:50+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -215,11 +215,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -246,7 +246,7 @@
       "id" : "condition-valueset",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet condition-valueset</b></p><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet condition-valueset</b></p><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
       "version" : "1.0.0",
@@ -254,7 +254,7 @@
       "title" : "Antimicrobiology - Vaginitis-related conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-03-03T11:01:42+00:00",
+      "date" : "2025-03-06T11:29:33+00:00",
       "publisher" : "HL7 Belgium",
       "contact" : [{
         "name" : "HL7 Belgium",

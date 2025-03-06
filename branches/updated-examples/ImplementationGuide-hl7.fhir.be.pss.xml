@@ -499,8 +499,8 @@
       <reference>
         <reference value="Bundle/getdatatocollect-a-data"/>
       </reference>
-      <name value="Antimicrobiology - S2 Get data to collect - Request - 2. - Bundle"/>
-      <description value="Antimicrobiology - S2 Get data to collect - Request - 2. Bundle"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 1. - Bundle"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 1. Bundle"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
@@ -511,8 +511,8 @@
       <reference>
         <reference value="Condition/vulvovaginitis"/>
       </reference>
-      <name value="Antimicrobiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"/>
-      <description value="Antimicrobiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 1.1. Diagnostic hypothesis - vulvovaginitis"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 1.1. Diagnostic hypothesis - vulvovaginitis"/>
       <exampleBoolean value="true"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
@@ -523,8 +523,8 @@
       <reference>
         <reference value="AllergyIntolerance/allergy-to-sulfonamide"/>
       </reference>
-      <name value="Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"/>
-      <description value="Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 1.2. Known allergy - sulfonamide"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 1.2. Known allergy - sulfonamide"/>
       <exampleBoolean value="true"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
@@ -535,8 +535,8 @@
       <reference>
         <reference value="MedicationRequest/proposal-clindamycin"/>
       </reference>
-      <name value="Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"/>
-      <description value="Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin"/>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"/>
       <exampleBoolean value="true"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
@@ -737,6 +737,18 @@
         <valueString value="PlanDefinition"/>
       </extension>
       <reference>
+        <reference value="PlanDefinition/GetDiagnoses"/>
+      </reference>
+      <name value="GetDiagnoses"/>
+      <description value="Get Diagnoses Data"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="PlanDefinitions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
         <reference value="PlanDefinition/GetRecommendations"/>
       </reference>
       <name value="GetRecommendations"/>
@@ -749,10 +761,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PathogenicAgents"/>
+        <reference value="ValueSet/PathogenicAgentHPV"/>
       </reference>
-      <name value="Pathogenic Agents"/>
-      <description value="Pregnancy Codes - used for EHRs to consider pregnancy status"/>
+      <name value="Pathogenic Agents for HPV"/>
+      <description value="Pathogenic agents associated with HPV"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -760,10 +772,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PathogenicAgentHPV"/>
+        <reference value="ValueSet/PathogenicAgents"/>
       </reference>
-      <name value="Pathogenic Agents"/>
-      <description value="Pregnancy Codes - used for EHRs to consider pregnancy status"/>
+      <name value="Pathogenic Agents list"/>
+      <description value="Pathogenic agent codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -801,6 +813,17 @@
       <description value="Pregnancy Codes - used for EHRs to consider pregnancy status"/>
       <exampleBoolean value="false"/>
       <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSPatient"/>
+      </reference>
+      <name value="PSS anonymised Patient"/>
+      <description value="PSS anonymised Patient"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -944,16 +967,6 @@
       <description value="The PSS Response Service Request is used when the PSS system returns a ServiceRequest"/>
       <exampleBoolean value="false"/>
       <groupingId value="Profiles"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PSSPatient"/>
-      </reference>
-      <name value="PSSPatient"/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -661,8 +661,8 @@
       "reference" : {
         "reference" : "Bundle/getdatatocollect-a-data"
       },
-      "name" : "Antimicrobiology - S2 Get data to collect - Request - 2. - Bundle",
-      "description" : "Antimicrobiology - S2 Get data to collect - Request - 2. Bundle",
+      "name" : "Antimicrobiology - S2 Get data to collect - Request - 1. - Bundle",
+      "description" : "Antimicrobiology - S2 Get data to collect - Request - 1. Bundle",
       "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequestBundle",
       "groupingId" : "Antimicrobiology"
     },
@@ -674,8 +674,8 @@
       "reference" : {
         "reference" : "Condition/vulvovaginitis"
       },
-      "name" : "Antimicrobiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis",
-      "description" : "Antimicrobiology - S2 Get data to collect - Request - 2.1. Diagnostic hypothesis - vulvovaginitis",
+      "name" : "Antimicrobiology - S2 Get data to collect - Request - 1.1. Diagnostic hypothesis - vulvovaginitis",
+      "description" : "Antimicrobiology - S2 Get data to collect - Request - 1.1. Diagnostic hypothesis - vulvovaginitis",
       "exampleBoolean" : true,
       "groupingId" : "Antimicrobiology"
     },
@@ -687,8 +687,8 @@
       "reference" : {
         "reference" : "AllergyIntolerance/allergy-to-sulfonamide"
       },
-      "name" : "Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide",
-      "description" : "Antimicrobiology - S2 Get data to collect - Request - 2.2. Known allergy - sulfonamide",
+      "name" : "Antimicrobiology - S2 Get data to collect - Request - 1.2. Known allergy - sulfonamide",
+      "description" : "Antimicrobiology - S2 Get data to collect - Request - 1.2. Known allergy - sulfonamide",
       "exampleBoolean" : true,
       "groupingId" : "Antimicrobiology"
     },
@@ -700,8 +700,8 @@
       "reference" : {
         "reference" : "MedicationRequest/proposal-clindamycin"
       },
-      "name" : "Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin",
-      "description" : "Antimicrobiology - S2 Get data to collect - Request - 2.3. Considered treatment - clindamycin",
+      "name" : "Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin",
+      "description" : "Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin",
       "exampleBoolean" : true,
       "groupingId" : "Antimicrobiology"
     },
@@ -919,6 +919,19 @@
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
+        "reference" : "PlanDefinition/GetDiagnoses"
+      },
+      "name" : "GetDiagnoses",
+      "description" : "Get Diagnoses Data",
+      "exampleBoolean" : true,
+      "groupingId" : "PlanDefinitions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
         "reference" : "PlanDefinition/GetRecommendations"
       },
       "name" : "GetRecommendations",
@@ -932,10 +945,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/PathogenicAgents"
+        "reference" : "ValueSet/PathogenicAgentHPV"
       },
-      "name" : "Pathogenic Agents",
-      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "name" : "Pathogenic Agents for HPV",
+      "description" : "Pathogenic agents associated with HPV",
       "exampleBoolean" : false
     },
     {
@@ -944,10 +957,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/PathogenicAgentHPV"
+        "reference" : "ValueSet/PathogenicAgents"
       },
-      "name" : "Pathogenic Agents",
-      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "name" : "Pathogenic Agents list",
+      "description" : "Pathogenic agent codes",
       "exampleBoolean" : false
     },
     {
@@ -988,6 +1001,18 @@
       "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
       "exampleBoolean" : false,
       "groupingId" : "Antimicrobiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSPatient"
+      },
+      "name" : "PSS anonymised Patient",
+      "description" : "PSS anonymised Patient",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1143,17 +1168,6 @@
       "description" : "The PSS Response Service Request is used when the PSS system returns a ServiceRequest",
       "exampleBoolean" : false,
       "groupingId" : "Profiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSPatient"
-      },
-      "name" : "PSSPatient",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{
