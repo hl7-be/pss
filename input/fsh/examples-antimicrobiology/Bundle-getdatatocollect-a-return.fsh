@@ -201,10 +201,15 @@ Title: "PSS-QSI procedure codes"
 Description: "Procedure codes from the QSI system"
 * ^url = $PSSQSIProcedures 
 * ^content = #not-present
+* ^experimental = false
+* ^caseSensitive = true
+
 
 CodeSystem: PSSQSIConditions
 Title: "PSS-QSI condition codes"
 Description: "Condition codes from the QSI system"
 * ^url = $PSSQSIConditions
 * ^content = #not-present
+* ^experimental = false
+* ^caseSensitive = true
 

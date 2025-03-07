@@ -30,6 +30,11 @@ Usage: #example
 * subject = Reference(patient-r)
 * action[0]
   * selectionBehavior = #at-most-one 
+  * documentation[+]
+    * type = #justification
+    * label = "Appropriateness Scoring Guidelines"
+      * extension[http://hl7.org/fhir/StructureDefinition/language].valueCode = #en
+    * url = "https://environment.esriguide.org/suportingContent/12345)"
 
   * action[0]
     * textEquivalent = "CT Head with or without contrast"

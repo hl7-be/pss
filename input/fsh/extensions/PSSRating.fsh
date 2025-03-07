@@ -8,6 +8,8 @@ Title: "CodeSystem: Types of rating provided by the PSS system"
 Description:  "CodeSystem: Types of rating provided by the PSS system"
 * #overall "Overall score"
 * #radiationexposure "Radiation exposure score"
+* ^experimental = false
+* ^caseSensitive = true
 
 
 // Extension: PSSCodedRating
