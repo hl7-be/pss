@@ -1024,7 +1024,8 @@
       },
       "name" : "PSS anonymised Patient",
       "description" : "PSS anonymised Patient",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
     },
     {
       "extension" : [{
@@ -1046,19 +1047,6 @@
       }],
       "reference" : {
         "reference" : "StructureDefinition/PSSStructuredRating"
-      },
-      "name" : "PSS Rating Extension",
-      "description" : "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PSSCodedRating"
       },
       "name" : "PSS Rating Extension",
       "description" : "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.",
@@ -1140,7 +1128,8 @@
       },
       "name" : "PSS Response Communication Request",
       "description" : "All PSS responses contain a PSS Communication Request conformant to this profile.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
     },
     {
       "extension" : [{
@@ -1260,13 +1249,26 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/propose-post-trauma-ataxia"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Condition"
       }],
       "reference" : {
         "reference" : "Condition/proposed-diagnosis-post-trauma-ataxia"
       },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia",
+      "name" : "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia",
+      "description" : "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia",
       "exampleBoolean" : true,
       "groupingId" : "Radiology"
     },
@@ -1371,19 +1373,6 @@
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/propose-post-trauma-ataxia"
-      },
-      "name" : "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia",
-      "description" : "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia",
       "exampleBoolean" : true,
       "groupingId" : "Radiology"
     },

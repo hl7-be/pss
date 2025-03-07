@@ -835,6 +835,7 @@
       <name value="PSS anonymised Patient"/>
       <description value="PSS anonymised Patient"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -854,18 +855,6 @@
       </extension>
       <reference>
         <reference value="StructureDefinition/PSSStructuredRating"/>
-      </reference>
-      <name value="PSS Rating Extension"/>
-      <description value="A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Extensions"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PSSCodedRating"/>
       </reference>
       <name value="PSS Rating Extension"/>
       <description value="A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."/>
@@ -942,6 +931,7 @@
       <name value="PSS Response Communication Request"/>
       <description value="All PSS responses contain a PSS Communication Request conformant to this profile."/>
       <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1051,13 +1041,25 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/propose-post-trauma-ataxia"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
         <reference value="Condition/proposed-diagnosis-post-trauma-ataxia"/>
       </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia"/>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia"/>
       <exampleBoolean value="true"/>
       <groupingId value="Radiology"/>
     </resource>
@@ -1154,18 +1156,6 @@
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/propose-post-trauma-ataxia"/>
-      </reference>
-      <name value="Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia"/>
-      <description value="Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia"/>
       <exampleBoolean value="true"/>
       <groupingId value="Radiology"/>
     </resource>

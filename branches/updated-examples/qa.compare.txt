@@ -1,7 +1,7 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 0, warn = 90, info = 14
+err = 0, warn = 89, info = 14
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 5 / 0
@@ -48,7 +48,6 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-mr-head-without-contrast : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CodeValueSet : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PSSCodedRating : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSPatient : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSRelevantAge : 0 / 0 / 1
@@ -193,8 +192,6 @@ WARNING: ServiceRequest/ct-head-with-or-without-contrast: ServiceRequest.code.co
 == fsh-generated/resources/ServiceRequest-mr-head-without-contrast.json ==
 WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-CodeValueSet.json ==
-== fsh-generated/resources/StructureDefinition-PSSCodedRating.json ==
-WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSCodedRating'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json ==
 INFORMATION: StructureDefinition/PSSDataAcquisitionForm: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated/resources/StructureDefinition-PSSPatient.json ==
