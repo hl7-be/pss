@@ -125,15 +125,15 @@ Usage: #example
 
 
 Instance: propose-post-trauma-ataxia
-Title: "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia"
-Description: "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia"
+Title: "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia"
+Description: "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia"
 InstanceOf: Task
 Usage: #example
 * insert proposeDiagnosisTask(patient-r,post-trauma-ataxia)
 
 Instance: proposed-diagnosis-post-trauma-ataxia
-Title: "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia"
-Description: "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia"
+Title: "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia"
+Description: "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia"
 InstanceOf: Condition
 Usage: #example
 * insert proposeDiagnosisCondition(patient-r,post-trauma-ataxia,Post-trauma ataxia,3074222)

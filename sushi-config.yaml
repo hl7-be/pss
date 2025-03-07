@@ -124,12 +124,14 @@ groups:
     name: Resource Profiles
     description: These define constraints on FHIR resources for systems conforming to this implementation guide
     resources:
+      - StructureDefinition/PSSPatient
       - StructureDefinition/PSSRequestBundle
       - StructureDefinition/PSSResponseBundle
       - StructureDefinition/PSSDataAcquisitionForm
       - StructureDefinition/PSSResponseRequestGroup
       - StructureDefinition/PSSResponseMedicationRequest
       - StructureDefinition/PSSResponseServiceRequest
+      - StructureDefinition/PSSResponseCommunicationRequest
 
   Extensions: 
     name: Extensions
@@ -138,7 +140,7 @@ groups:
       - StructureDefinition/CodeValueSet
       - StructureDefinition/PSSStructuredRating
       - StructureDefinition/PSSRelevantAge
-      - StructureDefinition/PSSCodedRating
+#      - StructureDefinition/PSSCodedRating
 
 
   Antimicrobiology:
