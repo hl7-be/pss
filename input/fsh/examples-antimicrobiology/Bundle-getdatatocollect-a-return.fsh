@@ -37,7 +37,7 @@ Description: "Pathogenic agents associated with HPV"
 
 
 
-Instance: getdatatocollect-a-return
+Instance: getdatatocollect-a-response
 InstanceOf: PSSResponseBundle
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"
@@ -45,7 +45,7 @@ Usage: #example
 * identifier.value = "response1"
 * timestamp = "2025-02-20T00:00:00Z"
 * type = #collection
-* entry[0].resource = getdatatocollect-a-return-group
+* entry[0].resource = getdatatocollect-a-response-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4d"
 * entry[+].resource = collect-information-a
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755"
@@ -57,7 +57,7 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094adff"
 
 
-Instance: getdatatocollect-a-return-group
+Instance: getdatatocollect-a-response-group
 InstanceOf: RequestGroup
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1.1. RequestGroup"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1.1. RequestGroup"

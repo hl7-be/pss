@@ -153,8 +153,8 @@ groups:
       - AllergyIntolerance/allergy-to-sulfonamide
       - MedicationRequest/proposal-clindamycin
 
-      - Bundle/getdatatocollect-a-return
-      - RequestGroup/getdatatocollect-a-return-group
+      - Bundle/getdatatocollect-a-response
+      - RequestGroup/getdatatocollect-a-response-group
       - Task/collect-information-a
       - Questionnaire/q-collect-information-a
       - ValueSet/condition-valueset
@@ -163,8 +163,8 @@ groups:
       - Bundle/getrecommendations-a-data
       - QuestionnaireResponse/qresponse-v
 
-      - Bundle/getrecommendations-a-return
-      - RequestGroup/getrecommendations-a-return-group
+      - Bundle/getrecommendations-a-response
+      - RequestGroup/getrecommendations-a-response-group
       - CommunicationRequest/ab-advice
       - MedicationRequest/metronidazol
       - MedicationRequest/clindamycin
@@ -178,8 +178,8 @@ groups:
       - Patient/patient-r
       - Bundle/radiology-getdiagnoses
       - Observation/ataxia
-      - Bundle/radiology-getdiagnoses-return
-      - RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return
+      - Bundle/radiology-getdiagnoses-response
+      - RequestGroup/Inline-Instance-for-radiology-getdiagnoses-response
       - Task/propose-stroke
       - Condition/proposed-diagnosis-stroke
       - Task/propose-infection
@@ -195,8 +195,8 @@ groups:
       - Condition/proposed-diagnosis-head-trauma-v2
       - ServiceRequest/ct-head-iv-contrast-v2
 
-      - Bundle/getrecommendations-r-return
-      - RequestGroup/getrecommendations-r-return-1
+      - Bundle/getrecommendations-r-response
+      - RequestGroup/getrecommendations-r-response-1
       - ServiceRequest/ct-head-iv-contrast
       - ServiceRequest/ct-head-with-or-without-contrast
       - ServiceRequest/mr-head-without-contrast

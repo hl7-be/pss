@@ -1,4 +1,4 @@
-Instance: getrecommendations-a-return
+Instance: getrecommendations-a-response
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"
 InstanceOf: PSSResponseBundle
@@ -6,7 +6,7 @@ Usage: #example
 * identifier.value = "response1"
 * timestamp = "2025-02-20T00:00:00Z"
 * type = #collection
-* entry[0].resource = getrecommendations-a-return-group
+* entry[0].resource = getrecommendations-a-response-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
 * entry[+].resource = ab-advice
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
@@ -19,17 +19,28 @@ Usage: #example
 * entry[+].resource = miconazol
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"
 
-Instance: getrecommendations-a-return-group
+Instance: getrecommendations-a-response-group
 InstanceOf: PSSResponseRequestGroup
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
 Usage: #example
-* id = "getrecommendations-a-return-group"
+* id = "getrecommendations-a-response-group"
 * status = #active
 * intent = #proposal
 * subject = Reference(patient-a)
 * action[0]
   * selectionBehavior = #at-most-one
+  * documentation[+]
+    * type = #documentation
+    * label = "Meer details op de BCFI site"
+      * extension[http://hl7.org/fhir/StructureDefinition/language].valueCode = #nl-BE
+    * url = "https://bcfi.be/nl/chapters/12?frag=8001869)"
+  * documentation[+]
+    * type = #documentation
+    * label = "Plus de details sur le site CBIP"
+      * extension[http://hl7.org/fhir/StructureDefinition/language].valueCode = #fr-BE
+    * url = "https://cbip.be/fr/chapters/12?frag=8001869)"
+
   * action[0]
     * textEquivalent = "Generic Antibiotic advice"
     * resource = Reference(ab-advice)
@@ -70,7 +81,6 @@ Usage: #example
         * numerator.value = 2
         * denominator.value = 3
       * extension[ratingText].valueMarkdown = "Recommended"
-* note[0].text = "Supporting evidence: [BCFI](https://bcfi.be/nl)"
 
 
 Instance: ab-advice

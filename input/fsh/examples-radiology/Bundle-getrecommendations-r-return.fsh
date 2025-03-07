@@ -1,6 +1,6 @@
 //Alias: $PSSQSIProcedures = 
 
-Instance: getrecommendations-r-return
+Instance: getrecommendations-r-response
 InstanceOf: PSSResponseBundle
 Title: "Radiology - S3 Get Recommendations - Response - 1. Bundle"
 Description: "Radiology - S3 Get Recommendations - Response - 1. Bundle"
@@ -8,7 +8,7 @@ Usage: #example
 * identifier.value = "response1"
 * timestamp = "2025-02-20T00:00:00Z"
 * type = #collection
-* entry[0].resource = getrecommendations-r-return-1
+* entry[0].resource = getrecommendations-r-response-1
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
 * entry[+].resource = ct-head-with-or-without-contrast
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"
@@ -19,12 +19,12 @@ Usage: #example
 
 
 
-Instance: getrecommendations-r-return-1
+Instance: getrecommendations-r-response-1
 InstanceOf: PSSResponseRequestGroup
 Title: "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
 Description: "Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
 Usage: #example
-//* id = "getrecommendations-r-return-1"
+//* id = "getrecommendations-r-response-1"
 * status = #active
 * intent = #proposal
 * subject = Reference(patient-r)

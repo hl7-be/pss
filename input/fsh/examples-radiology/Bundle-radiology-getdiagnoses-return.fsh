@@ -1,4 +1,4 @@
-Instance: radiology-getdiagnoses-return
+Instance: radiology-getdiagnoses-response
 Title: "Radiology - S1 Get Diagnoses - Response - 1. Bundle"
 Description: "Radiology - S1 Get Diagnoses - Response - 1. Bundle"
 InstanceOf: PSSResponseBundle
@@ -6,7 +6,7 @@ Usage: #example
 * type = #collection
 * identifier.value = "someidentifier"
 * timestamp = "2025-02-20T00:00:00Z"
-* entry[0].resource = Inline-Instance-for-radiology-getdiagnoses-return
+* entry[0].resource = Inline-Instance-for-radiology-getdiagnoses-response
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad08"
 * entry[+].resource = propose-stroke
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad09"
@@ -29,12 +29,12 @@ Usage: #example
 * entry[+].resource = proposed-diagnosis-post-trauma-ataxia
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad13"
 
-Instance: Inline-Instance-for-radiology-getdiagnoses-return
+Instance: Inline-Instance-for-radiology-getdiagnoses-response
 Title: "Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options"
 Description: "Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options"
 InstanceOf: RequestGroup
 Usage: #example
-// * id = "getdiagnoses-return"
+// * id = "getdiagnoses-response"
 * status = #active
 * intent = #proposal
 * subject = Reference(patient-r)
