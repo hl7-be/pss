@@ -3,14 +3,15 @@
   "id" : "PSSRatingTypes",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PSSRatingTypes</b></p><a name=\"PSSRatingTypes\"> </a><a name=\"hcPSSRatingTypes\"> </a><a name=\"PSSRatingTypes-en-US\"> </a><p>This  code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">overall<a name=\"PSSRatingTypes-overall\"> </a></td><td>Overall score</td></tr><tr><td style=\"white-space:nowrap\">radiationexposure<a name=\"PSSRatingTypes-radiationexposure\"> </a></td><td>Radiation exposure score</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PSSRatingTypes</b></p><a name=\"PSSRatingTypes\"> </a><a name=\"hcPSSRatingTypes\"> </a><a name=\"PSSRatingTypes-en-US\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">overall<a name=\"PSSRatingTypes-overall\"> </a></td><td>Overall score</td></tr><tr><td style=\"white-space:nowrap\">radiationexposure<a name=\"PSSRatingTypes-radiationexposure\"> </a></td><td>Radiation exposure score</td></tr></table></div>"
   },
   "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
   "version" : "1.0.0",
   "name" : "PSSRatingTypes",
   "title" : "CodeSystem: Types of rating provided by the PSS system",
   "status" : "draft",
-  "date" : "2025-03-07T12:27:18+00:00",
+  "experimental" : false,
+  "date" : "2025-03-07T13:27:46+00:00",
   "publisher" : "HL7 Belgium",
   "contact" : [{
     "name" : "HL7 Belgium",
@@ -39,6 +40,7 @@
       "display" : "Belgium"
     }]
   }],
+  "caseSensitive" : true,
   "content" : "complete",
   "count" : 2,
   "concept" : [{
