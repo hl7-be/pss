@@ -1426,7 +1426,8 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Profiles" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1457,25 +1458,6 @@
        fhir:reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating> ;
          fhir:reference [ fhir:v "StructureDefinition/PSSStructuredRating" ]
-       ] ;
-       fhir:name [ fhir:v "PSS Rating Extension" ] ;
-       fhir:description [ fhir:v "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSCodedRating> ;
-         fhir:reference [ fhir:v "StructureDefinition/PSSCodedRating" ]
        ] ;
        fhir:name [ fhir:v "PSS Rating Extension" ] ;
        fhir:description [ fhir:v "A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing." ] ;
@@ -1596,7 +1578,8 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Profiles" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1773,6 +1756,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Task"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-post-trauma-ataxia> ;
+         fhir:reference [ fhir:v "Task/propose-post-trauma-ataxia" ]
+       ] ;
+       fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia" ] ;
+       fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ] ;
+       fhir:groupingId [ fhir:v "Radiology" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Condition"
          ]
        ] ) ;
@@ -1780,8 +1782,8 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-post-trauma-ataxia> ;
          fhir:reference [ fhir:v "Condition/proposed-diagnosis-post-trauma-ataxia" ]
        ] ;
-       fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia" ] ;
-       fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.10. Diagnosis - Post-trauma ataxia" ] ;
+       fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia" ] ;
+       fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v true
@@ -1934,25 +1936,6 @@
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ] ;
-       fhir:groupingId [ fhir:v "Radiology" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Task"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-post-trauma-ataxia> ;
-         fhir:reference [ fhir:v "Task/propose-post-trauma-ataxia" ]
-       ] ;
-       fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia" ] ;
-       fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.9. Task to propose diagnosis - Post-trauma ataxia" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v true
