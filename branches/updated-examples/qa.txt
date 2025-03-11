@@ -1,14 +1,14 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 0, warn = 83, info = 11
-IG Publisher Version: 1.8.16
-Generated Fri Mar 07 13:29:38 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
+err = 19, warn = 88, info = 9
+IG Publisher Version: 1.8.20
+Generated Tue Mar 11 13:07:51 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 3 / 6
- /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 3 / 8
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 4 / 7
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 5 / 3 / 7
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 2 / 4 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 5 / 14
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 4 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-response : 0 / 6 / 9
@@ -37,8 +37,8 @@ Generated Fri Mar 07 13:29:38 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a : 5 / 0 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-response : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-response-group : 0 / 0 / 1
@@ -51,9 +51,9 @@ Generated Fri Mar 07 13:29:38 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSPatient : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSRelevantAge : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PSSRequest : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSRequest : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSRequestBundle : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponse : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponse : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseBundle : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseMedicationRequest : 0 / 2 / 1
@@ -66,11 +66,12 @@ Generated Fri Mar 07 13:29:38 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/Task-propose-post-trauma-ataxia : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-propose-slow-progression-ataxia : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-propose-stroke : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes : 2 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes : 2 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PSSRatingTypesVS : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-PathogenicAgentHPV : 0 / 4 / 3
- /github/workspace/fsh-generated/resources/ValueSet-PathogenicAgents : 0 / 4 / 3
+ /github/workspace/fsh-generated/resources/ValueSet-PathogenicAgentHPV : 0 / 4 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-PathogenicAgents : 0 / 4 / 2
  /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 0 / 2 / 2
- /github/workspace/fsh-generated/resources/ValueSet-condition-valueset : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -87,11 +88,18 @@ WARNING: Bundle/getdatatocollect-a-data: Bundle.entry[3].resource/*MedicationReq
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-response-group*/.subject: Entry 3 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-response-group*/.action[0].action[0].resource: Entry 1 matches the reference Task/collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755 does not match the full target URL urn:uuid:collect-information-a by Bundle resolution rules
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[1].resource/*Task/collect-information-a*/.for: Entry 3 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[4].item[0].code[0].code: Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[4].item[1].code[0].code: Unknown code '234' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[4].item[2].code[0].code: Unknown code '345' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[5].item[0].extension[0]: The extension https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet could not be found so is not allowed here
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[5].item[1].extension[0]: The extension https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet could not be found so is not allowed here
 == fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[1].resource/*Condition/vulvovaginitis*/.subject: Entry 0 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[2].resource/*AllergyIntolerance/allergy-to-sulfonamide*/.patient: Entry 0 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[3].resource/*MedicationRequest/proposal-clindamycin*/.subject: Entry 0 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
+ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.item[0]: Items of type group should not have answers
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.subject: Entry 0 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
+ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource.item[0]: Items of type group should not have answers
 == fsh-generated/resources/Bundle-getrecommendations-a-response.json ==
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[0].resource: Entry 1 matches the reference CommunicationRequest/ab-advice by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ab-advice by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
@@ -169,8 +177,14 @@ INFORMATION: Resource: The resource PlanDefinition/GetDiagnoses could usefully h
 == fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
 INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-q-collect-information-a.json ==
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[4].item[0].code[0].code: Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[4].item[1].code[0].code: Unknown code '234' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[4].item[2].code[0].code: Unknown code '345' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[5].item[0].extension[0]: The extension https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet could not be found so is not allowed here
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[5].item[1].extension[0]: The extension https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet could not be found so is not allowed here
 INFORMATION: Resource: The resource Questionnaire/q-collect-information-a could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/QuestionnaireResponse-qresponse-v.json ==
+ERROR: QuestionnaireResponse/qresponse-v: QuestionnaireResponse.item[0]: Items of type group should not have answers
 == fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-response.json ==
 == fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group.json ==
 == fsh-generated/resources/RequestGroup-getrecommendations-a-response-group.json ==
@@ -190,8 +204,10 @@ WARNING: StructureDefinition/PSSPatient: StructureDefinition.snapshot.element[23
 WARNING: StructureDefinition/PSSPatient: StructureDefinition.differential.element[4].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0
 == fsh-generated/resources/StructureDefinition-PSSRelevantAge.json ==
 == fsh-generated/resources/StructureDefinition-PSSRequest.json ==
+ERROR: StructureDefinition/PSSRequest: StructureDefinition.snapshot.element[7]: The element slicing is prohibited on the element PSSRequest.supportingInfo.extension in the context of a specialization
 == fsh-generated/resources/StructureDefinition-PSSRequestBundle.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponse.json ==
+ERROR: StructureDefinition/PSSResponse: StructureDefinition.snapshot.element[7]: The element slicing is prohibited on the element PSSResponse.treatmentOptions.extension in the context of a specialization
 == fsh-generated/resources/StructureDefinition-PSSResponseBundle.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest.json ==
 WARNING: StructureDefinition/PSSResponseCommunicationRequest: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '5.2.0', found versions: 4.0.1, 5.2.0
@@ -211,25 +227,33 @@ WARNING: StructureDefinition/PSSResponseServiceRequest: StructureDefinition.snap
 == fsh-generated/resources/Task-propose-post-trauma-ataxia.json ==
 == fsh-generated/resources/Task-propose-slow-progression-ataxia.json ==
 == fsh-generated/resources/Task-propose-stroke.json ==
+== fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json ==
+ERROR: ValueSet.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/CompromisedImmuneSystemCodes'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json - the canonical URL (https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/CompromisedImmuneSystemCodes)
+WARNING: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0]: Unknown System 'http://hl7.org/fhir/sid/icpc2' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc2' could not be found, so the code cannot be validated)
+WARNING: ValueSet/CompromisedImmuneSystemCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'CompromisedImmuneSystemCodes'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc2
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes: URL Mismatch https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes vs https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/CompromisedImmuneSystemCodes
+== fsh-generated/resources/ValueSet-OncologyPatientCodes.json ==
+ERROR: ValueSet.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/OncologyPatientCodes'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes.json - the canonical URL (https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/OncologyPatientCodes)
+WARNING: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0]: Unknown System 'http://hl7.org/fhir/sid/icpc2' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc2' could not be found, so the code cannot be validated)
+WARNING: ValueSet/OncologyPatientCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'OncologyPatientCodes'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc2
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes: URL Mismatch https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes vs https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/OncologyPatientCodes
 == fsh-generated/resources/ValueSet-PSSRatingTypesVS.json ==
 WARNING: ValueSet/PSSRatingTypesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-PathogenicAgentHPV.json ==
-WARNING: ValueSet/PathogenicAgentHPV: ValueSet.compose.include[0].concept[0]: The code '123' is not valid in the system http://snomed.info/sct (Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
-INFORMATION: ValueSet/PathogenicAgentHPV: ValueSet.compose.include[0].concept[0]: Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: ValueSet/PathogenicAgentHPV: ValueSet.compose.include[0].concept[1]: The code '234' is not valid in the system http://snomed.info/sct (Unknown code '234' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
-WARNING: ValueSet/PathogenicAgentHPV: ValueSet.compose.include[0].concept[2]: The code '345' is not valid in the system http://snomed.info/sct (Unknown code '345' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
-INFORMATION: ValueSet/PathogenicAgentHPV: ValueSet.compose.include[0]: This include has some concepts with displays and some without - check that this is what is intended
+WARNING: ValueSet/PathogenicAgentHPV: ValueSet.compose.include[0].concept[0]: The code 'HPV123' is not valid in the system http://snomed.info/sct (Unknown code 'HPV123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
+INFORMATION: ValueSet/PathogenicAgentHPV: ValueSet.compose.include[0].concept[0]: Unknown code 'HPV123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+WARNING: ValueSet/PathogenicAgentHPV: ValueSet.compose.include[0].concept[1]: The code 'HPV234' is not valid in the system http://snomed.info/sct (Unknown code 'HPV234' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
+WARNING: ValueSet/PathogenicAgentHPV: ValueSet.compose.include[0].concept[2]: The code 'HPV345' is not valid in the system http://snomed.info/sct (Unknown code 'HPV345' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
 WARNING: ValueSet/PathogenicAgentHPV: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-PathogenicAgents.json ==
 WARNING: ValueSet/PathogenicAgents: ValueSet.compose.include[0].concept[0]: The code '123' is not valid in the system http://snomed.info/sct (Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
 INFORMATION: ValueSet/PathogenicAgents: ValueSet.compose.include[0].concept[0]: Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 WARNING: ValueSet/PathogenicAgents: ValueSet.compose.include[0].concept[1]: The code '234' is not valid in the system http://snomed.info/sct (Unknown code '234' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
 WARNING: ValueSet/PathogenicAgents: ValueSet.compose.include[0].concept[2]: The code '345' is not valid in the system http://snomed.info/sct (Unknown code '345' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201')
-INFORMATION: ValueSet/PathogenicAgents: ValueSet.compose.include[0]: This include has some concepts with displays and some without - check that this is what is intended
 WARNING: ValueSet/PathogenicAgents: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-PregnancyCodes.json ==
 WARNING: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: The code 'Z33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10 (Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded')
 INFORMATION: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded'
 WARNING: ValueSet/PregnancyCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-condition-valueset.json ==
-WARNING: Resource: The resource ValueSet/condition-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

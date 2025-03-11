@@ -162,7 +162,9 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/translation": [
+      "Bundle.entry.resource.item.item.text",
       "Bundle.entry.resource.item.text",
+      "Questionnaire.item.item.text",
       "Questionnaire.item.text"
     ],
     "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical": [
@@ -196,9 +198,15 @@
       "CommunicationRequest",
       "MedicationRequest"
     ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet": [
+      "Bundle.entry.resource.item.item",
+      "Questionnaire.item.item"
+    ],
     "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet": [
       "Bundle.entry.resource.item",
+      "Bundle.entry.resource.item.item",
       "Questionnaire.item",
+      "Questionnaire.item.item",
       "ValueSet.compose.include.concept"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge": [
