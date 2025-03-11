@@ -12,3 +12,4 @@ Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activit
 Alias: $atc = http://www.whocc.no/atc
 Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 Alias: $ucum = http://unitsofmeasure.org 
+Alias: $icpc2 = http://hl7.org/fhir/sid/icpc2
