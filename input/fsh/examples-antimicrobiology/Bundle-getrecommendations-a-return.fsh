@@ -19,7 +19,6 @@ Usage: #example
 * entry[+].resource = miconazol
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"
 
-
 Instance: getrecommendations-a-response-group
 InstanceOf: PSSResponseRequestGroup
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
@@ -41,6 +40,7 @@ Usage: #example
     * label = "Plus de details sur le site CBIP"
       * extension[http://hl7.org/fhir/StructureDefinition/language].valueCode = #fr-BE
     * url = "https://cbip.be/fr/chapters/12?frag=8001869)"
+
 
   * action[0]
     * textEquivalent = "Generic Antibiotic advice"

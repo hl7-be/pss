@@ -9,7 +9,6 @@ Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 * $sct#72892002
 
 
-
 ValueSet: PathogenicAgents
 Title: "Pathogenic Agents list"
 Description: "Pathogenic agent codes"
