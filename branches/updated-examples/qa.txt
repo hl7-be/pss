@@ -1,13 +1,13 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 19, warn = 88, info = 9
+err = 21, warn = 88, info = 9
 IG Publisher Version: 1.8.20
-Generated Tue Mar 11 13:07:51 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
+Generated Tue Mar 11 13:11:02 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 3 / 6
- /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 5 / 3 / 7
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 6 / 3 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 2 / 4 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 5 / 14
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 4 / 7
@@ -37,7 +37,7 @@ Generated Tue Mar 11 13:07:51 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a : 5 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a : 6 / 0 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-response : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group : 0 / 0 / 1
@@ -88,9 +88,10 @@ WARNING: Bundle/getdatatocollect-a-data: Bundle.entry[3].resource/*MedicationReq
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-response-group*/.subject: Entry 3 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-response-group*/.action[0].action[0].resource: Entry 1 matches the reference Task/collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755 does not match the full target URL urn:uuid:collect-information-a by Bundle resolution rules
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[1].resource/*Task/collect-information-a*/.for: Entry 3 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
-ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[4].item[0].code[0].code: Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[4].item[1].code[0].code: Unknown code '234' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[4].item[2].code[0].code: Unknown code '345' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[3].item[0].code[0].code: Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[3].item[1].code[0].code: Unknown code '234' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[3].item[2].code[0].code: Unknown code '345' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[4]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
 ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[5].item[0].extension[0]: The extension https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet could not be found so is not allowed here
 ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[5].item[1].extension[0]: The extension https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet could not be found so is not allowed here
 == fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
@@ -177,9 +178,10 @@ INFORMATION: Resource: The resource PlanDefinition/GetDiagnoses could usefully h
 == fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
 INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-q-collect-information-a.json ==
-ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[4].item[0].code[0].code: Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[4].item[1].code[0].code: Unknown code '234' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[4].item[2].code[0].code: Unknown code '345' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[3].item[0].code[0].code: Unknown code '123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[3].item[1].code[0].code: Unknown code '234' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[3].item[2].code[0].code: Unknown code '345' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[4]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire)
 ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[5].item[0].extension[0]: The extension https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet could not be found so is not allowed here
 ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[5].item[1].extension[0]: The extension https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet could not be found so is not allowed here
 INFORMATION: Resource: The resource Questionnaire/q-collect-information-a could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
