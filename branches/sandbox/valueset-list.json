@@ -1,0 +1,68 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/CompromisedImmuneSystemCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CompromisedImmuneSystemCodes",
+      "title" : "CompromisedImmuneSystem Codes",
+      "description" : "CompromisedImmuneSystem Codes",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icpc2",
+        "http://hl7.org/fhir/sid/icd-10",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/OncologyPatientCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "OncologyPatientCodes",
+      "title" : "OncologyPatient Codes",
+      "description" : "OncologyPatient Codes",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icpc2",
+        "http://hl7.org/fhir/sid/icd-10",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "description" : "ValueSet - Types of rating provided by the PSS system",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PathogenicAgentHPV",
+      "title" : "Pathogenic Agents for HPV",
+      "description" : "Pathogenic agents associated with HPV",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgents",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PathogenicAgents",
+      "title" : "Pathogenic Agents list",
+      "description" : "Pathogenic agent codes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    }
+  ]
+}
