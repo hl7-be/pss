@@ -19,6 +19,7 @@ Usage: #example
 * entry[+].resource = miconazol
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"
 
+
 Instance: getrecommendations-a-response-group
 InstanceOf: PSSResponseRequestGroup
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"
