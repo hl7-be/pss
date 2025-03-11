@@ -166,16 +166,6 @@ Usage: #example
 
 
 
-
-
-
-
-
-
-
-
-
-
 * item[+]
   * linkId = "pregnancy"
   * text = "Is the patient pregnant?"
@@ -213,15 +203,6 @@ Usage: #example
 
 
 
-*  item[+]
-  * linkId = "pathogenBL"
-  * text = "Pathogen - please select one from the options"
-  * type = #group
-
-  * enableWhen
-    * question = "known_pathogen"
-    * operator = #=
-    * answerBoolean = true
 
   *  item[+]
     * linkId = "pathogenBLHPV"
@@ -246,6 +227,17 @@ Usage: #example
 
 
 
+*  item[+]
+  * linkId = "pathogenBL"
+  * text = "Pathogen - please select one from the options"
+  * type = #group
+
+  * enableWhen
+    * question = "known_pathogen"
+    * operator = #=
+    * answerBoolean = true
+
+    
 
 * item[+]
   * linkId = "sp_riskPatient_ast"
@@ -331,27 +323,6 @@ Description: "Condition codes from the QSI system"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ValueSet: CompromisedImmuneSystemCodes
 Id: CompromisedImmuneSystemCodes
 Title: "CompromisedImmuneSystem Codes"
@@ -381,3 +352,4 @@ Description: "OncologyPatient Codes"
 * SNOMED_CT#363505006
 * SNOMED_CT#363429002
 * SNOMED_CT#363353009
+
