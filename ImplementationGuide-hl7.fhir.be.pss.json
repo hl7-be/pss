@@ -877,19 +877,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/condition-valueset"
-      },
-      "name" : "Antimicrobiology - Vaginitis-related conditions",
-      "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
-      "exampleBoolean" : true,
-      "groupingId" : "Antimicrobiology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -910,6 +897,18 @@
       },
       "name" : "CodeSystem: Types of rating provided by the PSS system",
       "description" : "CodeSystem: Types of rating provided by the PSS system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/CompromisedImmuneSystemCodes"
+      },
+      "name" : "CompromisedImmuneSystem Codes",
+      "description" : "CompromisedImmuneSystem Codes",
       "exampleBoolean" : false
     },
     {
@@ -950,6 +949,18 @@
       "description" : "Get recommendations for potential treatments based on patient information",
       "exampleBoolean" : true,
       "groupingId" : "PlanDefinitions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/OncologyPatientCodes"
+      },
+      "name" : "OncologyPatient Codes",
+      "description" : "OncologyPatient Codes",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

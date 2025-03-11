@@ -1206,25 +1206,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/condition-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/condition-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "Antimicrobiology - Vaginitis-related conditions" ] ;
-       fhir:description [ fhir:v "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ] ;
-       fhir:groupingId [ fhir:v "Antimicrobiology" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1253,6 +1234,24 @@
        ] ;
        fhir:name [ fhir:v "CodeSystem: Types of rating provided by the PSS system" ] ;
        fhir:description [ fhir:v "CodeSystem: Types of rating provided by the PSS system" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes> ;
+         fhir:reference [ fhir:v "ValueSet/CompromisedImmuneSystemCodes" ]
+       ] ;
+       fhir:name [ fhir:v "CompromisedImmuneSystem Codes" ] ;
+       fhir:description [ fhir:v "CompromisedImmuneSystem Codes" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1314,6 +1313,24 @@
          fhir:v true
        ] ;
        fhir:groupingId [ fhir:v "PlanDefinitions" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes> ;
+         fhir:reference [ fhir:v "ValueSet/OncologyPatientCodes" ]
+       ] ;
+       fhir:name [ fhir:v "OncologyPatient Codes" ] ;
+       fhir:description [ fhir:v "OncologyPatient Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="PathogenicAgentHPV"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PathogenicAgentHPV</b></p><a name="PathogenicAgentHPV"> </a><a name="hcPathogenicAgentHPV"> </a><a name="PathogenicAgentHPV-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/123">123</a></td><td>HPV</td></tr><tr><td><a href="http://snomed.info/id/234">234</a></td><td/></tr><tr><td><a href="http://snomed.info/id/345">345</a></td><td/></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PathogenicAgentHPV</b></p><a name="PathogenicAgentHPV"> </a><a name="hcPathogenicAgentHPV"> </a><a name="PathogenicAgentHPV-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/HPV123">HPV123</a></td><td>HPV suspected infection</td></tr><tr><td><a href="http://snomed.info/id/HPV234">HPV234</a></td><td>Confirmed HPV infection</td></tr><tr><td><a href="http://snomed.info/id/HPV345">HPV345</a></td><td>Lab results HPV +</td></tr></table></li></ul></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV"/>
   <version value="1.0.0"/>
   <name value="PathogenicAgentHPV"/>
   <title value="Pathogenic Agents for HPV"/>
   <status value="active"/>
-  <date value="2025-03-07T13:27:46+00:00"/>
+  <date value="2025-03-11T13:06:04+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <name value="HL7 Belgium"/>
@@ -46,14 +46,16 @@
         <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet">
           <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV"/>
         </extension>
-        <code value="123"/>
-        <display value="HPV"/>
+        <code value="HPV123"/>
+        <display value="HPV suspected infection"/>
       </concept>
       <concept>
-        <code value="234"/>
+        <code value="HPV234"/>
+        <display value="Confirmed HPV infection"/>
       </concept>
       <concept>
-        <code value="345"/>
+        <code value="HPV345"/>
+        <display value="Lab results HPV +"/>
       </concept>
     </include>
   </compose>

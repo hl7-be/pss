@@ -698,18 +698,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/condition-valueset"/>
-      </reference>
-      <name value="Antimicrobiology - Vaginitis-related conditions"/>
-      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Antimicrobiology"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -729,6 +717,17 @@
       </reference>
       <name value="CodeSystem: Types of rating provided by the PSS system"/>
       <description value="CodeSystem: Types of rating provided by the PSS system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CompromisedImmuneSystemCodes"/>
+      </reference>
+      <name value="CompromisedImmuneSystem Codes"/>
+      <description value="CompromisedImmuneSystem Codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -766,6 +765,17 @@
       <description value="Get recommendations for potential treatments based on patient information"/>
       <exampleBoolean value="true"/>
       <groupingId value="PlanDefinitions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OncologyPatientCodes"/>
+      </reference>
+      <name value="OncologyPatient Codes"/>
+      <description value="OncologyPatient Codes"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

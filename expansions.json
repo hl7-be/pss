@@ -1,47 +1,11 @@
 {
   "resourceType" : "Bundle",
-  "id" : "52a247aa-ad81-4e04-86a3-4041ef0e610f",
+  "id" : "f562aebe-4d8f-4670-8c11-57b0c33e34d4",
   "meta" : {
-    "lastUpdated" : "2025-03-07T13:28:33.288+00:00"
+    "lastUpdated" : "2025-03-11T13:06:54.193+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "urn:uuid:293ff821-ef38-43d0-9c74-58fef8124621",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "condition-valueset",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet condition-valueset</b></p><a name=\"x-condition-valueset\"> </a><a name=\"x-hccondition-valueset\"> </a><a name=\"x-condition-valueset-en-US\"> </a><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr></table></div>"
-      },
-      "url" : "urn:uuid:293ff821-ef38-43d0-9c74-58fef8124621",
-      "version" : "1.0.0",
-      "name" : "Conditions",
-      "title" : "Antimicrobiology - Vaginitis-related conditions",
-      "status" : "active",
-      "experimental" : false,
-      "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
-      "expansion" : {
-        "timestamp" : "2015-06-22T13:56:07Z",
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "419760006",
-          "display" : "Bacterial vaginosis"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "276877003",
-          "display" : "Trichomonal vaginitis"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "72934000",
-          "display" : "Candidiasis of vagina"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -54,7 +18,7 @@
       "name" : "PSSRatingTypesVS",
       "title" : "Types of rating provided by the PSS system",
       "status" : "draft",
-      "date" : "2025-03-07T13:27:46+00:00",
+      "date" : "2025-03-11T13:06:04+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -63,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9796abd9-e75c-46c2-8385-132f2c259ba7",
-        "timestamp" : "2025-03-07T13:29:09+00:00",
+        "identifier" : "urn:uuid:1de242de-0de4-4281-a637-102b90596cd1",
+        "timestamp" : "2025-03-11T13:07:24+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -111,7 +75,7 @@
       "name" : "PathogenicAgentHPV",
       "title" : "Pathogenic Agents for HPV",
       "status" : "active",
-      "date" : "2025-03-07T13:27:46+00:00",
+      "date" : "2025-03-11T13:06:04+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -120,8 +84,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3fc2bfa4-e033-4dc1-b713-22e88374db10",
-        "timestamp" : "2025-03-07T13:29:09+00:00",
+        "identifier" : "urn:uuid:5fa6a194-5df3-45db-bbf9-81aaef6597e2",
+        "timestamp" : "2025-03-11T13:07:24+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -168,7 +132,7 @@
       "name" : "PathogenicAgents",
       "title" : "Pathogenic Agents list",
       "status" : "active",
-      "date" : "2025-03-07T13:27:46+00:00",
+      "date" : "2025-03-11T13:06:04+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -177,8 +141,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:612188eb-1a5e-4ae6-8c9e-a3fe03c9e2c0",
-        "timestamp" : "2025-03-07T13:29:10+00:00",
+        "identifier" : "urn:uuid:7f5f6f51-bdc9-45c9-ab2f-ae1021e980d2",
+        "timestamp" : "2025-03-11T13:07:24+00:00",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -225,7 +189,7 @@
       "name" : "PregnancyCodes",
       "title" : "Pregnancy Codes",
       "status" : "active",
-      "date" : "2025-03-07T13:27:46+00:00",
+      "date" : "2025-03-11T13:06:04+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -234,8 +198,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f3af0f0d-229a-4e44-8aad-9907f2e6b9ee",
-        "timestamp" : "2025-03-07T13:29:10+00:00",
+        "identifier" : "urn:uuid:1f44e4ab-6b7f-4548-863c-a985c987a237",
+        "timestamp" : "2025-03-11T13:07:24+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -292,70 +256,6 @@
           "system" : "http://snomed.info/sct",
           "code" : "72892002",
           "display" : "Normal pregnancy"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/condition-valueset",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "condition-valueset",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet condition-valueset</b></p><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr></table></div>"
-      },
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/condition-valueset",
-      "version" : "1.0.0",
-      "name" : "Conditions",
-      "title" : "Antimicrobiology - Vaginitis-related conditions",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2025-03-07T13:27:46+00:00",
-      "publisher" : "HL7 Belgium",
-      "contact" : [{
-        "name" : "HL7 Belgium",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.hl7belgium.org"
-        },
-        {
-          "system" : "email",
-          "value" : "hl7belgium@hl7belgium.org"
-        }]
-      },
-      {
-        "name" : "Message Structure eHealth",
-        "telecom" : [{
-          "system" : "email",
-          "value" : "message-structure@ehealth.fgov.be",
-          "use" : "work"
-        }]
-      }],
-      "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE",
-          "display" : "Belgium"
-        }]
-      }],
-      "expansion" : {
-        "timestamp" : "2015-06-22T13:56:07Z",
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "419760006",
-          "display" : "Bacterial vaginosis"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "276877003",
-          "display" : "Trichomonal vaginitis"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "72934000",
-          "display" : "Candidiasis of vagina"
         }]
       }
     }
