@@ -18,7 +18,4 @@ Description: "Radiology - S1 Get Diagnoses - Request - 1.1. Observed data"
 InstanceOf: Observation
 Usage: #example
 * status = #final
-* code = $sct#20262006 "Ataxia"
-* subject = Reference(patient-r)
-
-
+// this not the latest example that is avialable on the updated-examples branch, can you upload the latest version?

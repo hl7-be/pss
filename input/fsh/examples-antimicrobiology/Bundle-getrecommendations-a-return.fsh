@@ -43,45 +43,83 @@ Usage: #example
 
 
   * action[0]
-    * textEquivalent = "Generic Antibiotic advice"
+    * textEquivalent = "Algemeen advies"
+    * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Conseil général"
     * resource = Reference(ab-advice)
+    * extension[structured-rating][+]
+      * extension[ratingType].valueCode = #overall
+      * extension[ratingValue].valueRatio
+        * numerator.value = 3
+        * denominator.value = 3
+      * extension[ratingText].valueMarkdown = "Over het algemeen aangewezen"
+      * valueMarkdown
+        * insert AddTranslation(fr-BE,Généralement approprié)
+
+
   * action[+]
     * textEquivalent = "Metronidazol Oraal"
+    * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Métronidazole orale"
     * resource = Reference(metronidazol)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
-        * numerator.value = 2
+        * numerator.value = 3
         * denominator.value = 3
-      * extension[ratingText].valueMarkdown = "Recommended"
+      * extension[ratingText].valueMarkdown = "Over het algemeen aangewezen"
+      * valueMarkdown
+        * insert AddTranslation(fr-BE,Généralement approprié)
+
 
   * action[+]
     * textEquivalent = "Clindamycin local"
+    * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Clindamycine localement"
     * resource = Reference(clindamycin)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
-        * numerator.value = 2
+        * numerator.value = 3
         * denominator.value = 3
-      * extension[ratingText].valueMarkdown = "Recommended"
+      * extension[ratingText].valueMarkdown = "Over het algemeen aangewezen"
+      * valueMarkdown
+        * insert AddTranslation(fr-BE,Généralement approprié)
+
+
   * action[+]
     * textEquivalent = "Fluconazol Oraal"
+    * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Fluconazole orale"
     * resource = Reference(fluconazol)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
-        * numerator.value = 2
+        * numerator.value = 1
         * denominator.value = 3
-      * extension[ratingText].valueMarkdown = "Recommended"
+      * extension[ratingText].valueMarkdown = "Niet aangewezen"
+      * valueMarkdown
+        * insert AddTranslation(fr-BE,Pas approprié)
+
+
   * action[+]
     * textEquivalent = "Miconazol lokaal"
+    * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Miconazole localement"
     * resource = Reference(miconazol)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
-        * numerator.value = 2
+        * numerator.value = 1
         * denominator.value = 3
-      * extension[ratingText].valueMarkdown = "Recommended"
+      * extension[ratingText].valueMarkdown = "Niet aangewezen"
+      * valueMarkdown
+        * insert AddTranslation(fr-BE,Pas approprié)
 
 
 Instance: ab-advice
@@ -101,10 +139,9 @@ Usage: #example
 * payload[+].contentString
   * extension[+]
     * url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
-    * valueMarkdown = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)"
+    * valueMarkdown = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte. Metronidazol en clindamycine worden in de SKP afgeraden in het eerste trimester. De klinische gegevens omtrent gebruik tijdens het eerste trimester van de zwangerschap zijn nochtans geruststellend en de meeste bronnen geven aan dat het kan gebruikt worden."
     * valueMarkdown
-      * insert AddTranslation(fr-BE,Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010\))
-
+      * insert AddTranslation(fr-BE,Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée. Le RCP déconseille l’utilisation du métronidazole et de la clindamycine pendant le premier trimestre de la grossesse. Les données cliniques concernant leur utilisation pendant le premier trimestre de grossesse sont pourtant rassurantes et la plupart des sources acceptent leur utilisation en période de grossesse.)
 * subject = Reference(patient-a)
 
 
@@ -116,13 +153,19 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.coding[+] = $atc#J01XD01
-* medicationCodeableConcept.text = "metronidazol"
 * subject = Reference(patient-a)
 
 // this is WIP - note the codes and names - Metronidazole XD01, Nitrofurantoin XE01
-* dosageInstruction.text = "Timing = 3 times a day for 7 days. Dosage depends on patient age: If age < 2 years, 375 mg; If age is between 2 and 10 years, 750 mg, if age > 10 years, 1500 mg"
+* dosageInstruction.text = "1000 mg per dag in 2 giften gedurende 7 dagen"
+* text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "1000 mg par jour en 2 prises pendant 7 jours"
+* dosageInstruction.doseAndRate[0]
+  * doseQuantity.value = 1000
+  * doseQuantity.unit = "mg"
+  * doseQuantity.system = "http://unitsofmeasure.org"
 * dosageInstruction.timing.repeat[0]
-  * frequency = 3
+  * frequency = 2
   * period = 1
   * periodUnit = #d 
   * boundsDuration = 7 'd'
@@ -144,9 +187,13 @@ Usage: #example
 
 * status = #active
 * intent = #proposal
-* medicationCodeableConcept.text = "clindamycin, single 3g dose"
+* medicationCodeableConcept.coding[+] = $atc#G01AA10
 * subject = Reference(patient-a)
 
+* dosageInstruction.text = "ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen"
+* text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "ovule : 100 mg par jour en 1 prise pendant 3 jours OU crème vaginale : 2 % 5 g par jour en 1 prise pendant 7 jours"
 
 Instance: fluconazol
 InstanceOf: MedicationRequest
@@ -166,16 +213,7 @@ Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 -
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
-
-// * extension[structured-rating][+]
-//   * extension[ratingType].valueCode = #overall
-//   * extension[ratingValue].valueRatio
-//     * numerator.value = 3
-//     * denominator.value = 3
-//   * extension[ratingText].valueMarkdown = "Not recommended"
-
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Miconazol"
 * subject = Reference(patient-a)
-

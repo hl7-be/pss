@@ -39,3 +39,4 @@ Usage: #example
   * linkId = "pregnancy"
   * answer.valueBoolean = true
 // project must decide what do do with absent answers, or make them mandatory somehow (may be difficult to make multiple options mandatory)
+// this is still the old example can you maybe upload the new example that we created yesterday
