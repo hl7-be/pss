@@ -54,7 +54,6 @@ Usage: #example
         * numerator.value = 3
         * denominator.value = 3
       * extension[ratingText].valueMarkdown = "Over het algemeen aangewezen"
-      * valueMarkdown
         * insert AddTranslation(fr-BE,Généralement approprié)
 
 
@@ -70,7 +69,6 @@ Usage: #example
         * numerator.value = 3
         * denominator.value = 3
       * extension[ratingText].valueMarkdown = "Over het algemeen aangewezen"
-      * valueMarkdown
         * insert AddTranslation(fr-BE,Généralement approprié)
 
 
@@ -86,7 +84,6 @@ Usage: #example
         * numerator.value = 3
         * denominator.value = 3
       * extension[ratingText].valueMarkdown = "Over het algemeen aangewezen"
-      * valueMarkdown
         * insert AddTranslation(fr-BE,Généralement approprié)
 
 
@@ -102,7 +99,6 @@ Usage: #example
         * numerator.value = 1
         * denominator.value = 3
       * extension[ratingText].valueMarkdown = "Niet aangewezen"
-      * valueMarkdown
         * insert AddTranslation(fr-BE,Pas approprié)
 
 
@@ -118,7 +114,6 @@ Usage: #example
         * numerator.value = 1
         * denominator.value = 3
       * extension[ratingText].valueMarkdown = "Niet aangewezen"
-      * valueMarkdown
         * insert AddTranslation(fr-BE,Pas approprié)
 
 
@@ -141,7 +136,7 @@ Usage: #example
     * url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
     * valueMarkdown = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte. Metronidazol en clindamycine worden in de SKP afgeraden in het eerste trimester. De klinische gegevens omtrent gebruik tijdens het eerste trimester van de zwangerschap zijn nochtans geruststellend en de meeste bronnen geven aan dat het kan gebruikt worden."
     * valueMarkdown
-      * insert AddTranslation(fr-BE,Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée. Le RCP déconseille l’utilisation du métronidazole et de la clindamycine pendant le premier trimestre de la grossesse. Les données cliniques concernant leur utilisation pendant le premier trimestre de grossesse sont pourtant rassurantes et la plupart des sources acceptent leur utilisation en période de grossesse.)
+      * insert AddTranslation(fr-BE,Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée. Le RCP déconseille l'utilisation du métronidazole et de la clindamycine pendant le premier trimestre de la grossesse. Les données cliniques concernant leur utilisation pendant le premier trimestre de grossesse sont pourtant rassurantes et la plupart des sources acceptent leur utilisation en période de grossesse.)
 * subject = Reference(patient-a)
 
 
@@ -157,7 +152,7 @@ Usage: #example
 
 // this is WIP - note the codes and names - Metronidazole XD01, Nitrofurantoin XE01
 * dosageInstruction.text = "1000 mg per dag in 2 giften gedurende 7 dagen"
-* text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+  * extension[http://hl7.org/fhir/StructureDefinition/translation]
     * extension[lang].valueCode = #fr-BE
     * extension[content].valueString = "1000 mg par jour en 2 prises pendant 7 jours"
 * dosageInstruction.doseAndRate[0]
@@ -191,7 +186,7 @@ Usage: #example
 * subject = Reference(patient-a)
 
 * dosageInstruction.text = "ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen"
-* text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+  * extension[http://hl7.org/fhir/StructureDefinition/translation]
     * extension[lang].valueCode = #fr-BE
     * extension[content].valueString = "ovule : 100 mg par jour en 1 prise pendant 3 jours OU crème vaginale : 2 % 5 g par jour en 1 prise pendant 7 jours"
 

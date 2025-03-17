@@ -18,4 +18,21 @@ Description: "Radiology - S1 Get Diagnoses - Request - 1.1. Observed data"
 InstanceOf: Observation
 Usage: #example
 * status = #final
-// this not the latest example that is avialable on the updated-examples branch, can you upload the latest version?
+* code = $sct#20262006 "Ataxia"
+* subject = Reference(patient-r)
+
+
+
+
+Instance: ct-head-iv-contrast
+InstanceOf: ServiceRequest
+Title: "Radiology - S1 Get Diagnoses - Request - 1.3 Original suggestion - CT head with IV contrast"
+Description: "Radiology - S1 Get Recommendations - Request - 1.3 Original suggestion - CT head with IV contrast"
+Usage: #example
+* meta.versionId = "v1"
+* status = #active
+* intent = #proposal
+* code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
+* subject = Reference(patient-r)
+* identifier.value = "some-identifier"
+

@@ -18,7 +18,7 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:5f3aafb8-643c-4ed5-ad54-199939e7b2d1"
 * entry[+].resource = propose-5000246
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11"
-* entry[+].resource = proposed-diagnosis-5000246
+* entry[+].resource = proposed-diagnosis-5000246a
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11"
 * entry[+].resource = propose-3074219
 * entry[=].fullUrl = "urn:uuid:cfdfee5b-1db1-43fe-af72-4ea54b4e1a16"
@@ -120,9 +120,9 @@ Usage: #example
 * code = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
 * for = Reference(Patient/patient-r)
 * input.type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
-* input.valueReference = Reference(proposed-diagnosis-5000246)
+* input.valueReference = Reference(proposed-diagnosis-5000246a)
 
-Instance: proposed-diagnosis-5000246
+Instance: proposed-diagnosis-5000246a
 Title: "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma"
 Description: "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma"
 InstanceOf: Condition

@@ -10,7 +10,7 @@ Usage: #example
 * type = #collection
 * entry[0].resource = getrecommendations-r-response-1
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
-* entry[+].resource = ct-head-wo-iv-contrast
+* entry[+].resource = pss-ct-head-wo-iv-contrast
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"
 * entry[+].resource = mr-head-wo-iv-contrast
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77"
@@ -38,7 +38,7 @@ Usage: #example
 
   * action[0]
     * textEquivalent = "CT, head, wo iv contrast"
-    * resource = Reference(ct-head-wo-iv-contrast)
+    * resource = Reference(pss-ct-head-wo-iv-contrast)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #radiationexposure
       * extension[ratingValue].valueRatio
@@ -66,7 +66,7 @@ Usage: #example
         * denominator.value = 10
 
 
-   * action[+]
+  * action[+]
     * textEquivalent = "CT, head, wo/w iv contrast"
     * resource = Reference(ct-head-wo-w-iv-contrast)
     * extension[structured-rating][+]
@@ -81,7 +81,7 @@ Usage: #example
         * denominator.value = 10
 
 
-Instance: ct-head-wo-iv-contrast
+Instance: pss-ct-head-wo-iv-contrast
 InstanceOf: PSSResponseServiceRequest
 Title: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"
 Description: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"
@@ -91,6 +91,7 @@ Usage: #example
 * intent = #proposal
 * code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
 * subject = Reference(patient-r)
+* identifier.value = "some-identifier"
 
 
 Instance: mr-head-wo-iv-contrast

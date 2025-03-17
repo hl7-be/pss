@@ -180,26 +180,26 @@ groups:
       - Observation/ataxia
       - Bundle/radiology-getdiagnoses-response
       - RequestGroup/Inline-Instance-for-radiology-getdiagnoses-response
-      - Task/propose-stroke
-      - Condition/proposed-diagnosis-stroke
-      - Task/propose-infection
-      - Condition/proposed-diagnosis-infection
-      - Task/propose-head-trauma
-      - Condition/proposed-diagnosis-head-trauma
-      - Task/propose-slow-progression-ataxia
-      - Condition/proposed-diagnosis-slow-progression-ataxia
-      - Task/propose-post-trauma-ataxia
-      - Condition/proposed-diagnosis-post-trauma-ataxia
+      - Task/propose-3074220
+      - Condition/proposed-diagnosis-3074220
+      - Task/propose-3074221
+      - Condition/proposed-diagnosis-3074221
+      - Task/propose-5000246
+      - Condition/proposed-diagnosis-5000246
+      - Task/propose-3074219
+      - Condition/proposed-diagnosis-3074219
+      - Task/propose-3074222
+      - Condition/proposed-diagnosis-3074222
 
       - Bundle/getrecommendations-data3
-      - Condition/proposed-diagnosis-head-trauma-v2
-      - ServiceRequest/ct-head-iv-contrast-v2
+#      - Condition/proposed-diagnosis-head-trauma-v2
+#      - ServiceRequest/ct-head-iv-contrast-v2
 
       - Bundle/getrecommendations-r-response
       - RequestGroup/getrecommendations-r-response-1
       - ServiceRequest/ct-head-iv-contrast
-      - ServiceRequest/ct-head-with-or-without-contrast
-      - ServiceRequest/mr-head-without-contrast
+#      - ServiceRequest/ct-head-with-or-without-contrast
+#      - ServiceRequest/mr-head-without-contrast
       
 #      - ServiceRequest/ct-head-iv-contrast
 

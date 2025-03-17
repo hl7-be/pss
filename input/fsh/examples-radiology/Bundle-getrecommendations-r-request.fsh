@@ -42,3 +42,4 @@ Usage: #example
 * intent = #proposal
 * code.coding[0] = $PSSQSIProcedures#114055 "CT, head, wo iv contrast"
 * subject = Reference(patient-r)
+* identifier.value = "some-identifier"

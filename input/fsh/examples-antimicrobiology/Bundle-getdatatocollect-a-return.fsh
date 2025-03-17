@@ -221,7 +221,7 @@ Usage: #example
     * type = #boolean
     * extension[CodeValueSet].valueCanonical = Canonical(CandidaCodes)
 
-  * item[0]
+  * item[+]
     * linkId = "pv_bacterial_vag"
     * text = "Bacteriële vaginose"
     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
@@ -230,7 +230,7 @@ Usage: #example
     * type = #boolean
     * extension[CodeValueSet].valueCanonical = Canonical(BacterialCodes)
 
-  * item[0]
+  * item[+]
     * linkId = "pv_trichomonas_vag"
     * text = "Trichomonas vaginalis"
     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
@@ -267,9 +267,9 @@ Usage: #example
   * type = #boolean
 
   * enableWhen
-     * question = "sp_exc_causalPathogen_ure"
-     * operator = #=
-     * answerBoolean = true
+    * question = "sp_exc_causalPathogen_ure"
+    * operator = #=
+    * answerBoolean = true
 
   *  item[+]
     * linkId = "pv_causalPatChlamydia_ure"
@@ -322,8 +322,8 @@ Usage: #example
   * linkId = "sp_riskPatient_ast"
   * text = "Risicopatiënt"
   * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
-     * extension[lang].valueCode = #fr-BE
-     * extension[content].valueString = "Patient à risque"
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "Patient à risque"
   * type = #boolean
 
   * item[0]
