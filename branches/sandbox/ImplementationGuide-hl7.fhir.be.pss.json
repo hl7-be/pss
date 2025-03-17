@@ -346,7 +346,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.4.1"
     },
     {
       "extension" : [{
@@ -877,6 +877,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/BacterialCodes"
+      },
+      "name" : "Bacterial Codes",
+      "description" : "Bacterial Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/CandidaCodes"
+      },
+      "name" : "Candida Codes",
+      "description" : "Candida Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ChlamydiaCodes"
+      },
+      "name" : "Chlamydia Codes",
+      "description" : "Chlamydia Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -956,6 +992,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/GonokokCodes"
+      },
+      "name" : "Gonokok Codes",
+      "description" : "Gonokok Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MycoplasmaCodes"
+      },
+      "name" : "Mycoplasma Codes",
+      "description" : "Mycoplasma Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/OncologyPatientCodes"
       },
       "name" : "OncologyPatient Codes",
@@ -968,22 +1028,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/PathogenicAgentHPV"
+        "reference" : "ValueSet/OtherCodes"
       },
-      "name" : "Pathogenic Agents for HPV",
-      "description" : "Pathogenic agents associated with HPV",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/PathogenicAgents"
-      },
-      "name" : "Pathogenic Agents list",
-      "description" : "Pathogenic agent codes",
+      "name" : "Other Codes",
+      "description" : "Other Codes",
       "exampleBoolean" : false
     },
     {
@@ -1234,6 +1282,19 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/ct-head-iv-contrast"
+      },
+      "name" : "Radiology - S1 Get Diagnoses - Request - 1.3 Original suggestion - CT head with IV contrast",
+      "description" : "Radiology - S1 Get Recommendations - Request - 1.3 Original suggestion - CT head with IV contrast",
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -1263,7 +1324,7 @@
         "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Task/propose-post-trauma-ataxia"
+        "reference" : "Task/propose-3074222"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia",
@@ -1276,7 +1337,7 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/proposed-diagnosis-post-trauma-ataxia"
+        "reference" : "Condition/proposed-diagnosis-3074222"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia",
@@ -1289,7 +1350,7 @@
         "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Task/propose-stroke"
+        "reference" : "Task/propose-3074220"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke",
@@ -1302,7 +1363,7 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/proposed-diagnosis-stroke"
+        "reference" : "Condition/proposed-diagnosis-3074220"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke",
@@ -1315,7 +1376,7 @@
         "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Task/propose-infection"
+        "reference" : "Task/propose-3074221"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection",
@@ -1328,7 +1389,7 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/proposed-diagnosis-infection"
+        "reference" : "Condition/proposed-diagnosis-3074221"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection",
@@ -1341,7 +1402,7 @@
         "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Task/propose-head-trauma"
+        "reference" : "Task/propose-5000246"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma",
@@ -1354,12 +1415,11 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/proposed-diagnosis-head-trauma"
+        "reference" : "Condition/proposed-diagnosis-5000246a"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1367,7 +1427,7 @@
         "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Task/propose-slow-progression-ataxia"
+        "reference" : "Task/propose-3074219"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.8. Task to propose diagnosis - Chronic or slow progression-ataxia",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.8 Task to propose diagnosis - Chronic or slow progression-ataxia",
@@ -1380,7 +1440,7 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/proposed-diagnosis-slow-progression-ataxia"
+        "reference" : "Condition/proposed-diagnosis-3074219"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia",
@@ -1406,7 +1466,7 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/proposed-diagnosis-head-trauma-v2"
+        "reference" : "Condition/proposed-diagnosis-5000246"
       },
       "name" : "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma",
       "description" : "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma",
@@ -1419,12 +1479,11 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/ct-head-iv-contrast-v2"
+        "reference" : "ServiceRequest/ct-head-wo-iv-contrast"
       },
-      "name" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast",
-      "description" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
+      "name" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT head wo IV contrast",
+      "description" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT head wo IV contrast",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"
     },
     {
       "extension" : [{
@@ -1458,12 +1517,11 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/ct-head-iv-contrast"
+        "reference" : "ServiceRequest/pss-ct-head-wo-iv-contrast"
       },
-      "name" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast",
-      "description" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
-      "groupingId" : "Radiology"
+      "name" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast",
+      "description" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"
     },
     {
       "extension" : [{
@@ -1471,12 +1529,11 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/ct-head-with-or-without-contrast"
+        "reference" : "ServiceRequest/ct-head-wo-w-iv-contrast"
       },
-      "name" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast",
-      "description" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
-      "groupingId" : "Radiology"
+      "name" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast",
+      "description" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"
     },
     {
       "extension" : [{
@@ -1484,12 +1541,23 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/mr-head-without-contrast"
+        "reference" : "ServiceRequest/mr-head-wo-iv-contrast"
       },
-      "name" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast",
-      "description" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
-      "groupingId" : "Radiology"
+      "name" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast",
+      "description" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TrichomonasCodes"
+      },
+      "name" : "Trichomonas Codes",
+      "description" : "Trichomonas Codes",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
