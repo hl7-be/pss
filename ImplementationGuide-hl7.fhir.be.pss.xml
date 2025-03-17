@@ -266,7 +266,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.4.1"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -698,6 +698,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BacterialCodes"/>
+      </reference>
+      <name value="Bacterial Codes"/>
+      <description value="Bacterial Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CandidaCodes"/>
+      </reference>
+      <name value="Candida Codes"/>
+      <description value="Candida Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ChlamydiaCodes"/>
+      </reference>
+      <name value="Chlamydia Codes"/>
+      <description value="Chlamydia Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -771,6 +804,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/GonokokCodes"/>
+      </reference>
+      <name value="Gonokok Codes"/>
+      <description value="Gonokok Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MycoplasmaCodes"/>
+      </reference>
+      <name value="Mycoplasma Codes"/>
+      <description value="Mycoplasma Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/OncologyPatientCodes"/>
       </reference>
       <name value="OncologyPatient Codes"/>
@@ -782,21 +837,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/PathogenicAgentHPV"/>
+        <reference value="ValueSet/OtherCodes"/>
       </reference>
-      <name value="Pathogenic Agents for HPV"/>
-      <description value="Pathogenic agents associated with HPV"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/PathogenicAgents"/>
-      </reference>
-      <name value="Pathogenic Agents list"/>
-      <description value="Pathogenic agent codes"/>
+      <name value="Other Codes"/>
+      <description value="Other Codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1027,6 +1071,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/ct-head-iv-contrast"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Request - 1.3 Original suggestion - CT head with IV contrast"/>
+      <description value="Radiology - S1 Get Recommendations - Request - 1.3 Original suggestion - CT head with IV contrast"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -1054,7 +1110,7 @@
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/propose-post-trauma-ataxia"/>
+        <reference value="Task/propose-3074222"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia"/>
@@ -1066,7 +1122,7 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/proposed-diagnosis-post-trauma-ataxia"/>
+        <reference value="Condition/proposed-diagnosis-3074222"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia"/>
@@ -1078,7 +1134,7 @@
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/propose-stroke"/>
+        <reference value="Task/propose-3074220"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke"/>
@@ -1090,7 +1146,7 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/proposed-diagnosis-stroke"/>
+        <reference value="Condition/proposed-diagnosis-3074220"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke"/>
@@ -1102,7 +1158,7 @@
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/propose-infection"/>
+        <reference value="Task/propose-3074221"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection"/>
@@ -1114,7 +1170,7 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/proposed-diagnosis-infection"/>
+        <reference value="Condition/proposed-diagnosis-3074221"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection"/>
@@ -1126,7 +1182,7 @@
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/propose-head-trauma"/>
+        <reference value="Task/propose-5000246"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma"/>
@@ -1138,19 +1194,18 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/proposed-diagnosis-head-trauma"/>
+        <reference value="Condition/proposed-diagnosis-5000246a"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma"/>
       <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/propose-slow-progression-ataxia"/>
+        <reference value="Task/propose-3074219"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.8. Task to propose diagnosis - Chronic or slow progression-ataxia"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.8 Task to propose diagnosis - Chronic or slow progression-ataxia"/>
@@ -1162,7 +1217,7 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/proposed-diagnosis-slow-progression-ataxia"/>
+        <reference value="Condition/proposed-diagnosis-3074219"/>
       </reference>
       <name value="Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia"/>
       <description value="Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia"/>
@@ -1186,7 +1241,7 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/proposed-diagnosis-head-trauma-v2"/>
+        <reference value="Condition/proposed-diagnosis-5000246"/>
       </reference>
       <name value="Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma"/>
       <description value="Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma"/>
@@ -1198,12 +1253,11 @@
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
-        <reference value="ServiceRequest/ct-head-iv-contrast-v2"/>
+        <reference value="ServiceRequest/ct-head-wo-iv-contrast"/>
       </reference>
-      <name value="Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast"/>
-      <exampleBoolean value="true"/>
-      <groupingId value="Radiology"/>
+      <name value="Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT head wo IV contrast"/>
+      <description value="Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT head wo IV contrast"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1234,36 +1288,44 @@
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
-        <reference value="ServiceRequest/ct-head-iv-contrast"/>
+        <reference value="ServiceRequest/pss-ct-head-wo-iv-contrast"/>
       </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast"/>
+      <name value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"/>
+      <description value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
-      <groupingId value="Radiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
-        <reference value="ServiceRequest/ct-head-with-or-without-contrast"/>
+        <reference value="ServiceRequest/ct-head-wo-w-iv-contrast"/>
       </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast"/>
+      <name value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"/>
+      <description value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
-      <groupingId value="Radiology"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
-        <reference value="ServiceRequest/mr-head-without-contrast"/>
+        <reference value="ServiceRequest/mr-head-wo-iv-contrast"/>
       </reference>
-      <name value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
-      <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast"/>
+      <name value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"/>
+      <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
-      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TrichomonasCodes"/>
+      </reference>
+      <name value="Trichomonas Codes"/>
+      <description value="Trichomonas Codes"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
