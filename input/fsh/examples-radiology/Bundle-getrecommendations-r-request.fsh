@@ -36,7 +36,7 @@ Description: "Radiology - S3 Get Recommendations - Request- 1.2. Initially consi
 Usage: #example
 * meta.versionId = "v2"
 // How to say "This was proposed by the professional"
-* id = "ct-head-wo-iv-contrast"
+* id = "ct-head-wo-iv-contrast-v2"
 * meta.profile = "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"
 * status = #active
 * intent = #proposal
