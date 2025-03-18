@@ -14,7 +14,7 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"
 * entry[+].resource = pss-mr-head-wo-iv-contrast
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77"
-* entry[+].resource = pss-t-head-wo-w-iv-contrast
+* entry[+].resource = pss-ct-head-wo-w-iv-contrast
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
 
 
@@ -91,7 +91,7 @@ Usage: #example
 * intent = #proposal
 * code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
 * subject = Reference(patient-r)
-* identifier.value = "some-identifier"
+* identifier.value = "114055"
 
 
 Instance: pss-mr-head-wo-iv-contrast
@@ -104,6 +104,7 @@ Usage: #example
 * intent = #proposal
 * code = PSSQSIProcedures#114092 "MR, head, wo iv contrast"
 * subject = Reference(patient-r)
+* identifier.value = "114092"
 
 
 Instance: pss-ct-head-wo-w-iv-contrast
@@ -116,3 +117,4 @@ Usage: #example
 * intent = #proposal
 * code = $PSSQSIProcedures#114054 "CT, head, wo/w iv contrast"
 * subject = Reference(patient-r)
+* identifier.value = "114054"

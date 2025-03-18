@@ -6,9 +6,9 @@ Usage: #example
 * type = #collection
 * entry[0].resource = patient-r
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48"
-* entry[+].resource = proposed-diagnosis-5000246
+* entry[+].resource = proposed-diagnosis-5000246-v2
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11"
-* entry[+].resource = ct-head-wo-iv-contrast
+* entry[+].resource = ct-head-wo-iv-contrast-v2
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad02"
 
 

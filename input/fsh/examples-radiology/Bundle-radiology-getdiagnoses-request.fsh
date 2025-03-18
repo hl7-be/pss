@@ -8,7 +8,7 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad03"
 * entry[+].resource = ataxia
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad04"
-* entry[+].resource = ct-head-iv-contrast
+* entry[+].resource = ct-head-wo-iv-contrast
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e631234ad04"
 
 
