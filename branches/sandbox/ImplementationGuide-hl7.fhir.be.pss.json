@@ -880,30 +880,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/BacterialCodes"
-      },
-      "name" : "Bacterial Codes",
-      "description" : "Bacterial Codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/CandidaCodes"
-      },
-      "name" : "Candida Codes",
-      "description" : "Candida Codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/ChlamydiaCodes"
       },
       "name" : "Chlamydia Codes",
@@ -1285,10 +1261,10 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/ct-head-iv-contrast"
+        "reference" : "ServiceRequest/ct-head-wo-iv-contrast"
       },
-      "name" : "Radiology - S1 Get Diagnoses - Request - 1.3 Original suggestion - CT head with IV contrast",
-      "description" : "Radiology - S1 Get Recommendations - Request - 1.3 Original suggestion - CT head with IV contrast",
+      "name" : "Radiology - S1 Get Diagnoses - Request - 1.3 Original suggestion - CT head wo IV contrast",
+      "description" : "Radiology - S1 Get Recommendations - Request - 1.3 Original suggestion - CT head wo IV contrast",
       "exampleBoolean" : true,
       "groupingId" : "Radiology"
     },
@@ -1415,11 +1391,12 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/proposed-diagnosis-5000246a"
+        "reference" : "Condition/proposed-diagnosis-5000246"
       },
       "name" : "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma",
       "description" : "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma",
-      "exampleBoolean" : true
+      "exampleBoolean" : true,
+      "groupingId" : "Radiology"
     },
     {
       "extension" : [{
@@ -1466,12 +1443,11 @@
         "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "Condition/proposed-diagnosis-5000246"
+        "reference" : "Condition/proposed-diagnosis-5000246-v2"
       },
       "name" : "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma",
       "description" : "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma",
-      "exampleBoolean" : true,
-      "groupingId" : "Radiology"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1479,7 +1455,7 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/ct-head-wo-iv-contrast"
+        "reference" : "ServiceRequest/ct-head-wo-iv-contrast-v2"
       },
       "name" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT head wo IV contrast",
       "description" : "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT head wo IV contrast",
@@ -1529,7 +1505,7 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/ct-head-wo-w-iv-contrast"
+        "reference" : "ServiceRequest/pss-ct-head-wo-w-iv-contrast"
       },
       "name" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast",
       "description" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast",
@@ -1541,23 +1517,11 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/mr-head-wo-iv-contrast"
+        "reference" : "ServiceRequest/pss-mr-head-wo-iv-contrast"
       },
       "name" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast",
       "description" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast",
       "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TrichomonasCodes"
-      },
-      "name" : "Trichomonas Codes",
-      "description" : "Trichomonas Codes",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{

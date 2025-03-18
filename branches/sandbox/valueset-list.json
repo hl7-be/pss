@@ -1,24 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "BacterialCodes",
-      "title" : "Bacterial Codes",
-      "description" : "Bacterial Codes",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "CandidaCodes",
-      "title" : "Candida Codes",
-      "description" : "Candida Codes",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
       "version" : "1.0.0",
       "status" : "active",
@@ -99,15 +81,6 @@
       "title" : "Pregnancy Codes",
       "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
       "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "TrichomonasCodes",
-      "title" : "Trichomonas Codes",
-      "description" : "Trichomonas Codes",
-      "systems" : ["http://snomed.info/sct"]
     }
   ]
 }
