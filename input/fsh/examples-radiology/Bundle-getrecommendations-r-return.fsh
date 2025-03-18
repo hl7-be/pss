@@ -12,9 +12,9 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
 * entry[+].resource = pss-ct-head-wo-iv-contrast
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"
-* entry[+].resource = mr-head-wo-iv-contrast
+* entry[+].resource = pss-mr-head-wo-iv-contrast
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77"
-* entry[+].resource = ct-head-wo-w-iv-contrast
+* entry[+].resource = pss-t-head-wo-w-iv-contrast
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
 
 
@@ -53,7 +53,7 @@ Usage: #example
 
   * action[+]
     * textEquivalent = "MR, head, wo iv contrast"
-    * resource = Reference(mr-head-wo-iv-contrast)  
+    * resource = Reference(pss-mr-head-wo-iv-contrast)  
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #radiationexposure
       * extension[ratingValue].valueRatio
@@ -68,7 +68,7 @@ Usage: #example
 
   * action[+]
     * textEquivalent = "CT, head, wo/w iv contrast"
-    * resource = Reference(ct-head-wo-w-iv-contrast)
+    * resource = Reference(pss-ct-head-wo-w-iv-contrast)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #radiationexposure
       * extension[ratingValue].valueRatio
@@ -94,7 +94,7 @@ Usage: #example
 * identifier.value = "some-identifier"
 
 
-Instance: mr-head-wo-iv-contrast
+Instance: pss-mr-head-wo-iv-contrast
 InstanceOf: PSSResponseServiceRequest
 Title: "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"
 Description: "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"
@@ -106,7 +106,7 @@ Usage: #example
 * subject = Reference(patient-r)
 
 
-Instance: ct-head-wo-w-iv-contrast
+Instance: pss-ct-head-wo-w-iv-contrast
 InstanceOf: PSSResponseServiceRequest
 Title: "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"
 Description: "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"

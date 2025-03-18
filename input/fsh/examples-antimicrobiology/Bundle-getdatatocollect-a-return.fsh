@@ -35,34 +35,6 @@ Description: "OncologyPatient Codes"
 * $sct#363353009
 
 
-ValueSet: CandidaCodes
-Title: "Candida Codes"
-Description: "Candida Codes"
-// Usage: #example
-* ^status = #active
-* $sct#72934000
-* $sct#72605008
-* $sct#1085006
-* $sct#240706001
-
-
-ValueSet: BacterialCodes
-Title: "Bacterial Codes"
-Description: "Bacterial Codes"
-// Usage: #example
-* ^status = #active
-* $sct#419760006
-
-
-ValueSet: TrichomonasCodes
-Title: "Trichomonas Codes"
-Description: "Trichomonas Codes"
-// Usage: #example
-* ^status = #active
-* $sct#276877003
-* $sct#35089004
-
-
 ValueSet: ChlamydiaCodes
 Title: "Chlamydia Codes"
 Description: "Chlamydia Codes"
@@ -218,8 +190,11 @@ Usage: #example
     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Vaginite à candida"
-    * type = #boolean
-    * extension[CodeValueSet].valueCanonical = Canonical(CandidaCodes)
+    * type = #choice
+    * answerOption[0].valueCoding = $sct#72934000
+    * answerOption[+].valueCoding = $sct#72605008 
+    * answerOption[+].valueCoding = $sct#1085006
+    * answerOption[+].valueCoding = $sct#240706001
 
   * item[+]
     * linkId = "pv_bacterial_vag"
@@ -227,8 +202,8 @@ Usage: #example
     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Vaginose bactérienne"
-    * type = #boolean
-    * extension[CodeValueSet].valueCanonical = Canonical(BacterialCodes)
+    * type = #choice
+    * answerOption[0].valueCoding = $sct#419760006
 
   * item[+]
     * linkId = "pv_trichomonas_vag"
@@ -236,8 +211,9 @@ Usage: #example
     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Trichomonas vaginalis"
-    * type = #boolean
-    * extension[CodeValueSet].valueCanonical = Canonical(TrichomonasCodes)
+    * type = #choice
+    * answerOption[0].valueCoding = $sct#276877003
+    * answerOption[1].valueCoding = $sct#35089004
 
 
 * item[+]
@@ -307,16 +283,6 @@ Usage: #example
     * type = #boolean
     * extension[CodeValueSet].valueCanonical = Canonical(OtherCodes)
 
-
-*  item[+]
-  * linkId = "pathogenBL"
-  * text = "Pathogen - please select one from the options"
-  * type = #group
-
-  * enableWhen
-    * question = "known_pathogen"
-    * operator = #=
-    * answerBoolean = true
 
 * item[+]
   * linkId = "sp_riskPatient_ast"

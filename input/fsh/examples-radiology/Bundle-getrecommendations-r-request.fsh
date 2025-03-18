@@ -12,7 +12,7 @@ Usage: #example
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad02"
 
 
-Instance: proposed-diagnosis-5000246
+Instance: proposed-diagnosis-5000246-v2
 InstanceOf: Condition
 Title: "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma"
 Description: "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma"
