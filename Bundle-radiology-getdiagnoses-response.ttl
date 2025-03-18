@@ -16,7 +16,7 @@
      ] )
   ] ; # 
   fhir:identifier [
-     fhir:value [ fhir:v "someidentifier" ]
+     fhir:value [ fhir:v "5870540" ]
   ] ; # 
   fhir:type [ fhir:v "collection"] ; # 
   fhir:timestamp [ fhir:v "2025-02-20T00:00:00Z"^^xsd:dateTime] ; # 
@@ -260,7 +260,7 @@
   fhir:id [ fhir:v "propose-5000246"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_propose-5000246\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task propose-5000246</b></p><a name=\"propose-5000246\"> </a><a name=\"hcpropose-5000246\"> </a><a name=\"propose-5000246-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-proposed-diagnosis-5000246a.html\">Condition Head trauma, ataxia</a></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_propose-5000246\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task propose-5000246</b></p><a name=\"propose-5000246\"> </a><a name=\"hcpropose-5000246\"> </a><a name=\"propose-5000246-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-proposed-diagnosis-5000246.html\">Condition Head trauma, ataxia</a></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "requested"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
@@ -285,13 +285,13 @@
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-5000246a> ;
-       fhir:reference [ fhir:v "Condition/proposed-diagnosis-5000246a" ]
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-5000246> ;
+       fhir:reference [ fhir:v "Condition/proposed-diagnosis-5000246" ]
      ]
   ] ) . # 
 
 <urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11> a fhir:Condition ;
-  fhir:id [ fhir:v "proposed-diagnosis-5000246a"] ; # 
+  fhir:id [ fhir:v "proposed-diagnosis-5000246"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"^^xsd:anyURI ;
@@ -300,7 +300,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_proposed-diagnosis-5000246a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition proposed-diagnosis-5000246a</b></p><a name=\"proposed-diagnosis-5000246a\"> </a><a name=\"hcproposed-diagnosis-5000246a\"> </a><a name=\"proposed-diagnosis-5000246a-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}\">Head trauma, ataxia</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2025-03-03 13:24:10+0100</p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_proposed-diagnosis-5000246\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition proposed-diagnosis-5000246</b></p><a name=\"proposed-diagnosis-5000246\"> </a><a name=\"hcproposed-diagnosis-5000246\"> </a><a name=\"proposed-diagnosis-5000246-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}\">Head trauma, ataxia</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2025-03-03 13:24:10+0100</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
