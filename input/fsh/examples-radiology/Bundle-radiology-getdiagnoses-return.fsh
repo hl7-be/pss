@@ -120,7 +120,7 @@ Usage: #example
 * code = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
 * for = Reference(Patient/patient-r)
 * input.type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
-* input.valueReference = Reference(proposed-diagnosis-5000246a)
+* input.valueReference = Reference(proposed-diagnosis-5000246)
 
 Instance: proposed-diagnosis-5000246
 Title: "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma"

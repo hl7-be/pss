@@ -19,7 +19,7 @@ Description: "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnos
 Usage: #example
 * meta.versionId = "v2"
 // How to say "This was selected by the professional"
-* id = "proposed-diagnosis-5000246"
+* id = "proposed-diagnosis-5000246-v2"
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#provisional
