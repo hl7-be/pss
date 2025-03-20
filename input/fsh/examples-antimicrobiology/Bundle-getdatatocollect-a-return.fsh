@@ -187,21 +187,21 @@ Usage: #example
 
   * answerOption[0]
     * valueCoding = #pv_candida_vag "Candida vaginitis"
-    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Vaginite à candida"
     * extension[CodeValueSet].valueCanonical = Canonical(CandidaCodes)
 
   * answerOption[+]
     * valueCoding = #pv_trichomonas_vag "Trichomonas vaginalis"
-    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Trichomonas vaginalis"
     * extension[CodeValueSet].valueCanonical = Canonical(TrichomonasCodes)
 
   * answerOption[+]
     * valueCoding = #pv_bacterial_vag "Bacteriële vaginose"
-    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Vaginose bactérienne"
     * extension[CodeValueSet].valueCanonical = Canonical(BacterialCodes)
@@ -257,28 +257,28 @@ Usage: #example
 
   * answerOption[0]
     * valueCoding = #pv_causalPatChlamydia_ure "Chlamydia"
-    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Chlamydia"
     * extension[CodeValueSet].valueCanonical = Canonical(ChlamydiaCodes)
 
   * answerOption[+]
     * valueCoding = #pv_causalPatGonokok_ure "Gonokok"
-    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Gonocoque"
     * extension[CodeValueSet].valueCanonical = Canonical(GonokokCodes)
 
   * answerOption[+]
     * valueCoding = #pv_causalPatMycoplasma_ure "Mycoplasma genitalium"
-    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Mycoplasma genitalium"
     * extension[CodeValueSet].valueCanonical = Canonical(MycoplasmaCodes)
 
   * answerOption[+]
     * valueCoding = #pv_causalPatOther_ure "Andere"
-    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Autres"
     * extension[CodeValueSet].valueCanonical = Canonical(OtherCodes)
@@ -316,3 +316,19 @@ Usage: #example
 // add documentation in action, not in note
 
 // NOT add extension 
+
+CodeSystem: PSSQSIProcedures
+ Title: "PSS-QSI procedure codes"
+ Description: "Procedure codes from the QSI system"
+ * ^url = $PSSQSIProcedures 
+ * ^content = #not-present
+ * ^experimental = false
+ * ^caseSensitive = true
+ 
+CodeSystem: PSSQSIConditions
+ Title: "PSS-QSI condition codes"
+ Description: "Condition codes from the QSI system"
+ * ^url = $PSSQSIConditions
+ * ^content = #not-present
+ * ^experimental = false
+ * ^caseSensitive = true
