@@ -32,4 +32,4 @@ Usage: #example
 * intent = #proposal
 * code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
 * subject = Reference(patient-r)
-* identifier.value = "114055"
+* identifier.value = "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02"
