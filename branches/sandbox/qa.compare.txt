@@ -1,15 +1,15 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 25, warn = 88, info = 7
+err = 35, warn = 104, info = 7
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 3 / 6
- /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 8 / 7 / 7
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 6 / 4 / 7
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 5 / 14
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 14 / 10 / 7
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 3 / 6 / 7
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 1 / 6 / 14
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 4 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-response : 0 / 6 / 9
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 7 / 5
@@ -28,7 +28,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-clindamycin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-fluconazol : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-miconazol : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/MedicationRequest-proposal-clindamycin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ataxia : 0 / 2 / 1
@@ -37,17 +37,18 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a : 8 / 4 / 2
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a : 14 / 7 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-response : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-response-group : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-r-response-1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-wo-iv-contrast : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-proposed-ct-head-wo-iv-contrast : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-proposed-ct-head-wo-w-iv-contrast : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-proposed-mr-head-wo-iv-contrast : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-pss-ct-head-wo-iv-contrast : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-pss-ct-head-wo-w-iv-contrast : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-pss-mr-head-wo-iv-contrast : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CodeValueSet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSPatient : 0 / 2 / 1
@@ -67,6 +68,8 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Task-propose-3074221 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-propose-3074222 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-propose-5000246 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BacterialCodes : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-CandidaCodes : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ChlamydiaCodes : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-GonokokCodes : 0 / 1 / 1
@@ -75,7 +78,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ValueSet-OtherCodes : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PSSRatingTypesVS : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 0 / 2 / 2
- /github/workspace/fsh-generated/resources/ValueSet-vaginitis-condition-valueset : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -92,47 +95,57 @@ WARNING: Bundle/getdatatocollect-a-data: Bundle.entry[3].resource/*MedicationReq
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-response-group*/.subject: Entry 3 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-response-group*/.action[0].action[0].resource: Entry 1 matches the reference Task/collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755 does not match the full target URL urn:uuid:collect-information-a by Bundle resolution rules
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[1].resource/*Task/collect-information-a*/.for: Entry 3 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[0]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
 ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[0]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
-ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[0].extension[1].value.ofType(Coding).code: Unknown code '123123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[1]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
 ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[1]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
-ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[1].extension[1].value.ofType(Coding).code: Unknown code '123123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[2]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
 ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[2]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
-ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[2].extension[1].value.ofType(Coding).code: Unknown code '123123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[3]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
-ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[3].extension[1].value.ofType(Coding).code: Unknown code '123123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[0].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[0]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[0]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
+WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[1]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[1]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
+WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[2]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[2]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
+WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[3]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[3]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Bundle.entry.resource/*Questionnaire/q-collect-information-a*/.item.answerOption, Questionnaire.item.answerOption])
+WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.item[2].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[1].resource/*Condition/vulvovaginitis*/.subject: Entry 0 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[2].resource/*AllergyIntolerance/allergy-to-sulfonamide*/.patient: Entry 0 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[3].resource/*MedicationRequest/proposal-clindamycin*/.subject: Entry 0 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
-ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/: LinkId 'conditions' not found in questionnaire
-ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/: LinkId 'pregnancy' not found in questionnaire
-ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/: No response answer found for required item 'sp_excMand_knownPathogen_vag'
+ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.item[3]: Items not of type group should not have items outside answers (use answer.item not .item)
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.subject: Entry 0 matches the reference Patient/patient-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-a by Bundle resolution rules
-ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource: LinkId 'conditions' not found in questionnaire
-ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource: LinkId 'pregnancy' not found in questionnaire
-ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource: No response answer found for required item 'sp_excMand_knownPathogen_vag'
+WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.item[0].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.item[2].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.item[3]: Constraint failed: qrs-1: 'Nested item can't be beneath both item and answer'
+ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource.item[3]: Items not of type group should not have items outside answers (use answer.item not .item)
 == fsh-generated/resources/Bundle-getrecommendations-a-response.json ==
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[0].resource: Entry 1 matches the reference CommunicationRequest/ab-advice by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ab-advice by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[2].resource: Entry 3 matches the reference MedicationRequest/clindamycin by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24 does not match the full target URL urn:uuid:clindamycin by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[4].resource: Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/metronidazol*/.medication.ofType(CodeableConcept).coding[1].system: A definition for CodeSystem 'http://hl7.org/fhir/sid/vmpg' could not be found, so the code cannot be validated
+ERROR: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/metronidazol*/.medication.ofType(CodeableConcept).coding[1].system: URL value 'http://hl7.org/fhir/sid/vmpg' does not resolve
 == fsh-generated/resources/Bundle-getrecommendations-data3.json ==
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/pss-proposed-diagnosis-5000246*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/pss-proposed-diagnosis-5000246*/.subject: Entry 0 matches the reference Patient/patient-r by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:patient-r by Bundle resolution rules
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/pss-ct-head-wo-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/pss-ct-head-wo-iv-contrast*/.subject: Entry 0 matches the reference Patient/patient-r by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:patient-r by Bundle resolution rules
 == fsh-generated/resources/Bundle-getrecommendations-r-response.json ==
-WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].action[0].resource: Entry 1 matches the reference ServiceRequest/pss-ct-head-wo-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:pss-ct-head-wo-iv-contrast by Bundle resolution rules
-WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].action[1].resource: Entry 2 matches the reference ServiceRequest/pss-mr-head-wo-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77 does not match the full target URL urn:uuid:pss-mr-head-wo-iv-contrast by Bundle resolution rules
-WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].action[2].resource: Entry 3 matches the reference ServiceRequest/pss-ct-head-wo-w-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:pss-ct-head-wo-w-iv-contrast by Bundle resolution rules
-WARNING: Bundle/getrecommendations-r-response: Bundle.entry[1].resource/*ServiceRequest/pss-ct-head-wo-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
-WARNING: Bundle/getrecommendations-r-response: Bundle.entry[2].resource/*ServiceRequest/pss-mr-head-wo-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
-WARNING: Bundle/getrecommendations-r-response: Bundle.entry[3].resource/*ServiceRequest/pss-ct-head-wo-w-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].action[0].resource: Entry 1 matches the reference ServiceRequest/proposed-ct-head-wo-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:proposed-ct-head-wo-iv-contrast by Bundle resolution rules
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].action[1].resource: Entry 2 matches the reference ServiceRequest/proposed-mr-head-wo-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77 does not match the full target URL urn:uuid:proposed-mr-head-wo-iv-contrast by Bundle resolution rules
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].action[2].resource: Entry 3 matches the reference ServiceRequest/proposed-ct-head-wo-w-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:proposed-ct-head-wo-w-iv-contrast by Bundle resolution rules
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[1].resource/*ServiceRequest/proposed-ct-head-wo-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[2].resource/*ServiceRequest/proposed-mr-head-wo-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[3].resource/*ServiceRequest/proposed-ct-head-wo-w-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 == fsh-generated/resources/Bundle-radiology-getdiagnoses.json ==
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
@@ -177,6 +190,8 @@ WARNING: Condition/pss-proposed-diagnosis-5000246: Condition.code.coding[0].syst
 == fsh-generated/resources/MedicationRequest-clindamycin.json ==
 == fsh-generated/resources/MedicationRequest-fluconazol.json ==
 == fsh-generated/resources/MedicationRequest-metronidazol.json ==
+WARNING: MedicationRequest/metronidazol: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: A definition for CodeSystem 'http://hl7.org/fhir/sid/vmpg' could not be found, so the code cannot be validated
+ERROR: MedicationRequest/metronidazol: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: URL value 'http://hl7.org/fhir/sid/vmpg' does not resolve
 == fsh-generated/resources/MedicationRequest-miconazol.json ==
 == fsh-generated/resources/MedicationRequest-proposal-clindamycin.json ==
 == fsh-generated/resources/Observation-ataxia.json ==
@@ -191,36 +206,49 @@ INFORMATION: Resource: The resource PlanDefinition/GetDiagnoses could usefully h
 == fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
 INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-q-collect-information-a.json ==
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[0]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Questionnaire.item.answerOption])
 ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[0]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Questionnaire.item.answerOption])
-ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[0].extension[1].value.ofType(Coding).code: Unknown code '123123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 WARNING: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[1]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Questionnaire.item.answerOption])
 ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[1]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Questionnaire.item.answerOption])
-ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[1].extension[1].value.ofType(Coding).code: Unknown code '123123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 WARNING: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[2]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Questionnaire.item.answerOption])
 ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[2]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Questionnaire.item.answerOption])
-ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[2].extension[1].value.ofType(Coding).code: Unknown code '123123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 WARNING: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[3]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Questionnaire.item.answerOption])
-ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[3].extension[1].value.ofType(Coding).code: Unknown code '123123' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
-WARNING: Questionnaire/q-collect-information-a: Questionnaire.item[0].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[0]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Questionnaire.item.answerOption])
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[0]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Questionnaire.item.answerOption])
+WARNING: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[1]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Questionnaire.item.answerOption])
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[1]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Questionnaire.item.answerOption])
+WARNING: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[2]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Questionnaire.item.answerOption])
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[2]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Questionnaire.item.answerOption])
+WARNING: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[3]: The extension http://hl7.org/fhir/StructureDefinition/translation is not allowed to be used at this point (allowed = e:string, e:code, e:markdown; this element is [BackboneElement, Questionnaire.item.answerOption])
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[3]: The extension https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet is not allowed to be used at this point (allowed = e:Questionnaire.item, e:ValueSet.compose.include.concept, e:ValueSet.expansion.contains; this element is [BackboneElement, Questionnaire.item.answerOption])
+WARNING: Questionnaire/q-collect-information-a: Questionnaire.item[2].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 INFORMATION: Resource: The resource Questionnaire/q-collect-information-a could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/QuestionnaireResponse-qresponse-v.json ==
-ERROR: QuestionnaireResponse/qresponse-v: QuestionnaireResponse: LinkId 'conditions' not found in questionnaire
-ERROR: QuestionnaireResponse/qresponse-v: QuestionnaireResponse: LinkId 'pregnancy' not found in questionnaire
-ERROR: QuestionnaireResponse/qresponse-v: QuestionnaireResponse: No response answer found for required item 'sp_excMand_knownPathogen_vag'
+WARNING: QuestionnaireResponse/qresponse-v: QuestionnaireResponse.item[0].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: QuestionnaireResponse/qresponse-v: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: QuestionnaireResponse/qresponse-v: QuestionnaireResponse.item[3]: Constraint failed: qrs-1: 'Nested item can't be beneath both item and answer'
+ERROR: QuestionnaireResponse/qresponse-v: QuestionnaireResponse.item[3]: Items not of type group should not have items outside answers (use answer.item not .item)
 == fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-response.json ==
 == fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group.json ==
 == fsh-generated/resources/RequestGroup-getrecommendations-a-response-group.json ==
 == fsh-generated/resources/RequestGroup-getrecommendations-r-response-1.json ==
 == fsh-generated/resources/ServiceRequest-ct-head-wo-iv-contrast.json ==
 WARNING: ServiceRequest/ct-head-wo-iv-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
+== fsh-generated/resources/ServiceRequest-proposed-ct-head-wo-iv-contrast.json ==
+WARNING: ServiceRequest/proposed-ct-head-wo-iv-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
+== fsh-generated/resources/ServiceRequest-proposed-ct-head-wo-w-iv-contrast.json ==
+WARNING: ServiceRequest/proposed-ct-head-wo-w-iv-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
+== fsh-generated/resources/ServiceRequest-proposed-mr-head-wo-iv-contrast.json ==
+WARNING: ServiceRequest/proposed-mr-head-wo-iv-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 == fsh-generated/resources/ServiceRequest-pss-ct-head-wo-iv-contrast.json ==
 WARNING: ServiceRequest/pss-ct-head-wo-iv-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
-== fsh-generated/resources/ServiceRequest-pss-ct-head-wo-w-iv-contrast.json ==
-WARNING: ServiceRequest/pss-ct-head-wo-w-iv-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
-== fsh-generated/resources/ServiceRequest-pss-mr-head-wo-iv-contrast.json ==
-WARNING: ServiceRequest/pss-mr-head-wo-iv-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode.json ==
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-CodeValueSet.json ==
 == fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json ==
 INFORMATION: StructureDefinition/PSSDataAcquisitionForm: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
@@ -245,6 +273,10 @@ INFORMATION: StructureDefinition/PSSResponseCommunicationRequest: CommunicationR
 == fsh-generated/resources/Task-propose-3074221.json ==
 == fsh-generated/resources/Task-propose-3074222.json ==
 == fsh-generated/resources/Task-propose-5000246.json ==
+== fsh-generated/resources/ValueSet-BacterialCodes.json ==
+WARNING: ValueSet/BacterialCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-CandidaCodes.json ==
+WARNING: ValueSet/CandidaCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-ChlamydiaCodes.json ==
 WARNING: ValueSet/ChlamydiaCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json ==
@@ -267,5 +299,5 @@ WARNING: ValueSet/PSSRatingTypesVS: ValueSet: Published value sets SHOULD confor
 WARNING: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: The code 'Z33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10 (Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded')
 INFORMATION: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded'
 WARNING: ValueSet/PregnancyCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-vaginitis-condition-valueset.json ==
-WARNING: Resource: The resource ValueSet/vaginitis-condition-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ValueSet-TrichomonasCodes.json ==
+WARNING: ValueSet/TrichomonasCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
