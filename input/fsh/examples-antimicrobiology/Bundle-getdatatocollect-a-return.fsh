@@ -239,16 +239,18 @@ Usage: #example
 //  * type = #boolean
 
 
-// case 1: Known pathogen is optional
 *  item[+]
   * linkId = "sp_exc_causalPathogen_ure"
   * text = "Oorzakelijke kiem Urethritis"
   * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
     * extension[lang].valueCode = #fr-BE
     * extension[content].valueString = "Germe causal Urétrite"
+  * type = #boolean
+
+*  item[+]
+  * linkId = "sp_exc_causalPathogen_variables"
   * type = #choice
   * repeats = false
-  * required = true
 
   * enableWhen
     * question = "sp_exc_causalPathogen_ure"
