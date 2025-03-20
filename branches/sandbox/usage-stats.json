@@ -5,6 +5,13 @@
   "jurisdiction": "BE",
   "extensions": [
     {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode",
+      "title": "AnswerOption Additional Code",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
       "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
       "title": "Code ValueSet",
       "types": [
@@ -202,10 +209,16 @@
       "CommunicationRequest",
       "MedicationRequest"
     ],
+    "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode": [
+      "Bundle.entry.resource.item.answerOption",
+      "Questionnaire.item.answerOption"
+    ],
     "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet": [
       "Bundle.entry.resource.item",
+      "Bundle.entry.resource.item.answerOption",
       "Bundle.entry.resource.item.item",
       "Questionnaire.item",
+      "Questionnaire.item.answerOption",
       "Questionnaire.item.item"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge": [
