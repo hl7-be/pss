@@ -1228,14 +1228,32 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/vaginitis-condition-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/vaginitis-condition-valueset" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes> ;
+         fhir:reference [ fhir:v "ValueSet/BacterialCodes" ]
        ] ;
-       fhir:name [ fhir:v "Antimicrobiology - Vaginitis-related conditions" ] ;
-       fhir:description [ fhir:v "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet" ] ;
+       fhir:name [ fhir:v "Bacterial Codes" ] ;
+       fhir:description [ fhir:v "Bacterial Codes" ] ;
        fhir:example [
          a fhir:boolean ;
-         fhir:v true
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes> ;
+         fhir:reference [ fhir:v "ValueSet/CandidaCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Candida Codes" ] ;
+       fhir:description [ fhir:v "Candida Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -2157,8 +2175,28 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/pss-ct-head-wo-w-iv-contrast> ;
-         fhir:reference [ fhir:v "ServiceRequest/pss-ct-head-wo-w-iv-contrast" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/proposed-ct-head-wo-iv-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/proposed-ct-head-wo-iv-contrast" ]
+       ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest>
+       ] ;
+       fhir:groupingId [ fhir:v "Radiology" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ServiceRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/proposed-ct-head-wo-w-iv-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/proposed-ct-head-wo-w-iv-contrast" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast" ] ;
        fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast" ] ;
@@ -2177,8 +2215,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/pss-mr-head-wo-iv-contrast> ;
-         fhir:reference [ fhir:v "ServiceRequest/pss-mr-head-wo-iv-contrast" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/proposed-mr-head-wo-iv-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/proposed-mr-head-wo-iv-contrast" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast" ] ;
        fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast" ] ;
@@ -2188,6 +2226,24 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest>
        ] ;
        fhir:groupingId [ fhir:v "Radiology" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes> ;
+         fhir:reference [ fhir:v "ValueSet/TrichomonasCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Trichomonas Codes" ] ;
+       fhir:description [ fhir:v "Trichomonas Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

@@ -712,11 +712,22 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vaginitis-condition-valueset"/>
+        <reference value="ValueSet/BacterialCodes"/>
       </reference>
-      <name value="Antimicrobiology - Vaginitis-related conditions"/>
-      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"/>
-      <exampleBoolean value="true"/>
+      <name value="Bacterial Codes"/>
+      <description value="Bacterial Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CandidaCodes"/>
+      </reference>
+      <name value="Candida Codes"/>
+      <description value="Candida Codes"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1290,7 +1301,19 @@
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
-        <reference value="ServiceRequest/pss-ct-head-wo-w-iv-contrast"/>
+        <reference value="ServiceRequest/proposed-ct-head-wo-iv-contrast"/>
+      </reference>
+      <name value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"/>
+      <description value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/proposed-ct-head-wo-w-iv-contrast"/>
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"/>
@@ -1302,12 +1325,23 @@
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
-        <reference value="ServiceRequest/pss-mr-head-wo-iv-contrast"/>
+        <reference value="ServiceRequest/proposed-mr-head-wo-iv-contrast"/>
       </reference>
       <name value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"/>
       <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
       <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TrichomonasCodes"/>
+      </reference>
+      <name value="Trichomonas Codes"/>
+      <description value="Trichomonas Codes"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -892,11 +892,23 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vaginitis-condition-valueset"
+        "reference" : "ValueSet/BacterialCodes"
       },
-      "name" : "Antimicrobiology - Vaginitis-related conditions",
-      "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
-      "exampleBoolean" : true
+      "name" : "Bacterial Codes",
+      "description" : "Bacterial Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/CandidaCodes"
+      },
+      "name" : "Candida Codes",
+      "description" : "Candida Codes",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1519,7 +1531,20 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/pss-ct-head-wo-w-iv-contrast"
+        "reference" : "ServiceRequest/proposed-ct-head-wo-iv-contrast"
+      },
+      "name" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast",
+      "description" : "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
+      "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/proposed-ct-head-wo-w-iv-contrast"
       },
       "name" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast",
       "description" : "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast",
@@ -1532,12 +1557,24 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/pss-mr-head-wo-iv-contrast"
+        "reference" : "ServiceRequest/proposed-mr-head-wo-iv-contrast"
       },
       "name" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast",
       "description" : "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast",
       "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
       "groupingId" : "Radiology"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TrichomonasCodes"
+      },
+      "name" : "Trichomonas Codes",
+      "description" : "Trichomonas Codes",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

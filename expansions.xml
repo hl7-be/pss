@@ -1,11 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="77241ce3-4638-4a8e-987a-65edc3f2f32a"/>
+  <id value="94e00723-9a1c-4089-bc3a-23c28bb3e2de"/>
   <meta>
-    <lastUpdated value="2025-03-20T11:14:18.897+00:00"/>
+    <lastUpdated value="2025-03-20T15:01:03.006+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-419760006"> </a>  
+                  <a href="http://snomed.info/id/419760006">419760006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bacterial vaginosis (disorder)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes"/>
+        <version value="1.0.0"/>
+        <name value="BacterialCodes"/>
+        <title value="Bacterial Codes"/>
+        <status value="active"/>
+        <date value="2025-03-20T15:00:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bd8d664b-0853-44ab-81f8-25b731de777f"/>
+          <timestamp value="2025-03-20T15:01:37+00:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419760006"/>
+            <display value="Bacterial vaginosis (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-72934000"> </a>  
+                  <a href="http://snomed.info/id/72934000">72934000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Candidiasis of vagina</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-72605008"> </a>  
+                  <a href="http://snomed.info/id/72605008">72605008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Candidal vulvovaginitis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1085006"> </a>  
+                  <a href="http://snomed.info/id/1085006">1085006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Candidiasis of vulva</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-240706001"> </a>  
+                  <a href="http://snomed.info/id/240706001">240706001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Candida infection of genital region</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes"/>
+        <version value="1.0.0"/>
+        <name value="CandidaCodes"/>
+        <title value="Candida Codes"/>
+        <status value="active"/>
+        <date value="2025-03-20T15:00:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:e7c747c2-3739-4ef8-ae2b-4bb88c76885d"/>
+          <timestamp value="2025-03-20T15:01:37+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72934000"/>
+            <display value="Candidiasis of vagina"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72605008"/>
+            <display value="Candidal vulvovaginitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1085006"/>
+            <display value="Candidiasis of vulva"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="240706001"/>
+            <display value="Candida infection of genital region"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes"/>
     <resource>
@@ -74,7 +293,7 @@
         <name value="ChlamydiaCodes"/>
         <title value="Chlamydia Codes"/>
         <status value="active"/>
-        <date value="2025-03-20T11:13:27+00:00"/>
+        <date value="2025-03-20T15:00:12+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -83,8 +302,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f428bb25-84c3-4d75-bca8-873a8ee564f3"/>
-          <timestamp value="2025-03-20T11:15:00+00:00"/>
+          <identifier value="urn:uuid:f8c96812-8276-4b13-bd5a-4631a41438e6"/>
+          <timestamp value="2025-03-20T15:01:38+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -211,7 +430,7 @@
         <name value="GonokokCodes"/>
         <title value="Gonokok Codes"/>
         <status value="active"/>
-        <date value="2025-03-20T11:13:27+00:00"/>
+        <date value="2025-03-20T15:00:12+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -220,8 +439,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:afe7f0e0-7136-40f0-97ea-ea727f263e21"/>
-          <timestamp value="2025-03-20T11:15:01+00:00"/>
+          <identifier value="urn:uuid:087052fa-0536-4d43-8fa2-ba127e38de4a"/>
+          <timestamp value="2025-03-20T15:01:38+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -323,7 +542,7 @@
         <name value="MycoplasmaCodes"/>
         <title value="Mycoplasma Codes"/>
         <status value="active"/>
-        <date value="2025-03-20T11:13:27+00:00"/>
+        <date value="2025-03-20T15:00:12+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -332,8 +551,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a13a3b11-658a-4683-bf9b-5a7dad208e9d"/>
-          <timestamp value="2025-03-20T11:15:01+00:00"/>
+          <identifier value="urn:uuid:a08da4b3-0aff-4d14-949f-8eb0f1fc6bdb"/>
+          <timestamp value="2025-03-20T15:01:38+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -437,7 +656,7 @@
         <name value="OtherCodes"/>
         <title value="Other Codes"/>
         <status value="active"/>
-        <date value="2025-03-20T11:13:27+00:00"/>
+        <date value="2025-03-20T15:00:12+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -446,8 +665,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:837a1827-5697-474e-bcaf-3ef8fe60fe4f"/>
-          <timestamp value="2025-03-20T11:15:02+00:00"/>
+          <identifier value="urn:uuid:19da6600-099a-46cc-8f34-7b6a2cf1e0c7"/>
+          <timestamp value="2025-03-20T15:01:39+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -552,7 +771,7 @@
         <name value="PSSRatingTypesVS"/>
         <title value="Types of rating provided by the PSS system"/>
         <status value="draft"/>
-        <date value="2025-03-20T11:13:27+00:00"/>
+        <date value="2025-03-20T15:00:12+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -561,8 +780,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:37f4501f-b258-4fed-919b-004fadbb9891"/>
-          <timestamp value="2025-03-20T11:15:02+00:00"/>
+          <identifier value="urn:uuid:295a9cc0-fc93-47d6-a2f2-5fa313647cae"/>
+          <timestamp value="2025-03-20T15:01:39+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -659,7 +878,7 @@
         <name value="PregnancyCodes"/>
         <title value="Pregnancy Codes"/>
         <status value="active"/>
-        <date value="2025-03-20T11:13:27+00:00"/>
+        <date value="2025-03-20T15:00:12+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -668,8 +887,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:966a3656-51c7-42d6-b8f5-6ad77442adda"/>
-          <timestamp value="2025-03-20T11:15:02+00:00"/>
+          <identifier value="urn:uuid:88cf2908-6e2a-423c-a37c-a38f09fd70b4"/>
+          <timestamp value="2025-03-20T15:01:39+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -732,20 +951,17 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/vaginitis-condition-valueset"/>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes"/>
     <resource>
       <ValueSet>
-        <id value="vaginitis-condition-valueset"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>ValueSet vaginitis-condition-valueset</b>
+              <b>ValueSet </b>
             </p>
-            <a name="x-vaginitis-condition-valueset"> </a>
-            <a name="x-hcvaginitis-condition-valueset"> </a>
-            <a name="x-vaginitis-condition-valueset-en-US"> </a>
-            <p>This value set expansion contains 3 concepts.</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT 900000000000207008 edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -755,20 +971,12 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (en-US)</b>
                 </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-vaginitis-condition-valueset-http://snomed.info/sct-419760006"> </a>  
-                  <a href="http://snomed.info/id/419760006">419760006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Bacterial vaginosis</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-vaginitis-condition-valueset-http://snomed.info/sct-276877003"> </a>  
+                  <a name="x-http://snomed.info/sct-276877003"> </a>  
                   <a href="http://snomed.info/id/276877003">276877003</a>
                 </td>
                 <td>http://snomed.info/sct</td>
@@ -776,43 +984,21 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-vaginitis-condition-valueset-http://snomed.info/sct-72934000"> </a>  
-                  <a href="http://snomed.info/id/72934000">72934000</a>
+                  <a name="x-http://snomed.info/sct-35089004"> </a>  
+                  <a href="http://snomed.info/id/35089004">35089004</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td/>
+                <td>Urogenital infection by Trichomonas vaginalis</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/vaginitis-condition-valueset"/>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes"/>
         <version value="1.0.0"/>
-        <name value="Conditions"/>
-        <title value="Antimicrobiology - Vaginitis-related conditions"/>
+        <name value="TrichomonasCodes"/>
+        <title value="Trichomonas Codes"/>
         <status value="active"/>
-        <experimental value="false"/>
-        <date value="2025-03-20T11:13:27+00:00"/>
-        <publisher value="HL7 Belgium"/>
-        <contact>
-          <name value="HL7 Belgium"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.hl7belgium.org"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="hl7belgium@hl7belgium.org"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="Message Structure eHealth"/>
-          <telecom>
-            <system value="email"/>
-            <value value="message-structure@ehealth.fgov.be"/>
-            <use value="work"/>
-          </telecom>
-        </contact>
-        <description value="Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"/>
+        <date value="2025-03-20T15:00:12+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -821,12 +1007,38 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <timestamp value="2025-02-20T00:00:00Z"/>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="419760006"/>
-            <display value="Bacterial vaginosis"/>
-          </contains>
+          <identifier value="urn:uuid:0b3d3442-10fe-493e-9402-5cb65e2a04d5"/>
+          <timestamp value="2025-03-20T15:01:40+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="276877003"/>
@@ -834,7 +1046,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="72934000"/>
+            <code value="35089004"/>
+            <display value="Urogenital infection by Trichomonas vaginalis"/>
           </contains>
         </expansion>
       </ValueSet>

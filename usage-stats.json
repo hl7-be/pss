@@ -171,9 +171,11 @@
     "http://hl7.org/fhir/StructureDefinition/translation": [
       "Bundle.entry.resource.action.action.textEquivalent",
       "Bundle.entry.resource.dosageInstruction.text",
+      "Bundle.entry.resource.item.answerOption",
       "Bundle.entry.resource.item.item.text",
       "Bundle.entry.resource.item.text",
       "MedicationRequest.dosageInstruction.text",
+      "Questionnaire.item.answerOption",
       "Questionnaire.item.item.text",
       "Questionnaire.item.text",
       "RequestGroup.action.action.textEquivalent"
@@ -208,10 +210,6 @@
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale": [
       "CommunicationRequest",
       "MedicationRequest"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode": [
-      "Bundle.entry.resource.item.answerOption",
-      "Questionnaire.item.answerOption"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet": [
       "Bundle.entry.resource.item",
