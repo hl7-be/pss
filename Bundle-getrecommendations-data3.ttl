@@ -65,7 +65,7 @@
   ] . # 
 
 <urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11> a fhir:Condition ;
-  fhir:id [ fhir:v "proposed-diagnosis-5000246-v2"] ; # 
+  fhir:id [ fhir:v "pss-proposed-diagnosis-5000246"] ; # 
   fhir:meta [
      fhir:versionId [ fhir:v "v2" ] ;
      fhir:profile ( [
@@ -75,7 +75,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_proposed-diagnosis-5000246-v2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition proposed-diagnosis-5000246-v2</b></p><a name=\"proposed-diagnosis-5000246-v2\"> </a><a name=\"hcproposed-diagnosis-5000246-v2\"> </a><a name=\"proposed-diagnosis-5000246-v2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v2</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}\">Head trauma, ataxia</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_pss-proposed-diagnosis-5000246\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition pss-proposed-diagnosis-5000246</b></p><a name=\"pss-proposed-diagnosis-5000246\"> </a><a name=\"hcpss-proposed-diagnosis-5000246\"> </a><a name=\"pss-proposed-diagnosis-5000246-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v2</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}\">Head trauma, ataxia</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
@@ -112,7 +112,7 @@
   ] . # 
 
 <urn:uuid:30551ce1-5a28-4356-b684-3e639094ad02> a fhir:ServiceRequest ;
-  fhir:id [ fhir:v "ct-head-wo-iv-contrast-v2"] ; # 
+  fhir:id [ fhir:v "pss-ct-head-wo-iv-contrast"] ; # 
   fhir:meta [
      fhir:versionId [ fhir:v "v2" ] ;
      fhir:profile ( [
@@ -122,10 +122,10 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-wo-iv-contrast-v2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-wo-iv-contrast-v2</b></p><a name=\"ct-head-wo-iv-contrast-v2\"> </a><a name=\"hcct-head-wo-iv-contrast-v2\"> </a><a name=\"ct-head-wo-iv-contrast-v2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v2</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>identifier</b>: some-identifier</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114055}\">CT, head, wo iv contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_pss-ct-head-wo-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest pss-ct-head-wo-iv-contrast</b></p><a name=\"pss-ct-head-wo-iv-contrast\"> </a><a name=\"hcpss-ct-head-wo-iv-contrast\"> </a><a name=\"pss-ct-head-wo-iv-contrast-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v2</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114055}\">CT, head, wo iv contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:value [ fhir:v "some-identifier" ]
+     fhir:value [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 

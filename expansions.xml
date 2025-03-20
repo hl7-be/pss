@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5e2cdf43-7294-4231-b3a4-79b5d5c8ddc5"/>
+  <id value="77241ce3-4638-4a8e-987a-65edc3f2f32a"/>
   <meta>
-    <lastUpdated value="2025-03-18T10:05:22.071+00:00"/>
+    <lastUpdated value="2025-03-20T11:14:18.897+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -74,7 +74,7 @@
         <name value="ChlamydiaCodes"/>
         <title value="Chlamydia Codes"/>
         <status value="active"/>
-        <date value="2025-03-18T10:04:30+00:00"/>
+        <date value="2025-03-20T11:13:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -83,8 +83,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0ef9d3fb-5584-4433-9b08-e1332b8b336a"/>
-          <timestamp value="2025-03-18T10:06:04+00:00"/>
+          <identifier value="urn:uuid:f428bb25-84c3-4d75-bca8-873a8ee564f3"/>
+          <timestamp value="2025-03-20T11:15:00+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -211,7 +211,7 @@
         <name value="GonokokCodes"/>
         <title value="Gonokok Codes"/>
         <status value="active"/>
-        <date value="2025-03-18T10:04:30+00:00"/>
+        <date value="2025-03-20T11:13:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -220,8 +220,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3a855c0a-3dea-49b9-8505-f0176e75ea94"/>
-          <timestamp value="2025-03-18T10:06:05+00:00"/>
+          <identifier value="urn:uuid:afe7f0e0-7136-40f0-97ea-ea727f263e21"/>
+          <timestamp value="2025-03-20T11:15:01+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -323,7 +323,7 @@
         <name value="MycoplasmaCodes"/>
         <title value="Mycoplasma Codes"/>
         <status value="active"/>
-        <date value="2025-03-18T10:04:30+00:00"/>
+        <date value="2025-03-20T11:13:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -332,8 +332,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:839d00ce-bfd3-4c85-9f56-53f659af82aa"/>
-          <timestamp value="2025-03-18T10:06:05+00:00"/>
+          <identifier value="urn:uuid:a13a3b11-658a-4683-bf9b-5a7dad208e9d"/>
+          <timestamp value="2025-03-20T11:15:01+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -437,7 +437,7 @@
         <name value="OtherCodes"/>
         <title value="Other Codes"/>
         <status value="active"/>
-        <date value="2025-03-18T10:04:30+00:00"/>
+        <date value="2025-03-20T11:13:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -446,8 +446,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8e844429-1961-4ca0-a80e-b1c78bb42525"/>
-          <timestamp value="2025-03-18T10:06:06+00:00"/>
+          <identifier value="urn:uuid:837a1827-5697-474e-bcaf-3ef8fe60fe4f"/>
+          <timestamp value="2025-03-20T11:15:02+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -552,7 +552,7 @@
         <name value="PSSRatingTypesVS"/>
         <title value="Types of rating provided by the PSS system"/>
         <status value="draft"/>
-        <date value="2025-03-18T10:04:30+00:00"/>
+        <date value="2025-03-20T11:13:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -561,8 +561,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a411d615-d8b0-42a4-9452-397bc2a30cea"/>
-          <timestamp value="2025-03-18T10:06:06+00:00"/>
+          <identifier value="urn:uuid:37f4501f-b258-4fed-919b-004fadbb9891"/>
+          <timestamp value="2025-03-20T11:15:02+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -659,7 +659,7 @@
         <name value="PregnancyCodes"/>
         <title value="Pregnancy Codes"/>
         <status value="active"/>
-        <date value="2025-03-18T10:04:30+00:00"/>
+        <date value="2025-03-20T11:13:27+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -668,8 +668,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7c94483d-104a-4090-91d0-2de26e72ac26"/>
-          <timestamp value="2025-03-18T10:06:06+00:00"/>
+          <identifier value="urn:uuid:966a3656-51c7-42d6-b8f5-6ad77442adda"/>
+          <timestamp value="2025-03-20T11:15:02+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -726,6 +726,115 @@
             <system value="http://snomed.info/sct"/>
             <code value="72892002"/>
             <display value="Normal pregnancy"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/vaginitis-condition-valueset"/>
+    <resource>
+      <ValueSet>
+        <id value="vaginitis-condition-valueset"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet vaginitis-condition-valueset</b>
+            </p>
+            <a name="x-vaginitis-condition-valueset"> </a>
+            <a name="x-hcvaginitis-condition-valueset"> </a>
+            <a name="x-vaginitis-condition-valueset-en-US"> </a>
+            <p>This value set expansion contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-vaginitis-condition-valueset-http://snomed.info/sct-419760006"> </a>  
+                  <a href="http://snomed.info/id/419760006">419760006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bacterial vaginosis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-vaginitis-condition-valueset-http://snomed.info/sct-276877003"> </a>  
+                  <a href="http://snomed.info/id/276877003">276877003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Trichomonal vaginitis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-vaginitis-condition-valueset-http://snomed.info/sct-72934000"> </a>  
+                  <a href="http://snomed.info/id/72934000">72934000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/vaginitis-condition-valueset"/>
+        <version value="1.0.0"/>
+        <name value="Conditions"/>
+        <title value="Antimicrobiology - Vaginitis-related conditions"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-03-20T11:13:27+00:00"/>
+        <publisher value="HL7 Belgium"/>
+        <contact>
+          <name value="HL7 Belgium"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7belgium.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="hl7belgium@hl7belgium.org"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Message Structure eHealth"/>
+          <telecom>
+            <system value="email"/>
+            <value value="message-structure@ehealth.fgov.be"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <timestamp value="2025-02-20T00:00:00Z"/>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419760006"/>
+            <display value="Bacterial vaginosis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276877003"/>
+            <display value="Trichomonal vaginitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72934000"/>
           </contains>
         </expansion>
       </ValueSet>

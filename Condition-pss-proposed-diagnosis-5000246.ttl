@@ -6,9 +6,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-5000246-v2> a fhir:Condition ;
+<https://www.ehealth.fgov.be/standards/fhir/pss/Condition/pss-proposed-diagnosis-5000246> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "proposed-diagnosis-5000246-v2"] ; # 
+  fhir:id [ fhir:v "pss-proposed-diagnosis-5000246"] ; # 
   fhir:meta [
      fhir:versionId [ fhir:v "v2" ] ;
      fhir:profile ( [
@@ -18,7 +18,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition proposed-diagnosis-5000246-v2</b></p><a name=\"proposed-diagnosis-5000246-v2\"> </a><a name=\"hcproposed-diagnosis-5000246-v2\"> </a><a name=\"proposed-diagnosis-5000246-v2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v2</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}\">Head trauma, ataxia</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition pss-proposed-diagnosis-5000246</b></p><a name=\"pss-proposed-diagnosis-5000246\"> </a><a name=\"hcpss-proposed-diagnosis-5000246\"> </a><a name=\"pss-proposed-diagnosis-5000246-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v2</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}\">Head trauma, ataxia</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
