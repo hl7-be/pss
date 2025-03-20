@@ -147,6 +147,7 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.coding[+] = $atc#J01XD01
+* medicationCodeableConcept.coding[+] = $VMPG#1842
 * subject = Reference(patient-a)
 
 // this is WIP - note the codes and names - Metronidazole XD01, Nitrofurantoin XE01

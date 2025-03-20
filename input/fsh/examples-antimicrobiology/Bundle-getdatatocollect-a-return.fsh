@@ -35,6 +35,34 @@ Description: "OncologyPatient Codes"
 * $sct#363353009
 
 
+ValueSet: CandidaCodes
+ Title: "Candida Codes"
+ Description: "Candida Codes"
+ // Usage: #example
+ * ^status = #active
+ * $sct#72934000
+ * $sct#72605008
+ * $sct#1085006
+ * $sct#240706001
+ 
+ 
+ ValueSet: BacterialCodes
+ Title: "Bacterial Codes"
+ Description: "Bacterial Codes"
+ // Usage: #example
+ * ^status = #active
+ * $sct#419760006
+ 
+ 
+ ValueSet: TrichomonasCodes
+ Title: "Trichomonas Codes"
+ Description: "Trichomonas Codes"
+ // Usage: #example
+ * ^status = #active
+ * $sct#276877003
+ * $sct#35089004
+
+
 ValueSet: ChlamydiaCodes
 Title: "Chlamydia Codes"
 Description: "Chlamydia Codes"
@@ -135,32 +163,6 @@ Usage: #example
   * valueReference.reference = Canonical(q-collect-information-a)
 
 
-Instance: vaginitis-condition-valueset
-InstanceOf: ValueSet
-Usage: #example
-Title: "Antimicrobiology - Vaginitis-related conditions"
-Description: "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"
-
-* name = "Conditions"
-* title = "Antimicrobiology - Vaginitis-related conditions"
-* description = "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"
-* experimental = false
-* status = #active
-* expansion
-  * contains[0]
-    * system = "http://snomed.info/sct"
-    * code = #419760006
-    * display = "Bacterial vaginosis"
-  * contains[+]
-    * system = "http://snomed.info/sct"
-    * code = #276877003
-    * display = "Trichomonal vaginitis"
-  * contains[+]
-    * system = "http://snomed.info/sct"
-    * code = #72934000
-  * timestamp = "2025-02-20T00:00:00Z"
-
-
 Instance: q-collect-information-a
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
@@ -185,24 +187,24 @@ Usage: #example
 
   * answerOption[0]
     * valueCoding = #pv_candida_vag "Candida vaginitis"
-    * extension[CodeValueSet].valueCanonical = Canonical(GonokokCodes)
-    * extension[AnswerOptionAdditionalCode].valueCoding = $sct#123123
-
-  * answerOption[+]
-    * valueCoding = #pv_vulvo_vag "Vulvovaginitis"
-    * extension[CodeValueSet].valueCanonical = Canonical(GonokokCodes)
-    * extension[AnswerOptionAdditionalCode].valueCoding = $sct#123123
-
-  * answerOption[+]
-    * valueCoding = #pv_bacterial_vag "Bacteriële vaginose"
-    * extension[CodeValueSet].valueCanonical = Canonical(GonokokCodes)
-    * extension[AnswerOptionAdditionalCode].valueCoding = $sct#123123
-
+    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Vaginite à candida"
+    * extension[CodeValueSet].valueCanonical = Canonical(CandidaCodes)
 
   * answerOption[+]
     * valueCoding = #pv_trichomonas_vag "Trichomonas vaginalis"
-    * extension[CodeValueSet].valueCanonical = Canonical(GonokokCodes)
-    * extension[AnswerOptionAdditionalCode].valueCoding = $sct#123123
+    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Trichomonas vaginalis"
+    * extension[CodeValueSet].valueCanonical = Canonical(TrichomonasCodes)
+
+  * answerOption[+]
+    * valueCoding = #pv_bacterial_vag "Bacteriële vaginose"
+    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Vaginose bactérienne"
+    * extension[CodeValueSet].valueCanonical = Canonical(BacterialCodes)
 
 
 // PV can be a question (boolean or other) or a answerOption 
@@ -218,80 +220,6 @@ Usage: #example
 // Option 3: SNOMED code first: Each option has an internal SNOMED code
 //      use answerOption = $sct#72934000 "Candida-infectie van vagina", NEW EXTENSION that contains the linkId
 //      note that the display may be following SNOMED and we may want another display
-
-
-  // * item[0]
-  //   * linkId = "pv_candida_vag"
-  //   * text = "Candida vaginitis"
-  //   * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
-  //     * extension[lang].valueCode = #fr-BE
-  //     * extension[content].valueString = "Vaginite à candida"
-  //   * type = #choice
-  //   * answerOption[0].valueCoding = $sct#72934000
-  //   * answerOption[+].valueCoding = $sct#72605008 
-  //   * answerOption[+].valueCoding = $sct#1085006
-  //   * answerOption[+].valueCoding = $sct#240706001
-
-
-
-
-// * item[0]
-//   * linkId = "sp_excMand_knownPathogen_vag"
-//   * text = "Oorzakelijke kiem vulvo-vaginitis"
-//   * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
-//     * extension[lang].valueCode = #fr-BE
-//     * extension[content].valueString = "Germe causal vulvo vaginite"
-//   * type = #choice
-//   * repeats = false
-//   * required = true
-
-
-
-
-//   * item[0]
-//     * linkId = "pv_candida_vag"
-//     * text = "Candida vaginitis"
-//     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
-//       * extension[lang].valueCode = #fr-BE
-//       * extension[content].valueString = "Vaginite à candida"
-
-
-//     * answerOption[0].valueCoding = $sct#72934000
-//     * answerOption[+].valueCoding = $sct#72605008 
-//     * answerOption[+].valueCoding = $sct#1085006
-//     * answerOption[+].valueCoding = $sct#240706001
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   * item[+]
-//     * linkId = "pv_bacterial_vag"
-//     * text = "Bacteriële vaginose"
-//     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
-//       * extension[lang].valueCode = #fr-BE
-//       * extension[content].valueString = "Vaginose bactérienne"
-//     * type = #choice
-//     * answerOption[0].valueCoding = $sct#419760006
-
-//   * item[+]
-//     * linkId = "pv_trichomonas_vag"
-//     * text = "Trichomonas vaginalis"
-//     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
-//       * extension[lang].valueCode = #fr-BE
-//       * extension[content].valueString = "Trichomonas vaginalis"
-//     * type = #choice
-//     * answerOption[0].valueCoding = $sct#276877003
-//     * answerOption[1].valueCoding = $sct#35089004
 
 
 * item[+]
@@ -318,47 +246,41 @@ Usage: #example
   * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
     * extension[lang].valueCode = #fr-BE
     * extension[content].valueString = "Germe causal Urétrite"
-  * type = #boolean
+  * type = #choice
+  * repeats = false
+  * required = true
 
-  // * enableWhen
-  //   * question = "sp_exc_causalPathogen_ure"
-  //   * operator = #=
-  //   * answerBoolean = true
+  * enableWhen
+    * question = "sp_exc_causalPathogen_ure"
+    * operator = #=
+    * answerBoolean = true
 
-  *  item[+]
-    * linkId = "pv_causalPatChlamydia_ure"
-    * text = "Chlamydia"
+  * answerOption[0]
+    * valueCoding = #pv_causalPatChlamydia_ure "Chlamydia"
     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Chlamydia"
-    * type = #boolean
     * extension[CodeValueSet].valueCanonical = Canonical(ChlamydiaCodes)
 
-  *  item[+]
-    * linkId = "pv_causalPatGonokok_ure"
-    * text = "Gonokok"
+  * answerOption[+]
+    * valueCoding = #pv_causalPatGonokok_ure "Gonokok"
     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Gonocoque"
-    * type = #boolean
     * extension[CodeValueSet].valueCanonical = Canonical(GonokokCodes)
 
-  *  item[+]
-    * linkId = "pv_causalPatMycoplasma_ure"
-    * text = "Mycoplasma genitalium"
+  * answerOption[+]
+    * valueCoding = #pv_causalPatMycoplasma_ure "Mycoplasma genitalium"
     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Mycoplasma genitalium"
-    * type = #boolean
     * extension[CodeValueSet].valueCanonical = Canonical(MycoplasmaCodes)
 
-  *  item[+]
-    * linkId = "pv_causalPatOther_ure"
-    * text = "Andere"
+  * answerOption[+]
+    * valueCoding = #pv_causalPatOther_ure "Andere"
     * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Autres"
-    * type = #boolean
     * extension[CodeValueSet].valueCanonical = Canonical(OtherCodes)
 
 
@@ -394,22 +316,3 @@ Usage: #example
 // add documentation in action, not in note
 
 // NOT add extension 
-
-
-//Why are these codesystems here? They are specific for Radiology
-CodeSystem: PSSQSIProcedures
-Title: "PSS-QSI procedure codes"
-Description: "Procedure codes from the QSI system"
-* ^url = $PSSQSIProcedures 
-* ^content = #not-present
-* ^experimental = false
-* ^caseSensitive = true
-
-
-CodeSystem: PSSQSIConditions
-Title: "PSS-QSI condition codes"
-Description: "Condition codes from the QSI system"
-* ^url = $PSSQSIConditions
-* ^content = #not-present
-* ^experimental = false
-* ^caseSensitive = true

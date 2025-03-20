@@ -28,27 +28,28 @@ Usage: #example
 * subject = Reference(patient-a)
 
 * item[0]
-  * linkId = "conditions"
-  * text = "Which conditions are you considering?"
-  * item[0]
-    * linkId = "pv_candida_vag"
-    * text = "Candidiasis of vagina"
-    * answer.valueBoolean = true
+  * linkId = "sp_excMand_knownPathogen_vag"
+  * answer[0]
+    * valueCoding = #pv_candida_vag
+
 * item[+]
-  * linkId = "pregnancy"
-  * text = "Is the patient pregnant?"
-  * answer.valueBoolean = true
+  * linkId = "pv_pregnant"
+  * answer[0]
+    * valueBoolean = false
 
-// project must decide what do do with absent answers, or make them mandatory somehow (may be difficult to make multiple options mandatory)
-// this is still the old example can you maybe upload the new example that we created yesterday
+* item[+]
+  * linkId = "sp_exc_causalPathogen_ure"
+  * answer[0]
+    * valueCoding = #pv_causalPatChlamydia_ure
 
-// * item[+]
-//   * linkId = "sp_riskPatient_ast"
-//   * text = "Risicopatiënt"
-//   * answer
-//     * valueBoolean = true
-//     * item[0]
-//       * linkId = "pv_compromisedImmuneSystem"
-//       * text = "Gecompromitteerd immuunsysteem"
-//       * answer.valueBoolean = true
-// >>>>>>> Stashed changes
+* item[+]
+  * linkId = "sp_riskPatient_ast"
+  * text = "Risicopatiënt"
+  * answer[0]
+    * valueBoolean = false
+
+  * item[0]
+    * linkId = "pv_compromisedImmuneSystem"
+    * text = "Gecompromitteerd immuunsysteem"
+    * answer[0]
+      * valueBoolean = true

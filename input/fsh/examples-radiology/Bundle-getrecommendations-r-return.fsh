@@ -81,17 +81,17 @@ Usage: #example
         * denominator.value = 10
 
 
-// Instance: pss-ct-head-wo-iv-contrast
-// InstanceOf: PSSResponseServiceRequest
-// Title: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"
-// Description: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"
-// Usage: #example
-// * meta.versionId = "v3"
-// * status = #active
-// * intent = #proposal
-// * code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
-// * subject = Reference(patient-r)
-// * identifier.value = "uuid"
+Instance: pss-ct-head-wo-iv-contrast
+InstanceOf: PSSResponseServiceRequest
+Title: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"
+Description: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"
+Usage: #example
+* meta.versionId = "v3"
+* status = #active
+* intent = #proposal
+* code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
+* subject = Reference(patient-r)
+* identifier.value = "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02"
 
 
 Instance: pss-mr-head-wo-iv-contrast
