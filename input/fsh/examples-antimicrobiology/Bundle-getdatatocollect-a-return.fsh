@@ -36,31 +36,31 @@ Description: "OncologyPatient Codes"
 
 
 ValueSet: CandidaCodes
- Title: "Candida Codes"
- Description: "Candida Codes"
- // Usage: #example
- * ^status = #active
- * $sct#72934000
- * $sct#72605008
- * $sct#1085006
- * $sct#240706001
+Title: "Candida Codes"
+Description: "Candida Codes"
+// Usage: #example
+* ^status = #active
+* $sct#72934000
+* $sct#72605008
+* $sct#1085006
+* $sct#240706001
  
  
- ValueSet: BacterialCodes
- Title: "Bacterial Codes"
- Description: "Bacterial Codes"
- // Usage: #example
- * ^status = #active
- * $sct#419760006
+ValueSet: BacterialCodes
+Title: "Bacterial Codes"
+Description: "Bacterial Codes"
+// Usage: #example
+* ^status = #active
+* $sct#419760006
  
  
- ValueSet: TrichomonasCodes
- Title: "Trichomonas Codes"
- Description: "Trichomonas Codes"
- // Usage: #example
- * ^status = #active
- * $sct#276877003
- * $sct#35089004
+ValueSet: TrichomonasCodes
+Title: "Trichomonas Codes"
+Description: "Trichomonas Codes"
+// Usage: #example
+* ^status = #active
+* $sct#276877003
+* $sct#35089004
 
 
 ValueSet: ChlamydiaCodes
@@ -318,17 +318,17 @@ Usage: #example
 // NOT add extension 
 
 CodeSystem: PSSQSIProcedures
- Title: "PSS-QSI procedure codes"
- Description: "Procedure codes from the QSI system"
- * ^url = $PSSQSIProcedures 
- * ^content = #not-present
- * ^experimental = false
- * ^caseSensitive = true
+Title: "PSS-QSI procedure codes"
+Description: "Procedure codes from the QSI system"
+* ^url = $PSSQSIProcedures 
+* ^content = #not-present
+* ^experimental = false
+* ^caseSensitive = true
  
 CodeSystem: PSSQSIConditions
- Title: "PSS-QSI condition codes"
- Description: "Condition codes from the QSI system"
- * ^url = $PSSQSIConditions
- * ^content = #not-present
- * ^experimental = false
- * ^caseSensitive = true
+Title: "PSS-QSI condition codes"
+Description: "Condition codes from the QSI system"
+* ^url = $PSSQSIConditions
+* ^content = #not-present
+* ^experimental = false
+* ^caseSensitive = true
