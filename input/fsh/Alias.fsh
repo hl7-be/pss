@@ -13,3 +13,4 @@ Alias: $atc = http://www.whocc.no/atc
 Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 Alias: $ucum = http://unitsofmeasure.org 
 Alias: $icpc2 = http://hl7.org/fhir/sid/icpc2
+Alias: $VMPG = https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg

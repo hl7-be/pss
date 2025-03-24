@@ -27,15 +27,29 @@ Usage: #example
 * questionnaire = Canonical(q-collect-information-a)
 * subject = Reference(patient-a)
 
-// * item[+]
-//   * linkId = "conditions"
-//   * answer[+].valueCoding = http://snomed.info/sct#419760006
-
 * item[0]
-  * linkId = "conditions"
-  * answer[0].valueCoding = http://snomed.info/sct#419760006
+  * linkId = "sp_excMand_knownPathogen_vag"
+  * answer[0]
+    * valueCoding = #pv_candida_vag
 
 * item[+]
-  * linkId = "pregnancy"
-  * answer.valueBoolean = true
-// project must decide what do do with absent answers, or make them mandatory somehow (may be difficult to make multiple options mandatory)
+  * linkId = "pv_pregnant"
+  * answer[0]
+    * valueBoolean = false
+
+* item[+]
+  * linkId = "sp_exc_causalPathogen_ure"
+  * answer[0]
+    * valueCoding = #pv_causalPatChlamydia_ure
+
+* item[+]
+  * linkId = "sp_riskPatient_ast"
+  * text = "Risicopatiënt"
+  * answer[0]
+    * valueBoolean = false
+
+  * item[0]
+    * linkId = "pv_compromisedImmuneSystem"
+    * text = "Gecompromitteerd immuunsysteem"
+    * answer[0]
+      * valueBoolean = true

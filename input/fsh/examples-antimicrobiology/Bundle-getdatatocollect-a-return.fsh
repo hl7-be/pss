@@ -3,39 +3,104 @@ Title: "Pregnancy Codes"
 Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 // Usage: #example
 * ^status = #active
-* http://hl7.org/fhir/sid/icd-10#Z33.1
+* $icd10#Z33.1
 * $sct#87527008
 * $sct#127364007
 * $sct#72892002
 
 
+ValueSet: CompromisedImmuneSystemCodes
+Title: "CompromisedImmuneSystem Codes"
+Description: "CompromisedImmuneSystem Codes"
+* ^status = #active
+* $icpc2#B90
+* $icpc2#B72
+* $icd10#D70
+* $icd10#D71
+* $sct#234532001
+* $sct#62479008
+* $sct#445945000
 
-ValueSet: PathogenicAgents
-Title: "Pathogenic Agents list"
-Description: "Pathogenic agent codes"
+
+ValueSet: OncologyPatientCodes
+Title: "OncologyPatient Codes"
+Description: "OncologyPatient Codes"
+* ^status = #active
+* $icpc2#R84
+* $icpc2#R85
+* $icd10#C00
+* $icd10#C01
+* $sct#363505006
+* $sct#363429002
+* $sct#363353009
+
+
+ValueSet: CandidaCodes
+Title: "Candida Codes"
+Description: "Candida Codes"
 // Usage: #example
 * ^status = #active
-* $sct#123 "HPV"
-  * ^extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
-* $sct#234 "Gonokocus"
-* $sct#345 "Other"
-
-
-
-
-ValueSet: PathogenicAgentHPV
-Title: "Pathogenic Agents for HPV"
-Description: "Pathogenic agents associated with HPV"
+* $sct#72934000
+* $sct#72605008
+* $sct#1085006
+* $sct#240706001
+ 
+ 
+ValueSet: BacterialCodes
+Title: "Bacterial Codes"
+Description: "Bacterial Codes"
 // Usage: #example
 * ^status = #active
-* $sct#HPV123 "HPV suspected infection"
-  * ^extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
-* $sct#HPV234 "Confirmed HPV infection"
-* $sct#HPV345 "Lab results HPV +"
+* $sct#419760006
+ 
+ 
+ValueSet: TrichomonasCodes
+Title: "Trichomonas Codes"
+Description: "Trichomonas Codes"
+// Usage: #example
+* ^status = #active
+* $sct#276877003
+* $sct#35089004
 
 
+ValueSet: ChlamydiaCodes
+Title: "Chlamydia Codes"
+Description: "Chlamydia Codes"
+// Usage: #example
+* ^status = #active
+* $icd10#A56.0
+* $icd10#A56.2
+* $sct#236683007
+* $sct#186729003
 
 
+ValueSet: GonokokCodes
+Title: "Gonokok Codes"
+Description: "Gonokok Codes"
+// Usage: #example
+* ^status = #active
+* $icd10#A54.0
+* $icd10#A54.9
+* $sct#236682002
+
+
+ValueSet: MycoplasmaCodes
+Title: "Mycoplasma Codes"
+Description: "Mycoplasma Codes"
+// Usage: #example
+* ^status = #active
+* $sct#240594008
+
+
+ValueSet: OtherCodes
+Title: "Other Codes"
+Description: "Other Codes"
+// Usage: #example
+* ^status = #active
+* $sct#197903003
+* $sct#30116001
+* $sct#236684001
+* $sct#197850006
 
 
 Instance: getdatatocollect-a-response
@@ -98,33 +163,6 @@ Usage: #example
   * valueReference.reference = Canonical(q-collect-information-a)
 
 
-// Instance: condition-valueset
-// InstanceOf: ValueSet
-// Usage: #example
-// Title: "Antimicrobiology - Vaginitis-related conditions"
-// Description: "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"
-
-// * name = "Conditions"
-// * title = "Antimicrobiology - Vaginitis-related conditions"
-// * description = "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"
-// * experimental = false
-// * status = #active
-// * expansion
-//   * contains[0]
-//     * system = "http://snomed.info/sct"
-//     * code = #419760006
-//     * display = "Bacterial vaginosis"
-//   * contains[+]
-//     * system = "http://snomed.info/sct"
-//     * code = #276877003
-//     * display = "Trichomonal vaginitis"
-//   * contains[+]
-//     * system = "http://snomed.info/sct"
-//     * code = #72934000
-//     * display = "Candidiasis of vagina"
-//   * timestamp = "2015-06-22T13:56:07Z"
-
-
 Instance: q-collect-information-a
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
@@ -138,156 +176,131 @@ Usage: #example
 
 //* contained = condition-valueset
 * item[0]
-  * linkId = "conditions"
-  * text = "Which conditions are you considering?"
-  * type = #group
+  * linkId = "sp_excMand_knownPathogen_vag"
+  * text = "Oorzakelijke kiem vulvo-vaginitis"
+  * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "Germe causal vulvo vaginite"
+  * type = #choice
   * repeats = false
   * required = true
 
-  * item[0]
-    * linkId = "pv_candida_vag"
-    * code = $sct#72934000
-    * text = "Candidiasis of vagina"
-    * type = #boolean
+  * answerOption[0]
+    * valueCoding = #pv_candida_vag "Candida vaginitis"
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Vaginite à candida"
+    * extension[CodeValueSet].valueCanonical = Canonical(CandidaCodes)
 
-  * item[0]
-    * linkId = "pv_bacterial_vag"
-    * code = $sct#419760006
-    * text = "Bacterial vaginosis"
-    * type = #boolean
+  * answerOption[+]
+    * valueCoding = #pv_trichomonas_vag "Trichomonas vaginalis"
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Trichomonas vaginalis"
+    * extension[CodeValueSet].valueCanonical = Canonical(TrichomonasCodes)
 
-  * item[0]
-    * linkId = "pv_trichomonas_vag"
-    * code = $sct#276877003
-    * text = "Trichomonal vaginitis"
-    * type = #boolean
+  * answerOption[+]
+    * valueCoding = #pv_bacterial_vag "Bacteriële vaginose"
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Vaginose bactérienne"
+    * extension[CodeValueSet].valueCanonical = Canonical(BacterialCodes)
 
 
+// PV can be a question (boolean or other) or a answerOption 
+// We always wish for a SNOMED code to be associated with each PV - but that may not happen
+// TBC: We may want to have a display and/or translation in the questionnaire that is different from the SNOMED displays
 
+// For most questions, we have the optional .code element that can contain a SNOMED code
+// For AnswerOption, we can have an extension that contains the SNOMED code
+
+// Other options considered were:
+// Option 2: No SNOMED: Each option has an internal code, no additional SNOMED code needed
+//      use answerOption = #1 "pv_candida_vag", answerOption.coding.code is the linkId
+// Option 3: SNOMED code first: Each option has an internal SNOMED code
+//      use answerOption = $sct#72934000 "Candida-infectie van vagina", NEW EXTENSION that contains the linkId
+//      note that the display may be following SNOMED and we may want another display
 
 
 * item[+]
-  * linkId = "pregnancy"
-  * text = "Is the patient pregnant?"
+  * linkId = "pv_pregnant"
+  * text = "Zwangerschap"
   * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
     * extension[lang].valueCode = #fr-BE
-    * extension[content].valueString = "La patiente est enceinte?"
-  * code = $icd10#Z88.0
+    * extension[content].valueString = "Grossesse"
   * type = #boolean
   * extension[CodeValueSet].valueCanonical = Canonical(PregnancyCodes)
-* item[+]
-  * linkId = "recurrent"
-  * text = "Recurrent?"
-  * code = $sct#708126004
-  * type = #boolean
+  
 
-
-// case 1: Known pathogen is optional
-*  item[+]
-  * linkId = "known_pathogen"
-  * text = "Known Pathogen?"
-  * type = #boolean
-
-
-// *  item[+]
-//   * linkId = "pathogen"
-//   * text = "Pathogen - please indicate"
-//   * type = #choice
-
-//   * answerValueSet = Canonical(PathogenicAgents)
-
-//   * enableWhen
-//     * question = "known_pathogen"
-//     * operator = #=
-//     * answerBoolean = true
-
-
-
-
-  *  item[+]
-    * linkId = "pathogenBLHPV"
-    * text = "Pathogen - HPV"
-    * type = #boolean
-    * code = $sct#123 "HPV"
-    * extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
-
-  *  item[+]
-    * linkId = "pathogenBLGONO"
-    * text = "Pathogen - GONO"
-    * type = #boolean
-    * code = $sct#234 "GONO"
-    * extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
-
-  *  item[+]
-    * linkId = "pathogenBLOTHER"
-    * text = "Pathogen - OTHER"
-    * type = #boolean
-    * code = $sct#345 "OTHER"
-    * extension[CodeValueSet].valueCanonical = Canonical(PathogenicAgentHPV)
-
-
+//* item[+]
+//  * linkId = "recurrent"
+//  * text = "Recurrent?"
+//  * code = $sct#708126004
+//  * type = #boolean
 
 *  item[+]
-  * linkId = "pathogenBL"
-  * text = "Pathogen - please select one from the options"
-  * type = #group
+  * linkId = "sp_exc_causalPathogen_ure"
+  * text = "Oorzakelijke kiem Urethritis"
+  * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "Germe causal Urétrite"
+  * type = #choice
+  * repeats = false
 
-  * enableWhen
-    * question = "known_pathogen"
-    * operator = #=
-    * answerBoolean = true
+  * answerOption[0]
+    * valueCoding = #pv_causalPatChlamydia_ure "Chlamydia"
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Chlamydia"
+    * extension[CodeValueSet].valueCanonical = Canonical(ChlamydiaCodes)
 
-    
+  * answerOption[+]
+    * valueCoding = #pv_causalPatGonokok_ure "Gonokok"
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Gonocoque"
+    * extension[CodeValueSet].valueCanonical = Canonical(GonokokCodes)
+
+  * answerOption[+]
+    * valueCoding = #pv_causalPatMycoplasma_ure "Mycoplasma genitalium"
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Mycoplasma genitalium"
+    * extension[CodeValueSet].valueCanonical = Canonical(MycoplasmaCodes)
+
+  * answerOption[+]
+    * valueCoding = #pv_causalPatOther_ure "Andere"
+    * extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Autres"
+    * extension[CodeValueSet].valueCanonical = Canonical(OtherCodes)
+
 
 * item[+]
   * linkId = "sp_riskPatient_ast"
   * text = "Risicopatiënt"
-    * extension
-      * url = "http://hl7.org/fhir/StructureDefinition/translation"
-      * extension[0]
-        * url = "lang"
-        * valueCode = #fr-BE
-      * extension[+]
-        * url = "content"
-        * valueString = "Patient à risque"
+  * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "Patient à risque"
   * type = #boolean
+
   * item[0]
     * linkId = "pv_compromisedImmuneSystem"
     * text = "Gecompromitteerd immuunsysteem"
-      * extension
-        * url = "http://hl7.org/fhir/StructureDefinition/translation"
-        * extension[0]
-          * url = "lang"
-          * valueCode = #fr-BE
-        * extension[+]
-          * url = "content"
-          * valueString = "Immunosuppression / système immunitaire déprimé"
+    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Immunosuppression / système immunitaire déprimé"
     * type = #boolean
-    * extension
-      * url = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet"
-      * valueCanonical = "#CompromisedImmuneSystemCodes"
+    * extension[CodeValueSet].valueCanonical = Canonical(CompromisedImmuneSystemCodes)
+
   * item[+]
     * linkId = "pv_oncologyPatient"
     * text = "Oncologische patiënt"
-      * extension
-        * url = "http://hl7.org/fhir/StructureDefinition/translation"
-        * extension[0]
-          * url = "lang"
-          * valueCode = #fr-BE
-        * extension[+]
-          * url = "content"
-          * valueString = "Patient oncologique"
+    * text.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Patient oncologique"
     * type = #boolean
-    * extension
-      * url = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet"
-      * valueCanonical = "#OncologyPatientCodes"
-
-
-
-
-
-
-
+    * extension[CodeValueSet].valueCanonical = Canonical(OncologyPatientCodes)
 
 // Cleanup qa
 // add unknown codesystem for QSI codes
@@ -295,61 +308,3 @@ Usage: #example
 // add documentation in action, not in note
 
 // NOT add extension 
-
-
-
-CodeSystem: PSSQSIProcedures
-Title: "PSS-QSI procedure codes"
-Description: "Procedure codes from the QSI system"
-* ^url = $PSSQSIProcedures 
-* ^content = #not-present
-* ^experimental = false
-* ^caseSensitive = true
-
-
-CodeSystem: PSSQSIConditions
-Title: "PSS-QSI condition codes"
-Description: "Condition codes from the QSI system"
-* ^url = $PSSQSIConditions
-* ^content = #not-present
-* ^experimental = false
-* ^caseSensitive = true
-
-
-
-
-
-
-
-
-
-ValueSet: CompromisedImmuneSystemCodes
-Id: CompromisedImmuneSystemCodes
-Title: "CompromisedImmuneSystem Codes"
-Description: "CompromisedImmuneSystem Codes"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/CompromisedImmuneSystemCodes"
-* ^status = #active
-* $icpc2#B90
-* $icpc2#B72
-* Icd10#D70
-* Icd10#D71
-* SNOMED_CT#234532001
-* SNOMED_CT#62479008
-* SNOMED_CT#445945000
-
-
-
-ValueSet: OncologyPatientCodes
-Id: OncologyPatientCodes
-Title: "OncologyPatient Codes"
-Description: "OncologyPatient Codes"
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/OncologyPatientCodes"
-* ^status = #active
-* $icpc2#R84
-* $icpc2#R85
-* Icd10#C00
-* Icd10#C01
-* SNOMED_CT#363505006
-* SNOMED_CT#363429002
-* SNOMED_CT#363353009
-
