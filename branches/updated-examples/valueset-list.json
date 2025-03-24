@@ -1,7 +1,34 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/CompromisedImmuneSystemCodes",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BacterialCodes",
+      "title" : "Bacterial Codes",
+      "description" : "Bacterial Codes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CandidaCodes",
+      "title" : "Candida Codes",
+      "description" : "Candida Codes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ChlamydiaCodes",
+      "title" : "Chlamydia Codes",
+      "description" : "Chlamydia Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "CompromisedImmuneSystemCodes",
@@ -14,7 +41,25 @@
       ]
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/OncologyPatientCodes",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "GonokokCodes",
+      "title" : "Gonokok Codes",
+      "description" : "Gonokok Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MycoplasmaCodes",
+      "title" : "Mycoplasma Codes",
+      "description" : "Mycoplasma Codes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "OncologyPatientCodes",
@@ -25,6 +70,15 @@
         "http://hl7.org/fhir/sid/icd-10",
         "http://snomed.info/sct"
       ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "OtherCodes",
+      "title" : "Other Codes",
+      "description" : "Other Codes",
+      "systems" : ["http://snomed.info/sct"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
@@ -38,24 +92,6 @@
       ]
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "PathogenicAgentHPV",
-      "title" : "Pathogenic Agents for HPV",
-      "description" : "Pathogenic agents associated with HPV",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgents",
-      "version" : "1.0.0",
-      "status" : "active",
-      "name" : "PathogenicAgents",
-      "title" : "Pathogenic Agents list",
-      "description" : "Pathogenic agent codes",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
       "version" : "1.0.0",
       "status" : "active",
@@ -63,6 +99,15 @@
       "title" : "Pregnancy Codes",
       "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
       "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "TrichomonasCodes",
+      "title" : "Trichomonas Codes",
+      "description" : "Trichomonas Codes",
+      "systems" : ["http://snomed.info/sct"]
     }
   ]
 }

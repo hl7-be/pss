@@ -467,7 +467,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.3.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.4.1"
        ]
      ] [
        fhir:extension ( [
@@ -875,6 +875,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode> ;
+         fhir:reference [ fhir:v "StructureDefinition/AnswerOptionAdditionalCode" ]
+       ] ;
+       fhir:name [ fhir:v "AnswerOption Additional Code" ] ;
+       fhir:description [ fhir:v "An additional code for an option in a choice question" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Bundle"
          ]
        ] ) ;
@@ -1206,6 +1224,60 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes> ;
+         fhir:reference [ fhir:v "ValueSet/BacterialCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Bacterial Codes" ] ;
+       fhir:description [ fhir:v "Bacterial Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes> ;
+         fhir:reference [ fhir:v "ValueSet/CandidaCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Candida Codes" ] ;
+       fhir:description [ fhir:v "Candida Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes> ;
+         fhir:reference [ fhir:v "ValueSet/ChlamydiaCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Chlamydia Codes" ] ;
+       fhir:description [ fhir:v "Chlamydia Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -1322,6 +1394,42 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes> ;
+         fhir:reference [ fhir:v "ValueSet/GonokokCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Gonokok Codes" ] ;
+       fhir:description [ fhir:v "Gonokok Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes> ;
+         fhir:reference [ fhir:v "ValueSet/MycoplasmaCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Mycoplasma Codes" ] ;
+       fhir:description [ fhir:v "Mycoplasma Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes> ;
          fhir:reference [ fhir:v "ValueSet/OncologyPatientCodes" ]
        ] ;
@@ -1340,29 +1448,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV> ;
-         fhir:reference [ fhir:v "ValueSet/PathogenicAgentHPV" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes> ;
+         fhir:reference [ fhir:v "ValueSet/OtherCodes" ]
        ] ;
-       fhir:name [ fhir:v "Pathogenic Agents for HPV" ] ;
-       fhir:description [ fhir:v "Pathogenic agents associated with HPV" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgents> ;
-         fhir:reference [ fhir:v "ValueSet/PathogenicAgents" ]
-       ] ;
-       fhir:name [ fhir:v "Pathogenic Agents list" ] ;
-       fhir:description [ fhir:v "Pathogenic agent codes" ] ;
+       fhir:name [ fhir:v "Other Codes" ] ;
+       fhir:description [ fhir:v "Other Codes" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1734,6 +1824,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "ServiceRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/ct-head-wo-iv-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/ct-head-wo-iv-contrast" ]
+       ] ;
+       fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Request - 1.3 Original suggestion - CT head wo IV contrast" ] ;
+       fhir:description [ fhir:v "Radiology - S1 Get Recommendations - Request - 1.3 Original suggestion - CT head wo IV contrast" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ] ;
+       fhir:groupingId [ fhir:v "Radiology" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Bundle"
          ]
        ] ) ;
@@ -1777,8 +1886,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-post-trauma-ataxia> ;
-         fhir:reference [ fhir:v "Task/propose-post-trauma-ataxia" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-3074222> ;
+         fhir:reference [ fhir:v "Task/propose-3074222" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia" ] ;
@@ -1796,8 +1905,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-post-trauma-ataxia> ;
-         fhir:reference [ fhir:v "Condition/proposed-diagnosis-post-trauma-ataxia" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-3074222> ;
+         fhir:reference [ fhir:v "Condition/proposed-diagnosis-3074222" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia" ] ;
@@ -1815,8 +1924,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-stroke> ;
-         fhir:reference [ fhir:v "Task/propose-stroke" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-3074220> ;
+         fhir:reference [ fhir:v "Task/propose-3074220" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke" ] ;
@@ -1834,8 +1943,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-stroke> ;
-         fhir:reference [ fhir:v "Condition/proposed-diagnosis-stroke" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-3074220> ;
+         fhir:reference [ fhir:v "Condition/proposed-diagnosis-3074220" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke" ] ;
@@ -1853,8 +1962,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-infection> ;
-         fhir:reference [ fhir:v "Task/propose-infection" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-3074221> ;
+         fhir:reference [ fhir:v "Task/propose-3074221" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection" ] ;
@@ -1872,8 +1981,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-infection> ;
-         fhir:reference [ fhir:v "Condition/proposed-diagnosis-infection" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-3074221> ;
+         fhir:reference [ fhir:v "Condition/proposed-diagnosis-3074221" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection" ] ;
@@ -1891,8 +2000,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-head-trauma> ;
-         fhir:reference [ fhir:v "Task/propose-head-trauma" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-5000246> ;
+         fhir:reference [ fhir:v "Task/propose-5000246" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma" ] ;
@@ -1910,8 +2019,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-head-trauma> ;
-         fhir:reference [ fhir:v "Condition/proposed-diagnosis-head-trauma" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-5000246> ;
+         fhir:reference [ fhir:v "Condition/proposed-diagnosis-5000246" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma" ] ;
@@ -1929,8 +2038,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-slow-progression-ataxia> ;
-         fhir:reference [ fhir:v "Task/propose-slow-progression-ataxia" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Task/propose-3074219> ;
+         fhir:reference [ fhir:v "Task/propose-3074219" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.8. Task to propose diagnosis - Chronic or slow progression-ataxia" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.8 Task to propose diagnosis - Chronic or slow progression-ataxia" ] ;
@@ -1948,8 +2057,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-slow-progression-ataxia> ;
-         fhir:reference [ fhir:v "Condition/proposed-diagnosis-slow-progression-ataxia" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-3074219> ;
+         fhir:reference [ fhir:v "Condition/proposed-diagnosis-3074219" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia" ] ;
        fhir:description [ fhir:v "Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia" ] ;
@@ -1987,8 +2096,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/proposed-diagnosis-head-trauma-v2> ;
-         fhir:reference [ fhir:v "Condition/proposed-diagnosis-head-trauma-v2" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/pss-proposed-diagnosis-5000246> ;
+         fhir:reference [ fhir:v "Condition/pss-proposed-diagnosis-5000246" ]
        ] ;
        fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma" ] ;
        fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma" ] ;
@@ -2006,14 +2115,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/ct-head-iv-contrast-v2> ;
-         fhir:reference [ fhir:v "ServiceRequest/ct-head-iv-contrast-v2" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/pss-ct-head-wo-iv-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/pss-ct-head-wo-iv-contrast" ]
        ] ;
-       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast" ] ;
-       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT scan with IV contrast" ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Request- 1.2 Scored procedure from initially considered: CT head wo IV contrast" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT head wo IV contrast" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest>
        ] ;
        fhir:groupingId [ fhir:v "Radiology" ]
      ] [
@@ -2065,11 +2175,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/ct-head-iv-contrast> ;
-         fhir:reference [ fhir:v "ServiceRequest/ct-head-iv-contrast" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/proposed-ct-head-wo-iv-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/proposed-ct-head-wo-iv-contrast" ]
        ] ;
-       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast" ] ;
-       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT of head with IV contrast" ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
@@ -2085,11 +2195,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/ct-head-with-or-without-contrast> ;
-         fhir:reference [ fhir:v "ServiceRequest/ct-head-with-or-without-contrast" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/proposed-ct-head-wo-w-iv-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/proposed-ct-head-wo-w-iv-contrast" ]
        ] ;
-       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast" ] ;
-       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 2 - CT of head with or without contrast" ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
@@ -2105,17 +2215,35 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/mr-head-without-contrast> ;
-         fhir:reference [ fhir:v "ServiceRequest/mr-head-without-contrast" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/proposed-mr-head-wo-iv-contrast> ;
+         fhir:reference [ fhir:v "ServiceRequest/proposed-mr-head-wo-iv-contrast" ]
        ] ;
-       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast" ] ;
-       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 3 - MR of head without contrast" ] ;
+       fhir:name [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast" ] ;
+       fhir:description [ fhir:v "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast" ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest>
        ] ;
        fhir:groupingId [ fhir:v "Radiology" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes> ;
+         fhir:reference [ fhir:v "ValueSet/TrichomonasCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Trichomonas Codes" ] ;
+       fhir:description [ fhir:v "Trichomonas Codes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

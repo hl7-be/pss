@@ -5,6 +5,13 @@
   "jurisdiction": "BE",
   "extensions": [
     {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode",
+      "title": "AnswerOption Additional Code",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
       "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
       "title": "Code ValueSet",
       "types": [
@@ -162,10 +169,16 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/translation": [
+      "Bundle.entry.resource.action.action.textEquivalent",
+      "Bundle.entry.resource.dosageInstruction.text",
+      "Bundle.entry.resource.item.answerOption",
       "Bundle.entry.resource.item.item.text",
       "Bundle.entry.resource.item.text",
+      "MedicationRequest.dosageInstruction.text",
+      "Questionnaire.item.answerOption",
       "Questionnaire.item.item.text",
-      "Questionnaire.item.text"
+      "Questionnaire.item.text",
+      "RequestGroup.action.action.textEquivalent"
     ],
     "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical": [
       "CommunicationRequest"
@@ -198,16 +211,13 @@
       "CommunicationRequest",
       "MedicationRequest"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet": [
-      "Bundle.entry.resource.item.item",
-      "Questionnaire.item.item"
-    ],
     "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet": [
       "Bundle.entry.resource.item",
+      "Bundle.entry.resource.item.answerOption",
       "Bundle.entry.resource.item.item",
       "Questionnaire.item",
-      "Questionnaire.item.item",
-      "ValueSet.compose.include.concept"
+      "Questionnaire.item.answerOption",
+      "Questionnaire.item.item"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge": [
       "Bundle.entry.resource",
