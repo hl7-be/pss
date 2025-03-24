@@ -12,7 +12,7 @@
   "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/q-collect-information-a",
   "version" : "1.0.0",
   "status" : "active",
-  "date" : "2025-03-24T11:01:18+00:00",
+  "date" : "2025-03-24T12:21:29+00:00",
   "publisher" : "HL7 Belgium",
   "contact" : [{
     "name" : "HL7 Belgium",
@@ -61,65 +61,71 @@
     "repeats" : false,
     "answerOption" : [{
       "extension" : [{
-        "extension" : [{
-          "url" : "lang",
-          "valueCode" : "fr-BE"
-        },
-        {
-          "url" : "content",
-          "valueString" : "Vaginite à candida"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-      },
-      {
         "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
         "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes"
       }],
       "valueCoding" : {
         "code" : "pv_candida_vag",
-        "display" : "Candida vaginitis"
+        "display" : "Candida vaginitis",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "fr-BE"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Vaginite à candida"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
       }
     },
     {
       "extension" : [{
-        "extension" : [{
-          "url" : "lang",
-          "valueCode" : "fr-BE"
-        },
-        {
-          "url" : "content",
-          "valueString" : "Trichomonas vaginalis"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-      },
-      {
         "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
         "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes"
       }],
       "valueCoding" : {
         "code" : "pv_trichomonas_vag",
-        "display" : "Trichomonas vaginalis"
+        "display" : "Trichomonas vaginalis",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "fr-BE"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Trichomonas vaginalis"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
       }
     },
     {
       "extension" : [{
-        "extension" : [{
-          "url" : "lang",
-          "valueCode" : "fr-BE"
-        },
-        {
-          "url" : "content",
-          "valueString" : "Vaginose bactérienne"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-      },
-      {
         "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
         "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes"
       }],
       "valueCoding" : {
         "code" : "pv_bacterial_vag",
-        "display" : "Bacteriële vaginose"
+        "display" : "Bacteriële vaginose",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "fr-BE"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Vaginose bactérienne"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
       }
     }]
   },
@@ -165,86 +171,94 @@
     "repeats" : false,
     "answerOption" : [{
       "extension" : [{
-        "extension" : [{
-          "url" : "lang",
-          "valueCode" : "fr-BE"
-        },
-        {
-          "url" : "content",
-          "valueString" : "Chlamydia"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-      },
-      {
         "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
         "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes"
       }],
       "valueCoding" : {
         "code" : "pv_causalPatChlamydia_ure",
-        "display" : "Chlamydia"
+        "display" : "Chlamydia",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "fr-BE"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Chlamydia"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
       }
     },
     {
       "extension" : [{
-        "extension" : [{
-          "url" : "lang",
-          "valueCode" : "fr-BE"
-        },
-        {
-          "url" : "content",
-          "valueString" : "Gonocoque"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-      },
-      {
         "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
         "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes"
       }],
       "valueCoding" : {
         "code" : "pv_causalPatGonokok_ure",
-        "display" : "Gonokok"
+        "display" : "Gonokok",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "fr-BE"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Gonocoque"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
       }
     },
     {
       "extension" : [{
-        "extension" : [{
-          "url" : "lang",
-          "valueCode" : "fr-BE"
-        },
-        {
-          "url" : "content",
-          "valueString" : "Mycoplasma genitalium"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-      },
-      {
         "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
         "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes"
       }],
       "valueCoding" : {
         "code" : "pv_causalPatMycoplasma_ure",
-        "display" : "Mycoplasma genitalium"
+        "display" : "Mycoplasma genitalium",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "fr-BE"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Mycoplasma genitalium"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
       }
     },
     {
       "extension" : [{
-        "extension" : [{
-          "url" : "lang",
-          "valueCode" : "fr-BE"
-        },
-        {
-          "url" : "content",
-          "valueString" : "Autres"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-      },
-      {
         "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
         "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes"
       }],
       "valueCoding" : {
         "code" : "pv_causalPatOther_ure",
-        "display" : "Andere"
+        "display" : "Andere",
+        "_display" : {
+          "extension" : [{
+            "extension" : [{
+              "url" : "lang",
+              "valueCode" : "fr-BE"
+            },
+            {
+              "url" : "content",
+              "valueString" : "Autres"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }]
+        }
       }
     }]
   },
