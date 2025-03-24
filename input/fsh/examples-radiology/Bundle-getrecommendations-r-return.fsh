@@ -118,3 +118,20 @@ Usage: #example
 * code = $PSSQSIProcedures#114054 "CT, head, wo/w iv contrast"
 * subject = Reference(patient-r)
 * identifier.value = "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad04"
+
+
+CodeSystem: PSSQSIProcedures
+Title: "PSS-QSI procedure codes"
+Description: "Procedure codes from the QSI system"
+* ^url = $PSSQSIProcedures 
+* ^content = #not-present
+* ^experimental = false
+* ^caseSensitive = true
+ 
+CodeSystem: PSSQSIConditions
+Title: "PSS-QSI condition codes"
+Description: "Condition codes from the QSI system"
+* ^url = $PSSQSIConditions
+* ^content = #not-present
+* ^experimental = false
+* ^caseSensitive = true
