@@ -10,7 +10,7 @@
   "name" : "CodeValueSet",
   "title" : "Code ValueSet",
   "status" : "draft",
-  "date" : "2025-03-24T11:01:08+00:00",
+  "date" : "2025-03-24T12:21:29+00:00",
   "publisher" : "HL7 Belgium",
   "contact" : [{
     "name" : "HL7 Belgium",
@@ -58,6 +58,10 @@
   {
     "type" : "element",
     "expression" : "ValueSet.expansion.contains"
+  },
+  {
+    "type" : "element",
+    "expression" : "Questionnaire.item.answerOption"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
