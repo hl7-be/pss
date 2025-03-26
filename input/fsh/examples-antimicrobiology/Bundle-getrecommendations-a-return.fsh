@@ -34,12 +34,22 @@ Usage: #example
     * type = #documentation
     * label = "Meer details op de BCFI site"
       * extension[http://hl7.org/fhir/StructureDefinition/language].valueCode = #nl-BE
-    * url = "https://bcfi.be/nl/chapters/12?frag=8001869)"
+    * url = "https://bcfi.be/nl/chapters/12?frag=8001869"
   * documentation[+]
     * type = #documentation
     * label = "Plus de details sur le site CBIP"
       * extension[http://hl7.org/fhir/StructureDefinition/language].valueCode = #fr-BE
-    * url = "https://cbip.be/fr/chapters/12?frag=8001869)"
+    * url = "https://cbip.be/fr/chapters/12?frag=8001869"
+  * documentation[+]
+    * type = #documentation
+    * label = "Download het beslismodel van EBPNET"
+      * extension[http://hl7.org/fhir/StructureDefinition/language].valueCode = #nl-BE
+    * url = "https://ebpnet.be/nl/pss-vaginitis"
+  * documentation[+]
+    * type = #documentation
+    * label = "Télécharger le modèle de décision d'EBPNET"
+      * extension[http://hl7.org/fhir/StructureDefinition/language].valueCode = #fr-BE
+    * url = "https://ebpnet.be/fr/pss-vaginite"
 
 
   * action[0]
@@ -123,14 +133,7 @@ Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 -
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
-// * extension[structured-rating][+]
-//   * extension[ratingType].valueCode = #overall
-//   * extension[ratingValue].valueRatio
-//     * numerator.value = 3
-//     * denominator.value = 3
-//   * extension[ratingText].valueMarkdown = "Recommended"
 * status = #active
-// * payload[0].contentString = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte..."
 * payload[+].contentString
   * extension[+]
     * url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
@@ -147,7 +150,7 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.coding[+] = $atc#J01XD01
-* medicationCodeableConcept.coding[+] = $VMPG#1842
+* medicationCodeableConcept.coding[+] = $VMPG#21436
 * subject = Reference(patient-a)
 
 // this is WIP - note the codes and names - Metronidazole XD01, Nitrofurantoin XE01
