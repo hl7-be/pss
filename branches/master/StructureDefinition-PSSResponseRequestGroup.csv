@@ -85,7 +85,7 @@ requisition","",0,1,"","","Y","Identifier {[]} {[]}
 "RequestGroup.note","RequestGroup.note","","","",0,*,"","","","Annotation {[]} {[]}
 ","Additional notes about the response","Provides a mechanism to communicate additional information about the response.","","","","","","","","","",,,,,"",,,,"RequestGroup.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.note"
-"RequestGroup.action","RequestGroup.action","","","",0,*,"","","","BackboneElement {[]} {[]}
+"RequestGroup.action","RequestGroup.action","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","Proposed actions, if any","The actions, if any, produced by the evaluation of the artifact.","","","","","","","","","",,,,,"",,,,"RequestGroup.action",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 rqg-1:Must have resource or action but not both {resource.exists() != action.exists()}"
 "RequestGroup.action.id","RequestGroup.action.id","","","",0,1,"","","","string {[]} {[]}
@@ -194,7 +194,121 @@ Age {[]} {[]}Period {[]} {[]}Duration {[]} {[]}Range {[]} {[]}Timing {[]} {[]}",
 ","The target of the action","The resource that is the target of the action (e.g. CommunicationRequest).","The target resource SHALL be a [Request](http://hl7.org/fhir/R4/request.html) resource with a Request.intent set to ""option"".","","","","","","","","",,,,,"",,,,"RequestGroup.action.resource",0,1,"rqg-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"RequestGroup.action.action","RequestGroup.action.action","","","",0,*,"","","","null {[]} {[]}
+"RequestGroup.action.action","RequestGroup.action.action","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Sub action","Sub actions.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.action",0,*,"rqg-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.id","RequestGroup.action.action.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"RequestGroup.action.action.extension","RequestGroup.action.action.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"RequestGroup.action.action.extension:structured-rating","RequestGroup.action.action.extension","structured-rating","","",0,*,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating]]} {[]}
+","PSS Rating Extension","A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"RequestGroup.action.action.modifierExtension","RequestGroup.action.action.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"RequestGroup.action.action.prefix","RequestGroup.action.action.prefix","","","",0,1,"","","","string {[]} {[]}
+","User-visible prefix for the action (e.g. 1. or A.)","A user-visible prefix for the action.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.prefix",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.title","RequestGroup.action.action.title","","","",0,1,"","","","string {[]} {[]}
+","User-visible title","The title of the action displayed to a user.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.description","RequestGroup.action.action.description","","","",0,1,"","","Y","string {[]} {[]}
+","Short description of the action","A short description of the action used to provide a summary to display to the user.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.textEquivalent","RequestGroup.action.action.textEquivalent","","","",0,1,"","","Y","string {[]} {[]}
+","Static text equivalent of the action, used if the dynamic aspects cannot be interpreted by the receiving system","A text equivalent of the action to be performed. This provides a human-interpretable description of the action when the definition is consumed by a system that might not be capable of interpreting it dynamically.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.textEquivalent",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.priority","RequestGroup.action.action.priority","","","",0,1,"","","","code {[]} {[]}
+","routine | urgent | asap | stat","Indicates how quickly the action should be addressed with respect to other actions.","","","","","","","","","",,"required","Identifies the level of importance to be assigned to actioning the request.","http://hl7.org/fhir/ValueSet/request-priority|4.0.1","",,,,"RequestGroup.action.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Request.priority"
+"RequestGroup.action.action.code","RequestGroup.action.action.code","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Code representing the meaning of the action or sub-actions","A code that provides meaning for the action or action group. For example, a section may have a LOINC code for a section of a documentation template.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.code",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Request.code"
+"RequestGroup.action.action.documentation","RequestGroup.action.action.documentation","","","",0,*,"","","","RelatedArtifact {[]} {[]}
+","Supporting documentation for the intended performer of the action","Didactic or other informational resources associated with the action that can be provided to the CDS recipient. Information resources can include inline text commentary and links to web resources.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.documentation",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Request.supportingInfo"
+"RequestGroup.action.action.condition","RequestGroup.action.action.condition","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Whether or not the action is applicable","An expression that describes applicability criteria, or start/stop conditions for the action.","When multiple conditions of the same kind are present, the effects are combined using AND semantics, so the overall condition is true only if all of the conditions are true.","","","","","","","","",,,,,"",,,,"RequestGroup.action.condition",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.condition.id","RequestGroup.action.action.condition.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"RequestGroup.action.action.condition.extension","RequestGroup.action.action.condition.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"RequestGroup.action.action.condition.modifierExtension","RequestGroup.action.action.condition.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"RequestGroup.action.action.condition.kind","RequestGroup.action.action.condition.kind","","","",1,1,"","","","code {[]} {[]}
+","applicability | start | stop","The kind of condition.","Applicability criteria are used to determine immediate applicability when a plan definition is applied to a given context. Start and stop criteria are carried through application and used to describe enter/exit criteria for an action.","","","","","","","","",,"required","The kind of condition for the action.","http://hl7.org/fhir/ValueSet/action-condition-kind|4.0.1","",,,,"RequestGroup.action.condition.kind",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.condition.expression","RequestGroup.action.action.condition.expression","","","",0,1,"","","","Expression {[]} {[]}
+","Boolean-valued expression","An expression that returns true or false, indicating whether or not the condition is satisfied.","The expression may be inlined, or may be a reference to a named expression within a logic library referenced by the library element.","","","","","","","","",,,,,"",,,,"RequestGroup.action.condition.expression",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.relatedAction","RequestGroup.action.action.relatedAction","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Relationship to another action","A relationship to another action such as ""before"" or ""30-60 minutes after start of"".","","","","","","","","","",,,,,"",,,,"RequestGroup.action.relatedAction",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.relatedAction.id","RequestGroup.action.action.relatedAction.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"RequestGroup.action.action.relatedAction.extension","RequestGroup.action.action.relatedAction.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"RequestGroup.action.action.relatedAction.modifierExtension","RequestGroup.action.action.relatedAction.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"RequestGroup.action.action.relatedAction.actionId","RequestGroup.action.action.relatedAction.actionId","","","",1,1,"","","","id {[]} {[]}
+","What action this is related to","The element id of the action this is related to.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.relatedAction.actionId",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.relatedAction.relationship","RequestGroup.action.action.relatedAction.relationship","","","",1,1,"","","","code {[]} {[]}
+","before-start | before | before-end | concurrent-with-start | concurrent | concurrent-with-end | after-start | after | after-end","The relationship of this action to the related action.","","","","","","","","","",,"required","Defines the types of relationships between actions.","http://hl7.org/fhir/ValueSet/action-relationship-type|4.0.1","",,,,"RequestGroup.action.relatedAction.relationship",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.relatedAction.offset[x]","RequestGroup.action.action.relatedAction.offset[x]","","","",0,1,"","","","Duration {[]} {[]}
+Range {[]} {[]}","Time offset for the relationship","A duration or range of durations to apply to the relationship. For example, 30-60 minutes before.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.relatedAction.offset[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.timing[x]","RequestGroup.action.action.timing[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Age {[]} {[]}Period {[]} {[]}Duration {[]} {[]}Range {[]} {[]}Timing {[]} {[]}","When the action should take place","An optional value describing when the action should be performed.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.timing[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Request.occurrence[x]"
+"RequestGroup.action.action.participant","RequestGroup.action.action.participant","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
+","Who should perform the action","The participant that should perform or be responsible for this action.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.participant",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Request.performer","FiveWs.actor"
+"RequestGroup.action.action.type","RequestGroup.action.action.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","create | update | remove | fire-event","The type of action to perform (create, update, remove).","","","","","","","","","",,"extensible","The type of action to be performed.","http://hl7.org/fhir/ValueSet/action-type","",,,,"RequestGroup.action.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.groupingBehavior","RequestGroup.action.action.groupingBehavior","","","",0,1,"","","","code {[]} {[]}
+","visual-group | logical-group | sentence-group","Defines the grouping behavior for the action and its children.","","","","","","","","","",,"required","Defines organization behavior of a group.","http://hl7.org/fhir/ValueSet/action-grouping-behavior|4.0.1","",,,,"RequestGroup.action.groupingBehavior",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.selectionBehavior","RequestGroup.action.action.selectionBehavior","","","",0,1,"","","","code {[]} {[]}
+","any | all | all-or-none | exactly-one | at-most-one | one-or-more","Defines the selection behavior for the action and its children.","","","","","","","","","",,"required","Defines selection behavior of a group.","http://hl7.org/fhir/ValueSet/action-selection-behavior|4.0.1","",,,,"RequestGroup.action.selectionBehavior",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.requiredBehavior","RequestGroup.action.action.requiredBehavior","","","",0,1,"","","","code {[]} {[]}
+","must | could | must-unless-documented","Defines expectations around whether an action is required.","","","","","","","","","",,"required","Defines expectations around whether an action or action group is required.","http://hl7.org/fhir/ValueSet/action-required-behavior|4.0.1","",,,,"RequestGroup.action.requiredBehavior",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.precheckBehavior","RequestGroup.action.action.precheckBehavior","","","",0,1,"","","","code {[]} {[]}
+","yes | no","Defines whether the action should usually be preselected.","","","","","","","","","",,"required","Defines selection frequency behavior for an action or group.","http://hl7.org/fhir/ValueSet/action-precheck-behavior|4.0.1","",,,,"RequestGroup.action.precheckBehavior",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.cardinalityBehavior","RequestGroup.action.action.cardinalityBehavior","","","",0,1,"","","","code {[]} {[]}
+","single | multiple","Defines whether the action can be selected multiple times.","","","","","","","","","",,"required","Defines behavior for an action or a group for how many times that item may be repeated.","http://hl7.org/fhir/ValueSet/action-cardinality-behavior|4.0.1","",,,,"RequestGroup.action.cardinalityBehavior",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.resource","RequestGroup.action.action.resource","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
+","The target of the action","The resource that is the target of the action (e.g. CommunicationRequest).","The target resource SHALL be a [Request](http://hl7.org/fhir/R4/request.html) resource with a Request.intent set to ""option"".","","","","","","","","",,,,,"",,,,"RequestGroup.action.resource",0,1,"rqg-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RequestGroup.action.action.action","RequestGroup.action.action.action","","","",0,*,"","","","null {[]} {[]}
 ","Sub action","Sub actions.","","","","","","","","","",,,,,"",,,,"RequestGroup.action.action",0,*,"rqg-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

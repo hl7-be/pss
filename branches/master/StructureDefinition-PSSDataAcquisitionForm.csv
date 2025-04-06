@@ -107,7 +107,7 @@ que-1:Group items must have nested items, display items cannot have nested items
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Questionnaire.item.extension:CodeValueSet","Questionnaire.item.extension","CodeValueSet","","",0,1,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CodeValueSet]]} {[]}
+"Questionnaire.item.extension:CodeValueSet","Questionnaire.item.extension","CodeValueSet","","",0,1,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet]]} {[]}
 ","Code ValueSet","A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

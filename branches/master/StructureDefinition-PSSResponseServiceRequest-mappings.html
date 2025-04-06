@@ -33,8 +33,6 @@
 
 <link href="assets/css/lforms.min.css" rel="stylesheet"/>
 
-<!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/colors.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -56,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.28"}
-    h3,h4,h5,h6{--heading-prefix:"5.28"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.13"}
+    h3,h4,h5,h6{--heading-prefix:"5.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -152,7 +150,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Prescription Search Support, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 1.0.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-be/pss">https://github.com/hl7-be/pss</a> and changes regularly. See the <a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Prescription Search Support, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 1.0.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-be/pss">https://github.com/hl7-be/pss</a> and changes regularly. See the <a href="https://www.ehealth.fgov.be/standards/fhir/pss/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -187,6 +185,16 @@
 
 
 
+
+
+
+  
+    
+      <li>
+        <a href="StructureDefinition-PSSResponseServiceRequest-examples.html">Examples</a>
+      </li>
+    
+  
 
 
 
@@ -225,7 +233,7 @@
         
           Draft
           
-            as of 2025-02-26
+            as of 2025-04-06
           
         
       </td>
@@ -243,150 +251,142 @@
 
   <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>PSSResponseServiceRequest</b></td></tr>
- <tr><td>MedicationRequest</td><td>Request</td> </tr>
+ <tr><td>ServiceRequest</td><td>Request</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Request.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Request.instantiatesCanonical</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesUri</td><td>Request.instantiatesUri</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Request.basedOn</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;replaces</td><td>Request.replaces</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;requisition</td><td>Request.groupIdentifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Request.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>Request.statusReason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>Request.intent</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>Request.priority</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>Request.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;doNotPerform</td><td>Request.doNotPerform</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>Request.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Request.subject</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>Request.context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>Request.encounter</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>Request.occurrence[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>Request.authoredOn</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>Request.requester</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>Request.performer</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performerType</td><td>Request.performerType</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>Request.performer</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Request.reasonCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>Request.reasonReference</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Request.instantiates</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Request.basedOn</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;groupIdentifier</td><td>Request.groupIdentifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>Request.insurance</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>Request.supportingInfo</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Request.note</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dosageInstruction</td><td>Request.occurrence[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;priorPrescription</td><td>Request.replaces</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;eventHistory</td><td>Request.relevantHistory</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>Request.relevantHistory</td> </tr>
 </table>
-<a name="script10.6"> </a><h3>Mappings for Mapping to NCPDP SCRIPT 10.6 (http://ncpdp.org/SCRIPT10_6)</h3><table class="grid">
+<a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>PSSResponseServiceRequest</b></td></tr>
- <tr><td>MedicationRequest</td><td>Message/Body/NewRx</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Message/Header/PrescriberOrderNumber</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>no mapping</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>Message/Body/NewRx/MedicationPrescribed/Directionsor Message/Body/NewRx/MedicationPrescribed/StructuredSIG</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>Message/Body/NewRx/MedicationPrescribedMedication.code.coding.code = Message/Body/NewRx/MedicationPrescribed/DrugCoded/ProductCodeMedication.code.coding.system = Message/Body/NewRx/MedicationPrescribed/DrugCoded/ProductCodeQualifierMedication.code.coding.display = Message/Body/NewRx/MedicationPrescribed/DrugDescription</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Message/Body/NewRx/Patient(need detail to link to specific patient … Patient.Identification in SCRIPT)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>no mapping</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>Message/Body/NewRx/MedicationPrescribed/WrittenDate</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Message/Body/NewRx/MedicationPrescribed/Diagnosis/Primary/Value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>no mapping</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Message/Body/NewRx/MedicationPrescribed/Note</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td>Message/Body/NewRx/MedicationPrescribed/ExpirationDate</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;validityPeriod</td><td>Message/Body/NewRx/MedicationPrescribed/Refills</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfRepeatsAllowed</td><td>Message/Body/NewRx/MedicationPrescribed/Quantity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>Message/Body/NewRx/MedicationPrescribed/DaysSupply</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expectedSupplyDuration</td><td>Message/Body/NewRx/MedicationPrescribed/Substitutions</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;substitution</td><td>specific values within Message/Body/NewRx/MedicationPrescribed/Substitutions</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allowed[x]</td><td>specific values within Message/Body/NewRx/MedicationPrescribed/Substitutions</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reason</td><td>not mapped</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;priorPrescription</td><td>not mapped</td> </tr>
+ <tr><td>ServiceRequest</td><td>ORC</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ORC.2, ORC.3, RF1-6 / RF1-11,</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Varies by domain</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;instantiatesUri</td><td>Varies by domain</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>ORC.8 (plus others)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;replaces</td><td>Handled by message location of ORC (ORC.1=RO or RU)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;requisition</td><td>ORC.4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>ORC.5,RF1-1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>RF1-5</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>TQ1.9, RF1-2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>PR1-3 / OBR-4  (varies by domain)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>NTE</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;quantity[x]</td><td>NTE</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>PV1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>TQ1/TQ2, OBR-7/OBR-8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>ORC.9,  RF1-7 / RF1-9</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>ORC.12, PRT</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performerType</td><td>PRT, RF!-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>PRT, Practitioner: PRD-2/PRD-7 where PRD-3 = RT; Organization: PRD-10 where PRD-3 = RT</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>ORC.16, RF1-10</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>ORC.16</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>IN1/IN2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>SPM</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>SPM</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>NTE</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patientInstruction</td><td>NTE</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>N/A</td> </tr>
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>PSSResponseServiceRequest</b></td></tr>
- <tr><td>MedicationRequest</td><td>Entity. Role, or Act, CombinedMedicationRequest</td> </tr>
+ <tr><td>ServiceRequest</td><td>Entity. Role, or Act, Act[moodCode&lt;=INT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN].reasonCOde</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>.moodCode (nuances beyond PRP/PLAN/RQO would need to be elsewhere)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&quot;type of medication usage&quot;].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>.priorityCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;doNotPerform</td><td>SubstanceAdministration.actionNegationInd</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reported[x]</td><td>.participation[typeCode=INF].role</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>consumable.administrableMedication</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=AUT].role</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>.inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=&quot;type of encounter or episode&quot;]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>.outboundRelationship[typeCode=PERT].target[A_SupportingClinicalStatement CMET minimal with many different choices of classCodes(ORG, ENC, PROC, SPLY, SBADM, OBS) and each of the act class codes draws from one or more of the following moodCodes (EVN, DEF, INT PRMS, RQO, PRP, APT, ARQ, GOL)]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>author.time</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>.participation[typeCode=AUT].role</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>.participation[typeCode=PRF].role[scoper.determinerCode=INSTANCE]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;performerType</td><td>.participation[typeCode=PRF].role[scoper.determinerCode=KIND].code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;recorder</td><td>.participation[typeCode=TRANS].role[classCode=ASSIGNED].code (HealthcareProviderType)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>reason.observation.reasonCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>reason.observation[code=ASSERTION].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>.outboundRelationship[typeCode=DEFN].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesUri</td><td>.outboundRelationship[typeCode=DEFN].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>.outboundRelationship[typeCode=FLFS].target[classCode=SBADM or PROC or PCPR or OBS, moodCode=RQO orPLAN or PRP]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;groupIdentifier</td><td>.outboundRelationship(typeCode=COMP].target[classCode=SBADM, moodCode=INT].id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;courseOfTherapyType</td><td>Act.code where classCode = LIST and moodCode = EVN</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>.outboundRelationship[typeCode=FLFS].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;replaces</td><td>.outboundRelationship[typeCode=RPLC].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;requisition</td><td>.inboundRelationship(typeCode=COMP].source[moodCode=INT].identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>.moodCode (nuances beyond PRP/PLAN/RQO would need to be elsewhere)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.outboundRelationship[typeCode=&quot;COMP].target[classCode=&quot;LIST&quot;, moodCode=&quot;INT&quot;].code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>.priorityCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;doNotPerform</td><td>.actionNegationInd</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;quantity[x]</td><td>.quantity</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=SBJ].role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>.inboundRelationship(typeCode=COMP].source[classCode&lt;=PCPR, moodCode=EVN]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>.effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;asNeeded[x]</td><td>boolean: precondition.negationInd (inversed - so negationInd = true means asNeeded=false CodeableConcept: precondition.observationEventCriterion[code=&quot;Assertion&quot;].value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>.participation[typeCode=AUT].time</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>.participation[typeCode=AUT].role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performerType</td><td>.participation[typeCode=PRF].role[scoper.determinerCode=KIND].code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>.participation[typeCode=PRF].role[scoper.determinerCode=INSTANCE]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;locationCode</td><td>.participation[typeCode=LOC].role[scoper.determinerCode=KIND].code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;locationReference</td><td>.participation[typeCode=LOC].role[scoper.determinerCode=INSTANCE]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>.reasonCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>.outboundRelationship[typeCode=RSON].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>.outboundRelationship[typeCode=COVBY].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=OBS,moodCode=EVN,code=&quot;annotation&quot;].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dosageInstruction</td><td>see dosageInstruction mapping</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td>component.supplyEvent</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;initialFill</td><td>SubstanceAdministration -&gt; ActRelationship[sequenceNumber = '1'] -&gt; Supply</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>Supply.quantity[moodCode=RQO]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;duration</td><td>Supply.effectivetime[moodCode=RQO]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dispenseInterval</td><td>Supply.effectivetime[moodCode=RQO]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;validityPeriod</td><td>effectiveTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfRepeatsAllowed</td><td>repeatNumber</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>quantity</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expectedSupplyDuration</td><td>expectedUseTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;performer</td><td>.outboundRelationship[typeCode=COMP].target[classCode=SPLY, moodCode=RQO] .participation[typeCode=PRF].role[scoper.determinerCode=INSTANCE]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;substitution</td><td>subjectOf.substitutionPersmission</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allowed[x]</td><td>code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reason</td><td>reasonCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;priorPrescription</td><td>.outboundRelationship[typeCode=?RPLC or ?SUCC]/target[classCode=SBADM,moodCode=RQO]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;detectedIssue</td><td>.inboundRelationship[typeCode=SUBJ]/source[classCode=ALRT,moodCode=EVN].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;eventHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>.participation[typeCode=SPC].role</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>targetSiteCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=ANNGEN, moodCode=EVN].value[xsi:type=ST]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patientInstruction</td><td>.text</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>PSSResponseServiceRequest</b></td></tr>
- <tr><td>MedicationRequest</td><td></td> </tr>
+ <tr><td>ServiceRequest</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>FiveWs.grade</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>FiveWs.context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInformation</td><td>FiveWs.context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>FiveWs.planned</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>FiveWs.recorded</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>FiveWs.author</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;performerType</td><td>FiveWs.actor</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>FiveWs.actor</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;recorder</td><td>FiveWs.who</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;locationCode</td><td>FiveWs.actor</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;locationReference</td><td>FiveWs.actor</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>FiveWs.why[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>FiveWs.why[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;performer</td><td>FiveWs.who</td> </tr>
 </table>
-<a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
+<a name="quick"> </a><h3>Mappings for Quality Improvement and Clinical Knowledge (QUICK) (http://siframework.org/cqf)</h3><table class="grid">
  <tr><td colspan="3"><b>PSSResponseServiceRequest</b></td></tr>
- <tr><td>MedicationRequest</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ORC-2-Placer Order Number / ORC-3-Filler Order Number</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>RXE-2-Give Code / RXO-1-Requested Give Code / RXC-2-Component Code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID-3-Patient ID List</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>PV1-19-Visit Number</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>RXE-32-Original Order Date/Time / ORC-9-Date/Time of Transaction</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>ORC-16-Order Control Code Reason /RXE-27-Give Indication/RXO-20-Indication / RXD-21-Indication / RXG-22-Indication / RXA-19-Indication</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dispenseRequest</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numberOfRepeatsAllowed</td><td>RXE-12-Number of Refills</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity</td><td>RXD-4-Actual Dispense Amount / RXD-5.1-Actual Dispense Units.code / RXD-5.3-Actual Dispense Units.name of coding system</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;substitution</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allowed[x]</td><td>RXO-9-Allow Substitutions / RXE-9-Substitution Status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reason</td><td>RXE-9 Substition status</td> </tr>
+ <tr><td>ServiceRequest</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ClinicalStatement.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Action.currentStatus</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>Procedure.procedureCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>Procedure.procedureCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>ClinicalStatement.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>ClinicalStatement.encounter</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>Procedure.procedureSchedule</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;asNeeded[x]</td><td>Proposal.prnReason.reason</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>Proposal.proposedAtTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;requester</td><td>ClinicalStatement.statementAuthor</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>Procedure.targetBodySite</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>ClinicalStatement.additionalText</td> </tr>
 </table>
 
 
@@ -414,7 +414,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 26, 2025 15:34+0000">2025-02-26</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Apr 6, 2025 06:03+0000">2025-04-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- HL7 Belgium -->
@@ -423,7 +423,7 @@
 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
                  
-                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/pss/history.html">Version History</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
 <!-- no fitting stylesheet found (status/publisher)-->
 
