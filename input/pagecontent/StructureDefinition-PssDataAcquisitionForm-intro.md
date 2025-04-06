@@ -1,0 +1,4 @@
+The PSSDataAcquisitionForm profile represents the data required by the PSS system for providing the results.
+
+* When a response contains the Questionnaire, this shall be interpreted as "it is mandatory to provide a response, i.e. provide the data, considering the structure and optionality of the Questionnaire".
+* When a request for the service "GetDataToCollect" doesn't contain a questionnaire (because for example the input data Bundle already contains all the necessary information and for that situation there is no additional required data), this shall be interpreted as "no need to provide a response".
