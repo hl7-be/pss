@@ -1,17 +1,17 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 0, warn = 104, info = 7
-IG Publisher Version: 1.8.22
-Generated Wed Mar 26 10:27:24 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
+err = 1, warn = 116, info = 7
+IG Publisher Version: 1.8.23
+Generated Sun Apr 06 06:01:17 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 3 / 6
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 10 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 6 / 7
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 6 / 14
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 11 / 14
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 4 / 7
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-response : 0 / 6 / 9
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-response : 0 / 7 / 9
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 7 / 5
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses-response : 0 / 14 / 17
  /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIConditions : 0 / 0 / 1
@@ -25,10 +25,10 @@ Generated Wed Mar 26 10:27:24 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-5000246 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-pss-proposed-diagnosis-5000246 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-vulvovaginitis : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-clindamycin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-fluconazol : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-miconazol : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/MedicationRequest-proposal-clindamycin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ataxia : 0 / 2 / 1
@@ -41,8 +41,8 @@ Generated Wed Mar 26 10:27:24 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-response : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-response-group : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-r-response-1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-response-group : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-r-response-1 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-wo-iv-contrast : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-proposed-ct-head-wo-iv-contrast : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-proposed-ct-head-wo-w-iv-contrast : 0 / 1 / 1
@@ -77,7 +77,7 @@ Generated Wed Mar 26 10:27:24 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-OtherCodes : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PSSRatingTypesVS : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 1 / 1
 </table>
 == n/a ==
@@ -110,18 +110,24 @@ WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*Questionnai
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.item[0].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.item[2].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Bundle-getrecommendations-a-response.json ==
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[0].url: URL value 'https://bcfi.be/nl/chapters/12?frag=8001869' does not resolve
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[1].url: URL value 'https://cbip.be/fr/chapters/12?frag=8001869' does not resolve
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[2].url: URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[3].url: URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[0].resource: Entry 1 matches the reference CommunicationRequest/ab-advice by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ab-advice by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[2].resource: Entry 3 matches the reference MedicationRequest/clindamycin by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24 does not match the full target URL urn:uuid:clindamycin by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].action[4].resource: Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/metronidazol*/.medication.ofType(CodeableConcept).coding[1].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' could not be found, so the code cannot be validated
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/metronidazol*/.medication.ofType(CodeableConcept).coding[1].system: URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' does not resolve
 == fsh-generated/resources/Bundle-getrecommendations-data3.json ==
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/pss-proposed-diagnosis-5000246*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/pss-proposed-diagnosis-5000246*/.subject: Entry 0 matches the reference Patient/patient-r by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:patient-r by Bundle resolution rules
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/pss-ct-head-wo-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/pss-ct-head-wo-iv-contrast*/.subject: Entry 0 matches the reference Patient/patient-r by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:patient-r by Bundle resolution rules
 == fsh-generated/resources/Bundle-getrecommendations-r-response.json ==
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].documentation[0].url: URL value 'https://environment.esriguide.org/suportingContent/12345)' does not resolve
 WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].action[0].resource: Entry 1 matches the reference ServiceRequest/proposed-ct-head-wo-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:proposed-ct-head-wo-iv-contrast by Bundle resolution rules
 WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].action[1].resource: Entry 2 matches the reference ServiceRequest/proposed-mr-head-wo-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77 does not match the full target URL urn:uuid:proposed-mr-head-wo-iv-contrast by Bundle resolution rules
 WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].action[2].resource: Entry 3 matches the reference ServiceRequest/proposed-ct-head-wo-w-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:proposed-ct-head-wo-w-iv-contrast by Bundle resolution rules
@@ -169,10 +175,12 @@ WARNING: Condition/proposed-diagnosis-5000246: Condition.code.coding[0].system: 
 WARNING: Condition/pss-proposed-diagnosis-5000246: Condition.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated
 == fsh-generated/resources/Condition-vulvovaginitis.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
+WARNING: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide.dependsOn[2].uri: Canonical URL 'https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg' does not resolve
 == fsh-generated/resources/MedicationRequest-clindamycin.json ==
 == fsh-generated/resources/MedicationRequest-fluconazol.json ==
 == fsh-generated/resources/MedicationRequest-metronidazol.json ==
 WARNING: MedicationRequest/metronidazol: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' could not be found, so the code cannot be validated
+WARNING: MedicationRequest/metronidazol: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' does not resolve
 == fsh-generated/resources/MedicationRequest-miconazol.json ==
 == fsh-generated/resources/MedicationRequest-proposal-clindamycin.json ==
 == fsh-generated/resources/Observation-ataxia.json ==
@@ -201,7 +209,12 @@ WARNING: QuestionnaireResponse/qresponse-v: QuestionnaireResponse.item[2].answer
 == fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-response.json ==
 == fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group.json ==
 == fsh-generated/resources/RequestGroup-getrecommendations-a-response-group.json ==
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[0].url: URL value 'https://bcfi.be/nl/chapters/12?frag=8001869' does not resolve
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[1].url: URL value 'https://cbip.be/fr/chapters/12?frag=8001869' does not resolve
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[2].url: URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[3].url: URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve
 == fsh-generated/resources/RequestGroup-getrecommendations-r-response-1.json ==
+WARNING: RequestGroup/getrecommendations-r-response-1: RequestGroup.action[0].documentation[0].url: URL value 'https://environment.esriguide.org/suportingContent/12345)' does not resolve
 == fsh-generated/resources/ServiceRequest-ct-head-wo-iv-contrast.json ==
 WARNING: ServiceRequest/ct-head-wo-iv-contrast: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 == fsh-generated/resources/ServiceRequest-proposed-ct-head-wo-iv-contrast.json ==
@@ -218,15 +231,15 @@ WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/
 == fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json ==
 INFORMATION: StructureDefinition/PSSDataAcquisitionForm: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated/resources/StructureDefinition-PSSPatient.json ==
-WARNING: StructureDefinition/PSSPatient: StructureDefinition.snapshot.element[23].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' to 'http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0'
-WARNING: StructureDefinition/PSSPatient: StructureDefinition.differential.element[4].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' to 'http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0'
+WARNING: StructureDefinition/PSSPatient: StructureDefinition.snapshot.element[23].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' to 'http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0'
+WARNING: StructureDefinition/PSSPatient: StructureDefinition.differential.element[4].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' to 'http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0'
 == fsh-generated/resources/StructureDefinition-PSSRelevantAge.json ==
 == fsh-generated/resources/StructureDefinition-PSSRequest.json ==
 == fsh-generated/resources/StructureDefinition-PSSRequestBundle.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponse.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponseBundle.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest.json ==
-WARNING: StructureDefinition/PSSResponseCommunicationRequest: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical' to 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0'
+WARNING: StructureDefinition/PSSResponseCommunicationRequest: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical' to 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0'
 INFORMATION: StructureDefinition/PSSResponseCommunicationRequest: CommunicationRequest.extension: The extension http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0 is deprecated with the note Replaced by [[[http://hl7.org/fhir/StructureDefinition/workflow-generatedFrom]]], [[[http://hl7.org/fhir/StructureDefinition/workflow-compliesWith]]] or [[[http://hl7.org/fhir/StructureDefinition/workflow-adheresTo]]]
 == fsh-generated/resources/StructureDefinition-PSSResponseMedicationRequest.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponseRequestGroup.json ==
@@ -261,7 +274,7 @@ WARNING: ValueSet/OtherCodes: ValueSet: Published value sets SHOULD conform to t
 == fsh-generated/resources/ValueSet-PSSRatingTypesVS.json ==
 WARNING: ValueSet/PSSRatingTypesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-PregnancyCodes.json ==
-WARNING: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: The code 'Z33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10 (Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded')
+ERROR: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: The code 'Z33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10 (Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded')
 INFORMATION: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded'
 WARNING: ValueSet/PregnancyCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TrichomonasCodes.json ==
