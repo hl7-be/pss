@@ -48,8 +48,8 @@ Usage: #example
   * answer[0]
     * valueBoolean = false
 
-  * item[0]
-    * linkId = "pv_compromisedImmuneSystem"
-    * text = "Gecompromitteerd immuunsysteem"
-    * answer[0]
-      * valueBoolean = true
+    * item[0]
+      * linkId = "pv_compromisedImmuneSystem"
+      * text = "Gecompromitteerd immuunsysteem"
+      * answer[0]
+        * valueBoolean = true
