@@ -19,7 +19,7 @@
   <url value="https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/q-collect-information-a"/>
   <version value="1.0.0"/>
   <status value="active"/>
-  <date value="2025-03-24T11:01:18+00:00"/>
+  <date value="2025-04-06T05:59:28+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <name value="HL7 Belgium"/>
@@ -63,54 +63,57 @@
     <required value="true"/>
     <repeats value="false"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-        <extension url="lang">
-          <valueCode value="fr-BE"/>
-        </extension>
-        <extension url="content">
-          <valueString value="Vaginite à candida"/>
-        </extension>
-      </extension>
       <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet">
         <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes"/>
       </extension>
       <valueCoding>
         <code value="pv_candida_vag"/>
-        <display value="Candida vaginitis"/>
+        <display value="Candida vaginitis">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="fr-BE"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Vaginite à candida"/>
+            </extension>
+          </extension>
+        </display>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-        <extension url="lang">
-          <valueCode value="fr-BE"/>
-        </extension>
-        <extension url="content">
-          <valueString value="Trichomonas vaginalis"/>
-        </extension>
-      </extension>
       <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet">
         <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes"/>
       </extension>
       <valueCoding>
         <code value="pv_trichomonas_vag"/>
-        <display value="Trichomonas vaginalis"/>
+        <display value="Trichomonas vaginalis">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="fr-BE"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Trichomonas vaginalis"/>
+            </extension>
+          </extension>
+        </display>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-        <extension url="lang">
-          <valueCode value="fr-BE"/>
-        </extension>
-        <extension url="content">
-          <valueString value="Vaginose bactérienne"/>
-        </extension>
-      </extension>
       <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet">
         <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes"/>
       </extension>
       <valueCoding>
         <code value="pv_bacterial_vag"/>
-        <display value="Bacteriële vaginose"/>
+        <display value="Bacteriële vaginose">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="fr-BE"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Vaginose bactérienne"/>
+            </extension>
+          </extension>
+        </display>
       </valueCoding>
     </answerOption>
   </item>
@@ -146,71 +149,75 @@
     <type value="choice"/>
     <repeats value="false"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-        <extension url="lang">
-          <valueCode value="fr-BE"/>
-        </extension>
-        <extension url="content">
-          <valueString value="Chlamydia"/>
-        </extension>
-      </extension>
       <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet">
         <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes"/>
       </extension>
       <valueCoding>
         <code value="pv_causalPatChlamydia_ure"/>
-        <display value="Chlamydia"/>
+        <display value="Chlamydia">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="fr-BE"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Chlamydia"/>
+            </extension>
+          </extension>
+        </display>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-        <extension url="lang">
-          <valueCode value="fr-BE"/>
-        </extension>
-        <extension url="content">
-          <valueString value="Gonocoque"/>
-        </extension>
-      </extension>
       <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet">
         <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes"/>
       </extension>
       <valueCoding>
         <code value="pv_causalPatGonokok_ure"/>
-        <display value="Gonokok"/>
+        <display value="Gonokok">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="fr-BE"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Gonocoque"/>
+            </extension>
+          </extension>
+        </display>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-        <extension url="lang">
-          <valueCode value="fr-BE"/>
-        </extension>
-        <extension url="content">
-          <valueString value="Mycoplasma genitalium"/>
-        </extension>
-      </extension>
       <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet">
         <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes"/>
       </extension>
       <valueCoding>
         <code value="pv_causalPatMycoplasma_ure"/>
-        <display value="Mycoplasma genitalium"/>
+        <display value="Mycoplasma genitalium">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="fr-BE"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Mycoplasma genitalium"/>
+            </extension>
+          </extension>
+        </display>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
-        <extension url="lang">
-          <valueCode value="fr-BE"/>
-        </extension>
-        <extension url="content">
-          <valueString value="Autres"/>
-        </extension>
-      </extension>
       <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet">
         <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes"/>
       </extension>
       <valueCoding>
         <code value="pv_causalPatOther_ure"/>
-        <display value="Andere"/>
+        <display value="Andere">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="fr-BE"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Autres"/>
+            </extension>
+          </extension>
+        </display>
       </valueCoding>
     </answerOption>
   </item>
