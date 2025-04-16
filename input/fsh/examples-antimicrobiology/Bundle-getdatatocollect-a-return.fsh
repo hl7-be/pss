@@ -2,6 +2,7 @@ ValueSet: PregnancyCodes
 Title: "Pregnancy Codes"
 Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 // Usage: #example
+* insert SctCopyright
 * ^status = #active
 * $icd10#Z33.1
 * $sct#87527008
@@ -12,6 +13,7 @@ Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 ValueSet: CompromisedImmuneSystemCodes
 Title: "CompromisedImmuneSystem Codes"
 Description: "CompromisedImmuneSystem Codes"
+* insert SctCopyright
 * ^status = #active
 * $icpc2#B90
 * $icpc2#B72
@@ -25,6 +27,7 @@ Description: "CompromisedImmuneSystem Codes"
 ValueSet: OncologyPatientCodes
 Title: "OncologyPatient Codes"
 Description: "OncologyPatient Codes"
+* insert SctCopyright
 * ^status = #active
 * $icpc2#R84
 * $icpc2#R85
@@ -39,6 +42,7 @@ ValueSet: CandidaCodes
 Title: "Candida Codes"
 Description: "Candida Codes"
 // Usage: #example
+* insert SctCopyright
 * ^status = #active
 * $sct#72934000
 * $sct#72605008
@@ -50,6 +54,7 @@ ValueSet: BacterialCodes
 Title: "Bacterial Codes"
 Description: "Bacterial Codes"
 // Usage: #example
+* insert SctCopyright
 * ^status = #active
 * $sct#419760006
  
@@ -58,6 +63,7 @@ ValueSet: TrichomonasCodes
 Title: "Trichomonas Codes"
 Description: "Trichomonas Codes"
 // Usage: #example
+* insert SctCopyright
 * ^status = #active
 * $sct#276877003
 * $sct#35089004
@@ -67,6 +73,7 @@ ValueSet: ChlamydiaCodes
 Title: "Chlamydia Codes"
 Description: "Chlamydia Codes"
 // Usage: #example
+* insert SctCopyright
 * ^status = #active
 * $icd10#A56.0
 * $icd10#A56.2
@@ -78,6 +85,7 @@ ValueSet: GonokokCodes
 Title: "Gonokok Codes"
 Description: "Gonokok Codes"
 // Usage: #example
+* insert SctCopyright
 * ^status = #active
 * $icd10#A54.0
 * $icd10#A54.9
@@ -88,6 +96,7 @@ ValueSet: MycoplasmaCodes
 Title: "Mycoplasma Codes"
 Description: "Mycoplasma Codes"
 // Usage: #example
+* insert SctCopyright
 * ^status = #active
 * $sct#240594008
 
@@ -96,6 +105,7 @@ ValueSet: OtherCodes
 Title: "Other Codes"
 Description: "Other Codes"
 // Usage: #example
+* insert SctCopyright
 * ^status = #active
 * $sct#197903003
 * $sct#30116001
