@@ -28,6 +28,12 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
+* note[0].text = "Waarschuwing! De indicatie is niet langer up-to-date met de BAPCOC-richtlijnen."
+* note[=].extension.url = "http://hl7.org/fhir/StructureDefinition/language"
+* note[=].extension.valueCode = #nl-BE
+* note[+].text = "Avertissement ! L’indication n’est plus à jour avec les directives du BAPCOC."
+* note[=].extension.url = "http://hl7.org/fhir/StructureDefinition/language"
+* note[=].extension.valueCode = #fr-BE
 * action[0]
   * selectionBehavior = #at-most-one
   * documentation[+]
