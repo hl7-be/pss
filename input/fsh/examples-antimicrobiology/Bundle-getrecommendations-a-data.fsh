@@ -4,19 +4,19 @@ Description: "Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"
 InstanceOf: PSSRequestBundle
 Usage: #example
 * type = #collection
-* entry[0].resource = patient-a
+* entry[0].resource = 30551ce1-5a28-4356-b684-2e639094ad48
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48"
-* entry[+].resource = vulvovaginitis
+* entry[+].resource = 30551ce1-5a28-4356-b684-2e639094ad01
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad01"
-* entry[+].resource = allergy-to-sulfonamide
+* entry[+].resource = 30551ce1-5a28-4356-b684-2e639094ad02
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ada2"
-* entry[+].resource = proposal-clindamycin
+* entry[+].resource = 30551ce1-5a28-4356-b684-2e639094ad12
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad0b"
-* entry[+].resource = qresponse-v
+* entry[+].resource = 30551ce1-5a28-4356-b684-2e639094ac02
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ac02"
 
 
-Instance: qresponse-v
+Instance: 30551ce1-5a28-4356-b684-2e639094ac02
 InstanceOf: QuestionnaireResponse
 Title: "Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"
 Description: "Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"
@@ -24,8 +24,8 @@ Description: "Antimicrobiology - S3 Get Recommendations - Request- 1.1. Question
 Usage: #example
 * status = #completed
 * authored = "2023-10-18T19:20:20.913Z"
-* questionnaire = Canonical(q-collect-information-a)
-* subject = Reference(patient-a)
+* questionnaire = Canonical(30551ce1-5a28-4356-b684-2e639094ad4c)
+* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 
 * item[0]
   * linkId = "sp_excMand_knownPathogen_vag"

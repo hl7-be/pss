@@ -2,6 +2,7 @@ ValueSet: PregnancyCodes
 Title: "Pregnancy Codes"
 Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 // Usage: #example
+* ^experimental = true
 * ^status = #active
 * $icd10#Z33.1
 * $sct#87527008
@@ -12,6 +13,7 @@ Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 ValueSet: CompromisedImmuneSystemCodes
 Title: "CompromisedImmuneSystem Codes"
 Description: "CompromisedImmuneSystem Codes"
+* ^experimental = true
 * ^status = #active
 * $icpc2#B90
 * $icpc2#B72
@@ -25,6 +27,7 @@ Description: "CompromisedImmuneSystem Codes"
 ValueSet: OncologyPatientCodes
 Title: "OncologyPatient Codes"
 Description: "OncologyPatient Codes"
+* ^experimental = true
 * ^status = #active
 * $icpc2#R84
 * $icpc2#R85
@@ -39,6 +42,7 @@ ValueSet: CandidaCodes
 Title: "Candida Codes"
 Description: "Candida Codes"
 // Usage: #example
+* ^experimental = true
 * ^status = #active
 * $sct#72934000
 * $sct#72605008
@@ -50,6 +54,7 @@ ValueSet: BacterialCodes
 Title: "Bacterial Codes"
 Description: "Bacterial Codes"
 // Usage: #example
+* ^experimental = true
 * ^status = #active
 * $sct#419760006
  
@@ -58,6 +63,7 @@ ValueSet: TrichomonasCodes
 Title: "Trichomonas Codes"
 Description: "Trichomonas Codes"
 // Usage: #example
+* ^experimental = true
 * ^status = #active
 * $sct#276877003
 * $sct#35089004
@@ -67,6 +73,7 @@ ValueSet: ChlamydiaCodes
 Title: "Chlamydia Codes"
 Description: "Chlamydia Codes"
 // Usage: #example
+* ^experimental = true
 * ^status = #active
 * $icd10#A56.0
 * $icd10#A56.2
@@ -78,6 +85,7 @@ ValueSet: GonokokCodes
 Title: "Gonokok Codes"
 Description: "Gonokok Codes"
 // Usage: #example
+* ^experimental = true
 * ^status = #active
 * $icd10#A54.0
 * $icd10#A54.9
@@ -88,6 +96,7 @@ ValueSet: MycoplasmaCodes
 Title: "Mycoplasma Codes"
 Description: "Mycoplasma Codes"
 // Usage: #example
+* ^experimental = true
 * ^status = #active
 * $sct#240594008
 
@@ -96,6 +105,7 @@ ValueSet: OtherCodes
 Title: "Other Codes"
 Description: "Other Codes"
 // Usage: #example
+* ^experimental = true
 * ^status = #active
 * $sct#197903003
 * $sct#30116001
@@ -113,14 +123,14 @@ Usage: #example
 * type = #collection
 * entry[0].resource = getdatatocollect-a-response-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4d"
-* entry[+].resource = collect-information-a
+* entry[+].resource = 30551ce1-5a28-4356-b684-11ef43a67755
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755"
-* entry[+].resource = q-collect-information-a
+* entry[+].resource = 30551ce1-5a28-4356-b684-2e639094ad4c
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4c"
 // * entry[+].resource = collect-patient_variables
 // * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4b"
-* entry[+].resource = patient-a
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094adff"
+* entry[+].resource = 30551ce1-5a28-4356-b684-2e639094ad48
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48"
 
 
 Instance: getdatatocollect-a-response-group
@@ -140,15 +150,15 @@ Usage: #example
 // * contained[+] = q-collect-leukocytes
 * status = #active
 * intent = #proposal
-* subject = Reference(patient-a)
+* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
   * selectionBehavior = #at-most-one 
   * action[0]
     * textEquivalent = "Collect information"
-    * resource = Reference(collect-information-a)
+    * resource = Reference(30551ce1-5a28-4356-b684-11ef43a67755)
 
 
-Instance: collect-information-a
+Instance: 30551ce1-5a28-4356-b684-11ef43a67755
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
 InstanceOf: Task
@@ -157,13 +167,13 @@ Usage: #example
 * status = #requested
 * intent = #proposal
 * code = $cpg-activity-type-cs#collect-information "Collect information"
-* for = Reference(patient-a)
+* for = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * input
   * type = $cpg-activity-type-cs#collect-information "Collect information"
-  * valueReference.reference = Canonical(q-collect-information-a)
+  * valueReference.reference = Canonical(30551ce1-5a28-4356-b684-2e639094ad4c)
 
 
-Instance: q-collect-information-a
+Instance: 30551ce1-5a28-4356-b684-2e639094ad4c
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"
 InstanceOf: PSSDataAcquisitionForm

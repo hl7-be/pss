@@ -147,50 +147,50 @@ groups:
     name: Examples - Antimicrobiology
     description: Antimicrobiology PSS resource examples
     resources:
-      - Patient/patient-a
+      - Patient/30551ce1-5a28-4356-b684-2e639094ad48
       - Bundle/getdatatocollect-a-data
-      - vulvovaginitis
-      - AllergyIntolerance/allergy-to-sulfonamide
-      - MedicationRequest/proposal-clindamycin
+      - Condition/30551ce1-5a28-4356-b684-2e639094ad01
+      - AllergyIntolerance/30551ce1-5a28-4356-b684-2e639094ad02
+      - MedicationRequest/30551ce1-5a28-4356-b684-2e639094ad12
 
       - Bundle/getdatatocollect-a-response
       - RequestGroup/getdatatocollect-a-response-group
-      - Task/collect-information-a
-      - Questionnaire/q-collect-information-a
+      - Task/30551ce1-5a28-4356-b684-11ef43a67755
+      - Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c
 #      - ValueSet/condition-valueset
       - ValueSet/PregnancyCodes
 
       - Bundle/getrecommendations-a-data
-      - QuestionnaireResponse/qresponse-v
+      - QuestionnaireResponse/30551ce1-5a28-4356-b684-2e639094ac02
 
       - Bundle/getrecommendations-a-response
       - RequestGroup/getrecommendations-a-response-group
-      - CommunicationRequest/ab-advice
-      - MedicationRequest/metronidazol
-      - MedicationRequest/clindamycin
-      - MedicationRequest/fluconazol
-      - MedicationRequest/miconazol
+      - CommunicationRequest/30551ce1-5a28-4356-b684-1e639094dd22
+      - MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23
+      - MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24
+      - MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad26
+      - MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad29
 
   Radiology:
     name: Examples - Radiology
     description: Radiology PSS resource examples
     resources: 
-      - Patient/patient-r
+      - Patient/30551ce1-5a28-4356-b684-3e639094ad48
       - Bundle/radiology-getdiagnoses
       - Observation/ataxia
       - Bundle/radiology-getdiagnoses-response
-      - RequestGroup/Inline-Instance-for-radiology-getdiagnoses-response
-      - Task/propose-3074220
-      - Condition/proposed-diagnosis-3074220
-      - Task/propose-3074221
-      - Condition/proposed-diagnosis-3074221
-      - Task/propose-5000246
-      - Condition/proposed-diagnosis-5000246
-      - Task/propose-3074219
-      - Condition/proposed-diagnosis-3074219
-      - Task/propose-3074222
-      - Condition/proposed-diagnosis-3074222
-      - Condition/pss-proposed-diagnosis-5000246      
+      - RequestGroup/30551ce1-5a28-4356-b684-3e639094ad08
+      - Task/1cdd5aab-1d4d-4965-bbe1-c851698d07f0
+      - Condition/287e8fe2-3e83-44bd-92e7-962bc90b6d67
+      - Task/db2698ba-cd0b-4c08-b57c-868ab5b95af6
+      - Condition/5f3aafb8-643c-4ed5-ad54-199939e7b2d1
+      - Task/30551ce1-5a28-4356-b684-3e639094ad11
+      - Condition/30551ce1-5a28-4356-b684-4e639094ad11
+      - Task/cfdfee5b-1db1-43fe-af72-4ea54b4e1a16
+      - Condition/72d3ced6-5133-4042-931e-04284c9f4283
+      - Task/54aad964-ad8a-4985-8ff1-3b09d707ee1e
+      - Condition/b90ca57a-1ae5-4ff6-8dce-48488660ea65
+      - Condition/pss-30551ce1-5a28-4356-b684-4e639094ad11      
 
       - Bundle/getrecommendations-data3
 #      - Condition/proposed-diagnosis-head-trauma-v2
@@ -200,9 +200,9 @@ groups:
       - RequestGroup/getrecommendations-r-response-1
       - ServiceRequest/ct-head-wo-iv-contrast
       - ServiceRequest/pss-ct-head-wo-iv-contrast
-      - ServiceRequest/proposed-ct-head-wo-iv-contrast
-      - ServiceRequest/proposed-ct-head-wo-w-iv-contrast
-      - ServiceRequest/proposed-mr-head-wo-iv-contrast
+      - ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23
+      - ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22
+      - ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77
 #      - ServiceRequest/ct-head-with-or-without-contrast
 #      - ServiceRequest/mr-head-without-contrast
       

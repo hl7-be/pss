@@ -4,8 +4,8 @@ Description: "Radiology - S1 Get Diagnoses - Request - 1. Bundle"
 InstanceOf: PSSRequestBundle
 Usage: #example
 * type = #collection
-* entry[0].resource = patient-r
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad03"
+* entry[0].resource = 30551ce1-5a28-4356-b684-3e639094ad48
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48"
 * entry[+].resource = ataxia
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad04"
 * entry[+].resource = ct-head-wo-iv-contrast
@@ -19,7 +19,7 @@ InstanceOf: Observation
 Usage: #example
 * status = #final
 * code = $sct#20262006 "Ataxia"
-* subject = Reference(patient-r)
+* subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
 
 
 Instance: ct-head-wo-iv-contrast
@@ -31,5 +31,5 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
-* subject = Reference(patient-r)
+* subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
 * identifier.value = "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02"

@@ -8,15 +8,15 @@ Usage: #example
 * type = #collection
 * entry[0].resource = getrecommendations-a-response-group
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
-* entry[+].resource = ab-advice
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
-* entry[+].resource = metronidazol
+* entry[+].resource = 30551ce1-5a28-4356-b684-1e639094dd22
+* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094dd22"
+* entry[+].resource = 30551ce1-5a28-4356-b684-1e639094ac23
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23"
-* entry[+].resource = clindamycin
+* entry[+].resource = 30551ce1-5a28-4356-b684-1e639094ad24
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24"
-* entry[+].resource = fluconazol
+* entry[+].resource = 30551ce1-5a28-4356-b684-1e639094ad26
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26"
-* entry[+].resource = miconazol
+* entry[+].resource = 30551ce1-5a28-4356-b684-1e639094ad29
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"
 
 Instance: getrecommendations-a-response-group
@@ -27,7 +27,7 @@ Usage: #example
 * id = "getrecommendations-a-response-group"
 * status = #active
 * intent = #proposal
-* subject = Reference(patient-a)
+* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
   * selectionBehavior = #at-most-one
   * documentation[+]
@@ -57,7 +57,7 @@ Usage: #example
     * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Conseil général"
-    * resource = Reference(ab-advice)
+    * resource = Reference(30551ce1-5a28-4356-b684-1e639094dd22)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
@@ -72,7 +72,7 @@ Usage: #example
     * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Métronidazole orale"
-    * resource = Reference(metronidazol)
+    * resource = Reference(30551ce1-5a28-4356-b684-1e639094ac23)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
@@ -87,7 +87,7 @@ Usage: #example
     * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Clindamycine localement"
-    * resource = Reference(clindamycin)
+    * resource = Reference(30551ce1-5a28-4356-b684-1e639094ad24)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
@@ -102,7 +102,7 @@ Usage: #example
     * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Fluconazole orale"
-    * resource = Reference(fluconazol)
+    * resource = Reference(30551ce1-5a28-4356-b684-1e639094ad26)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
@@ -117,7 +117,7 @@ Usage: #example
     * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Miconazole localement"
-    * resource = Reference(miconazol)
+    * resource = Reference(30551ce1-5a28-4356-b684-1e639094ad29)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
@@ -127,7 +127,7 @@ Usage: #example
         * insert AddTranslation(fr-BE,Pas approprié)
 
 
-Instance: ab-advice
+Instance: 30551ce1-5a28-4356-b684-1e639094dd22
 InstanceOf: PSSResponseCommunicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"
@@ -139,10 +139,10 @@ Usage: #example
     * url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
     * valueMarkdown = "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte. Metronidazol en clindamycine worden in de SKP afgeraden in het eerste trimester. De klinische gegevens omtrent gebruik tijdens het eerste trimester van de zwangerschap zijn nochtans geruststellend en de meeste bronnen geven aan dat het kan gebruikt worden."
       * insert AddTranslation(fr-BE,Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée. Le RCP déconseille l'utilisation du métronidazole et de la clindamycine pendant le premier trimestre de la grossesse. Les données cliniques concernant leur utilisation pendant le premier trimestre de grossesse sont pourtant rassurantes et la plupart des sources acceptent leur utilisation en période de grossesse.)
-* subject = Reference(patient-a)
+* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 
 
-Instance: metronidazol
+Instance: 30551ce1-5a28-4356-b684-1e639094ac23
 InstanceOf: MedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
@@ -151,7 +151,7 @@ Usage: #example
 * intent = #proposal
 * medicationCodeableConcept.coding[+] = $atc#J01XD01
 * medicationCodeableConcept.coding[+] = $VMPG#21436
-* subject = Reference(patient-a)
+* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 
 // this is WIP - note the codes and names - Metronidazole XD01, Nitrofurantoin XE01
 * dosageInstruction.text = "1000 mg per dag in 2 giften gedurende 7 dagen"
@@ -169,7 +169,7 @@ Usage: #example
   * boundsDuration = 7 'd'
 
 
-Instance: clindamycin
+Instance: 30551ce1-5a28-4356-b684-1e639094ad24
 InstanceOf: MedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
@@ -186,14 +186,14 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.coding[+] = $atc#G01AA10
-* subject = Reference(patient-a)
+* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 
 * dosageInstruction.text = "ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen"
   * extension[http://hl7.org/fhir/StructureDefinition/translation]
     * extension[lang].valueCode = #fr-BE
     * extension[content].valueString = "ovule : 100 mg par jour en 1 prise pendant 3 jours OU crème vaginale : 2 % 5 g par jour en 1 prise pendant 7 jours"
 
-Instance: fluconazol
+Instance: 30551ce1-5a28-4356-b684-1e639094ad26
 InstanceOf: MedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
@@ -202,10 +202,10 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Fluconazol"
-* subject = Reference(patient-a)
+* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 
 
-Instance: miconazol
+Instance: 30551ce1-5a28-4356-b684-1e639094ad29
 InstanceOf: PSSResponseMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
@@ -214,4 +214,4 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Miconazol"
-* subject = Reference(patient-a)
+* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
