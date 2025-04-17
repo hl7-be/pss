@@ -98,8 +98,6 @@ Generic: line 0, col 0, Warning - The IG is not for the international realm, and
 /github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc2 (EXCEPTION)
 /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes.json: line 0, col 0, Warning - Unknown System 'http://hl7.org/fhir/sid/icpc2' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc2' could not be found, so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc2 (EXCEPTION)
-/github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes.json: line 1, col 2081, Error - The code 'Z33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10 (Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded') (BUSINESSRULE)
-/github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes.json: line 1, col 2081, Info - Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded' (BUSINESSRULE)
 
-err = 2, warn = 76, info = 21
+err = 1, warn = 76, info = 20
 IG Publisher Version: 1.8.24
