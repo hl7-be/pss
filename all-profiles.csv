@@ -234,9 +234,13 @@ que-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 "
 "PSSDataAcquisitionForm","Questionnaire.item.answerOption.id","Questionnaire.item.answerOption.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"PSSDataAcquisitionForm","Questionnaire.item.answerOption.extension","Questionnaire.item.answerOption.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"PSSDataAcquisitionForm","Questionnaire.item.answerOption.extension","Questionnaire.item.answerOption.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"PSSDataAcquisitionForm","Questionnaire.item.answerOption.extension:answerOptionAdditionalCode","Questionnaire.item.answerOption.extension","answerOptionAdditionalCode","","",0,*,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode]]} {[]}
+","AnswerOption Additional Code","An additional code for an option in a choice question","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PSSDataAcquisitionForm","Questionnaire.item.answerOption.modifierExtension","Questionnaire.item.answerOption.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
