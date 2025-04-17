@@ -1,7 +1,7 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 2, warn = 76, info = 21
+err = 1, warn = 76, info = 20
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 5 / 0
@@ -77,7 +77,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-OtherCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PSSRatingTypesVS : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 0 / 1
 </table>
 == n/a ==
@@ -251,6 +251,4 @@ WARNING: ValueSet.where(id = 'OncologyPatientCodes'): Error from http://tx.fhir.
 == fsh-generated/resources/ValueSet-OtherCodes.json ==
 == fsh-generated/resources/ValueSet-PSSRatingTypesVS.json ==
 == fsh-generated/resources/ValueSet-PregnancyCodes.json ==
-ERROR: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: The code 'Z33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10 (Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded')
-INFORMATION: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded'
 == fsh-generated/resources/ValueSet-TrichomonasCodes.json ==
