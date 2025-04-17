@@ -19,12 +19,12 @@
           <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_getrecommendations-r-response-1"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-r-response-1</b></p><a name="getrecommendations-r-response-1"> </a><a name="hcgetrecommendations-r-response-1"> </a><a name="getrecommendations-r-response-1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>Justification</td><td>Appropriateness Scoring Guidelines</td><td><a href="https://environment.esriguide.org/suportingContent/12345)">https://environment.esriguide.org/suportingContent/12345)</a></td></tr></table><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>, </td><td>CT, head, wo iv contrast</td><td><a href="ServiceRequest-proposed-ct-head-wo-iv-contrast.html">ServiceRequest CT, head, wo iv contrast</a></td></tr><tr><td style="display: none">*</td><td>, </td><td>MR, head, wo iv contrast</td><td><a href="ServiceRequest-proposed-mr-head-wo-iv-contrast.html">ServiceRequest MR, head, wo iv contrast</a></td></tr><tr><td style="display: none">*</td><td>, </td><td>CT, head, wo/w iv contrast</td><td><a href="ServiceRequest-proposed-ct-head-wo-w-iv-contrast.html">ServiceRequest CT, head, wo/w iv contrast</a></td></tr></table></blockquote></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_getrecommendations-r-response-1"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-r-response-1</b></p><a name="getrecommendations-r-response-1"> </a><a name="hcgetrecommendations-r-response-1"> </a><a name="getrecommendations-r-response-1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-3e639094ad48.html"> Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>Justification</td><td>Appropriateness Scoring Guidelines</td><td><a href="https://environment.esriguide.org/suportingContent/12345)">https://environment.esriguide.org/suportingContent/12345)</a></td></tr></table><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>, </td><td>CT, head, wo iv contrast</td><td><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23.html">ServiceRequest CT, head, wo iv contrast</a></td></tr><tr><td style="display: none">*</td><td>, </td><td>MR, head, wo iv contrast</td><td><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.html">ServiceRequest MR, head, wo iv contrast</a></td></tr><tr><td style="display: none">*</td><td>, </td><td>CT, head, wo/w iv contrast</td><td><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22.html">ServiceRequest CT, head, wo/w iv contrast</a></td></tr></table></blockquote></div>
         </text>
         <status value="active"/>
         <intent value="proposal"/>
         <subject>
-          <reference value="Patient/patient-r"/>
+          <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
         </subject>
         <action>
           <documentation>
@@ -70,7 +70,7 @@
             </extension>
             <textEquivalent value="CT, head, wo iv contrast"/>
             <resource>
-              <reference value="ServiceRequest/proposed-ct-head-wo-iv-contrast"/>
+              <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23"/>
             </resource>
           </action>
           <action>
@@ -106,7 +106,7 @@
             </extension>
             <textEquivalent value="MR, head, wo iv contrast"/>
             <resource>
-              <reference value="ServiceRequest/proposed-mr-head-wo-iv-contrast"/>
+              <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77"/>
             </resource>
           </action>
           <action>
@@ -142,7 +142,7 @@
             </extension>
             <textEquivalent value="CT, head, wo/w iv contrast"/>
             <resource>
-              <reference value="ServiceRequest/proposed-ct-head-wo-w-iv-contrast"/>
+              <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22"/>
             </resource>
           </action>
         </action>
@@ -153,13 +153,13 @@
     <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"/>
     <resource>
       <ServiceRequest>
-        <id value="proposed-ct-head-wo-iv-contrast"/>
+        <id value="30551ce1-5a28-4356-b684-1e639094ad23"/>
         <meta>
           <versionId value="v3"/>
           <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_proposed-ct-head-wo-iv-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest proposed-ct-head-wo-iv-contrast</b></p><a name="proposed-ct-head-wo-iv-contrast"> </a><a name="hcproposed-ct-head-wo-iv-contrast"> </a><a name="proposed-ct-head-wo-iv-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114055}">CT, head, wo iv contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_30551ce1-5a28-4356-b684-1e639094ad23"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest 30551ce1-5a28-4356-b684-1e639094ad23</b></p><a name="30551ce1-5a28-4356-b684-1e639094ad23"> </a><a name="hc30551ce1-5a28-4356-b684-1e639094ad23"> </a><a name="30551ce1-5a28-4356-b684-1e639094ad23-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114055}">CT, head, wo iv contrast</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-3e639094ad48.html"> Male, DoB Unknown</a></p></div>
         </text>
         <identifier>
           <value value="urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02"/>
@@ -174,7 +174,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/patient-r"/>
+          <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
         </subject>
       </ServiceRequest>
     </resource>
@@ -183,13 +183,13 @@
     <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77"/>
     <resource>
       <ServiceRequest>
-        <id value="proposed-mr-head-wo-iv-contrast"/>
+        <id value="30551ce1-5a28-4356-b684-1e639044ad77"/>
         <meta>
           <versionId value="v3"/>
           <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_proposed-mr-head-wo-iv-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest proposed-mr-head-wo-iv-contrast</b></p><a name="proposed-mr-head-wo-iv-contrast"> </a><a name="hcproposed-mr-head-wo-iv-contrast"> </a><a name="proposed-mr-head-wo-iv-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad03</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114092}">MR, head, wo iv contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_30551ce1-5a28-4356-b684-1e639044ad77"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest 30551ce1-5a28-4356-b684-1e639044ad77</b></p><a name="30551ce1-5a28-4356-b684-1e639044ad77"> </a><a name="hc30551ce1-5a28-4356-b684-1e639044ad77"> </a><a name="30551ce1-5a28-4356-b684-1e639044ad77-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad03</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114092}">MR, head, wo iv contrast</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-3e639094ad48.html"> Male, DoB Unknown</a></p></div>
         </text>
         <identifier>
           <value value="urn:uuid:30551ce1-5a28-4356-b684-3e639123ad03"/>
@@ -204,7 +204,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/patient-r"/>
+          <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
         </subject>
       </ServiceRequest>
     </resource>
@@ -213,13 +213,13 @@
     <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"/>
     <resource>
       <ServiceRequest>
-        <id value="proposed-ct-head-wo-w-iv-contrast"/>
+        <id value="30551ce1-5a28-4356-b684-1e639094ad22"/>
         <meta>
           <versionId value="v3"/>
           <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_proposed-ct-head-wo-w-iv-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest proposed-ct-head-wo-w-iv-contrast</b></p><a name="proposed-ct-head-wo-w-iv-contrast"> </a><a name="hcproposed-ct-head-wo-w-iv-contrast"> </a><a name="proposed-ct-head-wo-w-iv-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad04</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114054}">CT, head, wo/w iv contrast</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_30551ce1-5a28-4356-b684-1e639094ad22"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest 30551ce1-5a28-4356-b684-1e639094ad22</b></p><a name="30551ce1-5a28-4356-b684-1e639094ad22"> </a><a name="hc30551ce1-5a28-4356-b684-1e639094ad22"> </a><a name="30551ce1-5a28-4356-b684-1e639094ad22-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad04</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114054}">CT, head, wo/w iv contrast</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-3e639094ad48.html"> Male, DoB Unknown</a></p></div>
         </text>
         <identifier>
           <value value="urn:uuid:30551ce1-5a28-4356-b684-3e639123ad04"/>
@@ -234,7 +234,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/patient-r"/>
+          <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
         </subject>
       </ServiceRequest>
     </resource>
