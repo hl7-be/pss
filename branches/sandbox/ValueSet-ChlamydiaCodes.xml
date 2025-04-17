@@ -3,14 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="ChlamydiaCodes"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ChlamydiaCodes</b></p><a name="ChlamydiaCodes"> </a><a name="hcChlamydiaCodes"> </a><a name="ChlamydiaCodes-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.1.0/CodeSystem-icd10.html"><code>http://hl7.org/fhir/sid/icd-10</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>A56.0</td><td style="color: #cccccc">Chlamydial infection of lower genitourinary tract</td></tr><tr><td>A56.2</td><td style="color: #cccccc">Chlamydial infection of genitourinary tract, unspecified</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/236683007">236683007</a></td><td style="color: #cccccc">Chlamydial urethritis</td></tr><tr><td><a href="http://snomed.info/id/186729003">186729003</a></td><td style="color: #cccccc">Chlamydial infection of lower genitourinary tract</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ChlamydiaCodes</b></p><a name="ChlamydiaCodes"> </a><a name="hcChlamydiaCodes"> </a><a name="ChlamydiaCodes-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.1.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>A56.0</td><td style="color: #cccccc">Chlamydial infection of lower genitourinary tract</td></tr><tr><td>A56.2</td><td style="color: #cccccc">Chlamydial infection of genitourinary tract, unspecified</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/236683007">236683007</a></td><td style="color: #cccccc">Chlamydial urethritis</td></tr><tr><td><a href="http://snomed.info/id/186729003">186729003</a></td><td style="color: #cccccc">Chlamydial infection of lower genitourinary tract</td></tr></table></li></ul></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes"/>
   <version value="1.0.0"/>
   <name value="ChlamydiaCodes"/>
   <title value="Chlamydia Codes"/>
   <status value="active"/>
-  <date value="2025-03-26T10:25:04+00:00"/>
+  <experimental value="true"/>
+  <date value="2025-04-17T09:39:14+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <name value="HL7 Belgium"/>
@@ -41,7 +42,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
       <concept>
         <code value="A56.0"/>
       </concept>

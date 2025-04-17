@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "PSSResponseRequestGroup"] ; # 
   fhir:title [ fhir:v "PSS Response Request Group"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-03-26T10:25:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-17T09:39:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Belgium" ] ;
@@ -2503,7 +2503,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v false ]
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "RequestGroup.action.action.modifierExtension" ] ;
        fhir:path [ fhir:v "RequestGroup.action.action.modifierExtension" ] ;
