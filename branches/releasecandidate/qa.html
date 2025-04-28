@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 1, warn = 76, info = 20-->
+<!-- broken links = 0, errors = 0, warn = 75, info = 20-->
 <head>
   <title>PrescriptionSearchSupport : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -46,7 +46,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for PrescriptionSearchSupport</h1>
- <p>Generated Mon Apr 28 07:32:48 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/pss">https://www.ehealth.fgov.be/standards/fhir/pss</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/pss/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Mon Apr 28 07:59:40 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/pss">https://www.ehealth.fgov.be/standards/fhir/pss</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/pss/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.25</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.be.pss, Canonical = https://www.ehealth.fgov.be/standards/fhir/pss</td></tr>
@@ -162,7 +162,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 1, warn = 76, info = 20, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 75, info = 20, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -231,8 +231,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11"><b>/github/workspace/fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.be.pss"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.be.pss"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23"><b>/github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
@@ -754,13 +754,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide&#8203;.dependsOn[2]&#8203;.uri (l1&#8203;/c2264)</b></td><td><b>warning</b></td><td><b>Canonical URL 'https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide&#8203;.dependsOn[2] (l1&#8203;/c2313)</b></td><td><b>error</b></td><td><b>The packageId hl7.fhir.uv.cpg points to the canonical http://hl7.org/fhir/uv/cpg which is inconsistent with the stated canonical of https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_DEPENDENCY_CLASH_CANONICAL</span></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -904,43 +898,43 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Questionnaire&#8203;.item[0]&#8203;.answerOption[0]&#8203;.extension[0] (l1&#8203;/c17583)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl58" class="flip" onclick="flip('l58')">Show Reasoning</span><div id="l58" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[0].answerOption[0].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Questionnaire&#8203;.item[0]&#8203;.answerOption[0]&#8203;.extension[0] (l1&#8203;/c17583)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl56" class="flip" onclick="flip('l56')">Show Reasoning</span><div id="l56" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[0].answerOption[0].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c17845)</b></td><td><b>warning</b></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TERMINOLOGY_TX_SYSTEM_NO_CODE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Questionnaire&#8203;.item[0]&#8203;.answerOption[1]&#8203;.extension[0] (l1&#8203;/c18042)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl60" class="flip" onclick="flip('l60')">Show Reasoning</span><div id="l60" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[0].answerOption[1].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Questionnaire&#8203;.item[0]&#8203;.answerOption[1]&#8203;.extension[0] (l1&#8203;/c18042)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl58" class="flip" onclick="flip('l58')">Show Reasoning</span><div id="l58" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[0].answerOption[1].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c18315)</b></td><td><b>warning</b></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TERMINOLOGY_TX_SYSTEM_NO_CODE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Questionnaire&#8203;.item[0]&#8203;.answerOption[2]&#8203;.extension[0] (l1&#8203;/c18510)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl62" class="flip" onclick="flip('l62')">Show Reasoning</span><div id="l62" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[0].answerOption[2].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Questionnaire&#8203;.item[0]&#8203;.answerOption[2]&#8203;.extension[0] (l1&#8203;/c18510)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl60" class="flip" onclick="flip('l60')">Show Reasoning</span><div id="l60" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[0].answerOption[2].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[0]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c18778)</b></td><td><b>warning</b></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TERMINOLOGY_TX_SYSTEM_NO_CODE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Questionnaire&#8203;.item[2]&#8203;.answerOption[0]&#8203;.extension[0] (l1&#8203;/c19727)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl64" class="flip" onclick="flip('l64')">Show Reasoning</span><div id="l64" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[2].answerOption[0].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Questionnaire&#8203;.item[2]&#8203;.answerOption[0]&#8203;.extension[0] (l1&#8203;/c19727)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl62" class="flip" onclick="flip('l62')">Show Reasoning</span><div id="l62" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[2].answerOption[0].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c19983)</b></td><td><b>warning</b></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TERMINOLOGY_TX_SYSTEM_NO_CODE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Questionnaire&#8203;.item[2]&#8203;.answerOption[1]&#8203;.extension[0] (l1&#8203;/c20176)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl66" class="flip" onclick="flip('l66')">Show Reasoning</span><div id="l66" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[2].answerOption[1].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Questionnaire&#8203;.item[2]&#8203;.answerOption[1]&#8203;.extension[0] (l1&#8203;/c20176)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl64" class="flip" onclick="flip('l64')">Show Reasoning</span><div id="l64" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[2].answerOption[1].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c20428)</b></td><td><b>warning</b></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TERMINOLOGY_TX_SYSTEM_NO_CODE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Questionnaire&#8203;.item[2]&#8203;.answerOption[2]&#8203;.extension[0] (l1&#8203;/c20624)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl68" class="flip" onclick="flip('l68')">Show Reasoning</span><div id="l68" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[2].answerOption[2].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Questionnaire&#8203;.item[2]&#8203;.answerOption[2]&#8203;.extension[0] (l1&#8203;/c20624)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl66" class="flip" onclick="flip('l66')">Show Reasoning</span><div id="l66" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[2].answerOption[2].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c20905)</b></td><td><b>warning</b></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TERMINOLOGY_TX_SYSTEM_NO_CODE</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Questionnaire&#8203;.item[2]&#8203;.answerOption[3]&#8203;.extension[0] (l1&#8203;/c21096)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl70" class="flip" onclick="flip('l70')">Show Reasoning</span><div id="l70" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[2].answerOption[3].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+     <td><b><a href="">Questionnaire&#8203;.item[2]&#8203;.answerOption[3]&#8203;.extension[0] (l1&#8203;/c21096)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl68" class="flip" onclick="flip('l68')">Show Reasoning</span><div id="l68" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Questionnaire.item[2].answerOption[3].extension[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[3]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c21342)</b></td><td><b>warning</b></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TERMINOLOGY_TX_SYSTEM_NO_CODE</span></td>
@@ -1522,14 +1516,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="IG_DEPENDENCY_CLASH_CANONICAL"> </a>
-<h2>IG_DEPENDENCY_CLASH_CANONICAL</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json</a></td><td><b>The packageId hl7.fhir.uv.cpg points to the canonical http://hl7.org/fhir/uv/cpg which is inconsistent with the stated canonical of https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
 <h2>MSG_DEPENDS_ON_DEPRECATED</h2>
  <table class="grid">
@@ -1627,14 +1613,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-PSSResponseCommunicationRequest.html">fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest.json</a></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical' to 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0'</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
-<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json</a></td><td><b>Canonical URL 'https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg' does not resolve</b></td>
    </tr>
 </table>
 <hr/>
