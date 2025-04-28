@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="467b18fa-3eae-4ca3-a6b9-a6fab7e4cfdf"/>
+  <id value="a5344a27-ae39-4686-8fa5-360afce109e3"/>
   <meta>
-    <lastUpdated value="2025-04-16T13:09:46.180+00:00"/>
+    <lastUpdated value="2025-04-28T07:31:44.279+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -46,7 +46,8 @@
         <name value="BacterialCodes"/>
         <title value="Bacterial Codes"/>
         <status value="active"/>
-        <date value="2025-04-16T13:08:49+00:00"/>
+        <experimental value="true"/>
+        <date value="2025-04-28T07:30:51+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -55,8 +56,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e4c09f29-beff-4358-a6fc-52393e2a8213"/>
-          <timestamp value="2025-04-16T13:10:21+00:00"/>
+          <identifier value="urn:uuid:7ec48255-fc06-4115-a509-732c858de876"/>
+          <timestamp value="2025-04-28T07:32:19+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -160,7 +161,8 @@
         <name value="CandidaCodes"/>
         <title value="Candida Codes"/>
         <status value="active"/>
-        <date value="2025-04-16T13:08:49+00:00"/>
+        <experimental value="true"/>
+        <date value="2025-04-28T07:30:51+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -169,8 +171,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3d330b68-1bc7-48c2-bfd7-c75b63756241"/>
-          <timestamp value="2025-04-16T13:10:21+00:00"/>
+          <identifier value="urn:uuid:ed861862-21b0-4d02-af23-5976436c9495"/>
+          <timestamp value="2025-04-28T07:32:19+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -238,7 +240,7 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion from tx.fhir.org based on:</p>
               <ul>
-                <li>codesystem ICD-10 version2019-covid-expanded</li>
+                <li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version2024</li>
                 <li>SNOMED CT International edition 01-Feb 2025</li>
               </ul>
             </div>
@@ -257,16 +259,16 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://hl7.org/fhir/sid/icd-10-A56.0"> </a>  A56.0
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-A56.0"> </a>  A56.0
                 </td>
-                <td>http://hl7.org/fhir/sid/icd-10</td>
+                <td>http://hl7.org/fhir/sid/icd-10-cm</td>
                 <td>Chlamydial infection of lower genitourinary tract</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://hl7.org/fhir/sid/icd-10-A56.2"> </a>  A56.2
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-A56.2"> </a>  A56.2
                 </td>
-                <td>http://hl7.org/fhir/sid/icd-10</td>
+                <td>http://hl7.org/fhir/sid/icd-10-cm</td>
                 <td>Chlamydial infection of genitourinary tract, unspecified</td>
               </tr>
               <tr>
@@ -293,7 +295,8 @@
         <name value="ChlamydiaCodes"/>
         <title value="Chlamydia Codes"/>
         <status value="active"/>
-        <date value="2025-04-16T13:08:49+00:00"/>
+        <experimental value="true"/>
+        <date value="2025-04-28T07:30:51+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -302,8 +305,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d7a6e7f4-5c21-47b5-b11e-63f9f13341e6"/>
-          <timestamp value="2025-04-16T13:10:22+00:00"/>
+          <identifier value="urn:uuid:1547a86a-8a72-42d9-aacc-1d7c3f15837f"/>
+          <timestamp value="2025-04-28T07:32:20+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -328,11 +331,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -347,12 +350,12 @@
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
             <code value="A56.0"/>
             <display value="Chlamydial infection of lower genitourinary tract"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
             <code value="A56.2"/>
             <display value="Chlamydial infection of genitourinary tract, unspecified"/>
           </contains>
@@ -383,7 +386,7 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion from tx.fhir.org based on:</p>
               <ul>
-                <li>codesystem ICD-10 version2019-covid-expanded</li>
+                <li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version2024</li>
                 <li>SNOMED CT International edition 01-Feb 2025</li>
               </ul>
             </div>
@@ -402,16 +405,16 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://hl7.org/fhir/sid/icd-10-A54.0"> </a>  A54.0
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-A54.0"> </a>  A54.0
                 </td>
-                <td>http://hl7.org/fhir/sid/icd-10</td>
-                <td>Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess</td>
+                <td>http://hl7.org/fhir/sid/icd-10-cm</td>
+                <td>Gonocl infct of low GU tract w/o periureth or acc glnd abcs</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://hl7.org/fhir/sid/icd-10-A54.9"> </a>  A54.9
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-A54.9"> </a>  A54.9
                 </td>
-                <td>http://hl7.org/fhir/sid/icd-10</td>
+                <td>http://hl7.org/fhir/sid/icd-10-cm</td>
                 <td>Gonococcal infection, unspecified</td>
               </tr>
               <tr>
@@ -430,7 +433,8 @@
         <name value="GonokokCodes"/>
         <title value="Gonokok Codes"/>
         <status value="active"/>
-        <date value="2025-04-16T13:08:49+00:00"/>
+        <experimental value="true"/>
+        <date value="2025-04-28T07:30:51+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -439,8 +443,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:35f0380b-1a2a-4a3d-9d1f-803983778b66"/>
-          <timestamp value="2025-04-16T13:10:22+00:00"/>
+          <identifier value="urn:uuid:72ec05a1-4277-4d7b-97c7-6cac02397a3e"/>
+          <timestamp value="2025-04-28T07:32:20+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -465,11 +469,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -484,12 +488,12 @@
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
             <code value="A54.0"/>
-            <display value="Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess"/>
+            <display value="Gonocl infct of low GU tract w/o periureth or acc glnd abcs"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
             <code value="A54.9"/>
             <display value="Gonococcal infection, unspecified"/>
           </contains>
@@ -542,7 +546,8 @@
         <name value="MycoplasmaCodes"/>
         <title value="Mycoplasma Codes"/>
         <status value="active"/>
-        <date value="2025-04-16T13:08:49+00:00"/>
+        <experimental value="true"/>
+        <date value="2025-04-28T07:30:51+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -551,8 +556,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d6bc7e0a-f027-4a3a-8da0-07ed2138590f"/>
-          <timestamp value="2025-04-16T13:10:22+00:00"/>
+          <identifier value="urn:uuid:2b04c325-7e1b-4334-aa99-7b9dd89c2c4c"/>
+          <timestamp value="2025-04-28T07:32:20+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -656,7 +661,8 @@
         <name value="OtherCodes"/>
         <title value="Other Codes"/>
         <status value="active"/>
-        <date value="2025-04-16T13:08:49+00:00"/>
+        <experimental value="true"/>
+        <date value="2025-04-28T07:30:51+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -665,8 +671,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b1ea7fa3-e4eb-495e-b703-23241eb34330"/>
-          <timestamp value="2025-04-16T13:10:23+00:00"/>
+          <identifier value="urn:uuid:88d8dcd1-eb46-461d-8953-be7f61a8c984"/>
+          <timestamp value="2025-04-28T07:32:21+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -771,7 +777,8 @@
         <name value="PSSRatingTypesVS"/>
         <title value="Types of rating provided by the PSS system"/>
         <status value="active"/>
-        <date value="2025-04-16T13:08:49+00:00"/>
+        <experimental value="true"/>
+        <date value="2025-04-28T07:30:51+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -780,8 +787,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5d90c7f9-37de-4d44-807c-c4c4d7f7b67c"/>
-          <timestamp value="2025-04-16T13:10:23+00:00"/>
+          <identifier value="urn:uuid:a0f84d59-006d-4540-9570-9c02f7507c27"/>
+          <timestamp value="2025-04-28T07:32:21+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -831,11 +838,11 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion from tx.fhir.org based on:</p>
               <ul>
-                <li>codesystem ICD-10 version2019-covid-expanded</li>
+                <li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version2024</li>
                 <li>SNOMED CT International edition 01-Feb 2025</li>
               </ul>
             </div>
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -847,6 +854,13 @@
                 <td>
                   <b>Display (en-US)</b>
                 </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-Z33.1"> </a>  Z33.1
+                </td>
+                <td>http://hl7.org/fhir/sid/icd-10-cm</td>
+                <td>Pregnant state, incidental</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -880,7 +894,8 @@
         <name value="PregnancyCodes"/>
         <title value="Pregnancy Codes"/>
         <status value="active"/>
-        <date value="2025-04-16T13:08:49+00:00"/>
+        <experimental value="true"/>
+        <date value="2025-04-28T07:30:51+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -889,9 +904,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0d2530af-d10d-40cc-a223-06a92fcba145"/>
-          <timestamp value="2025-04-16T13:10:23+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:1f7304be-b250-4514-aeec-f6a88d31fbae"/>
+          <timestamp value="2025-04-28T07:32:21+00:00"/>
+          <total value="4"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -915,11 +930,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -933,6 +948,11 @@
             <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="Z33.1"/>
+            <display value="Pregnant state, incidental"/>
+          </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="87527008"/>
@@ -1000,7 +1020,8 @@
         <name value="TrichomonasCodes"/>
         <title value="Trichomonas Codes"/>
         <status value="active"/>
-        <date value="2025-04-16T13:08:49+00:00"/>
+        <experimental value="true"/>
+        <date value="2025-04-28T07:30:51+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1009,8 +1030,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8b8753e5-5533-47fa-9233-04767f29b1bb"/>
-          <timestamp value="2025-04-16T13:10:23+00:00"/>
+          <identifier value="urn:uuid:f16eece6-f0a0-408a-91b5-ac4466dd2544"/>
+          <timestamp value="2025-04-28T07:32:21+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
