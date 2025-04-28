@@ -50,8 +50,6 @@ Generic: line 0, col 0, Warning - The IG is not for the international realm, and
 /github/workspace/fsh-generated/resources/Condition-72d3ced6-5133-4042-931e-04284c9f4283.json: line 35, col 4, Warning - A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated (NOTFOUND)
 /github/workspace/fsh-generated/resources/Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65.json: line 35, col 4, Warning - A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated (NOTFOUND)
 /github/workspace/fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11.json: line 36, col 4, Warning - A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated (NOTFOUND)
-/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json: line 1, col 2264, Warning - Canonical URL 'https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg' does not resolve (INVALID)
-/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json: line 1, col 2313, Error - The packageId hl7.fhir.uv.cpg points to the canonical http://hl7.org/fhir/uv/cpg which is inconsistent with the stated canonical of https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json: line 49, col 4, Warning - A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' could not be found, so the code cannot be validated (NOTFOUND)
 /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json: line 57, col 83, Warning - URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' does not resolve (INVALID)
 /github/workspace/fsh-generated/resources/Observation-ataxia.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
@@ -99,5 +97,5 @@ Generic: line 0, col 0, Warning - The IG is not for the international realm, and
 /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes.json: line 0, col 0, Warning - Unknown System 'http://hl7.org/fhir/sid/icpc2' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc2' could not be found, so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc2 (EXCEPTION)
 
-err = 1, warn = 76, info = 20
+err = 0, warn = 75, info = 20
 IG Publisher Version: 1.8.25
