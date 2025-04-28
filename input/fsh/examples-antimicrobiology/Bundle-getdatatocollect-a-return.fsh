@@ -3,6 +3,7 @@ Title: "Pregnancy Codes"
 Description: "Pregnancy Codes - used for EHRs to consider pregnancy status"
 // Usage: #example
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $icd10#Z33.1
 * $sct#87527008
@@ -14,6 +15,7 @@ ValueSet: CompromisedImmuneSystemCodes
 Title: "CompromisedImmuneSystem Codes"
 Description: "CompromisedImmuneSystem Codes"
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $icpc2#B90
 * $icpc2#B72
@@ -28,6 +30,7 @@ ValueSet: OncologyPatientCodes
 Title: "OncologyPatient Codes"
 Description: "OncologyPatient Codes"
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $icpc2#R84
 * $icpc2#R85
@@ -43,6 +46,7 @@ Title: "Candida Codes"
 Description: "Candida Codes"
 // Usage: #example
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $sct#72934000
 * $sct#72605008
@@ -55,6 +59,7 @@ Title: "Bacterial Codes"
 Description: "Bacterial Codes"
 // Usage: #example
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $sct#419760006
  
@@ -64,6 +69,7 @@ Title: "Trichomonas Codes"
 Description: "Trichomonas Codes"
 // Usage: #example
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $sct#276877003
 * $sct#35089004
@@ -74,6 +80,7 @@ Title: "Chlamydia Codes"
 Description: "Chlamydia Codes"
 // Usage: #example
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $icd10#A56.0
 * $icd10#A56.2
@@ -86,6 +93,7 @@ Title: "Gonokok Codes"
 Description: "Gonokok Codes"
 // Usage: #example
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $icd10#A54.0
 * $icd10#A54.9
@@ -97,6 +105,7 @@ Title: "Mycoplasma Codes"
 Description: "Mycoplasma Codes"
 // Usage: #example
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $sct#240594008
 
@@ -106,6 +115,7 @@ Title: "Other Codes"
 Description: "Other Codes"
 // Usage: #example
 * ^experimental = true
+* insert SctCopyright
 * ^status = #active
 * $sct#197903003
 * $sct#30116001
