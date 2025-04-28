@@ -17,24 +17,24 @@
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "PSSRatingTypes"] ; # 
   fhir:title [ fhir:v "CodeSystem: Types of rating provided by the PSS system"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-04-17T09:22:19+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
+  fhir:date [ fhir:v "2025-04-28T07:30:14+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform Belgium"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "HL7 Belgium" ] ;
+     fhir:name [ fhir:v "eHealth Platform Belgium" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.hl7belgium.org" ]
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "hl7belgium@hl7belgium.org" ]
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
      ] )
   ] [
      fhir:name [ fhir:v "Message Structure eHealth" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "message-structure@ehealth.fgov.be" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
        fhir:use [ fhir:v "work" ]
      ] )
   ] ) ; # 
