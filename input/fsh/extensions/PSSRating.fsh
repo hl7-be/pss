@@ -1,6 +1,7 @@
 ValueSet: PSSRatingTypesVS
 Title: "Types of rating provided by the PSS system"
 Description:  "ValueSet - Types of rating provided by the PSS system"
+* ^experimental = true
 * include codes from system PSSRatingTypes
 
 CodeSystem: PSSRatingTypes

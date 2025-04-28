@@ -10,11 +10,11 @@ Usage: #example
 * type = #collection
 * entry[0].resource = getrecommendations-r-response-1
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"
-* entry[+].resource = proposed-ct-head-wo-iv-contrast
+* entry[+].resource = 30551ce1-5a28-4356-b684-1e639094ad23
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"
-* entry[+].resource = proposed-mr-head-wo-iv-contrast
+* entry[+].resource = 30551ce1-5a28-4356-b684-1e639044ad77
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77"
-* entry[+].resource = proposed-ct-head-wo-w-iv-contrast
+* entry[+].resource = 30551ce1-5a28-4356-b684-1e639094ad22
 * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"
 
 
@@ -27,7 +27,7 @@ Usage: #example
 //* id = "getrecommendations-r-response-1"
 * status = #active
 * intent = #proposal
-* subject = Reference(patient-r)
+* subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
 * action[0]
   * selectionBehavior = #at-most-one 
   * documentation[+]
@@ -38,7 +38,7 @@ Usage: #example
 
   * action[0]
     * textEquivalent = "CT, head, wo iv contrast"
-    * resource = Reference(proposed-ct-head-wo-iv-contrast)
+    * resource = Reference(30551ce1-5a28-4356-b684-1e639094ad23)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #radiationexposure
       * extension[ratingValue].valueRatio
@@ -53,7 +53,7 @@ Usage: #example
 
   * action[+]
     * textEquivalent = "MR, head, wo iv contrast"
-    * resource = Reference(proposed-mr-head-wo-iv-contrast)  
+    * resource = Reference(30551ce1-5a28-4356-b684-1e639044ad77)  
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #radiationexposure
       * extension[ratingValue].valueRatio
@@ -68,7 +68,7 @@ Usage: #example
 
   * action[+]
     * textEquivalent = "CT, head, wo/w iv contrast"
-    * resource = Reference(proposed-ct-head-wo-w-iv-contrast)
+    * resource = Reference(30551ce1-5a28-4356-b684-1e639094ad22)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #radiationexposure
       * extension[ratingValue].valueRatio
@@ -81,7 +81,7 @@ Usage: #example
         * denominator.value = 10
 
 
-Instance: proposed-ct-head-wo-iv-contrast
+Instance: 30551ce1-5a28-4356-b684-1e639094ad23
 InstanceOf: PSSResponseServiceRequest
 Title: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"
 Description: "Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"
@@ -90,11 +90,11 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
-* subject = Reference(patient-r)
+* subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
 * identifier.value = "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02"
 
 
-Instance: proposed-mr-head-wo-iv-contrast
+Instance: 30551ce1-5a28-4356-b684-1e639044ad77
 InstanceOf: PSSResponseServiceRequest
 Title: "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"
 Description: "Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"
@@ -103,11 +103,11 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * code = PSSQSIProcedures#114092 "MR, head, wo iv contrast"
-* subject = Reference(patient-r)
+* subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
 * identifier.value = "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad03"
 
 
-Instance: proposed-ct-head-wo-w-iv-contrast
+Instance: 30551ce1-5a28-4356-b684-1e639094ad22
 InstanceOf: PSSResponseServiceRequest
 Title: "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"
 Description: "Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"
@@ -116,7 +116,7 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * code = $PSSQSIProcedures#114054 "CT, head, wo/w iv contrast"
-* subject = Reference(patient-r)
+* subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
 * identifier.value = "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad04"
 
 

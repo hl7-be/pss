@@ -26,7 +26,6 @@ Parent: Bundle
 //     entryCondition 0..* and
 //     entryServiceRequest 0..* and
 //     entryMedicationRequest 0..* and
-//    
 //              
 // * entry[entryPatient].resource only Patient
 //
@@ -61,7 +60,7 @@ Description: "The PSS Data Acquisition Form is used to inform what data needs to
 Title: "PSS Data Acquisition Form"
 Parent: Questionnaire
 * item.extension contains CodeValueSet named CodeValueSet 0..1
-
+* item.answerOption.extension contains AnswerOptionAdditionalCode named answerOptionAdditionalCode 0..*
 
 Profile: PSSResponseRequestGroup
 Parent: RequestGroup
