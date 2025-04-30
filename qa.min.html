@@ -46,7 +46,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for PrescriptionSearchSupport</h1>
- <p>Generated Mon Apr 28 07:59:40 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/pss">https://www.ehealth.fgov.be/standards/fhir/pss</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/pss/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Wed Apr 30 14:15:56 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/pss">https://www.ehealth.fgov.be/standards/fhir/pss</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/pss/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.25</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.be.pss, Canonical = https://www.ehealth.fgov.be/standards/fhir/pss</td></tr>
@@ -373,10 +373,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*RequestGroup&#8203;/getrecommendations-a-response-group*&#8203;/&#8203;.action[0]&#8203;.documentation[3]&#8203;.url (l77&#8203;/c59)</b></td><td><b>warning</b></td><td><b>URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*MedicationRequest&#8203;/30551ce1-5a28-4356-b684-1e639094ac23*&#8203;/&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l518&#8203;/c10)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td>
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*MedicationRequest&#8203;/30551ce1-5a28-4356-b684-1e639094ac23*&#8203;/&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l518&#8203;/c10)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*MedicationRequest&#8203;/30551ce1-5a28-4356-b684-1e639094ac23*&#8203;/&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l526&#8203;/c89)</b></td><td><b>warning</b></td><td><b>URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*MedicationRequest&#8203;/30551ce1-5a28-4356-b684-1e639094ac23*&#8203;/&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l526&#8203;/c96)</b></td><td><b>warning</b></td><td><b>URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
    </tr>
 </table>
 <hr/>
@@ -555,10 +555,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l49&#8203;/c4)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td>
+     <td><b>MedicationRequest&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l49&#8203;/c4)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l57&#8203;/c83)</b></td><td><b>warning</b></td><td><b>URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+     <td><b>MedicationRequest&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l57&#8203;/c90)</b></td><td><b>warning</b></td><td><b>URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
    </tr>
 </table>
 <hr/>
@@ -1048,13 +1048,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><a href="Bundle-getrecommendations-a-response.html">fsh-generated/resources/Bundle-getrecommendations-a-response.json</a></td><td><b>URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-getrecommendations-a-response.html">fsh-generated/resources/Bundle-getrecommendations-a-response.json</a></td><td><b>URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' does not resolve</b></td>
+     <td><a href="Bundle-getrecommendations-a-response.html">fsh-generated/resources/Bundle-getrecommendations-a-response.json</a></td><td><b>URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' does not resolve</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Bundle-getrecommendations-r-response.html">fsh-generated/resources/Bundle-getrecommendations-r-response.json</a></td><td><b>URL value 'https://environment.esriguide.org/suportingContent/12345)' does not resolve</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.html">fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json</a></td><td><b>URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' does not resolve</b></td>
+     <td><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.html">fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json</a></td><td><b>URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' does not resolve</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="RequestGroup-getrecommendations-a-response-group.html">fsh-generated/resources/RequestGroup-getrecommendations-a-response-group.json</a></td><td><b>URL value 'https://bcfi.be/nl/chapters/12?frag=8001869' does not resolve</b></td>
@@ -1077,7 +1077,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 <h2>UNKNOWN_CODESYSTEM</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-getrecommendations-a-response.html">fsh-generated/resources/Bundle-getrecommendations-a-response.json</a></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' could not be found, so the code cannot be validated</b></td>
+     <td><a href="Bundle-getrecommendations-a-response.html">fsh-generated/resources/Bundle-getrecommendations-a-response.json</a></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Bundle-getrecommendations-data3.html">fsh-generated/resources/Bundle-getrecommendations-data3.json</a></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated</b></td>
@@ -1131,7 +1131,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><a href="Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11.html">fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11.json</a></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.html">fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json</a></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' could not be found, so the code cannot be validated</b></td>
+     <td><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.html">fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json</a></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.html">fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.json</a></td><td><b>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated</b></td>
