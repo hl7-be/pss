@@ -203,13 +203,24 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-answerValueSetSource": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-itemImage": [
+      "Questionnaire.item"
+    ],
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating": [
       "CommunicationRequest",
-      "MedicationRequest"
+      "MedicationRequest",
+      "ServiceRequest"
     ],
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale": [
       "CommunicationRequest",
-      "MedicationRequest"
+      "MedicationRequest",
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-responseImage": [
+      "Questionnaire.item.answerOption"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode": [
       "Questionnaire.item.answerOption"

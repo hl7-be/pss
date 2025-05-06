@@ -3,13 +3,13 @@ PrescriptionSearchSupport : Validation Results
 
 err = 0, warn = 75, info = 20
 IG Publisher Version: 1.8.25
-Generated Tue May 06 09:49:17 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
- Build Errors : 0 / 5 / 0
+Generated Tue May 06 11:07:14 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
+ Build Errors : 6 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 7 / 14
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 2 / 7
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 6 / 14
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 2 / 10
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 6 / 16
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 2 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-response : 0 / 4 / 9
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 5 / 5
@@ -28,7 +28,7 @@ Generated Tue May 06 09:49:17 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23 : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26 : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29 : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ataxia : 0 / 2 / 1
@@ -81,6 +81,12 @@ Generated Tue May 06 09:49:17 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: /github/workspace/output/StructureDefinition-PSSResponseServiceRequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 322, column 1181: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PSSResponseServiceRequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 452, column 965: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PSSResponseServiceRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 420, column 904: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PSSResponseServiceRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 700, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PSSResponseServiceRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1144, column 904: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PSSResponseServiceRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1423, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

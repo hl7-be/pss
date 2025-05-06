@@ -41,9 +41,12 @@
     "resource" : {
       "resourceType" : "Condition",
       "id" : "30551ce1-5a28-4356-b684-2e639094ad01",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"]
+      },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_30551ce1-5a28-4356-b684-2e639094ad01\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 30551ce1-5a28-4356-b684-2e639094ad01</b></p><a name=\"30551ce1-5a28-4356-b684-2e639094ad01\"> </a><a name=\"hc30551ce1-5a28-4356-b684-2e639094ad01\"> </a><a name=\"30551ce1-5a28-4356-b684-2e639094ad01-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 54586004}\">Lower abdominal pain</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_30551ce1-5a28-4356-b684-2e639094ad01\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 30551ce1-5a28-4356-b684-2e639094ad01</b></p><a name=\"30551ce1-5a28-4356-b684-2e639094ad01\"> </a><a name=\"hc30551ce1-5a28-4356-b684-2e639094ad01\"> </a><a name=\"30551ce1-5a28-4356-b684-2e639094ad01-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 54586004}\">Lower abdominal pain</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"
       },
       "clinicalStatus" : {
         "coding" : [{
@@ -115,9 +118,12 @@
     "resource" : {
       "resourceType" : "MedicationRequest",
       "id" : "30551ce1-5a28-4356-b684-2e639094ad12",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+      },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-2e639094ad12\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-2e639094ad12</b></p><a name=\"30551ce1-5a28-4356-b684-2e639094ad12\"> </a><a name=\"hc30551ce1-5a28-4356-b684-2e639094ad12\"> </a><a name=\"30551ce1-5a28-4356-b684-2e639094ad12-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-2e639094ad12\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-2e639094ad12</b></p><a name=\"30551ce1-5a28-4356-b684-2e639094ad12\"> </a><a name=\"hc30551ce1-5a28-4356-b684-2e639094ad12\"> </a><a name=\"30551ce1-5a28-4356-b684-2e639094ad12-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p></div>"
       },
       "status" : "active",
       "intent" : "proposal",
