@@ -1235,8 +1235,9 @@
        fhir:name [ fhir:v "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol" ] ;
        fhir:description [ fhir:v "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol" ] ;
        fhir:example [
-         a fhir:boolean ;
-         fhir:v true
+         a fhir:canonical ;
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest>
        ] ;
        fhir:groupingId [ fhir:v "Antimicrobiology" ]
      ] [
