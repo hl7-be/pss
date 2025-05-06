@@ -171,7 +171,7 @@ Usage: #example
 Instance: 30551ce1-5a28-4356-b684-11ef43a67755
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
-InstanceOf: Task
+InstanceOf: CPGQuestionnaireTask
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask"
 * status = #requested
