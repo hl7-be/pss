@@ -31,11 +31,11 @@ Parent: Bundle
 //
 
 Profile: PSSResponseServiceRequest
-Parent: ServiceRequest
+Parent: CPGServiceRequest
 Title: "PSS Response Service Request"
 Description: "The PSS Response Service Request is used when the PSS system returns a ServiceRequest"
 * subject 1..1 
-* subject only Reference(Patient)
+* subject only Reference(PSSPatient)
 * intent = #proposal
 // * extension contains 
 //   // http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
@@ -58,7 +58,7 @@ Parent: CPGMedicationRequest
 Profile: PSSDataAcquisitionForm
 Description: "The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system."
 Title: "PSS Data Acquisition Form"
-Parent: Questionnaire
+Parent: CPGComputableQuestionnaire
 * item.extension contains CodeValueSet named CodeValueSet 0..1
 * item.answerOption.extension contains AnswerOptionAdditionalCode named answerOptionAdditionalCode 0..*
 

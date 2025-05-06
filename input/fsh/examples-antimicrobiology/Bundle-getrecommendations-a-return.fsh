@@ -143,7 +143,7 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ac23
-InstanceOf: MedicationRequest
+InstanceOf: CPGMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Usage: #example
@@ -170,7 +170,7 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ad24
-InstanceOf: MedicationRequest
+InstanceOf: CPGMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Usage: #example
@@ -194,7 +194,7 @@ Usage: #example
     * extension[content].valueString = "ovule : 100 mg par jour en 1 prise pendant 3 jours OU crème vaginale : 2 % 5 g par jour en 1 prise pendant 7 jours"
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ad26
-InstanceOf: MedicationRequest
+InstanceOf: PSSResponseMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
 Usage: #example

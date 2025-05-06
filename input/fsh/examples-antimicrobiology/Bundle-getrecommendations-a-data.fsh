@@ -17,7 +17,7 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-2e639094ac02
-InstanceOf: QuestionnaireResponse
+InstanceOf: CPGQuestionnaireResponse
 Title: "Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"
 Description: "Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"
 

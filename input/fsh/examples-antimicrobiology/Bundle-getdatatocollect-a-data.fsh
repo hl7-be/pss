@@ -16,7 +16,7 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-2e639094ad01
-InstanceOf: Condition
+InstanceOf: CPGCondition
 Title: "Antimicrobiology - S2 Get data to collect - Request - 1.1. Diagnostic hypothesis - vulvovaginitis"
 Description: "Antimicrobiology - S2 Get data to collect - Request - 1.1. Diagnostic hypothesis - vulvovaginitis"
 Usage: #example
@@ -43,7 +43,7 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-2e639094ad12
-InstanceOf: MedicationRequest
+InstanceOf: CPGMedicationRequest
 Title: "Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"
 Description: "Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"
 Usage: #example
