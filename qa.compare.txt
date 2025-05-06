@@ -1,13 +1,13 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 0, warn = 75, info = 20
+err = 4, warn = 75, info = 20
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 6 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
- /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 7 / 14
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 2 / 7 / 15
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 2 / 10
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 6 / 16
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 2 / 7
@@ -63,7 +63,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseServiceRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSStructuredRating : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-11ef43a67755 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-11ef43a67755 : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16 : 0 / 0 / 1
@@ -95,6 +95,8 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 == fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02.json ==
 == fsh-generated/resources/Bundle-getdatatocollect-a-data.json ==
 == fsh-generated/resources/Bundle-getdatatocollect-a-response.json ==
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[1].resource/*Task/30551ce1-5a28-4356-b684-11ef43a67755*/.input[0].value.ofType(Reference): The Profile 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask|2.0.0' definition allows for the type canonical but found type Reference
+ERROR: Bundle/getdatatocollect-a-response: Bundle.entry[1].resource/*Task/30551ce1-5a28-4356-b684-11ef43a67755*/.input[0].value.ofType(Reference).reference: This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/canonical|4.0.1
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c*/.item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c*/.item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: Bundle/getdatatocollect-a-response: Bundle.entry[2].resource/*Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c*/.item[0].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -237,6 +239,8 @@ WARNING: StructureDefinition/PSSStructuredRating: StructureDefinition.differenti
 WARNING: StructureDefinition/PSSStructuredRating: StructureDefinition.snapshot.element[7].binding: The definition for the element 'Extension.extension.value[x]' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0.json ==
 == fsh-generated/resources/Task-30551ce1-5a28-4356-b684-11ef43a67755.json ==
+ERROR: Task/30551ce1-5a28-4356-b684-11ef43a67755: Task.input[0].value.ofType(Reference): The Profile 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask|2.0.0' definition allows for the type canonical but found type Reference
+ERROR: Task/30551ce1-5a28-4356-b684-11ef43a67755: Task.input[0].value.ofType(Reference).reference: This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/canonical|4.0.1
 == fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11.json ==
 == fsh-generated/resources/Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e.json ==
 == fsh-generated/resources/Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16.json ==
