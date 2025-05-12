@@ -1,10 +1,10 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 0, warn = 73, info = 20
+err = 0, warn = 63, info = 20
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
- Build Errors : 0 / 5 / 0
+ Build Errors : 0 / 1 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 7 / 15
@@ -34,10 +34,10 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Observation-ataxia : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c : 0 / 7 / 9
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c : 0 / 7 / 8
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02 : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group : 0 / 0 / 1
@@ -52,18 +52,18 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/StructureDefinition-CodeValueSet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSMedicationRequest : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PSSPatient : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PSSQuestionnaireTask : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSPatient : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSQuestionnaireTask : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSRelevantAge : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSRequestBundle : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponse : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseBundle : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseMedicationRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseRequestGroup : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseServiceRequest : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PSSStructuredRating : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSStructuredRating : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-11ef43a67755 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11 : 0 / 0 / 1
@@ -83,10 +83,6 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 == fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02.json ==
 == fsh-generated/resources/Bundle-getdatatocollect-a-data.json ==
@@ -119,7 +115,7 @@ WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*Medicat
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/pss-30551ce1-5a28-4356-b684-4e639094ad11*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/pss-ct-head-wo-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 == fsh-generated/resources/Bundle-getrecommendations-r-response.json ==
-WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].documentation[0].url: URL value 'https://environment.esriguide.org/suportingContent/12345)' does not resolve
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].documentation[0].url: URL value 'https://environment.esriguide.org/suportingContent/12345' does not resolve
 WARNING: Bundle/getrecommendations-r-response: Bundle.entry[1].resource/*ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-r-response: Bundle.entry[2].resource/*ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-r-response: Bundle.entry[3].resource/*ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
@@ -163,11 +159,8 @@ WARNING: Observation/ataxia: Observation: Best Practice Recommendation: In gener
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48.json ==
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48.json ==
 == fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
-INFORMATION: Resource: The resource PlanDefinition/GetDataToCollect could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/PlanDefinition-GetDiagnoses.json ==
-INFORMATION: Resource: The resource PlanDefinition/GetDiagnoses could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
-INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c.json ==
 INFORMATION: Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c: Questionnaire.item[0].answerOption[0].extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c: Questionnaire.item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -183,7 +176,6 @@ INFORMATION: Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c: Questionnaire.i
 WARNING: Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c: Questionnaire.item[2].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 INFORMATION: Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c: Questionnaire.item[2].answerOption[3].extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c: Questionnaire.item[2].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-INFORMATION: Resource: The resource Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02.json ==
 WARNING: QuestionnaireResponse/30551ce1-5a28-4356-b684-2e639094ac02: QuestionnaireResponse.item[0].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 WARNING: QuestionnaireResponse/30551ce1-5a28-4356-b684-2e639094ac02: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -195,7 +187,7 @@ WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0
 WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[2].url: URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve
 WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[3].url: URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve
 == fsh-generated/resources/RequestGroup-getrecommendations-r-response-1.json ==
-WARNING: RequestGroup/getrecommendations-r-response-1: RequestGroup.action[0].documentation[0].url: URL value 'https://environment.esriguide.org/suportingContent/12345)' does not resolve
+WARNING: RequestGroup/getrecommendations-r-response-1: RequestGroup.action[0].documentation[0].url: URL value 'https://environment.esriguide.org/suportingContent/12345' does not resolve
 == fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.json ==
 WARNING: ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77: ServiceRequest.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
 == fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22.json ==
@@ -213,24 +205,22 @@ WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/
 INFORMATION: StructureDefinition/PSSDataAcquisitionForm: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated/resources/StructureDefinition-PSSMedicationRequest.json ==
 == fsh-generated/resources/StructureDefinition-PSSPatient.json ==
-WARNING: StructureDefinition/PSSPatient: StructureDefinition.snapshot.element[23].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' to 'http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0'
-WARNING: StructureDefinition/PSSPatient: StructureDefinition.differential.element[3].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/data-absent-reason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/data-absent-reason' to 'http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0'
+INFORMATION: StructureDefinition.snapshot.element[23].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[3].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
 == fsh-generated/resources/StructureDefinition-PSSQuestionnaireTask.json ==
-WARNING: StructureDefinition/PSSQuestionnaireTask: StructureDefinition.snapshot.element[12].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/request-doNotPerform'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/request-doNotPerform' to 'http://hl7.org/fhir/StructureDefinition/request-doNotPerform|5.2.0'
+INFORMATION: StructureDefinition.snapshot.element[12].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/request-doNotPerform to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
 == fsh-generated/resources/StructureDefinition-PSSRelevantAge.json ==
 == fsh-generated/resources/StructureDefinition-PSSRequest.json ==
 == fsh-generated/resources/StructureDefinition-PSSRequestBundle.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponse.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponseBundle.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest.json ==
-WARNING: StructureDefinition/PSSResponseCommunicationRequest: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical' to 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0'
+INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
 INFORMATION: StructureDefinition/PSSResponseCommunicationRequest: CommunicationRequest.extension: The extension http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0 is deprecated with the note Replaced by [[[http://hl7.org/fhir/StructureDefinition/workflow-generatedFrom]]], [[[http://hl7.org/fhir/StructureDefinition/workflow-compliesWith]]] or [[[http://hl7.org/fhir/StructureDefinition/workflow-adheresTo]]]
 == fsh-generated/resources/StructureDefinition-PSSResponseMedicationRequest.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponseRequestGroup.json ==
 == fsh-generated/resources/StructureDefinition-PSSResponseServiceRequest.json ==
 == fsh-generated/resources/StructureDefinition-PSSStructuredRating.json ==
-WARNING: StructureDefinition/PSSStructuredRating: StructureDefinition.differential.element[5].binding: The definition for the element 'Extension.extension.value[x]' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/PSSStructuredRating: StructureDefinition.snapshot.element[7].binding: The definition for the element 'Extension.extension.value[x]' binds to the value set 'https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0.json ==
 == fsh-generated/resources/Task-30551ce1-5a28-4356-b684-11ef43a67755.json ==
 == fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11.json ==
