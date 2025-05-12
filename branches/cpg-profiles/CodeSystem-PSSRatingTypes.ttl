@@ -14,12 +14,16 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PSSRatingTypes</b></p><a name=\"PSSRatingTypes\"> </a><a name=\"hcPSSRatingTypes\"> </a><a name=\"PSSRatingTypes-en-US\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">overall<a name=\"PSSRatingTypes-overall\"> </a></td><td>Overall score</td></tr><tr><td style=\"white-space:nowrap\">radiationexposure<a name=\"PSSRatingTypes-radiationexposure\"> </a></td><td>Radiation exposure score</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.2.51.22.2.16.3" ]
+  ] ) ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "PSSRatingTypes"] ; # 
   fhir:title [ fhir:v "CodeSystem: Types of rating provided by the PSS system"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-05-12T19:48:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-12T19:50:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "eHealth Platform Belgium"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "eHealth Platform Belgium" ] ;

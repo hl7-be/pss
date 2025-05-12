@@ -574,7 +574,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PSSPatient","Patient.name.extension:absent","Patient.name.extension","absent","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason]]} {[]}
+"PSSPatient","Patient.name.extension:absent","Patient.name.extension","absent","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0]]} {[]}
 ","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PSSPatient","Patient.name.extension:absent.id","Patient.name.extension.id","","","",0,1,"","","","id {[]} {[]}
@@ -773,7 +773,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PSSQuestionnaireTask","Task.modifierExtension:doNotPerform","Task.modifierExtension","doNotPerform","","",0,1,"Y","Y","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/request-doNotPerform]]} {[]}
+"PSSQuestionnaireTask","Task.modifierExtension:doNotPerform","Task.modifierExtension","doNotPerform","","",0,1,"Y","Y","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/request-doNotPerform|5.2.0]]} {[]}
 ","true if request is prohibiting action","If true indicates that the request is asking for the specified action to not occur.","The attributes provided with the request qualify what is not to be done. For example, if an effectiveTime is provided, the ""do not"" request only applies within the specified time. If a performerType is specified then the ""do not"" request only applies to performers of that type. Qualifiers include: code, subject, occurrence, perormerType and performer.In some cases, the Request.code may pre-coordinate prohibition into the requested action. E.g. ""NPO"" (nothing by mouth), ""DNR"" (do not recussitate). If this happens, doNotPerform SHALL NOT be set to true. I.e. The resource shall not have double negation. (E.g. ""Do not DNR"").","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PSSQuestionnaireTask","Task.identifier","Task.identifier","","","",0,*,"Y","","","Identifier {[]} {[]}
@@ -1470,7 +1470,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PSSResponseCommunicationRequest","CommunicationRequest.extension:instantiatesCanonical","CommunicationRequest.extension","instantiatesCanonical","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical]]} {[]}
+"PSSResponseCommunicationRequest","CommunicationRequest.extension:instantiatesCanonical","CommunicationRequest.extension","instantiatesCanonical","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0]]} {[]}
 ","Source","A link back to the definition that produced this recommendation. Typically a Plan or Activity Definition.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -2274,7 +2274,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PSSStructuredRating","Extension.extension:ratingType.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""ratingType""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "PSSStructuredRating","Extension.extension:ratingType.value[x]","Extension.extension.value[x]","","","",0,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"example","","https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "PSSStructuredRating","Extension.extension:ratingValue","Extension.extension","ratingValue","","",0,1,"Y","","","Extension {[]} {[]}
 ","Total Radiation Dose Delivered","The total amount of radiation delivered to this volume within the scope of this dose delivery.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

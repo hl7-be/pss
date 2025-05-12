@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:CommunicationRequest</sch:title>
     <sch:rule context="f:CommunicationRequest">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>

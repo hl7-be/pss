@@ -7,7 +7,9 @@
       "name" : "BacterialCodes",
       "title" : "Bacterial Codes",
       "description" : "Bacterial Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.1"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.1"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
@@ -16,7 +18,9 @@
       "name" : "CandidaCodes",
       "title" : "Candida Codes",
       "description" : "Candida Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.2"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.2"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
@@ -25,7 +29,9 @@
       "name" : "ChlamydiaCodes",
       "title" : "Chlamydia Codes",
       "description" : "Chlamydia Codes",
-      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.3"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.3"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes",
@@ -38,7 +44,9 @@
         "http://hl7.org/fhir/sid/icpc2",
         "http://hl7.org/fhir/sid/icd-10-cm",
         "http://snomed.info/sct"
-      ]
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.4"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.4"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
@@ -47,7 +55,9 @@
       "name" : "GonokokCodes",
       "title" : "Gonokok Codes",
       "description" : "Gonokok Codes",
-      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.5"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.5"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
@@ -56,7 +66,9 @@
       "name" : "MycoplasmaCodes",
       "title" : "Mycoplasma Codes",
       "description" : "Mycoplasma Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.6"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.6"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes",
@@ -69,7 +81,9 @@
         "http://hl7.org/fhir/sid/icpc2",
         "http://hl7.org/fhir/sid/icd-10-cm",
         "http://snomed.info/sct"
-      ]
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.7"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.7"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
@@ -78,7 +92,9 @@
       "name" : "OtherCodes",
       "title" : "Other Codes",
       "description" : "Other Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.8"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.8"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
@@ -89,7 +105,9 @@
       "description" : "ValueSet - Types of rating provided by the PSS system",
       "systems" : [
         "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"
-      ]
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.9"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.9"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
@@ -98,7 +116,9 @@
       "name" : "PregnancyCodes",
       "title" : "Pregnancy Codes",
       "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
-      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.10"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.10"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
@@ -107,7 +127,9 @@
       "name" : "TrichomonasCodes",
       "title" : "Trichomonas Codes",
       "description" : "Trichomonas Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.11"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.11"]
     }
   ]
 }

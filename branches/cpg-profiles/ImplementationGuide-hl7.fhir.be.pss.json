@@ -94,6 +94,28 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "auto-oid-root"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2.16.840.1.113883.2.51.22.2"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "autoload-resources"
       },
       {
@@ -367,6 +389,28 @@
       {
         "url" : "value",
         "valueString" : "STU1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "auto-oid-root"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2.16.840.1.113883.2.51.22.2"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1627,7 +1671,7 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
-        "generation" : "html"
+        "generation" : "markdown"
       },
       {
         "extension" : [{
