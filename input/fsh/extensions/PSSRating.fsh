@@ -1,7 +1,7 @@
 ValueSet: PSSRatingTypesVS
 Title: "Types of rating provided by the PSS system"
 Description:  "ValueSet - Types of rating provided by the PSS system"
-* ^experimental = true
+* ^experimental = false
 * include codes from system PSSRatingTypes
 
 CodeSystem: PSSRatingTypes
@@ -34,7 +34,7 @@ Context: Resource, RequestGroup.action, RequestGroup.action.action
     ratingText 0..1 MS
 
 * extension[ratingType].value[x] only code
-* extension[ratingType].valueCode from PSSRatingTypesVS
+* extension[ratingType].valueCode from PSSRatingTypesVS (example)
 * extension[ratingValue].value[x] only Quantity or Ratio
 * extension[ratingText].value[x] only markdown
 
