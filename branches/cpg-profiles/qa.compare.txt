@@ -1,7 +1,7 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 0, warn = 63, info = 20
+err = 4, warn = 61, info = 22
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 1 / 0
@@ -73,10 +73,10 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ValueSet-BacterialCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-CandidaCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ChlamydiaCodes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes : 2 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-GonokokCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-MycoplasmaCodes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes : 2 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-OtherCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PSSRatingTypesVS : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 0 / 0 / 1
@@ -109,8 +109,8 @@ WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*Request
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[1].url: URL value 'https://cbip.be/fr/chapters/12?frag=8001869' does not resolve
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[2].url: URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[3].url: URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve
-WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23*/.medication.ofType(CodeableConcept).coding[1].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' could not be found, so the code cannot be validated
-WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23*/.medication.ofType(CodeableConcept).coding[1].system: URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' does not resolve
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23*/.medication.ofType(CodeableConcept).coding[1].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23*/.medication.ofType(CodeableConcept).coding[1].system: URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' does not resolve
 == fsh-generated/resources/Bundle-getrecommendations-data3.json ==
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/pss-30551ce1-5a28-4356-b684-4e639094ad11*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated
 WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/pss-ct-head-wo-iv-contrast*/.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
@@ -148,8 +148,8 @@ WARNING: Condition/b90ca57a-1ae5-4ff6-8dce-48488660ea65: Condition.code.coding[0
 WARNING: Condition/pss-30551ce1-5a28-4356-b684-4e639094ad11: Condition.code.coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json ==
-WARNING: MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' could not be found, so the code cannot be validated
-WARNING: MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg' does not resolve
+WARNING: MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated
+WARNING: MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' does not resolve
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.json ==
@@ -231,13 +231,17 @@ INFORMATION: StructureDefinition/PSSResponseCommunicationRequest: CommunicationR
 == fsh-generated/resources/ValueSet-CandidaCodes.json ==
 == fsh-generated/resources/ValueSet-ChlamydiaCodes.json ==
 == fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json ==
-WARNING: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0]: Unknown System 'http://hl7.org/fhir/sid/icpc2' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc2' could not be found, so the code cannot be validated)
-WARNING: ValueSet.where(id = 'CompromisedImmuneSystemCodes'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc2
+ERROR: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0].concept[0]: The code 'B90' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (Unable to evaluate based on code system with status = not-present)
+INFORMATION: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0].concept[0]: Unable to evaluate based on code system with status = not-present
+ERROR: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0].concept[1]: The code 'B72' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc-2' could not be found, so the code cannot be validated)
+WARNING: ValueSet.where(id = 'CompromisedImmuneSystemCodes'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc-2
 == fsh-generated/resources/ValueSet-GonokokCodes.json ==
 == fsh-generated/resources/ValueSet-MycoplasmaCodes.json ==
 == fsh-generated/resources/ValueSet-OncologyPatientCodes.json ==
-WARNING: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0]: Unknown System 'http://hl7.org/fhir/sid/icpc2' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc2' could not be found, so the code cannot be validated)
-WARNING: ValueSet.where(id = 'OncologyPatientCodes'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc2
+ERROR: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0].concept[0]: The code 'R84' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (Unable to evaluate based on code system with status = not-present)
+INFORMATION: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0].concept[0]: Unable to evaluate based on code system with status = not-present
+ERROR: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0].concept[1]: The code 'R85' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc-2' could not be found, so the code cannot be validated)
+WARNING: ValueSet.where(id = 'OncologyPatientCodes'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc-2
 == fsh-generated/resources/ValueSet-OtherCodes.json ==
 == fsh-generated/resources/ValueSet-PSSRatingTypesVS.json ==
 == fsh-generated/resources/ValueSet-PregnancyCodes.json ==
