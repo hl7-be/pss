@@ -44,4 +44,4 @@ Usage: #example
     * profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest"
   * output[+]
     * type = #MedicationRequest
-    * profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
+    * profile = Canonical(PSSResponseMedicationRequest)

@@ -23,7 +23,7 @@ Usage: #example
 
 
 Instance: ct-head-wo-iv-contrast
-InstanceOf: ServiceRequest
+InstanceOf: PSSResponseServiceRequest
 Title: "Radiology - S1 Get Diagnoses - Request - 1.3 Original suggestion - CT head wo IV contrast"
 Description: "Radiology - S1 Get Recommendations - Request - 1.3 Original suggestion - CT head wo IV contrast"
 Usage: #example
