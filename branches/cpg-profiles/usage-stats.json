@@ -93,10 +93,22 @@
         "title": "PSS Data Acquisition Form"
       }
     ],
+    "MedicationRequest": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest",
+        "title": "PSS Response Medication Request"
+      }
+    ],
     "Patient": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient",
         "title": "PSS anonymised Patient"
+      }
+    ],
+    "Task": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask",
+        "title": "PSS Questionnaire Task"
       }
     ],
     "Bundle": [
@@ -113,12 +125,6 @@
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest",
         "title": "PSS Response Communication Request"
-      }
-    ],
-    "MedicationRequest": [
-      {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest",
-        "title": "PSS Response Medication Request"
       }
     ],
     "RequestGroup": [
@@ -162,6 +168,9 @@
     "http://hl7.org/fhir/StructureDefinition/rendering-markdown": [
       "Bundle.entry.resource.payload.contentString",
       "CommunicationRequest.payload.contentString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-doNotPerform": [
+      "Task"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -210,15 +219,20 @@
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-itemImage": [
       "Questionnaire.item"
     ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pertinent": [
+      "Task"
+    ],
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating": [
       "CommunicationRequest",
       "MedicationRequest",
-      "ServiceRequest"
+      "ServiceRequest",
+      "Task"
     ],
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale": [
       "CommunicationRequest",
       "MedicationRequest",
-      "ServiceRequest"
+      "ServiceRequest",
+      "Task"
     ],
     "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-responseImage": [
       "Questionnaire.item.answerOption"
