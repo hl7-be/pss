@@ -20,7 +20,8 @@ Usage: #example
 * status = #final
 * code = $sct#20262006 "Ataxia"
 * subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
-
+* effectiveDateTime = 2025-06-02
+//* performer = 
 
 Instance: ct-head-wo-iv-contrast
 InstanceOf: PSSResponseServiceRequest
@@ -33,3 +34,4 @@ Usage: #example
 * code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
 * subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
 * identifier.value = "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02"
+

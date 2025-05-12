@@ -43,7 +43,7 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-2e639094ad12
-InstanceOf: CPGMedicationRequest
+InstanceOf: PSSMedicationRequest
 Title: "Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"
 Description: "Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"
 Usage: #example

@@ -49,7 +49,7 @@ Title: "PSS Response Medication Request"
 Description: "The PSS Response Medication Request is used when the PSS system returns a MedicationRequest"
 Parent: CPGMedicationRequest
 * subject 1..1 
-* subject only Reference(CPGPatient)
+* subject only Reference(PSSPatient)
 * intent = #proposal
 // * extension contains 
 //   PSSStructuredRating named structured-rating 0..*
@@ -68,6 +68,7 @@ Parent: RequestGroup
 Title: "PSS Response Request Group"
 Description: "All PSS responses contain a PSS RequestGroup conformant to this profile."
 * subject 1..1
+* subject only Reference(PSSPatient)
 * action 1..1
   * action
     * extension contains 
@@ -78,6 +79,9 @@ Profile: PSSResponseCommunicationRequest
 Parent: CPGCommunicationRequest
 Title: "PSS Response Communication Request"
 Description: "All PSS responses contain a PSS Communication Request conformant to this profile."
+* subject only Reference(PSSPatient)
+
+
 
 Profile: PSSPatient
 Parent: CPGPatient
@@ -92,3 +96,28 @@ Description: "PSS anonymised Patient"
   * text 0..0
   * family 0..0
   * given 0..0
+
+
+
+Profile: PSSQuestionnaireTask
+Parent: CPGQuestionnaireTask
+Title: "PSS Questionnaire Task"
+Description: "PSS Task for Questionnaire - using anonymised patient"
+
+* for only Reference(PSSPatient)
+
+// Profile: PSSTask
+// Parent: CPGTask
+// Title: "PSS Task"
+// Description: "PSS for Task - using anonymised patient"
+
+// * for only Reference(PSSPatient)
+
+
+Profile: PSSMedicationRequest
+Parent: CPGMedicationRequest
+Title: "PSS Questionnaire Task"
+Description: "PSS Task for Questionnaire - using anonymised patient"
+
+* subject only Reference(PSSPatient)
+
