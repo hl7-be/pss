@@ -12,5 +12,5 @@ Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activit
 Alias: $atc = http://www.whocc.no/atc
 Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 Alias: $ucum = http://unitsofmeasure.org 
-Alias: $icpc2 = http://hl7.org/fhir/sid/icpc2
-Alias: $VMPG = https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg
+Alias: $icpc2 = http://hl7.org/fhir/sid/icpc-2
+Alias: $VMPG = https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg
