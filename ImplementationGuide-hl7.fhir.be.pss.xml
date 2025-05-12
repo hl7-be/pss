@@ -572,7 +572,7 @@
       </reference>
       <name value="Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"/>
       <description value="Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -608,7 +608,7 @@
       </reference>
       <name value="Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
       <description value="Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -692,7 +692,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -704,7 +704,7 @@
       </reference>
       <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"/>
       <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"/>
-      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest"/>
       <groupingId value="Antimicrobiology"/>
     </resource>
     <resource>
@@ -913,6 +913,28 @@
       <description value="The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system."/>
       <exampleBoolean value="false"/>
       <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSQuestionnaireTask"/>
+      </reference>
+      <name value="PSS Questionnaire Task"/>
+      <description value="PSS Task for Questionnaire - using anonymised patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSMedicationRequest"/>
+      </reference>
+      <name value="PSS Questionnaire Task"/>
+      <description value="PSS Task for Questionnaire - using anonymised patient"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
