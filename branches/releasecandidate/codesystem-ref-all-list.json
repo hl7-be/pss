@@ -238,6 +238,7 @@
       "oids" : ["2.16.840.1.113883.4.642.4.114"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent",
       "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
     },
     {
@@ -297,11 +298,60 @@
       "oids" : ["2.16.840.1.113883.6.90"],
       "uses" : {
       },
-      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
-      "ValueSet-GonokokCodes.html" : "Gonokok Codes",
-      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
+      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
       "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
-      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes"
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
+      "ValueSet-GonokokCodes.html" : "Gonokok Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/icpc-2",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "Icpc2E",
+      "title" : "International Classification of Primary Care, second edition (1998)",
+      "description" : "International Classification of Primary Care / prepared by the Classification Committee of the World Organization of National Colleges, Academies and Academic Associations of General Practitioners/Family Physicians (WONCA), known more briefly as the World",
+      "oids" : ["2.16.840.1.113883.6.139"],
+      "uses" : {
+      },
+      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/task-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskIntent",
+      "title" : "TaskIntent",
+      "description" : "Distinguishes whether the task is a proposal, plan or full order.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1241"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/task-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "TaskStatus",
+      "description" : "The current status of the task.",
+      "oids" : ["2.16.840.1.113883.4.642.4.791"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-task-status.html" : "TaskStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CPGActivityTypeCS",
+      "title" : "CPG Activity Type Code System",
+      "description" : "A type of activity that can be performed as part of the delivery of guideline-based care.",
+      "oids" : ["2.16.840.1.113883.4.642.40.48.16.3"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/uv/cpg/STU2/ValueSet-cpg-activity-type-vs.html" : "CPG Activity Type Value Set"
     },
     {
       "url" : "http://loinc.org",
@@ -325,27 +375,27 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "ValueSet-OtherCodes.html" : "Other Codes",
-      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
       "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "ValueSet-MycoplasmaCodes.html" : "Mycoplasma Codes",
-      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "ValueSet-GonokokCodes.html" : "Gonokok Codes",
-      "ValueSet-TrichomonasCodes.html" : "Trichomonas Codes",
-      "ValueSet-CandidaCodes.html" : "Candida Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "ValueSet-BacterialCodes.html" : "Bacterial Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
       "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "ValueSet-BacterialCodes.html" : "Bacterial Codes",
+      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
+      "ValueSet-GonokokCodes.html" : "Gonokok Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "ValueSet-CandidaCodes.html" : "Candida Codes",
+      "ValueSet-TrichomonasCodes.html" : "Trichomonas Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
       "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-MycoplasmaCodes.html" : "Mycoplasma Codes",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "ValueSet-OtherCodes.html" : "Other Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/action-type",
@@ -453,8 +503,8 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.1.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason",
-      "http://terminology.hl7.org/6.1.0/ValueSet-v3-ActReason.html" : "v3 Code System ActReason"
+      "http://terminology.hl7.org/6.1.0/ValueSet-v3-ActReason.html" : "v3 Code System ActReason",
+      "http://terminology.hl7.org/6.1.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
@@ -523,6 +573,7 @@
       "name" : "PSSRatingTypes",
       "title" : "CodeSystem: Types of rating provided by the PSS system",
       "description" : "CodeSystem: Types of rating provided by the PSS system",
+      "oids" : ["2.16.840.1.113883.2.51.22.2.16.3"],
       "uses" : {
       },
       "ValueSet-PSSRatingTypesVS.html" : "Types of rating provided by the PSS system"

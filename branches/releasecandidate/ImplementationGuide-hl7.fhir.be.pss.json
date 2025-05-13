@@ -94,6 +94,28 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "auto-oid-root"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2.16.840.1.113883.2.51.22.2"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "autoload-resources"
       },
       {
@@ -367,6 +389,28 @@
       {
         "url" : "value",
         "valueString" : "STU1"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "auto-oid-root"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2.16.840.1.113883.2.51.22.2"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -740,7 +784,7 @@
       },
       "name" : "Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin",
       "description" : "Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin",
-      "exampleBoolean" : true,
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -779,7 +823,7 @@
       },
       "name" : "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information",
       "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information",
-      "exampleBoolean" : true,
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -870,7 +914,7 @@
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol",
       "description" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol",
-      "exampleBoolean" : true,
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -883,7 +927,7 @@
       },
       "name" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin",
       "description" : "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin",
-      "exampleBoolean" : true,
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest",
       "groupingId" : "Antimicrobiology"
     },
     {
@@ -1114,6 +1158,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSQuestionnaireTask"
+      },
+      "name" : "PSS Questionnaire Task",
+      "description" : "PSS Task for Questionnaire - using anonymised patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSMedicationRequest"
+      },
+      "name" : "PSS Questionnaire Task",
+      "description" : "PSS Task for Questionnaire - using anonymised patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1301,7 +1369,7 @@
       },
       "name" : "Radiology - S1 Get Diagnoses - Request - 1.3 Original suggestion - CT head wo IV contrast",
       "description" : "Radiology - S1 Get Recommendations - Request - 1.3 Original suggestion - CT head wo IV contrast",
-      "exampleBoolean" : true,
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
       "groupingId" : "Radiology"
     },
     {
@@ -1603,7 +1671,7 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
-        "generation" : "html"
+        "generation" : "markdown"
       },
       {
         "extension" : [{

@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"CommunicationRequest.extension:instantiatesCanonical","CommunicationRequest.extension","instantiatesCanonical","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical]]} {[]}
+"CommunicationRequest.extension:instantiatesCanonical","CommunicationRequest.extension","instantiatesCanonical","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0]]} {[]}
 ","Source","A link back to the definition that produced this recommendation. Typically a Plan or Activity Definition.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","Event.instantiates",".outboundRelationship[typeCode=DEFN].target"
@@ -80,7 +80,7 @@ Cancelled Reason","",0,1,"Y","","","CodeableConcept {[]} {[]}
 ","A channel of communication","A channel that was used for this communication (e.g. email, fax).","","","","","","","","","",,"example","Codes for communication mediums such as phone, fax, email, in person, etc.","http://terminology.hl7.org/ValueSet/v3-ParticipationMode","",,,,"CommunicationRequest.medium",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CommunicationRequest.subject","CommunicationRequest.subject","","patient
-","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
+","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient]]}
 ","Focus of message","The patient or group that is the focus of this communication request.","","","","","","","","","",,,,,"",,,,"CommunicationRequest.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","FiveWs.subject[x]","FiveWs.subject"
 "CommunicationRequest.about","CommunicationRequest.about","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
