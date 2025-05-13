@@ -62,7 +62,6 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 dependencies:
   hl7.fhir.uv.cpg:
     id: cpg
-    uri: https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg
     version: 2.0.0
 
 
@@ -220,7 +219,7 @@ groups:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
-  index.xml:
+  index.md:
     title: Home
   functional-overview.md:
     title: "Functional Overview"
@@ -265,8 +264,9 @@ menu:
 # values, the value in the YAML should be a sequence/array. For a
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-#parameters:
-#  pin-canonicals: pin-multiples
+parameters:
+  pin-canonicals: pin-multiples
+  auto-oid-root: 2.16.840.1.113883.2.51.22.2
 #  excludettl: true
 #  validation: [allow-any-extensions, no-broken-links]
 

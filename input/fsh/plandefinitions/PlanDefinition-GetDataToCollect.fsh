@@ -37,7 +37,7 @@ Usage: #example
 * action.input[=].codeFilter.path = "verificationStatus"
 * action.input[=].codeFilter.code = $condition-ver-status#unconfirmed
 * action.output[0].type = #Task
-* action.output[=].profile[0] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask"
-* action.output[=].profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task"
+* action.output[=].profile[0] = Canonical(PSSQuestionnaireTask)
+//* action.output[=].profile[+] = Canonical(Task)
 * action.output[+].type = #Questionnaire
 //* action.output[=].profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnaire"

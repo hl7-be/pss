@@ -171,16 +171,16 @@ Usage: #example
 Instance: 30551ce1-5a28-4356-b684-11ef43a67755
 Title: "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
 Description: "Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"
-InstanceOf: Task
+InstanceOf: PSSQuestionnaireTask
 Usage: #example
 //* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask"
 * status = #requested
 * intent = #proposal
 * code = $cpg-activity-type-cs#collect-information "Collect information"
 * for = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
-* input
+* input[questionnaire]
   * type = $cpg-activity-type-cs#collect-information "Collect information"
-  * valueReference.reference = Canonical(30551ce1-5a28-4356-b684-2e639094ad4c)
+  * valueCanonical = Canonical(30551ce1-5a28-4356-b684-2e639094ad4c)
 
 
 Instance: 30551ce1-5a28-4356-b684-2e639094ad4c

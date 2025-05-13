@@ -34,7 +34,7 @@ Usage: #example
     * type = #justification
     * label = "Appropriateness Scoring Guidelines"
       * extension[http://hl7.org/fhir/StructureDefinition/language].valueCode = #en
-    * url = "https://environment.esriguide.org/suportingContent/12345)"
+    * url = "https://environment.esriguide.org/suportingContent/12345"
 
   * action[0]
     * textEquivalent = "CT, head, wo iv contrast"

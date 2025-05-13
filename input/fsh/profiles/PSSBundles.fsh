@@ -31,16 +31,17 @@ Parent: Bundle
 //
 
 Profile: PSSResponseServiceRequest
-Parent: ServiceRequest
+Parent: CPGServiceRequest
 Title: "PSS Response Service Request"
 Description: "The PSS Response Service Request is used when the PSS system returns a ServiceRequest"
 * subject 1..1 
-* subject only Reference(Patient)
+* subject only Reference(PSSPatient)
 * intent = #proposal
 // * extension contains 
 //   // http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating named cpg-rating 0..1 and
 //   // PSSCodedRating named coded-rating 0..1 and
 //   PSSStructuredRating named structured-rating 0..*
+* code ^binding.description = "Codes for tests or services that can be carried out"
 
 
 Profile: PSSResponseMedicationRequest
@@ -48,7 +49,7 @@ Title: "PSS Response Medication Request"
 Description: "The PSS Response Medication Request is used when the PSS system returns a MedicationRequest"
 Parent: CPGMedicationRequest
 * subject 1..1 
-* subject only Reference(CPGPatient)
+* subject only Reference(PSSPatient)
 * intent = #proposal
 // * extension contains 
 //   PSSStructuredRating named structured-rating 0..*
@@ -58,7 +59,7 @@ Parent: CPGMedicationRequest
 Profile: PSSDataAcquisitionForm
 Description: "The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system."
 Title: "PSS Data Acquisition Form"
-Parent: Questionnaire
+Parent: CPGComputableQuestionnaire
 * item.extension contains CodeValueSet named CodeValueSet 0..1
 * item.answerOption.extension contains AnswerOptionAdditionalCode named answerOptionAdditionalCode 0..*
 
@@ -67,6 +68,7 @@ Parent: RequestGroup
 Title: "PSS Response Request Group"
 Description: "All PSS responses contain a PSS RequestGroup conformant to this profile."
 * subject 1..1
+* subject only Reference(PSSPatient)
 * action 1..1
   * action
     * extension contains 
@@ -77,6 +79,9 @@ Profile: PSSResponseCommunicationRequest
 Parent: CPGCommunicationRequest
 Title: "PSS Response Communication Request"
 Description: "All PSS responses contain a PSS Communication Request conformant to this profile."
+* subject only Reference(PSSPatient)
+
+
 
 Profile: PSSPatient
 Parent: CPGPatient
@@ -91,3 +96,28 @@ Description: "PSS anonymised Patient"
   * text 0..0
   * family 0..0
   * given 0..0
+
+
+
+Profile: PSSQuestionnaireTask
+Parent: CPGQuestionnaireTask
+Title: "PSS Questionnaire Task"
+Description: "PSS Task for Questionnaire - using anonymised patient"
+
+* for only Reference(PSSPatient)
+
+// Profile: PSSTask
+// Parent: CPGTask
+// Title: "PSS Task"
+// Description: "PSS for Task - using anonymised patient"
+
+// * for only Reference(PSSPatient)
+
+
+Profile: PSSMedicationRequest
+Parent: CPGMedicationRequest
+Title: "PSS Questionnaire Task"
+Description: "PSS Task for Questionnaire - using anonymised patient"
+
+* subject only Reference(PSSPatient)
+
