@@ -97,7 +97,7 @@ Restrictions","",0,1,"","","","markdown {[]} {[]}
 "Questionnaire.code","Questionnaire.code","","","",0,*,"","","Y","Coding {[]} {[]}
 ","Concept that represents the overall questionnaire","An identifier for this question or group of questions in a particular terminology such as LOINC.","","Allows linking of the complete Questionnaire resources to formal terminologies.  It's common for ""panels"" of questions to be identified by a code.","","","","","","","",,"example","Codes for questionnaires, groups and individual questions.","http://hl7.org/fhir/ValueSet/questionnaire-questions","",,,,"Questionnaire.code",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".code"
-"Questionnaire.item","Questionnaire.item","","","",0,*,"","","","BackboneElement {[]} {[]}
+"Questionnaire.item","Questionnaire.item","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Questions and sections within the Questionnaire","A particular question, question grouping or display text that is part of the questionnaire.","The content of the questionnaire is constructed from an ordered, hierarchical collection of items.","","","","","","","","",,,,,"",,,,"Questionnaire.item",0,*,"que-3
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 que-1:Group items must have nested items, display items cannot have nested items {(type='group' implies item.empty().not()) and (type.trace('type')='display' implies item.trace('item').empty())}que-3:Display items cannot have a ""code"" asserted {type!='display' or code.empty()}que-4:A question cannot have both answerOption and answerValueSet {answerOption.empty() or answerValueSet.empty()}que-5:Only 'choice' and 'open-choice' items can have answerValueSet {(type ='choice' or type = 'open-choice' or type = 'decimal' or type = 'integer' or type = 'date' or type = 'dateTime' or type = 'time' or type = 'string' or type = 'quantity') or (answerValueSet.empty() and answerOption.empty())}que-6:Required and repeat aren't permitted for display items {type!='display' or (required.empty() and repeats.empty())}que-8:Initial values can't be specified for groups or display items {(type!='group' and type!='display') or initial.empty()}que-9:Read-only can't be specified for ""display"" items {type!='display' or readOnly.empty()}que-10:Maximum length can only be declared for simple question types {(type in ('boolean' | 'decimal' | 'integer' | 'string' | 'text' | 'url' | 'open-choice')) or maxLength.empty()}que-11:If one or more answerOption is present, initial[x] must be missing {answerOption.empty() or initial.empty()}que-12:If there are more than one enableWhen, enableBehavior must be specified {enableWhen.count() > 2 implies enableBehavior.exists()}que-13:Can only have multiple initial values for repeating items {repeats=true or initial.count() <= 1}",".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=DEF]"
@@ -107,9 +107,16 @@ que-1:Group items must have nested items, display items cannot have nested items
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Questionnaire.item.extension:CodeValueSet","Questionnaire.item.extension","CodeValueSet","","",0,1,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet]]} {[]}
-","Code ValueSet","A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"Questionnaire.item.extension:answerValueSetSource","Questionnaire.item.extension","answerValueSetSource","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-answerValueSetSource]]} {[]}
+","CPG Answer Value Set Source Extension","The canonical URL for the source value set for the answer options, when those options are provided directly in the questionnaire.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Questionnaire.item.extension:itemImage","Questionnaire.item.extension","itemImage","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-itemImage]]} {[]}
+","CPG Item Image Extension","An image to display as a visual accompaniment to the question being asked.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Questionnaire.item.extension:CodeValueSet","Questionnaire.item.extension","CodeValueSet","","",0,1,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet]]} {[]}
+","Code ValueSet","A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Questionnaire.item.modifierExtension","Questionnaire.item.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
@@ -198,7 +205,7 @@ The resulting QuestionnaireResponse will be populated the same way regardless of
 ","Valueset containing permitted answers","A reference to a value set containing a list of codes representing permitted answers for a ""choice"" or ""open-choice"" question.","LOINC defines many useful value sets for questionnaire responses. See [LOINC Answer Lists](http://hl7.org/fhir/R4/loinc.html#alist). The value may come from the ElementDefinition referred to by .definition.","","","","","","","","",,,,,"",,,,"Questionnaire.item.answerValueSet",0,1,"que-4
 que-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A - MIF rather than RIM level"
-"Questionnaire.item.answerOption","Questionnaire.item.answerOption","","","",0,*,"","","","BackboneElement {[]} {[]}
+"Questionnaire.item.answerOption","Questionnaire.item.answerOption","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Permitted answer","One of the permitted answers for a ""choice"" or ""open-choice"" question.","This element can be used when the value set machinery of answerValueSet is deemed too cumbersome or when there's a need to capture possible answers that are not codes.","","","","","","","","",,,,,"",,,,"Questionnaire.item.answerOption",0,*,"que-4
 que-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A - MIF rather than RIM level"
@@ -208,9 +215,12 @@ que-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Questionnaire.item.answerOption.extension:answerOptionAdditionalCode","Questionnaire.item.answerOption.extension","answerOptionAdditionalCode","","",0,*,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode]]} {[]}
-","AnswerOption Additional Code","An additional code for an option in a choice question","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"Questionnaire.item.answerOption.extension:responseImage","Questionnaire.item.answerOption.extension","responseImage","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-responseImage]]} {[]}
+","CPG Response Image Extension","An image to display as a visual accompaniment to the response.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Questionnaire.item.answerOption.extension:answerOptionAdditionalCode","Questionnaire.item.answerOption.extension","answerOptionAdditionalCode","","",0,*,"","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode]]} {[]}
+","AnswerOption Additional Code","An additional code for an option in a choice question","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Questionnaire.item.answerOption.modifierExtension","Questionnaire.item.answerOption.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}

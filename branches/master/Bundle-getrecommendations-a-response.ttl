@@ -502,9 +502,15 @@
 
 <urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23> a fhir:MedicationRequest ;
   fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094ac23"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest>
+     ] )
+  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ac23\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ac23</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ac23-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc J01XD01}, {https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg 21436}\">metronidazole</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 1000 mg per dag in 2 giften gedurende 7 dagen</p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1000 mg</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ac23\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ac23</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ac23-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSMedicationRequest.html\">PSS Questionnaire Task</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc J01XD01}, {https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg 21436}\">metronidazole</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 1000 mg per dag in 2 giften gedurende 7 dagen</p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1000 mg</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
@@ -514,7 +520,7 @@
        fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "J01XD01" ]
      ] [
-       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg"^^xsd:anyURI ] ;
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "21436" ]
      ] )
   ] ; # 
@@ -569,13 +575,16 @@
   fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094ad24"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest>
+     ] [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad24\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad24</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad24\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad24\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad24-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad24\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad24</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad24\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad24\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad24-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSSMedicationRequest.html\">PSS Questionnaire Task</a>, <a href=\"StructureDefinition-PSSResponseMedicationRequest.html\">PSS Response Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
@@ -616,13 +625,13 @@
   fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094ad26"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest>
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad26\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad26</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad26\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad26\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad26-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Fluconazol</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad26\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad26</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad26\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad26\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad26-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseMedicationRequest.html\">PSS Response Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Fluconazol</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
@@ -641,14 +650,11 @@
      fhir:profile ( [
        fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
        fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest>
-     ] [
-       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad29\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad29</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad29\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad29\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad29-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSSResponseMedicationRequest.html\">PSS Response Medication Request</a>, <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Miconazol</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad29\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad29</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad29\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad29\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad29-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseMedicationRequest.html\">PSS Response Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Miconazol</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 

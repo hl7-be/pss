@@ -28,6 +28,23 @@
         
 
         
+        <tr>
+            <th scope="row">
+                <b>
+                    
+                        
+                    
+                </b>
+            </th>
+            <td style="padding-left: 4px;">
+                
+                <p style="margin-bottom: 5px;">
+                    <span>urn:oid:2.16.840.1.113883.2.51.22.2.34.3</span>
+                </p>
+                
+            </td>
+        </tr>
+        
 
         
 
@@ -45,7 +62,7 @@
                     
                         
                         <p style="margin-bottom: 5px;">
-                            <b>system: </b> <span><a href="http://terminology.hl7.org/6.1.0/CodeSystem-plan-definition-type.html">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>
+                            <b>system: </b> <span><a href="http://terminology.hl7.org/6.3.0/CodeSystem-plan-definition-type.html">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>
                         </p>
                         
                         
@@ -66,7 +83,7 @@
         
         <tr>
             <th scope="row"><b>Date: </b></th>
-            <td style="padding-left: 4px;">2025-04-28 07:30:14+0000</td>
+            <td style="padding-left: 4px;">2025-05-13 10:14:30+0000</td>
         </tr>
         
 
@@ -137,6 +154,10 @@
 </div>
   </text>
   <url value="http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetRecommendations"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.2.51.22.2.34.3"/>
+  </identifier>
   <version value="1.0.0"/>
   <type>
     <coding>
@@ -145,7 +166,7 @@
     </coding>
   </type>
   <status value="active"/>
-  <date value="2025-04-28T07:30:14+00:00"/>
+  <date value="2025-05-13T10:14:30+00:00"/>
   <publisher value="eHealth Platform Belgium"/>
   <contact>
     <name value="eHealth Platform Belgium"/>
@@ -230,7 +251,7 @@
     </output>
     <output>
       <type value="MedicationRequest"/>
-      <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+      <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"/>
     </output>
   </action>
 </PlanDefinition>

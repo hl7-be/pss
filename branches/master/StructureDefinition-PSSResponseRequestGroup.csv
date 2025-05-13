@@ -64,7 +64,7 @@ requisition","",0,1,"","","Y","Identifier {[]} {[]}
 "RequestGroup.code","RequestGroup.code","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","What's being requested/ordered","A code that identifies what the overall request group is.","This element can be used to provide a code that captures the meaning of the request group as a whole, as opposed to the code of the action element, which captures the meaning of the individual actions within the request group.","","","","","","","","",,,,,"",,,,"RequestGroup.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.code","FiveWs.what[x]"
-"RequestGroup.subject","RequestGroup.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
+"RequestGroup.subject","RequestGroup.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient]]}
 ","Who the request group is about","The subject for which the request group was created.","","","","","","","","","",,,,,"",,,,"RequestGroup.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","FiveWs.subject[x]","FiveWs.subject"
 "RequestGroup.encounter","RequestGroup.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
