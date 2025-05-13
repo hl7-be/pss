@@ -143,7 +143,7 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ac23
-InstanceOf: CPGMedicationRequest
+InstanceOf: PSSMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Usage: #example
@@ -170,12 +170,12 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ad24
-InstanceOf: CPGMedicationRequest
+InstanceOf: PSSMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Usage: #example
 //* id = "30551ce1-5a28-4356-b684-1e639094ad24"
-* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
+* meta.profile = Canonical(PSSResponseMedicationRequest)
 // * extension[structured-rating][+]
 //   * extension[ratingType].valueCode = #radiationexposure
 //   * extension[ratingValue].valueRatio
@@ -198,7 +198,7 @@ InstanceOf: PSSResponseMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
+* meta.profile = Canonical(PSSResponseMedicationRequest)
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Fluconazol"
@@ -210,7 +210,7 @@ InstanceOf: PSSResponseMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"
+* meta.profile = Canonical(PSSResponseMedicationRequest)
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.text = "Miconazol"
