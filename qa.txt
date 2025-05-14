@@ -1,9 +1,9 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 5, warn = 4, info = 8
+err = 4, warn = 3, info = 8
 IG Publisher Version: 1.8.26
-Generated Wed May 14 07:40:54 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
+Generated Wed May 14 07:53:48 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 1 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
@@ -36,7 +36,7 @@ Generated Wed May 14 07:40:54 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c : 0 / 7 / 8
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02 : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08 : 0 / 0 / 1
@@ -116,8 +116,6 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 == fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
 == fsh-generated/resources/PlanDefinition-GetDiagnoses.json ==
 == fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
-ERROR: PlanDefinition/GetRecommendations: PlanDefinition.action[0].output[0].profile[0]: Canonical URLs must be absolute URLs if they are not fragment references (PSSServiceRequest)
-WARNING: PlanDefinition/GetRecommendations: PlanDefinition.action[0].output[0].profile[0]: Canonical URL 'PSSServiceRequest' does not resolve
 == fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c.json ==
 == fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02.json ==
 == fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08.json ==
