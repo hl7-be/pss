@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="30551ce1-5a28-4356-b684-2e639094ad12"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-2e639094ad12</b></p><a name="30551ce1-5a28-4356-b684-2e639094ad12"> </a><a name="hc30551ce1-5a28-4356-b684-2e639094ad12"> </a><a name="30551ce1-5a28-4356-b684-2e639094ad12-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSMedicationRequest.html">PSS Questionnaire Task</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:{http://www.whocc.no/atc G01AA10}">clindamycin</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p></div>
+  </text>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="G01AA10"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+  </subject>
+</MedicationRequest>
