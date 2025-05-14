@@ -116,8 +116,8 @@ Description: "PSS Task for Questionnaire - using anonymised patient"
 
 Profile: PSSMedicationRequest
 Parent: CPGMedicationRequest
-Title: "PSS Questionnaire Task"
-Description: "PSS Task for Questionnaire - using anonymised patient"
+Title: "PSS MedicationRequest Task"
+Description: "PSS MedicationRequest - using anonymised patient"
 
 * subject only Reference(PSSPatient)
 
