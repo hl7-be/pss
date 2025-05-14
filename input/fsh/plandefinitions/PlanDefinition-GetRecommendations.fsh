@@ -41,7 +41,7 @@ Usage: #example
     * mustSupport[+] = "code"
   * output[0]
     * type = #ServiceRequest
-    * profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest"
+    * profile = "PSSServiceRequest"
   * output[+]
     * type = #MedicationRequest
     * profile = Canonical(PSSResponseMedicationRequest)
