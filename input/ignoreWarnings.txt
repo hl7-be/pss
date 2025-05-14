@@ -3,13 +3,68 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 
-# This is inherited from the base resource
-WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace
+# PSSDataAcquisitionForm does not use the answerOption[responseImage] slice of CPGComputableQuestionnaire
+This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present
-INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
-INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
 
-# If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...
-WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile
-WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile
+# Several examples use fictitious, unavailable or not-yet existing code systems
+A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated
+
+# Several examples use fictitious, unavailable or not-yet existing code systems
+A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+
+
+# External URLs are not relevant
+URL value 'https://bcfi.be/nl/chapters/12?frag=8001869' does not resolve
+
+# External URLs are not relevant
+URL value 'https://cbip.be/fr/chapters/12?frag=8001869' does not resolve
+
+# External URLs are not relevant
+URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve
+
+# External URLs are not relevant
+URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve
+
+
+# Several examples use fictitious, unavailable or not-yet existing code systems
+A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated
+
+
+# Several examples use fictitious, unavailable or not-yet existing code systems
+A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated
+
+# Several examples use fictitious, unavailable or not-yet existing code systems
+A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated
+
+# Several examples use fictitious, unavailable or not-yet existing code systems
+URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' does not resolve
+
+
+# External URLs are not relevant
+URL value 'https://bcfi.be/nl/chapters/12?frag=8001869' does not resolve
+
+# External URLs are not relevant
+URL value 'https://cbip.be/fr/chapters/12?frag=8001869' does not resolve
+
+# External URLs are not relevant
+URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve
+
+# External URLs are not relevant
+URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve
+
+# External URLs are not relevant
+URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve
+
+# External URLs are not relevant
+URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve
+
+# External URLs are not relevant
+URL value 'https://environment.esriguide.org/suportingContent/12345' does not resolve
+
+
+# At the moment, the Radiology examples contain Observations - see issue 102
+Best Practice Recommendation: In general, all observations should have a performer
+
+# The extension AnswerOptionAdditionalCode has several uses, but not used in the current examples
+The Implementation Guide contains no examples for this extension
