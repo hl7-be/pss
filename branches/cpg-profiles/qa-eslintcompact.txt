@@ -2,6 +2,8 @@ PrescriptionSearchSupport
 =========================================
 
 Generic: line 0, col 0, Warning - The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations.json: line 1, col 1967, Error - Canonical URLs must be absolute URLs if they are not fragment references (PSSServiceRequest) (INVALID)
+/github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations.json: line 1, col 1967, Warning - Canonical URL 'PSSServiceRequest' does not resolve (INVALID)
 /github/workspace/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json: line 1, col 26640, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/StructureDefinition-PSSPatient.json: line 0, col 0, Info - Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0) (PROCESSING)
 /github/workspace/fsh-generated/resources/StructureDefinition-PSSPatient.json: line 0, col 0, Info - Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0) (PROCESSING)
@@ -17,5 +19,5 @@ Generic: line 0, col 0, Warning - The IG is not for the international realm, and
 /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes.json: line 1, col 4096, Error - The code 'R85' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc-2' could not be found, so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes.json: line 0, col 0, Warning - Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc-2 (EXCEPTION)
 
-err = 4, warn = 3, info = 8
+err = 5, warn = 4, info = 8
 IG Publisher Version: 1.8.26
