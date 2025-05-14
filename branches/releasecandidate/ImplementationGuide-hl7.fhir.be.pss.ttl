@@ -987,7 +987,8 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Extensions" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1628,15 +1629,16 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask> ;
-         fhir:reference [ fhir:v "StructureDefinition/PSSQuestionnaireTask" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSMedicationRequest" ]
        ] ;
-       fhir:name [ fhir:v "PSS Questionnaire Task" ] ;
-       fhir:description [ fhir:v "PSS Task for Questionnaire - using anonymised patient" ] ;
+       fhir:name [ fhir:v "PSS MedicationRequest Task" ] ;
+       fhir:description [ fhir:v "PSS MedicationRequest - using anonymised patient" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Profiles" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1646,15 +1648,16 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest> ;
-         fhir:reference [ fhir:v "StructureDefinition/PSSMedicationRequest" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSQuestionnaireTask" ]
        ] ;
        fhir:name [ fhir:v "PSS Questionnaire Task" ] ;
        fhir:description [ fhir:v "PSS Task for Questionnaire - using anonymised patient" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Profiles" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
