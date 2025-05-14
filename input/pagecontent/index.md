@@ -1,5 +1,13 @@
-PSS
+This publication contains the specification for the Prescription Search Support.
 
+The functional scope is to provide options during a prescription. The initial focus is on Antimicrobiology, i.e. searches related to ordering of antibiotics. 
+
+Acknowledging the impact and complexity of providing feedback on ordering, the PSS project uses an overall approach taken based on the existing guidance, namely [Clinical Practice Guidelines](https://hl7.org/fhir/uv/cpg)
+
+Note:
+* The Questionnnaires, ValueSets and CodeSystems depend on the actual guidelines, so they are not normative, and may change. They will be subject to different updates.
+
+ 
 ---
 
 
