@@ -238,8 +238,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.114"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent",
-      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
+      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
+      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
     },
     {
       "url" : "http://hl7.org/fhir/request-priority",
@@ -298,11 +298,11 @@
       "oids" : ["2.16.840.1.113883.6.90"],
       "uses" : {
       },
-      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
       "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
-      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+      "ValueSet-GonokokCodes.html" : "Gonokok Codes",
+      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
       "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
-      "ValueSet-GonokokCodes.html" : "Gonokok Codes"
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes"
     },
     {
       "url" : "http://hl7.org/fhir/sid/icpc-2",
@@ -375,27 +375,27 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
-      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
       "ValueSet-BacterialCodes.html" : "Bacterial Codes",
+      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
-      "ValueSet-GonokokCodes.html" : "Gonokok Codes",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "ValueSet-MycoplasmaCodes.html" : "Mycoplasma Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+      "ValueSet-TrichomonasCodes.html" : "Trichomonas Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
       "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
       "ValueSet-CandidaCodes.html" : "Candida Codes",
-      "ValueSet-TrichomonasCodes.html" : "Trichomonas Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "ValueSet-MycoplasmaCodes.html" : "Mycoplasma Codes",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "ValueSet-GonokokCodes.html" : "Gonokok Codes",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
       "ValueSet-OtherCodes.html" : "Other Codes",
       "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)"
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/action-type",

@@ -733,7 +733,8 @@
       },
       "name" : "AnswerOption Additional Code",
       "description" : "An additional code for an option in a choice question",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Extensions"
     },
     {
       "extension" : [{
@@ -1161,11 +1162,12 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PSSQuestionnaireTask"
+        "reference" : "StructureDefinition/PSSMedicationRequest"
       },
-      "name" : "PSS Questionnaire Task",
-      "description" : "PSS Task for Questionnaire - using anonymised patient",
-      "exampleBoolean" : false
+      "name" : "PSS MedicationRequest Task",
+      "description" : "PSS MedicationRequest - using anonymised patient",
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
     },
     {
       "extension" : [{
@@ -1173,11 +1175,12 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PSSMedicationRequest"
+        "reference" : "StructureDefinition/PSSQuestionnaireTask"
       },
       "name" : "PSS Questionnaire Task",
       "description" : "PSS Task for Questionnaire - using anonymised patient",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Profiles"
     },
     {
       "extension" : [{
