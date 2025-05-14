@@ -41,7 +41,7 @@ Usage: #example
     * mustSupport[+] = "code"
   * output[0]
     * type = #ServiceRequest
-    * profile = "PSSServiceRequest"
+    * profile = Canonical(PSSResponseServiceRequest)
   * output[+]
     * type = #MedicationRequest
     * profile = Canonical(PSSResponseMedicationRequest)
