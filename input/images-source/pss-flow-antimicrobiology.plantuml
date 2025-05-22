@@ -34,4 +34,21 @@ See 4. below
         |||
 
 end
+...
+group #efd PSS-4 - Give feedback
+        EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$feedback**
+'        activate EPD
+        note left of PSS
+|_ PSS-ID
+|_ datetime
+|_ outcome
+|_ suggestionOutcomes
+  |_ suggestionId
+  |_ outcome
+  |_ overrideReason
+        end note
+        deactivate EPD
+        activate PSS
+        deactivate PSS
+end
 @enduml

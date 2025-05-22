@@ -33,4 +33,31 @@ group #fed Service 3 - Given some data (+ a procedure), request recommended proc
         |||
 
 end
+...
+group #efd Service 4 - Give feedback
+        EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$feedback**
+        note left of PSS
+|_ PSS-ID
+|_ datetime
+|_ outcome
+|_ suggestionOutcomes
+  |_ suggestionId
+  |_ outcome
+  |_ overrideReason
+        end note
+        deactivate EPD
+        activate PSS
+        & PSS -[hidden]-> QSI : "                                      "
+        deactivate PSS
+        |||
+
+end
+
+...
+...
+
+
+
+
 @enduml
+

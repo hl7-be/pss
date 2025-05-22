@@ -143,7 +143,7 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ac23
-InstanceOf: PSSMedicationRequest
+InstanceOf: PSSResponseMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"
 Usage: #example
@@ -170,7 +170,7 @@ Usage: #example
 
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ad24
-InstanceOf: PSSMedicationRequest
+InstanceOf: PSSResponseMedicationRequest
 Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
 Usage: #example

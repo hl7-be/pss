@@ -28,3 +28,21 @@ Description: "A response containing the results from the PSS."
 //  * isRequested 1..1 boolean "Indicates if the examination is requested by PSS"
 * evidenceSource 1..1 Reference(ResearchStudy) "Link to a source (study, publication, etc.) for the PSS"
 
+
+
+Logical: PSSFeedbackModel
+Id: PSSFeedbackModel
+Title: "PSS Feedback"
+Description: "Feedback containing the acceptance of the PSS results."
+
+* PSS-ID 1..1 string  "The uuid from the response - the ID of the RequestGroup"
+* outcomeTimeStamp 1..1 dateTime "The time when the feedback is given"
+* outcome 1..1 code "accepted, discarded, overridden"
+* suggestionOutcome 0..* BackboneElement "List of suggestions provided by PSS for which feedback is given"
+  * suggestionId 0..1 string "The suggestion ID"
+  * outcome 1..1 code "accepted or overridden"
+  * overrideReason 0..1 CodeableConcept "The reason for overriding - code or text"
+
+
+  
+
