@@ -3,7 +3,7 @@
 Title PSS Functional data exchange
 hide footbox
 
-group #DFE Service 1 - Given existing data, query the structured list of applicable indications
+group #edf PSS-0 - Confirm consent
         EPD -> PSS : \n**POST /Consent**
         activate PSS
         note right of EPD
@@ -37,7 +37,7 @@ group #DFE PSS-1 - Given existing data, query the structured list of applicable 
 end
 
 ...
-group #fed Service 3 - Given some data (+ a procedure), request recommended procedures
+group #fed PSS-3 - Given some data (+ a procedure), request recommended procedures
         EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$apply**\n Payload:\n        subject=Y\n        data=Bundle
         & PSS --> QSI 
         & PSS -[hidden]-> QSI : "                                      "
@@ -52,7 +52,7 @@ group #fed Service 3 - Given some data (+ a procedure), request recommended proc
 
 end
 ...
-group #efd Service 4 - Give feedback
+group #efd PSS-4 - Give feedback
         EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$feedback**
         note left of PSS
 |_ PSS-ID

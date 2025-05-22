@@ -5,26 +5,26 @@ Functional overview of data exchange with PSS system - Antimicrobiology
 </figure>
 
 
-### GetDataTocollect - request resource structure
+### PSS-1 GetIndications - request resource structure
 <figure>
   {% include getDiagnoses-request.svg %}
 </figure>
 
 <hr/>
 
-### GetDataToCollect - response resource structure
+### PSS-1 GetIndications - response resource structure
 <figure>
   {% include getDiagnoses-response.svg %}
 </figure>
 <hr/>
 
-### GetRecommendation - request resource structure
+### PSS-3 GetRecommendation - request resource structure
 <figure>
   {% include getRecommendation-request-radiology.svg %}
 </figure>
 <hr/>
 
-### GetRecommendation - response resource structure
+### PSS-3 GetRecommendation - response resource structure
 <figure>
   {% include getRecommendation-response-radiology.svg %}
 </figure>
