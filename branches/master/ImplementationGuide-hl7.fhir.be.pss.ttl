@@ -19,18 +19,18 @@
   fhir:title [ fhir:v "Prescription Search Support"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:date [ fhir:v "2024-04-26"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform Belgium"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:name [ fhir:v "eHealth Platform Belgium" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://www.ehealth.fgov.be/" ]
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
      ] )
   ] [
-     fhir:name [ fhir:v "Message Structure" ] ;
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
@@ -1261,8 +1261,8 @@
        fhir:description [ fhir:v "Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest"^^xsd:anyURI ;
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest>
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest>
        ] ;
        fhir:groupingId [ fhir:v "Antimicrobiology" ]
      ] [
@@ -1281,8 +1281,8 @@
        fhir:description [ fhir:v "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest"^^xsd:anyURI ;
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest>
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest>
        ] ;
        fhir:groupingId [ fhir:v "Antimicrobiology" ]
      ] [
@@ -1620,6 +1620,24 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Profiles" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSFeedbackModel> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSFeedbackModel" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Feedback" ] ;
+       fhir:description [ fhir:v "Feedback containing the acceptance of the PSS results." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
