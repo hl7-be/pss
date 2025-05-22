@@ -1,7 +1,7 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 4, warn = 3, info = 8
+err = 4, warn = 5, info = 8
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
  Build Errors : 0 / 1 / 0
@@ -9,7 +9,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 7 / 15
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 2 / 10
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 6 / 14
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 6 / 13
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 2 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-response : 0 / 4 / 9
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 3 / 6
@@ -27,7 +27,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23 : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24 : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12 : 0 / 0 / 1
@@ -51,6 +51,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CodeValueSet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSFeedbackModel : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSMedicationRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSPatient : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSQuestionnaireTask : 0 / 0 / 2
@@ -131,6 +132,9 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 == fsh-generated/resources/StructureDefinition-CodeValueSet.json ==
 == fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json ==
 INFORMATION: StructureDefinition/PSSDataAcquisitionForm: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-PSSFeedbackModel.json ==
+WARNING: StructureDefinition/PSSFeedbackModel: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/PSSFeedbackModel: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 == fsh-generated/resources/StructureDefinition-PSSMedicationRequest.json ==
 == fsh-generated/resources/StructureDefinition-PSSPatient.json ==
 INFORMATION: StructureDefinition.snapshot.element[23].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
