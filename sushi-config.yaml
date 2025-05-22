@@ -110,6 +110,8 @@ groups:
     resources:
       - StructureDefinition/PSSRequest
       - StructureDefinition/PSSResponse
+      - StructureDefinition/PSSConsentModel
+      - StructureDefinition/PSSFeedbackModel
 
   PlanDefinitions:
     name: PlanDefinitions (services)
@@ -226,6 +228,8 @@ pages:
     title: Home
   functional-overview.md:
     title: "Functional Overview"
+  services.md:
+    title: "Overview of PSS services"
     radiology.md:
       title: "Radiology"
     antimicrobiology.md:
@@ -269,7 +273,7 @@ menu:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
 parameters:
   pin-canonicals: pin-multiples
-  auto-oid-root: 2.16.840.1.113883.2.51.22.2
+
 #  excludettl: true
 #  validation: [allow-any-extensions, no-broken-links]
 
