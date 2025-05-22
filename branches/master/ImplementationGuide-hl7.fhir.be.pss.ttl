@@ -138,21 +138,6 @@
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "auto-oid-root"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "2.16.840.1.113883.2.51.22.2"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "autoload-resources"
          ]
        ] [
@@ -541,21 +526,6 @@
          fhir:value [
            a fhir:string ;
            fhir:v "pin-multiples"
-         ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:code ;
-           fhir:v "auto-oid-root"
-         ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "2.16.840.1.113883.2.51.22.2"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -1606,6 +1576,25 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSConsentModel> ;
+         fhir:reference [ fhir:v "StructureDefinition/PSSConsentModel" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Consent" ] ;
+       fhir:description [ fhir:v "Consent statement about using PSS and agreeing with (or opting out of) the Terms and Conditions." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "LogicalModels" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1637,7 +1626,8 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "LogicalModels" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -2427,6 +2417,20 @@
            fhir:v "functional-overview.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Functional Overview" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "services.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "services.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Overview of PSS services" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
            fhir:extension ( [
