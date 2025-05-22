@@ -51,4 +51,10 @@ group #efd PSS-4 - Give feedback
         activate PSS
         deactivate PSS
 end
+...
+...
+group #fde PSS-5 - Consult prior result
+EPD -> PSS : \n**GET /Bundle/{PSS-ID}**
+'        activate EPD
+
 @enduml
