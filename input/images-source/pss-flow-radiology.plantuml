@@ -4,6 +4,24 @@ Title PSS Functional data exchange
 hide footbox
 
 group #DFE Service 1 - Given existing data, query the structured list of applicable indications
+        EPD -> PSS : \n**POST /Consent**
+        activate PSS
+        note right of EPD
+|_ HCP-ID
+|_ datetime
+|_ terms&conditions
+  |_ url
+  |_ text
+  |_ version
+  |_ options
+        end note
+        deactivate EPD
+        deactivate PSS
+end
+|||
+|||
+group #DFE PSS-1 - Given existing data, query the structured list of applicable indications
+        activate EPD
         EPD -> PSS : \n**POST /PlanDefinition/GetDiagnoses/$apply**\n Payload:\n        subject=PSSPatient\n        data=PSSRequestBundle
         & PSS -> QSI 
         & PSS -[hidden]-> QSI : "                                      "

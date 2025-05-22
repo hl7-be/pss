@@ -45,4 +45,20 @@ Description: "Feedback containing the acceptance of the PSS results."
 
 
   
+Logical: PSSConsentModel
+Id: PSSConsentModel
+Title: "PSS Consent"
+Description: "Consent statement about using PSS and agreeing with (or opting out of) the Terms and Conditions."
+
+* HCP-ID 1..1 string  "The anonymised ID of the healthcare professional"
+* recordedDate 1..1 date "Date on which the information was recorded"
+* instruction 1..1 string "The instruction to the HCP"
+* termsConditions 1..1 BackboneElement "Terms and Conditions"
+  * policy 1..1 uri "Link to the Terms and Conditions"
+  * version 1..1 string "Version of the Terms and Conditions"
+* consent 1..1 code "accepted, rejected"
+* provision 0..1 BackboneElement "Provision of the consent"
+  * provisionType 1..1 code "opt-in, opt-out"
+  * provisionStatus 1..1 code "accepted, rejected"
+
 

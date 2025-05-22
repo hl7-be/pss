@@ -271,8 +271,6 @@ menu:
 # values, the value in the YAML should be a sequence/array. For a
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-parameters:
-  pin-canonicals: pin-multiples
 
 #  excludettl: true
 #  validation: [allow-any-extensions, no-broken-links]
@@ -285,3 +283,5 @@ FSHOnly: false
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
+parameters:
+  pin-canonicals: pin-multiples
