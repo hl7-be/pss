@@ -105,17 +105,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "auto-oid-root"
-      },
-      {
-        "url" : "value",
-        "valueString" : "2.16.840.1.113883.2.51.22.2"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "autoload-resources"
       },
       {
@@ -400,17 +389,6 @@
       {
         "url" : "value",
         "valueString" : "pin-multiples"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "auto-oid-root"
-      },
-      {
-        "url" : "value",
-        "valueString" : "2.16.840.1.113883.2.51.22.2"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1146,6 +1124,19 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PSSConsentModel"
+      },
+      "name" : "PSS Consent",
+      "description" : "Consent statement about using PSS and agreeing with (or opting out of) the Terms and Conditions.",
+      "exampleBoolean" : false,
+      "groupingId" : "LogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1166,7 +1157,8 @@
       },
       "name" : "PSS Feedback",
       "description" : "Feedback containing the acceptance of the PSS results.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "LogicalModels"
     },
     {
       "extension" : [{
@@ -1695,6 +1687,15 @@
         }],
         "nameUrl" : "functional-overview.html",
         "title" : "Functional Overview",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "services.html"
+        }],
+        "nameUrl" : "services.html",
+        "title" : "Overview of PSS services",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{

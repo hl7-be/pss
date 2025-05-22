@@ -91,14 +91,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="auto-oid-root"/>
-      </extension>
-      <extension url="value">
-        <valueString value="2.16.840.1.113883.2.51.22.2"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -306,14 +298,6 @@
       </extension>
       <extension url="value">
         <valueString value="pin-multiples"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="auto-oid-root"/>
-      </extension>
-      <extension url="value">
-        <valueString value="2.16.840.1.113883.2.51.22.2"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -937,6 +921,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSConsentModel"/>
+      </reference>
+      <name value="PSS Consent"/>
+      <description value="Consent statement about using PSS and agreeing with (or opting out of) the Terms and Conditions."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="LogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -957,6 +953,7 @@
       <name value="PSS Feedback"/>
       <description value="Feedback containing the acceptance of the PSS results."/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModels"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1443,6 +1440,14 @@
         </extension>
         <nameUrl value="functional-overview.html"/>
         <title value="Functional Overview"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="services.html"/>
+        </extension>
+        <nameUrl value="services.html"/>
+        <title value="Overview of PSS services"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

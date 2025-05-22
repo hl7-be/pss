@@ -1,10 +1,10 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 4, warn = 5, info = 8
+err = 4, warn = 7, info = 12
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
- Build Errors : 0 / 1 / 0
+ Build Errors : 1 / 1 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 7 / 15
@@ -34,10 +34,10 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Observation-ataxia : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c : 0 / 7 / 8
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c : 0 / 7 / 9
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02 : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group : 0 / 0 / 1
@@ -50,6 +50,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ServiceRequest-pss-ct-head-wo-iv-contrast : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CodeValueSet : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSConsentModel : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSFeedbackModel : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PSSMedicationRequest : 0 / 0 / 1
@@ -84,6 +85,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: /github/workspace/output/services.html#/html/body/div/div/div/div/div/p/a at Line 190, column 67: The link 'StructureDefinition-PSSConsentModel' for "model" cannot be resolved
 WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 == fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02.json ==
 == fsh-generated/resources/Bundle-getdatatocollect-a-data.json ==
@@ -115,9 +117,13 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48.json ==
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48.json ==
 == fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetDataToCollect could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/PlanDefinition-GetDiagnoses.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetDiagnoses could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c.json ==
+INFORMATION: Resource: The resource Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02.json ==
 == fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08.json ==
 == fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group.json ==
@@ -130,6 +136,9 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 == fsh-generated/resources/ServiceRequest-pss-ct-head-wo-iv-contrast.json ==
 == fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode.json ==
 == fsh-generated/resources/StructureDefinition-CodeValueSet.json ==
+== fsh-generated/resources/StructureDefinition-PSSConsentModel.json ==
+WARNING: StructureDefinition/PSSConsentModel: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/PSSConsentModel: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 == fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json ==
 INFORMATION: StructureDefinition/PSSDataAcquisitionForm: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated/resources/StructureDefinition-PSSFeedbackModel.json ==
