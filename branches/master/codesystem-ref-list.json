@@ -10,10 +10,10 @@
       "oids" : ["2.16.840.1.113883.6.90"],
       "uses" : {
       },
-      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
       "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
-      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
       "ValueSet-GonokokCodes.html" : "Gonokok Codes",
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
       "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes"
     },
     {
@@ -39,17 +39,39 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
       "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
-      "ValueSet-OtherCodes.html" : "Other Codes",
-      "ValueSet-CandidaCodes.html" : "Candida Codes",
       "ValueSet-TrichomonasCodes.html" : "Trichomonas Codes",
-      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
       "ValueSet-GonokokCodes.html" : "Gonokok Codes",
-      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
+      "ValueSet-MycoplasmaCodes.html" : "Mycoplasma Codes",
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+      "ValueSet-OtherCodes.html" : "Other Codes",
       "ValueSet-BacterialCodes.html" : "Bacterial Codes",
-      "ValueSet-MycoplasmaCodes.html" : "Mycoplasma Codes"
+      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
+      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "ValueSet-CandidaCodes.html" : "Candida Codes"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSFeedbackCodes",
+      "title" : "PSS Feedback Codes",
+      "description" : "Feedback codes for PSS",
+      "uses" : {
+      },
+      "ValueSet-PSSFeedbackCodesVS.html" : "PSS Feedback Codes"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSFeedbackReasons",
+      "title" : "PSS Feedback Code Reasons",
+      "description" : "Feedback code reasons for PSS",
+      "uses" : {
+      },
+      "ValueSet-PSSFeedbackReasonsVS.html" : "PSS Feedback Code Reasons"
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",

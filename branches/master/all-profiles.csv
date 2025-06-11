@@ -344,7 +344,7 @@ decimal {[]} {[]}integer {[]} {[]}date {[]} {[]}dateTime {[]} {[]}time {[]} {[]}
 "PSSFeedbackModel","PSSFeedbackModel.outcomeTimeStamp","PSSFeedbackModel.outcomeTimeStamp","","","",1,1,"","","","dateTime {[]} {[]}
 ","The time when the feedback is given","The time when the feedback is given","","","","","","","","","",,,,,"",,,,"PSSFeedbackModel.outcomeTimeStamp",1,1,"",""
 "PSSFeedbackModel","PSSFeedbackModel.outcome","PSSFeedbackModel.outcome","","","",1,1,"","","","code {[]} {[]}
-","accepted, discarded, overridden","accepted, discarded, overridden","","","","","","","","","",,,,,"",,,,"PSSFeedbackModel.outcome",1,1,"",""
+","accepted, rejected, overridden","accepted, rejected, overridden","","","","","","","","","",,,,,"",,,,"PSSFeedbackModel.outcome",1,1,"",""
 "PSSFeedbackModel","PSSFeedbackModel.suggestionOutcome","PSSFeedbackModel.suggestionOutcome","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","List of suggestions provided by PSS for which feedback is given","List of suggestions provided by PSS for which feedback is given","","","","","","","","","",,,,,"",,,,"PSSFeedbackModel.suggestionOutcome",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -364,9 +364,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PSSFeedbackModel","PSSFeedbackModel.suggestionOutcome.suggestionId","PSSFeedbackModel.suggestionOutcome.suggestionId","","","",0,1,"","","","string {[]} {[]}
 ","The suggestion ID","The suggestion ID","","","","","","","","","",,,,,"",,,,"PSSFeedbackModel.suggestionOutcome.suggestionId",0,1,"",""
 "PSSFeedbackModel","PSSFeedbackModel.suggestionOutcome.outcome","PSSFeedbackModel.suggestionOutcome.outcome","","","",1,1,"","","","code {[]} {[]}
-","accepted or overridden","accepted or overridden","","","","","","","","","",,,,,"",,,,"PSSFeedbackModel.suggestionOutcome.outcome",1,1,"",""
+","accepted, rejected or overridden","accepted, rejected or overridden","","","","","","","","","",,,,,"",,,,"PSSFeedbackModel.suggestionOutcome.outcome",1,1,"",""
 "PSSFeedbackModel","PSSFeedbackModel.suggestionOutcome.overrideReason","PSSFeedbackModel.suggestionOutcome.overrideReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","The reason for overriding - code or text","The reason for overriding - code or text","","","","","","","","","",,,,,"",,,,"PSSFeedbackModel.suggestionOutcome.overrideReason",0,1,"",""
+","The reason for rejecting or overriding - code or text","The reason for rejecting or overriding - code or text","","","","","","","","","",,,,,"",,,,"PSSFeedbackModel.suggestionOutcome.overrideReason",0,1,"",""
 "PSSMedicationRequest","MedicationRequest","MedicationRequest","","Prescription
 Order","",0,*,"","","","null {[]} {[]}
 ","Ordering of medication for patient or group","An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called ""MedicationRequest"" rather than ""MedicationPrescription"" or ""MedicationOrder"" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.","","","","","","","","","",,,,,"",,,,"MedicationRequest",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}

@@ -62,7 +62,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.3.0" ]
+     fhir:version [ fhir:v "6.4.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -1628,6 +1628,95 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "LogicalModels" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "OperationDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/Feedback> ;
+         fhir:reference [ fhir:v "OperationDefinition/Feedback" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Feedback" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS> ;
+         fhir:reference [ fhir:v "ValueSet/PSSFeedbackReasonsVS" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Feedback Code Reasons" ] ;
+       fhir:description [ fhir:v "Feedback code reasons for PSS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons> ;
+         fhir:reference [ fhir:v "CodeSystem/PSSFeedbackReasons" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Feedback Code Reasons" ] ;
+       fhir:description [ fhir:v "Feedback code reasons for PSS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS> ;
+         fhir:reference [ fhir:v "ValueSet/PSSFeedbackCodesVS" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Feedback Codes" ] ;
+       fhir:description [ fhir:v "Feedback codes for PSS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes> ;
+         fhir:reference [ fhir:v "CodeSystem/PSSFeedbackCodes" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Feedback Codes" ] ;
+       fhir:description [ fhir:v "Feedback codes for PSS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
