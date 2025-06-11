@@ -50,7 +50,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.3.0"
+    "version" : "6.4.0"
   },
   {
     "id" : "hl7ext",
@@ -1159,6 +1159,65 @@
       "description" : "Feedback containing the acceptance of the PSS results.",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/Feedback"
+      },
+      "name" : "PSS Feedback",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PSSFeedbackReasonsVS"
+      },
+      "name" : "PSS Feedback Code Reasons",
+      "description" : "Feedback code reasons for PSS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PSSFeedbackReasons"
+      },
+      "name" : "PSS Feedback Code Reasons",
+      "description" : "Feedback code reasons for PSS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PSSFeedbackCodesVS"
+      },
+      "name" : "PSS Feedback Codes",
+      "description" : "Feedback codes for PSS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PSSFeedbackCodes"
+      },
+      "name" : "PSS Feedback Codes",
+      "description" : "Feedback codes for PSS",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

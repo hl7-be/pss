@@ -18,6 +18,20 @@
     "version" : "1.0.0"
   },
   {
+    "id" : "PSSFeedbackCodes",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes",
+    "version" : "1.0.0",
+    "name" : "PSSFeedbackCodes"
+  },
+  {
+    "id" : "PSSFeedbackReasons",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons",
+    "version" : "1.0.0",
+    "name" : "PSSFeedbackReasons"
+  },
+  {
     "id" : "PSSQSIConditions",
     "type" : "CodeSystem",
     "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions",
@@ -44,6 +58,13 @@
     "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss",
     "version" : "1.0.0",
     "name" : "PrescriptionSearchSupport"
+  },
+  {
+    "id" : "Feedback",
+    "type" : "OperationDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/Feedback",
+    "version" : "1.0.0",
+    "name" : "Feedback"
   },
   {
     "id" : "30551ce1-5a28-4356-b684-2e639094ad4c",
@@ -232,6 +253,20 @@
     "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
     "version" : "1.0.0",
     "name" : "OtherCodes"
+  },
+  {
+    "id" : "PSSFeedbackCodesVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS",
+    "version" : "1.0.0",
+    "name" : "PSSFeedbackCodesVS"
+  },
+  {
+    "id" : "PSSFeedbackReasonsVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS",
+    "version" : "1.0.0",
+    "name" : "PSSFeedbackReasonsVS"
   },
   {
     "id" : "PSSRatingTypesVS",

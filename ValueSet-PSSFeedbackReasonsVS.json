@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PSSFeedbackReasonsVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PSSFeedbackReasonsVS</b></p><a name=\"PSSFeedbackReasonsVS\"> </a><a name=\"hcPSSFeedbackReasonsVS\"> </a><a name=\"PSSFeedbackReasonsVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-PSSFeedbackReasons.html\"><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons</code></a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS",
+  "version" : "1.0.0",
+  "name" : "PSSFeedbackReasonsVS",
+  "title" : "PSS Feedback Code Reasons",
+  "status" : "active",
+  "date" : "2025-06-11T04:00:37+00:00",
+  "publisher" : "eHealth Platform Belgium",
+  "contact" : [{
+    "name" : "eHealth Platform Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Feedback code reasons for PSS",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons"
+    }]
+  }
+}

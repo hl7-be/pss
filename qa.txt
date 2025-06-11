@@ -1,10 +1,10 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 4, warn = 7, info = 12
-IG Publisher Version: 1.8.26
-Generated Thu May 22 14:54:28 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
- Build Errors : 1 / 1 / 0
+err = 2, warn = 22, info = 12
+IG Publisher Version: 2.0.6
+Generated Wed Jun 11 04:03:53 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
+ Build Errors : 1 / 2 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 7 / 15
@@ -14,6 +14,8 @@ Generated Thu May 22 14:54:28 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-response : 0 / 4 / 9
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 3 / 6
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses-response : 0 / 5 / 17
+ /github/workspace/fsh-generated/resources/CodeSystem-PSSFeedbackCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-PSSFeedbackReasons : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIConditions : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-PSSQSIProcedures : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-PSSRatingTypes : 0 / 0 / 1
@@ -32,6 +34,7 @@ Generated Thu May 22 14:54:28 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ataxia : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/OperationDefinition-Feedback : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
@@ -75,16 +78,19 @@ Generated Thu May 22 14:54:28 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1
  /github/workspace/fsh-generated/resources/ValueSet-BacterialCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-CandidaCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ChlamydiaCodes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes : 2 / 1 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-GonokokCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-MycoplasmaCodes : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes : 2 / 1 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/ValueSet-OtherCodes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-PSSFeedbackCodesVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-PSSFeedbackReasonsVS : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PSSRatingTypesVS : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 0 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationDefinition/Feedback.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/services.html#/html/body/div/div/div/div/div/p/a at Line 190, column 67: The link 'StructureDefinition-PSSConsentModel' for "model" cannot be resolved
 WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 == fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02.json ==
@@ -92,10 +98,18 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 == fsh-generated/resources/Bundle-getdatatocollect-a-response.json ==
 == fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
 == fsh-generated/resources/Bundle-getrecommendations-a-response.json ==
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[0].url: No definition could be found for URL value 'https://bcfi.be/nl/chapters/12?frag=8001869'
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[1].url: No definition could be found for URL value 'https://cbip.be/fr/chapters/12?frag=8001869'
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[2].url: No definition could be found for URL value 'https://ebpnet.be/nl/pss-vaginitis'
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[3].url: No definition could be found for URL value 'https://ebpnet.be/fr/pss-vaginite'
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23*/.medication.ofType(CodeableConcept).coding[1].system: No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg'
 == fsh-generated/resources/Bundle-getrecommendations-data3.json ==
 == fsh-generated/resources/Bundle-getrecommendations-r-response.json ==
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].documentation[0].url: No definition could be found for URL value 'https://environment.esriguide.org/suportingContent/12345'
 == fsh-generated/resources/Bundle-radiology-getdiagnoses.json ==
 == fsh-generated/resources/Bundle-radiology-getdiagnoses-response.json ==
+== fsh-generated/resources/CodeSystem-PSSFeedbackCodes.json ==
+== fsh-generated/resources/CodeSystem-PSSFeedbackReasons.json ==
 == fsh-generated/resources/CodeSystem-PSSQSIConditions.json ==
 == fsh-generated/resources/CodeSystem-PSSQSIProcedures.json ==
 == fsh-generated/resources/CodeSystem-PSSRatingTypes.json ==
@@ -109,11 +123,13 @@ WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, s
 == fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json ==
+WARNING: MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg'
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12.json ==
 == fsh-generated/resources/Observation-ataxia.json ==
+== fsh-generated/resources/OperationDefinition-Feedback.json ==
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48.json ==
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48.json ==
 == fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
@@ -128,7 +144,12 @@ INFORMATION: Resource: The resource Questionnaire/30551ce1-5a28-4356-b684-2e6390
 == fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08.json ==
 == fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group.json ==
 == fsh-generated/resources/RequestGroup-getrecommendations-a-response-group.json ==
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[0].url: No definition could be found for URL value 'https://bcfi.be/nl/chapters/12?frag=8001869'
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[1].url: No definition could be found for URL value 'https://cbip.be/fr/chapters/12?frag=8001869'
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[2].url: No definition could be found for URL value 'https://ebpnet.be/nl/pss-vaginitis'
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[3].url: No definition could be found for URL value 'https://ebpnet.be/fr/pss-vaginite'
 == fsh-generated/resources/RequestGroup-getrecommendations-r-response-1.json ==
+WARNING: RequestGroup/getrecommendations-r-response-1: RequestGroup.action[0].documentation[0].url: No definition could be found for URL value 'https://environment.esriguide.org/suportingContent/12345'
 == fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.json ==
 == fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22.json ==
 == fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23.json ==
@@ -172,18 +193,20 @@ INFORMATION: StructureDefinition/PSSResponseCommunicationRequest: CommunicationR
 == fsh-generated/resources/ValueSet-CandidaCodes.json ==
 == fsh-generated/resources/ValueSet-ChlamydiaCodes.json ==
 == fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json ==
-ERROR: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0].concept[0]: The code 'B90' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (Unable to evaluate based on code system with status = not-present)
-INFORMATION: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0].concept[0]: Unable to evaluate based on code system with status = not-present
+INFORMATION: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0].concept[0]: Resolved system http://hl7.org/fhir/sid/icpc-2 (v2.1.0), but the definition doesn't include any codes, so the code has not been validated
 ERROR: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0].concept[1]: The code 'B72' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc-2' could not be found, so the code cannot be validated)
 WARNING: ValueSet.where(id = 'CompromisedImmuneSystemCodes'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc-2
 == fsh-generated/resources/ValueSet-GonokokCodes.json ==
 == fsh-generated/resources/ValueSet-MycoplasmaCodes.json ==
 == fsh-generated/resources/ValueSet-OncologyPatientCodes.json ==
-ERROR: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0].concept[0]: The code 'R84' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (Unable to evaluate based on code system with status = not-present)
-INFORMATION: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0].concept[0]: Unable to evaluate based on code system with status = not-present
+INFORMATION: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0].concept[0]: Resolved system http://hl7.org/fhir/sid/icpc-2 (v2.1.0), but the definition doesn't include any codes, so the code has not been validated
 ERROR: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0].concept[1]: The code 'R85' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc-2' could not be found, so the code cannot be validated)
 WARNING: ValueSet.where(id = 'OncologyPatientCodes'): Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc-2
 == fsh-generated/resources/ValueSet-OtherCodes.json ==
+== fsh-generated/resources/ValueSet-PSSFeedbackCodesVS.json ==
+WARNING: ValueSet/PSSFeedbackCodesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-PSSFeedbackReasonsVS.json ==
+WARNING: ValueSet/PSSFeedbackReasonsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-PSSRatingTypesVS.json ==
 == fsh-generated/resources/ValueSet-PregnancyCodes.json ==
 == fsh-generated/resources/ValueSet-TrichomonasCodes.json ==
