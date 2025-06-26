@@ -3,7 +3,7 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
   <id value="Feedback"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition Feedback</b></p><a name="Feedback"> </a><a name="hcFeedback"> </a><a name="Feedback-en-US"> </a><p>URL: [base]/PlanDefinition/$feedback</p><p>URL: [base]/PlanDefinition/[id]/$feedback</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>pss-id</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>the PSS ID</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition Feedback</b></p><a name="Feedback"> </a><a name="hcFeedback"> </a><p>URL: [base]/PlanDefinition/$feedback</p><p>URL: [base]/PlanDefinition/[id]/$feedback</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>pss-id</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>the PSS ID</p>
 </div></td></tr><tr><td>IN</td><td>feedback-timestamp</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td/><td><div><p>Feedback time stamp</p>
 </div></td></tr><tr><td>IN</td><td>outcome</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td/><td><div><p>Overall outcome</p>
 </div></td></tr><tr><td>IN</td><td>suggestion-feedback</td><td/><td>0..*</td><td/><td/><td><div><p>Feedback on individual suggestions</p>
@@ -19,7 +19,7 @@
   <status value="active"/>
   <kind value="operation"/>
   <experimental value="false"/>
-  <date value="2025-06-11T04:00:37+00:00"/>
+  <date value="2025-06-26T13:57:34+00:00"/>
   <publisher value="eHealth Platform Belgium"/>
   <contact>
     <name value="eHealth Platform Belgium"/>
