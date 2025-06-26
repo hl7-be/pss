@@ -39,15 +39,16 @@ Description: "Feedback containing the acceptance of the PSS results."
 * outcomeTimeStamp 1..1 dateTime "The time when the feedback is given"
 * outcome 1..1 code "accepted, rejected, overridden"
 * suggestionOutcome 0..* BackboneElement "List of suggestions provided by PSS for which feedback is given"
-  * suggestionId 0..1 string "The suggestion ID" 
+  * suggestionId 0..1 string "The suggestion ID - or 'other' if the prescriber preferred another option"
 // this can be the action linkId. or the request identifier. but action.linkedId will be used by tooling
 // or both:
 //  * suggestionLinkId would be useful if we wanted to link to plandef. but we can do that indirectly
-  * outcome 1..1 code "accepted, rejected or overridden"
-  * overrideReason 0..1 CodeableConcept "The reason for rejecting or overriding - code or text"
-// they may be a taxonomy.
+  * outcome 1..1 code "accepted or overridden"
+  * overrideReason 0..1 CodeableConcept "The reason for overriding - code or text"
+// there may be a taxonomy.
 // https://cdsic.ahrq.gov/cdsic/override-taxonomy
 // https://cdsic.ahrq.gov/sites/default/files/2024-07/SRF_Taxonomy%20of%20PC%20CDS%20Override%20Recommendations_508_0.pdf
+  * otherOptionSelected 0..1 string "A brief description of another option selected by the prescriber. Only present if the suggestionId is 'other'."
 
   
 Logical: PSSConsentModel
