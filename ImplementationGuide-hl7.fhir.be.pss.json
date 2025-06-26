@@ -3,7 +3,7 @@
   "id" : "hl7.fhir.be.pss",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name=\"hl7.fhir.be.pss\"> </a><a name=\"hchl7.fhir.be.pss\"> </a><a name=\"hl7.fhir.be.pss-en-US\"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name=\"hl7.fhir.be.pss\"> </a><a name=\"hchl7.fhir.be.pss\"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>\n</div></div>"
   },
   "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss",
   "version" : "1.0.0",
@@ -1007,6 +1007,17 @@
       "name" : "CompromisedImmuneSystem Codes",
       "description" : "CompromisedImmuneSystem Codes",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/feedback-example"
+      },
+      "name" : "feedback-example",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
