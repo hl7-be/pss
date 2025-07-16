@@ -147,6 +147,27 @@ groups:
 #      - StructureDefinition/PSSCodedRating
 
 
+  Feedback:
+    name: Feedback
+    description: Feedback resources for the PSS services
+    resources:
+      - OperationDefinition/Feedback
+      - Parameters/feedback-example
+
+
+  Common resources:
+    name: Common examples
+    description: Common examples - valid to multiple PSS services
+    resources: 
+      - Bundle/any-service-no-response-response
+      - RequestGroup/any-service-no-response-group
+      - Bundle/any-service-no-consent-response-response
+      - RequestGroup/any-service-no-consent
+      - Task/consent-request-task
+      - Questionnaire/consent-request
+
+
+
   Antimicrobiology:
     name: Examples - Antimicrobiology
     description: Antimicrobiology PSS resource examples
@@ -285,3 +306,10 @@ FSHOnly: false
 #applyExtensionMetadataToRoot: false
 parameters:
   pin-canonicals: pin-multiples
+  auto-oid-root: 2.16.840.1.113883.2.51.22.2
+  shownav: 'true'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  path-expansion-params: ../../Parameters-terminology-expansion.json

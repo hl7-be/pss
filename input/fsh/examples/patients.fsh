@@ -11,6 +11,7 @@ Usage: #example
 
 Instance: 30551ce1-5a28-4356-b684-3e639094ad48
 InstanceOf: PSSPatient
+Title: "Anonymised Patient R"
 Description: "Example anonymised patient R"
 Usage: #example
 * active = true
