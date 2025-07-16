@@ -1,15 +1,16 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 2, warn = 29, info = 12
+err = 4, warn = 25, info = 12
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
- Build Errors : 1 / 3 / 0
+ Build Errors : 1 / 2 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Bundle-any-service-no-response-response : 1 / 1 / 3
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 7 / 15
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 2 / 10
- /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 6 / 13
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 5 / 13
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 2 / 7
  /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-response : 0 / 4 / 9
  /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 3 / 6
@@ -28,14 +29,14 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23 : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ataxia : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-Feedback : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Parameters-feedback-example : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/Parameters-feedback-example : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
@@ -44,6 +45,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c : 0 / 7 / 9
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02 : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-any-service-no-response-group : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-response-group : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-r-response-1 : 0 / 1 / 1
@@ -91,11 +93,13 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationDefinition/Feedback.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/feedback-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: services.html#/html/body/div/div/div/div/div/p/a at Line 190, column 67: The link 'StructureDefinition-PSSConsentModel' for "model" cannot be resolved
 WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 == fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02.json ==
+== fsh-generated/resources/Bundle-any-service-no-response-response.json ==
+ERROR: Bundle/any-service-no-response-response: Bundle.entry[0].resource/*RequestGroup/any-service-no-response-group*/.action[0]: Constraint failed: rqg-1: 'Must have resource or action but not both'
+WARNING: Bundle/any-service-no-response-response: Bundle.entry[0].resource/*RequestGroup/any-service-no-response-group*/.action[0].code[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Bundle-getdatatocollect-a-data.json ==
 == fsh-generated/resources/Bundle-getdatatocollect-a-response.json ==
 == fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
@@ -104,7 +108,6 @@ WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*Request
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[1].url: No definition could be found for URL value 'https://cbip.be/fr/chapters/12?frag=8001869'
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[2].url: No definition could be found for URL value 'https://ebpnet.be/nl/pss-vaginitis'
 WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[3].url: No definition could be found for URL value 'https://ebpnet.be/fr/pss-vaginite'
-WARNING: Bundle/getrecommendations-a-response: Bundle.entry[2].resource/*MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23*/.medication.ofType(CodeableConcept).coding[1].system: No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg'
 == fsh-generated/resources/Bundle-getrecommendations-data3.json ==
 == fsh-generated/resources/Bundle-getrecommendations-r-response.json ==
 WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].documentation[0].url: No definition could be found for URL value 'https://environment.esriguide.org/suportingContent/12345'
@@ -125,7 +128,6 @@ WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*Request
 == fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json ==
-WARNING: MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23: MedicationRequest.medication.ofType(CodeableConcept).coding[1].system: No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg'
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.json ==
@@ -134,11 +136,8 @@ WARNING: MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23: MedicationReque
 == fsh-generated/resources/OperationDefinition-Feedback.json ==
 == fsh-generated/resources/Parameters-feedback-example.json ==
 WARNING: Parameters/feedback-example: Parameters.parameter[5].part[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason' could not be found, so the code cannot be validated
-WARNING: Parameters/feedback-example: Parameters.parameter[5].part[2].value.ofType(CodeableConcept).coding[0].system: No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason'
 WARNING: Parameters/feedback-example: Parameters.parameter[6].part[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason' could not be found, so the code cannot be validated
-WARNING: Parameters/feedback-example: Parameters.parameter[6].part[2].value.ofType(CodeableConcept).coding[0].system: No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason'
 WARNING: Parameters/feedback-example: Parameters.parameter[7].part[2].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason' could not be found, so the code cannot be validated
-WARNING: Parameters/feedback-example: Parameters.parameter[7].part[2].value.ofType(CodeableConcept).coding[0].system: No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason'
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48.json ==
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48.json ==
 == fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
@@ -151,6 +150,9 @@ INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usef
 INFORMATION: Resource: The resource Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02.json ==
 == fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08.json ==
+== fsh-generated/resources/RequestGroup-any-service-no-response-group.json ==
+ERROR: RequestGroup/any-service-no-response-group: RequestGroup.action[0]: Constraint failed: rqg-1: 'Must have resource or action but not both' (defined in http://hl7.org/fhir/StructureDefinition/RequestGroup)
+WARNING: RequestGroup/any-service-no-response-group: RequestGroup.action[0].code[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group.json ==
 == fsh-generated/resources/RequestGroup-getrecommendations-a-response-group.json ==
 WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[0].url: No definition could be found for URL value 'https://bcfi.be/nl/chapters/12?frag=8001869'
