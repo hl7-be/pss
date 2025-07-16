@@ -1,6 +1,6 @@
 Instance: feedback-example
-Title: Example of feedback on a PSS suggestion
-Description: Example of how to provide feedback on a PSS suggestion, including the outcome of the suggestion and the reason for overriding it.
+Title: "Example of feedback on a PSS suggestion"
+Description: "Example of how to provide feedback on a PSS suggestion, including the outcome of the suggestion and the reason for overriding it."
 
 InstanceOf: Parameters
 Usage: #example
