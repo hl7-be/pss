@@ -62,7 +62,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -1426,6 +1426,44 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Bundle/any-service-no-response-response> ;
+         fhir:reference [ fhir:v "Bundle/any-service-no-response-response" ]
+       ] ;
+       fhir:name [ fhir:v "Generic response - No guidance found" ] ;
+       fhir:description [ fhir:v "Generic response - No guidance found - 1. Bundle" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "RequestGroup"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/RequestGroup/any-service-no-response-group> ;
+         fhir:reference [ fhir:v "RequestGroup/any-service-no-response-group" ]
+       ] ;
+       fhir:name [ fhir:v "Generic response - No guidance found - 10.1. RequestGroup" ] ;
+       fhir:description [ fhir:v "Generic response - No guidance foun - 10.1. RequestGroup" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "PlanDefinition"
          ]
        ] ) ;
@@ -1650,23 +1688,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "OperationDefinition"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/Feedback> ;
-         fhir:reference [ fhir:v "OperationDefinition/Feedback" ]
-       ] ;
-       fhir:name [ fhir:v "PSS Feedback" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1730,6 +1751,24 @@
        ] ;
        fhir:name [ fhir:v "PSS Feedback Codes" ] ;
        fhir:description [ fhir:v "Feedback codes for PSS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "OperationDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/Feedback> ;
+         fhir:reference [ fhir:v "OperationDefinition/Feedback" ]
+       ] ;
+       fhir:name [ fhir:v "PSS Feedback Operation Definition" ] ;
+       fhir:description [ fhir:v "Operation to provide feedback on PSS suggestions" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
