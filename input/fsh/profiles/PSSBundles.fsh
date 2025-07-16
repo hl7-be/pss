@@ -43,6 +43,7 @@ Description: "The PSS Response Service Request is used when the PSS system retur
 //   PSSStructuredRating named structured-rating 0..*
 * code ^binding.description = "Codes for tests or services that can be carried out"
 
+* priority MS
 
 Profile: PSSResponseMedicationRequest
 Title: "PSS Response Medication Request"
@@ -54,6 +55,7 @@ Parent: CPGMedicationRequest
 // * extension contains 
 //   PSSStructuredRating named structured-rating 0..*
 
+* priority MS
 
 
 Profile: PSSDataAcquisitionForm
