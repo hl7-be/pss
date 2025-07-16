@@ -1,6 +1,8 @@
 Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 
 Instance: Feedback
+Title: "PSS Feedback Operation Definition"
+Description: "Operation to provide feedback on PSS suggestions"
 InstanceOf: OperationDefinition
 Usage: #definition
 
