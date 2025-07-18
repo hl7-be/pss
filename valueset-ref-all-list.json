@@ -183,8 +183,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -287,16 +287,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group",
-      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient",
       "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request",
+      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task",
       "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request",
       "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form",
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient",
       "StructureDefinition-PSSRequestBundle.html" : "PSS Request Bundle",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
-      "StructureDefinition-PSSResponseBundle.html" : "PSS Response Bundle"
+      "StructureDefinition-PSSResponseBundle.html" : "PSS Response Bundle",
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -355,8 +355,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
@@ -372,8 +372,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1322"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
@@ -389,8 +389,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1326"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
@@ -404,8 +404,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1321"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
@@ -419,8 +419,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1320"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
@@ -436,8 +436,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1324"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -493,9 +493,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.433"],
       "uses" : {
       },
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
       "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task",
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
@@ -607,8 +607,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.113"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group",
-      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request",
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -622,12 +622,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group",
-      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
       "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request",
+      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task",
       "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request",
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -641,9 +641,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.111"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group",
       "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request",
-      "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request"
+      "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request",
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -773,8 +773,8 @@
       "sources" : ["2.16.840.1.113883.1.11.16621"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ParticipationMode",
@@ -816,8 +816,8 @@
       "sources" : ["2.16.840.1.113883.1.11.19377"],
       "uses" : {
       },
-      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
-      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request"
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
@@ -826,7 +826,9 @@
       "name" : "BacterialCodes",
       "title" : "Bacterial Codes",
       "description" : "Bacterial Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.1"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.1"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
@@ -835,7 +837,9 @@
       "name" : "CandidaCodes",
       "title" : "Candida Codes",
       "description" : "Candida Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.2"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.2"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
@@ -844,7 +848,9 @@
       "name" : "ChlamydiaCodes",
       "title" : "Chlamydia Codes",
       "description" : "Chlamydia Codes",
-      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.3"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.3"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes",
@@ -857,7 +863,9 @@
         "http://hl7.org/fhir/sid/icpc-2",
         "http://hl7.org/fhir/sid/icd-10-cm",
         "http://snomed.info/sct"
-      ]
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.4"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.4"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
@@ -866,7 +874,9 @@
       "name" : "GonokokCodes",
       "title" : "Gonokok Codes",
       "description" : "Gonokok Codes",
-      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.5"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.5"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
@@ -875,7 +885,9 @@
       "name" : "MycoplasmaCodes",
       "title" : "Mycoplasma Codes",
       "description" : "Mycoplasma Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.6"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.6"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes",
@@ -888,7 +900,9 @@
         "http://hl7.org/fhir/sid/icpc-2",
         "http://hl7.org/fhir/sid/icd-10-cm",
         "http://snomed.info/sct"
-      ]
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.7"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.7"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
@@ -897,7 +911,9 @@
       "name" : "OtherCodes",
       "title" : "Other Codes",
       "description" : "Other Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.8"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.8"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS",
@@ -908,7 +924,9 @@
       "description" : "Feedback codes for PSS",
       "systems" : [
         "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes"
-      ]
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.12"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.12"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS",
@@ -919,7 +937,9 @@
       "description" : "Feedback code reasons for PSS",
       "systems" : [
         "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons"
-      ]
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.13"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.13"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
@@ -931,6 +951,8 @@
       "systems" : [
         "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"
       ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.9"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.9"],
       "uses" : {
       },
       "StructureDefinition-PSSStructuredRating.html" : "PSS Rating Extension"
@@ -942,7 +964,9 @@
       "name" : "PregnancyCodes",
       "title" : "Pregnancy Codes",
       "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
-      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.10"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.10"]
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
@@ -951,7 +975,9 @@
       "name" : "TrichomonasCodes",
       "title" : "Trichomonas Codes",
       "description" : "Trichomonas Codes",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.11"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.11"]
     }
   ]
 }

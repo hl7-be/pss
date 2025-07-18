@@ -91,6 +91,54 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="auto-oid-root"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.16.840.1.113883.2.51.22.2"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="shownav"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -171,14 +219,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-context"/>
       </extension>
       <extension url="value">
@@ -195,31 +235,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-jurisdiction"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-license"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-publisher"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-version"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -298,6 +314,54 @@
       </extension>
       <extension url="value">
         <valueString value="pin-multiples"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="auto-oid-root"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.16.840.1.113883.2.51.22.2"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="shownav"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -382,14 +446,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="apply-context"/>
       </extension>
       <extension url="value">
@@ -406,31 +462,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-jurisdiction"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="apply-license"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="apply-publisher"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="apply-version"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -500,6 +532,14 @@
       <name value="Extensions"/>
       <description value="These define additional elements that can be exchanged with the respective FHIR resources"/>
     </grouping>
+    <grouping id="Feedback">
+      <name value="Feedback"/>
+      <description value="Feedback resources for the PSS services"/>
+    </grouping>
+    <grouping id="Common resources">
+      <name value="Common examples"/>
+      <description value="Common examples - valid to multiple PSS services"/>
+    </grouping>
     <grouping id="Antimicrobiology">
       <name value="Examples - Antimicrobiology"/>
       <description value="Antimicrobiology PSS resource examples"/>
@@ -527,7 +567,7 @@
       <reference>
         <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
       </reference>
-      <name value="30551ce1-5a28-4356-b684-3e639094ad48"/>
+      <name value="Anonymised Patient R"/>
       <description value="Example anonymised patient R"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient"/>
       <groupingId value="Radiology"/>
@@ -543,6 +583,18 @@
       <description value="An additional code for an option in a choice question"/>
       <exampleBoolean value="false"/>
       <groupingId value="Extensions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/consent-request-task"/>
+      </reference>
+      <name value="Antimicrobiology - No permission to use system - 11.1. Task"/>
+      <description value="Antimicrobiology - No permission to use system - 11.1. Task"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask"/>
+      <groupingId value="Common resources"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -822,8 +874,10 @@
       <reference>
         <reference value="Parameters/feedback-example"/>
       </reference>
-      <name value="feedback-example"/>
+      <name value="Example of feedback on a PSS suggestion"/>
+      <description value="Example of how to provide feedback on a PSS suggestion, including the outcome of the suggestion and the reason for overriding it."/>
       <exampleBoolean value="true"/>
+      <groupingId value="Feedback"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -835,6 +889,7 @@
       <name value="Generic response - No guidance found"/>
       <description value="Generic response - No guidance found - 1. Bundle"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
+      <groupingId value="Common resources"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -846,6 +901,31 @@
       <name value="Generic response - No guidance found - 10.1. RequestGroup"/>
       <description value="Generic response - No guidance foun - 10.1. RequestGroup"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
+      <groupingId value="Common resources"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RequestGroup"/>
+      </extension>
+      <reference>
+        <reference value="RequestGroup/any-service-no-consent"/>
+      </reference>
+      <name value="Generic response - No permission to use system"/>
+      <description value="Antimicrobiology - No permission to use system - 11.1. RequestGroup"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
+      <groupingId value="Common resources"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/any-service-no-consent-response-response"/>
+      </reference>
+      <name value="Generic response - No permission to use system - 11. Bundle"/>
+      <description value="Antimicrobiology - No permission to use system - 11. Bundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
+      <groupingId value="Common resources"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1041,6 +1121,7 @@
       <name value="PSS Feedback Operation Definition"/>
       <description value="Operation to provide feedback on PSS suggestions"/>
       <exampleBoolean value="false"/>
+      <groupingId value="Feedback"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1483,6 +1564,18 @@
       <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
       <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/consent-request"/>
+      </reference>
+      <name value="Terms and Conditions Consent Form"/>
+      <description value="Terms and Conditions Consent Form"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Common resources"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
