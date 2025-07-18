@@ -1,11 +1,12 @@
 PrescriptionSearchSupport : Validation Results
 =========================================
 
-err = 4, warn = 25, info = 12
+err = 16, warn = 26, info = 8
 $--
 Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
- Build Errors : 1 / 2 / 0
+ Build Errors : 1 / 1 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Bundle-any-service-no-consent-response-response : 5 / 1 / 7
  /github/workspace/fsh-generated/resources/Bundle-any-service-no-response-response : 1 / 1 / 3
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 7 / 15
@@ -28,7 +29,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Condition-72d3ced6-5133-4042-931e-04284c9f4283 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11 : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 6 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26 : 0 / 0 / 1
@@ -39,12 +40,14 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Parameters-feedback-example : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c : 0 / 7 / 9
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c : 0 / 7 / 8
+ /github/workspace/fsh-generated/resources/Questionnaire-consent-request : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02 : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-any-service-no-consent : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-any-service-no-response-group : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-response-group : 0 / 4 / 1
@@ -77,6 +80,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-consent-request-task : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-db2698ba-cd0b-4c08-b57c-868ab5b95af6 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-BacterialCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-CandidaCodes : 0 / 0 / 1
@@ -93,10 +97,16 @@ Generated $--. FHIR version $-- for hl7.fhir.be.pss#$-- (canonical = https://www
  /github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/feedback-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: services.html#/html/body/div/div/div/div/div/p/a at Line 190, column 67: The link 'StructureDefinition-PSSConsentModel' for "model" cannot be resolved
+ERROR: services.html#/html/body/div/div/div/div/div/p/a at Line 200, column 67: The link 'StructureDefinition-PSSConsentModel' for "model" cannot be resolved
 WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 == fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02.json ==
+== fsh-generated/resources/Bundle-any-service-no-consent-response-response.json ==
+ERROR: Bundle/any-service-no-consent-response-response: Bundle.entry[0].resource/*RequestGroup/any-service-no-consent*/.action[0]: Constraint failed: rqg-1: 'Must have resource or action but not both'
+WARNING: Bundle/any-service-no-consent-response-response: Bundle.entry[0].resource/*RequestGroup/any-service-no-consent*/.action[0].code[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/any-service-no-consent-response-response: Bundle.entry[1].fullUrl: UUIDs must be valid and lowercase (consent-request-task)
+ERROR: Bundle/any-service-no-consent-response-response: Bundle.entry[2].fullUrl: UUIDs must be valid and lowercase (consent-request)
+ERROR: Bundle/any-service-no-consent-response-response: Bundle.entry[2].resource/*Questionnaire/consent-request*/.item[3].item[0]: Constraint failed: que-6: 'Required and repeat aren't permitted for display items'
+ERROR: Bundle/any-service-no-consent-response-response: Bundle.entry[2].resource/*Questionnaire/consent-request*/.item[3].item[1]: Constraint failed: que-6: 'Required and repeat aren't permitted for display items'
 == fsh-generated/resources/Bundle-any-service-no-response-response.json ==
 ERROR: Bundle/any-service-no-response-response: Bundle.entry[0].resource/*RequestGroup/any-service-no-response-group*/.action[0]: Constraint failed: rqg-1: 'Must have resource or action but not both'
 WARNING: Bundle/any-service-no-response-response: Bundle.entry[0].resource/*RequestGroup/any-service-no-response-group*/.action[0].code[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -127,6 +137,12 @@ WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*Request
 == fsh-generated/resources/Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65.json ==
 == fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide.definition.resource[3].groupingId: id value 'Common resources' is not valid
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide.definition.resource[28].groupingId: id value 'Common resources' is not valid
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide.definition.resource[29].groupingId: id value 'Common resources' is not valid
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide.definition.resource[30].groupingId: id value 'Common resources' is not valid
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide.definition.resource[31].groupingId: id value 'Common resources' is not valid
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide.definition.resource[86].groupingId: id value 'Common resources' is not valid
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.json ==
 == fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.json ==
@@ -141,15 +157,15 @@ WARNING: Parameters/feedback-example: Parameters.parameter[7].part[2].value.ofTy
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48.json ==
 == fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48.json ==
 == fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
-INFORMATION: Resource: The resource PlanDefinition/GetDataToCollect could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/PlanDefinition-GetDiagnoses.json ==
-INFORMATION: Resource: The resource PlanDefinition/GetDiagnoses could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
-INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c.json ==
-INFORMATION: Resource: The resource Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Questionnaire-consent-request.json ==
 == fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02.json ==
 == fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08.json ==
+== fsh-generated/resources/RequestGroup-any-service-no-consent.json ==
+ERROR: RequestGroup/any-service-no-consent: RequestGroup.action[0]: Constraint failed: rqg-1: 'Must have resource or action but not both' (defined in http://hl7.org/fhir/StructureDefinition/RequestGroup)
+WARNING: RequestGroup/any-service-no-consent: RequestGroup.action[0].code[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/RequestGroup-any-service-no-response-group.json ==
 ERROR: RequestGroup/any-service-no-response-group: RequestGroup.action[0]: Constraint failed: rqg-1: 'Must have resource or action but not both' (defined in http://hl7.org/fhir/StructureDefinition/RequestGroup)
 WARNING: RequestGroup/any-service-no-response-group: RequestGroup.action[0].code[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
@@ -199,6 +215,7 @@ INFORMATION: StructureDefinition/PSSResponseCommunicationRequest: CommunicationR
 == fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11.json ==
 == fsh-generated/resources/Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e.json ==
 == fsh-generated/resources/Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16.json ==
+== fsh-generated/resources/Task-consent-request-task.json ==
 == fsh-generated/resources/Task-db2698ba-cd0b-4c08-b57c-868ab5b95af6.json ==
 == fsh-generated/resources/ValueSet-BacterialCodes.json ==
 == fsh-generated/resources/ValueSet-CandidaCodes.json ==
