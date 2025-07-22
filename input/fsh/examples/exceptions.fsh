@@ -39,7 +39,7 @@ Usage: #example
     * extension[+]
       * url = "content"
       * valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
-  * code = #guidanceUnavailable
+* code = #guidanceUnavailable
 
 
 
