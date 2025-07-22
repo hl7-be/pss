@@ -25,11 +25,10 @@ Usage: #example
 * action[0]
   * textEquivalent = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
   * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
-      * extension[lang].valueCode = #fr-BE
-      * extension[content].valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
-  * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
-      * extension[lang].valueCode = #nl-BE
-      * extension[content].valueString = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
+    * extension[lang].valueCode = #nl-BE
+    * extension[content].valueString = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
   * code = #guidanceUnavailable
 
 
@@ -68,10 +67,13 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
-  * selectionBehavior = #at-most-one
-  * title = "Geen aanbevelingen gevonden"
-  * textEquivalent = "Geen aanbevelingen gevonden"
-  * code = #noAdviceforyou
+  * textEquivalent = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
+  * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
+    * extension[lang].valueCode = #nl-BE
+    * extension[content].valueString = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
+  * code = #guidanceUnavailable
 
 
 
