@@ -106,10 +106,10 @@ Usage: #example
 * insert Question(item[=].,tcpolicy,Policy,display,true,false)
 * item[=].item[=].text = "Door een account aan te maken gaat u akkoord met de [Gebruiksvoorwaarden en privacyverklaring](https://www.riziv.fgov.be/nl/thema-s/egezondheid/beslissingsondersteunend-platform-voor-voorschrijvers-meer-gepaste-zorg-en-minder-veiligheidsrisico-s/gebruiksvoorwaarden-en-privacyverklaring-voor-de-applicatie-pss)."
 * item[=].item[=]._text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].item[=]._text.extension[=].extension[+].url = "lang"
-* item[=].item[=]._text.extension[=].extension[=].valueCode = #fr-BE
-* item[=].item[=]._text.extension[=].extension[+].url = "content"
-* item[=].item[=]._text.extension[=].extension[=].valueString = "En créant un compte, vous acceptez les [Conditions d'utilisation et politique de confidentialité](https://www.inami.fgov.be/fr/themes/esante/plateforme-d-aide-a-la-decision-pour-les-prescripteurs-des-soins-plus-adaptes-et-moins-de-risques-de-securite/conditions-d-utilisation-et-politique-de-confidentialite-pour-l-application-pss)"
+* item[=].item[=]._text.extension[=].extension[0].url = "lang"
+* item[=].item[=]._text.extension[=].extension[0].valueCode = #fr-BE
+* item[=].item[=]._text.extension[=].extension[1].url = "content"
+* item[=].item[=]._text.extension[=].extension[1].valueString = "En créant un compte, vous acceptez les [Conditions d'utilisation et politique de confidentialité](https://www.inami.fgov.be/fr/themes/esante/plateforme-d-aide-a-la-decision-pour-les-prescripteurs-des-soins-plus-adaptes-et-moins-de-risques-de-securite/conditions-d-utilisation-et-politique-de-confidentialite-pour-l-application-pss)."
 
 * insert Question(item[=].,tcversion,Version,display,true,false)
 * insert Question(item[=].,consent,Consent,choice,true,false)
@@ -119,18 +119,18 @@ Usage: #example
 * item[=].answerOption[+].valueCoding.code = #cluster-anon
 * item[=].answerOption[=].valueCoding.display = "Ik geef toestemming om gegevens over mijn gebruik van deze app anoniem te verzamelen op het niveau van mijn onderwijsinstelling (cluster) voor statistische doeleinden."
 * item[=].answerOption[=].valueCoding._display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].answerOption[=].valueCoding._display.extension[=].extension[+].url = "lang"
-* item[=].answerOption[=].valueCoding._display.extension[=].extension[=].valueCode = #fr-BE
-* item[=].answerOption[=].valueCoding._display.extension[=].extension[+].url = "content"
-* item[=].answerOption[=].valueCoding._display.extension[=].extension[=].valueString = "Je donne mon consentement pour que les données concernant mon utilisation de cette application soient collectées anonymement au niveau de mon établissement d'enseignement (cluster) à des fins statistiques."
+* item[=].answerOption[=].valueCoding._display.extension[=].extension[0].url = "lang"
+* item[=].answerOption[=].valueCoding._display.extension[=].extension[0].valueCode = #fr-BE
+* item[=].answerOption[=].valueCoding._display.extension[=].extension[1].url = "content"
+* item[=].answerOption[=].valueCoding._display.extension[=].extension[1].valueString = "Je donne mon consentement pour que les données concernant mon utilisation de cette application soient collectées anonymement au niveau de mon établissement d'enseignement (cluster) à des fins statistiques."
 
 * item[=].answerOption[+].valueCoding.code = #full-anon
 * item[=].answerOption[=].valueCoding.display = "Ik geef de voorkeur aan volledige anonimiteit wanneer voor statistische doeleinden gegevens worden verzameld over mijn gebruik van deze app."
 * item[=].answerOption[=].valueCoding._display.extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
-* item[=].answerOption[=].valueCoding._display.extension[=].extension[+].url = "lang"
-* item[=].answerOption[=].valueCoding._display.extension[=].extension[=].valueCode = #fr-BE
-* item[=].answerOption[=].valueCoding._display.extension[=].extension[+].url = "content"
-* item[=].answerOption[=].valueCoding._display.extension[=].extension[=].valueString = "Je préfère une anonymité totale lors de la collecte de données sur mon utilisation de cette application à des fins statistiques."
+* item[=].answerOption[=].valueCoding._display.extension[=].extension[0].url = "lang"
+* item[=].answerOption[=].valueCoding._display.extension[=].extension[0].valueCode = #fr-BE
+* item[=].answerOption[=].valueCoding._display.extension[=].extension[1].url = "content"
+* item[=].answerOption[=].valueCoding._display.extension[=].extension[1].valueString = "Je préfère une anonymité totale lors de la collecte de données sur mon utilisation de cette application à des fins statistiques."
 
 // Add a Question in a questionnaire
 
