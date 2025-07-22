@@ -97,9 +97,11 @@ Usage: #example
 * language = #en
 * status = #draft
 * url = "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire"
+
 * insert Question(,hcp,The anonymised ID of the healthcare professional,text,true,false)
 * insert Question(,recordedDate,The date on which the information was recorded,date,true,false)
 * insert Question(,instruction,The instruction to the HCP,text,true,false)
+
 * insert Question(,tc,Terms and Conditions,group,true,false)
 * insert Question(item[=].,tcpolicy,Policy,display,true,false)
 * item[=].item[=].text = "Terms and Conditions"
@@ -108,12 +110,14 @@ Usage: #example
 * item[=].item[=].extension[=].extension[=].valueCode = #nl-BE
 * item[=].item[=].extension[=].extension[+].url = "content"
 * item[=].item[=].extension[=].extension[=].valueString = "Door een account aan te maken gaat u akkoord met de [Gebruiksvoorwaarden en privacyverklaring](https://www.riziv.fgov.be/nl/thema-s/egezondheid/beslissingsondersteunend-platform-voor-voorschrijvers-meer-gepaste-zorg-en-minder-veiligheidsrisico-s/gebruiksvoorwaarden-en-privacyverklaring-voor-de-applicatie-pss)."
-
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * item[=].item[=].extension[=].extension[+].url = "lang"
 * item[=].item[=].extension[=].extension[=].valueCode = #fr-BE
 * item[=].item[=].extension[=].extension[+].url = "content"
 * item[=].item[=].extension[=].extension[=].valueString = "En créant un compte, vous acceptez les [Conditions d'utilisation et politique de confidentialité](https://www.inami.fgov.be/fr/themes/esante/plateforme-d-aide-a-la-decision-pour-les-prescripteurs-des-soins-plus-adaptes-et-moins-de-risques-de-securite/conditions-d-utilisation-et-politique-de-confidentialite-pour-l-application-pss)."
+
+* insert Question(item[=].,tcversion,Version,display,true,false)
+* insert Question(item[=].,consent,Consent,choice,true,false)
 
 * insert Question(,anonymizationPreference,Statistical anonymization preference,choice,true,false)
 * item[=].answerOption[+].valueCoding.code = #cluster-anon
@@ -131,7 +135,6 @@ Usage: #example
 * item[=].answerOption[=].extension[=].extension[=].valueCode = #fr-BE
 * item[=].answerOption[=].extension[=].extension[+].url = "content"
 * item[=].answerOption[=].extension[=].extension[=].valueString = "Je préfère une anonymité totale lors de la collecte de données sur mon utilisation de cette application à des fins statistiques."
-
 
 // Add a Question in a questionnaire
 
