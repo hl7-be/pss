@@ -8,7 +8,7 @@ Usage: #example
 * timestamp = "2025-02-20T00:00:00Z"
 * type = #collection
 * entry[0].resource = any-service-no-response-group
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-c684-2e639094ad4d"
+* entry[=].fullUrl = "urn:uuid:any-service-no-response-group"
 
 
 
@@ -22,28 +22,12 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
-* action.textEquivalent = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
-  * extension[0]
-    * url = "http://hl7.org/fhir/StructureDefinition/translation"
-    * extension[0]
-      * url = "lang"
-      * valueCode = #nl-BE
-    * extension[+]
-      * url = "content"
-      * valueString = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
-  * extension[+]
-    * url = "http://hl7.org/fhir/StructureDefinition/translation"
-    * extension[0]
-      * url = "lang"
-      * valueCode = #fr-BE
-    * extension[+]
-      * url = "content"
-      * valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
-* code = #guidanceUnavailable
-
-
-
-
+* action[0]
+  * textEquivalent = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
+  * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
+  * code = #guidanceUnavailable
 
 
 Instance: any-service-no-consent-response-response
