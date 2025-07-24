@@ -38,7 +38,7 @@ Usage: #example
 * timestamp = "2025-02-20T00:00:00Z"
 * type = #collection
 * entry[0].resource = any-service-no-consent-group
-* entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-d684-2e639094ad4d"
+* entry[=].fullUrl = "urn:uuid:any-service-no-consent-group"
 * entry[+].resource = consent-request-task
 * entry[=].fullUrl = "urn:uuid:consent-request-task"
 * entry[+].resource = consent-request
