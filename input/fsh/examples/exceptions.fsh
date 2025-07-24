@@ -61,7 +61,7 @@ Usage: #example
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
   * title = "Toegang geweigerd"
-  * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+  * title.extension[http://hl7.org/fhir/StructureDefinition/translation]
     * extension[lang].valueCode = #fr-BE
     * extension[content].valueString = "Accès refusé"
   * textEquivalent = "U hebt (nog) geen toestemming gegeven voor het gebruik van het systeem. Gelieve eerst akkoord te gaan met de gebruiksvoorwaarden."
