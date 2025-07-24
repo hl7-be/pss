@@ -1,4 +1,3 @@
-
 Instance: any-service-no-response-response
 InstanceOf: PSSResponseBundle
 Title: "Generic response - No guidance found"
@@ -61,10 +60,15 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
-  * selectionBehavior = #at-most-one
-  * title = "Geen aanbevelingen gevonden"
-  * textEquivalent = "Geen aanbevelingen gevonden"
-  * code = #noAdviceforyou
+  * title = "Toegang geweigerd"
+  * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "Accès refusé"
+  * textEquivalent = "U hebt (nog) geen toestemming gegeven voor het gebruik van het systeem. Gelieve eerst akkoord te gaan met de gebruiksvoorwaarden."
+  * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "Vous n'avez pas (encore) donné votre consentement pour l'utilisation du système. Veuillez d'abord accepter les conditions d'utilisation."
+  * code = #consentNotGiven
 
 
 
