@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CommunicationRequest xmlns="http://hl7.org/fhir">
+  <id value="ab-advice"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CommunicationRequest ab-advice</b></p><a name="ab-advice"> </a><a name="hcab-advice"> </a><a name="ab-advice-en-US"> </a><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>subject</b>: <a href="Patient-patient-x.html">Anonymous Patient Female, DoB: 1989-09-12</a></p><h3>Payloads</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Content[x]</b></td></tr><tr><td style="display: none">*</td><td>Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+    <valueRatio>
+      <numerator>
+        <value value="3"/>
+      </numerator>
+      <denominator>
+        <value value="3"/>
+      </denominator>
+    </valueRatio>
+  </extension>
+  <status value="active"/>
+  <subject>
+    <reference value="Patient/patient-x"/>
+  </subject>
+  <payload>
+    <contentString value="Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...">
+      <extension url="http://hl7.org/fhir/StructureDefinition/language">
+        <valueCode value="nl-BE"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-markdown">
+        <valueString value="Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="fr-BE"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée: [site BCFI](https://www.bcfi.be/nl/chapters/12?frag=8000010)"/>
+            </extension>
+          </extension>
+        </valueString>
+      </extension>
+    </contentString>
+  </payload>
+</CommunicationRequest>

@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/mr-head-without-contrast> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mr-head-without-contrast"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mr-head-without-contrast</b></p><a name=\"mr-head-without-contrast\"> </a><a name=\"hcmr-head-without-contrast\"> </a><a name=\"mr-head-without-contrast-en-US\"> </a><p><b>CPG Rating Extension</b>: 9/10</p><p><b>Radiation level score</b>: 9/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">MR, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "9"^^xsd:decimal ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "10"^^xsd:decimal ]
+       ]
+     ]
+  ] [
+     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ext-radiation-level-score"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "9"^^xsd:decimal ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "10"^^xsd:decimal ]
+       ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "114092" ] ;
+       fhir:display [ fhir:v "MR, head, without IV contrast" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

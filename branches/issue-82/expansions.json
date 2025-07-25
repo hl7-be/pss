@@ -1,0 +1,683 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "4843c46f-595e-41b4-ba2f-f0e145ac3f26",
+  "meta" : {
+    "lastUpdated" : "2025-04-30T14:16:57.864+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 1 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis (disorder)</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
+      "version" : "1.0.0",
+      "name" : "BacterialCodes",
+      "title" : "Bacterial Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-04-30T14:16:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:a89178aa-85a2-46d7-a216-262f0ef40d01",
+        "timestamp" : "2025-04-30T14:17:35+00:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419760006",
+          "display" : "Bacterial vaginosis (disorder)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-72605008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72605008\">72605008</a></td><td>http://snomed.info/sct</td><td>Candidal vulvovaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-1085006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/1085006\">1085006</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vulva</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-240706001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/240706001\">240706001</a></td><td>http://snomed.info/sct</td><td>Candida infection of genital region</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
+      "version" : "1.0.0",
+      "name" : "CandidaCodes",
+      "title" : "Candida Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-04-30T14:16:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:883b5acd-d0db-4534-ae21-3387083656b1",
+        "timestamp" : "2025-04-30T14:17:35+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "72934000",
+          "display" : "Candidiasis of vagina"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "72605008",
+          "display" : "Candidal vulvovaginitis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1085006",
+          "display" : "Candidiasis of vulva"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "240706001",
+          "display" : "Candida infection of genital region"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version2024</li><li>SNOMED CT International edition 01-Feb 2025</li></ul></div><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-A56.0\"> </a>\u00a0\u00a0A56.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Chlamydial infection of lower genitourinary tract</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-A56.2\"> </a>\u00a0\u00a0A56.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Chlamydial infection of genitourinary tract, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-236683007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/236683007\">236683007</a></td><td>http://snomed.info/sct</td><td>Chlamydial urethritis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-186729003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/186729003\">186729003</a></td><td>http://snomed.info/sct</td><td>Chlamydial infection of lower genitourinary tract</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+      "version" : "1.0.0",
+      "name" : "ChlamydiaCodes",
+      "title" : "Chlamydia Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-04-30T14:16:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9f582e68-f57d-4d16-80ff-958d4b098a7a",
+        "timestamp" : "2025-04-30T14:17:35+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "A56.0",
+          "display" : "Chlamydial infection of lower genitourinary tract"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "A56.2",
+          "display" : "Chlamydial infection of genitourinary tract, unspecified"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "236683007",
+          "display" : "Chlamydial urethritis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "186729003",
+          "display" : "Chlamydial infection of lower genitourinary tract"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version2024</li><li>SNOMED CT International edition 01-Feb 2025</li></ul></div><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-A54.0\"> </a>\u00a0\u00a0A54.0</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Gonocl infct of low GU tract w/o periureth or acc glnd abcs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-A54.9\"> </a>\u00a0\u00a0A54.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Gonococcal infection, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-236682002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/236682002\">236682002</a></td><td>http://snomed.info/sct</td><td>Gonococcal urethritis</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+      "version" : "1.0.0",
+      "name" : "GonokokCodes",
+      "title" : "Gonokok Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-04-30T14:16:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:89bb9aeb-8d83-4b7d-901b-7206a19f6ab1",
+        "timestamp" : "2025-04-30T14:17:36+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "A54.0",
+          "display" : "Gonocl infct of low GU tract w/o periureth or acc glnd abcs"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "A54.9",
+          "display" : "Gonococcal infection, unspecified"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "236682002",
+          "display" : "Gonococcal urethritis"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 1 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-240594008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/240594008\">240594008</a></td><td>http://snomed.info/sct</td><td>Genital mycoplasma infection</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
+      "version" : "1.0.0",
+      "name" : "MycoplasmaCodes",
+      "title" : "Mycoplasma Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-04-30T14:16:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5a922b09-0827-440d-808b-7e000fd61098",
+        "timestamp" : "2025-04-30T14:17:36+00:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "240594008",
+          "display" : "Genital mycoplasma infection"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-197903003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/197903003\">197903003</a></td><td>http://snomed.info/sct</td><td>Candidal urethritis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-30116001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/30116001\">30116001</a></td><td>http://snomed.info/sct</td><td>Trichomonal urethritis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-236684001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/236684001\">236684001</a></td><td>http://snomed.info/sct</td><td>Tuberculous urethritis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-197850006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/197850006\">197850006</a></td><td>http://snomed.info/sct</td><td>Trichomonal cystitis</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+      "version" : "1.0.0",
+      "name" : "OtherCodes",
+      "title" : "Other Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-04-30T14:16:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2f65e7f8-7650-4ea8-9cb8-e3659329b6ec",
+        "timestamp" : "2025-04-30T14:17:36+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "197903003",
+          "display" : "Candidal urethritis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "30116001",
+          "display" : "Trichomonal urethritis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "236684001",
+          "display" : "Tuberculous urethritis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "197850006",
+          "display" : "Trichomonal cystitis"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-PSSRatingTypes.html\">codesystem CodeSystem: Types of rating provided by the PSS system v1.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes-overall\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PSSRatingTypes.html#PSSRatingTypes-overall\">overall</a></td><td>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</td><td>Overall score</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes-radiationexposure\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PSSRatingTypes.html#PSSRatingTypes-radiationexposure\">radiationexposure</a></td><td>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</td><td>Radiation exposure score</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+      "version" : "1.0.0",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-04-30T14:16:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:86e11e33-eb9a-437f-ab05-51e7a785e027",
+        "timestamp" : "2025-04-30T14:17:37+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
+          "code" : "overall",
+          "display" : "Overall score"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
+          "code" : "radiationexposure",
+          "display" : "Radiation exposure score"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version2024</li><li>SNOMED CT International edition 01-Feb 2025</li></ul></div><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-Z33.1\"> </a>\u00a0\u00a0Z33.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Pregnant state, incidental</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-87527008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/87527008\">87527008</a></td><td>http://snomed.info/sct</td><td>Term pregnancy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-127364007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/127364007\">127364007</a></td><td>http://snomed.info/sct</td><td>Primigravida</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-72892002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72892002\">72892002</a></td><td>http://snomed.info/sct</td><td>Normal pregnancy</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+      "version" : "1.0.0",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-04-30T14:16:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5d87bfe2-bae0-4df5-9eaa-d23dd24c8ca0",
+        "timestamp" : "2025-04-30T14:17:37+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "Z33.1",
+          "display" : "Pregnant state, incidental"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "87527008",
+          "display" : "Term pregnancy"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "127364007",
+          "display" : "Primigravida"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "72892002",
+          "display" : "Normal pregnancy"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-35089004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/35089004\">35089004</a></td><td>http://snomed.info/sct</td><td>Urogenital infection by Trichomonas vaginalis</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
+      "version" : "1.0.0",
+      "name" : "TrichomonasCodes",
+      "title" : "Trichomonas Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-04-30T14:16:07+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c62b688d-76c5-42a4-bdab-0fcdeee0d868",
+        "timestamp" : "2025-04-30T14:17:37+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "276877003",
+          "display" : "Trichomonal vaginitis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "35089004",
+          "display" : "Urogenital infection by Trichomonas vaginalis"
+        }]
+      }
+    }
+  }]
+}

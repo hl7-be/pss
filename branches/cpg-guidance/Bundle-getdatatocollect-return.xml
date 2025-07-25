@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="getdatatocollect-return"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d"/>
+    <resource>
+      <RequestGroup>
+        <id value="getdatatocollect-return-y"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_getdatatocollect-return-y"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup getdatatocollect-return-y</b></p><a name="getdatatocollect-return-y"> </a><a name="hcgetdatatocollect-return-y"> </a><a name="getdatatocollect-return-y-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Collect pregnancy status</p><p><b>resource</b>: <a href="Task-collect-pregnancy-status.html">Task Collect information</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Collect past antibiotic use</p><p><b>resource</b>: <a href="Task-collect-past-antibiotic-use.html">Task Collect information</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Collect current meds</p><p><b>resource</b>: <a href="Task-collect-current-meds.html">Task Collect information</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Collect nitrites</p><p><b>resource</b>: <a href="Task-collect-nitrites.html">Task Collect information</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Collect leukocytes</p><p><b>resource</b>: <a href="Task-collect-leukocytes.html">Task Collect information</a></p></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <subject>
+          <reference value="Patient/patient-y"/>
+        </subject>
+        <action>
+          <textEquivalent value="Collect pregnancy status"/>
+          <resource>
+            <reference value="Task/collect-pregnancy-status"/>
+          </resource>
+        </action>
+        <action>
+          <textEquivalent value="Collect past antibiotic use"/>
+          <resource>
+            <reference value="Task/collect-past-antibiotic-use"/>
+          </resource>
+        </action>
+        <action>
+          <textEquivalent value="Collect current meds"/>
+          <resource>
+            <reference value="Task/collect-current-meds"/>
+          </resource>
+        </action>
+        <action>
+          <textEquivalent value="Collect nitrites"/>
+          <resource>
+            <reference value="Task/collect-nitrites"/>
+          </resource>
+        </action>
+        <action>
+          <textEquivalent value="Collect leukocytes"/>
+          <resource>
+            <reference value="Task/collect-leukocytes"/>
+          </resource>
+        </action>
+      </RequestGroup>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4c"/>
+    <resource>
+      <Task>
+        <id value="collect-pregnancy-status"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_collect-pregnancy-status"> </a><p class="res-header-id"><b>Generated Narrative: Task collect-pregnancy-status</b></p><a name="collect-pregnancy-status"> </a><a name="hccollect-pregnancy-status"> </a><a name="collect-pregnancy-status-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></p><p><b>for</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></td><td><a href="Questionnaire-q-collect-pregnancy-status.html">q-collect-pregnancy-status</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="collect-information"/>
+            <display value="Collect information"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-y"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="collect-information"/>
+              <display value="Collect information"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-pregnancy-status"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4b"/>
+    <resource>
+      <Task>
+        <id value="collect-past-antibiotic-use"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_collect-past-antibiotic-use"> </a><p class="res-header-id"><b>Generated Narrative: Task collect-past-antibiotic-use</b></p><a name="collect-past-antibiotic-use"> </a><a name="hccollect-past-antibiotic-use"> </a><a name="collect-past-antibiotic-use-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></p><p><b>for</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></td><td><a href="Questionnaire-q-collect-past-antibiotic-use.html">q-collect-past-antibiotic-use</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="collect-information"/>
+            <display value="Collect information"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-y"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="collect-information"/>
+              <display value="Collect information"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-past-antibiotic-use"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4a"/>
+    <resource>
+      <Task>
+        <id value="collect-current-meds"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_collect-current-meds"> </a><p class="res-header-id"><b>Generated Narrative: Task collect-current-meds</b></p><a name="collect-current-meds"> </a><a name="hccollect-current-meds"> </a><a name="collect-current-meds-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></p><p><b>for</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></td><td><a href="Questionnaire-q-collect-current-meds.html">q-collect-current-meds</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="collect-information"/>
+            <display value="Collect information"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-y"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="collect-information"/>
+              <display value="Collect information"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-current-meds"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad49"/>
+    <resource>
+      <Task>
+        <id value="collect-nitrites"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_collect-nitrites"> </a><p class="res-header-id"><b>Generated Narrative: Task collect-nitrites</b></p><a name="collect-nitrites"> </a><a name="hccollect-nitrites"> </a><a name="collect-nitrites-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></p><p><b>for</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></td><td><a href="Questionnaire-q-collect-nitrites.html">q-collect-nitrites</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="collect-information"/>
+            <display value="Collect information"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-y"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="collect-information"/>
+              <display value="Collect information"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-nitrites"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad48"/>
+    <resource>
+      <Task>
+        <id value="collect-leukocytes"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_collect-leukocytes"> </a><p class="res-header-id"><b>Generated Narrative: Task collect-leukocytes</b></p><a name="collect-leukocytes"> </a><a name="hccollect-leukocytes"> </a><a name="collect-leukocytes-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></p><p><b>for</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></td><td><a href="Questionnaire-q-collect-leukocytes.html">q-collect-leukocytes</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="collect-information"/>
+            <display value="Collect information"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-y"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="collect-information"/>
+              <display value="Collect information"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-leukocytes"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094adff"/>
+    <resource>
+      <Patient>
+        <id value="patient-y"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-y"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-y</b></p><a name="patient-y"> </a><a name="hcpatient-y"> </a><a name="patient-y-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient Female, DoB Unknown</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr></table></div>
+        </text>
+        <active value="true"/>
+        <gender value="female"/>
+        <deceasedBoolean value="false"/>
+      </Patient>
+    </resource>
+  </entry>
+</Bundle>

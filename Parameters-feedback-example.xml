@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="feedback-example"/>
+  <parameter>
+    <name value="exact"/>
+    <valueBoolean value="true"/>
+  </parameter>
+  <parameter>
+    <name value="property"/>
+    <part>
+      <name value="code"/>
+      <valueCode value="focus"/>
+    </part>
+    <part>
+      <name value="value"/>
+      <valueCode value="top"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="PSS-ID"/>
+    <valueIdentifier>
+      <value value="5146ed13-c240-46e4-bf40-dab28fabc437"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="outcomeTimeStamp"/>
+    <valueDateTime value="2025-05-28T10:10:00+02:00"/>
+  </parameter>
+  <parameter>
+    <name value="outcome"/>
+    <valueCode value="overridden"/>
+  </parameter>
+  <parameter>
+    <name value="suggestionOutcome"/>
+    <part>
+      <name value="suggestionId"/>
+      <valueIdentifier>
+        <value value="baf274d9-21b9-49a5-bdd1-e593663dd43c"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="outcome"/>
+      <valueCode value="overridden"/>
+    </part>
+    <part>
+      <name value="overrideReason"/>
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason"/>
+          <code value="otherReason"/>
+        </coding>
+        <text value="Patient prefers local application"/>
+      </valueCodeableConcept>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="suggestionOutcome"/>
+    <part>
+      <name value="suggestionId"/>
+      <valueIdentifier>
+        <value value="baf274d9-21b9-49a5-bdd1-e593663dd43c"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="outcome"/>
+      <valueCode value="overridden"/>
+    </part>
+    <part>
+      <name value="overrideReason"/>
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason"/>
+          <code value="otherReason"/>
+        </coding>
+        <text value="Patient prefers local application"/>
+      </valueCodeableConcept>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="suggestionOutcome"/>
+    <part>
+      <name value="suggestionId"/>
+      <valueIdentifier>
+        <value value="other"/>
+      </valueIdentifier>
+    </part>
+    <part>
+      <name value="outcome"/>
+      <valueCode value="overridden"/>
+    </part>
+    <part>
+      <name value="overrideReason"/>
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason"/>
+          <code value="otherReason"/>
+        </coding>
+        <text value="Patient prefers their own medicine"/>
+      </valueCodeableConcept>
+    </part>
+    <part>
+      <name value="otherOptionSelected"/>
+      <valueString value="Patient prefers local application"/>
+    </part>
+  </parameter>
+</Parameters>

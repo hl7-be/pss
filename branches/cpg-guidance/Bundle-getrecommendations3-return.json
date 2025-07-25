@@ -1,0 +1,77 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "getrecommendations3-return",
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "getrecommendations3-return-1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations3-return-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations3-return-1</b></p><a name=\"getrecommendations3-return-1\"> </a><a name=\"hcgetrecommendations3-return-1\"> </a><a name=\"getrecommendations3-return-1-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CD Head with or without contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-ct-head-with-or-without-contrast-v3.html\">ServiceRequest CT, head, without or without contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CD Head with IV contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-ct-head-iv-contrast.html\">ServiceRequest </a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CD Head with IV contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-mr-head-without-contrast.html\">ServiceRequest MR, head, without IV contrast</a></p></blockquote></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/X"
+      },
+      "action" : [{
+        "textEquivalent" : "CD Head with or without contrast",
+        "resource" : {
+          "reference" : "ServiceRequest/ct-head-with-or-without-contrast-v3"
+        }
+      },
+      {
+        "textEquivalent" : "CD Head with IV contrast",
+        "resource" : {
+          "reference" : "ServiceRequest/ct-head-iv-contrast"
+        }
+      },
+      {
+        "textEquivalent" : "CD Head with IV contrast",
+        "resource" : {
+          "reference" : "ServiceRequest/mr-head-without-contrast"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "ct-head-iv-contrast",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name=\"ct-head-iv-contrast\"> </a><a name=\"hcct-head-iv-contrast\"> </a><a name=\"ct-head-iv-contrast-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">CT Head with IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "text" : "CT Head with IV contrast"
+      },
+      "subject" : {
+        "reference" : "Patient/X"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "ct-head-iv-contrast",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">CT Head with IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "text" : "CT Head with IV contrast"
+      },
+      "subject" : {
+        "reference" : "Patient/X"
+      }
+    }
+  }]
+}

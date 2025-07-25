@@ -1,0 +1,261 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "getrecommendations-r-response",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"]
+  },
+  "identifier" : {
+    "value" : "response1"
+  },
+  "type" : "collection",
+  "timestamp" : "2025-02-20T00:00:00Z",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "getrecommendations-r-response-1",
+      "meta" : {
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations-r-response-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-r-response-1</b></p><a name=\"getrecommendations-r-response-1\"> </a><a name=\"hcgetrecommendations-r-response-1\"> </a><a name=\"getrecommendations-r-response-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseRequestGroup.html\">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><h3>Documentations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>Justification</td><td>Appropriateness Scoring Guidelines</td><td><a href=\"https://environment.esriguide.org/suportingContent/12345)\">https://environment.esriguide.org/suportingContent/12345)</a></td></tr></table><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>, </td><td>CT, head, wo iv contrast</td><td><a href=\"ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23.html\">ServiceRequest CT, head, wo iv contrast</a></td></tr><tr><td style=\"display: none\">*</td><td>, </td><td>MR, head, wo iv contrast</td><td><a href=\"ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.html\">ServiceRequest MR, head, wo iv contrast</a></td></tr><tr><td style=\"display: none\">*</td><td>, </td><td>CT, head, wo/w iv contrast</td><td><a href=\"ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22.html\">ServiceRequest CT, head, wo/w iv contrast</a></td></tr></table></blockquote></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+      },
+      "action" : [{
+        "documentation" : [{
+          "type" : "justification",
+          "label" : "Appropriateness Scoring Guidelines",
+          "_label" : {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/StructureDefinition/language",
+              "valueCode" : "en"
+            }]
+          },
+          "url" : "https://environment.esriguide.org/suportingContent/12345)"
+        }],
+        "selectionBehavior" : "at-most-one",
+        "action" : [{
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "radiationexposure"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 3
+                },
+                "denominator" : {
+                  "value" : 5
+                }
+              }
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          },
+          {
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "overall"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 9
+                },
+                "denominator" : {
+                  "value" : 10
+                }
+              }
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          }],
+          "textEquivalent" : "CT, head, wo iv contrast",
+          "resource" : {
+            "reference" : "ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23"
+          }
+        },
+        {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "radiationexposure"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 0
+                },
+                "denominator" : {
+                  "value" : 5
+                }
+              }
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          },
+          {
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "overall"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 8
+                },
+                "denominator" : {
+                  "value" : 10
+                }
+              }
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          }],
+          "textEquivalent" : "MR, head, wo iv contrast",
+          "resource" : {
+            "reference" : "ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77"
+          }
+        },
+        {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "radiationexposure"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 3
+                },
+                "denominator" : {
+                  "value" : 5
+                }
+              }
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          },
+          {
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "overall"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 6
+                },
+                "denominator" : {
+                  "value" : 10
+                }
+              }
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          }],
+          "textEquivalent" : "CT, head, wo/w iv contrast",
+          "resource" : {
+            "reference" : "ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "30551ce1-5a28-4356-b684-1e639094ad23",
+      "meta" : {
+        "versionId" : "v3",
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_30551ce1-5a28-4356-b684-1e639094ad23\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest 30551ce1-5a28-4356-b684-1e639094ad23</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad23\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad23\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad23-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114055}\">CT, head, wo iv contrast</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p></div>"
+      },
+      "identifier" : [{
+        "value" : "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02"
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+          "code" : "114055",
+          "display" : "CT, head, wo iv contrast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "30551ce1-5a28-4356-b684-1e639044ad77",
+      "meta" : {
+        "versionId" : "v3",
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_30551ce1-5a28-4356-b684-1e639044ad77\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest 30551ce1-5a28-4356-b684-1e639044ad77</b></p><a name=\"30551ce1-5a28-4356-b684-1e639044ad77\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639044ad77\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639044ad77-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad03</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114092}\">MR, head, wo iv contrast</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p></div>"
+      },
+      "identifier" : [{
+        "value" : "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad03"
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+          "code" : "114092",
+          "display" : "MR, head, wo iv contrast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "30551ce1-5a28-4356-b684-1e639094ad22",
+      "meta" : {
+        "versionId" : "v3",
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_30551ce1-5a28-4356-b684-1e639094ad22\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest 30551ce1-5a28-4356-b684-1e639094ad22</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad22\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad22\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad22-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad04</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114054}\">CT, head, wo/w iv contrast</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p></div>"
+      },
+      "identifier" : [{
+        "value" : "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad04"
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+          "code" : "114054",
+          "display" : "CT, head, wo/w iv contrast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+      }
+    }
+  }]
+}

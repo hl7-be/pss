@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/RequestGroup/getdatatocollect-a-return-group> a fhir:RequestGroup ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "getdatatocollect-a-return-group"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getdatatocollect-a-return-group</b></p><a name=\"getdatatocollect-a-return-group\"> </a><a name=\"hcgetdatatocollect-a-return-group\"> </a><a name=\"getdatatocollect-a-return-group-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-v.html\">Anonymous Patient Female, DoB: 1988-10-10</a></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Collect information</td><td><a href=\"Task-collect-information-a.html\">Task Collect information</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-v> ;
+     fhir:reference [ fhir:v "Patient/patient-v" ]
+  ] ; # 
+  fhir:action ( [
+     fhir:textEquivalent [ fhir:v "Collect information" ] ;
+     fhir:resource [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/collect-information-a> ;
+       fhir:reference [ fhir:v "Task/collect-information-a" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
