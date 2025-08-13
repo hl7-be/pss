@@ -74,9 +74,33 @@ end
 ...
 ...
 
-group #efd PSS-5 - Consult prior result
+group #fde PSS-5 - Consult prior result
         EPD -> PSS : \n**GET /Bundle/{PSS-ID}**
         & PSS -[hidden]-> QSI : "                                      "
+'        activate EPD
+end
+...
+
+group #dfe PSS-6 - Consult feeback
+        ADM -> PSS : \n**GET /Task?focus={PSS-ID}**
+        & PSS -[hidden]-> QSI : "                                      "
+        activate PSS
+        |||
+        PSS -> ADM 
+                note left of PSS
+|_ PSS-ID
+|_ datetime
+|_ outcome
+|_ suggestionOutcomes
+  |_ suggestionId
+  |_ outcome
+  |_ overrideReason
+        end note
+        deactivate EPD
+        & PSS -[hidden]-> QSI : "                                      "
+        deactivate PSS
+        |||
+
 '        activate EPD
 end
 
