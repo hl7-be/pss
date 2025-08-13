@@ -22,11 +22,12 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
-  * textEquivalent = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
-  * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
-    * extension[lang].valueCode = #fr-BE
-    * extension[content].valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
-  * code = #guidanceUnavailable
+  * action[0]
+    * textEquivalent = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
+    * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
+    * code = #guidanceUnavailable
 
 
 Instance: any-service-no-consent-response-response
@@ -60,15 +61,16 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
-  * title = "Toegang geweigerd"
-  * title.extension[http://hl7.org/fhir/StructureDefinition/translation]
-    * extension[lang].valueCode = #fr-BE
-    * extension[content].valueString = "Accès refusé"
-  * textEquivalent = "U hebt (nog) geen toestemming gegeven voor het gebruik van het systeem. Gelieve eerst akkoord te gaan met de gebruiksvoorwaarden."
-  * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
-    * extension[lang].valueCode = #fr-BE
-    * extension[content].valueString = "Vous n'avez pas (encore) donné votre consentement pour l'utilisation du système. Veuillez d'abord accepter les conditions d'utilisation."
-  * code = #consentNotGiven
+  * action[0]
+    * title = "Toegang geweigerd"
+    * title.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Accès refusé"
+    * textEquivalent = "U hebt (nog) geen toestemming gegeven voor het gebruik van het systeem. Gelieve eerst akkoord te gaan met de gebruiksvoorwaarden."
+    * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+      * extension[lang].valueCode = #fr-BE
+      * extension[content].valueString = "Vous n'avez pas (encore) donné votre consentement pour l'utilisation du système. Veuillez d'abord accepter les conditions d'utilisation."
+    * code = #consentNotGiven
 
 
 

@@ -1,0 +1,23 @@
+@host = "http://localhost:8080"
+@resource = ./output/Parameters-feedback.example.json
+
+POST {{host}}/PlanDefinition/GetRecommendations/$feedback HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+< {{resource}}
+
+
+@pssresponseid = 12345
+
+GET {{host}}/Bundle/{{pssresponseid}} HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+
+
+GET {{host}}/Bundle?_id{{pssresponseid}}&_include: HTTP/1.1
+Content-Type: application/fhir+json
+Accept: application/fhir+json
+
+
