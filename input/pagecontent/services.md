@@ -8,7 +8,7 @@ These are the services identified for PSS:
 
 The Consent service is provided by the PSS system to register a user's acceptance of the terms and conditions for PSS (or opt-out, if that is their preference).  
 This service accept POSTs of Consent following the [Consent profile](#).  
-This service requests and stores information as described in the [model](StructureDefinition-PSSConsentModel).
+This service requests and stores information as described in the [model](StructureDefinition-PSSConsentModel.html).
 
 * The user ID is an anonymised number that uniquely identifies a professional. This way the system doesn't ask for consent in every session.
 * The version is important for when the terms change, that the user may need to be asked to renew their consent.
