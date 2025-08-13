@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "proposed-mr-head-wo-iv-contrast",
+  "meta" : {
+    "versionId" : "v3",
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest proposed-mr-head-wo-iv-contrast</b></p><a name=\"proposed-mr-head-wo-iv-contrast\"> </a><a name=\"hcproposed-mr-head-wo-iv-contrast\"> </a><a name=\"proposed-mr-head-wo-iv-contrast-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad03</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114092}\">MR, head, wo iv contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p></div>"
+  },
+  "identifier" : [{
+    "value" : "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad03"
+  }],
+  "status" : "active",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+      "code" : "114092",
+      "display" : "MR, head, wo iv contrast"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-r"
+  }
+}

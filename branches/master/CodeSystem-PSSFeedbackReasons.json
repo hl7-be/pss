@@ -1,0 +1,78 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PSSFeedbackReasons",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PSSFeedbackReasons</b></p><a name=\"PSSFeedbackReasons\"> </a><a name=\"hcPSSFeedbackReasons\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">patient-preference<a name=\"PSSFeedbackReasons-patient-preference\"> </a></td><td>Due to patient preference</td></tr><tr><td style=\"white-space:nowrap\">patient-refusal<a name=\"PSSFeedbackReasons-patient-refusal\"> </a></td><td>Due to patient refusal</td></tr><tr><td style=\"white-space:nowrap\">not-applicable<a name=\"PSSFeedbackReasons-not-applicable\"> </a></td><td>Not applicable to the current case</td></tr><tr><td style=\"white-space:nowrap\">clinical-concerns<a name=\"PSSFeedbackReasons-clinical-concerns\"> </a></td><td>Recipient has concerns about applying the guidance</td></tr><tr><td style=\"white-space:nowrap\">suboptimal-guidance<a name=\"PSSFeedbackReasons-suboptimal-guidance\"> </a></td><td>Perceived issues with guidelines (not timely, unclear...)</td></tr><tr><td style=\"white-space:nowrap\">guidance-disagreement<a name=\"PSSFeedbackReasons-guidance-disagreement\"> </a></td><td>Recipient disagrees with guidance</td></tr><tr><td style=\"white-space:nowrap\">feasibility<a name=\"PSSFeedbackReasons-feasibility\"> </a></td><td>Guidance is not considered feasible for the case</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.16.5"
+  }],
+  "version" : "1.0.0",
+  "name" : "PSSFeedbackReasons",
+  "title" : "PSS Feedback Code Reasons",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-07-24T07:35:23+00:00",
+  "publisher" : "eHealth Platform Belgium",
+  "contact" : [{
+    "name" : "eHealth Platform Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Feedback code reasons for PSS",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "patient-preference",
+    "display" : "Due to patient preference"
+  },
+  {
+    "code" : "patient-refusal",
+    "display" : "Due to patient refusal"
+  },
+  {
+    "code" : "not-applicable",
+    "display" : "Not applicable to the current case"
+  },
+  {
+    "code" : "clinical-concerns",
+    "display" : "Recipient has concerns about applying the guidance"
+  },
+  {
+    "code" : "suboptimal-guidance",
+    "display" : "Perceived issues with guidelines (not timely, unclear...)"
+  },
+  {
+    "code" : "guidance-disagreement",
+    "display" : "Recipient disagrees with guidance"
+  },
+  {
+    "code" : "feasibility",
+    "display" : "Guidance is not considered feasible for the case"
+  }]
+}

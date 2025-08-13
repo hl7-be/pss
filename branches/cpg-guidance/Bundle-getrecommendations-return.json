@@ -1,0 +1,252 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "getrecommendations-return",
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "getrecommendations-return",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations-return\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-return</b></p><a name=\"getrecommendations-return\"> </a><a name=\"hcgetrecommendations-return\"> </a><a name=\"getrecommendations-return-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential medications</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Nitrofurantoin (9/10), 2x 100mg x 5 days</td><td><a href=\"Bundle-getrecommendations-return.html#MedicationRequest_nitrofurantoin\">Bundle: type = collection</a></td></tr><tr><td style=\"display: none\">*</td><td>Fosfomycin (7/10), single 3g dose</td><td><a href=\"Bundle-getrecommendations-return.html#MedicationRequest_fosfomycin\">Bundle: type = collection</a></td></tr><tr><td style=\"display: none\">*</td><td>Ciprofloxacin (5/10), 250mg twice daily for 3 days</td><td><a href=\"Bundle-getrecommendations-return.html#MedicationRequest_ciprofloxacin\">Bundle: type = collection</a></td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential procedures</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>CT Pulmonary Angiography (9/10)</td><td><a href=\"Bundle-getrecommendations-return.html#ServiceRequest_ct-pulmonary-angiography\">Bundle: type = collection</a></td></tr><tr><td style=\"display: none\">*</td><td>Ventilation-Perfusion (V/Q) Scan (7/10)</td><td><a href=\"Bundle-getrecommendations-return.html#ServiceRequest_ventilation-perfusion-scan\">Bundle: type = collection</a></td></tr><tr><td style=\"display: none\">*</td><td>MRI with Gd contrast (5/10)</td><td><a href=\"Bundle-getrecommendations-return.html#ServiceRequest_mri-with-gd-contrast\">Bundle: type = collection</a></td></tr></table></blockquote></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/X"
+      },
+      "action" : [{
+        "textEquivalent" : "Potential medications",
+        "action" : [{
+          "textEquivalent" : "Nitrofurantoin (9/10), 2x 100mg x 5 days",
+          "resource" : {
+            "reference" : "MedicationRequest/nitrofurantoin"
+          }
+        },
+        {
+          "textEquivalent" : "Fosfomycin (7/10), single 3g dose",
+          "resource" : {
+            "reference" : "MedicationRequest/fosfomycin"
+          }
+        },
+        {
+          "textEquivalent" : "Ciprofloxacin (5/10), 250mg twice daily for 3 days",
+          "resource" : {
+            "reference" : "MedicationRequest/ciprofloxacin"
+          }
+        }]
+      },
+      {
+        "textEquivalent" : "Potential procedures",
+        "action" : [{
+          "textEquivalent" : "CT Pulmonary Angiography (9/10)",
+          "resource" : {
+            "reference" : "ServiceRequest/ct-pulmonary-angiography"
+          }
+        },
+        {
+          "textEquivalent" : "Ventilation-Perfusion (V/Q) Scan (7/10)",
+          "resource" : {
+            "reference" : "ServiceRequest/ventilation-perfusion-scan"
+          }
+        },
+        {
+          "textEquivalent" : "MRI with Gd contrast (5/10)",
+          "resource" : {
+            "reference" : "ServiceRequest/mri-with-gd-contrast"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "nitrofurantoin",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_nitrofurantoin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest nitrofurantoin</b></p><a name=\"nitrofurantoin\"> </a><a name=\"hcnitrofurantoin\"> </a><a name=\"nitrofurantoin-en-US\"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 9/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Nitrofurantoin 2x 100mg x 5 days</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 9
+          },
+          "denominator" : {
+            "value" : 10
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "text" : "Nitrofurantoin 2x 100mg x 5 days"
+      },
+      "subject" : {
+        "reference" : "Patient/X"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "fosfomycin",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_fosfomycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest fosfomycin</b></p><a name=\"fosfomycin\"> </a><a name=\"hcfosfomycin\"> </a><a name=\"fosfomycin-en-US\"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 7/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Fosfomycin, single 3g dose</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 7
+          },
+          "denominator" : {
+            "value" : 10
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "text" : "Fosfomycin, single 3g dose"
+      },
+      "subject" : {
+        "reference" : "Patient/X"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "ciprofloxacin",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_ciprofloxacin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest ciprofloxacin</b></p><a name=\"ciprofloxacin\"> </a><a name=\"hcciprofloxacin\"> </a><a name=\"ciprofloxacin-en-US\"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 5/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Ciprofloxacin (250mg twice daily for 3 days)</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 5
+          },
+          "denominator" : {
+            "value" : 10
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "text" : "Ciprofloxacin (250mg twice daily for 3 days)"
+      },
+      "subject" : {
+        "reference" : "Patient/X"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad25",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "ct-pulmonary-angiography",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-pulmonary-angiography\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-pulmonary-angiography</b></p><a name=\"ct-pulmonary-angiography\"> </a><a name=\"hcct-pulmonary-angiography\"> </a><a name=\"ct-pulmonary-angiography-en-US\"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 9/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">CT Pulmonary Angiography</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 9
+          },
+          "denominator" : {
+            "value" : 10
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "text" : "CT Pulmonary Angiography"
+      },
+      "subject" : {
+        "reference" : "Patient/X"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "ventilation-perfusion-scan",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ventilation-perfusion-scan\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ventilation-perfusion-scan</b></p><a name=\"ventilation-perfusion-scan\"> </a><a name=\"hcventilation-perfusion-scan\"> </a><a name=\"ventilation-perfusion-scan-en-US\"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 7/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">Ventilation-Perfusion (V/Q) Scan</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 7
+          },
+          "denominator" : {
+            "value" : 10
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "text" : "Ventilation-Perfusion (V/Q) Scan"
+      },
+      "subject" : {
+        "reference" : "Patient/X"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad27",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mri-with-gd-contrast",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_mri-with-gd-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mri-with-gd-contrast</b></p><a name=\"mri-with-gd-contrast\"> </a><a name=\"hcmri-with-gd-contrast\"> </a><a name=\"mri-with-gd-contrast-en-US\"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 5/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">MRI with Gd Contrast</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 5
+          },
+          "denominator" : {
+            "value" : 10
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "text" : "MRI with Gd Contrast"
+      },
+      "subject" : {
+        "reference" : "Patient/X"
+      }
+    }
+  }]
+}

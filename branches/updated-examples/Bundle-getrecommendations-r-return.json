@@ -1,0 +1,242 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "getrecommendations-r-return",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"]
+  },
+  "identifier" : {
+    "value" : "response1"
+  },
+  "type" : "collection",
+  "timestamp" : "2025-02-20T00:00:00Z",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "getrecommendations-r-return-1",
+      "meta" : {
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations-r-return-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-r-return-1</b></p><a name=\"getrecommendations-r-return-1\"> </a><a name=\"hcgetrecommendations-r-return-1\"> </a><a name=\"getrecommendations-r-return-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseRequestGroup.html\">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>CT Head with or without contrast</td><td><a href=\"ServiceRequest-ct-head-with-or-without-contrast.html\">ServiceRequest CT, head, without or without contrast</a></td></tr><tr><td style=\"display: none\">*</td><td>, </td><td>CT Head with IV contrast</td><td><a href=\"ServiceRequest-ct-head-iv-contrast.html\">ServiceRequest CT, head, without IV contrast</a></td></tr><tr><td style=\"display: none\">*</td><td>, </td><td>MR Head without contrast</td><td><a href=\"ServiceRequest-mr-head-without-contrast.html\">ServiceRequest MR, head, without IV contrast</a></td></tr></table></blockquote></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/patient-r"
+      },
+      "action" : [{
+        "selectionBehavior" : "at-most-one",
+        "action" : [{
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "radiationexposure"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 2
+                },
+                "denominator" : {
+                  "value" : 3
+                }
+              }
+            },
+            {
+              "url" : "ratingText",
+              "valueMarkdown" : "Whoa!...."
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          }],
+          "textEquivalent" : "CT Head with or without contrast",
+          "resource" : {
+            "reference" : "ServiceRequest/ct-head-with-or-without-contrast"
+          }
+        },
+        {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "radiationexposure"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 2
+                },
+                "denominator" : {
+                  "value" : 3
+                }
+              }
+            },
+            {
+              "url" : "ratingText",
+              "valueMarkdown" : "Whoa!...."
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          },
+          {
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "overall"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 1
+                },
+                "denominator" : {
+                  "value" : 3
+                }
+              }
+            },
+            {
+              "url" : "ratingText",
+              "valueMarkdown" : "Not recommended"
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          }],
+          "textEquivalent" : "CT Head with IV contrast",
+          "resource" : {
+            "reference" : "ServiceRequest/ct-head-iv-contrast"
+          }
+        },
+        {
+          "extension" : [{
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "radiationexposure"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 2
+                },
+                "denominator" : {
+                  "value" : 3
+                }
+              }
+            },
+            {
+              "url" : "ratingText",
+              "valueMarkdown" : "Whoa!...."
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          },
+          {
+            "extension" : [{
+              "url" : "ratingType",
+              "valueCode" : "overall"
+            },
+            {
+              "url" : "ratingValue",
+              "valueRatio" : {
+                "numerator" : {
+                  "value" : 1
+                },
+                "denominator" : {
+                  "value" : 3
+                }
+              }
+            },
+            {
+              "url" : "ratingText",
+              "valueMarkdown" : "Not recommended"
+            }],
+            "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+          }],
+          "textEquivalent" : "MR Head without contrast",
+          "resource" : {
+            "reference" : "ServiceRequest/mr-head-without-contrast"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "ct-head-with-or-without-contrast",
+      "meta" : {
+        "versionId" : "v3",
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-with-or-without-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-with-or-without-contrast</b></p><a name=\"ct-head-with-or-without-contrast\"> </a><a name=\"hcct-head-with-or-without-contrast\"> </a><a name=\"ct-head-with-or-without-contrast-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114054}\">CT, head, without or without contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+          "code" : "114054",
+          "display" : "CT, head, without or without contrast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-r"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "ct-head-iv-contrast",
+      "meta" : {
+        "versionId" : "v3",
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name=\"ct-head-iv-contrast\"> </a><a name=\"hcct-head-iv-contrast\"> </a><a name=\"ct-head-iv-contrast-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114055}\">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+          "code" : "114055",
+          "display" : "CT, head, without IV contrast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-r"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639044ad77",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "mr-head-without-contrast",
+      "meta" : {
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_mr-head-without-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mr-head-without-contrast</b></p><a name=\"mr-head-without-contrast\"> </a><a name=\"hcmr-head-without-contrast\"> </a><a name=\"mr-head-without-contrast-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114092}\">MR, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-r.html\"> Male, DoB Unknown</a></p></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+          "code" : "114092",
+          "display" : "MR, head, without IV contrast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-r"
+      }
+    }
+  }]
+}

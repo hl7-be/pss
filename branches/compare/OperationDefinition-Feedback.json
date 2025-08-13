@@ -1,0 +1,113 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "Feedback",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition Feedback</b></p><a name=\"Feedback\"> </a><a name=\"hcFeedback\"> </a><p>URL: [base]/PlanDefinition/$feedback</p><p>URL: [base]/PlanDefinition/[id]/$feedback</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>pss-id</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>the PSS ID</p>\n</div></td></tr><tr><td>IN</td><td>feedback-timestamp</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td/><td><div><p>Feedback time stamp</p>\n</div></td></tr><tr><td>IN</td><td>outcome</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Overall outcome</p>\n</div></td></tr><tr><td>IN</td><td>suggestion-feedback</td><td/><td>0..*</td><td/><td/><td><div><p>Feedback on individual suggestions</p>\n</div></td></tr><tr><td>IN</td><td>suggestion-feedback.suggestion-id</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>The suggestion id</p>\n</div></td></tr><tr><td>IN</td><td>suggestion-feedback.outcome</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td><a href=\"ValueSet-PSSFeedbackCodesVS.html\">PSS Feedback Codes</a> (Required)</td><td><div><p>The outcome of the suggestion</p>\n</div></td></tr><tr><td>IN</td><td>suggestion-feedback.override-reason</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td><a href=\"ValueSet-PSSFeedbackReasonsVS.html\">PSS Feedback Code Reasons</a> (Required)</td><td><div><p>The reason for override or rejection</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/Feedback",
+  "version" : "1.0.0",
+  "name" : "Feedback",
+  "title" : "PSS Feedback",
+  "status" : "active",
+  "kind" : "operation",
+  "experimental" : false,
+  "date" : "2025-08-12T08:03:41+00:00",
+  "publisher" : "eHealth Platform Belgium",
+  "contact" : [{
+    "name" : "eHealth Platform Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Operation to provide feedback on PSS suggestions",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "affectsState" : false,
+  "code" : "feedback",
+  "resource" : ["PlanDefinition"],
+  "system" : false,
+  "type" : true,
+  "instance" : true,
+  "parameter" : [{
+    "name" : "pss-id",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "the PSS ID",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "feedback-timestamp",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Feedback time stamp",
+    "type" : "dateTime"
+  },
+  {
+    "name" : "outcome",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Overall outcome",
+    "type" : "Coding"
+  },
+  {
+    "name" : "suggestion-feedback",
+    "use" : "in",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Feedback on individual suggestions",
+    "part" : [{
+      "name" : "suggestion-id",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "The suggestion id",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "outcome",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "The outcome of the suggestion",
+      "type" : "Coding",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS"
+      }
+    },
+    {
+      "name" : "override-reason",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "The reason for override or rejection",
+      "type" : "Coding",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS"
+      }
+    }]
+  }]
+}

@@ -1,0 +1,333 @@
+{
+  "resourceType" : "RequestGroup",
+  "id" : "getrecommendations-a-response-group",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-a-response-group</b></p><a name=\"getrecommendations-a-response-group\"> </a><a name=\"hcgetrecommendations-a-response-group\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseRequestGroup.html\">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><blockquote><p><b>action</b></p><h3>Documentations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>Documentation</td><td>Meer details op de BCFI site</td><td><a href=\"https://bcfi.be/nl/chapters/12?frag=8001869\">https://bcfi.be/nl/chapters/12?frag=8001869</a></td></tr><tr><td style=\"display: none\">*</td><td>Documentation</td><td>Plus de details sur le site CBIP</td><td><a href=\"https://cbip.be/fr/chapters/12?frag=8001869\">https://cbip.be/fr/chapters/12?frag=8001869</a></td></tr><tr><td style=\"display: none\">*</td><td>Documentation</td><td>Download het beslismodel van EBPNET</td><td><a href=\"https://ebpnet.be/nl/pss-vaginitis\">https://ebpnet.be/nl/pss-vaginitis</a></td></tr><tr><td style=\"display: none\">*</td><td>Documentation</td><td>Télécharger le modèle de décision d'EBPNET</td><td><a href=\"https://ebpnet.be/fr/pss-vaginite\">https://ebpnet.be/fr/pss-vaginite</a></td></tr></table><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Algemeen advies</td><td><a href=\"CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22.html\">CommunicationRequest: status = active</a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Metronidazol Oraal</td><td><a href=\"MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.html\">MedicationRequest: status = active; intent = proposal; medication[x] = metronidazole</a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Clindamycin local</td><td><a href=\"MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.html\">MedicationRequest: status = active; intent = proposal; medication[x] = clindamycin</a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Fluconazol Oraal</td><td><a href=\"MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Miconazol lokaal</td><td><a href=\"MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "subject" : {
+    "reference" : "Patient/30551ce1-5a28-4356-b684-2e639094ad48"
+  },
+  "action" : [{
+    "documentation" : [{
+      "type" : "documentation",
+      "label" : "Meer details op de BCFI site",
+      "_label" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode" : "nl-BE"
+        }]
+      },
+      "url" : "https://bcfi.be/nl/chapters/12?frag=8001869"
+    },
+    {
+      "type" : "documentation",
+      "label" : "Plus de details sur le site CBIP",
+      "_label" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode" : "fr-BE"
+        }]
+      },
+      "url" : "https://cbip.be/fr/chapters/12?frag=8001869"
+    },
+    {
+      "type" : "documentation",
+      "label" : "Download het beslismodel van EBPNET",
+      "_label" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode" : "nl-BE"
+        }]
+      },
+      "url" : "https://ebpnet.be/nl/pss-vaginitis"
+    },
+    {
+      "type" : "documentation",
+      "label" : "Télécharger le modèle de décision d'EBPNET",
+      "_label" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode" : "fr-BE"
+        }]
+      },
+      "url" : "https://ebpnet.be/fr/pss-vaginite"
+    }],
+    "selectionBehavior" : "at-most-one",
+    "action" : [{
+      "extension" : [{
+        "extension" : [{
+          "url" : "ratingType",
+          "valueCode" : "overall"
+        },
+        {
+          "url" : "ratingValue",
+          "valueRatio" : {
+            "numerator" : {
+              "value" : 3
+            },
+            "denominator" : {
+              "value" : 3
+            }
+          }
+        },
+        {
+          "url" : "ratingText",
+          "valueMarkdown" : "Over het algemeen aangewezen",
+          "_valueMarkdown" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "fr-BE"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Généralement approprié"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }],
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+      }],
+      "textEquivalent" : "Algemeen advies",
+      "_textEquivalent" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "fr-BE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Conseil général"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "resource" : {
+        "reference" : "CommunicationRequest/30551ce1-5a28-4356-b684-1e639094dd22"
+      }
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "ratingType",
+          "valueCode" : "overall"
+        },
+        {
+          "url" : "ratingValue",
+          "valueRatio" : {
+            "numerator" : {
+              "value" : 3
+            },
+            "denominator" : {
+              "value" : 3
+            }
+          }
+        },
+        {
+          "url" : "ratingText",
+          "valueMarkdown" : "Over het algemeen aangewezen",
+          "_valueMarkdown" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "fr-BE"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Généralement approprié"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }],
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+      }],
+      "textEquivalent" : "Metronidazol Oraal",
+      "_textEquivalent" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "fr-BE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Métronidazole orale"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "resource" : {
+        "reference" : "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23"
+      }
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "ratingType",
+          "valueCode" : "overall"
+        },
+        {
+          "url" : "ratingValue",
+          "valueRatio" : {
+            "numerator" : {
+              "value" : 3
+            },
+            "denominator" : {
+              "value" : 3
+            }
+          }
+        },
+        {
+          "url" : "ratingText",
+          "valueMarkdown" : "Over het algemeen aangewezen",
+          "_valueMarkdown" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "fr-BE"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Généralement approprié"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }],
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+      }],
+      "textEquivalent" : "Clindamycin local",
+      "_textEquivalent" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "fr-BE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Clindamycine localement"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "resource" : {
+        "reference" : "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24"
+      }
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "ratingType",
+          "valueCode" : "overall"
+        },
+        {
+          "url" : "ratingValue",
+          "valueRatio" : {
+            "numerator" : {
+              "value" : 1
+            },
+            "denominator" : {
+              "value" : 3
+            }
+          }
+        },
+        {
+          "url" : "ratingText",
+          "valueMarkdown" : "Niet aangewezen",
+          "_valueMarkdown" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "fr-BE"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Pas approprié"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }],
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+      }],
+      "textEquivalent" : "Fluconazol Oraal",
+      "_textEquivalent" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "fr-BE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Fluconazole orale"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "resource" : {
+        "reference" : "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad26"
+      }
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "ratingType",
+          "valueCode" : "overall"
+        },
+        {
+          "url" : "ratingValue",
+          "valueRatio" : {
+            "numerator" : {
+              "value" : 1
+            },
+            "denominator" : {
+              "value" : 3
+            }
+          }
+        },
+        {
+          "url" : "ratingText",
+          "valueMarkdown" : "Niet aangewezen",
+          "_valueMarkdown" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "fr-BE"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Pas approprié"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
+        }],
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"
+      }],
+      "textEquivalent" : "Miconazol lokaal",
+      "_textEquivalent" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "fr-BE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Miconazole localement"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "resource" : {
+        "reference" : "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad29"
+      }
+    }]
+  }]
+}

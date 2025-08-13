@@ -1,0 +1,118 @@
+PrescriptionSearchSupport : Validation Results
+=========================================
+
+err = 0, warn = 28, info = 15
+IG Publisher Version: 1.8.10
+Generated Fri Feb 07 08:53:29 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+ Build Errors : 0 / 5 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 5
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return : 0 / 2 / 6
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 1 / 6
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return : 0 / 5 / 12
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-return : 0 / 5 / 8
+ /github/workspace/fsh-generated/resources/CodeSystem-radiology-exposure-rating : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-recommendation-rating : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CommunicationRequest-ab-advice : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-vulvovaginitis : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-clindamycin : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-fluconazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-miconazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-proposal-clindamycin : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-patient-v : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-patient-x : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-return-group : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-r-return-1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/ServiceRequest-mr-head-without-contrast : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-cpg-rating-coded : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-collect-information-a : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-condition-valueset : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-radiation-exposure-rating-vs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-recommendation-rating-vs : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide.json ==
+== fsh-generated/resources/Bundle-getdatatocollect-a-data.json ==
+== fsh-generated/resources/Bundle-getdatatocollect-a-return.json ==
+WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.subject: Entry 3 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
+WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.action[0].resource: Entry 1 matches the reference Task/collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755 does not match the full target URL urn:uuid:collect-information-a by Bundle resolution rules
+== fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
+WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.subject: Entry 0 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
+== fsh-generated/resources/Bundle-getrecommendations-a-return.json ==
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[0].resource: Entry 1 matches the reference CommunicationRequest/ab-advice by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ab-advice by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ac22 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[2].resource: Entry 3 matches the reference MedicationRequest/clindamycin by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24 does not match the full target URL urn:uuid:clindamycin by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[4].resource: Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
+== fsh-generated/resources/Bundle-getrecommendations-r-return.json ==
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[1].resource: The bundle contains no match for urn:uuid:ct-head-iv-contrast by the rules of Bundle reference resolution, but it has multiple resources that match ServiceRequest/ct-head-iv-contrast by resource type and id
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[1].resource: Entry 1 matches the reference ServiceRequest/ct-head-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ct-head-iv-contrast by Bundle resolution rules
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-return-1*/.action[1].resource: Entry 2 matches the reference ServiceRequest/ct-head-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:ct-head-iv-contrast by Bundle resolution rules
+INFORMATION: Bundle/getrecommendations-r-return: Bundle.entry[1].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating|1.0.0
+INFORMATION: Bundle/getrecommendations-r-return: Bundle.entry[1].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating|1.0.0
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[1].resource/*ServiceRequest/ct-head-iv-contrast*/.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Bundle/getrecommendations-r-return: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating|1.0.0
+INFORMATION: Bundle/getrecommendations-r-return: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating|1.0.0
+WARNING: Bundle/getrecommendations-r-return: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/CodeSystem-radiology-exposure-rating.json ==
+INFORMATION: CodeSystem/radiology-exposure-rating: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/radiology-exposure-rating: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/radiology-exposure-rating: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-recommendation-rating.json ==
+INFORMATION: CodeSystem/recommendation-rating: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/recommendation-rating: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/recommendation-rating: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CommunicationRequest-ab-advice.json ==
+== fsh-generated/resources/Condition-vulvovaginitis.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
+== fsh-generated/resources/MedicationRequest-clindamycin.json ==
+== fsh-generated/resources/MedicationRequest-fluconazol.json ==
+== fsh-generated/resources/MedicationRequest-metronidazol.json ==
+== fsh-generated/resources/MedicationRequest-miconazol.json ==
+== fsh-generated/resources/MedicationRequest-proposal-clindamycin.json ==
+== fsh-generated/resources/Patient-patient-v.json ==
+== fsh-generated/resources/Patient-patient-x.json ==
+== fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetDataToCollect could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Questionnaire-q-collect-information-a.json ==
+INFORMATION: Resource: The resource Questionnaire/q-collect-information-a could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/QuestionnaireResponse-qresponse-v.json ==
+== fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group.json ==
+== fsh-generated/resources/RequestGroup-getrecommendations-a-return-group.json ==
+== fsh-generated/resources/RequestGroup-getrecommendations-r-return-1.json ==
+== fsh-generated/resources/ServiceRequest-ct-head-iv-contrast.json ==
+INFORMATION: ServiceRequest/ct-head-iv-contrast: ServiceRequest.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating|1.0.0
+INFORMATION: ServiceRequest/ct-head-iv-contrast: ServiceRequest.extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating|1.0.0
+WARNING: ServiceRequest/ct-head-iv-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast.json ==
+INFORMATION: ServiceRequest/ct-head-with-or-without-contrast: ServiceRequest.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating|1.0.0
+INFORMATION: ServiceRequest/ct-head-with-or-without-contrast: ServiceRequest.extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating|1.0.0
+WARNING: ServiceRequest/ct-head-with-or-without-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/ServiceRequest-mr-head-without-contrast.json ==
+INFORMATION: ServiceRequest/mr-head-without-contrast: ServiceRequest.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating|1.0.0
+INFORMATION: ServiceRequest/mr-head-without-contrast: ServiceRequest.extension[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating|1.0.0
+WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-cpg-rating-coded.json ==
+== fsh-generated/resources/Task-collect-information-a.json ==
+== fsh-generated/resources/ValueSet-condition-valueset.json ==
+WARNING: Resource: The resource ValueSet/condition-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ValueSet-radiation-exposure-rating-vs.json ==
+WARNING: ValueSet/radiation-exposure-rating-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-recommendation-rating-vs.json ==
+WARNING: ValueSet/recommendation-rating-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

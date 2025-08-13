@@ -1,0 +1,113 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BacterialCodes",
+      "title" : "Bacterial Codes",
+      "description" : "Bacterial Codes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CandidaCodes",
+      "title" : "Candida Codes",
+      "description" : "Candida Codes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ChlamydiaCodes",
+      "title" : "Chlamydia Codes",
+      "description" : "Chlamydia Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CompromisedImmuneSystemCodes",
+      "title" : "CompromisedImmuneSystem Codes",
+      "description" : "CompromisedImmuneSystem Codes",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icpc2",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "GonokokCodes",
+      "title" : "Gonokok Codes",
+      "description" : "Gonokok Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MycoplasmaCodes",
+      "title" : "Mycoplasma Codes",
+      "description" : "Mycoplasma Codes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "OncologyPatientCodes",
+      "title" : "OncologyPatient Codes",
+      "description" : "OncologyPatient Codes",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icpc2",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "OtherCodes",
+      "title" : "Other Codes",
+      "description" : "Other Codes",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "description" : "ValueSet - Types of rating provided by the PSS system",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "TrichomonasCodes",
+      "title" : "Trichomonas Codes",
+      "description" : "Trichomonas Codes",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

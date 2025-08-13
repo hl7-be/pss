@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="30551ce1-5a28-4356-b684-2e639094ad02"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance 30551ce1-5a28-4356-b684-2e639094ad02</b></p><a name="30551ce1-5a28-4356-b684-2e639094ad02"> </a><a name="hc30551ce1-5a28-4356-b684-2e639094ad02"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 91939003}">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="91939003"/>
+      <display value="Allergy to sulfonamide"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+  </patient>
+</AllergyIntolerance>

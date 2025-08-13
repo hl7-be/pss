@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>getrecommendations-return - Prescription Search Support v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.55"}
+    h3,h4,h5,h6{--heading-prefix:"5.55"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Prescription Search Support</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Changes</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>getrecommendations-return</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Prescription Search Support, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 1.0.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-be/pss">https://github.com/hl7-be/pss</a> and changes regularly. See the <a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-getrecommendations-return.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-getrecommendations-return.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-getrecommendations-return.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: getrecommendations-return</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><p class="res-header-id"><b>Generated Narrative: Bundle getrecommendations-return</b></p><a name="getrecommendations-return"> </a><a name="hcgetrecommendations-return"> </a><a name="getrecommendations-return-und"> </a><p>Bundle getrecommendations-return of type collection</p><a name="urn-uuid-30551ce1-5a28-4356-b684-1e639094ad21"> </a><a name="RequestGroup_getrecommendations-return"> </a><a name="hcRequestGroup_getrecommendations-return"> </a><hr/><p>Entry 1 - fullUrl = urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21</p><p>Resource RequestGroup:</p><blockquote><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-return</b></p><a name="getrecommendations-return-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential medications</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>Nitrofurantoin (9/10), 2x 100mg x 5 days</td><td><a href="Bundle-getrecommendations-return.html#MedicationRequest_nitrofurantoin">Bundle: type = collection</a></td></tr><tr><td style="display: none">*</td><td>Fosfomycin (7/10), single 3g dose</td><td><a href="Bundle-getrecommendations-return.html#MedicationRequest_fosfomycin">Bundle: type = collection</a></td></tr><tr><td style="display: none">*</td><td>Ciprofloxacin (5/10), 250mg twice daily for 3 days</td><td><a href="Bundle-getrecommendations-return.html#MedicationRequest_ciprofloxacin">Bundle: type = collection</a></td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential procedures</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>CT Pulmonary Angiography (9/10)</td><td><a href="Bundle-getrecommendations-return.html#ServiceRequest_ct-pulmonary-angiography">Bundle: type = collection</a></td></tr><tr><td style="display: none">*</td><td>Ventilation-Perfusion (V/Q) Scan (7/10)</td><td><a href="Bundle-getrecommendations-return.html#ServiceRequest_ventilation-perfusion-scan">Bundle: type = collection</a></td></tr><tr><td style="display: none">*</td><td>MRI with Gd contrast (5/10)</td><td><a href="Bundle-getrecommendations-return.html#ServiceRequest_mri-with-gd-contrast">Bundle: type = collection</a></td></tr></table></blockquote></blockquote><a name="urn-uuid-30551ce1-5a28-4356-b684-1e639094ad22"> </a><a name="MedicationRequest_nitrofurantoin"> </a><a name="hcMedicationRequest_nitrofurantoin"> </a><hr/><p>Entry 2 - fullUrl = urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22</p><p>Resource MedicationRequest:</p><blockquote><p class="res-header-id"><b>Generated Narrative: MedicationRequest nitrofurantoin</b></p><a name="nitrofurantoin"> </a><a name="hcnitrofurantoin"> </a><a name="nitrofurantoin-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 9/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Nitrofurantoin 2x 100mg x 5 days</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></blockquote><a name="urn-uuid-30551ce1-5a28-4356-b684-1e639094ad23"> </a><a name="MedicationRequest_fosfomycin"> </a><a name="hcMedicationRequest_fosfomycin"> </a><hr/><p>Entry 3 - fullUrl = urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23</p><p>Resource MedicationRequest:</p><blockquote><p class="res-header-id"><b>Generated Narrative: MedicationRequest fosfomycin</b></p><a name="fosfomycin"> </a><a name="hcfosfomycin"> </a><a name="fosfomycin-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 7/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Fosfomycin, single 3g dose</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></blockquote><a name="urn-uuid-30551ce1-5a28-4356-b684-1e639094ad24"> </a><a name="MedicationRequest_ciprofloxacin"> </a><a name="hcMedicationRequest_ciprofloxacin"> </a><hr/><p>Entry 4 - fullUrl = urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24</p><p>Resource MedicationRequest:</p><blockquote><p class="res-header-id"><b>Generated Narrative: MedicationRequest ciprofloxacin</b></p><a name="ciprofloxacin"> </a><a name="hcciprofloxacin"> </a><a name="ciprofloxacin-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 5/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Ciprofloxacin (250mg twice daily for 3 days)</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></blockquote><a name="urn-uuid-30551ce1-5a28-4356-b684-1e639094ad25"> </a><a name="ServiceRequest_ct-pulmonary-angiography"> </a><a name="hcServiceRequest_ct-pulmonary-angiography"> </a><hr/><p>Entry 5 - fullUrl = urn:uuid:30551ce1-5a28-4356-b684-1e639094ad25</p><p>Resource ServiceRequest:</p><blockquote><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-pulmonary-angiography</b></p><a name="ct-pulmonary-angiography"> </a><a name="hcct-pulmonary-angiography"> </a><a name="ct-pulmonary-angiography-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 9/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT Pulmonary Angiography</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></blockquote><a name="urn-uuid-30551ce1-5a28-4356-b684-1e639094ad26"> </a><a name="ServiceRequest_ventilation-perfusion-scan"> </a><a name="hcServiceRequest_ventilation-perfusion-scan"> </a><hr/><p>Entry 6 - fullUrl = urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26</p><p>Resource ServiceRequest:</p><blockquote><p class="res-header-id"><b>Generated Narrative: ServiceRequest ventilation-perfusion-scan</b></p><a name="ventilation-perfusion-scan"> </a><a name="hcventilation-perfusion-scan"> </a><a name="ventilation-perfusion-scan-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 7/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">Ventilation-Perfusion (V/Q) Scan</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></blockquote><a name="urn-uuid-30551ce1-5a28-4356-b684-1e639094ad27"> </a><a name="ServiceRequest_mri-with-gd-contrast"> </a><a name="hcServiceRequest_mri-with-gd-contrast"> </a><hr/><p>Entry 7 - fullUrl = urn:uuid:30551ce1-5a28-4356-b684-1e639094ad27</p><p>Resource ServiceRequest:</p><blockquote><p class="res-header-id"><b>Generated Narrative: ServiceRequest mri-with-gd-contrast</b></p><a name="mri-with-gd-contrast"> </a><a name="hcmri-with-gd-contrast"> </a><a name="mri-with-gd-contrast-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 5/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">MRI with Gd Contrast</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 12, 2024 19:15+0000">2024-11-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

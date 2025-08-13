@@ -1,0 +1,983 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-cardinality-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionCardinalityBehavior",
+      "title" : "ActionCardinalityBehavior",
+      "description" : "Defines behavior for an action or a group for how many times that item may be repeated.",
+      "systems" : ["http://hl7.org/fhir/action-cardinality-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.807"],
+      "sources" : ["2.16.840.1.113883.4.642.3.807"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-condition-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionConditionKind",
+      "title" : "ActionConditionKind",
+      "description" : "Defines the kinds of conditions that can appear on actions.",
+      "systems" : ["http://hl7.org/fhir/action-condition-kind"],
+      "oids" : ["2.16.840.1.113883.4.642.3.815"],
+      "sources" : ["2.16.840.1.113883.4.642.3.815"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-grouping-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionGroupingBehavior",
+      "title" : "ActionGroupingBehavior",
+      "description" : "Defines organization behavior of a group.",
+      "systems" : ["http://hl7.org/fhir/action-grouping-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.799"],
+      "sources" : ["2.16.840.1.113883.4.642.3.799"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-precheck-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionPrecheckBehavior",
+      "title" : "ActionPrecheckBehavior",
+      "description" : "Defines selection frequency behavior for an action or group.",
+      "systems" : ["http://hl7.org/fhir/action-precheck-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.805"],
+      "sources" : ["2.16.840.1.113883.4.642.3.805"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionRelationshipType",
+      "title" : "ActionRelationshipType",
+      "description" : "Defines the types of relationships between actions.",
+      "systems" : ["http://hl7.org/fhir/action-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.813"],
+      "sources" : ["2.16.840.1.113883.4.642.3.813"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-required-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionRequiredBehavior",
+      "title" : "ActionRequiredBehavior",
+      "description" : "Defines expectations around whether an action or action group is required.",
+      "systems" : ["http://hl7.org/fhir/action-required-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.803"],
+      "sources" : ["2.16.840.1.113883.4.642.3.803"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-selection-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionSelectionBehavior",
+      "title" : "ActionSelectionBehavior",
+      "description" : "Defines selection behavior of a group.",
+      "systems" : ["http://hl7.org/fhir/action-selection-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.801"],
+      "sources" : ["2.16.840.1.113883.4.642.3.801"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionType",
+      "title" : "ActionType",
+      "description" : "The type of action to be performed.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/action-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.809"],
+      "sources" : ["2.16.840.1.113883.4.642.3.809"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSRequestBundle.html" : "PSS Request Bundle",
+      "StructureDefinition-PSSResponseBundle.html" : "PSS Response Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/communication-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommunicationCategory",
+      "title" : "CommunicationCategory",
+      "description" : "Codes for general categories of communications such as alerts, instructions, etc.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/communication-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.172"],
+      "sources" : ["2.16.840.1.113883.4.642.3.172"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSRequestBundle.html" : "PSS Request Bundle",
+      "StructureDefinition-PSSResponseBundle.html" : "PSS Response Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/item-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemType",
+      "title" : "QuestionnaireItemType",
+      "description" : "Distinguishes groups from questions and display text and indicates data type for questions.",
+      "systems" : ["http://hl7.org/fhir/item-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.444"],
+      "sources" : ["2.16.840.1.113883.4.642.3.444"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Jurisdiction ValueSet",
+      "title" : "Jurisdiction",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group",
+      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task",
+      "StructureDefinition-PSSRequestBundle.html" : "PSS Request Bundle",
+      "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request",
+      "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form",
+      "StructureDefinition-PSSResponseBundle.html" : "PSS Response Bundle",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task",
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Category Codes",
+      "title" : "Medication request  category  codes",
+      "description" : "MedicationRequest Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1322"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Course of Therapy Codes",
+      "title" : "Medication request  course of  therapy  codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Status Reason Codes",
+      "title" : "Medication request  status  reason  codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSPatient.html" : "PSS anonymised Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireAnswerCodes",
+      "title" : "Questionnaire Answer Codes",
+      "description" : "Example list of codes for answers to questions. (Not complete or necessarily appropriate.)",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.446"],
+      "sources" : ["2.16.840.1.113883.4.642.3.446"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EnableWhenBehavior",
+      "title" : "EnableWhenBehavior",
+      "description" : "Controls how multiple enableWhen values are interpreted -  whether all or any must be true.",
+      "systems" : ["http://hl7.org/fhir/questionnaire-enable-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1007"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1007"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-enable-operator",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemOperator",
+      "title" : "QuestionnaireItemOperator",
+      "description" : "The criteria by which a question is enabled.",
+      "systems" : ["http://hl7.org/fhir/questionnaire-enable-operator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1005"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1005"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-questions",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireQuestionCodes",
+      "title" : "Questionnaire Question Codes",
+      "description" : "Example list of codes for questions and groups of questions. (Not necessarily complete or appropriate.)",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.443"],
+      "sources" : ["2.16.840.1.113883.4.642.3.443"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request",
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request",
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group",
+      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task",
+      "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request",
+      "StructureDefinition-PSSResponseRequestGroup.html" : "PSS Response Request Group",
+      "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSDataAcquisitionForm.html" : "PSS Data Acquisition Form"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSRequestBundle.html" : "PSS Request Bundle",
+      "StructureDefinition-PSSResponseBundle.html" : "PSS Response Bundle"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskIntent",
+      "title" : "TaskIntent",
+      "description" : "Distinguishes whether the task is a proposal, plan or full order.",
+      "systems" : [
+        "http://hl7.org/fhir/request-intent",
+        "http://hl7.org/fhir/task-intent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1240"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1240"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "TaskStatus",
+      "description" : "The current status of the task.",
+      "systems" : ["http://hl7.org/fhir/task-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.790"],
+      "sources" : ["2.16.840.1.113883.4.642.3.790"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-activity-type-vs",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "CPGActivityTypeVS",
+      "title" : "CPG Activity Type Value Set",
+      "description" : "A type of activity that can be performed as part of the delivery of guideline-based care",
+      "systems" : ["http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"],
+      "oids" : ["2.16.840.1.113883.4.642.40.48.48.3"],
+      "sources" : ["2.16.840.1.113883.4.642.40.48.48.3"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSQuestionnaireTask.html" : "PSS Questionnaire Task"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "v3 Code System ActReason",
+      "description" : " A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.  Examples:\r\nExample reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ParticipationMode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ParticipationMode",
+      "title" : "ParticipationMode",
+      "description" : "Identifies the primary means by which an Entity participates in an Act.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"],
+      "oids" : ["2.16.840.1.113883.1.11.16543"],
+      "sources" : ["2.16.840.1.113883.1.11.16543"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseCommunicationRequest.html" : "PSS Response Communication Request"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseMedicationRequest.html" : "PSS Response Medication Request",
+      "StructureDefinition-PSSMedicationRequest.html" : "PSS MedicationRequest Task"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BacterialCodes",
+      "title" : "Bacterial Codes",
+      "description" : "Bacterial Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.1"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.1"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CandidaCodes",
+      "title" : "Candida Codes",
+      "description" : "Candida Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.2"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.2"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ChlamydiaCodes",
+      "title" : "Chlamydia Codes",
+      "description" : "Chlamydia Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.3"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.3"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CompromisedImmuneSystemCodes",
+      "title" : "CompromisedImmuneSystem Codes",
+      "description" : "CompromisedImmuneSystem Codes",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icpc-2",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.4"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.4"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "GonokokCodes",
+      "title" : "Gonokok Codes",
+      "description" : "Gonokok Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.5"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.5"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MycoplasmaCodes",
+      "title" : "Mycoplasma Codes",
+      "description" : "Mycoplasma Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.6"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.6"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "OncologyPatientCodes",
+      "title" : "OncologyPatient Codes",
+      "description" : "OncologyPatient Codes",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icpc-2",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.7"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.7"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "OtherCodes",
+      "title" : "Other Codes",
+      "description" : "Other Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.8"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.8"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSFeedbackCodesVS",
+      "title" : "PSS Feedback Codes",
+      "description" : "Feedback codes for PSS",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.12"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.12"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSFeedbackReasonsVS",
+      "title" : "PSS Feedback Code Reasons",
+      "description" : "Feedback code reasons for PSS",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.13"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.13"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "description" : "ValueSet - Types of rating provided by the PSS system",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.9"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.9"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSStructuredRating.html" : "PSS Rating Extension"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.10"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.10"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "TrichomonasCodes",
+      "title" : "Trichomonas Codes",
+      "description" : "Trichomonas Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.11"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.11"]
+    }
+  ]
+}
