@@ -1,3 +1,21 @@
+CodeSystem: PSSExceptionCodes
+Id: pss-exception-codes
+Title: "PSS Exception Codes"
+Description: "Exception codes for Patient Summary (PSS) processing."
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = true
+* #guidance-unavailable "Guidance unavailable"
+* #no-consent-found "User Consent not found"
+
+ValueSet: PSSExceptionValueSet
+Id: pss-exception-valueset
+Title: "PSS Exception ValueSet"
+Description: "ValueSet including exception codes for Patient Summary (PSS)."
+* ^status = #active
+* include codes from system PSSExceptionCodes
+
+
 Instance: any-service-no-response-response
 InstanceOf: PSSResponseBundle
 Title: "Generic response - No guidance found"
@@ -27,7 +45,7 @@ Usage: #example
     * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
-    * code = #guidanceUnavailable
+    * code = PSSExceptionCodes#guidance-unavailable
 
 
 Instance: any-service-no-consent-response-response
@@ -38,12 +56,12 @@ Usage: #example
 * identifier.value = "response1"
 * timestamp = "2025-02-20T00:00:00Z"
 * type = #collection
-* entry[0].resource = any-service-no-consent-group
-* entry[=].fullUrl = "urn:uuid:any-service-no-consent-group"
-* entry[+].resource = consent-request-task
-* entry[=].fullUrl = "urn:uuid:consent-request-task"
-* entry[+].resource = consent-request
-* entry[=].fullUrl = "urn:uuid:consent-request"
+* entry[0].resource = 26491cef-c5c7-4c5f-b10b-839e938f6b3c
+* entry[=].fullUrl = "urn:uuid:26491cef-c5c7-4c5f-b10b-839e938f6b3c"
+* entry[+].resource = 26491cef-c5c7-4c5f-b10b-839e938f6b3d
+* entry[=].fullUrl = "urn:uuid:26491cef-c5c7-4c5f-b10b-839e938f6b3d"
+* entry[+].resource = 26491cef-c5c7-4c5f-b10b-839e938f6b3e
+* entry[=].fullUrl = "urn:uuid:26491cef-c5c7-4c5f-b10b-839e938f6b3e"
 // * entry[+].resource = 30551ce1-5a28-4356-d684-2e639094ad48
 // * entry[=].fullUrl = "urn:uuid:30551ce1-5a28-4356-d684-2e639094ad48"
 
@@ -51,12 +69,12 @@ Usage: #example
 
 
 
-Instance: any-service-no-consent-group
+Instance: 26491cef-c5c7-4c5f-b10b-839e938f6b3c
 InstanceOf: PSSResponseRequestGroup
 Title: "Generic response - No permission to use system"
 Description: "Antimicrobiology - No permission to use system - 11.1. RequestGroup"
 Usage: #example
-* id = "any-service-no-consent"
+* id = "26491cef-c5c7-4c5f-b10b-839e938f6b3c"
 * status = #active
 * intent = #proposal
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
@@ -70,13 +88,13 @@ Usage: #example
     * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Vous n'avez pas (encore) donné votre consentement pour l'utilisation du système. Veuillez d'abord accepter les conditions d'utilisation."
-    * code = #consentNotGiven
+    * code = PSSExceptionCodes#no-consent-found
 
 
 
 
 
-Instance: consent-request-task
+Instance: 26491cef-c5c7-4c5f-b10b-839e938f6b3d
 Title: "Antimicrobiology - No permission to use system - 11.1. Task"
 Description: "Antimicrobiology - No permission to use system - 11.1. Task"
 InstanceOf: PSSQuestionnaireTask
@@ -88,10 +106,10 @@ Usage: #example
 //* for = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * input[questionnaire]
   * type = $cpg-activity-type-cs#collect-information "Collect information"
-  * valueCanonical = Canonical(consent-request)
+  * valueCanonical = Canonical(26491cef-c5c7-4c5f-b10b-839e938f6b3e)
 
 
-Instance: consent-request
+Instance: 26491cef-c5c7-4c5f-b10b-839e938f6b3e
 InstanceOf: CPGComputableQuestionnaire
 Description: "Terms and Conditions Consent Form"
 Title: "Terms and Conditions Consent Form"
@@ -108,13 +126,24 @@ Usage: #example
 * insert Question(,instruction,The instruction to the HCP,text,true,false)
 
 * insert Question(,tc,Terms and Conditions,group,true,false)
-* insert Question(item[=].,tcpolicy,Policy,display,true,false)
+//* insert Question(item[=].,tcpolicy,Policy,display,true,false)
+* item[=].item[+].linkId = "tcpolicy"
+* item[=].item[=].text = "Policy"
+* item[=].item[=].type = #display
+
+
 * item[=].item[=].text = "Door een account aan te maken gaat u akkoord met de [Gebruiksvoorwaarden en privacyverklaring](https://www.riziv.fgov.be/nl/thema-s/egezondheid/beslissingsondersteunend-platform-voor-voorschrijvers-meer-gepaste-zorg-en-minder-veiligheidsrisico-s/gebruiksvoorwaarden-en-privacyverklaring-voor-de-applicatie-pss)."
   * extension[http://hl7.org/fhir/StructureDefinition/translation]
     * extension[lang].valueCode = #fr-BE
     * extension[content].valueString = "En créant un compte, vous acceptez les [Conditions d'utilisation et politique de confidentialité](https://www.inami.fgov.be/fr/themes/esante/plateforme-d-aide-a-la-decision-pour-les-prescripteurs-des-soins-plus-adaptes-et-moins-de-risques-de-securite/conditions-d-utilisation-et-politique-de-confidentialite-pour-l-application-pss)."
 
-* insert Question(item[=].,tcversion,Version,display,true,false)
+//* insert Question(item[=].,tcversion,Version,display,true,false)
+
+* item[=].item[+].linkId = "tcversion"
+* item[=].item[=].text = "version"
+* item[=].item[=].type = #display
+
+
 * insert Question(item[=].,consent,Consent,choice,true,false)
 
 * insert Question(,anonymizationPreference,Statistical anonymization preference,choice,true,false)

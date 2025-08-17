@@ -15,7 +15,7 @@ Usage: #definition
   * resource[0]
     * type = #PlanDefinition
     * operation[0].name = "$apply"
-    * operation[0].definition = "http://hl7.org/fhir/uv/cpg/OperationDefinition/PlanDefinition-apply"
+    * operation[0].definition = "http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-plandefinition-apply"
 
   * resource[1].type = #Consent
   * resource[1].interaction[0].code = #create
