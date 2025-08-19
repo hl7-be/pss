@@ -29,7 +29,6 @@ Usage: #example
 
 
 
-
 Instance: c174873b-e39a-4eba-aff4-72708dd6c34d
 InstanceOf: PSSResponseRequestGroup
 Title: "Generic response - No guidance found - 10.1. RequestGroup"
@@ -46,7 +45,7 @@ Usage: #example
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
     * code = PSSExceptionCodes#guidance-unavailable
-
+    * resource = Reference(26491cef-c5c7-4c5f-b10b-839e938f6b3d)
 
 Instance: any-service-no-consent-response-response
 InstanceOf: PSSResponseBundle
@@ -89,6 +88,7 @@ Usage: #example
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Vous n'avez pas (encore) donné votre consentement pour l'utilisation du système. Veuillez d'abord accepter les conditions d'utilisation."
     * code = PSSExceptionCodes#no-consent-found
+    * 
 
 
 
@@ -182,3 +182,4 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
+
