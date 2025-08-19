@@ -78,6 +78,7 @@ Usage: #example
 * intent = #proposal
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
+  * selectionBehavior = #at-most-one
   * action[0]
     * title = "Toegang geweigerd"
     * title.extension[http://hl7.org/fhir/StructureDefinition/translation]
@@ -179,5 +180,6 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
+
 
 
