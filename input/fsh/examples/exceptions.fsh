@@ -149,7 +149,7 @@ Usage: #example
 * item[=].item[=].type = #display
 
 
-* insert Question(item[=].,consent,Consent,choice,true,false)
+* insert Question(item[=].,consent,Consent,boolean,true,false)
 
 * insert Question(,anonymizationPreference,Statistical anonymization preference,choice,true,false)
 
@@ -180,6 +180,7 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
+
 
 
 
