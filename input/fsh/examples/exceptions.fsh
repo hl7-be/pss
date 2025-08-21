@@ -76,7 +76,6 @@ Usage: #example
 * id = "26491cef-c5c7-4c5f-b10b-839e938f6b3c"
 * status = #active
 * intent = #proposal
-* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
   * selectionBehavior = #at-most-one
   * action[0]
@@ -114,7 +113,6 @@ Title: "Terms and Conditions Consent Form"
 Usage: #example
 * name = "TCConsentForm"
 * version = "2025"
-* subjectType = #Patient
 * language = #en
 * status = #draft
 * url = "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire"
@@ -180,6 +178,7 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
+
 
 
 
