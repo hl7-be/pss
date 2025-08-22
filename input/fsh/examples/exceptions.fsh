@@ -69,7 +69,7 @@ Usage: #example
 
 
 Instance: 26491cef-c5c7-4c5f-b10b-839e938f6b3c
-InstanceOf: PSSResponseRequestGroup
+InstanceOf: RequestGroup
 Title: "Generic response - No permission to use system"
 Description: "Antimicrobiology - No permission to use system - 11.1. RequestGroup"
 Usage: #example
@@ -178,6 +178,7 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
+
 
 
 
