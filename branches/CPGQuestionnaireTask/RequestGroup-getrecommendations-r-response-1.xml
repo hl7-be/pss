@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RequestGroup xmlns="http://hl7.org/fhir">
+  <id value="getrecommendations-r-response-1"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-r-response-1</b></p><a name="getrecommendations-r-response-1"> </a><a name="hcgetrecommendations-r-response-1"> </a><a name="getrecommendations-r-response-1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-3e639094ad48.html"> Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>Justification</td><td>Appropriateness Scoring Guidelines</td><td><a href="https://environment.esriguide.org/suportingContent/12345)">https://environment.esriguide.org/suportingContent/12345)</a></td></tr></table><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>, </td><td>CT, head, wo iv contrast</td><td><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23.html">ServiceRequest CT, head, wo iv contrast</a></td></tr><tr><td style="display: none">*</td><td>, </td><td>MR, head, wo iv contrast</td><td><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.html">ServiceRequest MR, head, wo iv contrast</a></td></tr><tr><td style="display: none">*</td><td>, </td><td>CT, head, wo/w iv contrast</td><td><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22.html">ServiceRequest CT, head, wo/w iv contrast</a></td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <subject>
+    <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
+  </subject>
+  <action>
+    <documentation>
+      <type value="justification"/>
+      <label value="Appropriateness Scoring Guidelines">
+        <extension url="http://hl7.org/fhir/StructureDefinition/language">
+          <valueCode value="en"/>
+        </extension>
+      </label>
+      <url value="https://environment.esriguide.org/suportingContent/12345)"/>
+    </documentation>
+    <selectionBehavior value="at-most-one"/>
+    <action>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="radiationexposure"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="3"/>
+            </numerator>
+            <denominator>
+              <value value="5"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+      </extension>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="overall"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="9"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+      </extension>
+      <textEquivalent value="CT, head, wo iv contrast"/>
+      <resource>
+        <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23"/>
+      </resource>
+    </action>
+    <action>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="radiationexposure"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="0"/>
+            </numerator>
+            <denominator>
+              <value value="5"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+      </extension>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="overall"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="8"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+      </extension>
+      <textEquivalent value="MR, head, wo iv contrast"/>
+      <resource>
+        <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77"/>
+      </resource>
+    </action>
+    <action>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="radiationexposure"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="3"/>
+            </numerator>
+            <denominator>
+              <value value="5"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+      </extension>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="overall"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="6"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+      </extension>
+      <textEquivalent value="CT, head, wo/w iv contrast"/>
+      <resource>
+        <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22"/>
+      </resource>
+    </action>
+  </action>
+</RequestGroup>

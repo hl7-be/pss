@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vaginitis-condition-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vaginitis-condition-valueset</b></p><a name=\"vaginitis-condition-valueset\"> </a><a name=\"hcvaginitis-condition-valueset\"> </a><a name=\"vaginitis-condition-valueset-en-US\"> </a><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"vaginitis-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"vaginitis-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"vaginitis-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td/></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/vaginitis-condition-valueset",
+  "version" : "1.0.0",
+  "name" : "Conditions",
+  "title" : "Antimicrobiology - Vaginitis-related conditions",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-03-20T11:13:27+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "expansion" : {
+    "timestamp" : "2025-02-20T00:00:00Z",
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "419760006",
+      "display" : "Bacterial vaginosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "276877003",
+      "display" : "Trichomonal vaginitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "72934000"
+    }]
+  }
+}

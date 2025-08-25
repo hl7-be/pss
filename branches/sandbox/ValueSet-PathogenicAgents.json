@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PathogenicAgents",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PathogenicAgents</b></p><a name=\"PathogenicAgents\"> </a><a name=\"hcPathogenicAgents\"> </a><a name=\"PathogenicAgents-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/123\">123</a></td><td>HPV</td></tr><tr><td><a href=\"http://snomed.info/id/234\">234</a></td><td>Gonokocus</td></tr><tr><td><a href=\"http://snomed.info/id/345\">345</a></td><td>Other</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgents",
+  "version" : "1.0.0",
+  "name" : "PathogenicAgents",
+  "title" : "Pathogenic Agents list",
+  "status" : "active",
+  "date" : "2025-03-11T13:29:42+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Pathogenic agent codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "extension" : [{
+          "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
+          "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV"
+        }],
+        "code" : "123",
+        "display" : "HPV"
+      },
+      {
+        "code" : "234",
+        "display" : "Gonokocus"
+      },
+      {
+        "code" : "345",
+        "display" : "Other"
+      }]
+    }]
+  }
+}

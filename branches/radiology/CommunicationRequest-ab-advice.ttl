@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/CommunicationRequest/ab-advice> a fhir:CommunicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ab-advice"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest ab-advice</b></p><a name=\"ab-advice\"> </a><a name=\"hcab-advice\"> </a><a name=\"ab-advice-en-US\"> </a><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><blockquote><p><b>payload</b></p><p><b>content</b>: Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...</p></blockquote><blockquote><p><b>payload</b></p><p><b>content</b>: Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée...</p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "3"^^xsd:decimal ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "3"^^xsd:decimal ]
+       ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-x> ;
+     fhir:reference [ fhir:v "Patient/patient-x" ]
+  ] ; # 
+  fhir:payload ( [
+     fhir:content [
+       fhir:v "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte..." ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "nl" ]
+       ] )
+     ]
+  ] [
+     fhir:content [
+       fhir:v "Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée..." ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fr" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

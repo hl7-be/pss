@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="propose-pulmonary-embolism"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task propose-pulmonary-embolism</b></p><a name="propose-pulmonary-embolism"> </a><a name="hcpropose-pulmonary-embolism"> </a><a name="propose-pulmonary-embolism-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis PE</span></td><td><a href="Condition-proposed-diagnosis-pe.html">Condition Pulmonary embolism</a></td></tr></table></div>
+  </text>
+  <status value="requested"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+      <code value="propose-diagnosis"/>
+      <display value="Propose a diagnosis"/>
+    </coding>
+  </code>
+  <for>
+    <reference value="Patient/X"/>
+  </for>
+  <input>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+        <code value="propose-diagnosis"/>
+        <display value="Propose a diagnosis PE"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="Condition/proposed-diagnosis-pe"/>
+    </valueReference>
+  </input>
+</Task>

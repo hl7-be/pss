@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/Feedback> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Feedback"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition Feedback</b></p><a name=\"Feedback\"> </a><a name=\"hcFeedback\"> </a><p>URL: [base]/PlanDefinition/$feedback</p><p>URL: [base]/PlanDefinition/[id]/$feedback</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>pss-id</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>the PSS ID</p>\n</div></td></tr><tr><td>IN</td><td>feedback-timestamp</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td/><td><div><p>Feedback time stamp</p>\n</div></td></tr><tr><td>IN</td><td>outcome</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td/><td><div><p>Overall outcome</p>\n</div></td></tr><tr><td>IN</td><td>suggestion-feedback</td><td/><td>0..*</td><td/><td/><td><div><p>Feedback on individual suggestions</p>\n</div></td></tr><tr><td>IN</td><td>suggestion-feedback.suggestion-id</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>The suggestion id</p>\n</div></td></tr><tr><td>IN</td><td>suggestion-feedback.outcome</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td><a href=\"ValueSet-PSSFeedbackCodesVS.html\">PSS Feedback Codes</a> (Required)</td><td><div><p>The outcome of the suggestion</p>\n</div></td></tr><tr><td>IN</td><td>suggestion-feedback.override-reason</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td><a href=\"ValueSet-PSSFeedbackReasonsVS.html\">PSS Feedback Code Reasons</a> (Required)</td><td><div><p>The reason for override or rejection</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/Feedback"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "Feedback"] ; # 
+  fhir:title [ fhir:v "PSS Feedback"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-07-24T07:35:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Operation to provide feedback on PSS suggestions"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:affectsState [ fhir:v false] ; # 
+  fhir:code [ fhir:v "feedback"] ; # 
+  fhir:resource ( [ fhir:v "PlanDefinition"] ) ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v true] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "pss-id" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "the PSS ID" ] ;
+     fhir:type [ fhir:v "Identifier" ]
+  ] [
+     fhir:name [ fhir:v "feedback-timestamp" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Feedback time stamp" ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] [
+     fhir:name [ fhir:v "outcome" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Overall outcome" ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:name [ fhir:v "suggestion-feedback" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Feedback on individual suggestions" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "suggestion-id" ] ;
+       fhir:use [ fhir:v "in" ] ;
+       fhir:min [ fhir:v 1 ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "The suggestion id" ] ;
+       fhir:type [ fhir:v "Identifier" ]
+     ] [
+       fhir:name [ fhir:v "outcome" ] ;
+       fhir:use [ fhir:v "in" ] ;
+       fhir:min [ fhir:v 1 ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "The outcome of the suggestion" ] ;
+       fhir:type [ fhir:v "Coding" ] ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS>
+         ]
+       ]
+     ] [
+       fhir:name [ fhir:v "override-reason" ] ;
+       fhir:use [ fhir:v "in" ] ;
+       fhir:min [ fhir:v 0 ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "The reason for override or rejection" ] ;
+       fhir:type [ fhir:v "Coding" ] ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS"^^xsd:anyURI ;
+           fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS>
+         ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

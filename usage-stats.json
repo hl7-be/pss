@@ -1,0 +1,267 @@
+{
+  "package": "hl7.fhir.be.pss",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "BE",
+  "extensions": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode",
+      "title": "AnswerOption Additional Code",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
+      "title": "Code ValueSet",
+      "types": [
+        "canonical"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge",
+      "title": "PSS Relevant Patient Age",
+      "types": [
+        "Age"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating",
+      "title": "PSS Rating Extension",
+      "types": [
+        "code",
+        "Quantity",
+        "Ratio",
+        "markdown",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "Task": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask",
+        "title": "PSS Questionnaire Task"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm",
+        "title": "PSS Data Acquisition Form"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest",
+        "title": "PSS Response Medication Request"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient",
+        "title": "PSS anonymised Patient"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle",
+        "title": "PSS Request Bundle"
+      },
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle",
+        "title": "PSS Response Bundle"
+      }
+    ],
+    "CommunicationRequest": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest",
+        "title": "PSS Response Communication Request"
+      }
+    ],
+    "RequestGroup": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup",
+        "title": "PSS Response Request Group"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
+        "title": "PSS Response Service Request"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.intent": [
+      "CommunicationRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Bundle.entry.resource.name",
+      "Patient.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0": [
+      "Patient.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/language": [
+      "Bundle.entry.resource.action.documentation.label",
+      "RequestGroup.action.documentation.label"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/rendering-markdown": [
+      "Bundle.entry.resource.payload.contentString",
+      "CommunicationRequest.payload.contentString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-doNotPerform|5.2.0": [
+      "Task"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "Bundle.entry.resource.action.action.textEquivalent",
+      "Bundle.entry.resource.action.textEquivalent",
+      "Bundle.entry.resource.action.title",
+      "Bundle.entry.resource.dosageInstruction.text",
+      "Bundle.entry.resource.item.answerOption.valueCoding.display",
+      "Bundle.entry.resource.item.item.text",
+      "Bundle.entry.resource.item.text",
+      "MedicationRequest.dosageInstruction.text",
+      "Questionnaire.item.answerOption.valueCoding.display",
+      "Questionnaire.item.item.text",
+      "Questionnaire.item.text",
+      "RequestGroup.action.action.textEquivalent",
+      "RequestGroup.action.textEquivalent",
+      "RequestGroup.action.title"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0": [
+      "CommunicationRequest"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-answerValueSetSource": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-itemImage": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pertinent": [
+      "Task"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating": [
+      "CommunicationRequest",
+      "MedicationRequest",
+      "ServiceRequest",
+      "Task"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale": [
+      "CommunicationRequest",
+      "MedicationRequest",
+      "ServiceRequest",
+      "Task"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-responseImage": [
+      "Questionnaire.item.answerOption"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode": [
+      "Questionnaire.item.answerOption"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet": [
+      "Bundle.entry.resource.item",
+      "Bundle.entry.resource.item.answerOption",
+      "Bundle.entry.resource.item.item",
+      "Questionnaire.item",
+      "Questionnaire.item.answerOption",
+      "Questionnaire.item.item"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating": [
+      "Bundle.entry.resource.action.action",
+      "RequestGroup.action.action"
+    ]
+  }
+}

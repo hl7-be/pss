@@ -1,0 +1,98 @@
+PrescriptionSearchSupport : Validation Results
+=========================================
+
+err = 8, warn = 21, info = 6
+IG Publisher Version: 1.8.13
+Generated Wed Feb 19 10:41:40 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+ Build Errors : 0 / 5 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 5
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return : 0 / 3 / 8
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 1 / 6
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return : 3 / 5 / 12
+ /github/workspace/fsh-generated/resources/CommunicationRequest-ab-advice : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-vulvovaginitis : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-clindamycin : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-fluconazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-miconazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-proposal-clindamycin : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-patient-v : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-patient-x : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a : 0 / 1 / 5
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-return-group : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSRequest : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PSSResponse : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-codeValueSet : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Task-collect-information-a : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-condition-valueset : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide.json ==
+== fsh-generated/resources/Bundle-getdatatocollect-a-data.json ==
+== fsh-generated/resources/Bundle-getdatatocollect-a-return.json ==
+WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.subject: Entry 3 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
+WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.action[0].resource: Entry 1 matches the reference Task/collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755 does not match the full target URL urn:uuid:collect-information-a by Bundle resolution rules
+WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.contained[1]/*ValueSet/PregnancyCodes*/.compose.include[0].concept[0]: The code 'Z33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10 (Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded')
+INFORMATION: Bundle/getdatatocollect-a-return: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.contained[1]/*ValueSet/PregnancyCodes*/.compose.include[0].concept[0]: Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded'
+== fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
+WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.subject: Entry 0 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
+== fsh-generated/resources/Bundle-getrecommendations-a-return.json ==
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[0].resource: Entry 1 matches the reference CommunicationRequest/ab-advice by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ab-advice by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ac22 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[2].resource: Entry 3 matches the reference MedicationRequest/clindamycin by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24 does not match the full target URL urn:uuid:clindamycin by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[4].resource: Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*CommunicationRequest/ab-advice*/.payload[0].content.ofType(string).extension[1]: The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[2].resource/*MedicationRequest/metronidazol*/.dosageInstruction[0].timing.repeat.bounds.ofType(Duration): Constraint failed: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.'
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[2].resource/*MedicationRequest/metronidazol*/.dosageInstruction[0].timing.repeat.bounds.ofType(Duration): Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)
+== fsh-generated/resources/CommunicationRequest-ab-advice.json ==
+ERROR: CommunicationRequest/ab-advice: CommunicationRequest.payload[0].content.ofType(string).extension[1]: The Extension 'http://hl7.org/fhir/StructureDefinition/rendering-markdown' definition allows for the types [markdown] but found type string
+== fsh-generated/resources/Condition-vulvovaginitis.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide: HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+ERROR: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide: HL7 Implementation Guides must state their owning workgroup explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+WARNING: ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+== fsh-generated/resources/MedicationRequest-clindamycin.json ==
+== fsh-generated/resources/MedicationRequest-fluconazol.json ==
+== fsh-generated/resources/MedicationRequest-metronidazol.json ==
+ERROR: MedicationRequest/metronidazol: MedicationRequest.dosageInstruction[0].timing.repeat.bounds.ofType(Duration): Constraint failed: drt-1: 'There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.'
+ERROR: MedicationRequest/metronidazol: MedicationRequest.dosageInstruction[0].timing.repeat.bounds.ofType(Duration): Constraint failed: qty-3: 'If a code for the unit is present, the system SHALL also be present' (defined in http://hl7.org/fhir/StructureDefinition/Quantity)
+== fsh-generated/resources/MedicationRequest-miconazol.json ==
+== fsh-generated/resources/MedicationRequest-proposal-clindamycin.json ==
+== fsh-generated/resources/Patient-patient-v.json ==
+== fsh-generated/resources/Patient-patient-x.json ==
+== fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetDataToCollect could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Questionnaire-q-collect-information-a.json ==
+WARNING: Questionnaire/q-collect-information-a: Questionnaire.contained[1]/*ValueSet/PregnancyCodes*/.compose.include[0].concept[0]: The code 'Z33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10 (Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded')
+INFORMATION: Questionnaire/q-collect-information-a: Questionnaire.contained[1]/*ValueSet/PregnancyCodes*/.compose.include[0].concept[0]: Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded'
+INFORMATION: Resource: The resource Questionnaire/q-collect-information-a could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/QuestionnaireResponse-qresponse-v.json ==
+== fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group.json ==
+== fsh-generated/resources/RequestGroup-getrecommendations-a-return-group.json ==
+== fsh-generated/resources/StructureDefinition-PSSRequest.json ==
+== fsh-generated/resources/StructureDefinition-PSSResponse.json ==
+== fsh-generated/resources/StructureDefinition-codeValueSet.json ==
+WARNING: StructureDefinition/codeValueSet: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: StructureDefinition/codeValueSet: StructureDefinition.context[0]: Review the extension type for codeValueSet: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/Task-collect-information-a.json ==
+== fsh-generated/resources/ValueSet-PregnancyCodes.json ==
+WARNING: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: The code 'Z33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10 (Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded')
+INFORMATION: ValueSet/PregnancyCodes: ValueSet.compose.include[0].concept[0]: Unknown code 'Z33.1' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10' version '2019-covid-expanded'
+WARNING: ValueSet/PregnancyCodes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-condition-valueset.json ==
+WARNING: Resource: The resource ValueSet/condition-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
