@@ -117,10 +117,6 @@ Usage: #example
 * status = #draft
 * url = "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire"
 
-* insert Question(,hcp,The anonymised ID of the healthcare professional,text,true,false)
-* insert Question(,recordedDate,The date on which the information was recorded,date,true,false)
-* insert Question(,instruction,The instruction to the HCP,text,true,false)
-
 * insert Question(,tc,Terms and Conditions,group,true,false)
 //* insert Question(item[=].,tcpolicy,Policy,display,true,false)
 * item[=].item[+].linkId = "tcpolicy"
@@ -178,6 +174,7 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
+
 
 
 
