@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094ac23"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ac23</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ac23-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc J01XD01}, {https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg 21436}\">metronidazole</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 1000 mg per dag in 2 giften gedurende 7 dagen</p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1000 mg</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J01XD01" ]
+     ] [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21436" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-2e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-2e639094ad48" ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [
+       fhir:v "1000 mg per dag in 2 giften gedurende 7 dagen" ;
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "fr-BE"
+           ]
+         ] [
+           fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:string ;
+             fhir:v "1000 mg par jour en 2 prises pendant 7 jours"
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+       ] )
+     ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "7"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ] ;
+         fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1000"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

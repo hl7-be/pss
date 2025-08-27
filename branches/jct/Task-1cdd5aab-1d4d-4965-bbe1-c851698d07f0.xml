@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="1cdd5aab-1d4d-4965-bbe1-c851698d07f0"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task 1cdd5aab-1d4d-4965-bbe1-c851698d07f0</b></p><a name="1cdd5aab-1d4d-4965-bbe1-c851698d07f0"> </a><a name="hc1cdd5aab-1d4d-4965-bbe1-c851698d07f0"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-30551ce1-5a28-4356-b684-3e639094ad48.html"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></td><td><a href="Condition-287e8fe2-3e83-44bd-92e7-962bc90b6d67.html">Condition Ataxia, stroke suspected</a></td></tr></table></div>
+  </text>
+  <status value="requested"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+      <code value="propose-diagnosis"/>
+      <display value="Propose a diagnosis"/>
+    </coding>
+  </code>
+  <for>
+    <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
+  </for>
+  <input>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+        <code value="propose-diagnosis"/>
+        <display value="Propose a diagnosis"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="Condition/287e8fe2-3e83-44bd-92e7-962bc90b6d67"/>
+    </valueReference>
+  </input>
+</Task>

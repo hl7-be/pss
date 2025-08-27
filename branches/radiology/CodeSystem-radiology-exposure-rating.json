@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "radiology-exposure-rating",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem radiology-exposure-rating</b></p><a name=\"radiology-exposure-rating\"> </a><a name=\"hcradiology-exposure-rating\"> </a><a name=\"radiology-exposure-rating-en-US\"> </a><p>This  code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">green<a name=\"radiology-exposure-rating-green\"> </a></td><td>Green</td><td>Ok.</td></tr><tr><td style=\"white-space:nowrap\">yellow<a name=\"radiology-exposure-rating-yellow\"> </a></td><td>Yellow</td><td>Please reconsider.</td></tr><tr><td style=\"white-space:nowrap\">red<a name=\"radiology-exposure-rating-red\"> </a></td><td>Red</td><td>Not OK.</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
+  "version" : "1.0.0",
+  "name" : "RadiologyExposureRatingCS",
+  "title" : "Radiation exposure rating",
+  "status" : "draft",
+  "date" : "2025-02-07T08:52:52+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Radiation exposure rating.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "green",
+    "display" : "Green",
+    "definition" : "Ok."
+  },
+  {
+    "code" : "yellow",
+    "display" : "Yellow",
+    "definition" : "Please reconsider."
+  },
+  {
+    "code" : "red",
+    "display" : "Red",
+    "definition" : "Not OK."
+  }]
+}
