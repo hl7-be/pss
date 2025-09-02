@@ -16,36 +16,49 @@ Description: "ValueSet including exception codes for Patient Summary (PSS)."
 * include codes from system PSSExceptionCodes
 
 
-Instance: any-service-no-response-response
+Instance: no-response-response
 InstanceOf: PSSResponseBundle
-Title: "Generic response - No guidance found"
-Description: "Generic response - No guidance found - 1. Bundle"
+Title: "Generic response - Guidance unavailable"
+Description: "Generic response - PSS not activated- 1. Bundle"
 Usage: #example
 * identifier.value = "response01"
 * timestamp = "2025-02-20T00:00:00Z"
 * type = #collection
-* entry[0].resource = any-service-no-response-group
+* entry[0].resource = no-response-group
 * entry[=].fullUrl = "urn:uuid:c174873b-e39a-4eba-aff4-72708dd6c34d"
 
 
 
-Instance: any-service-no-response-group
+Instance: no-response-group
 InstanceOf: PSSResponseRequestGroup
-Title: "Generic response - No guidance found - 10.1. RequestGroup"
-Description: "Generic response - No guidance found - 10.1. RequestGroup"
+Title: "Generic response - PSS not activated- 10.1. RequestGroup"
+Description: "Generic response - PSS not activated- 10.1. RequestGroup"
 Usage: #example
-* id = "any-service-no-response-group"
+* id = "no-response-group"
 * status = #active
 * intent = #proposal
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
   * action[0]
-    * textEquivalent = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
-    * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * title = "PSS niet geactiveerd"
+    * title.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
-      * extension[content].valueString = "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
+      * extension[content].valueString = "PSS non activé"
     * code = PSSExceptionCodes#guidance-unavailable
- 
+    * resource = Reference(1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2)
+
+Instance: 1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2
+InstanceOf: PSSResponseCommunicationRequest
+Title: "Antimicrobiology - PSS not activated- Response"
+Description: "Antimicrobiology - PSS not activated- Response"
+Usage: #example
+* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
+* status = #active
+* payload[+].contentString
+  * extension[+]
+    * url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
+    * valueMarkdown = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
+      * insert AddTranslation(fr-BE,Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS.) 
 
 Instance: any-service-no-consent-response-response
 InstanceOf: PSSResponseBundle
@@ -174,10 +187,3 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
-
-
-
-
-
-
-
