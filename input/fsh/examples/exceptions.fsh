@@ -26,6 +26,8 @@ Usage: #example
 * type = #collection
 * entry[0].resource = no-response-group
 * entry[=].fullUrl = "urn:uuid:c174873b-e39a-4eba-aff4-72708dd6c34d"
+* entry[+].resource = 1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2
+* entry[=].fullUrl = "urn:uuid:2f5ac575-683a-4e07-b941-bc491ba3c116"
 
 
 
@@ -188,6 +190,7 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
+
 
 
 
