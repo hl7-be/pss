@@ -46,22 +46,24 @@ Parent: Task
 
 
 
-Instance: FeedbackT1
+Instance: FeedbackPSSa
 InstanceOf: FeedbackTask
-* focus.identifier.value = "FeedbackT1"
+Title: "Antimicrobiology - Feedback score 1"
+* focus.identifier.value = "30551ce1-5a28-4356-b684-1e639094ad29"
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #accepted
-* statusReason = #patient-refusal
+* statusReason.text = "Example"
 * intent = #option
 * owner.identifier.value = "Practitioner2"
 
 
-Instance: FeedbackT2
+Instance: FeedbackPSSr
 InstanceOf: FeedbackTask
-* focus.identifier.value = "FeedbackT2"
+Title: "Radiology - Feedback score 6"
+* focus.identifier.value = "30551ce1-5a28-4356-b684-1e639094ad22"
 * lastModified = "2023-10-01T12:00:00Z"
-* status = #rejected
-* statusReason = #patient-refusal
+* status = #overridden
+* statusReason = #Fast-Results
 * intent = #option
 * owner.identifier.value = "Practitioner2"
 
@@ -155,18 +157,20 @@ Description: "Feedback code reasons for PSS"
 * ^experimental = false
 * ^caseSensitive = true
 
-* #patient-preference "Due to patient preference"
-* #patient-refusal "Due to patient refusal"
-* #not-applicable "Not applicable to the current case"
-* #clinical-concerns "Recipient has concerns about applying the guidance"
-* #suboptimal-guidance "Perceived issues with guidelines (not timely, unclear...)"
-* #guidance-disagreement "Recipient disagrees with guidance"
-* #feasibility "Guidance is not considered feasible for the case"
+* #Clinic-Issue "Concerning clinical presentation"
+* #Comorbidities "Comorbidities"
+* #Fast-Results "Faster results"
+* #Pos-Prev-Exp "Positive prior experience"
+* #Insuff-Effect "Insufficient effect of recommended management in the past"
+* #Better-Tol "Better tolerated"
+* #Allergy "Allergy"
+* #Other-Reason "Other reason — which"
 
 
 ValueSet: PSSFeedbackReasonsVS
 Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSFeedbackReasons
+
 
 
