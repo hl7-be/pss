@@ -159,7 +159,7 @@ groups:
     name: Common examples
     description: Common examples - valid to multiple PSS services
     resources: 
-      - Bundle/any-service-no-response-response
+      - Bundle/no-response-response
       # - RequestGroup/any-service-no-response-group
       - Bundle/any-service-no-consent-response-response
       - RequestGroup/26491cef-c5c7-4c5f-b10b-839e938f6b3c
@@ -314,6 +314,7 @@ parameters:
   apply-publisher: 'true'
   apply-version: 'true'
 #  path-expansion-params: ../../Parameters-terminology-expansion.json
+
 
 
 
