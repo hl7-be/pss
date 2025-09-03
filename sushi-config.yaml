@@ -160,7 +160,8 @@ groups:
     description: Common examples - valid to multiple PSS services
     resources: 
       - Bundle/no-response-response
-      # - RequestGroup/any-service-no-response-group
+      - RequestGroup/no-response-group
+      - CommunicationRequest/1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2
       - Bundle/any-service-no-consent-response-response
       - RequestGroup/26491cef-c5c7-4c5f-b10b-839e938f6b3c
       - Task/26491cef-c5c7-4c5f-b10b-839e938f6b3d
@@ -314,6 +315,7 @@ parameters:
   apply-publisher: 'true'
   apply-version: 'true'
 #  path-expansion-params: ../../Parameters-terminology-expansion.json
+
 
 
 
