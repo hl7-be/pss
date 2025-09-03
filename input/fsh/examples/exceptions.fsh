@@ -39,7 +39,6 @@ Usage: #example
 * id = "no-response-group"
 * status = #active
 * intent = #proposal
-* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
 * action[0]
   * action[0]
     * title = "PSS niet geactiveerd"
@@ -190,6 +189,7 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
+
 
 
 
