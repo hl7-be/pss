@@ -49,6 +49,7 @@ Parent: Task
 Instance: FeedbackPSSa
 InstanceOf: FeedbackTask
 Title: "Antimicrobiology - Feedback score 1"
+Description: "Antimicrobiology - Provide Feedback - Prescriber selects Miconazol (score 1 - Red)"
 * focus.identifier.value = "30551ce1-5a28-4356-b684-1e639094ad29"
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #accepted
@@ -60,6 +61,7 @@ Title: "Antimicrobiology - Feedback score 1"
 Instance: FeedbackPSSr
 InstanceOf: FeedbackTask
 Title: "Radiology - Feedback score 6"
+Description: "Radiology - Provide Feedback - Prescriber selects CT, head, wo/w iv contrast (score 6 - Yellow)"
 * focus.identifier.value = "30551ce1-5a28-4356-b684-1e639094ad22"
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #overridden
@@ -171,6 +173,7 @@ ValueSet: PSSFeedbackReasonsVS
 Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSFeedbackReasons
+
 
 
 
