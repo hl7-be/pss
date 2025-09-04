@@ -83,11 +83,11 @@ Usage: #example
 
 
   * action[+]
+    * selectionBehavior = #at-most-one
     * textEquivalent = "Clindamycin local"
     * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
       * extension[content].valueString = "Clindamycine localement"
-    * resource = Reference(30551ce1-5a28-4356-b684-1e639094ad24)
     * extension[structured-rating][+]
       * extension[ratingType].valueCode = #overall
       * extension[ratingValue].valueRatio
@@ -95,6 +95,18 @@ Usage: #example
         * denominator.value = 3
       * extension[ratingText].valueMarkdown = "Over het algemeen aangewezen"
         * insert AddTranslation(fr-BE,Généralement approprié)
+    * action[0]
+      * textEquivalent = "Clindamycine ovule"
+      * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+        * extension[lang].valueCode = #fr-BE
+        * extension[content].valueString = "Clindamycine ovule"
+      * resource = Reference(30551ce1-5a28-4356-b684-1e639094ad24)
+    * action[+]
+      * textEquivalent = "Clindamycine vaginale crème"
+      * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
+        * extension[lang].valueCode = #fr-BE
+        * extension[content].valueString = "Clindamycine crème vaginale"
+      * resource = Reference(30551ce1-5a28-4356-b684-1e639094ad25)
 
 
   * action[+]
@@ -171,18 +183,9 @@ Usage: #example
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ad24
 InstanceOf: PSSResponseMedicationRequest
-Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
-Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"
+Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3.1 - Clindamycine ovule"
+Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3.1 - Clindamycine ovule"
 Usage: #example
-//* id = "30551ce1-5a28-4356-b684-1e639094ad24"
-* meta.profile = Canonical(PSSResponseMedicationRequest)
-// * extension[structured-rating][+]
-//   * extension[ratingType].valueCode = #radiationexposure
-//   * extension[ratingValue].valueRatio
-//     * numerator.value = 3
-//     * denominator.value = 3
-//   * extension[ratingText].valueMarkdown = "Recommended"
-
 * status = #active
 * intent = #proposal
 * medicationCodeableConcept.coding[+] = $atc#G01AA10
@@ -192,6 +195,39 @@ Usage: #example
   * extension[http://hl7.org/fhir/StructureDefinition/translation]
     * extension[lang].valueCode = #fr-BE
     * extension[content].valueString = "ovule : 100 mg par jour en 1 prise pendant 3 jours OU crème vaginale : 2 % 5 g par jour en 1 prise pendant 7 jours"
+* dosageInstruction.doseAndRate[0]
+  * doseQuantity.value = 100
+  * doseQuantity.unit = "mg"
+  * doseQuantity.system = "http://unitsofmeasure.org"
+* dosageInstruction.timing.repeat[0]
+  * frequency = 1
+  * period = 1
+  * periodUnit = #d 
+  * boundsDuration = 3 'd'
+
+Instance: 30551ce1-5a28-4356-b684-1e639094ad25
+InstanceOf: PSSResponseMedicationRequest
+Title: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3.2 - Clindamycine vaginale crème"
+Description: "Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3.2 - Clindamycine vaginale crème"
+Usage: #example
+* status = #active
+* intent = #proposal
+* medicationCodeableConcept.coding[+] = $atc#G01AA10
+* subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
+
+* dosageInstruction.text = "ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen"
+  * extension[http://hl7.org/fhir/StructureDefinition/translation]
+    * extension[lang].valueCode = #fr-BE
+    * extension[content].valueString = "ovule : 100 mg par jour en 1 prise pendant 3 jours OU crème vaginale : 2 % 5 g par jour en 1 prise pendant 7 jours"
+* dosageInstruction.doseAndRate[0]
+  * doseQuantity.value = 5
+  * doseQuantity.unit = "g"
+  * doseQuantity.system = "http://unitsofmeasure.org"
+* dosageInstruction.timing.repeat[0]
+  * frequency = 1
+  * period = 1
+  * periodUnit = #d 
+  * boundsDuration = 7 'd'
 
 Instance: 30551ce1-5a28-4356-b684-1e639094ad26
 InstanceOf: PSSResponseMedicationRequest
