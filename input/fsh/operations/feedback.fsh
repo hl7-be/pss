@@ -49,7 +49,7 @@ Instance: FeedbackPSSa
 InstanceOf: FeedbackTask
 Title: "Antimicrobiology - S4 Give Feedback - Request - Feedback score 1"
 Description: "Antimicrobiology - S4 Give Feedback - Request - Prescriber selects Miconazol (score 1 - Red)"
-* focus.identifier.value = "30551ce1-5a28-4356-b684-1e639094ad29"
+* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad29)
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #accepted
 * statusReason.text = "Example"
@@ -62,7 +62,7 @@ Title: "Radiology - S4 Give Feedback - Request - Feedback score 6"
 Description: "Radiology - S4 Give Feedback - Request - Prescriber selects CT, head, wo/w iv contrast (score 6 - Yellow)"
 * focus = Reference(30551ce1-5a28-4356-b684-1e639094ad22)
 * lastModified = "2023-10-01T12:00:00Z"
-* status = #overridden
+* status = #accepted
 * statusReason = #Fast-Results
 * intent = #option
 
@@ -170,6 +170,7 @@ ValueSet: PSSFeedbackReasonsVS
 Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSFeedbackReasons
+
 
 
 
