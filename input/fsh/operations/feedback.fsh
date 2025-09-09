@@ -55,7 +55,6 @@ Description: "Antimicrobiology - S4 Give Feedback - Request - Prescriber selects
 * status = #accepted
 * statusReason.text = "Example"
 * intent = #option
-* owner.identifier.value = "Practitioner2"
 
 
 Instance: FeedbackPSSr
@@ -67,7 +66,6 @@ Description: "Radiology - S4 Give Feedback - Request - Prescriber selects CT, he
 * status = #overridden
 * statusReason = #Fast-Results
 * intent = #option
-* owner.identifier.value = "Practitioner2"
 
 
 
@@ -173,6 +171,7 @@ ValueSet: PSSFeedbackReasonsVS
 Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSFeedbackReasons
+
 
 
 
