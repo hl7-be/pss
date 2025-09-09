@@ -36,8 +36,7 @@ Parent: Task
 * status 1.. MS
 //* status from (subscriber;provider) // can we use VCL here?
 * statusReason 0..1 MS
-* businessStatus 0..1 MS
-* owner 1.. MS
+* businessStatus 0..1 MS/
 
 
 * ^description = "Task to collect feedback on PSS suggestions"
@@ -171,6 +170,7 @@ ValueSet: PSSFeedbackReasonsVS
 Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSFeedbackReasons
+
 
 
 
