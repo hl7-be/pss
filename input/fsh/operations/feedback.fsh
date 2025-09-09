@@ -60,7 +60,7 @@ Instance: FeedbackPSSr
 InstanceOf: FeedbackTask
 Title: "Radiology - S4 Give Feedback - Request - Feedback score 6"
 Description: "Radiology - S4 Give Feedback - Request - Prescriber selects CT, head, wo/w iv contrast (score 6 - Yellow)"
-* focus.identifier.value = "30551ce1-5a28-4356-b684-1e639094ad22"
+* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad22)
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #overridden
 * statusReason = #Fast-Results
