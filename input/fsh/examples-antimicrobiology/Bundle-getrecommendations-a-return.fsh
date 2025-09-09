@@ -83,7 +83,7 @@ Usage: #example
 
 
   * action[+]
-    * selectionBehavior = #at-most-one
+    * selectionBehavior = #all
     * textEquivalent = "Clindamycin local"
     * textEquivalent.extension[http://hl7.org/fhir/StructureDefinition/translation]
       * extension[lang].valueCode = #fr-BE
@@ -251,3 +251,4 @@ Usage: #example
 * intent = #proposal
 * medicationCodeableConcept.text = "Miconazol"
 * subject = Reference(30551ce1-5a28-4356-b684-2e639094ad48)
+
