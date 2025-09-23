@@ -54,6 +54,7 @@ InstanceOf: FeedbackTask
 * owner.identifier.value = "Practitioner2"
 
 Instance: FeedbackOption1
+InstanceOf: FeedbackTask
 * focus = Reference(30551ce1-5a28-4356-b684-1e639044ad77)
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #rejected

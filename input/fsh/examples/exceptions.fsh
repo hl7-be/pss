@@ -59,7 +59,7 @@ Usage: #example
   * extension[+]
     * url = "http://hl7.org/fhir/StructureDefinition/rendering-markdown"
     * valueMarkdown = "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren."
-      * insert AddTranslation(fr-BE,Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information sachez que nous continuons de capturer les données transmises à PSS.)
+      * insert AddTranslation(fr-BE,Dans le cadre de la phase pilote\, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information sachez que nous continuons de capturer les données transmises à PSS.)
 //    * resource = Reference(xxxxxxx)
  
 
