@@ -1,0 +1,180 @@
+{
+  "resourceType": "RequestGroup",
+  "id": "getrecommendations-r-response-1",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"
+    ]
+  },
+  "action": [
+    {
+      "documentation": [
+        {
+          "type": "justification",
+          "label": "Appropriateness Scoring Guidelines",
+          "_label": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/language",
+                "valueCode": "en"
+              }
+            ]
+          },
+          "url": "https://environment.esriguide.org/suportingContent/12345"
+        }
+      ],
+      "action": [
+        {
+          "extension": [
+            {
+              "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating",
+              "extension": [
+                {
+                  "url": "ratingType",
+                  "valueCode": "radiationexposure"
+                },
+                {
+                  "url": "ratingValue",
+                  "valueRatio": {
+                    "numerator": {
+                      "value": 3
+                    },
+                    "denominator": {
+                      "value": 5
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating",
+              "extension": [
+                {
+                  "url": "ratingType",
+                  "valueCode": "overall"
+                },
+                {
+                  "url": "ratingValue",
+                  "valueRatio": {
+                    "numerator": {
+                      "value": 9
+                    },
+                    "denominator": {
+                      "value": 10
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "textEquivalent": "CT, head, wo iv contrast",
+          "resource": {
+            "reference": "ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating",
+              "extension": [
+                {
+                  "url": "ratingType",
+                  "valueCode": "radiationexposure"
+                },
+                {
+                  "url": "ratingValue",
+                  "valueRatio": {
+                    "numerator": {
+                      "value": 0
+                    },
+                    "denominator": {
+                      "value": 5
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating",
+              "extension": [
+                {
+                  "url": "ratingType",
+                  "valueCode": "overall"
+                },
+                {
+                  "url": "ratingValue",
+                  "valueRatio": {
+                    "numerator": {
+                      "value": 8
+                    },
+                    "denominator": {
+                      "value": 10
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "textEquivalent": "MR, head, wo iv contrast",
+          "resource": {
+            "reference": "ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating",
+              "extension": [
+                {
+                  "url": "ratingType",
+                  "valueCode": "radiationexposure"
+                },
+                {
+                  "url": "ratingValue",
+                  "valueRatio": {
+                    "numerator": {
+                      "value": 3
+                    },
+                    "denominator": {
+                      "value": 5
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating",
+              "extension": [
+                {
+                  "url": "ratingType",
+                  "valueCode": "overall"
+                },
+                {
+                  "url": "ratingValue",
+                  "valueRatio": {
+                    "numerator": {
+                      "value": 6
+                    },
+                    "denominator": {
+                      "value": 10
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "textEquivalent": "CT, head, wo/w iv contrast",
+          "resource": {
+            "reference": "ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22"
+          }
+        }
+      ],
+      "selectionBehavior": "at-most-one"
+    }
+  ],
+  "status": "active",
+  "intent": "proposal",
+  "subject": {
+    "reference": "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+  }
+}

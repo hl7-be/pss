@@ -1,0 +1,29 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "30551ce1-5a28-4356-b684-1e639094ad23",
+  "meta": {
+    "versionId": "v3",
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"
+    ]
+  },
+  "intent": "proposal",
+  "status": "active",
+  "code": {
+    "coding": [
+      {
+        "code": "114055",
+        "system": "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+        "display": "CT, head, wo iv contrast"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+  },
+  "identifier": [
+    {
+      "value": "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02"
+    }
+  ]
+}

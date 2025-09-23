@@ -1,0 +1,27 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "requestgroup-action",
+    "url": "http://example.org/fhir/SearchParameter/requestgroup-action",
+    "version": "1",
+    "name": "requestgroup-action",
+    "status": "active",
+    "code": "action",
+    "base": ["RequestGroup"],
+    "type": "reference",
+    "description": "Resources referenced in RequestGroup.action.resource",
+    "expression": "RequestGroup.action.resource",
+    "target": [
+      "ServiceRequest",
+      "MedicationRequest",
+      "Procedure",
+      "Observation",
+      "Task",
+      "MedicationDispense",
+      "MedicationAdministration",
+      "DiagnosticReport",
+      "CommunicationRequest"
+    ],
+    "multipleOr": true,
+    "multipleAnd": true
+  }
+  

@@ -45,25 +45,73 @@ Parent: Task
 
 
 
-Instance: FeedbackPSSa
+Instance: FeedbackGroup1
 InstanceOf: FeedbackTask
-Title: "Antimicrobiology - S4 Give Feedback - Request - Feedback score 1"
-Description: "Antimicrobiology - S4 Give Feedback - Request - Prescriber selects Miconazol (score 1 - Red)"
-* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad29)
+* focus = Reference(getrecommendations-r-response-1)
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #accepted
-* statusReason.text = "Example"
+* intent = #option
+* owner.identifier.value = "Practitioner2"
+
+Instance: FeedbackOption1
+* focus = Reference(30551ce1-5a28-4356-b684-1e639044ad77)
+* lastModified = "2023-10-01T12:00:00Z"
+* status = #rejected
+* statusReason.text = "Some Other Reason"
 * intent = #option
 
 
-Instance: FeedbackPSSr
+/*
+
+
+Instance: requestgroup-action
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "http://example.org/fhir/SearchParameter/requestgroup-action"
+* version = "1.0.1"
+* name = "RequestGroupActionResource"
+* status = #active
+* description = "Resources referenced anywhere in RequestGroup.action[*.].resource (supports one level of nested actions)."
+* code = #action
+* base = #RequestGroup
+* type = #reference
+* expression = "RequestGroup.action.resource | RequestGroup.action.action.resource | RequestGroup.action.action.action.resource"
+* target[0] = #ServiceRequest
+* target[+] = #MedicationRequest
+* target[+] = #Procedure
+* target[+] = #Observation
+* target[+] = #DiagnosticReport
+* target[+] = #CommunicationRequest
+* target[+] = #MedicationDispense
+* target[+] = #MedicationAdministration
+* target[+] = #Task
+* multipleOr = true
+* multipleAnd = true
+
+
+
+
+
+
+*/
+// To Do:
+// Make query for GET Feedback?identifier=PSS_ID&include=Task
+
+
+// In order to retrieve PSS feedback, the authorised user can query by Task.
+// (simple task example here)
+// or by PSS ID and get everything
+// (new fancy query example here)
+
+
+
+
+Instance: FeedbackOption2
 InstanceOf: FeedbackTask
-Title: "Radiology - S4 Give Feedback - Request - Feedback score 6"
-Description: "Radiology - S4 Give Feedback - Request - Prescriber selects CT, head, wo/w iv contrast (score 6 - Yellow)"
-* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad22)
+* focus = Reference(30551ce1-5a28-4356-b684-1e639044ad77)
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #accepted
-* statusReason = #Fast-Results
+* statusReason.text = "Some Other Reason"
 * intent = #option
 
 
