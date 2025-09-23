@@ -1,28 +1,12 @@
+
+### SET UP YOUR FHIR SERVER (adjust URLs as needed) ###
+### you can use this fro a jpa server : https://github.com/hl7-be/sandbox
 ###
-PUT http://localhost:8080/fhir/Task/FeedbackT1
+PUT http://localhost:8080/fhir/Patient/30551ce1-5a28-4356-b684-3e639094ad48
 Content-Type: application/fhir+json
 
-< Task-FeedbackT1.json
+< Patient-30551ce1-5a28-4356-b684-3e639094ad48.json
 
-
-###
-PUT http://localhost:8080/fhir/Task/FeedbackT3
-Content-Type: application/fhir+json
-
-< Task-FeedbackT3.json
-
-###
-PUT http://localhost:8080/fhir/Task/FeedbackT4
-Content-Type: application/fhir+json
-
-< Task-FeedbackT4.json
-
-
-###
-PUT http://localhost:8080/fhir/RequestGroup/getrecommendations-r-response-1
-Content-Type: application/fhir+json
-
-< RequestGroup-getrecommendations-r-response-1.json
 
 
 ###
@@ -46,10 +30,33 @@ Content-Type: application/fhir+json
 
 
 ###
-PUT http://localhost:8080/fhir/Patient/30551ce1-5a28-4356-b684-3e639094ad48
+PUT http://localhost:8080/fhir/RequestGroup/getrecommendations-r-response-1
 Content-Type: application/fhir+json
 
-< Patient-30551ce1-5a28-4356-b684-3e639094ad48.json
+< RequestGroup-getrecommendations-r-response-1.json
+
+
+
+###
+PUT http://localhost:8080/fhir/Task/FeedbackT1
+Content-Type: application/fhir+json
+
+< Task-FeedbackT1.json
+
+
+###
+PUT http://localhost:8080/fhir/Task/FeedbackT3
+Content-Type: application/fhir+json
+
+< Task-FeedbackT3.json
+
+###
+PUT http://localhost:8080/fhir/Task/FeedbackT4
+Content-Type: application/fhir+json
+
+< Task-FeedbackT4.json
+
+
 
 
 ### 
