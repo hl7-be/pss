@@ -20,23 +20,41 @@ Usage: #definition
 * type = true
 * instance = true
 
-
 * parameter[0].name = #pss-id
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
 * parameter[=].documentation = "the PSS ID"
+* parameter[=].type = #string
+
+
+* parameter[+].name = #feedback-task
+* parameter[=].use = #in
+* parameter[=].min = 1
+* parameter[=].max = "*"
+* parameter[=].documentation = "A Task representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`."
 * parameter[=].type = #Resource
+
+
+//Review feedback operation, add reference to new option considered by the physician. 
+//This would NO LONGER be feedback on a proposal, NOR submit the actual ServiceRequest because PSS doesn't want those. 
+//This would be a refence to an internal prescription ID.
+//Alternativelity, we could have a dummy ServiceRequest and see if that can follow the profile (anonymous etc).
+
 
 
 Profile: FeedbackTask
 Parent: Task
+Description: "Task to collect feedback on PSS suggestions"
 * focus 1.. MS
+* focus.identifier MS // for normal PS ID
+* focus.reference MS // used in case of new or modified orders
 * lastModified 1.. MS
-* status 1.. MS
+* status 1.. MS  // can only be accepted or rejected. For Overridden, please use Business Status
+//* businessStatus 0..1 MS
+* statusReason 0..1 MS //Why was it accepted or rejected
+
 //* status from (subscriber;provider) // can we use VCL here?
-* statusReason 0..1 MS
-* businessStatus 0..1 MS
 
 
 * ^description = "Task to collect feedback on PSS suggestions"
@@ -47,6 +65,7 @@ Parent: Task
 
 Instance: FeedbackGroup1
 InstanceOf: FeedbackTask
+Description: "Task to collect feedback on PSS suggestions for Group 1"
 * focus = Reference(getrecommendations-r-response-1)
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #accepted
@@ -55,6 +74,7 @@ InstanceOf: FeedbackTask
 
 Instance: FeedbackOption1
 InstanceOf: FeedbackTask
+Description: "Task to collect feedback on PSS suggestions for Option 1"
 * focus = Reference(30551ce1-5a28-4356-b684-1e639044ad77)
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #rejected
@@ -109,6 +129,7 @@ Usage: #definition
 
 Instance: FeedbackOption2
 InstanceOf: FeedbackTask
+Description: "Task to collect feedback on PSS suggestions for Option 2"
 * focus = Reference(30551ce1-5a28-4356-b684-1e639044ad77)
 * lastModified = "2023-10-01T12:00:00Z"
 * status = #accepted
@@ -205,14 +226,14 @@ Description: "Feedback code reasons for PSS"
 * ^experimental = false
 * ^caseSensitive = true
 
-* #Clinic-Issue "Concerning clinical presentation"
-* #Comorbidities "Comorbidities"
-* #Fast-Results "Faster results"
+* #clinic-issue "Concerning clinical presentation"
+* #comorbidities "Comorbidities"
+* #fast-results "Faster results"
 * #Pos-Prev-Exp "Positive prior experience"
-* #Insuff-Effect "Insufficient effect of recommended management in the past"
-* #Better-Tol "Better tolerated"
-* #Allergy "Allergy"
-* #Other-Reason "Other reason — which"
+* #insuff-effect "Insufficient effect of recommended management in the past"
+* #better-tol "Better tolerated"
+* #allergy "Allergy"
+* #other-reason "Other reason — which"
 
 
 ValueSet: PSSFeedbackReasonsVS
