@@ -37,13 +37,10 @@ Description: "Feedback containing the acceptance of the PSS results."
 
 * PSS-ID 1..1 string  "The uuid from the response - the ID of the RequestGroup"
 * outcomeTimeStamp 1..1 dateTime "The time when the feedback is given"
-* outcome 1..1 code "accepted, rejected, overridden"
+* outcome 1..1 code "accepted, rejected"
 * suggestionOutcome 0..* BackboneElement "List of suggestions provided by PSS for which feedback is given"
-  * suggestionId 0..1 string "The suggestion ID - or 'other' if the prescriber preferred another option"
-// this can be the action linkId. or the request identifier. but action.linkedId will be used by tooling
-// or both:
-//  * suggestionLinkId would be useful if we wanted to link to plandef. but we can do that indirectly
-  * outcome 1..1 code "accepted or overridden"
+  * suggestionId 0..1 string "The suggestion ID - or a new ID if the prescriber preferred another option"
+  * outcome 1..1 code "accepted or rejected"
   * overrideReason 0..1 CodeableConcept "The reason for overriding - code or text"
 // there may be a taxonomy.
 // https://cdsic.ahrq.gov/cdsic/override-taxonomy
