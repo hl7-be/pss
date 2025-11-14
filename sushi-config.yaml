@@ -90,8 +90,11 @@ dependencies:
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
-#resources:
-#  Patient/my-example-patient:
+resources:
+  Parameters/feedback-accepted-green:
+    name: Feedback – accepted green recommendation
+    description: Example Parameters payload for the Feedback operation
+    exampleBoolean: true#  Patient/my-example-patient:
 #    name: My Example Patient
 #    description: An example Patient
 #    exampleBoolean: true
@@ -318,6 +321,7 @@ parameters:
   apply-publisher: 'true'
   apply-version: 'true'
 #  path-expansion-params: ../../Parameters-terminology-expansion.json
+
 
 
 
