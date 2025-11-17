@@ -171,7 +171,8 @@ Usage: #example
 * focus.identifier.value = "114054" // QSI internal code – CT, head, with/without IV contrast
 * status = #accepted
 * intent = #option
-* code = PSSQSIProcedures#114054 "CT, head, with/without IV contrast"
+* statusReason.coding = PSSFeedbackReasons#other-reason
+* statusReason.text = "Some Other Reason"
 * lastModified = "2025-05-28T10:10:00+02:00"
 
 CodeSystem: PSSFeedbackCodes
@@ -212,6 +213,7 @@ ValueSet: PSSFeedbackReasonsVS
 Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSFeedbackReasons
+
 
 
 
