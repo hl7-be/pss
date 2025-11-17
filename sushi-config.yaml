@@ -63,11 +63,6 @@ dependencies:
 
 # The resources property corresponds to IG.definition.resource.
 # We explicitly declare the Parameters/feedback-accepted-green example here.
-resources:
-  "Parameters/feedback-accepted-green":
-    name: "Feedback accepted green recommendation"
-    description: "Example Parameters payload for the Feedback operation"
-    exampleBoolean: true
 #  Patient/my-example-patient:
 #    name: My Example Patient
 #    description: An example Patient
@@ -249,3 +244,4 @@ parameters:
   apply-publisher: 'true'
   apply-version: 'true'
 #  path-expansion-params: ../../Parameters-terminology-expansion.json
+
