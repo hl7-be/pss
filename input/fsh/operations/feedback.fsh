@@ -62,29 +62,6 @@ Description: "Task to collect feedback on PSS suggestions"
 * ^status = #active
 
 
-
-Instance: FeedbackGroup1
-InstanceOf: FeedbackTask
-Description: "Task to collect feedback on PSS suggestions for Group 1"
-* focus = Reference(getrecommendations-r-response-1)
-* lastModified = "2023-10-01T12:00:00Z"
-* status = #accepted
-* intent = #option
-* owner.identifier.value = "Practitioner2"
-
-Instance: FeedbackOption1
-InstanceOf: FeedbackTask
-Description: "Task to collect feedback on PSS suggestions for Option 1"
-* focus = Reference(30551ce1-5a28-4356-b684-1e639044ad77)
-* lastModified = "2023-10-01T12:00:00Z"
-* status = #rejected
-* statusReason.text = "Some Other Reason"
-* intent = #option
-
-
-/*
-
-
 Instance: requestgroup-action
 InstanceOf: SearchParameter
 Usage: #definition
@@ -124,24 +101,12 @@ Usage: #definition
 // or by PSS ID and get everything
 // (new fancy query example here)
 
-
-
-
-Instance: FeedbackOption2
-InstanceOf: FeedbackTask
-Description: "Task to collect feedback on PSS suggestions for Option 2"
-* focus = Reference(30551ce1-5a28-4356-b684-1e639044ad77)
-* lastModified = "2023-10-01T12:00:00Z"
-* status = #accepted
-* statusReason.text = "Some Other Reason"
-* intent = #option
-
-Instance: feedback-radiology
-Title: "Feedback: radiology"
+Instance: radiology-feedback
+Title: "Radiology feedback"
 InstanceOf: Parameters
 Usage: #example
 // session identifier
-* id = "feedback-radiology"
+* id = "radiology-feedback"
 * parameter[+].name = "pss-id"
 * parameter[=].valueString = "test-500089-2025-50060793"
 
@@ -153,7 +118,9 @@ Usage: #example
 * parameter[+].name = "feedback-task"
 * parameter[=].resource = task-accepted-orange
 
-Instance: task-accepted-green
+Instance: task-accepted-green-r
+Title: "Radiology - Select green recommendation"
+Description: "Prescriber selects a green recommendation"
 InstanceOf: FeedbackTask
 Usage: #example
 * id = "task-accepted-green"
@@ -163,7 +130,9 @@ Usage: #example
 * intent = #option
 * lastModified = "2025-05-28T10:10:00+02:00"
 
-Instance: task-accepted-orange
+Instance: task-accepted-orange-r
+Title: "Radiology - Select orange recommendation"
+Description: "Prescriber selects an orange recommendation"
 InstanceOf: FeedbackTask
 Usage: #example
 * id = "task-accepted-orange"
@@ -213,6 +182,7 @@ ValueSet: PSSFeedbackReasonsVS
 Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSFeedbackReasons
+
 
 
 
