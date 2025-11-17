@@ -6,7 +6,6 @@
 # │  specific packageId is also provided in this file.                                             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-
 id: hl7.fhir.be.pss
 canonical: https://www.ehealth.fgov.be/standards/fhir/pss
 # url: http://example.com/fhir/example/ImplementationGuide/my-ig
@@ -51,10 +50,8 @@ contact:
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
 # code syntax can be used here.
-
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
-
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -64,32 +61,14 @@ dependencies:
     id: cpg
     version: 2.0.0
 
-
-# The global property corresponds to the IG.global property, but it
-# uses the type as the YAML key and the profile as its value. Since
-# FHIR does not explicitly disallow more than one profile per type,
-# neither do we; the value can be a single profile URL or an array
-# of profile URLs.
-#global:
-#  Patient: http://example.org/fhir/StructureDefinition/my-patient-profile
-#  Encounter: http://example.org/fhir/StructureDefinition/my-encounter-profile
-
 # The resources property corresponds to IG.definition.resource.
-# SUSHI can auto-generate all of the resource entries based on
-# the FSH definitions and/or information in any user-provided
-# JSON or XML resource files. If the generated entries are not
-# sufficient or complete, however, the author can add entries
-# here. If the reference matches a generated entry, it will
-# replace the generated entry. If it doesn't match any generated
-# entries, it will be added to the generated entries. The format
-# follows IG.definition.resource with the following differences:
-#   * use IG.definition.resource.reference.reference as the YAML key
-#   * specify "omit" to omit a FSH-generated resource from the
-#     resource list.
-#   * groupingId can be used, but top-level groups syntax may be a
-#     better option (see below).
-# The following are simple examples to demonstrate what this might
-# look like:
+# We explicitly declare the Parameters/feedback-accepted-green example here.
+resources:
+  "Parameters/feedback-accepted-green":
+    name: "Feedback accepted green recommendation"
+    description: "Example Parameters payload for the Feedback operation"
+    exampleBoolean: true
+#  Patient/my-example-patient:
 #    name: My Example Patient
 #    description: An example Patient
 #    exampleBoolean: true
@@ -144,14 +123,12 @@ groups:
       - StructureDefinition/AnswerOptionAdditionalCode
 #      - StructureDefinition/PSSCodedRating
 
-
   Feedback:
     name: Feedback
     description: Feedback resources for the PSS services
     resources:
       - OperationDefinition/Feedback
 #     - Parameters/feedback-example
-
 
   Common-resources:
     name: Common examples
@@ -164,8 +141,6 @@ groups:
       - RequestGroup/26491cef-c5c7-4c5f-b10b-839e938f6b3c
       - Task/26491cef-c5c7-4c5f-b10b-839e938f6b3d
       - Questionnaire/26491cef-c5c7-4c5f-b10b-839e938f6b3e
-
-
 
   Antimicrobiology:
     name: Examples - Antimicrobiology
@@ -229,24 +204,16 @@ groups:
       - ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23
       - ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22
       - ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77
-#     - Parameters/feedback-accepted-green
+      - Parameters/feedback-accepted-green
 #      - Task/FeedbackPSSr
 #      - ServiceRequest/ct-head-with-or-without-contrast
 #      - ServiceRequest/mr-head-without-contrast
-      
 #      - ServiceRequest/ct-head-iv-contrast
-
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
 # this file, it is assumed that the author will fully manage the
 # pages section and SUSHI will not generate any page entries.
-# The page file name is used as the key. If title is not provided,
-# then the title will be generated from the file name.  If a
-# generation value is not provided, it will be inferred from the
-# file name extension.  Any subproperties that are valid filenames
-# with supported extensions (e.g., .md/.xml) will be treated as
-# sub-pages.
 pages:
   index.md:
     title: Home
@@ -258,29 +225,10 @@ pages:
       title: "Radiology"
     antimicrobiology.md:
       title: "Antimicrobiology"
-  changes.xml:
-  downloads.xml:
-# The ImplementationGuide resource defines several other properties
-# not represented above. These properties can be used as-is and
-# should follow the format defined in ImplementationGuide:
-# * meta
-# * implicitRules
-# * language
-# * text
-# * contained
-# * extension
-# * modifierExtension
-# * experimental
-# * useContext
-# * copyright
-# * packageId
+  changes.xml: {}
+  downloads.xml: {}
 
 # The menu property will be used to generate the input/menu.xml file.
-# The menu is represented as a simple structure where the YAML key
-# is the menu item name and the value is the URL. The IG publisher
-# currently only supports one level deep on sub-menus.
-# To provide a custom menu.xml file, do not include this property and
-# include a `menu.xml` file in input/includes.
 menu:
   Home: index.html
 #  Guidance: guidance.html
@@ -289,24 +237,9 @@ menu:
   Changes: changes.html
 #  History: ../history.html
 
-# The parameters property represents IG.definition.parameter. Rather
-# than a list of code/value pairs (as in the ImplementationGuide
-# resource), the code is the YAML key. If a parameter allows repeating
-# values, the value in the YAML should be a sequence/array. For a
-# partial list of allowed parameters see:
-# https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-
-#  excludettl: true
-#  validation: [allow-any-extensions, no-broken-links]
-
-# The FSHOnly flag indicates if only FSH resources should be exported.
-# If set to true, no IG related content will be generated.
-# The default value for this property is false.
+# The parameters property represents IG.definition.parameter.
 FSHOnly: false
 
-# When set to true, the "short" and "definition" field on the root element of an Extension will
-# be set to the "Title" and "Description" of that Extension. Default is true.
-#applyExtensionMetadataToRoot: false
 parameters:
   pin-canonicals: pin-multiples
   auto-oid-root: 2.16.840.1.113883.2.51.22.2
@@ -316,16 +249,3 @@ parameters:
   apply-publisher: 'true'
   apply-version: 'true'
 #  path-expansion-params: ../../Parameters-terminology-expansion.json
-
-
-
-
-
-
-
-
-
-
-
-
-
