@@ -136,69 +136,26 @@ Description: "Task to collect feedback on PSS suggestions for Option 2"
 * statusReason.text = "Some Other Reason"
 * intent = #option
 
+Instance: feedback-accepted-green
+Title: "Feedback: accepted green recommendation"
+InstanceOf: Parameters
+Usage: #example
+* id = "feedback-accepted-green"
+* parameter[+].name = "pss-id"
+* parameter[=].valueString = "test-500089-2025-50060793"
+* parameter[+].name = "feedback-task"
+* parameter[=].resource = task-accepted-green
 
-
-
-// http://localhost:8080/Task?focus={pss-id}
-
-
-
-
-
-// #Identifier // or string? Identifier is a superset.
-
-// * parameter[+].name = #feedback-timestamp
-// * parameter[=].use = #in
-// * parameter[=].min = 1
-// * parameter[=].max = "1"
-// * parameter[=].documentation = "Feedback time stamp"
-// * parameter[=].type = #dateTime
-
-// * parameter[+].name = #outcome
-// * parameter[=].use = #in
-// * parameter[=].min = 1
-// * parameter[=].max = "1"
-// * parameter[=].documentation = "Overall outcome"
-// * parameter[=].type = #Coding
-
-
-
-// * parameter[+].name = #suggestion-feedback
-// * parameter[=].use = #in
-// * parameter[=].min = 0
-// * parameter[=].max = "*"
-// * parameter[=].documentation = "Feedback on individual suggestions"
-
-
-// * parameter[=].part[0].name = #suggestion-id
-// * parameter[=].part[=].use = #in
-// * parameter[=].part[=].min = 1
-// * parameter[=].part[=].max = "1"
-// * parameter[=].part[=].documentation = "The suggestion id"
-// * parameter[=].part[=].type = #Identifier
-
-// * parameter[=].part[+].name = #outcome
-// * parameter[=].part[=].use = #in
-// * parameter[=].part[=].min = 1
-// * parameter[=].part[=].max = "1"
-// * parameter[=].part[=].documentation = "The outcome of the suggestion"
-// * parameter[=].part[=].type = #Coding
-
-// * parameter[=].part[=].binding.strength = #required
-// * parameter[=].part[=].binding.valueSet = Canonical(PSSFeedbackCodesVS)
-
-
-// * parameter[=].part[+].name = #override-reason
-// * parameter[=].part[=].use = #in
-// * parameter[=].part[=].min = 0
-// * parameter[=].part[=].max = "1"
-// * parameter[=].part[=].documentation = "The reason for override or rejection"
-// * parameter[=].part[=].type = #Coding
-
-// * parameter[=].part[=].binding.strength = #required
-// * parameter[=].part[=].binding.valueSet = Canonical(PSSFeedbackReasonsVS)
-
-
+// Conforms to your FeedbackTask profile
+Instance: task-accepted-green
+InstanceOf: FeedbackTask
+Usage: #example
+* id = "task-accepted-green"
+* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad23)
+* focus.identifier.value = "114055" // QSI internal code – CT head w/o contrast
+* status = #accepted
+* intent = #option
+* lastModified = "2025-05-28T10:10:00+02:00"
 
 
 
@@ -240,6 +197,7 @@ ValueSet: PSSFeedbackReasonsVS
 Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSFeedbackReasons
+
 
 
 
