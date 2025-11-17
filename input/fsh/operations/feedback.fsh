@@ -136,17 +136,23 @@ Description: "Task to collect feedback on PSS suggestions for Option 2"
 * statusReason.text = "Some Other Reason"
 * intent = #option
 
-Instance: feedback-accepted-green
-Title: "Feedback: accepted green recommendation"
+Instance: feedback-radiology
+Title: "Feedback: radiology"
 InstanceOf: Parameters
 Usage: #example
-* id = "feedback-accepted-green"
+// session identifier
+* id = "feedback-radiology"
 * parameter[+].name = "pss-id"
 * parameter[=].valueString = "test-500089-2025-50060793"
+
+//select green recommendation
 * parameter[+].name = "feedback-task"
 * parameter[=].resource = task-accepted-green
 
-// Conforms to your FeedbackTask profile
+//select orange/red recommendation
+* parameter[+].name = "feedback-task"
+* parameter[=].resource = task-accepted-orange
+
 Instance: task-accepted-green
 InstanceOf: FeedbackTask
 Usage: #example
@@ -157,7 +163,16 @@ Usage: #example
 * intent = #option
 * lastModified = "2025-05-28T10:10:00+02:00"
 
-
+Instance: task-accepted-orange
+InstanceOf: FeedbackTask
+Usage: #example
+* id = "task-accepted-orange"
+* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad23)
+* focus.identifier.value = "114054" // QSI internal code – CT, head, with/without IV contrast
+* status = #accepted
+* intent = #option
+* code = PSSQSIProcedures#114054 "CT, head, with/without IV contrast"
+* lastModified = "2025-05-28T10:10:00+02:00"
 
 CodeSystem: PSSFeedbackCodes
 Title: "PSS Feedback Codes"
@@ -197,6 +212,7 @@ ValueSet: PSSFeedbackReasonsVS
 Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSFeedbackReasons
+
 
 
 
