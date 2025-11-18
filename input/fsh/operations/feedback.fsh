@@ -84,8 +84,6 @@ Usage: #definition
 * multipleOr = true
 * multipleAnd = true
 
-
-*/
 // To Do:
 // Make query for GET Feedback?identifier=PSS_ID&include=Task
 
