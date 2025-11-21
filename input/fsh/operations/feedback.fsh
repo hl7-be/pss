@@ -110,6 +110,10 @@ Usage: #example
 * parameter[+].name = "feedback-task"
 * parameter[=].resource = task-accepted-orange-r
 
+//select other recommendation
+* parameter[+].name = "feedback-task"
+* parameter[=].resource = task-accepted-other-r
+
 Instance: task-accepted-green-r
 Title: "Radiology - Select green recommendation"
 Description: "Prescriber selects a green recommendation"
@@ -136,6 +140,19 @@ Usage: #example
 * statusReason.text = "Some Other Reason"
 * lastModified = "2025-05-28T10:10:00+02:00"
 
+Instance: task-accepted-other-r
+Title: "Radiology - Select other recommendation"
+Description: "Prescriber selects an other recommendation"
+InstanceOf: FeedbackTask
+Usage: #example
+* id = "task-accepted-other-r"
+* focus = Reference(13456)
+* status = #accepted
+* intent = #option
+* statusReason.coding = PSSrFeedbackReasons#OtherReason
+* statusReason.text = "Better alternative that was not provided by PSS"
+* lastModified = "2025-05-28T10:10:00+02:00"
+
 Instance: antimicrobial-feedback-green
 Title: "Antimicrobial feedback - green recommendation"
 Description: "Prescriber selects a green antimicrobial recommendation"
@@ -145,7 +162,7 @@ Usage: #example
 
 // session identifier
 * parameter[+].name = "pss-id"
-* parameter[=].valueString = "test-500089-2025-60012345"
+* parameter[=].valueString = "0051510d-79e7-4bc6-a4f5-6b0654b23c03"
 
 // select green recommendation
 * parameter[+].name = "feedback-task"
@@ -172,7 +189,7 @@ Usage: #example
 
 // session identifier
 * parameter[+].name = "pss-id"
-* parameter[=].valueString = "test-500089-2025-60012345"
+* parameter[=].valueString = "0051510d-79e7-4bc6-a4f5-6b0654b23c03"
 
 // select orange/red recommendation
 * parameter[+].name = "feedback-task"
@@ -245,3 +262,4 @@ Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSaFeedbackReasons
 * codes from system PSSrFeedbackReasons
+
