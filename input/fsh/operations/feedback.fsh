@@ -147,7 +147,8 @@ InstanceOf: FeedbackTask
 Usage: #example
 * id = "task-accepted-other-r"
 * focus.display = "MR, cervical spine, wo/w iv contrast"
-* focus.identifier = $sct#42807009
+* focus.identifier.system = $sct
+* focus.identifier.value = "42807009"
 * status = #accepted
 * intent = #option
 * statusReason.coding = PSSrFeedbackReasons#OtherReason
@@ -263,5 +264,6 @@ Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSaFeedbackReasons
 * codes from system PSSrFeedbackReasons
+
 
 
