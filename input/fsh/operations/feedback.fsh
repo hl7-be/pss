@@ -187,7 +187,7 @@ Title: "Antimicrobial feedback - red recommendation"
 Description: "Prescriber selects an red antimicrobial recommendation with a reason"
 InstanceOf: Parameters
 Usage: #example
-* id = "antimicrobial-feedback-orange"
+* id = "antimicrobial-feedback-red"
 
 // session identifier
 * parameter[+].name = "pss-id"
@@ -264,6 +264,7 @@ Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSaFeedbackReasons
 * codes from system PSSrFeedbackReasons
+
 
 
 
