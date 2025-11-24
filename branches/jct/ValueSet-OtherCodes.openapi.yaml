@@ -1,0 +1,35 @@
+openapi: 3.0.3
+info:
+  title: Other Codes Schema API
+  description: JSON Schema for Other Codes ValueSet codes. Generated from FHIR expansions.
+  version: 1.0.0
+paths:
+  /ValueSet-OtherCodes.schema.json:
+    get:
+      summary: JSON Schema definition for the enumeration ValueSet-OtherCodes
+      description: This endpoint serves the JSON Schema definition for the enumeration
+        ValueSet-OtherCodes.
+      responses:
+        '200':
+          description: The JSON Schema for ValueSet-OtherCodes
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./ValueSet-OtherCodes.schema.json
+components:
+  schemas:
+    ValueSet-OtherCodes:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-OtherCodes.schema.json
+      title: Other Codes Schema
+      description: JSON Schema for Other Codes ValueSet codes. Generated from FHIR
+        expansions.
+      type: string
+      enum:
+      - '197903003'
+      - '30116001'
+      - '236684001'
+      - '197850006'
+      fhir:valueSet: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes
+      fhir:version: 1.0.0
+      fhir:expansionTimestamp: '2025-09-04T10:09:26+00:00'

@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.be.pss"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.pss</b></p><a name="hl7.fhir.be.pss"> </a><a name="hchl7.fhir.be.pss"> </a><a name="hl7.fhir.be.pss-en-US"> </a><h2>PrescriptionSearchSupport</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss</pre><div><p>Example IG exercises many of the fields in a SUSHI configuration.</p>
+</div></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss"/>
+  <version value="1.0.0"/>
+  <name value="PrescriptionSearchSupport"/>
+  <title value="Prescription Search Support"/>
+  <status value="draft"/>
+  <date value="2024-04-26"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Example IG exercises many of the fields in a SUSHI configuration."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.be.pss"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="cpg">
+    <uri value="https://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg"/>
+    <packageId value="hl7.fhir.uv.cpg"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/pss/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/pss/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <grouping id="LogicalModels">
+      <name value="Logical Models"/>
+      <description value="Data Models representing the data structures and requirements for interoperability."/>
+    </grouping>
+    <grouping id="PlanDefinitions">
+      <name value="PlanDefinitions (services)"/>
+      <description value="PlanDefinitions defining the service endpoints for using the PSS. These have the inputs and outputs represented by the profiles"/>
+    </grouping>
+    <grouping id="Profiles">
+      <name value="Resource Profiles"/>
+      <description value="These define constraints on FHIR resources for systems conforming to this implementation guide"/>
+    </grouping>
+    <grouping id="Extensions">
+      <name value="Extensions"/>
+      <description value="These define additional elements that can be exchanged with the respective FHIR resources"/>
+    </grouping>
+    <grouping id="Antimicrobiology">
+      <name value="Examples - Antimicrobiology"/>
+      <description value="Antimicrobiology PSS resource examples"/>
+    </grouping>
+    <grouping id="Radiology">
+      <name value="Examples - Radiology"/>
+      <description value="Radiology PSS resource examples"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+      </reference>
+      <name value="30551ce1-5a28-4356-b684-2e639094ad48"/>
+      <description value="Example anonymised patient A"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
+      </reference>
+      <name value="30551ce1-5a28-4356-b684-3e639094ad48"/>
+      <description value="Example anonymised patient R"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AnswerOptionAdditionalCode"/>
+      </reference>
+      <name value="AnswerOption Additional Code"/>
+      <description value="An additional code for an option in a choice question"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/getdatatocollect-a-data"/>
+      </reference>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 1. - Bundle"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 1. Bundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/30551ce1-5a28-4356-b684-2e639094ad01"/>
+      </reference>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 1.1. Diagnostic hypothesis - vulvovaginitis"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 1.1. Diagnostic hypothesis - vulvovaginitis"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/30551ce1-5a28-4356-b684-2e639094ad02"/>
+      </reference>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 1.2. Known allergy - sulfonamide"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 1.2. Known allergy - sulfonamide"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/30551ce1-5a28-4356-b684-2e639094ad12"/>
+      </reference>
+      <name value="Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Request - 1.3. Considered treatment - clindamycin"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/getdatatocollect-a-response"/>
+      </reference>
+      <name value="Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1. Bundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RequestGroup"/>
+      </extension>
+      <reference>
+        <reference value="RequestGroup/getdatatocollect-a-response-group"/>
+      </reference>
+      <name value="Antimicrobiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.1. RequestGroup"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/30551ce1-5a28-4356-b684-11ef43a67755"/>
+      </reference>
+      <name value="Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.2. Task for collecting information"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c"/>
+      </reference>
+      <name value="Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
+      <description value="Antimicrobiology - S2 Get data to collect - Response - 1.3. Questionnaire"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/getrecommendations-a-data"/>
+      </reference>
+      <name value="Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Request- 1. Bundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/30551ce1-5a28-4356-b684-2e639094ac02"/>
+      </reference>
+      <name value="Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Request- 1.1. QuestionnaireResponse"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/getrecommendations-a-response"/>
+      </reference>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1. Bundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RequestGroup"/>
+      </extension>
+      <reference>
+        <reference value="RequestGroup/getrecommendations-a-response-group"/>
+      </reference>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CommunicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="CommunicationRequest/30551ce1-5a28-4356-b684-1e639094dd22"/>
+      </reference>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.1. option 1 - Generic Antibiotic Advice"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23"/>
+      </reference>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.2. option 2 - metronidazol"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24"/>
+      </reference>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.3. option 3 - clindamycin"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad26"/>
+      </reference>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.4. option 4 - fluconazol"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad29"/>
+      </reference>
+      <name value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
+      <description value="Antimicrobiology - S3 Get Recommendations - Response - 1.1.5. option 5 - miconazol"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BacterialCodes"/>
+      </reference>
+      <name value="Bacterial Codes"/>
+      <description value="Bacterial Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CandidaCodes"/>
+      </reference>
+      <name value="Candida Codes"/>
+      <description value="Candida Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ChlamydiaCodes"/>
+      </reference>
+      <name value="Chlamydia Codes"/>
+      <description value="Chlamydia Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CodeValueSet"/>
+      </reference>
+      <name value="Code ValueSet"/>
+      <description value="A ValueSet used when a question / item can correspond not just to a single code but to a set of concepts"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Extensions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/PSSRatingTypes"/>
+      </reference>
+      <name value="CodeSystem: Types of rating provided by the PSS system"/>
+      <description value="CodeSystem: Types of rating provided by the PSS system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CompromisedImmuneSystemCodes"/>
+      </reference>
+      <name value="CompromisedImmuneSystem Codes"/>
+      <description value="CompromisedImmuneSystem Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/GetDataToCollect"/>
+      </reference>
+      <name value="GetDataToCollect"/>
+      <description value="Get Data to Collect"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="PlanDefinitions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/GetDiagnoses"/>
+      </reference>
+      <name value="GetDiagnoses"/>
+      <description value="Get Diagnoses Data"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="PlanDefinitions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/GetRecommendations"/>
+      </reference>
+      <name value="GetRecommendations"/>
+      <description value="Get recommendations for potential treatments based on patient information"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="PlanDefinitions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/GonokokCodes"/>
+      </reference>
+      <name value="Gonokok Codes"/>
+      <description value="Gonokok Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MycoplasmaCodes"/>
+      </reference>
+      <name value="Mycoplasma Codes"/>
+      <description value="Mycoplasma Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OncologyPatientCodes"/>
+      </reference>
+      <name value="OncologyPatient Codes"/>
+      <description value="OncologyPatient Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OtherCodes"/>
+      </reference>
+      <name value="Other Codes"/>
+      <description value="Other Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PregnancyCodes"/>
+      </reference>
+      <name value="Pregnancy Codes"/>
+      <description value="Pregnancy Codes - used for EHRs to consider pregnancy status"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Antimicrobiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSPatient"/>
+      </reference>
+      <name value="PSS anonymised Patient"/>
+      <description value="PSS anonymised Patient"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSDataAcquisitionForm"/>
+      </reference>
+      <name value="PSS Data Acquisition Form"/>
+      <description value="The PSS Data Acquisition Form is used to inform what data needs to be acquired and provided to the PSS system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSStructuredRating"/>
+      </reference>
+      <name value="PSS Rating Extension"/>
+      <description value="A clinician-friendly rating, or score, for the recommendation; patient-friendly if the recommendation is patient-facing."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Extensions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSRelevantAge"/>
+      </reference>
+      <name value="PSS Relevant Patient Age"/>
+      <description value="The approximate, relevant age of the patient at the time of the search."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Extensions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSRequest"/>
+      </reference>
+      <name value="PSS Request"/>
+      <description value="A request for PSS (Prescriber Support System) results."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="LogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSRequestBundle"/>
+      </reference>
+      <name value="PSS Request Bundle"/>
+      <description value="The PSS Request Data Bundle is used to request data from the PSS system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponse"/>
+      </reference>
+      <name value="PSS Response"/>
+      <description value="A response containing the results from the PSS."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="LogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseBundle"/>
+      </reference>
+      <name value="PSS Response Bundle"/>
+      <description value="The PSS Response Bundle is used to return data from the PSS system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseCommunicationRequest"/>
+      </reference>
+      <name value="PSS Response Communication Request"/>
+      <description value="All PSS responses contain a PSS Communication Request conformant to this profile."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseMedicationRequest"/>
+      </reference>
+      <name value="PSS Response Medication Request"/>
+      <description value="The PSS Response Medication Request is used when the PSS system returns a MedicationRequest"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseRequestGroup"/>
+      </reference>
+      <name value="PSS Response Request Group"/>
+      <description value="All PSS responses contain a PSS RequestGroup conformant to this profile."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PSSResponseServiceRequest"/>
+      </reference>
+      <name value="PSS Response Service Request"/>
+      <description value="The PSS Response Service Request is used when the PSS system returns a ServiceRequest"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Profiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/PSSQSIConditions"/>
+      </reference>
+      <name value="PSS-QSI condition codes"/>
+      <description value="Condition codes from the QSI system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/PSSQSIProcedures"/>
+      </reference>
+      <name value="PSS-QSI procedure codes"/>
+      <description value="Procedure codes from the QSI system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/radiology-getdiagnoses"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Request - 1. Bundle"/>
+      <description value="Radiology - S1 Get Diagnoses - Request - 1. Bundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ataxia"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Request - 1.1. Observed data"/>
+      <description value="Radiology - S1 Get Diagnoses - Request - 1.1. Observed data"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/ct-head-wo-iv-contrast"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Request - 1.3 Original suggestion - CT head wo IV contrast"/>
+      <description value="Radiology - S1 Get Recommendations - Request - 1.3 Original suggestion - CT head wo IV contrast"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/radiology-getdiagnoses-response"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1. Bundle"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1. Bundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RequestGroup"/>
+      </extension>
+      <reference>
+        <reference value="RequestGroup/30551ce1-5a28-4356-b684-3e639094ad08"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.1. RequestGroup with options"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/54aad964-ad8a-4985-8ff1-3b09d707ee1e"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.10. Task to propose diagnosis - Post-trauma ataxia"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/b90ca57a-1ae5-4ff6-8dce-48488660ea65"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.11. Diagnosis - Post-trauma ataxia"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/1cdd5aab-1d4d-4965-bbe1-c851698d07f0"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.2. Task to propose diagnosis - Stroke"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/287e8fe2-3e83-44bd-92e7-962bc90b6d67"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.3. Diagnosis - Stroke"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/db2698ba-cd0b-4c08-b57c-868ab5b95af6"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.4. Task to propose diagnosis - Infection"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/5f3aafb8-643c-4ed5-ad54-199939e7b2d1"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.5. Diagnosis - Infection"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/30551ce1-5a28-4356-b684-3e639094ad11"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.6. Task to propose diagnosis - Head trauma"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/30551ce1-5a28-4356-b684-4e639094ad11"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.7. Diagnosis - Head trauma"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/cfdfee5b-1db1-43fe-af72-4ea54b4e1a16"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.8. Task to propose diagnosis - Chronic or slow progression-ataxia"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.8 Task to propose diagnosis - Chronic or slow progression-ataxia"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/72d3ced6-5133-4042-931e-04284c9f4283"/>
+      </reference>
+      <name value="Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia"/>
+      <description value="Radiology - S1 Get Diagnoses - Response - 1.9. Diagnosis - Chronic or slow progression-ataxia"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/getrecommendations-data3"/>
+      </reference>
+      <name value="Radiology - S3 Get Recommendations - Request- 1. request Bundle"/>
+      <description value="Radiology - S3 Get Recommendations - Request - 1. request Bundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/pss-30551ce1-5a28-4356-b684-4e639094ad11"/>
+      </reference>
+      <name value="Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma"/>
+      <description value="Radiology - S3 Get Recommendations - Request- 1.1. Initial diagnosis of head trauma"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/pss-ct-head-wo-iv-contrast"/>
+      </reference>
+      <name value="Radiology - S3 Get Recommendations - Request- 1.2 Scored procedure from initially considered: CT head wo IV contrast"/>
+      <description value="Radiology - S3 Get Recommendations - Request- 1.2. Initially considered procedure: CT head wo IV contrast"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/getrecommendations-r-response"/>
+      </reference>
+      <name value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
+      <description value="Radiology - S3 Get Recommendations - Response - 1. Bundle"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RequestGroup"/>
+      </extension>
+      <reference>
+        <reference value="RequestGroup/getrecommendations-r-response-1"/>
+      </reference>
+      <name value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
+      <description value="Radiology - S3 Get Recommendations - Response - 1.1. RequestGroup"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23"/>
+      </reference>
+      <name value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"/>
+      <description value="Radiology - S3 Get Recommendations - Response - 1.2 Scored procedure option 1 (original suggestion) - CT head wo IV contrast"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22"/>
+      </reference>
+      <name value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"/>
+      <description value="Radiology - S3 Get Recommendations - Response - 1.3 Scored procedure option 3 - CT head wo/w iv contrast"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77"/>
+      </reference>
+      <name value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"/>
+      <description value="Radiology - S3 Get Recommendations - Response - 1.4 Scored procedure option 2 - MR head wo iv contrast"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"/>
+      <groupingId value="Radiology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TrichomonasCodes"/>
+      </reference>
+      <name value="Trichomonas Codes"/>
+      <description value="Trichomonas Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PSSRatingTypesVS"/>
+      </reference>
+      <name value="Types of rating provided by the PSS system"/>
+      <description value="ValueSet - Types of rating provided by the PSS system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="functional-overview.html"/>
+        </extension>
+        <nameUrl value="functional-overview.html"/>
+        <title value="Functional Overview"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="radiology.html"/>
+          </extension>
+          <nameUrl value="radiology.html"/>
+          <title value="Radiology"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="antimicrobiology.html"/>
+          </extension>
+          <nameUrl value="antimicrobiology.html"/>
+          <title value="Antimicrobiology"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
+        <nameUrl value="changes.html"/>
+        <title value="Changes"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

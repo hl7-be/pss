@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "recommendation-rating"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem recommendation-rating</b></p><a name=\"recommendation-rating\"> </a><a name=\"hcrecommendation-rating\"> </a><a name=\"recommendation-rating-en-US\"> </a><p>This  code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">green<a name=\"recommendation-rating-green\"> </a></td><td>Green</td><td>Ok.</td></tr><tr><td style=\"white-space:nowrap\">yellow<a name=\"recommendation-rating-yellow\"> </a></td><td>Yellow</td><td>Please reconsider.</td></tr><tr><td style=\"white-space:nowrap\">red<a name=\"recommendation-rating-red\"> </a></td><td>Red</td><td>Not OK.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "RecommendationRatingCS"] ; # 
+  fhir:title [ fhir:v "Recommendation rating"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-02-07T08:52:52+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7belgium.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "hl7belgium@hl7belgium.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "message-structure@ehealth.fgov.be" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Recommendation rating."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "green" ] ;
+     fhir:display [ fhir:v "Green" ] ;
+     fhir:definition [ fhir:v "Ok." ]
+  ] [
+     fhir:code [ fhir:v "yellow" ] ;
+     fhir:display [ fhir:v "Yellow" ] ;
+     fhir:definition [ fhir:v "Please reconsider." ]
+  ] [
+     fhir:code [ fhir:v "red" ] ;
+     fhir:display [ fhir:v "Red" ] ;
+     fhir:definition [ fhir:v "Not OK." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

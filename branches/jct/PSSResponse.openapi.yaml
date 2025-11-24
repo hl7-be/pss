@@ -1,0 +1,99 @@
+openapi: 3.0.3
+info:
+  title: PSS Response API
+  description: A response containing the results from the PSS.
+  version: 1.0.0
+paths:
+  /PSSResponse.schema.json:
+    get:
+      summary: JSON Schema definition for the Logical Model PSSResponse
+      description: This endpoint serves the JSON Schema definition for the Logical
+        Model PSSResponse.
+      responses:
+        '200':
+          description: The JSON Schema for PSSResponse
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./PSSResponse.schema.json
+components:
+  schemas:
+    PSSResponse:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponse.schema.json
+      title: PSS Response
+      description: A response containing the results from the PSS.
+      type: object
+      properties:
+        recordedDate:
+          type: string
+          format: date
+          description: Date on which the information was recorded
+        pssidentifier:
+          type: object
+          description: Identifier of the exchange session
+        indication:
+          type: object
+          description: Condition that triggered the PSS response
+        status:
+          type: object
+          description: Status of the response
+        treatmentOptions:
+          type: array
+          items:
+            type: object
+            description: FHIR BackboneElement
+          minItems: 1
+          description: List of search results provided by PSS
+        id:
+          type: object
+          description: Unique id for the element within a resource (for internal references).
+            This may be any string value that does not contain spaces.
+        modifierExtension:
+          type: array
+          items:
+            type: object
+            description: FHIR Extension
+          description: 'May be used to represent additional information that is not
+            part of the basic definition of the element and that modifies the understanding
+            of the element in which it is contained and/or the understanding of the
+            containing element''s descendants. Usually modifier elements provide negation
+            or qualification. To make the use of extensions safe and manageable, there
+            is a strict set of governance applied to the definition and use of extensions.
+            Though any implementer can define an extension, there is a set of requirements
+            that SHALL be met as part of the definition of the extension. Applications
+            processing a resource are required to check for modifier extensions.
+
+
+            Modifier extensions SHALL NOT change the meaning of any elements on Resource
+            or DomainResource (including cannot change the meaning of modifierExtension
+            itself).'
+        identifier:
+          type: object
+          description: Identifier of the result
+        instruction:
+          type: object
+          description: Code of the examination
+        scoreRating:
+          type: object
+          description: Code (e.g. color code) associated with the score (Red, Orange,
+            Green)
+        radiationExposure:
+          type: object
+          description: Radiation exposure associated with the response
+        evidenceSource:
+          type: object
+          description: Link to a source (study, publication, etc.) for the PSS
+      required:
+      - recordedDate
+      - pssidentifier
+      - indication
+      - status
+      - treatmentOptions
+      - identifier
+      - instruction
+      - scoreRating
+      - radiationExposure
+      - evidenceSource
+      fhir:logicalModel: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponse
+      fhir:parent: http://hl7.org/fhir/StructureDefinition/Base

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="antimicrobial-feedback-orange"/>
+  <parameter>
+    <name value="pss-id"/>
+    <valueString value="0051510d-79e7-4bc6-a4f5-6b0654b23c03"/>
+  </parameter>
+  <parameter>
+    <name value="feedback-task"/>
+    <resource>
+      <Task>
+        <id value="task-accepted-red-a"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"/>
+        </meta>
+        <status value="accepted"/>
+        <statusReason>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+            <code value="OtherReason"/>
+          </coding>
+          <text value="Alternative required due to previous insufficient effect"/>
+        </statusReason>
+        <intent value="option"/>
+        <focus>
+          <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad29"/>
+        </focus>
+        <lastModified value="2025-05-28T10:15:00+02:00"/>
+      </Task>
+    </resource>
+  </parameter>
+</Parameters>

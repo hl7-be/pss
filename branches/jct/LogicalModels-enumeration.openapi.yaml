@@ -1,0 +1,104 @@
+openapi: 3.0.3
+info:
+  title: LogicalModels Enumeration API
+  description: API endpoint providing an enumeration of all available Logical Model
+    schemas
+  version: 1.0.0
+paths:
+  /LogicalModels.schema:
+    get:
+      summary: Get enumeration of all Logical Model schemas
+      description: Returns a list of all available Logical Model schemas with metadata
+      responses:
+        '200':
+          description: Successfully retrieved logical_model enumeration
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EnumerationResponse'
+              example: &id001
+                type: logical_model
+                count: 4
+                schemas:
+                - filename: PSSFeedbackModel.schema.json
+                  id: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSFeedbackModel.schema.json
+                  title: PSS Feedback
+                  description: Feedback containing the acceptance of the PSS results.
+                  url: ./PSSFeedbackModel.schema.json
+                  logicalModelUrl: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSFeedbackModel
+                  propertyCount: 9
+                - filename: PSSRequest.schema.json
+                  id: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequest.schema.json
+                  title: PSS Request
+                  description: A request for PSS (Prescriber Support System) results.
+                  url: ./PSSRequest.schema.json
+                  logicalModelUrl: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequest
+                  propertyCount: 9
+                - filename: PSSConsentModel.schema.json
+                  id: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSConsentModel.schema.json
+                  title: PSS Consent
+                  description: Consent statement about using PSS and agreeing with
+                    (or opting out of) the Terms and Conditions.
+                  url: ./PSSConsentModel.schema.json
+                  logicalModelUrl: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSConsentModel
+                  propertyCount: 12
+                - filename: PSSResponse.schema.json
+                  id: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponse.schema.json
+                  title: PSS Response
+                  description: A response containing the results from the PSS.
+                  url: ./PSSResponse.schema.json
+                  logicalModelUrl: https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponse
+                  propertyCount: 12
+components:
+  schemas:
+    EnumerationResponse:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: '#/LogicalModels.schema'
+      title: Logical Model Enumeration Schema
+      description: JSON Schema defining the structure of the Logical Model enumeration
+        endpoint response
+      type: object
+      properties:
+        type:
+          type: string
+          const: logical_model
+          description: The type of schemas enumerated (logical_model)
+        count:
+          type: integer
+          description: Total number of schemas available
+        schemas:
+          type: array
+          description: Array of available schemas
+          items:
+            type: object
+            properties:
+              filename:
+                type: string
+                description: Schema filename
+              id:
+                type: string
+                description: Schema $id
+              title:
+                type: string
+                description: Schema title
+              description:
+                type: string
+                description: Schema description
+              url:
+                type: string
+                description: Relative URL to the schema file
+              logicalModelUrl:
+                type: string
+                description: FHIR canonical URL of the Logical Model
+              propertyCount:
+                type: integer
+                description: Number of properties in the Logical Model
+            required:
+            - filename
+            - title
+            - url
+      required:
+      - type
+      - count
+      - schemas
+      example: *id001

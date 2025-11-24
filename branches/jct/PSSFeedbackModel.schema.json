@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSFeedbackModel.schema.json",
+  "title": "PSS Feedback",
+  "description": "Feedback containing the acceptance of the PSS results.",
+  "type": "object",
+  "properties": {
+    "PSS-ID": {
+      "type": "string",
+      "description": "The uuid from the response - the ID of the RequestGroup"
+    },
+    "outcomeTimeStamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The time when the feedback is given"
+    },
+    "outcome": {
+      "type": "string",
+      "description": "accepted or overridden"
+    },
+    "suggestionOutcome": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "FHIR BackboneElement"
+      },
+      "description": "List of suggestions provided by PSS for which feedback is given"
+    },
+    "id": {
+      "type": "object",
+      "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."
+    },
+    "modifierExtension": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "FHIR Extension"
+      },
+      "description": "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."
+    },
+    "suggestionId": {
+      "type": "string",
+      "description": "The suggestion ID - or 'other' if the prescriber preferred another option"
+    },
+    "overrideReason": {
+      "type": "object",
+      "description": "The reason for overriding - code or text"
+    },
+    "otherOptionSelected": {
+      "type": "string",
+      "description": "A brief description of another option selected by the prescriber. Only present if the suggestionId is 'other'."
+    }
+  },
+  "required": [
+    "PSS-ID",
+    "outcomeTimeStamp",
+    "outcome",
+    "outcome"
+  ],
+  "fhir:logicalModel": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSFeedbackModel",
+  "fhir:parent": "http://hl7.org/fhir/StructureDefinition/Base"
+}

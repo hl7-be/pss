@@ -1,0 +1,62 @@
+[
+  {
+    "id" : "GetDataToCollect",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDataToCollect",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "GetRecommendations",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetRecommendations",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "hl7.fhir.be.pss",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss",
+    "version" : "1.0.0",
+    "name" : "PrescriptionSearchSupport"
+  },
+  {
+    "id" : "q-collect-information-a",
+    "type" : "Questionnaire",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information-a",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "PSSRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSRequest",
+    "version" : "1.0.0",
+    "name" : "PSSRequest"
+  },
+  {
+    "id" : "PSSResponse",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/PSSResponse",
+    "version" : "1.0.0",
+    "name" : "PSSResponse"
+  },
+  {
+    "id" : "codeValueSet",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/codeValueSet",
+    "version" : "1.0.0",
+    "name" : "codeValueSet"
+  },
+  {
+    "id" : "PregnancyCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes",
+    "version" : "1.0.0",
+    "name" : "PregnancyCodes"
+  },
+  {
+    "id" : "condition-valueset",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
+    "version" : "1.0.0",
+    "name" : "Conditions"
+  }
+]

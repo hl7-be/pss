@@ -1,0 +1,49 @@
+{
+  "resourceType" : "RequestGroup",
+  "id" : "getrecommendations-a-return-group",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-a-return-group</b></p><a name=\"getrecommendations-a-return-group\"> </a><a name=\"hcgetrecommendations-a-return-group\"> </a><a name=\"getrecommendations-a-return-group-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><p><b>note</b>: Supporting evidence: [BCFI](https://bcfi.be/nl)</p><blockquote><p><b>action</b></p><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Generic Antibiotic advice</td><td><a href=\"CommunicationRequest-ab-advice.html\">CommunicationRequest: extension = 3 / 3; status = active</a></td></tr><tr><td style=\"display: none\">*</td><td>Metronidazol Oraal</td><td><a href=\"MedicationRequest-metronidazol.html\">MedicationRequest: extension = 3 / 3; status = active; intent = proposal; medication[x] = metronidazole</a></td></tr><tr><td style=\"display: none\">*</td><td>Clindamycin local</td><td><a href=\"MedicationRequest-clindamycin.html\">MedicationRequest: extension = 3 / 3; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Fluconazol Oraal</td><td><a href=\"MedicationRequest-fluconazol.html\">MedicationRequest: extension = 1 / 3; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Miconazol lokaal</td><td><a href=\"MedicationRequest-miconazol.html\">MedicationRequest: extension = 1 / 3; status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "subject" : {
+    "reference" : "Patient/patient-x"
+  },
+  "note" : [{
+    "text" : "Supporting evidence: [BCFI](https://bcfi.be/nl)"
+  }],
+  "action" : [{
+    "selectionBehavior" : "at-most-one",
+    "action" : [{
+      "textEquivalent" : "Generic Antibiotic advice",
+      "resource" : {
+        "reference" : "CommunicationRequest/ab-advice"
+      }
+    },
+    {
+      "textEquivalent" : "Metronidazol Oraal",
+      "resource" : {
+        "reference" : "MedicationRequest/metronidazol"
+      }
+    },
+    {
+      "textEquivalent" : "Clindamycin local",
+      "resource" : {
+        "reference" : "MedicationRequest/clindamycin"
+      }
+    },
+    {
+      "textEquivalent" : "Fluconazol Oraal",
+      "resource" : {
+        "reference" : "MedicationRequest/fluconazol"
+      }
+    },
+    {
+      "textEquivalent" : "Miconazol lokaal",
+      "resource" : {
+        "reference" : "MedicationRequest/miconazol"
+      }
+    }]
+  }]
+}

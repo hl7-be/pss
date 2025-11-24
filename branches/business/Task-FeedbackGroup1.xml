@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="FeedbackGroup1"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task FeedbackGroup1</b></p><a name="FeedbackGroup1"> </a><a name="hcFeedbackGroup1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-FeedbackTask.html">PSS Feedback Task</a></p></div><p><b>status</b>: Accepted</p><p><b>intent</b>: option</p><p><b>focus</b>: <a href="RequestGroup-getrecommendations-r-response-1.html">RequestGroup: status = active; intent = proposal</a></p><p><b>lastModified</b>: 2023-10-01 12:00:00+0000</p><p><b>owner</b>: Identifier: Practitioner2</p></div>
+  </text>
+  <status value="accepted"/>
+  <intent value="option"/>
+  <focus>
+    <reference value="RequestGroup/getrecommendations-r-response-1"/>
+  </focus>
+  <lastModified value="2023-10-01T12:00:00Z"/>
+  <owner>
+    <identifier>
+      <value value="Practitioner2"/>
+    </identifier>
+  </owner>
+</Task>

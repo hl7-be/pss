@@ -1,0 +1,33 @@
+openapi: 3.0.3
+info:
+  title: Mycoplasma Codes Schema API
+  description: JSON Schema for Mycoplasma Codes ValueSet codes. Generated from FHIR
+    expansions.
+  version: 1.0.0
+paths:
+  /ValueSet-MycoplasmaCodes.schema.json:
+    get:
+      summary: JSON Schema definition for the enumeration ValueSet-MycoplasmaCodes
+      description: This endpoint serves the JSON Schema definition for the enumeration
+        ValueSet-MycoplasmaCodes.
+      responses:
+        '200':
+          description: The JSON Schema for ValueSet-MycoplasmaCodes
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./ValueSet-MycoplasmaCodes.schema.json
+components:
+  schemas:
+    ValueSet-MycoplasmaCodes:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-MycoplasmaCodes.schema.json
+      title: Mycoplasma Codes Schema
+      description: JSON Schema for Mycoplasma Codes ValueSet codes. Generated from
+        FHIR expansions.
+      type: string
+      enum:
+      - '240594008'
+      fhir:valueSet: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes
+      fhir:version: 1.0.0
+      fhir:expansionTimestamp: '2025-09-04T10:09:25+00:00'

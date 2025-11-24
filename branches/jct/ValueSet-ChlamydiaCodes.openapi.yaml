@@ -1,0 +1,36 @@
+openapi: 3.0.3
+info:
+  title: Chlamydia Codes Schema API
+  description: JSON Schema for Chlamydia Codes ValueSet codes. Generated from FHIR
+    expansions.
+  version: 1.0.0
+paths:
+  /ValueSet-ChlamydiaCodes.schema.json:
+    get:
+      summary: JSON Schema definition for the enumeration ValueSet-ChlamydiaCodes
+      description: This endpoint serves the JSON Schema definition for the enumeration
+        ValueSet-ChlamydiaCodes.
+      responses:
+        '200':
+          description: The JSON Schema for ValueSet-ChlamydiaCodes
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./ValueSet-ChlamydiaCodes.schema.json
+components:
+  schemas:
+    ValueSet-ChlamydiaCodes:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-ChlamydiaCodes.schema.json
+      title: Chlamydia Codes Schema
+      description: JSON Schema for Chlamydia Codes ValueSet codes. Generated from
+        FHIR expansions.
+      type: string
+      enum:
+      - A56.0
+      - A56.2
+      - '236683007'
+      - '186729003'
+      fhir:valueSet: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes
+      fhir:version: 1.0.0
+      fhir:expansionTimestamp: '2025-09-04T10:09:23+00:00'

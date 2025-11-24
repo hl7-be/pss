@@ -1,0 +1,665 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/Bundle/getrecommendations-a-response> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "getrecommendations-a-response"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:value [ fhir:v "response1" ]
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2025-02-20T00:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094dd22"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094dd22> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29> )
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21> a fhir:RequestGroup ;
+  fhir:id [ fhir:v "getrecommendations-a-response-group"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations-a-response-group\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-a-response-group</b></p><a name=\"getrecommendations-a-response-group\"> </a><a name=\"hcgetrecommendations-a-response-group\"> </a><a name=\"getrecommendations-a-response-group-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseRequestGroup.html\">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><blockquote><p><b>action</b></p><h3>Documentations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>Documentation</td><td>Meer details op de BCFI site</td><td><a href=\"https://bcfi.be/nl/chapters/12?frag=8001869\">https://bcfi.be/nl/chapters/12?frag=8001869</a></td></tr><tr><td style=\"display: none\">*</td><td>Documentation</td><td>Plus de details sur le site CBIP</td><td><a href=\"https://cbip.be/fr/chapters/12?frag=8001869\">https://cbip.be/fr/chapters/12?frag=8001869</a></td></tr><tr><td style=\"display: none\">*</td><td>Documentation</td><td>Download het beslismodel van EBPNET</td><td><a href=\"https://ebpnet.be/nl/pss-vaginitis\">https://ebpnet.be/nl/pss-vaginitis</a></td></tr><tr><td style=\"display: none\">*</td><td>Documentation</td><td>Télécharger le modèle de décision d'EBPNET</td><td><a href=\"https://ebpnet.be/fr/pss-vaginite\">https://ebpnet.be/fr/pss-vaginite</a></td></tr></table><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Algemeen advies</td><td><a href=\"CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22.html\">CommunicationRequest: status = active</a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Metronidazol Oraal</td><td><a href=\"MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.html\">MedicationRequest: status = active; intent = proposal; medication[x] = metronidazole</a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Clindamycin local</td><td><a href=\"MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.html\">MedicationRequest: status = active; intent = proposal; medication[x] = clindamycin</a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Fluconazol Oraal</td><td><a href=\"MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td/><td>Miconazol lokaal</td><td><a href=\"MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.html\">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-2e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-2e639094ad48" ]
+  ] ; # 
+  fhir:action ( [
+     fhir:documentation ( [
+       fhir:type [ fhir:v "documentation" ] ;
+       fhir:label [
+         fhir:v "Meer details op de BCFI site" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "nl-BE"
+           ]
+         ] )
+       ] ;
+       fhir:url [ fhir:v "https://bcfi.be/nl/chapters/12?frag=8001869"^^xsd:anyURI ]
+     ] [
+       fhir:type [ fhir:v "documentation" ] ;
+       fhir:label [
+         fhir:v "Plus de details sur le site CBIP" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "fr-BE"
+           ]
+         ] )
+       ] ;
+       fhir:url [ fhir:v "https://cbip.be/fr/chapters/12?frag=8001869"^^xsd:anyURI ]
+     ] [
+       fhir:type [ fhir:v "documentation" ] ;
+       fhir:label [
+         fhir:v "Download het beslismodel van EBPNET" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "nl-BE"
+           ]
+         ] )
+       ] ;
+       fhir:url [ fhir:v "https://ebpnet.be/nl/pss-vaginitis"^^xsd:anyURI ]
+     ] [
+       fhir:type [ fhir:v "documentation" ] ;
+       fhir:label [
+         fhir:v "Télécharger le modèle de décision d'EBPNET" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "fr-BE"
+           ]
+         ] )
+       ] ;
+       fhir:url [ fhir:v "https://ebpnet.be/fr/pss-vaginite"^^xsd:anyURI ]
+     ] ) ;
+     fhir:selectionBehavior [ fhir:v "at-most-one" ] ;
+     fhir:action ( [
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "ratingType"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "overall"
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingValue"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Ratio ;
+             fhir:numerator [
+               fhir:value [ fhir:v "3"^^xsd:decimal ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "3"^^xsd:decimal ]
+             ]
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingText"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:markdown ;
+             fhir:v "Over het algemeen aangewezen" ;
+             fhir:extension ( [
+               fhir:extension ( [
+                 fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:code ;
+                   fhir:v "fr-BE"
+                 ]
+               ] [
+                 fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:string ;
+                   fhir:v "Généralement approprié"
+                 ]
+               ] ) ;
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+             ] )
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+       ] ) ;
+       fhir:textEquivalent [
+         fhir:v "Algemeen advies" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:code ;
+               fhir:v "fr-BE"
+             ]
+           ] [
+             fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:string ;
+               fhir:v "Conseil général"
+             ]
+           ] ) ;
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+         ] )
+       ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/CommunicationRequest/30551ce1-5a28-4356-b684-1e639094dd22> ;
+         fhir:reference [ fhir:v "CommunicationRequest/30551ce1-5a28-4356-b684-1e639094dd22" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "ratingType"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "overall"
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingValue"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Ratio ;
+             fhir:numerator [
+               fhir:value [ fhir:v "3"^^xsd:decimal ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "3"^^xsd:decimal ]
+             ]
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingText"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:markdown ;
+             fhir:v "Over het algemeen aangewezen" ;
+             fhir:extension ( [
+               fhir:extension ( [
+                 fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:code ;
+                   fhir:v "fr-BE"
+                 ]
+               ] [
+                 fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:string ;
+                   fhir:v "Généralement approprié"
+                 ]
+               ] ) ;
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+             ] )
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+       ] ) ;
+       fhir:textEquivalent [
+         fhir:v "Metronidazol Oraal" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:code ;
+               fhir:v "fr-BE"
+             ]
+           ] [
+             fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:string ;
+               fhir:v "Métronidazole orale"
+             ]
+           ] ) ;
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+         ] )
+       ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23> ;
+         fhir:reference [ fhir:v "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "ratingType"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "overall"
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingValue"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Ratio ;
+             fhir:numerator [
+               fhir:value [ fhir:v "3"^^xsd:decimal ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "3"^^xsd:decimal ]
+             ]
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingText"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:markdown ;
+             fhir:v "Over het algemeen aangewezen" ;
+             fhir:extension ( [
+               fhir:extension ( [
+                 fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:code ;
+                   fhir:v "fr-BE"
+                 ]
+               ] [
+                 fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:string ;
+                   fhir:v "Généralement approprié"
+                 ]
+               ] ) ;
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+             ] )
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+       ] ) ;
+       fhir:textEquivalent [
+         fhir:v "Clindamycin local" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:code ;
+               fhir:v "fr-BE"
+             ]
+           ] [
+             fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:string ;
+               fhir:v "Clindamycine localement"
+             ]
+           ] ) ;
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+         ] )
+       ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24> ;
+         fhir:reference [ fhir:v "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "ratingType"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "overall"
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingValue"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Ratio ;
+             fhir:numerator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "3"^^xsd:decimal ]
+             ]
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingText"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:markdown ;
+             fhir:v "Niet aangewezen" ;
+             fhir:extension ( [
+               fhir:extension ( [
+                 fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:code ;
+                   fhir:v "fr-BE"
+                 ]
+               ] [
+                 fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:string ;
+                   fhir:v "Pas approprié"
+                 ]
+               ] ) ;
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+             ] )
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+       ] ) ;
+       fhir:textEquivalent [
+         fhir:v "Fluconazol Oraal" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:code ;
+               fhir:v "fr-BE"
+             ]
+           ] [
+             fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:string ;
+               fhir:v "Fluconazole orale"
+             ]
+           ] ) ;
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+         ] )
+       ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad26> ;
+         fhir:reference [ fhir:v "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad26" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "ratingType"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "overall"
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingValue"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Ratio ;
+             fhir:numerator [
+               fhir:value [ fhir:v "1"^^xsd:decimal ]
+             ] ;
+             fhir:denominator [
+               fhir:value [ fhir:v "3"^^xsd:decimal ]
+             ]
+           ]
+         ] [
+           fhir:url [ fhir:v "ratingText"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:markdown ;
+             fhir:v "Niet aangewezen" ;
+             fhir:extension ( [
+               fhir:extension ( [
+                 fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:code ;
+                   fhir:v "fr-BE"
+                 ]
+               ] [
+                 fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+                 fhir:value [
+                   a fhir:string ;
+                   fhir:v "Pas approprié"
+                 ]
+               ] ) ;
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+             ] )
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating"^^xsd:anyURI ]
+       ] ) ;
+       fhir:textEquivalent [
+         fhir:v "Miconazol lokaal" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:code ;
+               fhir:v "fr-BE"
+             ]
+           ] [
+             fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:string ;
+               fhir:v "Miconazole localement"
+             ]
+           ] ) ;
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+         ] )
+       ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad29> ;
+         fhir:reference [ fhir:v "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad29" ]
+       ]
+     ] )
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094dd22> a fhir:CommunicationRequest ;
+  fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094dd22"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CommunicationRequest_30551ce1-5a28-4356-b684-1e639094dd22\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest 30551ce1-5a28-4356-b684-1e639094dd22</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094dd22\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094dd22\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094dd22-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSSResponseCommunicationRequest.html\">PSS Response Communication Request</a>, <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html\">CPG Communication Request</a></p></div><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><code>Markdown: </code><div><p>Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte. Metronidazol en clindamycine worden in de SKP afgeraden in het eerste trimester. De klinische gegevens omtrent gebruik tijdens het eerste trimester van de zwangerschap zijn nochtans geruststellend en de meeste bronnen geven aan dat het kan gebruikt worden.</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-2e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-2e639094ad48" ]
+  ] ; # 
+  fhir:payload ( [
+     fhir:content [
+       a fhir:string ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/rendering-markdown"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:markdown ;
+           fhir:v "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte. Metronidazol en clindamycine worden in de SKP afgeraden in het eerste trimester. De klinische gegevens omtrent gebruik tijdens het eerste trimester van de zwangerschap zijn nochtans geruststellend en de meeste bronnen geven aan dat het kan gebruikt worden." ;
+           fhir:extension ( [
+             fhir:extension ( [
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:code ;
+                 fhir:v "fr-BE"
+               ]
+             ] [
+               fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:string ;
+                 fhir:v "Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée. Le RCP déconseille l'utilisation du métronidazole et de la clindamycine pendant le premier trimestre de la grossesse. Les données cliniques concernant leur utilisation pendant le premier trimestre de grossesse sont pourtant rassurantes et la plupart des sources acceptent leur utilisation en période de grossesse."
+               ]
+             ] ) ;
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094ac23"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ac23\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ac23</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ac23-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc J01XD01}, {https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg 21436}\">metronidazole</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 1000 mg per dag in 2 giften gedurende 7 dagen</p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1000 mg</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J01XD01" ]
+     ] [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21436" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-2e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-2e639094ad48" ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [
+       fhir:v "1000 mg per dag in 2 giften gedurende 7 dagen" ;
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "fr-BE"
+           ]
+         ] [
+           fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:string ;
+             fhir:v "1000 mg par jour en 2 prises pendant 7 jours"
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+       ] )
+     ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "7"^^xsd:decimal ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "d" ]
+         ] ;
+         fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1000"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+       ]
+     ] )
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094ad24"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad24\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad24</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad24\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad24\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad24-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "G01AA10" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-2e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-2e639094ad48" ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [
+       fhir:v "ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen" ;
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "fr-BE"
+           ]
+         ] [
+           fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:string ;
+             fhir:v "ovule : 100 mg par jour en 1 prise pendant 3 jours OU crème vaginale : 2 % 5 g par jour en 1 prise pendant 7 jours"
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+       ] )
+     ]
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094ad26"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad26\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad26</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad26\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad26\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad26-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Fluconazol</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Fluconazol" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-2e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-2e639094ad48" ]
+  ] . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094ad29"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad29\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad29</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad29\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad29\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad29-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSSResponseMedicationRequest.html\">PSS Response Medication Request</a>, <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Miconazol</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Miconazol" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-2e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-2e639094ad48" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

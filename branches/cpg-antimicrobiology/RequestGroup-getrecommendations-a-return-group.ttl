@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/RequestGroup/getrecommendations-a-return-group> a fhir:RequestGroup ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "getrecommendations-a-return-group"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-a-return-group</b></p><a name=\"getrecommendations-a-return-group\"> </a><a name=\"hcgetrecommendations-a-return-group\"> </a><a name=\"getrecommendations-a-return-group-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><blockquote><p><b>action</b></p><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Generic Antibiotic advice</td><td><a href=\"CommunicationRequest-ab-advice.html\">CommunicationRequest: extension = 3 / 3; status = active</a></td></tr><tr><td style=\"display: none\">*</td><td>Metronidazol Oraal</td><td><a href=\"MedicationRequest-metronidazol.html\">MedicationRequest: extension = 3 / 3; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Clindamycin local</td><td><a href=\"MedicationRequest-clindamycin.html\">MedicationRequest: extension = 3 / 3; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Fluconazol Oraal</td><td><a href=\"MedicationRequest-fluconazol.html\">MedicationRequest: extension = 1 / 3; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Miconazol lokaal</td><td><a href=\"MedicationRequest-miconazol.html\">MedicationRequest: extension = 1 / 3; status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-x> ;
+     fhir:reference [ fhir:v "Patient/patient-x" ]
+  ] ; # 
+  fhir:action ( [
+     fhir:selectionBehavior [ fhir:v "at-most-one" ] ;
+     fhir:action ( [
+       fhir:textEquivalent [ fhir:v "Generic Antibiotic advice" ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/CommunicationRequest/ab-advice> ;
+         fhir:reference [ fhir:v "CommunicationRequest/ab-advice" ]
+       ]
+     ] [
+       fhir:textEquivalent [ fhir:v "Metronidazol Oraal" ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/metronidazol> ;
+         fhir:reference [ fhir:v "MedicationRequest/metronidazol" ]
+       ]
+     ] [
+       fhir:textEquivalent [ fhir:v "Clindamycin local" ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/clindamycin> ;
+         fhir:reference [ fhir:v "MedicationRequest/clindamycin" ]
+       ]
+     ] [
+       fhir:textEquivalent [ fhir:v "Fluconazol Oraal" ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/fluconazol> ;
+         fhir:reference [ fhir:v "MedicationRequest/fluconazol" ]
+       ]
+     ] [
+       fhir:textEquivalent [ fhir:v "Miconazol lokaal" ] ;
+       fhir:resource [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/miconazol> ;
+         fhir:reference [ fhir:v "MedicationRequest/miconazol" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

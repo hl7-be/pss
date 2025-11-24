@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="propose-head-trauma"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task propose-head-trauma</b></p><a name="propose-head-trauma"> </a><a name="hcpropose-head-trauma"> </a><a name="propose-head-trauma-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></td><td><a href="Condition-proposed-diagnosis-head-trauma.html">Condition Ataxia, Head Trauma</a></td></tr></table></div>
+  </text>
+  <status value="requested"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+      <code value="propose-diagnosis"/>
+      <display value="Propose a diagnosis"/>
+    </coding>
+  </code>
+  <for>
+    <reference value="Patient/patient-r"/>
+  </for>
+  <input>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+        <code value="propose-diagnosis"/>
+        <display value="Propose a diagnosis"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="Condition/proposed-diagnosis-head-trauma"/>
+    </valueReference>
+  </input>
+</Task>

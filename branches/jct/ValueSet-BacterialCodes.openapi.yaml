@@ -1,0 +1,33 @@
+openapi: 3.0.3
+info:
+  title: Bacterial Codes Schema API
+  description: JSON Schema for Bacterial Codes ValueSet codes. Generated from FHIR
+    expansions.
+  version: 1.0.0
+paths:
+  /ValueSet-BacterialCodes.schema.json:
+    get:
+      summary: JSON Schema definition for the enumeration ValueSet-BacterialCodes
+      description: This endpoint serves the JSON Schema definition for the enumeration
+        ValueSet-BacterialCodes.
+      responses:
+        '200':
+          description: The JSON Schema for ValueSet-BacterialCodes
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./ValueSet-BacterialCodes.schema.json
+components:
+  schemas:
+    ValueSet-BacterialCodes:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-BacterialCodes.schema.json
+      title: Bacterial Codes Schema
+      description: JSON Schema for Bacterial Codes ValueSet codes. Generated from
+        FHIR expansions.
+      type: string
+      enum:
+      - '419760006'
+      fhir:valueSet: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes
+      fhir:version: 1.0.0
+      fhir:expansionTimestamp: '2025-09-04T10:09:22+00:00'

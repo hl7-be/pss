@@ -1,0 +1,37 @@
+{
+  "resourceType" : "RequestGroup",
+  "id" : "any-service-no-response-group",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup any-service-no-response-group</b></p><a name=\"any-service-no-response-group\"> </a><a name=\"hcany-service-no-response-group\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseRequestGroup.html\">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren.</td><td><span title=\"Codes:\">guidanceUnavailable</span></td></tr></table></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "subject" : {
+    "reference" : "Patient/30551ce1-5a28-4356-b684-2e639094ad48"
+  },
+  "action" : [{
+    "textEquivalent" : "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren.",
+    "_textEquivalent" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information, sachez que nous continuons de capturer les données transmises à PSS."
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "code" : [{
+      "coding" : [{
+        "code" : "guidanceUnavailable"
+      }]
+    }]
+  }]
+}

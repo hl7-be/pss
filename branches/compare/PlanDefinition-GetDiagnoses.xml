@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="GetDiagnoses"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<div>
+    <table class="grid dict">
+        
+        <tr>
+            <th scope="row"><b>Id: </b></th>
+            <td style="padding-left: 4px;">GetDiagnoses</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Url: </b></th>
+            <td style="padding-left: 4px;"><a href="PlanDefinition-GetDiagnoses.html">GetDiagnoses</a></td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Version: </b></th>
+            <td style="padding-left: 4px;">1.0.0</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row">
+                <b>
+                    
+                        
+                    
+                </b>
+            </th>
+            <td style="padding-left: 4px;">
+                
+                <p style="margin-bottom: 5px;">
+                    <span>urn:oid:2.16.840.1.113883.2.51.22.2.34.2</span>
+                </p>
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Type: </b></th>
+            <td style="padding-left: 4px;">
+                
+                    
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>system: </b> <span><a href="http://terminology.hl7.org/6.5.0/CodeSystem-plan-definition-type.html">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>
+                        </p>
+                        
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>code: </b> <span>eca-rule</span>
+                        </p>
+                        
+                        
+                    
+                
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Date: </b></th>
+            <td style="padding-left: 4px;">2025-08-12 08:03:41+0000</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Publisher: </b></th>
+            <td style="padding-left: 4px;">eHealth Platform Belgium</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Jurisdiction: </b></th>
+            <td style="padding-left: 4px;">BE</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Actions: </b></th>
+            <td style="padding-left: 4px;">
+                <table class="grid-dict">
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Determine potential diagnoses given relevant patient information:</b> Given input data, including age, gender, and symptoms, determine potential diagnoses
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+</div>
+</div>
+  </text>
+  <url value="http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDiagnoses"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.2.51.22.2.34.2"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <date value="2025-08-12T08:03:41+00:00"/>
+  <publisher value="eHealth Platform Belgium"/>
+  <contact>
+    <name value="eHealth Platform Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <action>
+    <title value="Determine potential diagnoses given relevant patient information"/>
+    <description value="Given input data, including age, gender, and symptoms, determine potential diagnoses"/>
+    <input>
+      <type value="Patient"/>
+      <mustSupport value="birthDate"/>
+      <mustSupport value="gender"/>
+    </input>
+    <input>
+      <type value="Observation"/>
+      <mustSupport value="category"/>
+      <mustSupport value="code"/>
+      <mustSupport value="value"/>
+      <codeFilter>
+        <path value="category"/>
+        <code>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+        </code>
+      </codeFilter>
+    </input>
+    <input>
+      <type value="Condition"/>
+      <mustSupport value="category"/>
+      <mustSupport value="code"/>
+      <mustSupport value="clinicalStatus"/>
+      <mustSupport value="verificationStatus"/>
+      <mustSupport value="onset"/>
+      <codeFilter>
+        <path value="category"/>
+        <code>
+          <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+          <code value="encounter-diagnosis"/>
+        </code>
+        <code>
+          <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+          <code value="problem-list-item"/>
+        </code>
+      </codeFilter>
+    </input>
+    <output>
+      <type value="Task"/>
+    </output>
+    <output>
+      <type value="Condition"/>
+      <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+      <codeFilter>
+        <path value="category"/>
+        <code>
+          <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+          <code value="problem-list-item"/>
+        </code>
+      </codeFilter>
+    </output>
+  </action>
+</PlanDefinition>
