@@ -28,11 +28,11 @@ Usage: #definition
 * parameter[=].type = #string
 
 
-* parameter[+].name = #feedback-task
+* parameter[+].name = #feedback-resource
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "*"
-* parameter[=].documentation = "A Task representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`."
+* parameter[=].documentation = "A resource (Task, or a Bundle containing the Task as well as a new request) representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`."
 * parameter[=].type = #Resource
 
 
@@ -211,6 +211,62 @@ Usage: #example
 * lastModified = "2025-05-28T10:15:00+02:00"
 
 
+
+
+
+
+
+Instance: alternative-request
+InstanceOf: PSSServiceRequest
+
+* status = #draft
+* intent = #proposal
+
+
+
+
+
+//DELETE ONE OF THESE - Option 1: endpoint can be Task or Bundle
+Instance: alternative-request-task
+Title: "Antimicrobial - Select another option that is not in the recommendations"
+Description: "Prescriber decides to use another treatment that is not in the PSS recommendations"
+InstanceOf: FeedbackTask
+Usage: #example
+* id = "alternative-request-task"
+//* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad29)  // e.g. another antimicrobial MedicationRequest
+* status = #accepted
+* intent = #option
+* statusReason.coding = PSSaFeedbackReasons#FastResults
+* statusReason.text = "Alternative treatment proposed due to patient age and need for faster treatment"
+* lastModified = "2025-05-28T10:15:00+02:00"
+
+Instance: alternative-request-bundle
+* entry[+] = alternative-request
+* entry[+] = alternative-request-task
+
+// End of Option 1
+
+
+
+//DELETE ONE OF THESE - Option 2
+Instance: alternative-request-task-w-contained
+Title: "Antimicrobial - Select another option that is not in the recommendations"
+Description: "Prescriber decides to use another treatment that is not in the PSS recommendations"
+InstanceOf: FeedbackTask
+Usage: #example
+* contained[+] = alternative-request
+* id = "alternative-request-task"
+//* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad29)  // e.g. another antimicrobial MedicationRequest
+* status = #accepted
+* intent = #option
+* statusReason.coding = PSSaFeedbackReasons#FastResults
+* statusReason.text = "Alternative treatment proposed due to patient age and need for faster treatment"
+* lastModified = "2025-05-28T10:15:00+02:00"
+
+// End of Option 1
+
+
+
 CodeSystem: PSSFeedbackCodes
 Title: "PSS Feedback Codes"
 Description: "Feedback codes for PSS"
@@ -264,6 +320,7 @@ Title: "PSS Feedback Code Reasons"
 Description: "Feedback code reasons for PSS"
 * codes from system PSSaFeedbackReasons
 * codes from system PSSrFeedbackReasons
+
 
 
 
