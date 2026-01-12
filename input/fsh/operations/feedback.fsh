@@ -32,8 +32,13 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "*"
-* parameter[=].documentation = "A resource (Task, or a Bundle containing the Task as well as a new request) representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`."
+* parameter[=].documentation = "A Task, or a Bundle containing the Task as well as a new request, representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`."
 * parameter[=].type = #Resource
+* parameter[=].allowedType[+] = #Task
+* parameter[=].allowedType[+] = #Bundle
+
+* parameter[=].targetProfile[+] = Canonical()
+* parameter[=].targetProfile[+] = Canonical()
 
 
 //Review feedback operation, add reference to new option considered by the physician. 
@@ -41,51 +46,9 @@ Usage: #definition
 //This would be a refence to an internal prescription ID.
 //Alternativelity, we could have a dummy ServiceRequest and see if that can follow the profile (anonymous etc).
 
-Profile: FeedbackTask
-Parent: Task
-Description: "Task to collect feedback on PSS suggestions"
-* focus 1.. MS
-* focus.identifier MS // for normal PS ID
-* focus.reference MS // used in case of new or modified orders
-* lastModified 1.. MS
-* status 1.. MS  // can only be accepted or rejected. For Overridden, please use Business Status
-//* businessStatus 0..1 MS
-* statusReason 0..1 MS //Why was it accepted or rejected
-
-//* status from (subscriber;provider) // can we use VCL here?
 
 
-* ^description = "Task to collect feedback on PSS suggestions"
-* ^title = "PSS Feedback Task"
-* ^status = #active
 
-
-Instance: requestgroup-action
-InstanceOf: SearchParameter
-Usage: #definition
-* url = "http://example.org/fhir/SearchParameter/requestgroup-action"
-* version = "1.0.1"
-* name = "RequestGroupActionResource"
-* status = #active
-* description = "Resources referenced anywhere in RequestGroup.action[*.].resource (supports one level of nested actions)."
-* code = #action
-* base = #RequestGroup
-* type = #reference
-* expression = "RequestGroup.action.resource | RequestGroup.action.action.resource | RequestGroup.action.action.action.resource"
-* target[0] = #ServiceRequest
-* target[+] = #MedicationRequest
-* target[+] = #Procedure
-* target[+] = #Observation
-* target[+] = #DiagnosticReport
-* target[+] = #CommunicationRequest
-* target[+] = #MedicationDispense
-* target[+] = #MedicationAdministration
-* target[+] = #Task
-* multipleOr = true
-* multipleAnd = true
-
-// To Do:
-// Make query for GET Feedback?identifier=PSS_ID&include=Task
 
 
 // In order to retrieve PSS feedback, the authorised user can query by Task.
