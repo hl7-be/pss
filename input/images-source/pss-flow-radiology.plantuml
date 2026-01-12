@@ -53,15 +53,13 @@ group #fed PSS-3 - Given some data (+ a procedure), request recommended procedur
 end
 ...
 group #efd PSS-4 - Give feedback
-        EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$feedback**
+        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={exchangeId}\n        feedback-resource=Task or Bundle
         note left of PSS
-|_ PSS-ID
-|_ datetime
-|_ outcome
-|_ suggestionOutcomes
-  |_ suggestionId
-  |_ outcome
-  |_ overrideReason
+|_ Task (FeedbackTask)
+  or
+|_ Bundle (PSSFeedbackBundle)
+  |_ Task (FeedbackTask)
+  |_ ServiceRequest (alternative)
         end note
         deactivate EPD
         activate PSS
@@ -75,28 +73,17 @@ end
 ...
 
 group #fde PSS-5 - Consult prior result
-        EPD -> PSS : \n**GET /Bundle/{PSS-ID}**
+        EPD -> PSS : \n**GET /Bundle/{PSS-ID}&_tag=recommendation**
         & PSS -[hidden]-> QSI : "                                      "
 '        activate EPD
 end
 ...
 
-group #dfe PSS-6 - Consult feeback
-        ADM -> PSS : \n**GET /Task?focus={PSS-ID}**
-        & PSS -[hidden]-> QSI : "                                      "
+group #dfe PSS-6 - Consult feedback
+'        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
+         -> PSS : \n**GET /Bundle?identifier={PSS-ID}&_tag=feedback**
         activate PSS
-        |||
-        PSS -> ADM 
-                note left of PSS
-|_ PSS-ID
-|_ datetime
-|_ outcome
-|_ suggestionOutcomes
-  |_ suggestionId
-  |_ outcome
-  |_ overrideReason
-        end note
-        deactivate EPD
+        <- PSS   : Bundle (PSSFeedbackBundle)
         & PSS -[hidden]-> QSI : "                                      "
         deactivate PSS
         |||

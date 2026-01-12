@@ -34,11 +34,11 @@ Usage: #definition
 * parameter[=].max = "*"
 * parameter[=].documentation = "A Task, or a Bundle containing the Task as well as a new request, representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`."
 * parameter[=].type = #Resource
-* parameter[=].allowedType[+] = #Task
-* parameter[=].allowedType[+] = #Bundle
+//* parameter[=].allowedType[+] = #Task
+//* parameter[=].allowedType[+] = #Bundle
 
-* parameter[=].targetProfile[+] = Canonical()
-* parameter[=].targetProfile[+] = Canonical()
+* parameter[=].targetProfile[+] = Canonical(PSSFeedbackBundle)
+* parameter[=].targetProfile[+] = Canonical(FeedbackTask)
 
 
 //Review feedback operation, add reference to new option considered by the physician. 
@@ -51,238 +51,29 @@ Usage: #definition
 
 
 
-// In order to retrieve PSS feedback, the authorised user can query by Task.
-// (simple task example here)
-// or by PSS ID and get everything
-// (new fancy query example here)
 
-Instance: radiology-feedback
-Title: "Radiology feedback"
-InstanceOf: Parameters
-Usage: #example
-// session identifier
-* id = "radiology-feedback"
-* parameter[+].name = "pss-id"
-* parameter[=].valueString = "test-500089-2025-50060793"
 
-//select green recommendation
-* parameter[+].name = "feedback-task"
-* parameter[=].resource = task-accepted-green-r
+// //DELETE ONE OF THESE - Option 2
+// Instance: alternative-request-task-w-contained
+// Title: "Antimicrobial - Select another option that is not in the recommendations"
+// Description: "Prescriber decides to use another treatment that is not in the PSS recommendations"
+// InstanceOf: FeedbackTask
+// Usage: #example
+// * contained[+] = alternative-request
+// * id = "alternative-request-task"
+// //* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad29)  // e.g. another antimicrobial MedicationRequest
+// * status = #accepted
+// * intent = #option
+// * statusReason.coding = PSSaFeedbackReasons#FastResults
+// * statusReason.text = "Alternative treatment proposed due to patient age and need for faster treatment"
+// * lastModified = "2025-05-28T10:15:00+02:00"
 
-//select orange/red recommendation
-* parameter[+].name = "feedback-task"
-* parameter[=].resource = task-accepted-orange-r
-
-//select other recommendation
-* parameter[+].name = "feedback-task"
-* parameter[=].resource = task-accepted-other-r
-
-Instance: task-accepted-green-r
-Title: "Radiology - Select green recommendation"
-Description: "Prescriber selects a green recommendation"
-InstanceOf: FeedbackTask
-Usage: #example
-* id = "task-accepted-green-r"
-* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad23)
-* focus.identifier.value = "114055" // QSI internal code – CT head w/o contrast
-* status = #accepted
-* intent = #option
-* lastModified = "2025-05-28T10:10:00+02:00"
-
-Instance: task-accepted-orange-r
-Title: "Radiology - Select orange recommendation"
-Description: "Prescriber selects an orange recommendation"
-InstanceOf: FeedbackTask
-Usage: #example
-* id = "task-accepted-orange-r"
-* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad23)
-* focus.identifier.value = "114054" // QSI internal code – CT, head, with/without IV contrast
-* status = #accepted
-* intent = #option
-* statusReason.coding = PSSrFeedbackReasons#OtherReason
-* statusReason.text = "Some Other Reason"
-* lastModified = "2025-05-28T10:10:00+02:00"
-
-Instance: task-accepted-other-r
-Title: "Radiology - Select other recommendation"
-Description: "Prescriber selects an other recommendation"
-InstanceOf: FeedbackTask
-Usage: #example
-* id = "task-accepted-other-r"
-* focus.display = "MR, cervical spine, wo/w iv contrast"
-* focus.identifier.system = $sct
-* focus.identifier.value = "42807009"
-* status = #accepted
-* intent = #option
-* statusReason.coding = PSSrFeedbackReasons#OtherReason
-* statusReason.text = "Better alternative that was not provided by PSS"
-* lastModified = "2025-05-28T10:10:00+02:00"
-
-Instance: antimicrobial-feedback-green
-Title: "Antimicrobial feedback - green recommendation"
-Description: "Prescriber selects a green antimicrobial recommendation"
-InstanceOf: Parameters
-Usage: #example
-* id = "antimicrobial-feedback-green"
-
-// session identifier
-* parameter[+].name = "pss-id"
-* parameter[=].valueString = "0051510d-79e7-4bc6-a4f5-6b0654b23c03"
-
-// select green recommendation
-* parameter[+].name = "feedback-task"
-* parameter[=].resource = task-accepted-green-a
-
-Instance: task-accepted-green-a
-Title: "Antimicrobial - Select green recommendation"
-Description: "Prescriber selects a green antimicrobial recommendation"
-InstanceOf: FeedbackTask
-Usage: #example
-* id = "task-accepted-green-a"
-* focus = Reference(30551ce1-5a28-4356-b684-1e639094ac23)  // e.g. antimicrobial MedicationRequest
-* focus.identifier.value = "J01XD01"                        // ATC
-* status = #accepted
-* intent = #option
-* lastModified = "2025-05-28T10:10:00+02:00"
-
-Instance: antimicrobial-feedback-red
-Title: "Antimicrobial feedback - red recommendation"
-Description: "Prescriber selects an red antimicrobial recommendation with a reason"
-InstanceOf: Parameters
-Usage: #example
-* id = "antimicrobial-feedback-red"
-
-// session identifier
-* parameter[+].name = "pss-id"
-* parameter[=].valueString = "0051510d-79e7-4bc6-a4f5-6b0654b23c03"
-
-// select orange/red recommendation
-* parameter[+].name = "feedback-task"
-* parameter[=].resource = task-accepted-red-a
-
-Instance: task-accepted-orange-a
-Title: "Antimicrobial - Select red recommendation"
-Description: "Prescriber selects an red antimicrobial recommendation with a reason"
-InstanceOf: FeedbackTask
-Usage: #example
-* id = "task-accepted-red-a"
-* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad29)  // e.g. another antimicrobial MedicationRequest
-* status = #accepted
-* intent = #option
-* statusReason.coding = PSSaFeedbackReasons#OtherReason
-* statusReason.text = "Alternative required due to previous insufficient effect"
-* lastModified = "2025-05-28T10:15:00+02:00"
+// // End of Option 2
 
 
 
 
 
-
-
-Instance: alternative-request
-InstanceOf: PSSServiceRequest
-
-* status = #draft
-* intent = #proposal
-
-
-
-
-
-//DELETE ONE OF THESE - Option 1: endpoint can be Task or Bundle
-Instance: alternative-request-task
-Title: "Antimicrobial - Select another option that is not in the recommendations"
-Description: "Prescriber decides to use another treatment that is not in the PSS recommendations"
-InstanceOf: FeedbackTask
-Usage: #example
-* id = "alternative-request-task"
-//* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad29)  // e.g. another antimicrobial MedicationRequest
-* status = #accepted
-* intent = #option
-* statusReason.coding = PSSaFeedbackReasons#FastResults
-* statusReason.text = "Alternative treatment proposed due to patient age and need for faster treatment"
-* lastModified = "2025-05-28T10:15:00+02:00"
-
-Instance: alternative-request-bundle
-* entry[+] = alternative-request
-* entry[+] = alternative-request-task
-
-// End of Option 1
-
-
-
-//DELETE ONE OF THESE - Option 2
-Instance: alternative-request-task-w-contained
-Title: "Antimicrobial - Select another option that is not in the recommendations"
-Description: "Prescriber decides to use another treatment that is not in the PSS recommendations"
-InstanceOf: FeedbackTask
-Usage: #example
-* contained[+] = alternative-request
-* id = "alternative-request-task"
-//* focus = Reference(30551ce1-5a28-4356-b684-1e639094ad29)  // e.g. another antimicrobial MedicationRequest
-* status = #accepted
-* intent = #option
-* statusReason.coding = PSSaFeedbackReasons#FastResults
-* statusReason.text = "Alternative treatment proposed due to patient age and need for faster treatment"
-* lastModified = "2025-05-28T10:15:00+02:00"
-
-// End of Option 1
-
-
-
-CodeSystem: PSSFeedbackCodes
-Title: "PSS Feedback Codes"
-Description: "Feedback codes for PSS"
-* ^experimental = false
-* ^caseSensitive = true
-
-* #accepted "Accepted"
-* #rejected "Rejected"
-* #overridden "Overridden"
-
-
-
-ValueSet: PSSFeedbackCodesVS
-Title: "PSS Feedback Codes"
-Description: "Feedback codes for PSS"
-* codes from system PSSFeedbackCodes
-
-
-CodeSystem: PSSaFeedbackReasons
-Title: "PSSa Feedback Code Reasons"
-Description: "Feedback code reasons for PSS antimicrobial"
-* ^experimental = false
-* ^caseSensitive = true
-
-* #ClinicIssue "Concerning clinical presentation"
-* #Comorbidities "Comorbidities"
-* #FastResults "Faster results"
-* #PosPrevExp "Positive prior experience"
-* #InsuffEffect "Insufficient effect of recommended management in the past"
-* #BetterTol "Better tolerated"
-* #Allergy "Allergy"
-* #OtherReason "Other reason — which"
-
-CodeSystem: PSSrFeedbackReasons
-Title: "PSSr Feedback Code Reasons"
-Description: "Feedback code reasons for PSS radiology"
-* ^experimental = false
-* ^caseSensitive = true
-
-* #Pregnancy "Contraindicated due to pregnancy"
-* #ImplantIncompatibility "Not suitable because of an implanted device"
-* #ContrastAllergy "Patient has allergy to contrast agents"
-* #IncompleteRecommendation "Recommendation lacked needed clinical details"
-* #WaitingTimeTooLong "Expected waiting time is too long"
-* #Emergency "Urgent situation requiring faster action"
-* #OtherReason "Other reason — which"
-
-
-ValueSet: PSSFeedbackReasonsVS
-Title: "PSS Feedback Code Reasons"
-Description: "Feedback code reasons for PSS"
-* codes from system PSSaFeedbackReasons
-* codes from system PSSrFeedbackReasons
 
 
 

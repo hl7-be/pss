@@ -31,15 +31,50 @@ end
 ...
 group #fed Service 3 - Given some data (+ a procedure), request recommended procedures
         EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$apply**\n Payload:\n        subject=Y\n        data=Bundle
-        & PSS --> QSI 
+        & PSS --> QSI
         & PSS -[hidden]-> QSI : "                                      "
 
         activate PSS
         activate QSI
-        QSI --> PSS 
+        QSI --> PSS
         & PSS -> EPD: Bundle with RequestGroup with options
         deactivate PSS
         deactivate QSI
+        |||
+
+end
+...
+group #efd Service 4 - Give feedback
+        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={exchangeId}\n        feedback-resource=Task or Bundle
+        note left of PSS
+|_ Task (FeedbackTask)
+  or
+|_ Bundle (PSSFeedbackBundle)
+  |_ Task (FeedbackTask)
+  |_ Request (alternative)
+        end note
+        deactivate EPD
+        activate PSS
+        & PSS -[hidden]-> QSI : "                                      "
+        deactivate PSS
+        |||
+
+end
+...
+group #dfe Service 5 - Consult feedback (optional)
+'        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
+        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_tag=recommendation**
+
+        & PSS -[hidden]-> QSI : "                                      "
+        activate PSS
+        |||
+        PSS -> ADM : Bundle (PSSFeedbackBundle)
+                note left of PSS
+|_ Task (FeedbackTask)
+|_ Request (if alternative)
+        end note
+        & PSS -[hidden]-> QSI : "                                      "
+        deactivate PSS
         |||
 
 end
