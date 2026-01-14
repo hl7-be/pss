@@ -32,7 +32,11 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "*"
-* parameter[=].documentation = "A Task, or a Bundle containing the Task as well as a new request, representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`."
+* parameter[=].documentation = """
+A Task, or a Bundle containing the Task as well as a new request, representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`.
+If the user doesn't accept any of the options provided by PSS, a feedback is still required to finish the PSS process. 
+This can be either a set of Task, option by option 
+"""
 * parameter[=].type = #Resource
 //* parameter[=].allowedType[+] = #Task
 //* parameter[=].allowedType[+] = #Bundle

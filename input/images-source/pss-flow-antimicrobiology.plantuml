@@ -72,22 +72,23 @@ group #efd PSS-4 - Give feedback
         deactivate PSS
 end
 ...
-...
-group #fde PSS-5 - Consult prior result
-EPD -> PSS : \n**GET /Bundle/{PSS-ID}&_tag=recommendation**
-'        activate EPD
-end
+
+' ...
+' group #fde PSS-5 - Consult prior result
+' EPD -> PSS : \n**GET /Bundle/{PSS-ID}&_tag=recommendation**
+' '        activate EPD
+' end
 
 ...
 
-group #dfe PSS-6 - Consult feedback
-'        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
-         -> PSS : \n**GET /Bundle?identifier={PSS-ID}&_tag=feedback**
-        activate PSS
-        <- PSS   : Bundle (PSSFeedbackBundle)
-        deactivate PSS
-'        activate EPD
-end
+' group #dfe PSS-6 - Consult feedback
+' '        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
+'          -> PSS : \n**GET /Bundle?identifier={PSS-ID}&_tag=feedback**
+'         activate PSS
+'         <- PSS   : Bundle (PSSFeedbackBundle)
+'         deactivate PSS
+' '        activate EPD
+' end
 
 
 

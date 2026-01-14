@@ -50,7 +50,7 @@ Usage: #example
 * status = #accepted
 * intent = #option
 * statusReason.coding = PSSaFeedbackReasons#OtherReason
-* statusReason.text = "Alternative required due to previous insufficient effect"
+* statusReason.text = "This was the only possible choice, because this patient is alergic to the usual alternative medication"
 * lastModified = "2025-05-28T10:15:00+02:00"
 
 
