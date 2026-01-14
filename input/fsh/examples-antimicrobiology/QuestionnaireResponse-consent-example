@@ -1,0 +1,14 @@
+Instance: qr-consent-example
+Title: "Example of consent/statistics preference"
+Description: "Example of how to provide consent and statistics preference in PSS."
+InstanceOf: QuestionnaireResponse
+Usage: #example
+* questionnaire = "https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/q-collect-information-a|2025"
+* status = #completed
+* authored = "2025-08-22T10:20:20Z"
+* source = Reference(PractitionerRole/your-hcp-role-id)
+* item[0].linkId = "tc"
+* item[=].item.linkId = "consent"
+* item[=].item.answer.valueBoolean = true
+* item[+].linkId = "anonymizationPreference"
+* item[=].answer.valueCoding = $PSSCodes#full-anon

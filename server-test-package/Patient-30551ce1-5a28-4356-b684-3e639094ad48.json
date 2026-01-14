@@ -1,0 +1,32 @@
+{
+  "resourceType": "Patient",
+  "id": "30551ce1-5a28-4356-b684-3e639094ad48",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient"
+    ]
+  },
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode": "masked"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge",
+      "valueAge": {
+        "value": 53,
+        "code": "y",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
+  "active": true,
+  "gender": "male",
+  "deceasedBoolean": false
+}

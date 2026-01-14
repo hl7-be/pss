@@ -37,7 +37,7 @@ Usage: #example
     * valueCode = #overridden
   * part[+]
     * name = "overrideReason"
-    * valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason#otherReason
+    * valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons#other-reason
     * valueCodeableConcept.text = "Patient prefers local application"
 
 * parameter[+]
@@ -50,7 +50,7 @@ Usage: #example
     * valueCode = #overridden
   * part[+]
     * name = "overrideReason"
-    * valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason#otherReason
+    * valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons#other-reason
     * valueCodeableConcept.text = "Patient prefers local application"
 
 * parameter[+]
@@ -63,7 +63,7 @@ Usage: #example
     * valueCode = #overridden
   * part[+]
     * name = "overrideReason"
-    * valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSDeviationReason#otherReason
+    * valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons#other-reason
     * valueCodeableConcept.text = "Patient prefers their own medicine"
   * part[+]
     * name = "otherOptionSelected"

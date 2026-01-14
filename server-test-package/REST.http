@@ -1,0 +1,285 @@
+
+### SET UP YOUR FHIR SERVER (adjust URLs as needed) ###
+### you can use this fro a jpa server : https://github.com/hl7-be/sandbox
+###
+PUT http://localhost:8080/fhir/Patient/30551ce1-5a28-4356-b684-3e639094ad48
+Content-Type: application/fhir+json
+
+< Patient-30551ce1-5a28-4356-b684-3e639094ad48.json
+
+
+
+###
+PUT http://localhost:8080/fhir/ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77
+Content-Type: application/fhir+json
+
+< ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.json
+
+###
+PUT http://localhost:8080/fhir/ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22
+Content-Type: application/fhir+json
+
+< ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22.json
+
+###
+PUT http://localhost:8080/fhir/ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23
+Content-Type: application/fhir+json
+
+< ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23.json
+
+
+
+###
+PUT http://localhost:8080/fhir/RequestGroup/getrecommendations-r-response-1
+Content-Type: application/fhir+json
+
+< RequestGroup-getrecommendations-r-response-1.json
+
+
+
+###
+PUT http://localhost:8080/fhir/Task/FeedbackT1
+Content-Type: application/fhir+json
+
+< Task-FeedbackT1.json
+
+
+###
+PUT http://localhost:8080/fhir/Task/FeedbackT3
+Content-Type: application/fhir+json
+
+< Task-FeedbackT3.json
+
+###
+PUT http://localhost:8080/fhir/Task/FeedbackT4
+Content-Type: application/fhir+json
+
+< Task-FeedbackT4.json
+
+
+
+
+### 
+GET http://localhost:8080/fhir/Task?focus=RequestGroup/getrecommendations-r-response-1
+
+
+
+###
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action&_revinclude:iterate=Task:focus
+
+
+
+
+
+
+
+### 
+PUT http://localhost:8080/fhir/SearchParameter/requestgroup-action
+Content-Type: application/fhir+json
+
+
+{
+  "resourceType": "SearchParameter",
+  "id": "requestgroup-action",
+  "url": "http://example.org/fhir/SearchParameter/requestgroup-action",
+  "version": "1",
+  "name": "requestgroup-action",
+  "status": "active",
+  "code": "action",
+  "base": ["RequestGroup"],
+  "type": "reference",
+  "description": "Resources referenced in RequestGroup.action.resource",
+  "expression": "RequestGroup.action.resource",
+  "target": [
+    "ServiceRequest",
+    "MedicationRequest",
+    "Procedure",
+    "Observation",
+    "Task",
+    "MedicationDispense",
+    "MedicationAdministration",
+    "DiagnosticReport",
+    "CommunicationRequest"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true
+}
+
+
+###
+PUT http://localhost:8080/fhir/SearchParameter/requestgroup-action
+Content-Type: application/fhir+json
+
+{
+  "resourceType": "SearchParameter",
+  "id": "requestgroup-action",
+  "url": "http://example.org/fhir/SearchParameter/requestgroup-action",
+  "version": "1.0.1",
+  "name": "RequestGroupActionResource",
+  "status": "active",
+  "description": "Resources referenced anywhere in RequestGroup.action[*.].resource (supports one level of nested actions).",
+  "code": "action",
+  "base": ["RequestGroup"],
+  "type": "reference",
+  "expression": "RequestGroup.action.resource | RequestGroup.action.action.resource | RequestGroup.action.action.action.resource",
+  "target": [
+    "ServiceRequest",
+    "MedicationRequest",
+    "Procedure",
+    "Observation",
+    "DiagnosticReport",
+    "CommunicationRequest",
+    "MedicationDispense",
+    "MedicationAdministration",
+    "Task"
+  ],
+  "multipleOr": true,
+  "multipleAnd": true
+}
+
+
+
+###
+
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action&_revinclude:iterate=Task:focus
+
+###
+
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action&_revinclude:iterate=Task:focus
+
+
+###
+GET http://localhost:8080/fhir/Task?focus=ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77
+
+
+###
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action&_revinclude=Task:focus&_revinclude:iterate=Task:focus
+
+
+### 
+POST http://localhost:8080/fhir/$reindex
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 0) Server metadata (sanity)
+GET http://localhost:8080/fhir/metadata
+
+### 1) Verify your SearchParameter exists & is ACTIVE
+GET http://localhost:8080/fhir/SearchParameter?base=RequestGroup&code=action&_summary=true
+
+### 1.1) Fetch the SearchParameter by URL (adjust if you used a different URL)
+GET http://localhost:8080/fhir/SearchParameter?url=http://example.org/fhir/SearchParameter/requestgroup-action
+
+### 1.2) Fetch the SearchParameter by its id (edit if your id differs)
+GET http://localhost:8080/fhir/SearchParameter/requestgroup-action
+
+### 2) Read the RequestGroup (ensure the data is what you expect — look at action vs action.action)
+GET http://localhost:8080/fhir/RequestGroup/getrecommendations-r-response-1
+
+### 3) Test the SearchParameter as a filter
+# (Optional) If your SP expression covers nested paths, this should return the RG when pointing at one of its children:
+# Replace the SR id with one you know is inside action or action.action
+GET http://localhost:8080/fhir/RequestGroup?action=ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77&_summary=true
+
+### 4) Test _include using your custom SP (should bring in all children)
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action
+
+### 5) Direct Task lookups by focus (prove each Task is findable alone)
+GET http://localhost:8080/fhir/Task?focus=RequestGroup/getrecommendations-r-response-1
+
+### 5.1) The Task that focuses a child ServiceRequest
+GET http://localhost:8080/fhir/Task?focus=ServiceRequest/30551ce1-5a28-4356-b684-1e639044ad77
+
+### 5.2) (If you have others) Try the other children too
+GET http://localhost:8080/fhir/Task?focus=ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22
+###
+GET http://localhost:8080/fhir/Task?focus=ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23
+
+### 6) One-step attempt: include children + try both reverse-includes
+# NOTE: On some HAPI builds, _revinclude only applies to the primary matches, not includes.
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action&_revinclude=Task:focus&_revinclude:iterate=Task:focus
+
+### 7) Reindex operations (use after creating/updating the SearchParameter)
+# 7a) Reindex the specific RequestGroup (fastest)
+POST http://localhost:8080/fhir/RequestGroup/getrecommendations-r-response-1/$reindex
+Content-Type: application/fhir+json
+
+{}
+
+### 7b) Reindex the RequestGroup TYPE (if many RGs may be affected)
+POST http://localhost:8080/fhir/RequestGroup/$reindex
+Content-Type: application/fhir+json
+
+{}
+
+### 7c) (Optional) Reindex the Task TYPE too (if you changed Task-related SPs)
+POST http://localhost:8080/fhir/Task/$reindex
+Content-Type: application/fhir+json
+
+{}
+
+### 7d) (Optional) Global reindex (slow; only if needed)
+POST http://localhost:8080/fhir/$reindex
+Content-Type: application/fhir+json
+
+{}
+
+### 8) After reindexing, re-run the key checks
+# 8a) Children include check
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action
+
+# 8b) Single-call goal (if your HAPI supports iterating reverse-includes over includes)
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action&_revinclude=Task:focus&_revinclude:iterate=Task:focus
+
+### 9) Final fallback (still one request, but Task-centric)
+# If your HAPI build won’t iterate reverse-includes, this won’t fetch child-focused Tasks in one call.
+# (Left here to quickly confirm the limitation.)
+GET http://localhost:8080/fhir/Task?_has:RequestGroup:action:_id=getrecommendations-r-response-1
+
+
+
+
+
+
+
+
+
+
+
+###
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action&_revinclude=Task:focus&_revinclude:iterate=Task:focus
+
+###
+GET http://localhost:8080/fhir/Task?_has:ServiceRequest:focus:_has:RequestGroup:action:_id=getrecommendations-r-response-1
+
+
+###
+GET http://localhost:8080/fhir/RequestGroup?_id=getrecommendations-r-response-1&_include=RequestGroup:action&_revinclude=Task:focus&_revinclude:iterate=Task:focus&_elements=resourceType,id,status,intent,focus,owner,lastModified

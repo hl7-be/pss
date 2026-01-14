@@ -58,50 +58,35 @@ See 4. below
 end
 ...
 group #efd PSS-4 - Give feedback
-        EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$feedback**
+        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={exchangeId}\n        feedback-resource=Task or Bundle
 '        activate EPD
         note left of PSS
-|_ PSS-ID
-|_ datetime
-|_ outcome
-|_ suggestionOutcomes
-  |_ suggestionId
-  |_ outcome
-  |_ overrideReason
+|_ Task (FeedbackTask)
+  or
+|_ Bundle (PSSFeedbackBundle)
+  |_ Task (FeedbackTask)
+  |_ MedicationRequest (alternative)
         end note
         deactivate EPD
         activate PSS
         deactivate PSS
 end
 ...
-...
-group #fde PSS-5 - Consult prior result
-EPD -> PSS : \n**GET /Bundle/{PSS-ID}**
-'        activate EPD
-end
 
 ' ...
+' group #fde PSS-5 - Consult prior result
+' EPD -> PSS : \n**GET /Bundle/{PSS-ID}&_tag=recommendation**
+' '        activate EPD
+' end
 
-' group #dfe PSS-6 - Consult feeback
-'         ADM -> PSS : \n**GET /Task?focus={PSS-ID}**
-'         & PSS -[hidden]-> QSI : "                                      "
+...
+
+' group #dfe PSS-6 - Consult feedback
+' '        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
+'          -> PSS : \n**GET /Bundle?identifier={PSS-ID}&_tag=feedback**
 '         activate PSS
-'         |||
-'         PSS -> ADM 
-'                 note left of PSS
-' |_ PSS-ID
-' |_ datetime
-' |_ outcome
-' |_ suggestionOutcomes
-'   |_ suggestionId
-'   |_ outcome
-'   |_ overrideReason
-'         end note
-'         deactivate EPD
-'         & PSS -[hidden]-> QSI : "                                      "
+'         <- PSS   : Bundle (PSSFeedbackBundle)
 '         deactivate PSS
-'         |||
-
 ' '        activate EPD
 ' end
 
