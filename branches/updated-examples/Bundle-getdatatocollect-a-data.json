@@ -1,0 +1,135 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "getdatatocollect-a-data",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"]
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-a",
+      "meta" : {
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-a</b></p><a name=\"patient-a\"> </a><a name=\"hcpatient-a\"> </a><a name=\"patient-a-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSPatient.html\">PSS anonymised Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"> Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The approximate, relevant age of the patient at the time of the search.\"><a href=\"StructureDefinition-PSSRelevantAge.html\">PSS Relevant Patient Age</a></td><td colspan=\"3\">36 y<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codey = 'y')</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge",
+        "valueAge" : {
+          "value" : 36,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "y"
+        }
+      }],
+      "active" : true,
+      "name" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode" : "masked"
+        }]
+      }],
+      "gender" : "female",
+      "deceasedBoolean" : false
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad01",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "vulvovaginitis",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_vulvovaginitis\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition vulvovaginitis</b></p><a name=\"vulvovaginitis\"> </a><a name=\"hcvulvovaginitis\"> </a><a name=\"vulvovaginitis-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 54586004}\">Lower abdominal pain</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\"> Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }],
+        "text" : "Active"
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmed"
+        }],
+        "text" : "Confirmed"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }],
+        "text" : "Encounter Diagnosis"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "54586004",
+          "display" : "Lower abdominal pain"
+        }],
+        "text" : "Lower abdominal pain"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-a"
+      },
+      "onsetDateTime" : "2024-10-13"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad02",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "allergy-to-sulfonamide",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_allergy-to-sulfonamide\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance allergy-to-sulfonamide</b></p><a name=\"allergy-to-sulfonamide\"> </a><a name=\"hcallergy-to-sulfonamide\"> </a><a name=\"allergy-to-sulfonamide-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91939003}\">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href=\"Patient-patient-a.html\"> Female, DoB Unknown</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "91939003",
+          "display" : "Allergy to sulfonamide"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/patient-a"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad12",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "proposal-clindamycin",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_proposal-clindamycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest proposal-clindamycin</b></p><a name=\"proposal-clindamycin\"> </a><a name=\"hcproposal-clindamycin\"> </a><a name=\"proposal-clindamycin-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-patient-a.html\"> Female, DoB Unknown</a></p></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "G01AA10"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-a"
+      }
+    }
+  }]
+}

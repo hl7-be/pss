@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "radiation-exposure-rating-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet radiation-exposure-rating-vs</b></p><a name=\"radiation-exposure-rating-vs\"> </a><a name=\"hcradiation-exposure-rating-vs\"> </a><a name=\"radiation-exposure-rating-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-radiology-exposure-rating.html\"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating</code></a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/radiation-exposure-rating-vs",
+  "version" : "1.0.0",
+  "name" : "RadiationExposureRatingVS",
+  "title" : "Radiation exposure rating",
+  "status" : "draft",
+  "date" : "2025-02-07T08:52:52+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Radiation exposure rating.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating"
+    }]
+  }
+}

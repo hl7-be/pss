@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Task",
+  "id" : "alternative-request-task",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task alternative-request-task</b></p><a name=\"alternative-request-task\"> </a><a name=\"hcalternative-request-task\"> </a><p><b>status</b>: Accepted</p><p><b>statusReason</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons FastResults}\">Alternative treatment proposed due to patient age and need for faster treatment</span></p><p><b>intent</b>: option</p><p><b>lastModified</b>: 2025-05-28 10:15:00+0200</p></div>"
+  },
+  "status" : "accepted",
+  "statusReason" : {
+    "coding" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+      "code" : "FastResults"
+    }],
+    "text" : "Alternative treatment proposed due to patient age and need for faster treatment"
+  },
+  "intent" : "option",
+  "lastModified" : "2025-05-28T10:15:00+02:00"
+}

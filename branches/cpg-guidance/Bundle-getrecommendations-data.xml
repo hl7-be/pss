@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="getrecommendations-data"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad12"/>
+    <resource>
+      <Patient>
+        <id value="X"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_X"> </a><p class="res-header-id"><b>Generated Narrative: Patient X</b></p><a name="X"> </a><a name="hcX"> </a><a name="X-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient Male, DoB: 1972-05-24</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr></table></div>
+        </text>
+        <active value="true"/>
+        <gender value="male"/>
+        <birthDate value="1972-05-24"/>
+        <deceasedBoolean value="false"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad13"/>
+    <resource>
+      <Observation>
+        <id value="bmi"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_bmi"> </a><p class="res-header-id"><b>Generated Narrative: Observation bmi</b></p><a name="bmi"> </a><a name="hcbmi"> </a><a name="bmi-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 39156-5}">BMI</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>effective</b>: 2024-10-13</p><p><b>value</b>: 35 kg/m2<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg/m2 = 'kg/m2')</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+          </coding>
+          <text value="Vital Signs"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="39156-5"/>
+            <display value="Body mass index (BMI) [Ratio]"/>
+          </coding>
+          <text value="BMI"/>
+        </code>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+        <effectiveDateTime value="2024-10-13"/>
+        <valueQuantity>
+          <value value="35"/>
+          <unit value="kg/m2"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="kg/m2"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad14"/>
+    <resource>
+      <Condition>
+        <id value="shortness-of-breath"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_shortness-of-breath"> </a><p class="res-header-id"><b>Generated Narrative: Condition shortness-of-breath</b></p><a name="shortness-of-breath"> </a><a name="hcshortness-of-breath"> </a><a name="shortness-of-breath-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 267036007}">Shortness of breath</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+          <text value="Active"/>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="267036007"/>
+            <display value="Shortness of breath"/>
+          </coding>
+          <text value="Shortness of breath"/>
+        </code>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad15"/>
+    <resource>
+      <Condition>
+        <id value="chest-pain"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_chest-pain"> </a><p class="res-header-id"><b>Generated Narrative: Condition chest-pain</b></p><a name="chest-pain"> </a><a name="hcchest-pain"> </a><a name="chest-pain-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 274664007}">Chest pain that worsens with deep breathing</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+          <text value="Active"/>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="274664007"/>
+            <display value="Chest pain on breathing"/>
+          </coding>
+          <text value="Chest pain that worsens with deep breathing"/>
+        </code>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad16"/>
+    <resource>
+      <Condition>
+        <id value="impaired-kidney-function"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_impaired-kidney-function"> </a><p class="res-header-id"><b>Generated Narrative: Condition impaired-kidney-function</b></p><a name="impaired-kidney-function"> </a><a name="hcimpaired-kidney-function"> </a><a name="impaired-kidney-function-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 723188008}">Impaired kidney function</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+          <text value="Active"/>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="723188008"/>
+            <display value="Renal insufficiency (disorder)"/>
+          </coding>
+          <text value="Impaired kidney function"/>
+        </code>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+</Bundle>

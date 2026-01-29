@@ -1,0 +1,2688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="699d98e8-0b23-4569-8558-e7ee02db1f34"/>
+  <meta>
+    <lastUpdated value="2026-01-14T16:01:39.314+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-419760006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/419760006">419760006</a>
+                </td>
+                <td>Bacterial vaginosis (disorder)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;419760006&quot;, &quot;display&quot;: &quot;Bacterial vaginosis (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;419760006&quot;&gt;&lt;display value=&quot;Bacterial vaginosis (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.1"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="BacterialCodes"/>
+        <title value="Bacterial Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6f8397c5-16f6-4036-a403-1f014fc45727"/>
+          <timestamp value="2026-01-14T16:04:17+00:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419760006"/>
+            <display value="Bacterial vaginosis (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-72934000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/72934000">72934000</a>
+                </td>
+                <td>Candidiasis of vagina</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;72934000&quot;, &quot;display&quot;: &quot;Candidiasis of vagina&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;72934000&quot;&gt;&lt;display value=&quot;Candidiasis of vagina&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-72605008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/72605008">72605008</a>
+                </td>
+                <td>Candidal vulvovaginitis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;72605008&quot;, &quot;display&quot;: &quot;Candidal vulvovaginitis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;72605008&quot;&gt;&lt;display value=&quot;Candidal vulvovaginitis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1085006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1085006">1085006</a>
+                </td>
+                <td>Candidiasis of vulva</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1085006&quot;, &quot;display&quot;: &quot;Candidiasis of vulva&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;1085006&quot;&gt;&lt;display value=&quot;Candidiasis of vulva&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-240706001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/240706001">240706001</a>
+                </td>
+                <td>Candida infection of genital region</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;240706001&quot;, &quot;display&quot;: &quot;Candida infection of genital region&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;240706001&quot;&gt;&lt;display value=&quot;Candida infection of genital region&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.2"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="CandidaCodes"/>
+        <title value="Candida Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ddcdda48-e0b2-42ce-ba3b-e3f2431fbb4c"/>
+          <timestamp value="2026-01-14T16:04:17+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72934000"/>
+            <display value="Candidiasis of vagina"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72605008"/>
+            <display value="Candidal vulvovaginitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1085006"/>
+            <display value="Candidiasis of vulva"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="240706001"/>
+            <display value="Candida infection of genital region"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version 2024
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10-cm|2024" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-A56.0"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+                </td>
+                <td style="white-space:nowrap">  A56.0</td>
+                <td>Chlamydial infection of lower genitourinary tract</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;A56.0&quot;, &quot;display&quot;: &quot;Chlamydial infection of lower genitourinary tract&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;A56.0&quot;&gt;&lt;display value=&quot;Chlamydial infection of lower genitourinary tract&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-A56.2"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+                </td>
+                <td style="white-space:nowrap">  A56.2</td>
+                <td>Chlamydial infection of genitourinary tract, unspecified</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;A56.2&quot;, &quot;display&quot;: &quot;Chlamydial infection of genitourinary tract, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;A56.2&quot;&gt;&lt;display value=&quot;Chlamydial infection of genitourinary tract, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-236683007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/236683007">236683007</a>
+                </td>
+                <td>Chlamydial urethritis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;236683007&quot;, &quot;display&quot;: &quot;Chlamydial urethritis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;236683007&quot;&gt;&lt;display value=&quot;Chlamydial urethritis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-186729003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/186729003">186729003</a>
+                </td>
+                <td>Chlamydial infection of lower genitourinary tract</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;186729003&quot;, &quot;display&quot;: &quot;Chlamydial infection of lower genitourinary tract&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;186729003&quot;&gt;&lt;display value=&quot;Chlamydial infection of lower genitourinary tract&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.3"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="ChlamydiaCodes"/>
+        <title value="Chlamydia Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ae0363fb-726d-4a69-95d8-498627dd02c7"/>
+          <timestamp value="2026-01-14T16:04:18+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="A56.0"/>
+            <display value="Chlamydial infection of lower genitourinary tract"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="A56.2"/>
+            <display value="Chlamydial infection of genitourinary tract, unspecified"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="236683007"/>
+            <display value="Chlamydial urethritis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="186729003"/>
+            <display value="Chlamydial infection of lower genitourinary tract"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx-nordics.fhir.org, tx.fhir.org based on:</p>
+              <ul>
+                <li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version 2024
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10-cm|2024" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-icpc2E.html">codesystem International Classification of Primary Care, second edition (1998) v2.1.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icpc-2|2.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-D70"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+                </td>
+                <td style="white-space:nowrap">  D70</td>
+                <td>Neutropenia</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;D70&quot;, &quot;display&quot;: &quot;Neutropenia&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;D70&quot;&gt;&lt;display value=&quot;Neutropenia&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-D71"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+                </td>
+                <td style="white-space:nowrap">  D71</td>
+                <td>Functional disorders of polymorphonuclear neutrophils</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;D71&quot;, &quot;display&quot;: &quot;Functional disorders of polymorphonuclear neutrophils&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;D71&quot;&gt;&lt;display value=&quot;Functional disorders of polymorphonuclear neutrophils&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-234532001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/234532001">234532001</a>
+                </td>
+                <td>Immunodeficiency disorder</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;234532001&quot;, &quot;display&quot;: &quot;Immunodeficiency disorder&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;234532001&quot;&gt;&lt;display value=&quot;Immunodeficiency disorder&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-62479008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/62479008">62479008</a>
+                </td>
+                <td>AIDS</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;62479008&quot;, &quot;display&quot;: &quot;AIDS&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;62479008&quot;&gt;&lt;display value=&quot;AIDS&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-445945000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/445945000">445945000</a>
+                </td>
+                <td>Infectious disease with acquired immune deficiency syndrome (disorder)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;445945000&quot;, &quot;display&quot;: &quot;Infectious disease with acquired immune deficiency syndrome (disorder)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;445945000&quot;&gt;&lt;display value=&quot;Infectious disease with acquired immune deficiency syndrome (disorder)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.4"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="CompromisedImmuneSystemCodes"/>
+        <title value="CompromisedImmuneSystem Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:763be6c7-cfb5-495b-aa45-8fd929b3bb40"/>
+          <timestamp value="2026-01-14T16:04:21+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icpc-2|2.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/sid/icpc-2|2.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="D70"/>
+            <display value="Neutropenia"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="D71"/>
+            <display value="Functional disorders of polymorphonuclear neutrophils"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="234532001"/>
+            <display value="Immunodeficiency disorder"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="62479008"/>
+            <display value="AIDS"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="445945000"/>
+            <display value="Infectious disease with acquired immune deficiency syndrome (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version 2024
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10-cm|2024" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-A54.0"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+                </td>
+                <td style="white-space:nowrap">  A54.0</td>
+                <td>Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;A54.0&quot;, &quot;display&quot;: &quot;Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;A54.0&quot;&gt;&lt;display value=&quot;Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-A54.9"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+                </td>
+                <td style="white-space:nowrap">  A54.9</td>
+                <td>Gonococcal infection, unspecified</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;A54.9&quot;, &quot;display&quot;: &quot;Gonococcal infection, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;A54.9&quot;&gt;&lt;display value=&quot;Gonococcal infection, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-236682002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/236682002">236682002</a>
+                </td>
+                <td>Gonococcal urethritis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;236682002&quot;, &quot;display&quot;: &quot;Gonococcal urethritis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;236682002&quot;&gt;&lt;display value=&quot;Gonococcal urethritis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.5"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="GonokokCodes"/>
+        <title value="Gonokok Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d545f4bf-6c16-466a-9dc4-27fcc589943e"/>
+          <timestamp value="2026-01-14T16:04:22+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="A54.0"/>
+            <display value="Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="A54.9"/>
+            <display value="Gonococcal infection, unspecified"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="236682002"/>
+            <display value="Gonococcal urethritis"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-240594008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/240594008">240594008</a>
+                </td>
+                <td>Genital mycoplasma infection</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;240594008&quot;, &quot;display&quot;: &quot;Genital mycoplasma infection&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;240594008&quot;&gt;&lt;display value=&quot;Genital mycoplasma infection&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.6"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="MycoplasmaCodes"/>
+        <title value="Mycoplasma Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:99e9bd37-38db-4970-bfe4-f1a9f0676186"/>
+          <timestamp value="2026-01-14T16:04:23+00:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="240594008"/>
+            <display value="Genital mycoplasma infection"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx-nordics.fhir.org, tx.fhir.org based on:</p>
+              <ul>
+                <li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version 2024
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10-cm|2024" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-icpc2E.html">codesystem International Classification of Primary Care, second edition (1998) v2.1.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icpc-2|2.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-C00"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+                </td>
+                <td style="white-space:nowrap">  C00</td>
+                <td>Malignant neoplasm of lip</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;C00&quot;, &quot;display&quot;: &quot;Malignant neoplasm of lip&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;C00&quot;&gt;&lt;display value=&quot;Malignant neoplasm of lip&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-C01"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+                </td>
+                <td style="white-space:nowrap">  C01</td>
+                <td>Malignant neoplasm of base of tongue</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;C01&quot;, &quot;display&quot;: &quot;Malignant neoplasm of base of tongue&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;C01&quot;&gt;&lt;display value=&quot;Malignant neoplasm of base of tongue&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-363505006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/363505006">363505006</a>
+                </td>
+                <td>Malignant tumor of oral cavity</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;363505006&quot;, &quot;display&quot;: &quot;Malignant tumor of oral cavity&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;363505006&quot;&gt;&lt;display value=&quot;Malignant tumor of oral cavity&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-363429002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/363429002">363429002</a>
+                </td>
+                <td>Malignant tumour of larynx</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;363429002&quot;, &quot;display&quot;: &quot;Malignant tumour of larynx&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;363429002&quot;&gt;&lt;display value=&quot;Malignant tumour of larynx&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-363353009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/363353009">363353009</a>
+                </td>
+                <td>Malignant tumor of gallbladder</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;363353009&quot;, &quot;display&quot;: &quot;Malignant tumor of gallbladder&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;363353009&quot;&gt;&lt;display value=&quot;Malignant tumor of gallbladder&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.7"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="OncologyPatientCodes"/>
+        <title value="OncologyPatient Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1f6a69c7-ca6c-48df-bd00-39ad29ba97dc"/>
+          <timestamp value="2026-01-14T16:04:25+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icpc-2|2.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/sid/icpc-2|2.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="C00"/>
+            <display value="Malignant neoplasm of lip"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="C01"/>
+            <display value="Malignant neoplasm of base of tongue"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363505006"/>
+            <display value="Malignant tumor of oral cavity"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363429002"/>
+            <display value="Malignant tumour of larynx"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363353009"/>
+            <display value="Malignant tumor of gallbladder"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-197903003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/197903003">197903003</a>
+                </td>
+                <td>Candidal urethritis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197903003&quot;, &quot;display&quot;: &quot;Candidal urethritis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;197903003&quot;&gt;&lt;display value=&quot;Candidal urethritis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-30116001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/30116001">30116001</a>
+                </td>
+                <td>Trichomonal urethritis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;30116001&quot;, &quot;display&quot;: &quot;Trichomonal urethritis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;30116001&quot;&gt;&lt;display value=&quot;Trichomonal urethritis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-236684001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/236684001">236684001</a>
+                </td>
+                <td>Tuberculous urethritis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;236684001&quot;, &quot;display&quot;: &quot;Tuberculous urethritis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;236684001&quot;&gt;&lt;display value=&quot;Tuberculous urethritis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-197850006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/197850006">197850006</a>
+                </td>
+                <td>Trichomonal cystitis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197850006&quot;, &quot;display&quot;: &quot;Trichomonal cystitis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;197850006&quot;&gt;&lt;display value=&quot;Trichomonal cystitis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.8"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="OtherCodes"/>
+        <title value="Other Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6067dfc7-be44-449a-b52d-609d5e9e33f4"/>
+          <timestamp value="2026-01-14T16:04:27+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="197903003"/>
+            <display value="Candidal urethritis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="30116001"/>
+            <display value="Trichomonal urethritis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="236684001"/>
+            <display value="Tuberculous urethritis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="197850006"/>
+            <display value="Trichomonal cystitis"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-PSSFeedbackCodes.html">codesystem PSS Feedback Codes v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes-accepted"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSFeedbackCodes.html#PSSFeedbackCodes-accepted">accepted</a>
+                </td>
+                <td>Accepted</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;accepted&quot;, &quot;display&quot;: &quot;Accepted&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;accepted&quot;&gt;&lt;display value=&quot;Accepted&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes-rejected"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSFeedbackCodes.html#PSSFeedbackCodes-rejected">rejected</a>
+                </td>
+                <td>Rejected</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;rejected&quot;, &quot;display&quot;: &quot;Rejected&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;rejected&quot;&gt;&lt;display value=&quot;Rejected&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes-overridden"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSFeedbackCodes.html#PSSFeedbackCodes-overridden">overridden</a>
+                </td>
+                <td>Overridden</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;overridden&quot;, &quot;display&quot;: &quot;Overridden&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;overridden&quot;&gt;&lt;display value=&quot;Overridden&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.12"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="PSSFeedbackCodesVS"/>
+        <title value="PSS Feedback Codes"/>
+        <status value="active"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:0e0348f1-ac33-40e6-a182-beb18d01d20a"/>
+          <timestamp value="2026-01-14T16:04:27+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes"/>
+            <code value="accepted"/>
+            <display value="Accepted"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes"/>
+            <code value="rejected"/>
+            <display value="Rejected"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes"/>
+            <code value="overridden"/>
+            <display value="Overridden"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion performed internally based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-PSSaFeedbackReasons.html">codesystem PSSa Feedback Code Reasons v1.0.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="CodeSystem-PSSrFeedbackReasons.html">codesystem PSSr Feedback Code Reasons v1.0.0 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 15 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-ClinicIssue"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-ClinicIssue">ClinicIssue</a>
+                </td>
+                <td>Concerning clinical presentation</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ClinicIssue&quot;, &quot;display&quot;: &quot;Concerning clinical presentation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ClinicIssue&quot;&gt;&lt;display value=&quot;Concerning clinical presentation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-Comorbidities"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-Comorbidities">Comorbidities</a>
+                </td>
+                <td>Comorbidities</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;Comorbidities&quot;, &quot;display&quot;: &quot;Comorbidities&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;Comorbidities&quot;&gt;&lt;display value=&quot;Comorbidities&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-FastResults"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-FastResults">FastResults</a>
+                </td>
+                <td>Faster results</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;FastResults&quot;, &quot;display&quot;: &quot;Faster results&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;FastResults&quot;&gt;&lt;display value=&quot;Faster results&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-PosPrevExp"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-PosPrevExp">PosPrevExp</a>
+                </td>
+                <td>Positive prior experience</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;PosPrevExp&quot;, &quot;display&quot;: &quot;Positive prior experience&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;PosPrevExp&quot;&gt;&lt;display value=&quot;Positive prior experience&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-InsuffEffect"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-InsuffEffect">InsuffEffect</a>
+                </td>
+                <td>Insufficient effect of recommended management in the past</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;InsuffEffect&quot;, &quot;display&quot;: &quot;Insufficient effect of recommended management in the past&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;InsuffEffect&quot;&gt;&lt;display value=&quot;Insufficient effect of recommended management in the past&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-BetterTol"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-BetterTol">BetterTol</a>
+                </td>
+                <td>Better tolerated</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;BetterTol&quot;, &quot;display&quot;: &quot;Better tolerated&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;BetterTol&quot;&gt;&lt;display value=&quot;Better tolerated&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-Allergy"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-Allergy">Allergy</a>
+                </td>
+                <td>Allergy</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;Allergy&quot;, &quot;display&quot;: &quot;Allergy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;Allergy&quot;&gt;&lt;display value=&quot;Allergy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-OtherReason"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-OtherReason">OtherReason</a>
+                </td>
+                <td>Other reason — which</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;OtherReason&quot;, &quot;display&quot;: &quot;Other reason — which&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;OtherReason&quot;&gt;&lt;display value=&quot;Other reason — which&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-Pregnancy"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-Pregnancy">Pregnancy</a>
+                </td>
+                <td>Contraindicated due to pregnancy</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;Pregnancy&quot;, &quot;display&quot;: &quot;Contraindicated due to pregnancy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;Pregnancy&quot;&gt;&lt;display value=&quot;Contraindicated due to pregnancy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-ImplantIncompatibility"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-ImplantIncompatibility">ImplantIncompatibility</a>
+                </td>
+                <td>Not suitable because of an implanted device</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ImplantIncompatibility&quot;, &quot;display&quot;: &quot;Not suitable because of an implanted device&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ImplantIncompatibility&quot;&gt;&lt;display value=&quot;Not suitable because of an implanted device&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-ContrastAllergy"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-ContrastAllergy">ContrastAllergy</a>
+                </td>
+                <td>Patient has allergy to contrast agents</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ContrastAllergy&quot;, &quot;display&quot;: &quot;Patient has allergy to contrast agents&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ContrastAllergy&quot;&gt;&lt;display value=&quot;Patient has allergy to contrast agents&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-IncompleteRecommendation"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-IncompleteRecommendation">IncompleteRecommendation</a>
+                </td>
+                <td>Recommendation lacked needed clinical details</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;IncompleteRecommendation&quot;, &quot;display&quot;: &quot;Recommendation lacked needed clinical details&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;IncompleteRecommendation&quot;&gt;&lt;display value=&quot;Recommendation lacked needed clinical details&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-WaitingTimeTooLong"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-WaitingTimeTooLong">WaitingTimeTooLong</a>
+                </td>
+                <td>Expected waiting time is too long</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;WaitingTimeTooLong&quot;, &quot;display&quot;: &quot;Expected waiting time is too long&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;WaitingTimeTooLong&quot;&gt;&lt;display value=&quot;Expected waiting time is too long&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-Emergency"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-Emergency">Emergency</a>
+                </td>
+                <td>Urgent situation requiring faster action</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;Emergency&quot;, &quot;display&quot;: &quot;Urgent situation requiring faster action&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;Emergency&quot;&gt;&lt;display value=&quot;Urgent situation requiring faster action&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-OtherReason"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-OtherReason">OtherReason</a>
+                </td>
+                <td>Other reason — which</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;OtherReason&quot;, &quot;display&quot;: &quot;Other reason — which&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;OtherReason&quot;&gt;&lt;display value=&quot;Other reason — which&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.13"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="PSSFeedbackReasonsVS"/>
+        <title value="PSS Feedback Code Reasons"/>
+        <status value="active"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3be1261e-6d16-4815-b3da-af0601192e2c"/>
+          <timestamp value="2026-01-14T16:04:27+00:00"/>
+          <total value="15"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+            <code value="ClinicIssue"/>
+            <display value="Concerning clinical presentation"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+            <code value="Comorbidities"/>
+            <display value="Comorbidities"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+            <code value="FastResults"/>
+            <display value="Faster results"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+            <code value="PosPrevExp"/>
+            <display value="Positive prior experience"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+            <code value="InsuffEffect"/>
+            <display value="Insufficient effect of recommended management in the past"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+            <code value="BetterTol"/>
+            <display value="Better tolerated"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+            <code value="Allergy"/>
+            <display value="Allergy"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+            <code value="OtherReason"/>
+            <display value="Other reason — which"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+            <code value="Pregnancy"/>
+            <display value="Contraindicated due to pregnancy"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+            <code value="ImplantIncompatibility"/>
+            <display value="Not suitable because of an implanted device"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+            <code value="ContrastAllergy"/>
+            <display value="Patient has allergy to contrast agents"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+            <code value="IncompleteRecommendation"/>
+            <display value="Recommendation lacked needed clinical details"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+            <code value="WaitingTimeTooLong"/>
+            <display value="Expected waiting time is too long"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+            <code value="Emergency"/>
+            <display value="Urgent situation requiring faster action"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+            <code value="OtherReason"/>
+            <display value="Other reason — which"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-PSSRatingTypes.html">codesystem CodeSystem: Types of rating provided by the PSS system v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes-overall"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSRatingTypes.html#PSSRatingTypes-overall">overall</a>
+                </td>
+                <td>Overall score</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;overall&quot;, &quot;display&quot;: &quot;Overall score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;overall&quot;&gt;&lt;display value=&quot;Overall score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes-radiationexposure"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PSSRatingTypes.html#PSSRatingTypes-radiationexposure">radiationexposure</a>
+                </td>
+                <td>Radiation exposure score</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;radiationexposure&quot;, &quot;display&quot;: &quot;Radiation exposure score&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;radiationexposure&quot;&gt;&lt;display value=&quot;Radiation exposure score&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.9"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="PSSRatingTypesVS"/>
+        <title value="Types of rating provided by the PSS system"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a1405b6d-b17a-4ecc-9341-479dd10fe691"/>
+          <timestamp value="2026-01-14T16:04:27+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"/>
+            <code value="overall"/>
+            <display value="Overall score"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"/>
+            <code value="radiationexposure"/>
+            <display value="Radiation exposure score"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version 2024
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10-cm|2024" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-cm-Z33.1"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10-cm</code>
+                </td>
+                <td style="white-space:nowrap">  Z33.1</td>
+                <td>Pregnant state, incidental</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;Z33.1&quot;, &quot;display&quot;: &quot;Pregnant state, incidental&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;Z33.1&quot;&gt;&lt;display value=&quot;Pregnant state, incidental&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-87527008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/87527008">87527008</a>
+                </td>
+                <td>Term pregnancy</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;87527008&quot;, &quot;display&quot;: &quot;Term pregnancy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;87527008&quot;&gt;&lt;display value=&quot;Term pregnancy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-127364007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/127364007">127364007</a>
+                </td>
+                <td>Primigravida</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;127364007&quot;, &quot;display&quot;: &quot;Primigravida&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;127364007&quot;&gt;&lt;display value=&quot;Primigravida&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-72892002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/72892002">72892002</a>
+                </td>
+                <td>Normal pregnancy</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;72892002&quot;, &quot;display&quot;: &quot;Normal pregnancy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;72892002&quot;&gt;&lt;display value=&quot;Normal pregnancy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.10"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="PregnancyCodes"/>
+        <title value="Pregnancy Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f5268254-91bf-4ed9-af4d-06bdbe945eeb"/>
+          <timestamp value="2026-01-14T16:04:27+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10-cm|2024"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="Z33.1"/>
+            <display value="Pregnant state, incidental"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="87527008"/>
+            <display value="Term pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="127364007"/>
+            <display value="Primigravida"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72892002"/>
+            <display value="Normal pregnancy"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-276877003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/276877003">276877003</a>
+                </td>
+                <td>Trichomonal vaginitis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;276877003&quot;, &quot;display&quot;: &quot;Trichomonal vaginitis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;276877003&quot;&gt;&lt;display value=&quot;Trichomonal vaginitis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-35089004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/35089004">35089004</a>
+                </td>
+                <td>Urogenital infection by Trichomonas vaginalis</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;35089004&quot;, &quot;display&quot;: &quot;Urogenital infection by Trichomonas vaginalis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;35089004&quot;&gt;&lt;display value=&quot;Urogenital infection by Trichomonas vaginalis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.11"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="TrichomonasCodes"/>
+        <title value="Trichomonas Codes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:36f22d23-f4e6-46e1-a49d-87fb4c017d12"/>
+          <timestamp value="2026-01-14T16:04:28+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276877003"/>
+            <display value="Trichomonal vaginitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="35089004"/>
+            <display value="Urogenital infection by Trichomonas vaginalis"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/pss-exception-valueset"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-pss-exception-codes.html">codesystem PSS Exception Codes v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes-guidance-unavailable"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-pss-exception-codes.html#pss-exception-codes-guidance-unavailable">guidance-unavailable</a>
+                </td>
+                <td>Guidance unavailable</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;guidance-unavailable&quot;, &quot;display&quot;: &quot;Guidance unavailable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;guidance-unavailable&quot;&gt;&lt;display value=&quot;Guidance unavailable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes-no-consent-found"> </a>
+                  <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-pss-exception-codes.html#pss-exception-codes-no-consent-found">no-consent-found</a>
+                </td>
+                <td>User Consent not found</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;no-consent-found&quot;, &quot;display&quot;: &quot;User Consent not found&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;no-consent-found&quot;&gt;&lt;display value=&quot;User Consent not found&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/pss-exception-valueset"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.2.51.22.2.48.14"/>
+        </identifier>
+        <version value="1.0.0"/>
+        <name value="PSSExceptionValueSet"/>
+        <title value="PSS Exception ValueSet"/>
+        <status value="active"/>
+        <date value="2026-01-14T16:01:39+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6cb1fe01-b2b5-4abd-b503-934734f93fd4"/>
+          <timestamp value="2026-01-14T16:04:28+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes"/>
+            <code value="guidance-unavailable"/>
+            <display value="Guidance unavailable"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes"/>
+            <code value="no-consent-found"/>
+            <display value="User Consent not found"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,135 @@
+# Generic response - Guidance unavailable - Prescription Search Support v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Generic response - Guidance unavailable**
+
+## Example Bundle: Generic response - Guidance unavailable
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "no-response-response",
+  "meta" : {
+    "profile" : [
+      "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"
+    ]
+  },
+  "identifier" : {
+    "value" : "response01"
+  },
+  "type" : "collection",
+  "timestamp" : "2025-02-20T00:00:00Z",
+  "entry" : [
+    {
+      "fullUrl" : "urn:uuid:c174873b-e39a-4eba-aff4-72708dd6c34d",
+      "resource" : {
+        "resourceType" : "RequestGroup",
+        "id" : "no-response-group",
+        "meta" : {
+          "profile" : [
+            "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_no-response-group\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup no-response-group</b></p><a name=\"no-response-group\"> </a><a name=\"hcno-response-group\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseRequestGroup.html\">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><blockquote><p><b>action</b></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Title</b></td><td><b>Code</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>PSS niet geactiveerd</td><td><span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes guidance-unavailable}\">Guidance unavailable</span></td><td><a href=\"CommunicationRequest-1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2.html\">CommunicationRequest: status = active</a></td></tr></table></blockquote></div>"
+        },
+        "status" : "active",
+        "intent" : "proposal",
+        "action" : [
+          {
+            "action" : [
+              {
+                "title" : "PSS niet geactiveerd",
+                "_title" : {
+                  "extension" : [
+                    {
+                      "extension" : [
+                        {
+                          "url" : "lang",
+                          "valueCode" : "fr-BE"
+                        },
+                        {
+                          "url" : "content",
+                          "valueString" : "PSS non activé"
+                        }
+                      ],
+                      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                },
+                "code" : [
+                  {
+                    "coding" : [
+                      {
+                        "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes",
+                        "code" : "guidance-unavailable"
+                      }
+                    ]
+                  }
+                ],
+                "resource" : {
+                  "reference" : "CommunicationRequest/1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2",
+      "resource" : {
+        "resourceType" : "CommunicationRequest",
+        "id" : "1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2",
+        "meta" : {
+          "profile" : [
+            "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest",
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
+          ]
+        },
+        "text" : {
+          "status" : "extensions",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CommunicationRequest_1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest 1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2</b></p><a name=\"1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2\"> </a><a name=\"hc1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSSResponseCommunicationRequest.html\">PSS Response Communication Request</a>, <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html\">CPG Communication Request</a></p></div><p><b>status</b>: Active</p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><code>Markdown: </code><div><p>In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren.</p>\n</div></td></tr></table></div>"
+        },
+        "status" : "active",
+        "payload" : [
+          {
+            "_contentString" : {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+                  "valueMarkdown" : "In het kader van de pilootfase is het PSS-systeem momenteel niet geactiveerd. Het zal later opnieuw geactiveerd worden. Ter info: we blijven de gegevens die naar PSS worden doorgestuurd, registreren.",
+                  "_valueMarkdown" : {
+                    "extension" : [
+                      {
+                        "extension" : [
+                          {
+                            "url" : "lang",
+                            "valueCode" : "fr-BE"
+                          },
+                          {
+                            "url" : "content",
+                            "valueString" : "Dans le cadre de la phase pilote, le système PSS n'est pas activé pour le moment. Celui-ci sera réactivé. Pour votre information sachez que nous continuons de capturer les données transmises à PSS."
+                          }
+                        ],
+                        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+
+```

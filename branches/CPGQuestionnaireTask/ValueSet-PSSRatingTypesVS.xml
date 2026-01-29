@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PSSRatingTypesVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PSSRatingTypesVS</b></p><a name="PSSRatingTypesVS"> </a><a name="hcPSSRatingTypesVS"> </a><a name="PSSRatingTypesVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-PSSRatingTypes.html"><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code></a></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS"/>
+  <version value="1.0.0"/>
+  <name value="PSSRatingTypesVS"/>
+  <title value="Types of rating provided by the PSS system"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-05-06T11:11:40+00:00"/>
+  <publisher value="eHealth Platform Belgium"/>
+  <contact>
+    <name value="eHealth Platform Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet - Types of rating provided by the PSS system"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"/>
+    </include>
+  </compose>
+</ValueSet>

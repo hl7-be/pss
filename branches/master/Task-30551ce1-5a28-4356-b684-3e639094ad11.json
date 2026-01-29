@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Task",
+  "id" : "30551ce1-5a28-4356-b684-3e639094ad11",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task 30551ce1-5a28-4356-b684-3e639094ad11</b></p><a name=\"30551ce1-5a28-4356-b684-3e639094ad11\"> </a><a name=\"hc30551ce1-5a28-4356-b684-3e639094ad11\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-30551ce1-5a28-4356-b684-4e639094ad11.html\">Condition Head trauma, ataxia</a></td></tr></table></div>"
+  },
+  "status" : "requested",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+      "code" : "propose-diagnosis",
+      "display" : "Propose a diagnosis"
+    }]
+  },
+  "for" : {
+    "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+  },
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "code" : "propose-diagnosis",
+        "display" : "Propose a diagnosis"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Condition/30551ce1-5a28-4356-b684-4e639094ad11"
+    }
+  }]
+}

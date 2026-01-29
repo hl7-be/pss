@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CommunicationRequest xmlns="http://hl7.org/fhir">
+  <id value="ab-advice"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest"/>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CommunicationRequest ab-advice</b></p><a name="ab-advice"> </a><a name="hcab-advice"> </a><a name="ab-advice-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-PSSResponseCommunicationRequest.html">PSS Response Communication Request</a>, <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></p></div><p><b>status</b>: Active</p><p><b>subject</b>: <a href="Patient-patient-a.html"> Female, DoB Unknown</a></p><h3>Payloads</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Content[x]</b></td></tr><tr><td style="display: none">*</td><td><code>Markdown: </code><div><p>Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte. Metronidazol en clindamycine worden in de SKP afgeraden in het eerste trimester. De klinische gegevens omtrent gebruik tijdens het eerste trimester van de zwangerschap zijn nochtans geruststellend en de meeste bronnen geven aan dat het kan gebruikt worden.</p>
+</div></td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <subject>
+    <reference value="Patient/patient-a"/>
+  </subject>
+  <payload>
+    <contentString>
+      <extension url="http://hl7.org/fhir/StructureDefinition/rendering-markdown">
+        <valueMarkdown value="Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte. Metronidazol en clindamycine worden in de SKP afgeraden in het eerste trimester. De klinische gegevens omtrent gebruik tijdens het eerste trimester van de zwangerschap zijn nochtans geruststellend en de meeste bronnen geven aan dat het kan gebruikt worden.">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="fr-BE"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée. Le RCP déconseille l'utilisation du métronidazole et de la clindamycine pendant le premier trimestre de la grossesse. Les données cliniques concernant leur utilisation pendant le premier trimestre de grossesse sont pourtant rassurantes et la plupart des sources acceptent leur utilisation en période de grossesse."/>
+            </extension>
+          </extension>
+        </valueMarkdown>
+      </extension>
+    </contentString>
+  </payload>
+</CommunicationRequest>

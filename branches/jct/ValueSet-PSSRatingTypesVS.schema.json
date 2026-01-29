@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-PSSRatingTypesVS.schema.json",
+  "title": "Types of rating provided by the PSS system Schema",
+  "description": "JSON Schema for Types of rating provided by the PSS system ValueSet codes. Generated from FHIR expansions.",
+  "type": "string",
+  "enum": [
+    "overall",
+    "radiationexposure"
+  ],
+  "fhir:valueSet": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+  "fhir:version": "1.0.0",
+  "fhir:expansionTimestamp": "2025-09-04T10:09:26+00:00"
+}

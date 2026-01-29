@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Task",
+  "id" : "propose-head-trauma",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task propose-head-trauma</b></p><a name=\"propose-head-trauma\"> </a><a name=\"hcpropose-head-trauma\"> </a><a name=\"propose-head-trauma-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-proposed-diagnosis-head-trauma.html\">Condition Ataxia, Head trauma</a></td></tr></table></div>"
+  },
+  "status" : "requested",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+      "code" : "propose-diagnosis",
+      "display" : "Propose a diagnosis"
+    }]
+  },
+  "for" : {
+    "reference" : "Patient/X"
+  },
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "code" : "propose-diagnosis",
+        "display" : "Propose a diagnosis"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Condition/proposed-diagnosis-head-trauma"
+    }
+  }]
+}

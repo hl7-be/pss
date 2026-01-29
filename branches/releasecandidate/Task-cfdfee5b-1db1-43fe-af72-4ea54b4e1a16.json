@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Task",
+  "id" : "cfdfee5b-1db1-43fe-af72-4ea54b4e1a16",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task cfdfee5b-1db1-43fe-af72-4ea54b4e1a16</b></p><a name=\"cfdfee5b-1db1-43fe-af72-4ea54b4e1a16\"> </a><a name=\"hccfdfee5b-1db1-43fe-af72-4ea54b4e1a16\"> </a><a name=\"cfdfee5b-1db1-43fe-af72-4ea54b4e1a16-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-72d3ced6-5133-4042-931e-04284c9f4283.html\">Condition Ataxia, slowly progressive or long duration</a></td></tr></table></div>"
+  },
+  "status" : "requested",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+      "code" : "propose-diagnosis",
+      "display" : "Propose a diagnosis"
+    }]
+  },
+  "for" : {
+    "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+  },
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "code" : "propose-diagnosis",
+        "display" : "Propose a diagnosis"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "Condition/72d3ced6-5133-4042-931e-04284c9f4283"
+    }
+  }]
+}

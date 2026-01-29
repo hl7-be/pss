@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RequestGroup xmlns="http://hl7.org/fhir">
+  <id value="Inline-Instance-for-radiology-getdiagnoses-return"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RequestGroup Inline-Instance-for-radiology-getdiagnoses-return</b></p><a name="Inline-Instance-for-radiology-getdiagnoses-return"> </a><a name="hcInline-Instance-for-radiology-getdiagnoses-return"> </a><a name="Inline-Instance-for-radiology-getdiagnoses-return-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Stroke</p><p><b>resource</b>: <a href="Task-propose-stroke.html">Task Propose a diagnosis</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of infection</p><p><b>resource</b>: <a href="Task-propose-infection.html">Task Propose a diagnosis</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Head trauma</p><p><b>resource</b>: <a href="Task-propose-head-trauma.html">Task Propose a diagnosis</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Slow progression or chronic ataxia</p><p><b>resource</b>: <a href="Task-propose-slow-progression-ataxia.html">Task Propose a diagnosis</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Post head trauma ataxia</p><p><b>resource</b>: <a href="Task-propose-post-trauma-ataxia.html">Task Propose a diagnosis</a></p></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <subject>
+    <reference value="Patient/X"/>
+  </subject>
+  <action>
+    <textEquivalent value="Potential diagnosis of Stroke"/>
+    <resource>
+      <reference value="Task/propose-stroke"/>
+    </resource>
+  </action>
+  <action>
+    <textEquivalent value="Potential diagnosis of infection"/>
+    <resource>
+      <reference value="Task/propose-infection"/>
+    </resource>
+  </action>
+  <action>
+    <textEquivalent value="Potential diagnosis of Head trauma"/>
+    <resource>
+      <reference value="Task/propose-head-trauma"/>
+    </resource>
+  </action>
+  <action>
+    <textEquivalent value="Potential diagnosis of Slow progression or chronic ataxia"/>
+    <resource>
+      <reference value="Task/propose-slow-progression-ataxia"/>
+    </resource>
+  </action>
+  <action>
+    <textEquivalent value="Potential diagnosis of Post head trauma ataxia"/>
+    <resource>
+      <reference value="Task/propose-post-trauma-ataxia"/>
+    </resource>
+  </action>
+</RequestGroup>

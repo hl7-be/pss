@@ -1,0 +1,74 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "CompromisedImmuneSystemCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CompromisedImmuneSystemCodes</b></p><a name=\"CompromisedImmuneSystemCodes\"> </a><a name=\"hcCompromisedImmuneSystemCodes\"> </a><a name=\"CompromisedImmuneSystemCodes-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/sid/icpc2</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>B90</td><td/></tr><tr><td>B72</td><td/></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>D70</td><td style=\"color: #cccccc\">Agranulocytosis</td></tr><tr><td>D71</td><td style=\"color: #cccccc\">Functional disorders of polymorphonuclear neutrophils</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/234532001\">234532001</a></td><td style=\"color: #cccccc\">Immunodeficiency disorder</td></tr><tr><td><a href=\"http://snomed.info/id/62479008\">62479008</a></td><td style=\"color: #cccccc\">AIDS</td></tr><tr><td><a href=\"http://snomed.info/id/445945000\">445945000</a></td><td style=\"color: #cccccc\">Infectious disease with acquired immune deficiency syndrome (disorder)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes",
+  "version" : "1.0.0",
+  "name" : "CompromisedImmuneSystemCodes",
+  "title" : "CompromisedImmuneSystem Codes",
+  "status" : "active",
+  "date" : "2025-04-06T06:02:42+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CompromisedImmuneSystem Codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icpc2",
+      "concept" : [{
+        "code" : "B90"
+      },
+      {
+        "code" : "B72"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "concept" : [{
+        "code" : "D70"
+      },
+      {
+        "code" : "D71"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "234532001"
+      },
+      {
+        "code" : "62479008"
+      },
+      {
+        "code" : "445945000"
+      }]
+    }]
+  }
+}

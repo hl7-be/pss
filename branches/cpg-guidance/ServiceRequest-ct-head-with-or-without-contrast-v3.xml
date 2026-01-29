@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="ct-head-with-or-without-contrast-v3"/>
+  <meta>
+    <versionId value="v3"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-head-with-or-without-contrast-v3</b></p><a name="ct-head-with-or-without-contrast-v3"> </a><a name="hcct-head-with-or-without-contrast-v3"> </a><a name="ct-head-with-or-without-contrast-v3-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p></div><p><b>CPG Rating Extension</b>: 9/10</p><p><b>Radiation level score</b>: 1/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT, head, without or without contrast</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+    <valueRatio>
+      <numerator>
+        <value value="9"/>
+      </numerator>
+      <denominator>
+        <value value="10"/>
+      </denominator>
+    </valueRatio>
+  </extension>
+  <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ext-radiation-level-score">
+    <valueRatio>
+      <numerator>
+        <value value="1"/>
+      </numerator>
+      <denominator>
+        <value value="10"/>
+      </denominator>
+    </valueRatio>
+  </extension>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <code value="114054"/>
+      <display value="CT, head, without or without contrast"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/X"/>
+  </subject>
+</ServiceRequest>

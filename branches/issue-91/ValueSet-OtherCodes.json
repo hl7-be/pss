@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OtherCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OtherCodes</b></p><a name=\"OtherCodes\"> </a><a name=\"hcOtherCodes\"> </a><a name=\"OtherCodes-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/197903003\">197903003</a></td><td style=\"color: #cccccc\">Candidal urethritis</td></tr><tr><td><a href=\"http://snomed.info/id/30116001\">30116001</a></td><td style=\"color: #cccccc\">Trichomonal urethritis</td></tr><tr><td><a href=\"http://snomed.info/id/236684001\">236684001</a></td><td style=\"color: #cccccc\">Tuberculous urethritis</td></tr><tr><td><a href=\"http://snomed.info/id/197850006\">197850006</a></td><td style=\"color: #cccccc\">Trichomonal cystitis</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+  "version" : "1.0.0",
+  "name" : "OtherCodes",
+  "title" : "Other Codes",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-04-28T07:57:33+00:00",
+  "publisher" : "eHealth Platform Belgium",
+  "contact" : [{
+    "name" : "eHealth Platform Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Other Codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "copyright" : "*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)\n\n*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "197903003"
+      },
+      {
+        "code" : "30116001"
+      },
+      {
+        "code" : "236684001"
+      },
+      {
+        "code" : "197850006"
+      }]
+    }]
+  }
+}

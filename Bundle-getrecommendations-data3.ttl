@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/Bundle/getrecommendations-data3> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "getrecommendations-data3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad02"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-3e639094ad02> )
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48> a fhir:Patient ;
+  fhir:id [ fhir:v "30551ce1-5a28-4356-b684-3e639094ad48"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_30551ce1-5a28-4356-b684-3e639094ad48\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient 30551ce1-5a28-4356-b684-3e639094ad48</b></p><a name=\"30551ce1-5a28-4356-b684-3e639094ad48\"> </a><a name=\"hc30551ce1-5a28-4356-b684-3e639094ad48\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSPatient.html\">PSS anonymised Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"> Male, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The approximate, relevant age of the patient at the time of the search.\"><a href=\"StructureDefinition-PSSRelevantAge.html\">PSS Relevant Patient Age</a></td><td colspan=\"3\">53 y<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codey = 'y')</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Age ;
+       fhir:value [ fhir:v "53"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "y" ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "masked"
+       ]
+     ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:deceased [
+     a fhir:boolean ;
+     fhir:v false
+  ] . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11> a fhir:Condition ;
+  fhir:id [ fhir:v "pss-30551ce1-5a28-4356-b684-4e639094ad11"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "v2" ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_pss-30551ce1-5a28-4356-b684-4e639094ad11\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition pss-30551ce1-5a28-4356-b684-4e639094ad11</b></p><a name=\"pss-30551ce1-5a28-4356-b684-4e639094ad11\"> </a><a name=\"hcpss-30551ce1-5a28-4356-b684-4e639094ad11\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v2</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}\">Head trauma, ataxia</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "provisional" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "5000246" ] ;
+       fhir:display [ fhir:v "Head trauma, ataxia" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-3e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-3e639094ad48" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2024-10-13"^^xsd:date
+  ] . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-3e639094ad02> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "pss-ct-head-wo-iv-contrast"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "v2" ] ;
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_pss-ct-head-wo-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest pss-ct-head-wo-iv-contrast</b></p><a name=\"pss-ct-head-wo-iv-contrast\"> </a><a name=\"hcpss-ct-head-wo-iv-contrast\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v2</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114055}\">CT, head, wo iv contrast</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad02" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "114055" ] ;
+       fhir:display [ fhir:v "CT, head, wo iv contrast" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-3e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-3e639094ad48" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "recommendation-rating",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem recommendation-rating</b></p><a name=\"recommendation-rating\"> </a><a name=\"hcrecommendation-rating\"> </a><a name=\"recommendation-rating-en-US\"> </a><p>This  code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">green<a name=\"recommendation-rating-green\"> </a></td><td>Green</td><td>Ok.</td></tr><tr><td style=\"white-space:nowrap\">yellow<a name=\"recommendation-rating-yellow\"> </a></td><td>Yellow</td><td>Please reconsider.</td></tr><tr><td style=\"white-space:nowrap\">red<a name=\"recommendation-rating-red\"> </a></td><td>Red</td><td>Not OK.</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
+  "version" : "1.0.0",
+  "name" : "RecommendationRatingCS",
+  "title" : "Recommendation rating",
+  "status" : "draft",
+  "date" : "2025-02-07T08:52:52+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Recommendation rating.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "green",
+    "display" : "Green",
+    "definition" : "Ok."
+  },
+  {
+    "code" : "yellow",
+    "display" : "Yellow",
+    "definition" : "Please reconsider."
+  },
+  {
+    "code" : "red",
+    "display" : "Red",
+    "definition" : "Not OK."
+  }]
+}

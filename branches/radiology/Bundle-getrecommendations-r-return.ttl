@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/getrecommendations-r-return> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "getrecommendations-r-return"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23> )
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21> a fhir:RequestGroup ;
+  fhir:id [ fhir:v "getrecommendations-r-return-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations-r-return-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-r-return-1</b></p><a name=\"getrecommendations-r-return-1\"> </a><a name=\"hcgetrecommendations-r-return-1\"> </a><a name=\"getrecommendations-r-return-1-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CT Head with or without contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-ct-head-with-or-without-contrast.html\">ServiceRequest CT, head, without or without contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CT Head with IV contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-ct-head-iv-contrast.html\">ServiceRequest CT, head, without IV contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: MR Head without contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-mr-head-without-contrast.html\">ServiceRequest MR, head, without IV contrast</a></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-x> ;
+     fhir:reference [ fhir:v "Patient/patient-x" ]
+  ] ; # 
+  fhir:action ( [
+     fhir:textEquivalent [ fhir:v "CT Head with or without contrast" ] ;
+     fhir:resource [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/ct-head-with-or-without-contrast> ;
+       fhir:reference [ fhir:v "ServiceRequest/ct-head-with-or-without-contrast" ]
+     ]
+  ] [
+     fhir:textEquivalent [ fhir:v "CT Head with IV contrast" ] ;
+     fhir:resource [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/ct-head-iv-contrast> ;
+       fhir:reference [ fhir:v "ServiceRequest/ct-head-iv-contrast" ]
+     ]
+  ] [
+     fhir:textEquivalent [ fhir:v "MR Head without contrast" ] ;
+     fhir:resource [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ServiceRequest/mr-head-without-contrast> ;
+       fhir:reference [ fhir:v "ServiceRequest/mr-head-without-contrast" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "ct-head-iv-contrast"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "v3" ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name=\"ct-head-iv-contrast\"> </a><a name=\"hcct-head-iv-contrast\"> </a><a name=\"ct-head-iv-contrast-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p></div><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating green}\">Green</span></p><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating yellow}\">Yellow</span></p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "green" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "yellow" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "114055" ] ;
+       fhir:display [ fhir:v "CT, head, without IV contrast" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-x> ;
+     fhir:reference [ fhir:v "Patient/patient-x" ]
+  ] . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "ct-head-iv-contrast"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "v3" ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p></div><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating green}\">Green</span></p><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating yellow}\">Yellow</span></p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "green" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "yellow" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "114055" ] ;
+       fhir:display [ fhir:v "CT, head, without IV contrast" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/patient-x> ;
+     fhir:reference [ fhir:v "Patient/patient-x" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

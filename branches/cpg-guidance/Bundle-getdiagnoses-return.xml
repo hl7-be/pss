@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="getdiagnoses-return"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad08"/>
+    <resource>
+      <RequestGroup>
+        <id value="getdiagnoses-return"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_getdiagnoses-return"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup getdiagnoses-return</b></p><a name="getdiagnoses-return"> </a><a name="hcgetdiagnoses-return"> </a><a name="getdiagnoses-return-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Pulmonary Embolism</p><p><b>resource</b>: <a href="Task-propose-pulmonary-embolism.html">Task Propose a diagnosis</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Acute Coronary Syndrome</p><p><b>resource</b>: <a href="Bundle-getdiagnoses-return.html#Task_propose-acute-coronary-syndrome">Bundle: type = collection</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Pneumothorax</p><p><b>resource</b>: <a href="Bundle-getdiagnoses-return.html#Task_propose-pneumothorax">Bundle: type = collection</a></p></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+        <action>
+          <textEquivalent value="Potential diagnosis of Pulmonary Embolism"/>
+          <resource>
+            <reference value="Task/propose-pulmonary-embolism"/>
+          </resource>
+        </action>
+        <action>
+          <textEquivalent value="Potential diagnosis of Acute Coronary Syndrome"/>
+          <resource>
+            <reference value="Task/propose-acute-coronary-syndrome"/>
+          </resource>
+        </action>
+        <action>
+          <textEquivalent value="Potential diagnosis of Pneumothorax"/>
+          <resource>
+            <reference value="Task/propose-pneumothorax"/>
+          </resource>
+        </action>
+      </RequestGroup>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad09"/>
+    <resource>
+      <Task>
+        <id value="propose-pulmonary-embolism"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_propose-pulmonary-embolism"> </a><p class="res-header-id"><b>Generated Narrative: Task propose-pulmonary-embolism</b></p><a name="propose-pulmonary-embolism"> </a><a name="hcpropose-pulmonary-embolism"> </a><a name="propose-pulmonary-embolism-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis PE</span></td><td><a href="Condition-proposed-diagnosis-pe.html">Condition Pulmonary embolism</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="propose-diagnosis"/>
+            <display value="Propose a diagnosis"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/X"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="propose-diagnosis"/>
+              <display value="Propose a diagnosis PE"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="Condition/proposed-diagnosis-pe"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad10"/>
+    <resource>
+      <Task>
+        <id value="propose-acute-coronary-syndrome"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_propose-acute-coronary-syndrome"> </a><p class="res-header-id"><b>Generated Narrative: Task propose-acute-coronary-syndrome</b></p><a name="propose-acute-coronary-syndrome"> </a><a name="hcpropose-acute-coronary-syndrome"> </a><a name="propose-acute-coronary-syndrome-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></td><td><a href="#hcpropose-acute-coronary-syndrome/proposed-diagnosis-acs">Condition Acute coronary syndrome</a></td></tr></table><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Condition  #proposed-diagnosis-acs</b></p><a name="propose-acute-coronary-syndrome/proposed-diagnosis-acs"> </a><a name="hcpropose-acute-coronary-syndrome/proposed-diagnosis-acs"> </a><a name="propose-acute-coronary-syndrome/proposed-diagnosis-acs-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 394659003}">Acute coronary syndrome</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></blockquote></div>
+        </text>
+        <contained>
+          <Condition>
+            <id value="proposed-diagnosis-acs"/>
+            <meta>
+              <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+            </meta>
+            <clinicalStatus>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                <code value="active"/>
+              </coding>
+            </clinicalStatus>
+            <verificationStatus>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                <code value="provisional"/>
+              </coding>
+            </verificationStatus>
+            <category>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                <code value="problem-list-item"/>
+              </coding>
+            </category>
+            <code>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="394659003"/>
+                <display value="Acute coronary syndrome"/>
+              </coding>
+              <text value="Acute coronary syndrome"/>
+            </code>
+            <subject>
+              <reference value="Patient/X"/>
+            </subject>
+            <onsetDateTime value="2024-10-13"/>
+          </Condition>
+        </contained>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="propose-diagnosis"/>
+            <display value="Propose a diagnosis"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/X"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="propose-diagnosis"/>
+              <display value="Propose a diagnosis"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="#proposed-diagnosis-acs"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad11"/>
+    <resource>
+      <Task>
+        <id value="propose-pneumothorax"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_propose-pneumothorax"> </a><p class="res-header-id"><b>Generated Narrative: Task propose-pneumothorax</b></p><a name="propose-pneumothorax"> </a><a name="hcpropose-pneumothorax"> </a><a name="propose-pneumothorax-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></td><td><a href="#hcpropose-pneumothorax/proposed-diagnosis-pt">Condition Pneumothorax</a></td></tr></table><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: Condition  #proposed-diagnosis-pt</b></p><a name="propose-pneumothorax/proposed-diagnosis-pt"> </a><a name="hcpropose-pneumothorax/proposed-diagnosis-pt"> </a><a name="propose-pneumothorax/proposed-diagnosis-pt-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 36118008}">Pneumothorax</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></blockquote></div>
+        </text>
+        <contained>
+          <Condition>
+            <id value="proposed-diagnosis-pt"/>
+            <meta>
+              <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+            </meta>
+            <clinicalStatus>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                <code value="active"/>
+              </coding>
+            </clinicalStatus>
+            <verificationStatus>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                <code value="provisional"/>
+              </coding>
+            </verificationStatus>
+            <category>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                <code value="problem-list-item"/>
+              </coding>
+            </category>
+            <code>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="36118008"/>
+                <display value="Pneumothorax"/>
+              </coding>
+              <text value="Pneumothorax"/>
+            </code>
+            <subject>
+              <reference value="Patient/X"/>
+            </subject>
+            <onsetDateTime value="2024-10-13"/>
+          </Condition>
+        </contained>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="propose-diagnosis"/>
+            <display value="Propose a diagnosis"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/X"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="propose-diagnosis"/>
+              <display value="Propose a diagnosis"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="#proposed-diagnosis-pt"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+</Bundle>

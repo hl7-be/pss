@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/Task/db2698ba-cd0b-4c08-b57c-868ab5b95af6> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "db2698ba-cd0b-4c08-b57c-868ab5b95af6"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task db2698ba-cd0b-4c08-b57c-868ab5b95af6</b></p><a name=\"db2698ba-cd0b-4c08-b57c-868ab5b95af6\"> </a><a name=\"hcdb2698ba-cd0b-4c08-b57c-868ab5b95af6\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-5f3aafb8-643c-4ed5-ad54-199939e7b2d1.html\">Condition Ataxia, infection suspected</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "propose-diagnosis" ] ;
+       fhir:display [ fhir:v "Propose a diagnosis" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-3e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-3e639094ad48" ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propose-diagnosis" ] ;
+         fhir:display [ fhir:v "Propose a diagnosis" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/pss/Condition/5f3aafb8-643c-4ed5-ad54-199939e7b2d1> ;
+       fhir:reference [ fhir:v "Condition/5f3aafb8-643c-4ed5-ad54-199939e7b2d1" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

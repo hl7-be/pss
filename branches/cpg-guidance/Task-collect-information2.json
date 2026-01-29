@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Task",
+  "id" : "collect-information2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task collect-information2</b></p><a name=\"collect-information2\"> </a><a name=\"hccollect-information2\"> </a><a name=\"collect-information2-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}\">Collect information</span></p><p><b>for</b>: <a href=\"Patient-patient-y.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}\">Collect information</span></td><td><a href=\"Questionnaire-q-collect-information2.html\">Questionnaire: url = https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information2; version = 1.0.0; status = active; date = 2024-11-29 17:24:50+0000; publisher = HL7 Belgium; contact = HL7 Belgium (https://www.hl7belgium.org, hl7belgium@hl7belgium.org),Message Structure eHealth (message-structure@ehealth.fgov.be(Work)); jurisdiction = Belgium; copyright = </a></td></tr></table></div>"
+  },
+  "status" : "requested",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+      "code" : "collect-information",
+      "display" : "Collect information"
+    }]
+  },
+  "for" : {
+    "reference" : "Patient/patient-y"
+  },
+  "input" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "code" : "collect-information",
+        "display" : "Collect information"
+      }]
+    },
+    "valueReference" : {
+      "reference" : "https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information2"
+    }
+  }]
+}

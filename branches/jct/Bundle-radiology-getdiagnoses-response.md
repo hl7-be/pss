@@ -1,0 +1,558 @@
+# Radiology - S1 Get Diagnoses - Response - 1. Bundle - Prescription Search Support v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Radiology - S1 Get Diagnoses - Response - 1. Bundle**
+
+## Example Bundle: Radiology - S1 Get Diagnoses - Response - 1. Bundle
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "radiology-getdiagnoses-response",
+  "meta" : {
+    "profile" : [
+      "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"
+    ]
+  },
+  "identifier" : {
+    "value" : "5870540"
+  },
+  "type" : "collection",
+  "timestamp" : "2025-02-20T00:00:00Z",
+  "entry" : [
+    {
+      "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad08",
+      "resource" : {
+        "resourceType" : "RequestGroup",
+        "id" : "30551ce1-5a28-4356-b684-3e639094ad08",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_30551ce1-5a28-4356-b684-3e639094ad08\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup 30551ce1-5a28-4356-b684-3e639094ad08</b></p><a name=\"30551ce1-5a28-4356-b684-3e639094ad08\"> </a><a name=\"hc30551ce1-5a28-4356-b684-3e639094ad08\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><p><b>selectionBehavior</b>: One Or More</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Potential diagnosis of Ataxia, stroke suspected</td><td><a href=\"Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0.html\">Task Propose a diagnosis</a></td></tr><tr><td style=\"display: none\">*</td><td>Potential diagnosis of Head trauma, ataxia</td><td><a href=\"Task-30551ce1-5a28-4356-b684-3e639094ad11.html\">Task Propose a diagnosis</a></td></tr><tr><td style=\"display: none\">*</td><td>Potential diagnosis of Ataxia, slowly progressive or long duration</td><td><a href=\"Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16.html\">Task Propose a diagnosis</a></td></tr><tr><td style=\"display: none\">*</td><td>Potential diagnosis of Ataxia, post head trauma</td><td><a href=\"Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e.html\">Task Propose a diagnosis</a></td></tr></table></blockquote></div>"
+        },
+        "status" : "active",
+        "intent" : "proposal",
+        "subject" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "action" : [
+          {
+            "selectionBehavior" : "one-or-more",
+            "action" : [
+              {
+                "textEquivalent" : "Potential diagnosis of Ataxia, stroke suspected",
+                "resource" : {
+                  "reference" : "Task/1cdd5aab-1d4d-4965-bbe1-c851698d07f0"
+                }
+              },
+              {
+                "textEquivalent" : "Potential diagnosis of Head trauma, ataxia",
+                "resource" : {
+                  "reference" : "Task/30551ce1-5a28-4356-b684-3e639094ad11"
+                }
+              },
+              {
+                "textEquivalent" : "Potential diagnosis of Ataxia, slowly progressive or long duration",
+                "resource" : {
+                  "reference" : "Task/cfdfee5b-1db1-43fe-af72-4ea54b4e1a16"
+                }
+              },
+              {
+                "textEquivalent" : "Potential diagnosis of Ataxia, post head trauma",
+                "resource" : {
+                  "reference" : "Task/54aad964-ad8a-4985-8ff1-3b09d707ee1e"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:1cdd5aab-1d4d-4965-bbe1-c851698d07f0",
+      "resource" : {
+        "resourceType" : "Task",
+        "id" : "1cdd5aab-1d4d-4965-bbe1-c851698d07f0",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_1cdd5aab-1d4d-4965-bbe1-c851698d07f0\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task 1cdd5aab-1d4d-4965-bbe1-c851698d07f0</b></p><a name=\"1cdd5aab-1d4d-4965-bbe1-c851698d07f0\"> </a><a name=\"hc1cdd5aab-1d4d-4965-bbe1-c851698d07f0\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-287e8fe2-3e83-44bd-92e7-962bc90b6d67.html\">Condition Ataxia, stroke suspected</a></td></tr></table></div>"
+        },
+        "status" : "requested",
+        "intent" : "proposal",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+              "code" : "propose-diagnosis",
+              "display" : "Propose a diagnosis"
+            }
+          ]
+        },
+        "for" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "input" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+                  "code" : "propose-diagnosis",
+                  "display" : "Propose a diagnosis"
+                }
+              ]
+            },
+            "valueReference" : {
+              "reference" : "Condition/287e8fe2-3e83-44bd-92e7-962bc90b6d67"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:287e8fe2-3e83-44bd-92e7-962bc90b6d67",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "287e8fe2-3e83-44bd-92e7-962bc90b6d67",
+        "meta" : {
+          "profile" : [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_287e8fe2-3e83-44bd-92e7-962bc90b6d67\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 287e8fe2-3e83-44bd-92e7-962bc90b6d67</b></p><a name=\"287e8fe2-3e83-44bd-92e7-962bc90b6d67\"> </a><a name=\"hc287e8fe2-3e83-44bd-92e7-962bc90b6d67\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 3074220}\">Ataxia, stroke suspected</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2025-03-03 13:24:10+0100</p></div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
+            }
+          ]
+        },
+        "verificationStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "provisional"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code" : "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions",
+              "code" : "3074220",
+              "display" : "Ataxia, stroke suspected"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "onsetDateTime" : "2025-03-03T13:24:10+01:00"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:db2698ba-cd0b-4c08-b57c-868ab5b95af6",
+      "resource" : {
+        "resourceType" : "Task",
+        "id" : "db2698ba-cd0b-4c08-b57c-868ab5b95af6",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_db2698ba-cd0b-4c08-b57c-868ab5b95af6\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task db2698ba-cd0b-4c08-b57c-868ab5b95af6</b></p><a name=\"db2698ba-cd0b-4c08-b57c-868ab5b95af6\"> </a><a name=\"hcdb2698ba-cd0b-4c08-b57c-868ab5b95af6\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-5f3aafb8-643c-4ed5-ad54-199939e7b2d1.html\">Condition Ataxia, infection suspected</a></td></tr></table></div>"
+        },
+        "status" : "requested",
+        "intent" : "proposal",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+              "code" : "propose-diagnosis",
+              "display" : "Propose a diagnosis"
+            }
+          ]
+        },
+        "for" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "input" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+                  "code" : "propose-diagnosis",
+                  "display" : "Propose a diagnosis"
+                }
+              ]
+            },
+            "valueReference" : {
+              "reference" : "Condition/5f3aafb8-643c-4ed5-ad54-199939e7b2d1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:5f3aafb8-643c-4ed5-ad54-199939e7b2d1",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "5f3aafb8-643c-4ed5-ad54-199939e7b2d1",
+        "meta" : {
+          "profile" : [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_5f3aafb8-643c-4ed5-ad54-199939e7b2d1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 5f3aafb8-643c-4ed5-ad54-199939e7b2d1</b></p><a name=\"5f3aafb8-643c-4ed5-ad54-199939e7b2d1\"> </a><a name=\"hc5f3aafb8-643c-4ed5-ad54-199939e7b2d1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 3074221}\">Ataxia, infection suspected</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2025-03-03 13:24:10+0100</p></div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
+            }
+          ]
+        },
+        "verificationStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "provisional"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code" : "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions",
+              "code" : "3074221",
+              "display" : "Ataxia, infection suspected"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "onsetDateTime" : "2025-03-03T13:24:10+01:00"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11",
+      "resource" : {
+        "resourceType" : "Task",
+        "id" : "30551ce1-5a28-4356-b684-3e639094ad11",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_30551ce1-5a28-4356-b684-3e639094ad11\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task 30551ce1-5a28-4356-b684-3e639094ad11</b></p><a name=\"30551ce1-5a28-4356-b684-3e639094ad11\"> </a><a name=\"hc30551ce1-5a28-4356-b684-3e639094ad11\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-30551ce1-5a28-4356-b684-4e639094ad11.html\">Condition Head trauma, ataxia</a></td></tr></table></div>"
+        },
+        "status" : "requested",
+        "intent" : "proposal",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+              "code" : "propose-diagnosis",
+              "display" : "Propose a diagnosis"
+            }
+          ]
+        },
+        "for" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "input" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+                  "code" : "propose-diagnosis",
+                  "display" : "Propose a diagnosis"
+                }
+              ]
+            },
+            "valueReference" : {
+              "reference" : "Condition/30551ce1-5a28-4356-b684-4e639094ad11"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "30551ce1-5a28-4356-b684-4e639094ad11",
+        "meta" : {
+          "profile" : [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_30551ce1-5a28-4356-b684-4e639094ad11\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 30551ce1-5a28-4356-b684-4e639094ad11</b></p><a name=\"30551ce1-5a28-4356-b684-4e639094ad11\"> </a><a name=\"hc30551ce1-5a28-4356-b684-4e639094ad11\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}\">Head trauma, ataxia</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2025-03-03 13:24:10+0100</p></div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
+            }
+          ]
+        },
+        "verificationStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "provisional"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code" : "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions",
+              "code" : "5000246",
+              "display" : "Head trauma, ataxia"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "onsetDateTime" : "2025-03-03T13:24:10+01:00"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:cfdfee5b-1db1-43fe-af72-4ea54b4e1a16",
+      "resource" : {
+        "resourceType" : "Task",
+        "id" : "cfdfee5b-1db1-43fe-af72-4ea54b4e1a16",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_cfdfee5b-1db1-43fe-af72-4ea54b4e1a16\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task cfdfee5b-1db1-43fe-af72-4ea54b4e1a16</b></p><a name=\"cfdfee5b-1db1-43fe-af72-4ea54b4e1a16\"> </a><a name=\"hccfdfee5b-1db1-43fe-af72-4ea54b4e1a16\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-72d3ced6-5133-4042-931e-04284c9f4283.html\">Condition Ataxia, slowly progressive or long duration</a></td></tr></table></div>"
+        },
+        "status" : "requested",
+        "intent" : "proposal",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+              "code" : "propose-diagnosis",
+              "display" : "Propose a diagnosis"
+            }
+          ]
+        },
+        "for" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "input" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+                  "code" : "propose-diagnosis",
+                  "display" : "Propose a diagnosis"
+                }
+              ]
+            },
+            "valueReference" : {
+              "reference" : "Condition/72d3ced6-5133-4042-931e-04284c9f4283"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:72d3ced6-5133-4042-931e-04284c9f4283",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "72d3ced6-5133-4042-931e-04284c9f4283",
+        "meta" : {
+          "profile" : [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_72d3ced6-5133-4042-931e-04284c9f4283\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 72d3ced6-5133-4042-931e-04284c9f4283</b></p><a name=\"72d3ced6-5133-4042-931e-04284c9f4283\"> </a><a name=\"hc72d3ced6-5133-4042-931e-04284c9f4283\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 3074219}\">Ataxia, slowly progressive or long duration</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2025-03-03 13:24:10+0100</p></div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
+            }
+          ]
+        },
+        "verificationStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "provisional"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code" : "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions",
+              "code" : "3074219",
+              "display" : "Ataxia, slowly progressive or long duration"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "onsetDateTime" : "2025-03-03T13:24:10+01:00"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:54aad964-ad8a-4985-8ff1-3b09d707ee1e",
+      "resource" : {
+        "resourceType" : "Task",
+        "id" : "54aad964-ad8a-4985-8ff1-3b09d707ee1e",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_54aad964-ad8a-4985-8ff1-3b09d707ee1e\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task 54aad964-ad8a-4985-8ff1-3b09d707ee1e</b></p><a name=\"54aad964-ad8a-4985-8ff1-3b09d707ee1e\"> </a><a name=\"hc54aad964-ad8a-4985-8ff1-3b09d707ee1e\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65.html\">Condition Ataxia, post head trauma</a></td></tr></table></div>"
+        },
+        "status" : "requested",
+        "intent" : "proposal",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+              "code" : "propose-diagnosis",
+              "display" : "Propose a diagnosis"
+            }
+          ]
+        },
+        "for" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "input" : [
+          {
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+                  "code" : "propose-diagnosis",
+                  "display" : "Propose a diagnosis"
+                }
+              ]
+            },
+            "valueReference" : {
+              "reference" : "Condition/b90ca57a-1ae5-4ff6-8dce-48488660ea65"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:b90ca57a-1ae5-4ff6-8dce-48488660ea65",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "b90ca57a-1ae5-4ff6-8dce-48488660ea65",
+        "meta" : {
+          "profile" : [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_b90ca57a-1ae5-4ff6-8dce-48488660ea65\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition b90ca57a-1ae5-4ff6-8dce-48488660ea65</b></p><a name=\"b90ca57a-1ae5-4ff6-8dce-48488660ea65\"> </a><a name=\"hcb90ca57a-1ae5-4ff6-8dce-48488660ea65\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html\">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}\">Provisional</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 3074222}\">Ataxia, post head trauma</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p><p><b>onset</b>: 2025-03-03 13:24:10+0100</p></div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
+            }
+          ]
+        },
+        "verificationStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "provisional"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code" : "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions",
+              "code" : "3074222",
+              "display" : "Ataxia, post head trauma"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        },
+        "onsetDateTime" : "2025-03-03T13:24:10+01:00"
+      }
+    }
+  ]
+}
+
+```

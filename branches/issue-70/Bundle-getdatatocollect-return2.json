@@ -1,0 +1,104 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "getdatatocollect-return2",
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4d",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "getdatatocollect-return2-v",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getdatatocollect-return2-v\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getdatatocollect-return2-v</b></p><a name=\"getdatatocollect-return2-v\"> </a><a name=\"hcgetdatatocollect-return2-v\"> </a><a name=\"getdatatocollect-return2-v-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-v.html\">Anonymous Patient Female, DoB Unknown</a></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Collect pregnancy status</td><td><a href=\"Questionnaire-q-collect-information2.html\">Questionnaire: url = https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/q-collect-information2; version = 1.0.0; status = active; date = 2024-12-05 15:45:34+0000; publisher = eHealth Platform; contact = eHealth Platform (http://www.ehealth.fgov.be/, support@be-ehealth-standards.atlassian.net),Message Structure eHealth (message-structure@ehealth.fgov.be(Work)); jurisdiction = Belgium</a></td></tr></table></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/patient-v"
+      },
+      "action" : [{
+        "textEquivalent" : "Collect pregnancy status",
+        "resource" : {
+          "reference" : "Questionnaire/q-collect-information2"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad4c",
+    "resource" : {
+      "resourceType" : "Questionnaire",
+      "id" : "q-collect-information2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Questionnaire_q-collect-information2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire q-collect-information2</b></p><a name=\"q-collect-information2\"> </a><a name=\"hcq-collect-information2\"> </a><a name=\"q-collect-information2-en-US\"> </a><p><b>status</b>: Active</p><blockquote><p><b>item</b></p><p><b>linkId</b>: conditions</p><p><b>text</b>: Which conditions are you considering?</p><p><b>type</b>: Group</p><p><b>repeats</b>: false</p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LinkId</b></td><td><b>Code</b></td><td><b>Text</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>condition1</td><td><a href=\"http://snomed.info/id/419760006\">SNOMED CT 419760006</a>: Bacterial vaginosis (disorder)</td><td>Bacterial vaginosis</td><td>Boolean</td></tr><tr><td style=\"display: none\">*</td><td>condition2</td><td><a href=\"http://snomed.info/id/276877003\">SNOMED CT 276877003</a>: Trichomonal vaginitis</td><td>Trichomonal vaginitis</td><td>Boolean</td></tr><tr><td style=\"display: none\">*</td><td>condition3</td><td><a href=\"http://snomed.info/id/72934000\">SNOMED CT 72934000</a>: Candidiasis of vagina</td><td>Candidiasis of vagina</td><td>Boolean</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: pregnancy</p><p><b>code</b>: <a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-icd10.html#icd10-Z88.460\">ICD-10 Z88.0</a>: Personal history of allergy to penicillin</p><p><b>text</b>: Is the patient pregnant?</p><p><b>type</b>: Boolean</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: recurrent</p><p><b>code</b>: <a href=\"http://snomed.info/id/708126004\">SNOMED CT 708126004</a>: Recurrent candidiasis of vagina</p><p><b>text</b>: Recurrent?</p><p><b>type</b>: Boolean</p></blockquote></div>"
+      },
+      "status" : "active",
+      "item" : [{
+        "linkId" : "conditions",
+        "text" : "Which conditions are you considering?",
+        "type" : "group",
+        "repeats" : false,
+        "item" : [{
+          "linkId" : "condition1",
+          "code" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "419760006"
+          }],
+          "text" : "Bacterial vaginosis",
+          "type" : "boolean"
+        },
+        {
+          "linkId" : "condition2",
+          "code" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "276877003"
+          }],
+          "text" : "Trichomonal vaginitis",
+          "type" : "boolean"
+        },
+        {
+          "linkId" : "condition3",
+          "code" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "72934000"
+          }],
+          "text" : "Candidiasis of vagina",
+          "type" : "boolean"
+        }]
+      },
+      {
+        "linkId" : "pregnancy",
+        "code" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "Z88.0"
+        }],
+        "text" : "Is the patient pregnant?",
+        "type" : "boolean"
+      },
+      {
+        "linkId" : "recurrent",
+        "code" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "708126004"
+        }],
+        "text" : "Recurrent?",
+        "type" : "boolean"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094adff",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-v",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-v\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-v</b></p><a name=\"patient-v\"> </a><a name=\"hcpatient-v\"> </a><a name=\"patient-v-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr></table></div>"
+      },
+      "active" : true,
+      "gender" : "female",
+      "deceasedBoolean" : false
+    }
+  }]
+}

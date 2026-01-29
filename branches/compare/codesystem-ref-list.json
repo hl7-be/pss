@@ -1,0 +1,91 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Icd10CM",
+      "title" : "International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)",
+      "description" : "The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM), describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases. The ICD-10-CM codes can be used as the value of the Act.cd attribute.",
+      "oids" : ["2.16.840.1.113883.6.90"],
+      "uses" : {
+      },
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+      "ValueSet-GonokokCodes.html" : "Gonokok Codes",
+      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
+      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
+      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/icpc-2",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "Icpc2E",
+      "title" : "International Classification of Primary Care, second edition (1998)",
+      "description" : "International Classification of Primary Care / prepared by the Classification Committee of the World Organization of National Colleges, Academies and Academic Associations of General Practitioners/Family Physicians (WONCA), known more briefly as the World",
+      "oids" : ["2.16.840.1.113883.6.139"],
+      "uses" : {
+      },
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-MycoplasmaCodes.html" : "Mycoplasma Codes",
+      "ValueSet-CompromisedImmuneSystemCodes.html" : "CompromisedImmuneSystem Codes",
+      "ValueSet-GonokokCodes.html" : "Gonokok Codes",
+      "ValueSet-PregnancyCodes.html" : "Pregnancy Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "ValueSet-CandidaCodes.html" : "Candida Codes",
+      "ValueSet-OtherCodes.html" : "Other Codes",
+      "ValueSet-OncologyPatientCodes.html" : "OncologyPatient Codes",
+      "ValueSet-BacterialCodes.html" : "Bacterial Codes",
+      "ValueSet-ChlamydiaCodes.html" : "Chlamydia Codes",
+      "ValueSet-TrichomonasCodes.html" : "Trichomonas Codes"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSFeedbackCodes",
+      "title" : "PSS Feedback Codes",
+      "description" : "Feedback codes for PSS",
+      "oids" : ["2.16.840.1.113883.2.51.22.2.16.4"],
+      "uses" : {
+      },
+      "ValueSet-PSSFeedbackCodesVS.html" : "PSS Feedback Codes"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSFeedbackReasons",
+      "title" : "PSS Feedback Code Reasons",
+      "description" : "Feedback code reasons for PSS",
+      "oids" : ["2.16.840.1.113883.2.51.22.2.16.5"],
+      "uses" : {
+      },
+      "ValueSet-PSSFeedbackReasonsVS.html" : "PSS Feedback Code Reasons"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSRatingTypes",
+      "title" : "CodeSystem: Types of rating provided by the PSS system",
+      "description" : "CodeSystem: Types of rating provided by the PSS system",
+      "oids" : ["2.16.840.1.113883.2.51.22.2.16.3"],
+      "uses" : {
+      },
+      "ValueSet-PSSRatingTypesVS.html" : "Types of rating provided by the PSS system"
+    }
+  ]
+}

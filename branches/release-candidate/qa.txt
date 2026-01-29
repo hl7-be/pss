@@ -1,0 +1,280 @@
+PrescriptionSearchSupport : Validation Results
+=========================================
+
+err = 7, warn = 34, info = 8
+IG Publisher Version: 2.0.30
+Generated Thu Jan 29 09:11:21 UTC 2026. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/pss)
+ Build Errors : 0 / 4 / 0
+ /work/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02 : 0 / 0 / 1
+ /work/fsh-generated/resources/Bundle-alternative-request-bundle : 4 / 1 / 4
+ /work/fsh-generated/resources/Bundle-any-service-no-consent-response-response : 0 / 2 / 6
+ /work/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 8
+ /work/fsh-generated/resources/Bundle-getdatatocollect-a-response : 0 / 7 / 15
+ /work/fsh-generated/resources/Bundle-getrecommendations-a-data : 0 / 2 / 10
+ /work/fsh-generated/resources/Bundle-getrecommendations-a-response : 0 / 5 / 13
+ /work/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 2 / 7
+ /work/fsh-generated/resources/Bundle-getrecommendations-r-response : 0 / 4 / 9
+ /work/fsh-generated/resources/Bundle-no-response-response : 0 / 0 / 6
+ /work/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 2 / 6
+ /work/fsh-generated/resources/Bundle-radiology-getdiagnoses-response : 0 / 5 / 17
+ /work/fsh-generated/resources/CapabilityStatement-PSSProviderCapabilityStatement : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-PSSBundleTags : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-PSSFeedbackCodes : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-PSSQSIConditions : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-PSSQSIProcedures : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-PSSRatingTypes : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-PSSaFeedbackReasons : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-PSSrFeedbackReasons : 0 / 0 / 1
+ /work/fsh-generated/resources/CodeSystem-pss-exception-codes : 0 / 0 / 1
+ /work/fsh-generated/resources/CommunicationRequest-1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2 : 0 / 0 / 4
+ /work/fsh-generated/resources/CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22 : 0 / 0 / 1
+ /work/fsh-generated/resources/Condition-287e8fe2-3e83-44bd-92e7-962bc90b6d67 : 0 / 1 / 1
+ /work/fsh-generated/resources/Condition-30551ce1-5a28-4356-b684-2e639094ad01 : 0 / 0 / 1
+ /work/fsh-generated/resources/Condition-30551ce1-5a28-4356-b684-4e639094ad11 : 0 / 1 / 1
+ /work/fsh-generated/resources/Condition-5f3aafb8-643c-4ed5-ad54-199939e7b2d1 : 0 / 1 / 1
+ /work/fsh-generated/resources/Condition-72d3ced6-5133-4042-931e-04284c9f4283 : 0 / 1 / 1
+ /work/fsh-generated/resources/Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65 : 0 / 1 / 1
+ /work/fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11 : 0 / 1 / 1
+ /work/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23 : 0 / 1 / 1
+ /work/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24 : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad25 : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26 : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29 : 0 / 0 / 1
+ /work/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12 : 0 / 0 / 1
+ /work/fsh-generated/resources/Observation-ataxia : 0 / 1 / 1
+ /work/fsh-generated/resources/OperationDefinition-Feedback : 0 / 1 / 1
+ /work/fsh-generated/resources/Parameters-antimicrobial-feedback-green : 0 / 1 / 3
+ /work/fsh-generated/resources/Parameters-antimicrobial-feedback-red : 0 / 1 / 3
+ /work/fsh-generated/resources/Parameters-feedback-example : 0 / 3 / 1
+ /work/fsh-generated/resources/Parameters-radiology-feedback : 0 / 3 / 7
+ /work/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48 : 0 / 0 / 1
+ /work/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48 : 0 / 0 / 1
+ /work/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 1
+ /work/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 1
+ /work/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 1
+ /work/fsh-generated/resources/Questionnaire-26491cef-c5c7-4c5f-b10b-839e938f6b3e : 0 / 2 / 1
+ /work/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c : 0 / 7 / 8
+ /work/fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02 : 0 / 2 / 1
+ /work/fsh-generated/resources/RequestGroup-26491cef-c5c7-4c5f-b10b-839e938f6b3c : 0 / 0 / 1
+ /work/fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08 : 0 / 0 / 1
+ /work/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group : 0 / 0 / 1
+ /work/fsh-generated/resources/RequestGroup-getrecommendations-a-response-group : 0 / 4 / 1
+ /work/fsh-generated/resources/RequestGroup-getrecommendations-r-response-1 : 0 / 1 / 1
+ /work/fsh-generated/resources/RequestGroup-no-response-group : 0 / 0 / 1
+ /work/fsh-generated/resources/SearchParameter-requestgroup-action : 3 / 0 / 1
+ /work/fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77 : 0 / 1 / 1
+ /work/fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22 : 0 / 1 / 1
+ /work/fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23 : 0 / 1 / 1
+ /work/fsh-generated/resources/ServiceRequest-alternative-request : 0 / 1 / 1
+ /work/fsh-generated/resources/ServiceRequest-ct-head-wo-iv-contrast : 0 / 1 / 1
+ /work/fsh-generated/resources/ServiceRequest-pss-ct-head-wo-iv-contrast : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-CodeValueSet : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-FeedbackTask : 0 / 0 / 2
+ /work/fsh-generated/resources/StructureDefinition-PSSConsentModel : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSFeedbackBundle : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSFeedbackModel : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSMedicationRequest : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSPatient : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-PSSQuestionnaireTask : 0 / 0 / 2
+ /work/fsh-generated/resources/StructureDefinition-PSSRelevantAge : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSRequest : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSRequestBundle : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSResponse : 0 / 2 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSResponseBundle : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-PSSResponseMedicationRequest : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSResponseRequestGroup : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSResponseServiceRequest : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-PSSStructuredRating : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0 : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-26491cef-c5c7-4c5f-b10b-839e938f6b3d : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-11ef43a67755 : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11 : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-alternative-request-task : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16 : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-db2698ba-cd0b-4c08-b57c-868ab5b95af6 : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-task-accepted-green-a : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-task-accepted-green-r : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-task-accepted-orange-r : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-task-accepted-other-r : 0 / 0 / 1
+ /work/fsh-generated/resources/Task-task-accepted-red-a : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-BacterialCodes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-CandidaCodes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-ChlamydiaCodes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes : 0 / 0 / 2
+ /work/fsh-generated/resources/ValueSet-GonokokCodes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-MycoplasmaCodes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-OncologyPatientCodes : 0 / 0 / 2
+ /work/fsh-generated/resources/ValueSet-OtherCodes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-PSSFeedbackCodesVS : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-PSSFeedbackReasonsVS : 0 / 1 / 1
+ /work/fsh-generated/resources/ValueSet-PSSRatingTypesVS : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-PregnancyCodes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-TrichomonasCodes : 0 / 0 / 1
+ /work/fsh-generated/resources/ValueSet-pss-exception-valueset : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/radiology-feedback.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/alternative-request.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/alternative-request-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02.json ==
+== fsh-generated/resources/Bundle-alternative-request-bundle.json ==
+ERROR: Bundle/alternative-request-bundle: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/alternative-request-bundle: Bundle.entry[0].resource/*ServiceRequest/alternative-request*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/alternative-request-bundle: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/alternative-request-bundle: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+== fsh-generated/resources/Bundle-any-service-no-consent-response-response.json ==
+== fsh-generated/resources/Bundle-getdatatocollect-a-data.json ==
+== fsh-generated/resources/Bundle-getdatatocollect-a-response.json ==
+== fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
+== fsh-generated/resources/Bundle-getrecommendations-a-response.json ==
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[0].url: No definition could be found for URL value 'https://bcfi.be/nl/chapters/12?frag=8001869'
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[1].url: No definition could be found for URL value 'https://cbip.be/fr/chapters/12?frag=8001869'
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[2].url: No definition could be found for URL value 'https://ebpnet.be/nl/pss-vaginitis'
+WARNING: Bundle/getrecommendations-a-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-response-group*/.action[0].documentation[3].url: No definition could be found for URL value 'https://ebpnet.be/fr/pss-vaginite'
+== fsh-generated/resources/Bundle-getrecommendations-data3.json ==
+== fsh-generated/resources/Bundle-getrecommendations-r-response.json ==
+WARNING: Bundle/getrecommendations-r-response: Bundle.entry[0].resource/*RequestGroup/getrecommendations-r-response-1*/.action[0].documentation[0].url: No definition could be found for URL value 'https://environment.esriguide.org/suportingContent/12345'
+== fsh-generated/resources/Bundle-no-response-response.json ==
+== fsh-generated/resources/Bundle-radiology-getdiagnoses.json ==
+== fsh-generated/resources/Bundle-radiology-getdiagnoses-response.json ==
+== fsh-generated/resources/CapabilityStatement-PSSProviderCapabilityStatement.json ==
+== fsh-generated/resources/CodeSystem-PSSBundleTags.json ==
+== fsh-generated/resources/CodeSystem-PSSFeedbackCodes.json ==
+== fsh-generated/resources/CodeSystem-PSSQSIConditions.json ==
+== fsh-generated/resources/CodeSystem-PSSQSIProcedures.json ==
+== fsh-generated/resources/CodeSystem-PSSRatingTypes.json ==
+== fsh-generated/resources/CodeSystem-PSSaFeedbackReasons.json ==
+== fsh-generated/resources/CodeSystem-PSSrFeedbackReasons.json ==
+== fsh-generated/resources/CodeSystem-pss-exception-codes.json ==
+== fsh-generated/resources/CommunicationRequest-1e6c8c0a-9f7f-4f65-bc16-3a7a5e7b29c2.json ==
+== fsh-generated/resources/CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22.json ==
+== fsh-generated/resources/Condition-287e8fe2-3e83-44bd-92e7-962bc90b6d67.json ==
+== fsh-generated/resources/Condition-30551ce1-5a28-4356-b684-2e639094ad01.json ==
+== fsh-generated/resources/Condition-30551ce1-5a28-4356-b684-4e639094ad11.json ==
+== fsh-generated/resources/Condition-5f3aafb8-643c-4ed5-ad54-199939e7b2d1.json ==
+== fsh-generated/resources/Condition-72d3ced6-5133-4042-931e-04284c9f4283.json ==
+== fsh-generated/resources/Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65.json ==
+== fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
+== fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json ==
+== fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.json ==
+== fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad25.json ==
+== fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.json ==
+== fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.json ==
+== fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12.json ==
+== fsh-generated/resources/Observation-ataxia.json ==
+== fsh-generated/resources/OperationDefinition-Feedback.json ==
+WARNING: OperationDefinition/Feedback: OperationDefinition.parameter[1].documentation: value should not start or finish with whitespace 'A Task, or a Bundle containing the Task as well as a new request, representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`.\nIf the user doesn't accept any of the options provided by PSS, a feedback is still required to finish the PSS process. \nThis can be either a set of Task, option by option '
+== fsh-generated/resources/Parameters-antimicrobial-feedback-green.json ==
+WARNING: Parameters/antimicrobial-feedback-green: Parameters.parameter[1].resource/*Task/task-accepted-green-a*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/Parameters-antimicrobial-feedback-red.json ==
+WARNING: Parameters/antimicrobial-feedback-red: Parameters.parameter[1].resource/*Task/task-accepted-red-a*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/Parameters-feedback-example.json ==
+WARNING: Parameters/feedback-example: Parameters.parameter[5].part[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons' could not be found, so the code cannot be validated
+WARNING: Parameters/feedback-example: Parameters.parameter[6].part[2].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons' could not be found, so the code cannot be validated
+WARNING: Parameters/feedback-example: Parameters.parameter[7].part[2].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons' could not be found, so the code cannot be validated
+== fsh-generated/resources/Parameters-radiology-feedback.json ==
+WARNING: Parameters/radiology-feedback: Parameters.parameter[1].resource/*Task/task-accepted-green-r*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/radiology-feedback: Parameters.parameter[2].resource/*Task/task-accepted-orange-r*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/radiology-feedback: Parameters.parameter[3].resource/*Task/task-accepted-other-r*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48.json ==
+== fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48.json ==
+== fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
+== fsh-generated/resources/PlanDefinition-GetDiagnoses.json ==
+== fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
+== fsh-generated/resources/Questionnaire-26491cef-c5c7-4c5f-b10b-839e938f6b3e.json ==
+== fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c.json ==
+== fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02.json ==
+== fsh-generated/resources/RequestGroup-26491cef-c5c7-4c5f-b10b-839e938f6b3c.json ==
+== fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08.json ==
+== fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group.json ==
+== fsh-generated/resources/RequestGroup-getrecommendations-a-response-group.json ==
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[0].url: No definition could be found for URL value 'https://bcfi.be/nl/chapters/12?frag=8001869'
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[1].url: No definition could be found for URL value 'https://cbip.be/fr/chapters/12?frag=8001869'
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[2].url: No definition could be found for URL value 'https://ebpnet.be/nl/pss-vaginitis'
+WARNING: RequestGroup/getrecommendations-a-response-group: RequestGroup.action[0].documentation[3].url: No definition could be found for URL value 'https://ebpnet.be/fr/pss-vaginite'
+== fsh-generated/resources/RequestGroup-getrecommendations-r-response-1.json ==
+WARNING: RequestGroup/getrecommendations-r-response-1: RequestGroup.action[0].documentation[0].url: No definition could be found for URL value 'https://environment.esriguide.org/suportingContent/12345'
+== fsh-generated/resources/RequestGroup-no-response-group.json ==
+== fsh-generated/resources/SearchParameter-requestgroup-action.json ==
+ERROR: SearchParameter.where(url = 'http://example.org/fhir/SearchParameter/requestgroup-action'): Conformance resource /work/fsh-generated/resources/SearchParameter-requestgroup-action.json - the canonical URL (https://www.ehealth.fgov.be/standards/fhir/pss/SearchParameter/requestgroup-action) does not match the URL (http://example.org/fhir/SearchParameter/requestgroup-action). Use the special-url parameter if you really mean for it not to match
+ERROR: SearchParameter.where(url = 'http://example.org/fhir/SearchParameter/requestgroup-action'): Conformance resource /work/fsh-generated/resources/SearchParameter-requestgroup-action.json - the canonical URL (https://www.ehealth.fgov.be/standards/fhir/pss/SearchParameter/requestgroup-action) does not match the URL (http://example.org/fhir/SearchParameter/requestgroup-action). Use the special-url parameter if you really mean for it not to match
+ERROR: /work/fsh-generated/resources/SearchParameter-requestgroup-action: URL Mismatch https://www.ehealth.fgov.be/standards/fhir/pss/SearchParameter/requestgroup-action vs http://example.org/fhir/SearchParameter/requestgroup-action
+== fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.json ==
+== fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22.json ==
+== fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23.json ==
+== fsh-generated/resources/ServiceRequest-alternative-request.json ==
+== fsh-generated/resources/ServiceRequest-ct-head-wo-iv-contrast.json ==
+== fsh-generated/resources/ServiceRequest-pss-ct-head-wo-iv-contrast.json ==
+== fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode.json ==
+== fsh-generated/resources/StructureDefinition-CodeValueSet.json ==
+== fsh-generated/resources/StructureDefinition-FeedbackTask.json ==
+INFORMATION: StructureDefinition/FeedbackTask: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-PSSConsentModel.json ==
+WARNING: StructureDefinition/PSSConsentModel: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/PSSConsentModel: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json ==
+== fsh-generated/resources/StructureDefinition-PSSFeedbackBundle.json ==
+== fsh-generated/resources/StructureDefinition-PSSFeedbackModel.json ==
+WARNING: StructureDefinition/PSSFeedbackModel: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/PSSFeedbackModel: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-PSSMedicationRequest.json ==
+== fsh-generated/resources/StructureDefinition-PSSPatient.json ==
+INFORMATION: StructureDefinition.snapshot.element[23].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+== fsh-generated/resources/StructureDefinition-PSSQuestionnaireTask.json ==
+INFORMATION: StructureDefinition.snapshot.element[12].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/request-doNotPerform to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+== fsh-generated/resources/StructureDefinition-PSSRelevantAge.json ==
+== fsh-generated/resources/StructureDefinition-PSSRequest.json ==
+WARNING: StructureDefinition/PSSRequest: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/PSSRequest: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-PSSRequestBundle.json ==
+== fsh-generated/resources/StructureDefinition-PSSResponse.json ==
+WARNING: StructureDefinition/PSSResponse: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/PSSResponse: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-PSSResponseBundle.json ==
+== fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest.json ==
+INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition/PSSResponseCommunicationRequest: CommunicationRequest.extension: The extension http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0 is deprecated with the note: 'Replaced by [[[http://hl7.org/fhir/StructureDefinition/workflow-generatedFrom]]], [[[http://hl7.org/fhir/StructureDefinition/workflow-compliesWith]]] or [[[http://hl7.org/fhir/StructureDefinition/workflow-adheresTo]]]'
+== fsh-generated/resources/StructureDefinition-PSSResponseMedicationRequest.json ==
+== fsh-generated/resources/StructureDefinition-PSSResponseRequestGroup.json ==
+== fsh-generated/resources/StructureDefinition-PSSResponseServiceRequest.json ==
+== fsh-generated/resources/StructureDefinition-PSSStructuredRating.json ==
+== fsh-generated/resources/Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0.json ==
+== fsh-generated/resources/Task-26491cef-c5c7-4c5f-b10b-839e938f6b3d.json ==
+== fsh-generated/resources/Task-30551ce1-5a28-4356-b684-11ef43a67755.json ==
+== fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11.json ==
+== fsh-generated/resources/Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e.json ==
+== fsh-generated/resources/Task-alternative-request-task.json ==
+== fsh-generated/resources/Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16.json ==
+== fsh-generated/resources/Task-db2698ba-cd0b-4c08-b57c-868ab5b95af6.json ==
+== fsh-generated/resources/Task-task-accepted-green-a.json ==
+== fsh-generated/resources/Task-task-accepted-green-r.json ==
+== fsh-generated/resources/Task-task-accepted-orange-r.json ==
+== fsh-generated/resources/Task-task-accepted-other-r.json ==
+== fsh-generated/resources/Task-task-accepted-red-a.json ==
+== fsh-generated/resources/ValueSet-BacterialCodes.json ==
+== fsh-generated/resources/ValueSet-CandidaCodes.json ==
+== fsh-generated/resources/ValueSet-ChlamydiaCodes.json ==
+== fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json ==
+INFORMATION: ValueSet/CompromisedImmuneSystemCodes: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://tx-nordics.fhir.org/fhir/r4 does not support batch validation (tests version < 1.7.8)
+== fsh-generated/resources/ValueSet-GonokokCodes.json ==
+== fsh-generated/resources/ValueSet-MycoplasmaCodes.json ==
+== fsh-generated/resources/ValueSet-OncologyPatientCodes.json ==
+INFORMATION: ValueSet/OncologyPatientCodes: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://tx-nordics.fhir.org/fhir/r4 does not support batch validation (tests version < 1.7.8)
+== fsh-generated/resources/ValueSet-OtherCodes.json ==
+== fsh-generated/resources/ValueSet-PSSFeedbackCodesVS.json ==
+WARNING: ValueSet/PSSFeedbackCodesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-PSSFeedbackReasonsVS.json ==
+WARNING: ValueSet/PSSFeedbackReasonsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-PSSRatingTypesVS.json ==
+== fsh-generated/resources/ValueSet-PregnancyCodes.json ==
+== fsh-generated/resources/ValueSet-TrichomonasCodes.json ==
+== fsh-generated/resources/ValueSet-pss-exception-valueset.json ==
+WARNING: ValueSet/pss-exception-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

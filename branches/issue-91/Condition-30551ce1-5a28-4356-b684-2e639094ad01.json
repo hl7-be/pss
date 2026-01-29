@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Condition",
+  "id" : "30551ce1-5a28-4356-b684-2e639094ad01",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition 30551ce1-5a28-4356-b684-2e639094ad01</b></p><a name=\"30551ce1-5a28-4356-b684-2e639094ad01\"> </a><a name=\"hc30551ce1-5a28-4356-b684-2e639094ad01\"> </a><a name=\"30551ce1-5a28-4356-b684-2e639094ad01-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 54586004}\">Lower abdominal pain</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }],
+    "text" : "Active"
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }],
+    "text" : "Confirmed"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis",
+      "display" : "Encounter Diagnosis"
+    }],
+    "text" : "Encounter Diagnosis"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "54586004",
+      "display" : "Lower abdominal pain"
+    }],
+    "text" : "Lower abdominal pain"
+  },
+  "subject" : {
+    "reference" : "Patient/30551ce1-5a28-4356-b684-2e639094ad48"
+  },
+  "onsetDateTime" : "2024-10-13"
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "fluconazol",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest fluconazol</b></p><a name=\"fluconazol\"> </a><a name=\"hcfluconazol\"> </a><a name=\"fluconazol-en-US\"> </a><p><b>CPG Rating Extension</b>: 1/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Fluconazol</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+    "valueRatio" : {
+      "numerator" : {
+        "value" : 1
+      },
+      "denominator" : {
+        "value" : 3
+      }
+    }
+  }],
+  "status" : "active",
+  "intent" : "proposal",
+  "medicationCodeableConcept" : {
+    "text" : "Fluconazol"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-x"
+  }
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CompromisedImmuneSystemCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet CompromisedImmuneSystemCodes</b></p><a name="CompromisedImmuneSystemCodes"> </a><a name="hcCompromisedImmuneSystemCodes"> </a><a name="CompromisedImmuneSystemCodes-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/sid/icpc2</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>B90</td><td/></tr><tr><td>B72</td><td/></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.1.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>D70</td><td style="color: #cccccc">Neutropenia</td></tr><tr><td>D71</td><td style="color: #cccccc">Functional disorders of polymorphonuclear neutrophils</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/234532001">234532001</a></td><td style="color: #cccccc">Immunodeficiency disorder</td></tr><tr><td><a href="http://snomed.info/id/62479008">62479008</a></td><td style="color: #cccccc">AIDS</td></tr><tr><td><a href="http://snomed.info/id/445945000">445945000</a></td><td style="color: #cccccc">Infectious disease with acquired immune deficiency syndrome (disorder)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes"/>
+  <version value="1.0.0"/>
+  <name value="CompromisedImmuneSystemCodes"/>
+  <title value="CompromisedImmuneSystem Codes"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-04-28T07:57:33+00:00"/>
+  <publisher value="eHealth Platform Belgium"/>
+  <contact>
+    <name value="eHealth Platform Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CompromisedImmuneSystem Codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)&#xA;&#xA;*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icpc2"/>
+      <concept>
+        <code value="B90"/>
+      </concept>
+      <concept>
+        <code value="B72"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <concept>
+        <code value="D70"/>
+      </concept>
+      <concept>
+        <code value="D71"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="234532001"/>
+      </concept>
+      <concept>
+        <code value="62479008"/>
+      </concept>
+      <concept>
+        <code value="445945000"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

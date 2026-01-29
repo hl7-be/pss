@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="ct-head-iv-contrast"/>
+  <meta>
+    <versionId value="v3"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name="ct-head-iv-contrast"> </a><a name="hcct-head-iv-contrast"> </a><a name="ct-head-iv-contrast-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v3</p></div><p><b>CPG Rating Extension</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating green}">Green</span></p><p><b>CPG Rating Extension</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating yellow}">Yellow</span></p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href="Patient-patient-x.html">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>
+  </text>
+  <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating"/>
+        <code value="green"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating"/>
+        <code value="yellow"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <code value="114055"/>
+      <display value="CT, head, without IV contrast"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-x"/>
+  </subject>
+</ServiceRequest>

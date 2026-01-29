@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="radiology-feedback"/>
+  <parameter>
+    <name value="pss-id"/>
+    <valueString value="test-500089-2025-50060793"/>
+  </parameter>
+  <parameter>
+    <name value="feedback-task"/>
+    <resource>
+      <Task>
+        <id value="task-accepted-green-r"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"/>
+        </meta>
+        <status value="accepted"/>
+        <intent value="option"/>
+        <focus>
+          <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23"/>
+          <identifier>
+            <value value="114055"/>
+          </identifier>
+        </focus>
+        <lastModified value="2025-05-28T10:10:00+02:00"/>
+      </Task>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="feedback-task"/>
+    <resource>
+      <Task>
+        <id value="task-accepted-orange-r"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"/>
+        </meta>
+        <status value="accepted"/>
+        <statusReason>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+            <code value="OtherReason"/>
+          </coding>
+          <text value="Some Other Reason"/>
+        </statusReason>
+        <intent value="option"/>
+        <focus>
+          <reference value="ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23"/>
+          <identifier>
+            <value value="114054"/>
+          </identifier>
+        </focus>
+        <lastModified value="2025-05-28T10:10:00+02:00"/>
+      </Task>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="feedback-task"/>
+    <resource>
+      <Task>
+        <id value="task-accepted-other-r"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"/>
+        </meta>
+        <status value="accepted"/>
+        <statusReason>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+            <code value="OtherReason"/>
+          </coding>
+          <text value="Better alternative that was not provided by PSS"/>
+        </statusReason>
+        <intent value="option"/>
+        <focus>
+          <identifier>
+            <system value="http://snomed.info/sct"/>
+            <value value="42807009"/>
+          </identifier>
+          <display value="MR, cervical spine, wo/w iv contrast"/>
+        </focus>
+        <lastModified value="2025-05-28T10:10:00+02:00"/>
+      </Task>
+    </resource>
+  </parameter>
+</Parameters>

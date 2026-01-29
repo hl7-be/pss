@@ -1,0 +1,43 @@
+{
+  "package": "hl7.fhir.be.pss",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "BE",
+  "extensions": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/ext-radiation-level-score",
+      "title": "Radiation level score",
+      "types": [
+        "Ratio"
+      ]
+    }
+  ],
+  "profiles": {},
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating": [
+      "Bundle.entry.resource",
+      "MedicationRequest",
+      "ServiceRequest"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PSSaFeedbackReasons",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PSSaFeedbackReasons</b></p><a name=\"PSSaFeedbackReasons\"> </a><a name=\"hcPSSaFeedbackReasons\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ClinicIssue<a name=\"PSSaFeedbackReasons-ClinicIssue\"> </a></td><td>Concerning clinical presentation</td></tr><tr><td style=\"white-space:nowrap\">Comorbidities<a name=\"PSSaFeedbackReasons-Comorbidities\"> </a></td><td>Comorbidities</td></tr><tr><td style=\"white-space:nowrap\">FastResults<a name=\"PSSaFeedbackReasons-FastResults\"> </a></td><td>Faster results</td></tr><tr><td style=\"white-space:nowrap\">PosPrevExp<a name=\"PSSaFeedbackReasons-PosPrevExp\"> </a></td><td>Positive prior experience</td></tr><tr><td style=\"white-space:nowrap\">InsuffEffect<a name=\"PSSaFeedbackReasons-InsuffEffect\"> </a></td><td>Insufficient effect of recommended management in the past</td></tr><tr><td style=\"white-space:nowrap\">BetterTol<a name=\"PSSaFeedbackReasons-BetterTol\"> </a></td><td>Better tolerated</td></tr><tr><td style=\"white-space:nowrap\">Allergy<a name=\"PSSaFeedbackReasons-Allergy\"> </a></td><td>Allergy</td></tr><tr><td style=\"white-space:nowrap\">OtherReason<a name=\"PSSaFeedbackReasons-OtherReason\"> </a></td><td>Other reason — which</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.16.8"
+  }],
+  "version" : "1.0.0",
+  "name" : "PSSaFeedbackReasons",
+  "title" : "PSSa Feedback Code Reasons",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-01-29T09:07:50+00:00",
+  "publisher" : "eHealth Platform Belgium",
+  "contact" : [{
+    "name" : "eHealth Platform Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Feedback code reasons for PSS antimicrobial",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "ClinicIssue",
+    "display" : "Concerning clinical presentation"
+  },
+  {
+    "code" : "Comorbidities",
+    "display" : "Comorbidities"
+  },
+  {
+    "code" : "FastResults",
+    "display" : "Faster results"
+  },
+  {
+    "code" : "PosPrevExp",
+    "display" : "Positive prior experience"
+  },
+  {
+    "code" : "InsuffEffect",
+    "display" : "Insufficient effect of recommended management in the past"
+  },
+  {
+    "code" : "BetterTol",
+    "display" : "Better tolerated"
+  },
+  {
+    "code" : "Allergy",
+    "display" : "Allergy"
+  },
+  {
+    "code" : "OtherReason",
+    "display" : "Other reason — which"
+  }]
+}

@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PSSFeedbackCodesVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PSSFeedbackCodesVS</b></p><a name=\"PSSFeedbackCodesVS\"> </a><a name=\"hcPSSFeedbackCodesVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-PSSFeedbackCodes.html\"><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.12"
+  }],
+  "version" : "1.0.0",
+  "name" : "PSSFeedbackCodesVS",
+  "title" : "PSS Feedback Codes",
+  "status" : "active",
+  "date" : "2025-11-04T09:37:58+00:00",
+  "publisher" : "eHealth Platform Belgium",
+  "contact" : [{
+    "name" : "eHealth Platform Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Feedback codes for PSS",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes"
+    }]
+  }
+}

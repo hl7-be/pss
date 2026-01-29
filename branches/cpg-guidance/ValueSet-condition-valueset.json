@@ -1,0 +1,53 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "condition-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet condition-valueset</b></p><a name=\"condition-valueset\"> </a><a name=\"hccondition-valueset\"> </a><a name=\"condition-valueset-en-US\"> </a><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"condition-valueset-null-419760006\"> </a>\u00a0\u00a0419760006</td><td/><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"condition-valueset-null-276877003\"> </a>\u00a0\u00a0276877003</td><td/><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"condition-valueset-null-72934000\"> </a>\u00a0\u00a072934000</td><td/><td>Candidiasis of vagina</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
+  "version" : "1.0.0",
+  "status" : "active",
+  "date" : "2024-12-23T16:34:43+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE"
+    }]
+  }],
+  "expansion" : {
+    "timestamp" : "2015-06-22T13:56:07Z",
+    "contains" : [{
+      "code" : "419760006",
+      "display" : "Bacterial vaginosis"
+    },
+    {
+      "code" : "276877003",
+      "display" : "Trichomonal vaginitis"
+    },
+    {
+      "code" : "72934000",
+      "display" : "Candidiasis of vagina"
+    }]
+  }
+}

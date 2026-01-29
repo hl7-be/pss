@@ -1,0 +1,19 @@
+{
+  "resourceType" : "RequestGroup",
+  "id" : "getdatatocollect-return2-v",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getdatatocollect-return2-v</b></p><a name=\"getdatatocollect-return2-v\"> </a><a name=\"hcgetdatatocollect-return2-v\"> </a><a name=\"getdatatocollect-return2-v-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-v.html\">Anonymous Patient Female, DoB Unknown</a></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Collect pregnancy status</td><td><a href=\"Questionnaire-q-collect-information2.html\">Questionnaire: url = https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information2; version = 1.0.0; status = active; date = 2024-11-29 17:24:50+0000; publisher = HL7 Belgium; contact = HL7 Belgium (https://www.hl7belgium.org, hl7belgium@hl7belgium.org),Message Structure eHealth (message-structure@ehealth.fgov.be(Work)); jurisdiction = Belgium</a></td></tr></table></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "subject" : {
+    "reference" : "Patient/patient-v"
+  },
+  "action" : [{
+    "textEquivalent" : "Collect pregnancy status",
+    "resource" : {
+      "reference" : "Questionnaire/q-collect-information2"
+    }
+  }]
+}

@@ -1,0 +1,82 @@
+# alternative-request-bundle - Prescription Search Support v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **alternative-request-bundle**
+
+## Example Bundle: alternative-request-bundle
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "alternative-request-bundle",
+  "meta" : {
+    "profile" : [
+      "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSFeedbackBundle"
+    ]
+  },
+  "identifier" : {
+    "value" : "response1"
+  },
+  "type" : "collection",
+  "timestamp" : "2025-05-20T00:00:00Z",
+  "entry" : [
+    {
+      "resource" : {
+        "resourceType" : "ServiceRequest",
+        "id" : "alternative-request",
+        "meta" : {
+          "profile" : [
+            "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_alternative-request\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest alternative-request</b></p><a name=\"alternative-request\"> </a><a name=\"hcalternative-request\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>status</b>: Draft</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114055}\">CT, head, wo iv contrast</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p></div>"
+        },
+        "status" : "draft",
+        "intent" : "proposal",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+              "code" : "114055",
+              "display" : "CT, head, wo iv contrast"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "Patient/30551ce1-5a28-4356-b684-3e639094ad48"
+        }
+      }
+    },
+    {
+      "resource" : {
+        "resourceType" : "Task",
+        "id" : "alternative-request-task",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_alternative-request-task\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task alternative-request-task</b></p><a name=\"alternative-request-task\"> </a><a name=\"hcalternative-request-task\"> </a><p><b>status</b>: Accepted</p><p><b>statusReason</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons FastResults}\">Alternative treatment proposed due to patient age and need for faster treatment</span></p><p><b>intent</b>: option</p><p><b>lastModified</b>: 2025-05-28 10:15:00+0200</p></div>"
+        },
+        "status" : "accepted",
+        "statusReason" : {
+          "coding" : [
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+              "code" : "FastResults"
+            }
+          ],
+          "text" : "Alternative treatment proposed due to patient age and need for faster treatment"
+        },
+        "intent" : "option",
+        "lastModified" : "2025-05-28T10:15:00+02:00"
+      }
+    }
+  ]
+}
+
+```

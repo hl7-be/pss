@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "mr-head-without-contrast",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest mr-head-without-contrast</b></p><a name=\"mr-head-without-contrast\"> </a><a name=\"hcmr-head-without-contrast\"> </a><a name=\"mr-head-without-contrast-en-US\"> </a><p><b>CPG Rating Extension</b>: 9/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">MR, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+    "valueRatio" : {
+      "numerator" : {
+        "value" : 9
+      },
+      "denominator" : {
+        "value" : 10
+      }
+    }
+  }],
+  "status" : "active",
+  "intent" : "proposal",
+  "code" : {
+    "coding" : [{
+      "code" : "114092",
+      "display" : "MR, head, without IV contrast"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/X"
+  }
+}

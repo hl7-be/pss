@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="30551ce1-5a28-4356-b684-11ef43a67755"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task 30551ce1-5a28-4356-b684-11ef43a67755</b></p><a name="30551ce1-5a28-4356-b684-11ef43a67755"> </a><a name="hc30551ce1-5a28-4356-b684-11ef43a67755"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSQuestionnaireTask.html">PSS Questionnaire Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></p><p><b>for</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></td><td><a href="Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c.html">Questionnaire[https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c|1.0.0]</a></td></tr></table></div>
+  </text>
+  <status value="requested"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+      <code value="collect-information"/>
+      <display value="Collect information"/>
+    </coding>
+  </code>
+  <for>
+    <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+  </for>
+  <input>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+        <code value="collect-information"/>
+        <display value="Collect information"/>
+      </coding>
+    </type>
+    <valueCanonical value="https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c"/>
+  </input>
+</Task>

@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PSSrFeedbackReasons"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PSSrFeedbackReasons</b></p><a name=\"PSSrFeedbackReasons\"> </a><a name=\"hcPSSrFeedbackReasons\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Pregnancy<a name=\"PSSrFeedbackReasons-Pregnancy\"> </a></td><td>Contraindicated due to pregnancy</td></tr><tr><td style=\"white-space:nowrap\">ImplantIncompatibility<a name=\"PSSrFeedbackReasons-ImplantIncompatibility\"> </a></td><td>Not suitable because of an implanted device</td></tr><tr><td style=\"white-space:nowrap\">ContrastAllergy<a name=\"PSSrFeedbackReasons-ContrastAllergy\"> </a></td><td>Patient has allergy to contrast agents</td></tr><tr><td style=\"white-space:nowrap\">IncompleteRecommendation<a name=\"PSSrFeedbackReasons-IncompleteRecommendation\"> </a></td><td>Recommendation lacked needed clinical details</td></tr><tr><td style=\"white-space:nowrap\">WaitingTimeTooLong<a name=\"PSSrFeedbackReasons-WaitingTimeTooLong\"> </a></td><td>Expected waiting time is too long</td></tr><tr><td style=\"white-space:nowrap\">Emergency<a name=\"PSSrFeedbackReasons-Emergency\"> </a></td><td>Urgent situation requiring faster action</td></tr><tr><td style=\"white-space:nowrap\">OtherReason<a name=\"PSSrFeedbackReasons-OtherReason\"> </a></td><td>Other reason — which</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"^^xsd:anyURI ;
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons>
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:l <urn:ietf:rfc:3986>
+     ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.2.51.22.2.16.9" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PSSrFeedbackReasons"] ; # 
+  fhir:title [ fhir:v "PSSr Feedback Code Reasons"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-01-29T09:07:50+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Feedback code reasons for PSS radiology"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Pregnancy" ] ;
+     fhir:display [ fhir:v "Contraindicated due to pregnancy" ]
+  ] [
+     fhir:code [ fhir:v "ImplantIncompatibility" ] ;
+     fhir:display [ fhir:v "Not suitable because of an implanted device" ]
+  ] [
+     fhir:code [ fhir:v "ContrastAllergy" ] ;
+     fhir:display [ fhir:v "Patient has allergy to contrast agents" ]
+  ] [
+     fhir:code [ fhir:v "IncompleteRecommendation" ] ;
+     fhir:display [ fhir:v "Recommendation lacked needed clinical details" ]
+  ] [
+     fhir:code [ fhir:v "WaitingTimeTooLong" ] ;
+     fhir:display [ fhir:v "Expected waiting time is too long" ]
+  ] [
+     fhir:code [ fhir:v "Emergency" ] ;
+     fhir:display [ fhir:v "Urgent situation requiring faster action" ]
+  ] [
+     fhir:code [ fhir:v "OtherReason" ] ;
+     fhir:display [ fhir:v "Other reason — which" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

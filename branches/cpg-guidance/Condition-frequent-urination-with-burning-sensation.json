@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Condition",
+  "id" : "frequent-urination-with-burning-sensation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition frequent-urination-with-burning-sensation</b></p><a name=\"frequent-urination-with-burning-sensation\"> </a><a name=\"hcfrequent-urination-with-burning-sensation\"> </a><a name=\"frequent-urination-with-burning-sensation-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 28442001}\">Frequent urination with burning sensation</span></p><p><b>subject</b>: <a href=\"Patient-patient-y.html\">Anonymous Patient Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }],
+    "text" : "Active"
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }],
+    "text" : "Confirmed"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis",
+      "display" : "Encounter Diagnosis"
+    }],
+    "text" : "Encounter Diagnosis"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "28442001",
+      "display" : "Polyuria"
+    }],
+    "text" : "Frequent urination with burning sensation"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-y"
+  },
+  "onsetDateTime" : "2024-10-13"
+}

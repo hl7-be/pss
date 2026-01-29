@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="getrecommendations-a-response"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
+  </meta>
+  <identifier>
+    <value value="response1"/>
+  </identifier>
+  <type value="collection"/>
+  <timestamp value="2025-02-20T00:00:00Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"/>
+    <resource>
+      <RequestGroup>
+        <id value="getrecommendations-a-response-group"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_getrecommendations-a-response-group"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-a-response-group</b></p><a name="getrecommendations-a-response-group"> </a><a name="hcgetrecommendations-a-response-group"> </a><a name="getrecommendations-a-response-group-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p><p><b>note</b>: Waarschuwing! De indicatie is niet langer up-to-date met de BAPCOC-richtlijnen., Avertissement ! L’indication n’est plus à jour avec les directives du BAPCOC.</p><blockquote><p><b>action</b></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>Documentation</td><td>Meer details op de BCFI site</td><td><a href="https://bcfi.be/nl/chapters/12?frag=8001869">https://bcfi.be/nl/chapters/12?frag=8001869</a></td></tr><tr><td style="display: none">*</td><td>Documentation</td><td>Plus de details sur le site CBIP</td><td><a href="https://cbip.be/fr/chapters/12?frag=8001869">https://cbip.be/fr/chapters/12?frag=8001869</a></td></tr><tr><td style="display: none">*</td><td>Documentation</td><td>Download het beslismodel van EBPNET</td><td><a href="https://ebpnet.be/nl/pss-vaginitis">https://ebpnet.be/nl/pss-vaginitis</a></td></tr><tr><td style="display: none">*</td><td>Documentation</td><td>Télécharger le modèle de décision d'EBPNET</td><td><a href="https://ebpnet.be/fr/pss-vaginite">https://ebpnet.be/fr/pss-vaginite</a></td></tr></table><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td/><td>Algemeen advies</td><td><a href="CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22.html">CommunicationRequest: status = active</a></td></tr><tr><td style="display: none">*</td><td/><td>Metronidazol Oraal</td><td><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.html">MedicationRequest: status = active; intent = proposal; medication[x] = metronidazole</a></td></tr><tr><td style="display: none">*</td><td/><td>Clindamycin local</td><td><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.html">MedicationRequest: status = active; intent = proposal; medication[x] = clindamycin</a></td></tr><tr><td style="display: none">*</td><td/><td>Fluconazol Oraal</td><td><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.html">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style="display: none">*</td><td/><td>Miconazol lokaal</td><td><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.html">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <subject>
+          <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+        </subject>
+        <note>
+          <extension url="http://hl7.org/fhir/StructureDefinition/language">
+            <valueCode value="nl-BE"/>
+          </extension>
+          <text value="Waarschuwing! De indicatie is niet langer up-to-date met de BAPCOC-richtlijnen."/>
+        </note>
+        <note>
+          <extension url="http://hl7.org/fhir/StructureDefinition/language">
+            <valueCode value="fr-BE"/>
+          </extension>
+          <text value="Avertissement ! L’indication n’est plus à jour avec les directives du BAPCOC."/>
+        </note>
+        <action>
+          <documentation>
+            <type value="documentation"/>
+            <label value="Meer details op de BCFI site">
+              <extension url="http://hl7.org/fhir/StructureDefinition/language">
+                <valueCode value="nl-BE"/>
+              </extension>
+            </label>
+            <url value="https://bcfi.be/nl/chapters/12?frag=8001869"/>
+          </documentation>
+          <documentation>
+            <type value="documentation"/>
+            <label value="Plus de details sur le site CBIP">
+              <extension url="http://hl7.org/fhir/StructureDefinition/language">
+                <valueCode value="fr-BE"/>
+              </extension>
+            </label>
+            <url value="https://cbip.be/fr/chapters/12?frag=8001869"/>
+          </documentation>
+          <documentation>
+            <type value="documentation"/>
+            <label value="Download het beslismodel van EBPNET">
+              <extension url="http://hl7.org/fhir/StructureDefinition/language">
+                <valueCode value="nl-BE"/>
+              </extension>
+            </label>
+            <url value="https://ebpnet.be/nl/pss-vaginitis"/>
+          </documentation>
+          <documentation>
+            <type value="documentation"/>
+            <label value="Télécharger le modèle de décision d'EBPNET">
+              <extension url="http://hl7.org/fhir/StructureDefinition/language">
+                <valueCode value="fr-BE"/>
+              </extension>
+            </label>
+            <url value="https://ebpnet.be/fr/pss-vaginite"/>
+          </documentation>
+          <selectionBehavior value="at-most-one"/>
+          <action>
+            <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+              <extension url="ratingType">
+                <valueCode value="overall"/>
+              </extension>
+              <extension url="ratingValue">
+                <valueRatio>
+                  <numerator>
+                    <value value="3"/>
+                  </numerator>
+                  <denominator>
+                    <value value="3"/>
+                  </denominator>
+                </valueRatio>
+              </extension>
+              <extension url="ratingText">
+                <valueMarkdown value="Over het algemeen aangewezen">
+                  <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                    <extension url="lang">
+                      <valueCode value="fr-BE"/>
+                    </extension>
+                    <extension url="content">
+                      <valueString value="Généralement approprié"/>
+                    </extension>
+                  </extension>
+                </valueMarkdown>
+              </extension>
+            </extension>
+            <textEquivalent value="Algemeen advies">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="fr-BE"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Conseil général"/>
+                </extension>
+              </extension>
+            </textEquivalent>
+            <resource>
+              <reference value="CommunicationRequest/30551ce1-5a28-4356-b684-1e639094dd22"/>
+            </resource>
+          </action>
+          <action>
+            <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+              <extension url="ratingType">
+                <valueCode value="overall"/>
+              </extension>
+              <extension url="ratingValue">
+                <valueRatio>
+                  <numerator>
+                    <value value="3"/>
+                  </numerator>
+                  <denominator>
+                    <value value="3"/>
+                  </denominator>
+                </valueRatio>
+              </extension>
+              <extension url="ratingText">
+                <valueMarkdown value="Over het algemeen aangewezen">
+                  <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                    <extension url="lang">
+                      <valueCode value="fr-BE"/>
+                    </extension>
+                    <extension url="content">
+                      <valueString value="Généralement approprié"/>
+                    </extension>
+                  </extension>
+                </valueMarkdown>
+              </extension>
+            </extension>
+            <textEquivalent value="Metronidazol Oraal">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="fr-BE"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Métronidazole orale"/>
+                </extension>
+              </extension>
+            </textEquivalent>
+            <resource>
+              <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ac23"/>
+            </resource>
+          </action>
+          <action>
+            <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+              <extension url="ratingType">
+                <valueCode value="overall"/>
+              </extension>
+              <extension url="ratingValue">
+                <valueRatio>
+                  <numerator>
+                    <value value="3"/>
+                  </numerator>
+                  <denominator>
+                    <value value="3"/>
+                  </denominator>
+                </valueRatio>
+              </extension>
+              <extension url="ratingText">
+                <valueMarkdown value="Over het algemeen aangewezen">
+                  <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                    <extension url="lang">
+                      <valueCode value="fr-BE"/>
+                    </extension>
+                    <extension url="content">
+                      <valueString value="Généralement approprié"/>
+                    </extension>
+                  </extension>
+                </valueMarkdown>
+              </extension>
+            </extension>
+            <textEquivalent value="Clindamycin local">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="fr-BE"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Clindamycine localement"/>
+                </extension>
+              </extension>
+            </textEquivalent>
+            <resource>
+              <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad24"/>
+            </resource>
+          </action>
+          <action>
+            <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+              <extension url="ratingType">
+                <valueCode value="overall"/>
+              </extension>
+              <extension url="ratingValue">
+                <valueRatio>
+                  <numerator>
+                    <value value="1"/>
+                  </numerator>
+                  <denominator>
+                    <value value="3"/>
+                  </denominator>
+                </valueRatio>
+              </extension>
+              <extension url="ratingText">
+                <valueMarkdown value="Niet aangewezen">
+                  <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                    <extension url="lang">
+                      <valueCode value="fr-BE"/>
+                    </extension>
+                    <extension url="content">
+                      <valueString value="Pas approprié"/>
+                    </extension>
+                  </extension>
+                </valueMarkdown>
+              </extension>
+            </extension>
+            <textEquivalent value="Fluconazol Oraal">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="fr-BE"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Fluconazole orale"/>
+                </extension>
+              </extension>
+            </textEquivalent>
+            <resource>
+              <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad26"/>
+            </resource>
+          </action>
+          <action>
+            <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+              <extension url="ratingType">
+                <valueCode value="overall"/>
+              </extension>
+              <extension url="ratingValue">
+                <valueRatio>
+                  <numerator>
+                    <value value="1"/>
+                  </numerator>
+                  <denominator>
+                    <value value="3"/>
+                  </denominator>
+                </valueRatio>
+              </extension>
+              <extension url="ratingText">
+                <valueMarkdown value="Niet aangewezen">
+                  <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                    <extension url="lang">
+                      <valueCode value="fr-BE"/>
+                    </extension>
+                    <extension url="content">
+                      <valueString value="Pas approprié"/>
+                    </extension>
+                  </extension>
+                </valueMarkdown>
+              </extension>
+            </extension>
+            <textEquivalent value="Miconazol lokaal">
+              <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                <extension url="lang">
+                  <valueCode value="fr-BE"/>
+                </extension>
+                <extension url="content">
+                  <valueString value="Miconazole localement"/>
+                </extension>
+              </extension>
+            </textEquivalent>
+            <resource>
+              <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad29"/>
+            </resource>
+          </action>
+        </action>
+      </RequestGroup>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094dd22"/>
+    <resource>
+      <CommunicationRequest>
+        <id value="30551ce1-5a28-4356-b684-1e639094dd22"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest"/>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="CommunicationRequest_30551ce1-5a28-4356-b684-1e639094dd22"> </a><p class="res-header-id"><b>Generated Narrative: CommunicationRequest 30551ce1-5a28-4356-b684-1e639094dd22</b></p><a name="30551ce1-5a28-4356-b684-1e639094dd22"> </a><a name="hc30551ce1-5a28-4356-b684-1e639094dd22"> </a><a name="30551ce1-5a28-4356-b684-1e639094dd22-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-PSSResponseCommunicationRequest.html">PSS Response Communication Request</a>, <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-communicationrequest.html">CPG Communication Request</a></p></div><p><b>status</b>: Active</p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p><h3>Payloads</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Content[x]</b></td></tr><tr><td style="display: none">*</td><td><code>Markdown: </code><div><p>Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte. Metronidazol en clindamycine worden in de SKP afgeraden in het eerste trimester. De klinische gegevens omtrent gebruik tijdens het eerste trimester van de zwangerschap zijn nochtans geruststellend en de meeste bronnen geven aan dat het kan gebruikt worden.</p>
+</div></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <subject>
+          <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+        </subject>
+        <payload>
+          <contentString>
+            <extension url="http://hl7.org/fhir/StructureDefinition/rendering-markdown">
+              <valueMarkdown value="Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte. Metronidazol en clindamycine worden in de SKP afgeraden in het eerste trimester. De klinische gegevens omtrent gebruik tijdens het eerste trimester van de zwangerschap zijn nochtans geruststellend en de meeste bronnen geven aan dat het kan gebruikt worden.">
+                <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                  <extension url="lang">
+                    <valueCode value="fr-BE"/>
+                  </extension>
+                  <extension url="content">
+                    <valueString value="Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée. Le RCP déconseille l'utilisation du métronidazole et de la clindamycine pendant le premier trimestre de la grossesse. Les données cliniques concernant leur utilisation pendant le premier trimestre de grossesse sont pourtant rassurantes et la plupart des sources acceptent leur utilisation en période de grossesse."/>
+                  </extension>
+                </extension>
+              </valueMarkdown>
+            </extension>
+          </contentString>
+        </payload>
+      </CommunicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ac23"/>
+    <resource>
+      <MedicationRequest>
+        <id value="30551ce1-5a28-4356-b684-1e639094ac23"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_30551ce1-5a28-4356-b684-1e639094ac23"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ac23</b></p><a name="30551ce1-5a28-4356-b684-1e639094ac23"> </a><a name="hc30551ce1-5a28-4356-b684-1e639094ac23"> </a><a name="30551ce1-5a28-4356-b684-1e639094ac23-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:{http://www.whocc.no/atc J01XD01}, {https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg 21436}">metronidazole</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 1000 mg per dag in 2 giften gedurende 7 dagen</p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td>1000 mg</td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="J01XD01"/>
+          </coding>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/vmpg"/>
+            <code value="21436"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+        </subject>
+        <dosageInstruction>
+          <text value="1000 mg per dag in 2 giften gedurende 7 dagen">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="fr-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="1000 mg par jour en 2 prises pendant 7 jours"/>
+              </extension>
+            </extension>
+          </text>
+          <timing>
+            <repeat>
+              <boundsDuration>
+                <value value="7"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="d"/>
+              </boundsDuration>
+              <frequency value="2"/>
+              <period value="1"/>
+              <periodUnit value="d"/>
+            </repeat>
+          </timing>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="1000"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+            </doseQuantity>
+          </doseAndRate>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24"/>
+    <resource>
+      <MedicationRequest>
+        <id value="30551ce1-5a28-4356-b684-1e639094ad24"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad24"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad24</b></p><a name="30551ce1-5a28-4356-b684-1e639094ad24"> </a><a name="hc30551ce1-5a28-4356-b684-1e639094ad24"> </a><a name="30551ce1-5a28-4356-b684-1e639094ad24-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:{http://www.whocc.no/atc G01AA10}">clindamycin</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p><h3>DosageInstructions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen</td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="G01AA10"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+        </subject>
+        <dosageInstruction>
+          <text value="ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="fr-BE"/>
+              </extension>
+              <extension url="content">
+                <valueString value="ovule : 100 mg par jour en 1 prise pendant 3 jours OU crème vaginale : 2 % 5 g par jour en 1 prise pendant 7 jours"/>
+              </extension>
+            </extension>
+          </text>
+        </dosageInstruction>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26"/>
+    <resource>
+      <MedicationRequest>
+        <id value="30551ce1-5a28-4356-b684-1e639094ad26"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad26"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad26</b></p><a name="30551ce1-5a28-4356-b684-1e639094ad26"> </a><a name="hc30551ce1-5a28-4356-b684-1e639094ad26"> </a><a name="30551ce1-5a28-4356-b684-1e639094ad26-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Fluconazol</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <text value="Fluconazol"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29"/>
+    <resource>
+      <MedicationRequest>
+        <id value="30551ce1-5a28-4356-b684-1e639094ad29"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest"/>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_30551ce1-5a28-4356-b684-1e639094ad29"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad29</b></p><a name="30551ce1-5a28-4356-b684-1e639094ad29"> </a><a name="hc30551ce1-5a28-4356-b684-1e639094ad29"> </a><a name="30551ce1-5a28-4356-b684-1e639094ad29-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-PSSResponseMedicationRequest.html">PSS Response Medication Request</a>, <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Miconazol</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <text value="Miconazol"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+</Bundle>

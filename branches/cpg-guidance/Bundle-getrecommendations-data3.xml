@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="getrecommendations-data3"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48"/>
+    <resource>
+      <Patient>
+        <id value="X"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_X"> </a><p class="res-header-id"><b>Generated Narrative: Patient X</b></p><a name="X"> </a><a name="hcX"> </a><a name="X-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient Male, DoB: 1972-05-24</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr></table></div>
+        </text>
+        <active value="true"/>
+        <gender value="male"/>
+        <birthDate value="1972-05-24"/>
+        <deceasedBoolean value="false"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-3e639094ad01"/>
+    <resource>
+      <Condition>
+        <id value="proposed-diagnosis-head-trauma"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_proposed-diagnosis-head-trauma"> </a><p class="res-header-id"><b>Generated Narrative: Condition proposed-diagnosis-head-trauma</b></p><a name="proposed-diagnosis-head-trauma"> </a><a name="hcproposed-diagnosis-head-trauma"> </a><a name="proposed-diagnosis-head-trauma-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://example 5000246}">Ataxia, Head trauma</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="provisional"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://example"/>
+            <code value="5000246"/>
+            <display value="Ataxia, Head trauma"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-3e639094ad02"/>
+    <resource>
+      <ServiceRequest>
+        <id value="ct-head-iv-contrast"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_ct-head-iv-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name="ct-head-iv-contrast"> </a><a name="hcct-head-iv-contrast"> </a><a name="ct-head-iv-contrast-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT Head with IV contrast</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <code>
+          <text value="CT Head with IV contrast"/>
+        </code>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </ServiceRequest>
+    </resource>
+  </entry>
+</Bundle>

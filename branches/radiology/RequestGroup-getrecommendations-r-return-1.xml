@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RequestGroup xmlns="http://hl7.org/fhir">
+  <id value="getrecommendations-r-return-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-r-return-1</b></p><a name="getrecommendations-r-return-1"> </a><a name="hcgetrecommendations-r-return-1"> </a><a name="getrecommendations-r-return-1-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-patient-x.html">Anonymous Patient Female, DoB: 1989-09-12</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CT Head with or without contrast</p><p><b>resource</b>: <a href="ServiceRequest-ct-head-with-or-without-contrast.html">ServiceRequest CT, head, without or without contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CT Head with IV contrast</p><p><b>resource</b>: <a href="ServiceRequest-ct-head-iv-contrast.html">ServiceRequest CT, head, without IV contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: MR Head without contrast</p><p><b>resource</b>: <a href="ServiceRequest-mr-head-without-contrast.html">ServiceRequest MR, head, without IV contrast</a></p></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <subject>
+    <reference value="Patient/patient-x"/>
+  </subject>
+  <action>
+    <textEquivalent value="CT Head with or without contrast"/>
+    <resource>
+      <reference value="ServiceRequest/ct-head-with-or-without-contrast"/>
+    </resource>
+  </action>
+  <action>
+    <textEquivalent value="CT Head with IV contrast"/>
+    <resource>
+      <reference value="ServiceRequest/ct-head-iv-contrast"/>
+    </resource>
+  </action>
+  <action>
+    <textEquivalent value="MR Head without contrast"/>
+    <resource>
+      <reference value="ServiceRequest/mr-head-without-contrast"/>
+    </resource>
+  </action>
+</RequestGroup>

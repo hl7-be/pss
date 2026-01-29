@@ -1,0 +1,278 @@
+[
+  {
+    "id" : "GetDataToCollect",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDataToCollect",
+    "version" : "1.0.0",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.34.1"]
+  },
+  {
+    "id" : "GetDiagnoses",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDiagnoses",
+    "version" : "1.0.0",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.34.2"]
+  },
+  {
+    "id" : "GetRecommendations",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetRecommendations",
+    "version" : "1.0.0",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.34.3"]
+  },
+  {
+    "id" : "PSSQSIConditions",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions",
+    "version" : "1.0.0",
+    "name" : "PSSQSIConditions",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.16.1"]
+  },
+  {
+    "id" : "PSSQSIProcedures",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures",
+    "version" : "1.0.0",
+    "name" : "PSSQSIProcedures",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.16.2"]
+  },
+  {
+    "id" : "PSSRatingTypes",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
+    "version" : "1.0.0",
+    "name" : "PSSRatingTypes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.16.3"]
+  },
+  {
+    "id" : "hl7.fhir.be.pss",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ImplementationGuide/hl7.fhir.be.pss",
+    "version" : "1.0.0",
+    "name" : "PrescriptionSearchSupport",
+    "oids" : ["2.16.840.1.113883.2.51.22.2"]
+  },
+  {
+    "id" : "30551ce1-5a28-4356-b684-2e639094ad4c",
+    "type" : "Questionnaire",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/Questionnaire/30551ce1-5a28-4356-b684-2e639094ad4c",
+    "version" : "1.0.0",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.35.1"]
+  },
+  {
+    "id" : "AnswerOptionAdditionalCode",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/AnswerOptionAdditionalCode",
+    "version" : "1.0.0",
+    "name" : "AnswerOptionAdditionalCode",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.1"]
+  },
+  {
+    "id" : "CodeValueSet",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
+    "version" : "1.0.0",
+    "name" : "CodeValueSet",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.2"]
+  },
+  {
+    "id" : "PSSDataAcquisitionForm",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm",
+    "version" : "1.0.0",
+    "name" : "PSSDataAcquisitionForm",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.3"]
+  },
+  {
+    "id" : "PSSMedicationRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSMedicationRequest",
+    "version" : "1.0.0",
+    "name" : "PSSMedicationRequest",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.4"]
+  },
+  {
+    "id" : "PSSPatient",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSPatient",
+    "version" : "1.0.0",
+    "name" : "PSSPatient",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.5"]
+  },
+  {
+    "id" : "PSSQuestionnaireTask",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask",
+    "version" : "1.0.0",
+    "name" : "PSSQuestionnaireTask",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.6"]
+  },
+  {
+    "id" : "PSSRelevantAge",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRelevantAge",
+    "version" : "1.0.0",
+    "name" : "PSSRelevantAge",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.7"]
+  },
+  {
+    "id" : "PSSRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequest",
+    "version" : "1.0.0",
+    "name" : "PSSRequest",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.8"]
+  },
+  {
+    "id" : "PSSRequestBundle",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSRequestBundle",
+    "version" : "1.0.0",
+    "name" : "PSSRequestBundle",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.9"]
+  },
+  {
+    "id" : "PSSResponse",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponse",
+    "version" : "1.0.0",
+    "name" : "PSSResponse",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.10"]
+  },
+  {
+    "id" : "PSSResponseBundle",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle",
+    "version" : "1.0.0",
+    "name" : "PSSResponseBundle",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.11"]
+  },
+  {
+    "id" : "PSSResponseCommunicationRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseCommunicationRequest",
+    "version" : "1.0.0",
+    "name" : "PSSResponseCommunicationRequest",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.12"]
+  },
+  {
+    "id" : "PSSResponseMedicationRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseMedicationRequest",
+    "version" : "1.0.0",
+    "name" : "PSSResponseMedicationRequest",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.13"]
+  },
+  {
+    "id" : "PSSResponseRequestGroup",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup",
+    "version" : "1.0.0",
+    "name" : "PSSResponseRequestGroup",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.14"]
+  },
+  {
+    "id" : "PSSResponseServiceRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest",
+    "version" : "1.0.0",
+    "name" : "PSSResponseServiceRequest",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.15"]
+  },
+  {
+    "id" : "PSSStructuredRating",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating",
+    "version" : "1.0.0",
+    "name" : "PSSStructuredRating",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.42.16"]
+  },
+  {
+    "id" : "BacterialCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
+    "version" : "1.0.0",
+    "name" : "BacterialCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.1"]
+  },
+  {
+    "id" : "CandidaCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
+    "version" : "1.0.0",
+    "name" : "CandidaCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.2"]
+  },
+  {
+    "id" : "ChlamydiaCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+    "version" : "1.0.0",
+    "name" : "ChlamydiaCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.3"]
+  },
+  {
+    "id" : "CompromisedImmuneSystemCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes",
+    "version" : "1.0.0",
+    "name" : "CompromisedImmuneSystemCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.4"]
+  },
+  {
+    "id" : "GonokokCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+    "version" : "1.0.0",
+    "name" : "GonokokCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.5"]
+  },
+  {
+    "id" : "MycoplasmaCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
+    "version" : "1.0.0",
+    "name" : "MycoplasmaCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.6"]
+  },
+  {
+    "id" : "OncologyPatientCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes",
+    "version" : "1.0.0",
+    "name" : "OncologyPatientCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.7"]
+  },
+  {
+    "id" : "OtherCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+    "version" : "1.0.0",
+    "name" : "OtherCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.8"]
+  },
+  {
+    "id" : "PSSRatingTypesVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+    "version" : "1.0.0",
+    "name" : "PSSRatingTypesVS",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.9"]
+  },
+  {
+    "id" : "PregnancyCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+    "version" : "1.0.0",
+    "name" : "PregnancyCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.10"]
+  },
+  {
+    "id" : "TrichomonasCodes",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
+    "version" : "1.0.0",
+    "name" : "TrichomonasCodes",
+    "oids" : ["2.16.840.1.113883.2.51.22.2.48.11"]
+  }
+]

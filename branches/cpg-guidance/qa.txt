@@ -1,0 +1,194 @@
+PrescriptionSearchSupport : Validation Results
+=========================================
+
+err = 35, warn = 47, info = 4
+IG Publisher Version: 1.8.3
+Generated Mon Dec 23 16:35:12 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+ Build Errors : 1 / 6 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data : 0 / 0 / 5
+ /github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-return : 3 / 2 / 6
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data : 2 / 1 / 6
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-return : 12 / 4 / 12
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3 : 0 / 3 / 5
+ /github/workspace/fsh-generated/resources/Bundle-getrecommendations3-return : 0 / 3 / 4
+ /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses : 0 / 6 / 4
+ /github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses-return : 0 / 5 / 7
+ /github/workspace/fsh-generated/resources/Communication-ab-advice : 10 / 0 / 2
+ /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-head-trauma : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-head-trauma-v2 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-infection : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-post-trauma-ataxia : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-slow-progression-ataxia : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Condition-proposed-diagnosis-stroke : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Condition-vulvovaginitis : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-clindamycin : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-fluconazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-metronidazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-miconazol : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-proposal-clindamycin : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-ataxia : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Patient-X : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-patient-v : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-patient-y : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-q-collect-information-a : 3 / 0 / 3
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-qresponse-v : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-return : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-return-group : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/RequestGroup-getrecommendations3-return-1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v3 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast-v3 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-mr-head-without-contrast : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ext-radiation-level-score : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Task-collect-information-a : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-head-trauma : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-infection : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-post-trauma-ataxia : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-slow-progression-ataxia : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-propose-stroke : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-condition-valueset : 3 / 5 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/condition-valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Questionnaire-q-collect-information-a-form.html: unexpected non-end of element null::div  at line 218 column 140
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/AllergyIntolerance-allergy-to-sulfonamide.json ==
+== fsh-generated/resources/Bundle-getdatatocollect-a-data.json ==
+== fsh-generated/resources/Bundle-getdatatocollect-a-return.json ==
+WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.subject: Entry 3 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094adff does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
+WARNING: Bundle/getdatatocollect-a-return: Bundle.entry[0].resource/*RequestGroup/getdatatocollect-a-return-group*/.action[0].resource: Entry 1 matches the reference Task/collect-information-a by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-11ef43a67755 does not match the full target URL urn:uuid:collect-information-a by Bundle resolution rules
+ERROR: Bundle/getdatatocollect-a-return: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[0]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+ERROR: Bundle/getdatatocollect-a-return: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[1]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+ERROR: Bundle/getdatatocollect-a-return: Bundle.entry[2].resource/*Questionnaire/q-collect-information-a*/.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[2]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+== fsh-generated/resources/Bundle-getrecommendations-a-data.json ==
+ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.item[0]: Items not of type group should not have items outside answers (use answer.item not .item)
+WARNING: Bundle/getrecommendations-a-data: Bundle.entry[4].resource/*QuestionnaireResponse/qresponse-v*/.subject: Entry 0 matches the reference Patient/patient-v by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48 does not match the full target URL urn:uuid:patient-v by Bundle resolution rules
+ERROR: Bundle/getrecommendations-a-data: Bundle.entry[4].resource.item[0]: Items not of type group should not have items outside answers (use answer.item not .item)
+== fsh-generated/resources/Bundle-getrecommendations-a-return.json ==
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[0].resource: Entry 1 matches the reference Communication/ab-advice by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ab-advice by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[1].resource: Entry 2 matches the reference MedicationRequest/metronidazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ac22 does not match the full target URL urn:uuid:metronidazol by Bundle resolution rules
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[2].resource: Relative URLs must be of the format [ResourceName]/[id]. Encountered 30551ce1-5a28-4356-b684-1e639094ad24
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[2].resource: Unable to resolve resource with reference '30551ce1-5a28-4356-b684-1e639094ad24'
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[3].resource: Entry 4 matches the reference MedicationRequest/fluconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26 does not match the full target URL urn:uuid:fluconazol by Bundle resolution rules
+WARNING: Bundle/getrecommendations-a-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations-a-return-group*/.action[0].action[4].resource: Entry 5 matches the reference MedicationRequest/miconazol by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29 does not match the full target URL urn:uuid:miconazol by Bundle resolution rules
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/translation' definition allows for the types [] but found type code
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: Extension.extension: minimum required = 2, but only found 0 (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0)
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: Slice 'Extension.extension:lang': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: Slice 'Extension.extension:content': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1].content.ofType(string).extension[0]: Extension.value[x]: max allowed = 0, but found 1 (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0)
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[0]: This element is not allowed by the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.payload[1]: This element is not allowed by the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/: MedicationRequest.intent: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/: MedicationRequest.medication[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
+ERROR: Bundle/getrecommendations-a-return: Bundle.entry[1].resource/*Communication/ab-advice*/.status: The value provided ('in-progress') was not found in the value set 'Medicationrequest  status' (http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'in-progress' in the ValueSet 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1'; The provided code '#in-progress' was not found in the value set 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1')
+== fsh-generated/resources/Bundle-getrecommendations-data3.json ==
+WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+WARNING: Bundle/getrecommendations-data3: Bundle.entry[1].resource/*Condition/proposed-diagnosis-head-trauma*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:X by Bundle resolution rules
+WARNING: Bundle/getrecommendations-data3: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad48 does not match the full target URL urn:uuid:X by Bundle resolution rules
+== fsh-generated/resources/Bundle-getrecommendations3-return.json ==
+WARNING: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[1].resource: The bundle contains no match for urn:uuid:ct-head-iv-contrast by the rules of Bundle reference resolution, but it has multiple resources that match ServiceRequest/ct-head-iv-contrast by resource type and id
+WARNING: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[1].resource: Entry 1 matches the reference ServiceRequest/ct-head-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22 does not match the full target URL urn:uuid:ct-head-iv-contrast by Bundle resolution rules
+WARNING: Bundle/getrecommendations3-return: Bundle.entry[0].resource/*RequestGroup/getrecommendations3-return-1*/.action[1].resource: Entry 2 matches the reference ServiceRequest/ct-head-iv-contrast by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23 does not match the full target URL urn:uuid:ct-head-iv-contrast by Bundle resolution rules
+== fsh-generated/resources/Bundle-radiology-getdiagnoses.json ==
+WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource/*Observation/ataxia*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad03 does not match the full target URL urn:uuid:X by Bundle resolution rules
+WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[2].resource/*ServiceRequest/ct-head-iv-contrast*/.subject: Entry 0 matches the reference Patient/X by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad03 does not match the full target URL urn:uuid:X by Bundle resolution rules
+WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/radiology-getdiagnoses: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Bundle-radiology-getdiagnoses-return.json ==
+WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[0].resource: Entry 1 matches the reference Task/propose-stroke by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad09 does not match the full target URL urn:uuid:propose-stroke by Bundle resolution rules
+WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[1].resource: Entry 2 matches the reference Task/propose-infection by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad10 does not match the full target URL urn:uuid:propose-infection by Bundle resolution rules
+WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[2].resource: Entry 3 matches the reference Task/propose-head-trauma by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11 does not match the full target URL urn:uuid:propose-head-trauma by Bundle resolution rules
+WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[3].resource: Entry 4 matches the reference Task/propose-slow-progression-ataxia by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad12 does not match the full target URL urn:uuid:propose-slow-progression-ataxia by Bundle resolution rules
+WARNING: Bundle/radiology-getdiagnoses-return: Bundle.entry[0].resource/*RequestGroup/Inline-Instance-for-radiology-getdiagnoses-return*/.action[4].resource: Entry 5 matches the reference Task/propose-post-trauma-ataxia by type and id but it's fullUrl urn:uuid:30551ce1-5a28-4356-b684-3e639094ad13 does not match the full target URL urn:uuid:propose-post-trauma-ataxia by Bundle resolution rules
+== fsh-generated/resources/Communication-ab-advice.json ==
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: The Extension 'http://hl7.org/fhir/StructureDefinition/translation' definition allows for the types [] but found type code
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: Extension.extension: minimum required = 2, but only found 0 (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0)
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: Slice 'Extension.extension:lang': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: Slice 'Extension.extension:content': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Communication/ab-advice: Communication.payload[1].content.ofType(string).extension[0]: Extension.value[x]: max allowed = 0, but found 1 (from http://hl7.org/fhir/StructureDefinition/translation|5.1.0)
+ERROR: Communication/ab-advice: Communication.payload[0]: This element is not allowed by the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0
+ERROR: Communication/ab-advice: Communication.payload[1]: This element is not allowed by the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0
+ERROR: Communication/ab-advice: Communication: MedicationRequest.intent: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
+ERROR: Communication/ab-advice: Communication: MedicationRequest.medication[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest|2.0.0)
+ERROR: Communication/ab-advice: Communication.status: The value provided ('in-progress') was not found in the value set 'Medicationrequest  status' (http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'in-progress' in the ValueSet 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1'; The provided code '#in-progress' was not found in the value set 'http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1')
+== fsh-generated/resources/Condition-proposed-diagnosis-head-trauma.json ==
+WARNING: Condition/proposed-diagnosis-head-trauma: Condition.code.coding[0].system: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-proposed-diagnosis-head-trauma-v2.json ==
+WARNING: Condition/proposed-diagnosis-head-trauma-v2: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-proposed-diagnosis-infection.json ==
+WARNING: Condition/proposed-diagnosis-infection: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-proposed-diagnosis-post-trauma-ataxia.json ==
+WARNING: Condition/proposed-diagnosis-post-trauma-ataxia: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-proposed-diagnosis-slow-progression-ataxia.json ==
+WARNING: Condition/proposed-diagnosis-slow-progression-ataxia: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-proposed-diagnosis-stroke.json ==
+WARNING: Condition/proposed-diagnosis-stroke: Condition.code.coding[0]: A definition for CodeSystem 'http://example' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-vulvovaginitis.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json ==
+== fsh-generated/resources/MedicationRequest-clindamycin.json ==
+== fsh-generated/resources/MedicationRequest-fluconazol.json ==
+== fsh-generated/resources/MedicationRequest-metronidazol.json ==
+== fsh-generated/resources/MedicationRequest-miconazol.json ==
+== fsh-generated/resources/MedicationRequest-proposal-clindamycin.json ==
+== fsh-generated/resources/Observation-ataxia.json ==
+WARNING: Observation/ataxia: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/ataxia: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Patient-X.json ==
+== fsh-generated/resources/Patient-patient-v.json ==
+== fsh-generated/resources/Patient-patient-y.json ==
+== fsh-generated/resources/PlanDefinition-GetDataToCollect.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetDataToCollect could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/PlanDefinition-GetDiagnoses.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetDiagnoses could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/PlanDefinition-GetRecommendations.json ==
+INFORMATION: Resource: The resource PlanDefinition/GetRecommendations could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Questionnaire-q-collect-information-a.json ==
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[0]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[1]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+ERROR: Questionnaire/q-collect-information-a: Questionnaire.contained[0]/*ValueSet/condition-valueset*/.expansion.contains[2]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+INFORMATION: Resource: The resource Questionnaire/q-collect-information-a could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/QuestionnaireResponse-qresponse-v.json ==
+ERROR: QuestionnaireResponse/qresponse-v: QuestionnaireResponse.item[0]: Items not of type group should not have items outside answers (use answer.item not .item)
+== fsh-generated/resources/RequestGroup-Inline-Instance-for-radiology-getdiagnoses-return.json ==
+== fsh-generated/resources/RequestGroup-getdatatocollect-a-return-group.json ==
+== fsh-generated/resources/RequestGroup-getrecommendations-a-return-group.json ==
+ERROR: RequestGroup/getrecommendations-a-return-group: RequestGroup.action[0].action[2].resource: Unable to resolve resource with reference '30551ce1-5a28-4356-b684-1e639094ad24'
+== fsh-generated/resources/RequestGroup-getrecommendations3-return-1.json ==
+== fsh-generated/resources/ServiceRequest-ct-head-iv-contrast.json ==
+== fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v2.json ==
+== fsh-generated/resources/ServiceRequest-ct-head-iv-contrast-v3.json ==
+WARNING: ServiceRequest/ct-head-iv-contrast-v3: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/ServiceRequest-ct-head-with-or-without-contrast-v3.json ==
+WARNING: ServiceRequest/ct-head-with-or-without-contrast-v3: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/ServiceRequest-mr-head-without-contrast.json ==
+WARNING: ServiceRequest/mr-head-without-contrast: ServiceRequest.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-ext-radiation-level-score.json ==
+WARNING: StructureDefinition/ext-radiation-level-score: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+== fsh-generated/resources/Task-collect-information-a.json ==
+== fsh-generated/resources/Task-propose-head-trauma.json ==
+== fsh-generated/resources/Task-propose-infection.json ==
+== fsh-generated/resources/Task-propose-post-trauma-ataxia.json ==
+== fsh-generated/resources/Task-propose-slow-progression-ataxia.json ==
+== fsh-generated/resources/Task-propose-stroke.json ==
+== fsh-generated/resources/ValueSet-condition-valueset.json ==
+ERROR: ValueSet/condition-valueset: ValueSet.expansion.contains[0]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+ERROR: ValueSet/condition-valueset: ValueSet.expansion.contains[1]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+ERROR: ValueSet/condition-valueset: ValueSet.expansion.contains[2]: Constraint failed: vsd-10: 'Must have a system if a code is present'
+WARNING: ValueSet/condition-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
+WARNING: ValueSet/condition-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not
+WARNING: ValueSet/condition-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/condition-valueset: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/condition-valueset should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

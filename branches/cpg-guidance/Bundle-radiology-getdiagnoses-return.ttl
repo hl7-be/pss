@@ -1,0 +1,247 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/Bundle/radiology-getdiagnoses-return> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "radiology-getdiagnoses-return"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad08"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-3e639094ad08> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad09"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-3e639094ad09> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad10"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-3e639094ad10> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad12"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-3e639094ad12> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639094ad13"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:30551ce1-5a28-4356-b684-3e639094ad13> )
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-3e639094ad08> a fhir:RequestGroup ;
+  fhir:id [ fhir:v "Inline-Instance-for-radiology-getdiagnoses-return"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_Inline-Instance-for-radiology-getdiagnoses-return\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup Inline-Instance-for-radiology-getdiagnoses-return</b></p><a name=\"Inline-Instance-for-radiology-getdiagnoses-return\"> </a><a name=\"hcInline-Instance-for-radiology-getdiagnoses-return\"> </a><a name=\"Inline-Instance-for-radiology-getdiagnoses-return-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Stroke</p><p><b>resource</b>: <a href=\"Task-propose-stroke.html\">Task Propose a diagnosis</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of infection</p><p><b>resource</b>: <a href=\"Task-propose-infection.html\">Task Propose a diagnosis</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Head trauma</p><p><b>resource</b>: <a href=\"Task-propose-head-trauma.html\">Task Propose a diagnosis</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Slow progression or chronic ataxia</p><p><b>resource</b>: <a href=\"Task-propose-slow-progression-ataxia.html\">Task Propose a diagnosis</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential diagnosis of Post head trauma ataxia</p><p><b>resource</b>: <a href=\"Task-propose-post-trauma-ataxia.html\">Task Propose a diagnosis</a></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:action ( [
+     fhir:textEquivalent [ fhir:v "Potential diagnosis of Stroke" ] ;
+     fhir:resource [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-stroke> ;
+       fhir:reference [ fhir:v "Task/propose-stroke" ]
+     ]
+  ] [
+     fhir:textEquivalent [ fhir:v "Potential diagnosis of infection" ] ;
+     fhir:resource [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-infection> ;
+       fhir:reference [ fhir:v "Task/propose-infection" ]
+     ]
+  ] [
+     fhir:textEquivalent [ fhir:v "Potential diagnosis of Head trauma" ] ;
+     fhir:resource [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-head-trauma> ;
+       fhir:reference [ fhir:v "Task/propose-head-trauma" ]
+     ]
+  ] [
+     fhir:textEquivalent [ fhir:v "Potential diagnosis of Slow progression or chronic ataxia" ] ;
+     fhir:resource [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-slow-progression-ataxia> ;
+       fhir:reference [ fhir:v "Task/propose-slow-progression-ataxia" ]
+     ]
+  ] [
+     fhir:textEquivalent [ fhir:v "Potential diagnosis of Post head trauma ataxia" ] ;
+     fhir:resource [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Task/propose-post-trauma-ataxia> ;
+       fhir:reference [ fhir:v "Task/propose-post-trauma-ataxia" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-3e639094ad09> a fhir:Task ;
+  fhir:id [ fhir:v "propose-stroke"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_propose-stroke\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task propose-stroke</b></p><a name=\"propose-stroke\"> </a><a name=\"hcpropose-stroke\"> </a><a name=\"propose-stroke-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-proposed-diagnosis-stroke.html\">Condition Ataxia, Stroke</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "propose-diagnosis" ] ;
+       fhir:display [ fhir:v "Propose a diagnosis" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propose-diagnosis" ] ;
+         fhir:display [ fhir:v "Propose a diagnosis" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-stroke> ;
+       fhir:reference [ fhir:v "Condition/proposed-diagnosis-stroke" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-3e639094ad10> a fhir:Task ;
+  fhir:id [ fhir:v "propose-infection"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_propose-infection\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task propose-infection</b></p><a name=\"propose-infection\"> </a><a name=\"hcpropose-infection\"> </a><a name=\"propose-infection-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-proposed-diagnosis-infection.html\">Condition Ataxia, Infection</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "propose-diagnosis" ] ;
+       fhir:display [ fhir:v "Propose a diagnosis" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propose-diagnosis" ] ;
+         fhir:display [ fhir:v "Propose a diagnosis" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-infection> ;
+       fhir:reference [ fhir:v "Condition/proposed-diagnosis-infection" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11> a fhir:Task ;
+  fhir:id [ fhir:v "propose-head-trauma"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_propose-head-trauma\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task propose-head-trauma</b></p><a name=\"propose-head-trauma\"> </a><a name=\"hcpropose-head-trauma\"> </a><a name=\"propose-head-trauma-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-proposed-diagnosis-head-trauma.html\">Condition Ataxia, Head trauma</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "propose-diagnosis" ] ;
+       fhir:display [ fhir:v "Propose a diagnosis" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propose-diagnosis" ] ;
+         fhir:display [ fhir:v "Propose a diagnosis" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-head-trauma> ;
+       fhir:reference [ fhir:v "Condition/proposed-diagnosis-head-trauma" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-3e639094ad12> a fhir:Task ;
+  fhir:id [ fhir:v "propose-slow-progression-ataxia"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_propose-slow-progression-ataxia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task propose-slow-progression-ataxia</b></p><a name=\"propose-slow-progression-ataxia\"> </a><a name=\"hcpropose-slow-progression-ataxia\"> </a><a name=\"propose-slow-progression-ataxia-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-proposed-diagnosis-slow-progression-ataxia.html\">Condition Ataxia, Chronic or slow progression-ataxia</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "propose-diagnosis" ] ;
+       fhir:display [ fhir:v "Propose a diagnosis" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propose-diagnosis" ] ;
+         fhir:display [ fhir:v "Propose a diagnosis" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-slow-progression-ataxia> ;
+       fhir:reference [ fhir:v "Condition/proposed-diagnosis-slow-progression-ataxia" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:30551ce1-5a28-4356-b684-3e639094ad13> a fhir:Task ;
+  fhir:id [ fhir:v "propose-post-trauma-ataxia"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_propose-post-trauma-ataxia\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task propose-post-trauma-ataxia</b></p><a name=\"propose-post-trauma-ataxia\"> </a><a name=\"hcpropose-post-trauma-ataxia\"> </a><a name=\"propose-post-trauma-ataxia-en-US\"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></p><p><b>for</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}\">Propose a diagnosis</span></td><td><a href=\"Condition-proposed-diagnosis-post-trauma-ataxia.html\">Condition Ataxia, Post-trauma ataxia</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "propose-diagnosis" ] ;
+       fhir:display [ fhir:v "Propose a diagnosis" ]
+     ] )
+  ] ; # 
+  fhir:for [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Patient/X> ;
+     fhir:reference [ fhir:v "Patient/X" ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propose-diagnosis" ] ;
+         fhir:display [ fhir:v "Propose a diagnosis" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/Condition/proposed-diagnosis-post-trauma-ataxia> ;
+       fhir:reference [ fhir:v "Condition/proposed-diagnosis-post-trauma-ataxia" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

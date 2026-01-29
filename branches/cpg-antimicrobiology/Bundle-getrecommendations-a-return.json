@@ -1,0 +1,233 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "getrecommendations-a-return",
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "getrecommendations-a-return-group",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations-a-return-group\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-a-return-group</b></p><a name=\"getrecommendations-a-return-group\"> </a><a name=\"hcgetrecommendations-a-return-group\"> </a><a name=\"getrecommendations-a-return-group-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><blockquote><p><b>action</b></p><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style=\"display: none\">*</td><td>Generic Antibiotic advice</td><td><a href=\"CommunicationRequest-ab-advice.html\">CommunicationRequest: extension = 3 / 3; status = active</a></td></tr><tr><td style=\"display: none\">*</td><td>Metronidazol Oraal</td><td><a href=\"MedicationRequest-metronidazol.html\">MedicationRequest: extension = 3 / 3; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Clindamycin local</td><td><a href=\"MedicationRequest-clindamycin.html\">MedicationRequest: extension = 3 / 3; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Fluconazol Oraal</td><td><a href=\"MedicationRequest-fluconazol.html\">MedicationRequest: extension = 1 / 3; status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style=\"display: none\">*</td><td>Miconazol lokaal</td><td><a href=\"MedicationRequest-miconazol.html\">MedicationRequest: extension = 1 / 3; status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/patient-x"
+      },
+      "action" : [{
+        "selectionBehavior" : "at-most-one",
+        "action" : [{
+          "textEquivalent" : "Generic Antibiotic advice",
+          "resource" : {
+            "reference" : "CommunicationRequest/ab-advice"
+          }
+        },
+        {
+          "textEquivalent" : "Metronidazol Oraal",
+          "resource" : {
+            "reference" : "MedicationRequest/metronidazol"
+          }
+        },
+        {
+          "textEquivalent" : "Clindamycin local",
+          "resource" : {
+            "reference" : "MedicationRequest/clindamycin"
+          }
+        },
+        {
+          "textEquivalent" : "Fluconazol Oraal",
+          "resource" : {
+            "reference" : "MedicationRequest/fluconazol"
+          }
+        },
+        {
+          "textEquivalent" : "Miconazol lokaal",
+          "resource" : {
+            "reference" : "MedicationRequest/miconazol"
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22",
+    "resource" : {
+      "resourceType" : "CommunicationRequest",
+      "id" : "ab-advice",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CommunicationRequest_ab-advice\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest ab-advice</b></p><a name=\"ab-advice\"> </a><a name=\"hcab-advice\"> </a><a name=\"ab-advice-en-US\"> </a><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><blockquote><p><b>payload</b></p><p><b>content</b>: Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...</p></blockquote><blockquote><p><b>payload</b></p><p><b>content</b>: Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée...</p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 3
+          },
+          "denominator" : {
+            "value" : 3
+          }
+        }
+      }],
+      "status" : "active",
+      "subject" : {
+        "reference" : "Patient/patient-x"
+      },
+      "payload" : [{
+        "contentString" : "Antibioticum behandeling enkel bij storende klachten of bij verhoogd risico op vroeggeboorte...",
+        "_contentString" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/language",
+            "valueCode" : "nl"
+          }]
+        }
+      },
+      {
+        "contentString" : "Traitement antibiotique uniquement en cas de symptômes dérangeants ou de risque accru de naissance prématurée...",
+        "_contentString" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/language",
+            "valueCode" : "fr"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ac22",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "metronidazol",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_metronidazol\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest metronidazol</b></p><a name=\"metronidazol\"> </a><a name=\"hcmetronidazol\"> </a><a name=\"metronidazol-en-US\"> </a><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Nitrofurantoin 2x 100mg x 5 days</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 3
+          },
+          "denominator" : {
+            "value" : 3
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "text" : "Nitrofurantoin 2x 100mg x 5 days"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-x"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "clindamycin",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_clindamycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest clindamycin</b></p><a name=\"clindamycin\"> </a><a name=\"hcclindamycin\"> </a><a name=\"clindamycin-en-US\"> </a><p><b>CPG Rating Extension</b>: 3/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">clindamycin, single 3g dose</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 3
+          },
+          "denominator" : {
+            "value" : 3
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "text" : "clindamycin, single 3g dose"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-x"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "fluconazol",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_fluconazol\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest fluconazol</b></p><a name=\"fluconazol\"> </a><a name=\"hcfluconazol\"> </a><a name=\"fluconazol-en-US\"> </a><p><b>CPG Rating Extension</b>: 1/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Fluconazol</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 1
+          },
+          "denominator" : {
+            "value" : 3
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "text" : "Fluconazol"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-x"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad29",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "miconazol",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_miconazol\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest miconazol</b></p><a name=\"miconazol\"> </a><a name=\"hcmiconazol\"> </a><a name=\"miconazol-en-US\"> </a><p><b>CPG Rating Extension</b>: 1/3</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:\">Miconazol</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating",
+        "valueRatio" : {
+          "numerator" : {
+            "value" : 1
+          },
+          "denominator" : {
+            "value" : 3
+          }
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "text" : "Miconazol"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-x"
+      }
+    }
+  }]
+}

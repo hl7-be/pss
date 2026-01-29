@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RequestGroup xmlns="http://hl7.org/fhir">
+  <id value="30551ce1-5a28-4356-b684-3e639094ad08"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RequestGroup 30551ce1-5a28-4356-b684-3e639094ad08</b></p><a name="30551ce1-5a28-4356-b684-3e639094ad08"> </a><a name="hc30551ce1-5a28-4356-b684-3e639094ad08"> </a><a name="30551ce1-5a28-4356-b684-3e639094ad08-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-3e639094ad48.html"> Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><p><b>selectionBehavior</b>: One Or More</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>Potential diagnosis of Ataxia, stroke suspected</td><td><a href="Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0.html">Task Propose a diagnosis</a></td></tr><tr><td style="display: none">*</td><td>Potential diagnosis of Head trauma, ataxia</td><td><a href="Task-30551ce1-5a28-4356-b684-3e639094ad11.html">Task Propose a diagnosis</a></td></tr><tr><td style="display: none">*</td><td>Potential diagnosis of Ataxia, slowly progressive or long duration</td><td><a href="Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16.html">Task Propose a diagnosis</a></td></tr><tr><td style="display: none">*</td><td>Potential diagnosis of Ataxia, post head trauma</td><td><a href="Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e.html">Task Propose a diagnosis</a></td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <subject>
+    <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
+  </subject>
+  <action>
+    <selectionBehavior value="one-or-more"/>
+    <action>
+      <textEquivalent value="Potential diagnosis of Ataxia, stroke suspected"/>
+      <resource>
+        <reference value="Task/1cdd5aab-1d4d-4965-bbe1-c851698d07f0"/>
+      </resource>
+    </action>
+    <action>
+      <textEquivalent value="Potential diagnosis of Head trauma, ataxia"/>
+      <resource>
+        <reference value="Task/30551ce1-5a28-4356-b684-3e639094ad11"/>
+      </resource>
+    </action>
+    <action>
+      <textEquivalent value="Potential diagnosis of Ataxia, slowly progressive or long duration"/>
+      <resource>
+        <reference value="Task/cfdfee5b-1db1-43fe-af72-4ea54b4e1a16"/>
+      </resource>
+    </action>
+    <action>
+      <textEquivalent value="Potential diagnosis of Ataxia, post head trauma"/>
+      <resource>
+        <reference value="Task/54aad964-ad8a-4985-8ff1-3b09d707ee1e"/>
+      </resource>
+    </action>
+  </action>
+</RequestGroup>

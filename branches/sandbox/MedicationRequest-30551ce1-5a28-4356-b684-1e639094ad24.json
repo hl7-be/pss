@@ -1,0 +1,38 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "30551ce1-5a28-4356-b684-1e639094ad24",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ad24</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad24\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad24\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ad24-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-medicationrequest.html\">CPG Medication Request</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen</td></tr></table></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.whocc.no/atc",
+      "code" : "G01AA10"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/30551ce1-5a28-4356-b684-2e639094ad48"
+  },
+  "dosageInstruction" : [{
+    "text" : "ovule: 100 mg per dag in 1 gift gedurende 3 dagen OF vaginale crème: 2% 5 g per dag in 1 gift gedurende 7 dagen",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "ovule : 100 mg par jour en 1 prise pendant 3 jours OU crème vaginale : 2 % 5 g par jour en 1 prise pendant 7 jours"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    }
+  }]
+}

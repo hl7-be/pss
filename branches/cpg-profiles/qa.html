@@ -1,0 +1,1303 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 4, warn = 3, info = 8-->
+<head>
+  <title>PrescriptionSearchSupport : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for PrescriptionSearchSupport</h1>
+ <p>Generated Wed May 14 15:09:44 UTC 2025, FHIR version 4.0.1 for hl7.fhir.be.pss#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/pss">https://www.ehealth.fgov.be/standards/fhir/pss</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/pss/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.26</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.be.pss, Canonical = https://www.ehealth.fgov.be/standards/fhir/pss</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>Stated Languages: n/a. IG Resource Lang: n/a. 1 of 76 (1%) of resources have a language. <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-resource-language-policy">Population Policy</a>: NONE</td></tr>
+ <tr><td>Publication Request:</td><td><table class="grid">
+ <tr><td>package-id</d><td>hl7.fhir.be.pss</td></tr>
+ <tr><td>version</d><td>1.0.0</td></tr>
+ <tr><td>path</d><td>https://www.ehealth.fgov.be/standards/fhir/pss/1.0.0</td></tr>
+ <tr><td>Pub-Mode</d><td>milestone</td></tr>
+ <tr><td>status</d><td>release</td></tr>
+ <tr><td>Release-Label</d><td>STU1</td></tr>
+ <tr><td>Sequence (Group)</d><td>Trial Use</td></tr>
+ <tr><td>desc</d><td>eHealth FHIR PSS Profiles for Belgium</td></tr>
+ <tr><td>first</d><td>true</td></tr>
+ <tr><td>category</d><td>National Base</td></tr>
+ <tr><td>title</d><td>eHealth FHIR PSS Profiles for Belgium</td></tr>
+ <tr><td>introduction</d><td>eHealth FHIR PSS Profiles for Belgium</td></tr>
+ <tr><td>ci-build</d><td>http://build.fhir.org/ig/hl7-be/pss</td></tr>
+ <tr><td>RelatedIgs</d><td>(None Found)</td></tr>
+</table>
+<ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>Cannot specify a date of publication in the request <img src="icon-error.gif" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">20 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.be.pss</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.ehealth.fgov.be/standards/fhir/pss</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACwSURBVDhP7ZLBDsIwCIaLZz34xG3f2cQYo5UfYalJoY07ePFL4GcbpZSVWmvJgwifG+njkLDACgfVIehAQ5ffdMDvxSS2Dmqty62UUmS1rIWD8UuWd9xxVt1AnoaSGx6Buap+0G80K3BTtbtwhLPZQL0CSIA9OwUXON7dZkBeASTAThb3bffMjnCHGy00ZgUeqi5f3YOcsw01vsqYMrMljwgLrBDOwP53xL+D3R2k9ALHsmr3Yu73+gAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.3.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACfSURBVDhP7ZJBD4IwDIVbrvqft/1kEw8egNKHrRKyjiXG4MEvWVtYebwuYxGhCGZsC9tjlaZAD4PlKnBgZcgPOSildFtJKb0PFgJYOWdNz3rDxfKLbR9Wc4RE9LAypCmguAO3fEXws0GOBNAghehm9YyXyh1Bra+CyJEAGlhHwB/X2mfeczTCiFD70GkK6AiTlSEf34PvXuUe/gLnCxAtVClV++yUSjoAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.cpg</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/cpg</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/cpg/STU2</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aca" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 6.3.0</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="acb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.2.0</td></tr>
+</table><para>Templates: hl7.be.fhir.template#current -&gt; fhir.base.template#current. Tools: 0.5.0</para></div></td></tr>
+ <tr><td>Related IGs:</td><td>n/a</td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a>, <a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
+ <tr><td>R5 Dependencies:</td><td><ul><li><a href="http://build.fhir.org/communicationrequest.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.intent</a></li></ul></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-item-type.html">QuestionnaireItemType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html">QuestionnaireItemOperator</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-behavior.html">EnableWhenBehavior</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">medicationrequest Status</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">medicationRequest Status Reason Codes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">medicationRequest Intent</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">medicationRequest Category Codes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (20 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (20 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (17 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (20 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (14 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">medicationRequest Course of Therapy Codes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/detectedissue.html">DetectedIssue</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/task.html">Task</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-task-status.html">TaskStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-task-intent.html">TaskIntent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/researchstudy.html">ResearchStudy</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-communication-category.html">CommunicationCategory</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-intent.html">RequestIntent</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-action-condition-kind.html">ActionConditionKind</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-action-relationship-type.html">ActionRelationshipType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-action-type.html">ActionType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-action-grouping-behavior.html">ActionGroupingBehavior</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-action-selection-behavior.html">ActionSelectionBehavior</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-action-required-behavior.html">ActionRequiredBehavior</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-action-precheck-behavior.html">ActionPrecheckBehavior</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-action-cardinality-behavior.html">ActionCardinalityBehavior</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-servicerequest-category.html">ServiceRequestCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html">ServiceRequestOrderDetailsCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-participant-role.html">ParticipantRoles</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-reason.html">ProcedureReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (1 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.ehealth.fgov.be/standards/fhir/pss (Problem #1 with package-list.json at https://www.ehealth.fgov.be/standards/fhir/pss: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 4, warn = 3, info = 8, broken links = 0, pinned = 4 (when multiples).  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02"><b>/github/workspace/fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getdatatocollect-a-data"><b>/github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-data</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getdatatocollect-a-response"><b>/github/workspace/fsh-generated/resources/Bundle-getdatatocollect-a-response</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-data"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-data</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-response"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-a-response</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-data3"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-data3</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-getrecommendations-r-response"><b>/github/workspace/fsh-generated/resources/Bundle-getrecommendations-r-response</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-radiology-getdiagnoses"><b>/github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-radiology-getdiagnoses-response"><b>/github/workspace/fsh-generated/resources/Bundle-radiology-getdiagnoses-response</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-PSSQSIConditions"><b>/github/workspace/fsh-generated/resources/CodeSystem-PSSQSIConditions</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-PSSQSIProcedures"><b>/github/workspace/fsh-generated/resources/CodeSystem-PSSQSIProcedures</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-PSSRatingTypes"><b>/github/workspace/fsh-generated/resources/CodeSystem-PSSRatingTypes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22"><b>/github/workspace/fsh-generated/resources/CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-287e8fe2-3e83-44bd-92e7-962bc90b6d67"><b>/github/workspace/fsh-generated/resources/Condition-287e8fe2-3e83-44bd-92e7-962bc90b6d67</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-30551ce1-5a28-4356-b684-2e639094ad01"><b>/github/workspace/fsh-generated/resources/Condition-30551ce1-5a28-4356-b684-2e639094ad01</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-30551ce1-5a28-4356-b684-4e639094ad11"><b>/github/workspace/fsh-generated/resources/Condition-30551ce1-5a28-4356-b684-4e639094ad11</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-5f3aafb8-643c-4ed5-ad54-199939e7b2d1"><b>/github/workspace/fsh-generated/resources/Condition-5f3aafb8-643c-4ed5-ad54-199939e7b2d1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-72d3ced6-5133-4042-931e-04284c9f4283"><b>/github/workspace/fsh-generated/resources/Condition-72d3ced6-5133-4042-931e-04284c9f4283</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65"><b>/github/workspace/fsh-generated/resources/Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11"><b>/github/workspace/fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.be.pss"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23"><b>/github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24"><b>/github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26"><b>/github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29"><b>/github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12"><b>/github/workspace/fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-ataxia"><b>/github/workspace/fsh-generated/resources/Observation-ataxia</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Patient-30551ce1-5a28-4356-b684-2e639094ad48"><b>/github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Patient-30551ce1-5a28-4356-b684-3e639094ad48"><b>/github/workspace/fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_PlanDefinition-GetDataToCollect"><b>/github/workspace/fsh-generated/resources/PlanDefinition-GetDataToCollect</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_PlanDefinition-GetDiagnoses"><b>/github/workspace/fsh-generated/resources/PlanDefinition-GetDiagnoses</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_PlanDefinition-GetRecommendations"><b>/github/workspace/fsh-generated/resources/PlanDefinition-GetRecommendations</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c"><b>/github/workspace/fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02"><b>/github/workspace/fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08"><b>/github/workspace/fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_RequestGroup-getdatatocollect-a-response-group"><b>/github/workspace/fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_RequestGroup-getrecommendations-a-response-group"><b>/github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-a-response-group</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_RequestGroup-getrecommendations-r-response-1"><b>/github/workspace/fsh-generated/resources/RequestGroup-getrecommendations-r-response-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77"><b>/github/workspace/fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22"><b>/github/workspace/fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23"><b>/github/workspace/fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ServiceRequest-ct-head-wo-iv-contrast"><b>/github/workspace/fsh-generated/resources/ServiceRequest-ct-head-wo-iv-contrast</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ServiceRequest-pss-ct-head-wo-iv-contrast"><b>/github/workspace/fsh-generated/resources/ServiceRequest-pss-ct-head-wo-iv-contrast</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-AnswerOptionAdditionalCode"><b>/github/workspace/fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-CodeValueSet"><b>/github/workspace/fsh-generated/resources/StructureDefinition-CodeValueSet</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSDataAcquisitionForm"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSMedicationRequest"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSMedicationRequest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSPatient"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSPatient</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSQuestionnaireTask"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSQuestionnaireTask</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSRelevantAge"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSRelevantAge</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSRequest"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSRequest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSRequestBundle"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSRequestBundle</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponse"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSResponse</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseBundle"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseBundle</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseCommunicationRequest"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseMedicationRequest"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseMedicationRequest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseRequestGroup"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseRequestGroup</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseServiceRequest"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSResponseServiceRequest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PSSStructuredRating"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PSSStructuredRating</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0"><b>/github/workspace/fsh-generated/resources/Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Task-30551ce1-5a28-4356-b684-11ef43a67755"><b>/github/workspace/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-11ef43a67755</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Task-30551ce1-5a28-4356-b684-3e639094ad11"><b>/github/workspace/fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e"><b>/github/workspace/fsh-generated/resources/Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16"><b>/github/workspace/fsh-generated/resources/Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Task-db2698ba-cd0b-4c08-b57c-868ab5b95af6"><b>/github/workspace/fsh-generated/resources/Task-db2698ba-cd0b-4c08-b57c-868ab5b95af6</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-BacterialCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-BacterialCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-CandidaCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-CandidaCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-ChlamydiaCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-ChlamydiaCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-CompromisedImmuneSystemCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-GonokokCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-GonokokCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-MycoplasmaCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-MycoplasmaCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-OncologyPatientCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-OncologyPatientCodes</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-OtherCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-OtherCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-PSSRatingTypesVS"><b>/github/workspace/fsh-generated/resources/ValueSet-PSSRatingTypesVS</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-PregnancyCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-PregnancyCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-TrichomonasCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-TrichomonasCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>IG</b></td><td><b>warning</b></td><td><b>The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02"> </a>
+<h2><a href="AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02.html">fsh-generated/resources/AllergyIntolerance-30551ce1-5a28-4356-b684-2e639094ad02.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>AllergyIntolerance: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-getdatatocollect-a-data"> </a>
+<h2><a href="Bundle-getdatatocollect-a-data.html">fsh-generated/resources/Bundle-getdatatocollect-a-data.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(10)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-PSSRequestBundle.html">PSS Request Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a> (per meta), <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-patient.html">CPG Patient</a> and <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a> and <i>this.</i><a href="StructureDefinition-PSSMedicationRequest.html">PSS MedicationRequest Task</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-getdatatocollect-a-response"> </a>
+<h2><a href="Bundle-getdatatocollect-a-response.html">fsh-generated/resources/Bundle-getdatatocollect-a-response.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(9)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseBundle.html">PSS Response Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a> and <i>this.</i><a href="StructureDefinition-PSSQuestionnaireTask.html">PSS Questionnaire Task</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a> and <i>this.</i><a href="StructureDefinition-PSSDataAcquisitionForm.html">PSS Data Acquisition Form</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a> (per meta) and <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-data"> </a>
+<h2><a href="Bundle-getrecommendations-a-data.html">fsh-generated/resources/Bundle-getrecommendations-a-data.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(12)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-PSSRequestBundle.html">PSS Request Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a> (per meta), <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-patient.html">CPG Patient</a> and <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a> and <i>this.</i><a href="StructureDefinition-PSSMedicationRequest.html">PSS MedicationRequest Task</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a> and <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-questionnaireresponse.html">CPG Questionnaire Response</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-getrecommendations-a-response"> </a>
+<h2><a href="Bundle-getrecommendations-a-response.html">fsh-generated/resources/Bundle-getrecommendations-a-response.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(14)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseBundle.html">PSS Response Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a> and <i>this.</i><a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a> and <i>this.</i><a href="StructureDefinition-PSSResponseCommunicationRequest.html">PSS Response Communication Request</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a> and <i>this.</i><a href="StructureDefinition-PSSMedicationRequest.html">PSS MedicationRequest Task</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>, <i>this.</i><a href="StructureDefinition-PSSMedicationRequest.html">PSS MedicationRequest Task</a> (per meta) and <i>this.</i><a href="StructureDefinition-PSSResponseMedicationRequest.html">PSS Response Medication Request</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a> and <i>this.</i><a href="StructureDefinition-PSSResponseMedicationRequest.html">PSS Response Medication Request</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a> and <i>this.</i><a href="StructureDefinition-PSSResponseMedicationRequest.html">PSS Response Medication Request</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-getrecommendations-data3"> </a>
+<h2><a href="Bundle-getrecommendations-data3.html">fsh-generated/resources/Bundle-getrecommendations-data3.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(9)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-PSSRequestBundle.html">PSS Request Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a> (per meta), <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-patient.html">CPG Patient</a> and <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a> and <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-getrecommendations-r-response"> </a>
+<h2><a href="Bundle-getrecommendations-r-response.html">fsh-generated/resources/Bundle-getrecommendations-r-response.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(9)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseBundle.html">PSS Response Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a> and <i>this.</i><a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a> and <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a> and <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a> and <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-radiology-getdiagnoses"> </a>
+<h2><a href="Bundle-radiology-getdiagnoses.html">fsh-generated/resources/Bundle-radiology-getdiagnoses.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(7)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-PSSRequestBundle.html">PSS Request Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a>, <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a> (per meta) and <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a> and <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-radiology-getdiagnoses-response"> </a>
+<h2><a href="Bundle-radiology-getdiagnoses-response.html">fsh-generated/resources/Bundle-radiology-getdiagnoses-response.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(17)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseBundle.html">PSS Response Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a> (per meta)</li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li><li>Bundle.entry[8].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a> (per meta)</li><li>Bundle.entry[9].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li><li>Bundle.entry[10].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/condition.html">Condition</a> and <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-PSSQSIConditions"> </a>
+<h2><a href="CodeSystem-PSSQSIConditions.html">fsh-generated/resources/CodeSystem-PSSQSIConditions.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-PSSQSIProcedures"> </a>
+<h2><a href="CodeSystem-PSSQSIProcedures.html">fsh-generated/resources/CodeSystem-PSSQSIProcedures.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-PSSRatingTypes"> </a>
+<h2><a href="CodeSystem-PSSRatingTypes.html">fsh-generated/resources/CodeSystem-PSSRatingTypes.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22"> </a>
+<h2><a href="CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22.html">fsh-generated/resources/CommunicationRequest-30551ce1-5a28-4356-b684-1e639094dd22.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>CommunicationRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseCommunicationRequest.html">PSS Response Communication Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Condition-287e8fe2-3e83-44bd-92e7-962bc90b6d67"> </a>
+<h2><a href="Condition-287e8fe2-3e83-44bd-92e7-962bc90b6d67.html">fsh-generated/resources/Condition-287e8fe2-3e83-44bd-92e7-962bc90b6d67.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>Condition: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Condition-30551ce1-5a28-4356-b684-2e639094ad01"> </a>
+<h2><a href="Condition-30551ce1-5a28-4356-b684-2e639094ad01.html">fsh-generated/resources/Condition-30551ce1-5a28-4356-b684-2e639094ad01.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>Condition: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Condition-30551ce1-5a28-4356-b684-4e639094ad11"> </a>
+<h2><a href="Condition-30551ce1-5a28-4356-b684-4e639094ad11.html">fsh-generated/resources/Condition-30551ce1-5a28-4356-b684-4e639094ad11.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>Condition: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Condition-5f3aafb8-643c-4ed5-ad54-199939e7b2d1"> </a>
+<h2><a href="Condition-5f3aafb8-643c-4ed5-ad54-199939e7b2d1.html">fsh-generated/resources/Condition-5f3aafb8-643c-4ed5-ad54-199939e7b2d1.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>Condition: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Condition-72d3ced6-5133-4042-931e-04284c9f4283"> </a>
+<h2><a href="Condition-72d3ced6-5133-4042-931e-04284c9f4283.html">fsh-generated/resources/Condition-72d3ced6-5133-4042-931e-04284c9f4283.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>Condition: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65"> </a>
+<h2><a href="Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65.html">fsh-generated/resources/Condition-b90ca57a-1ae5-4ff6-8dce-48488660ea65.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>Condition: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11"> </a>
+<h2><a href="Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11.html">fsh-generated/resources/Condition-pss-30551ce1-5a28-4356-b684-4e639094ad11.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>Condition: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.be.pss"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.be.pss.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.fhir.be.pss: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23"> </a>
+<h2><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.html">fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ac23.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSMedicationRequest.html">PSS MedicationRequest Task</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24"> </a>
+<h2><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.html">fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad24.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(4)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSMedicationRequest.html">PSS MedicationRequest Task</a>, <i>this.</i><a href="StructureDefinition-PSSResponseMedicationRequest.html">PSS Response Medication Request</a> (per meta), <i>this.</i><a href="StructureDefinition-PSSResponseMedicationRequest.html">PSS Response Medication Request</a> and <i>this.</i><a href="StructureDefinition-PSSMedicationRequest.html">PSS MedicationRequest Task</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26"> </a>
+<h2><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.html">fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad26.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseMedicationRequest.html">PSS Response Medication Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29"> </a>
+<h2><a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.html">fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseMedicationRequest.html">PSS Response Medication Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12"> </a>
+<h2><a href="MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12.html">fsh-generated/resources/MedicationRequest-30551ce1-5a28-4356-b684-2e639094ad12.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSMedicationRequest.html">PSS MedicationRequest Task</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Observation-ataxia"> </a>
+<h2><a href="Observation-ataxia.html">fsh-generated/resources/Observation-ataxia.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Patient-30551ce1-5a28-4356-b684-2e639094ad48"> </a>
+<h2><a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html">fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-2e639094ad48.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Patient-30551ce1-5a28-4356-b684-3e639094ad48"> </a>
+<h2><a href="Patient-30551ce1-5a28-4356-b684-3e639094ad48.html">fsh-generated/resources/Patient-30551ce1-5a28-4356-b684-3e639094ad48.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi29"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-PSSPatient.html">PSS anonymised Patient</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_PlanDefinition-GetDataToCollect"> </a>
+<h2><a href="PlanDefinition-GetDataToCollect.html">fsh-generated/resources/PlanDefinition-GetDataToCollect.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi30"><ul style="font-size: 7px"><li>PlanDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_PlanDefinition-GetDiagnoses"> </a>
+<h2><a href="PlanDefinition-GetDiagnoses.html">fsh-generated/resources/PlanDefinition-GetDiagnoses.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi31"><ul style="font-size: 7px"><li>PlanDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_PlanDefinition-GetRecommendations"> </a>
+<h2><a href="PlanDefinition-GetRecommendations.html">fsh-generated/resources/PlanDefinition-GetRecommendations.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi32"><ul style="font-size: 7px"><li>PlanDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c"> </a>
+<h2><a href="Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c.html">fsh-generated/resources/Questionnaire-30551ce1-5a28-4356-b684-2e639094ad4c.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi33"><ul style="font-size: 7px"><li>Questionnaire: Validated against <i>this.</i><a href="StructureDefinition-PSSDataAcquisitionForm.html">PSS Data Acquisition Form</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02"> </a>
+<h2><a href="QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02.html">fsh-generated/resources/QuestionnaireResponse-30551ce1-5a28-4356-b684-2e639094ac02.json</a> <span id="svi34" class="toggle" onclick="toggle('vi34')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi34')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi34"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir/uv/cpg/STU2">hl7.fhir.uv.cpg</a>.<a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-questionnaireresponse.html">CPG Questionnaire Response</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08"> </a>
+<h2><a href="RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08.html">fsh-generated/resources/RequestGroup-30551ce1-5a28-4356-b684-3e639094ad08.json</a> <span id="svi35" class="toggle" onclick="toggle('vi35')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi35')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi35"><ul style="font-size: 7px"><li>RequestGroup: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_RequestGroup-getdatatocollect-a-response-group"> </a>
+<h2><a href="RequestGroup-getdatatocollect-a-response-group.html">fsh-generated/resources/RequestGroup-getdatatocollect-a-response-group.json</a> <span id="svi36" class="toggle" onclick="toggle('vi36')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi36')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi36"><ul style="font-size: 7px"><li>RequestGroup: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_RequestGroup-getrecommendations-a-response-group"> </a>
+<h2><a href="RequestGroup-getrecommendations-a-response-group.html">fsh-generated/resources/RequestGroup-getrecommendations-a-response-group.json</a> <span id="svi37" class="toggle" onclick="toggle('vi37')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi37')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi37"><ul style="font-size: 7px"><li>RequestGroup: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_RequestGroup-getrecommendations-r-response-1"> </a>
+<h2><a href="RequestGroup-getrecommendations-r-response-1.html">fsh-generated/resources/RequestGroup-getrecommendations-r-response-1.json</a> <span id="svi38" class="toggle" onclick="toggle('vi38')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi38')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi38"><ul style="font-size: 7px"><li>RequestGroup: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77"> </a>
+<h2><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.html">fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639044ad77.json</a> <span id="svi39" class="toggle" onclick="toggle('vi39')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi39')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi39"><ul style="font-size: 7px"><li>ServiceRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22"> </a>
+<h2><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22.html">fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad22.json</a> <span id="svi40" class="toggle" onclick="toggle('vi40')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi40')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi40"><ul style="font-size: 7px"><li>ServiceRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23"> </a>
+<h2><a href="ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23.html">fsh-generated/resources/ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23.json</a> <span id="svi41" class="toggle" onclick="toggle('vi41')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi41')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi41"><ul style="font-size: 7px"><li>ServiceRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ServiceRequest-ct-head-wo-iv-contrast"> </a>
+<h2><a href="ServiceRequest-ct-head-wo-iv-contrast.html">fsh-generated/resources/ServiceRequest-ct-head-wo-iv-contrast.json</a> <span id="svi42" class="toggle" onclick="toggle('vi42')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi42')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi42"><ul style="font-size: 7px"><li>ServiceRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ServiceRequest-pss-ct-head-wo-iv-contrast"> </a>
+<h2><a href="ServiceRequest-pss-ct-head-wo-iv-contrast.html">fsh-generated/resources/ServiceRequest-pss-ct-head-wo-iv-contrast.json</a> <span id="svi43" class="toggle" onclick="toggle('vi43')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi43')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi43"><ul style="font-size: 7px"><li>ServiceRequest: Validated against <i>this.</i><a href="StructureDefinition-PSSResponseServiceRequest.html">PSS Response Service Request</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-AnswerOptionAdditionalCode"> </a>
+<h2><a href="StructureDefinition-AnswerOptionAdditionalCode.html">fsh-generated/resources/StructureDefinition-AnswerOptionAdditionalCode.json</a> <span id="svi44" class="toggle" onclick="toggle('vi44')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi44')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi44"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-CodeValueSet"> </a>
+<h2><a href="StructureDefinition-CodeValueSet.html">fsh-generated/resources/StructureDefinition-CodeValueSet.json</a> <span id="svi45" class="toggle" onclick="toggle('vi45')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi45')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi45"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSDataAcquisitionForm"> </a>
+<h2><a href="StructureDefinition-PSSDataAcquisitionForm.html">fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json</a> <span id="svi46" class="toggle" onclick="toggle('vi46')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi46')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi46"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c26640)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSMedicationRequest"> </a>
+<h2><a href="StructureDefinition-PSSMedicationRequest.html">fsh-generated/resources/StructureDefinition-PSSMedicationRequest.json</a> <span id="svi47" class="toggle" onclick="toggle('vi47')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi47')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi47"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSPatient"> </a>
+<h2><a href="StructureDefinition-PSSPatient.html">fsh-generated/resources/StructureDefinition-PSSPatient.json</a> <span id="svi48" class="toggle" onclick="toggle('vi48')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi48')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi48"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[23]&#8203;.type[0]&#8203;.profile[0]</b></td><td><b>information</b></td><td><b>Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">PIN_VERSION</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.type[0]&#8203;.profile[0]</b></td><td><b>information</b></td><td><b>Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">PIN_VERSION</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSQuestionnaireTask"> </a>
+<h2><a href="StructureDefinition-PSSQuestionnaireTask.html">fsh-generated/resources/StructureDefinition-PSSQuestionnaireTask.json</a> <span id="svi49" class="toggle" onclick="toggle('vi49')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi49')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi49"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.type[0]&#8203;.profile[0]</b></td><td><b>information</b></td><td><b>Pinned the version of http://hl7.org/fhir/StructureDefinition/request-doNotPerform to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">PIN_VERSION</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSRelevantAge"> </a>
+<h2><a href="StructureDefinition-PSSRelevantAge.html">fsh-generated/resources/StructureDefinition-PSSRelevantAge.json</a> <span id="svi50" class="toggle" onclick="toggle('vi50')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi50')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi50"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSRequest"> </a>
+<h2><a href="StructureDefinition-PSSRequest.html">fsh-generated/resources/StructureDefinition-PSSRequest.json</a> <span id="svi51" class="toggle" onclick="toggle('vi51')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi51')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi51"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSRequestBundle"> </a>
+<h2><a href="StructureDefinition-PSSRequestBundle.html">fsh-generated/resources/StructureDefinition-PSSRequestBundle.json</a> <span id="svi52" class="toggle" onclick="toggle('vi52')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi52')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi52"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponse"> </a>
+<h2><a href="StructureDefinition-PSSResponse.html">fsh-generated/resources/StructureDefinition-PSSResponse.json</a> <span id="svi53" class="toggle" onclick="toggle('vi53')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi53')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi53"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseBundle"> </a>
+<h2><a href="StructureDefinition-PSSResponseBundle.html">fsh-generated/resources/StructureDefinition-PSSResponseBundle.json</a> <span id="svi54" class="toggle" onclick="toggle('vi54')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi54')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi54"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseCommunicationRequest"> </a>
+<h2><a href="StructureDefinition-PSSResponseCommunicationRequest.html">fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest.json</a> <span id="svi55" class="toggle" onclick="toggle('vi55')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi55')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi55"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.type[0]&#8203;.profile[0]</b></td><td><b>information</b></td><td><b>Pinned the version of http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">PIN_VERSION</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CommunicationRequest&#8203;.extension (l1&#8203;/c21252)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0 is deprecated with the note Replaced by [[[http://hl7.org/fhir/StructureDefinition/workflow-generatedFrom]]], [[[http://hl7.org/fhir/StructureDefinition/workflow-compliesWith]]] or [[[http://hl7.org/fhir/StructureDefinition/workflow-adheresTo]]]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseMedicationRequest"> </a>
+<h2><a href="StructureDefinition-PSSResponseMedicationRequest.html">fsh-generated/resources/StructureDefinition-PSSResponseMedicationRequest.json</a> <span id="svi56" class="toggle" onclick="toggle('vi56')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi56')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi56"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseRequestGroup"> </a>
+<h2><a href="StructureDefinition-PSSResponseRequestGroup.html">fsh-generated/resources/StructureDefinition-PSSResponseRequestGroup.json</a> <span id="svi57" class="toggle" onclick="toggle('vi57')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi57')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi57"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSResponseServiceRequest"> </a>
+<h2><a href="StructureDefinition-PSSResponseServiceRequest.html">fsh-generated/resources/StructureDefinition-PSSResponseServiceRequest.json</a> <span id="svi58" class="toggle" onclick="toggle('vi58')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi58')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi58"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PSSStructuredRating"> </a>
+<h2><a href="StructureDefinition-PSSStructuredRating.html">fsh-generated/resources/StructureDefinition-PSSStructuredRating.json</a> <span id="svi59" class="toggle" onclick="toggle('vi59')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi59')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi59"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0"> </a>
+<h2><a href="Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0.html">fsh-generated/resources/Task-1cdd5aab-1d4d-4965-bbe1-c851698d07f0.json</a> <span id="svi60" class="toggle" onclick="toggle('vi60')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi60')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi60"><ul style="font-size: 7px"><li>Task: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Task-30551ce1-5a28-4356-b684-11ef43a67755"> </a>
+<h2><a href="Task-30551ce1-5a28-4356-b684-11ef43a67755.html">fsh-generated/resources/Task-30551ce1-5a28-4356-b684-11ef43a67755.json</a> <span id="svi61" class="toggle" onclick="toggle('vi61')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi61')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi61"><ul style="font-size: 7px"><li>Task: Validated against <i>this.</i><a href="StructureDefinition-PSSQuestionnaireTask.html">PSS Questionnaire Task</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Task-30551ce1-5a28-4356-b684-3e639094ad11"> </a>
+<h2><a href="Task-30551ce1-5a28-4356-b684-3e639094ad11.html">fsh-generated/resources/Task-30551ce1-5a28-4356-b684-3e639094ad11.json</a> <span id="svi62" class="toggle" onclick="toggle('vi62')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi62')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi62"><ul style="font-size: 7px"><li>Task: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e"> </a>
+<h2><a href="Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e.html">fsh-generated/resources/Task-54aad964-ad8a-4985-8ff1-3b09d707ee1e.json</a> <span id="svi63" class="toggle" onclick="toggle('vi63')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi63')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi63"><ul style="font-size: 7px"><li>Task: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16"> </a>
+<h2><a href="Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16.html">fsh-generated/resources/Task-cfdfee5b-1db1-43fe-af72-4ea54b4e1a16.json</a> <span id="svi64" class="toggle" onclick="toggle('vi64')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi64')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi64"><ul style="font-size: 7px"><li>Task: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Task-db2698ba-cd0b-4c08-b57c-868ab5b95af6"> </a>
+<h2><a href="Task-db2698ba-cd0b-4c08-b57c-868ab5b95af6.html">fsh-generated/resources/Task-db2698ba-cd0b-4c08-b57c-868ab5b95af6.json</a> <span id="svi65" class="toggle" onclick="toggle('vi65')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi65')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi65"><ul style="font-size: 7px"><li>Task: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/task.html">Task</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-BacterialCodes"> </a>
+<h2><a href="ValueSet-BacterialCodes.html">fsh-generated/resources/ValueSet-BacterialCodes.json</a> <span id="svi66" class="toggle" onclick="toggle('vi66')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi66')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi66"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-CandidaCodes"> </a>
+<h2><a href="ValueSet-CandidaCodes.html">fsh-generated/resources/ValueSet-CandidaCodes.json</a> <span id="svi67" class="toggle" onclick="toggle('vi67')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi67')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi67"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-ChlamydiaCodes"> </a>
+<h2><a href="ValueSet-ChlamydiaCodes.html">fsh-generated/resources/ValueSet-ChlamydiaCodes.json</a> <span id="svi68" class="toggle" onclick="toggle('vi68')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi68')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi68"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-CompromisedImmuneSystemCodes"> </a>
+<h2><a href="ValueSet-CompromisedImmuneSystemCodes.html">fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json</a> <span id="svi69" class="toggle" onclick="toggle('vi69')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi69')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi69"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c4167)</b></td><td><b>error</b></td><td><b>The code 'B90' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (Unable to evaluate based on code system with status = not-present)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALUESET_INCLUDE_INVALID_CONCEPT_CODE</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c4167)</b></td><td><b>information</b></td><td><b>Unable to evaluate based on code system with status = not-present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unable to evaluate based on code system with status = not-present</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1] (l1&#8203;/c4182)</b></td><td><b>error</b></td><td><b>The code 'B72' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc-2' could not be found, so the code cannot be validated)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALUESET_INCLUDE_INVALID_CONCEPT_CODE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.where(id = 'CompromisedImmuneSystemCodes')</b></td><td><b>warning</b></td><td><b>Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc-2</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l85">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-GonokokCodes"> </a>
+<h2><a href="ValueSet-GonokokCodes.html">fsh-generated/resources/ValueSet-GonokokCodes.json</a> <span id="svi70" class="toggle" onclick="toggle('vi70')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi70')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi70"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-MycoplasmaCodes"> </a>
+<h2><a href="ValueSet-MycoplasmaCodes.html">fsh-generated/resources/ValueSet-MycoplasmaCodes.json</a> <span id="svi71" class="toggle" onclick="toggle('vi71')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi71')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi71"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-OncologyPatientCodes"> </a>
+<h2><a href="ValueSet-OncologyPatientCodes.html">fsh-generated/resources/ValueSet-OncologyPatientCodes.json</a> <span id="svi72" class="toggle" onclick="toggle('vi72')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi72')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi72"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c4081)</b></td><td><b>error</b></td><td><b>The code 'R84' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (Unable to evaluate based on code system with status = not-present)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALUESET_INCLUDE_INVALID_CONCEPT_CODE</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c4081)</b></td><td><b>information</b></td><td><b>Unable to evaluate based on code system with status = not-present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unable to evaluate based on code system with status = not-present</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1] (l1&#8203;/c4096)</b></td><td><b>error</b></td><td><b>The code 'R85' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc-2' could not be found, so the code cannot be validated)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALUESET_INCLUDE_INVALID_CONCEPT_CODE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.where(id = 'OncologyPatientCodes')</b></td><td><b>warning</b></td><td><b>Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/sid/icpc-2</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l90">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-OtherCodes"> </a>
+<h2><a href="ValueSet-OtherCodes.html">fsh-generated/resources/ValueSet-OtherCodes.json</a> <span id="svi73" class="toggle" onclick="toggle('vi73')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi73')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi73"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-PSSRatingTypesVS"> </a>
+<h2><a href="ValueSet-PSSRatingTypesVS.html">fsh-generated/resources/ValueSet-PSSRatingTypesVS.json</a> <span id="svi74" class="toggle" onclick="toggle('vi74')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi74')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi74"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-PregnancyCodes"> </a>
+<h2><a href="ValueSet-PregnancyCodes.html">fsh-generated/resources/ValueSet-PregnancyCodes.json</a> <span id="svi75" class="toggle" onclick="toggle('vi75')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi75')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi75"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-TrichomonasCodes"> </a>
+<h2><a href="ValueSet-TrichomonasCodes.html">fsh-generated/resources/ValueSet-TrichomonasCodes.json</a> <span id="svi76" class="toggle" onclick="toggle('vi76')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi76')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi76"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>At the moment, the Radiology examples contain Observations - see issue 102</b></p><ul>
+ <li>Best Practice Recommendation: In general, all observations should have a performer <span style="color: navy">(3 uses)<span></li>
+</ul>
+<p><b>External URLs are not relevant</b></p><ul>
+ <li>URL value 'https://bcfi.be/nl/chapters/12?frag=8001869' does not resolve <span style="color: navy">(2 uses)<span></li>
+ <li>URL value 'https://bcfi.be/nl/chapters/12?frag=8001869' does not resolve <span style="color: maroon">(0 uses)<span></li>
+ <li>URL value 'https://cbip.be/fr/chapters/12?frag=8001869' does not resolve <span style="color: navy">(2 uses)<span></li>
+ <li>URL value 'https://cbip.be/fr/chapters/12?frag=8001869' does not resolve <span style="color: maroon">(0 uses)<span></li>
+ <li>URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve <span style="color: navy">(2 uses)<span></li>
+ <li>URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve <span style="color: maroon">(0 uses)<span></li>
+ <li>URL value 'https://ebpnet.be/fr/pss-vaginite' does not resolve <span style="color: maroon">(0 uses)<span></li>
+ <li>URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve <span style="color: navy">(2 uses)<span></li>
+ <li>URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve <span style="color: maroon">(0 uses)<span></li>
+ <li>URL value 'https://ebpnet.be/nl/pss-vaginitis' does not resolve <span style="color: maroon">(0 uses)<span></li>
+ <li>URL value 'https://environment.esriguide.org/suportingContent/12345' does not resolve <span style="color: navy">(2 uses)<span></li>
+</ul>
+<p><b>PSSDataAcquisitionForm does not use the answerOption[responseImage] slice of CPGComputableQuestionnaire</b></p><ul>
+ <li>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSDataAcquisitionForm|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) <span style="color: navy">(14 uses)<span></li>
+</ul>
+<p><b>Several examples use fictitious, unavailable or not-yet existing code systems</b></p><ul>
+ <li>A code with no system has no defined meaning, and it cannot be validated. A system should be provided <span style="color: navy">(18 uses)<span></li>
+ <li>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated <span style="color: navy">(2 uses)<span></li>
+ <li>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' could not be found, so the code cannot be validated <span style="color: maroon">(0 uses)<span></li>
+ <li>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions' could not be found, so the code cannot be validated <span style="color: navy">(12 uses)<span></li>
+ <li>A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures' could not be found, so the code cannot be validated <span style="color: navy">(10 uses)<span></li>
+ <li>URL value 'https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg' does not resolve <span style="color: navy">(2 uses)<span></li>
+</ul>
+<p><b>The extension AnswerOptionAdditionalCode has several uses, but not used in the current examples</b></p><ul>
+ <li>The Implementation Guide contains no examples for this extension <span style="color: navy">(1 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PSSDataAcquisitionForm.html">fsh-generated/resources/StructureDefinition-PSSDataAcquisitionForm.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED_NOTE"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED_NOTE</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PSSResponseCommunicationRequest.html">fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.2.0 is deprecated with the note Replaced by [[[http://hl7.org/fhir/StructureDefinition/workflow-generatedFrom]]], [[[http://hl7.org/fhir/StructureDefinition/workflow-compliesWith]]] or [[[http://hl7.org/fhir/StructureDefinition/workflow-adheresTo]]]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="PIN_VERSION"> </a>
+<h2>PIN_VERSION</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PSSPatient.html">fsh-generated/resources/StructureDefinition-PSSPatient.json</a></td><td><b>Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PSSPatient.html">fsh-generated/resources/StructureDefinition-PSSPatient.json</a></td><td><b>Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PSSQuestionnaireTask.html">fsh-generated/resources/StructureDefinition-PSSQuestionnaireTask.json</a></td><td><b>Pinned the version of http://hl7.org/fhir/StructureDefinition/request-doNotPerform to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PSSResponseCommunicationRequest.html">fsh-generated/resources/StructureDefinition-PSSResponseCommunicationRequest.json</a></td><td><b>Pinned the version of http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_INCLUDE_INVALID_CONCEPT_CODE"> </a>
+<h2>VALUESET_INCLUDE_INVALID_CONCEPT_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-CompromisedImmuneSystemCodes.html">fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json</a></td><td><b>The code 'B90' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (Unable to evaluate based on code system with status = not-present)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-CompromisedImmuneSystemCodes.html">fsh-generated/resources/ValueSet-CompromisedImmuneSystemCodes.json</a></td><td><b>The code 'B72' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc-2' could not be found, so the code cannot be validated)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-OncologyPatientCodes.html">fsh-generated/resources/ValueSet-OncologyPatientCodes.json</a></td><td><b>The code 'R84' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (Unable to evaluate based on code system with status = not-present)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-OncologyPatientCodes.html">fsh-generated/resources/ValueSet-OncologyPatientCodes.json</a></td><td><b>The code 'R85' is not valid in the system http://hl7.org/fhir/sid/icpc-2 (A definition for CodeSystem 'http://hl7.org/fhir/sid/icpc-2' could not be found, so the code cannot be validated)</b></td>
+   </tr>
+</table>
+</body>
+</html>

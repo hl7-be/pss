@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="radiology-getdiagnoses-return"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseBundle"/>
+  </meta>
+  <identifier>
+    <value value="someidentifier"/>
+  </identifier>
+  <type value="collection"/>
+  <timestamp value="2025-02-20T00:00:00Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-3e639094ad08"/>
+    <resource>
+      <RequestGroup>
+        <id value="Inline-Instance-for-radiology-getdiagnoses-return"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_Inline-Instance-for-radiology-getdiagnoses-return"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup Inline-Instance-for-radiology-getdiagnoses-return</b></p><a name="Inline-Instance-for-radiology-getdiagnoses-return"> </a><a name="hcInline-Instance-for-radiology-getdiagnoses-return"> </a><a name="Inline-Instance-for-radiology-getdiagnoses-return-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><blockquote><p><b>action</b></p><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>Potential diagnosis of Stroke</td><td><a href="Task-propose-stroke.html">Task Propose a diagnosis</a></td></tr><tr><td style="display: none">*</td><td>Potential diagnosis of infection</td><td><a href="Task-propose-infection.html">Task Propose a diagnosis</a></td></tr><tr><td style="display: none">*</td><td>Potential diagnosis of Head trauma</td><td><a href="Task-propose-head-trauma.html">Task Propose a diagnosis</a></td></tr><tr><td style="display: none">*</td><td>Potential diagnosis of Slow progression or chronic ataxia</td><td><a href="Task-propose-slow-progression-ataxia.html">Task Propose a diagnosis</a></td></tr><tr><td style="display: none">*</td><td>Potential diagnosis of Post head trauma ataxia</td><td><a href="Task-propose-post-trauma-ataxia.html">Task Propose a diagnosis</a></td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <subject>
+          <reference value="Patient/patient-r"/>
+        </subject>
+        <action>
+          <selectionBehavior value="at-most-one"/>
+          <action>
+            <textEquivalent value="Potential diagnosis of Stroke"/>
+            <resource>
+              <reference value="Task/propose-stroke"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Potential diagnosis of infection"/>
+            <resource>
+              <reference value="Task/propose-infection"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Potential diagnosis of Head trauma"/>
+            <resource>
+              <reference value="Task/propose-head-trauma"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Potential diagnosis of Slow progression or chronic ataxia"/>
+            <resource>
+              <reference value="Task/propose-slow-progression-ataxia"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Potential diagnosis of Post head trauma ataxia"/>
+            <resource>
+              <reference value="Task/propose-post-trauma-ataxia"/>
+            </resource>
+          </action>
+        </action>
+      </RequestGroup>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-3e639094ad09"/>
+    <resource>
+      <Task>
+        <id value="propose-stroke"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_propose-stroke"> </a><p class="res-header-id"><b>Generated Narrative: Task propose-stroke</b></p><a name="propose-stroke"> </a><a name="hcpropose-stroke"> </a><a name="propose-stroke-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></td><td><a href="Condition-proposed-diagnosis-stroke.html">Condition Ataxia, Stroke</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="propose-diagnosis"/>
+            <display value="Propose a diagnosis"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-r"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="propose-diagnosis"/>
+              <display value="Propose a diagnosis"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="Condition/proposed-diagnosis-stroke"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-4e639094ad09"/>
+    <resource>
+      <Condition>
+        <id value="proposed-diagnosis-stroke"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_proposed-diagnosis-stroke"> </a><p class="res-header-id"><b>Generated Narrative: Condition proposed-diagnosis-stroke</b></p><a name="proposed-diagnosis-stroke"> </a><a name="hcproposed-diagnosis-stroke"> </a><a name="proposed-diagnosis-stroke-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 3074220}">Ataxia, Stroke</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="provisional"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions"/>
+            <code value="3074220"/>
+            <display value="Ataxia, Stroke"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-r"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-3e639094ad10"/>
+    <resource>
+      <Task>
+        <id value="propose-infection"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_propose-infection"> </a><p class="res-header-id"><b>Generated Narrative: Task propose-infection</b></p><a name="propose-infection"> </a><a name="hcpropose-infection"> </a><a name="propose-infection-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></td><td><a href="Condition-proposed-diagnosis-infection.html">Condition Ataxia, Infection</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="propose-diagnosis"/>
+            <display value="Propose a diagnosis"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-r"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="propose-diagnosis"/>
+              <display value="Propose a diagnosis"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="Condition/proposed-diagnosis-infection"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-4e639094ad10"/>
+    <resource>
+      <Condition>
+        <id value="proposed-diagnosis-infection"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_proposed-diagnosis-infection"> </a><p class="res-header-id"><b>Generated Narrative: Condition proposed-diagnosis-infection</b></p><a name="proposed-diagnosis-infection"> </a><a name="hcproposed-diagnosis-infection"> </a><a name="proposed-diagnosis-infection-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 3074221}">Ataxia, Infection</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="provisional"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions"/>
+            <code value="3074221"/>
+            <display value="Ataxia, Infection"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-r"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-3e639094ad11"/>
+    <resource>
+      <Task>
+        <id value="propose-head-trauma"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_propose-head-trauma"> </a><p class="res-header-id"><b>Generated Narrative: Task propose-head-trauma</b></p><a name="propose-head-trauma"> </a><a name="hcpropose-head-trauma"> </a><a name="propose-head-trauma-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></td><td><a href="Condition-proposed-diagnosis-head-trauma.html">Condition Ataxia, Head Trauma</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="propose-diagnosis"/>
+            <display value="Propose a diagnosis"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-r"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="propose-diagnosis"/>
+              <display value="Propose a diagnosis"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="Condition/proposed-diagnosis-head-trauma"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-4e639094ad11"/>
+    <resource>
+      <Condition>
+        <id value="proposed-diagnosis-head-trauma"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_proposed-diagnosis-head-trauma"> </a><p class="res-header-id"><b>Generated Narrative: Condition proposed-diagnosis-head-trauma</b></p><a name="proposed-diagnosis-head-trauma"> </a><a name="hcproposed-diagnosis-head-trauma"> </a><a name="proposed-diagnosis-head-trauma-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}">Ataxia, Head Trauma</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="provisional"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions"/>
+            <code value="5000246"/>
+            <display value="Ataxia, Head Trauma"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-r"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-3e639094ad12"/>
+    <resource>
+      <Task>
+        <id value="propose-slow-progression-ataxia"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_propose-slow-progression-ataxia"> </a><p class="res-header-id"><b>Generated Narrative: Task propose-slow-progression-ataxia</b></p><a name="propose-slow-progression-ataxia"> </a><a name="hcpropose-slow-progression-ataxia"> </a><a name="propose-slow-progression-ataxia-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></td><td><a href="Condition-proposed-diagnosis-slow-progression-ataxia.html">Condition Ataxia, Slow-progression-ataxia</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="propose-diagnosis"/>
+            <display value="Propose a diagnosis"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-r"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="propose-diagnosis"/>
+              <display value="Propose a diagnosis"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="Condition/proposed-diagnosis-slow-progression-ataxia"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-4e639094ad12"/>
+    <resource>
+      <Condition>
+        <id value="proposed-diagnosis-slow-progression-ataxia"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_proposed-diagnosis-slow-progression-ataxia"> </a><p class="res-header-id"><b>Generated Narrative: Condition proposed-diagnosis-slow-progression-ataxia</b></p><a name="proposed-diagnosis-slow-progression-ataxia"> </a><a name="hcproposed-diagnosis-slow-progression-ataxia"> </a><a name="proposed-diagnosis-slow-progression-ataxia-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 3074219}">Ataxia, Slow-progression-ataxia</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="provisional"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions"/>
+            <code value="3074219"/>
+            <display value="Ataxia, Slow-progression-ataxia"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-r"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-3e639094ad13"/>
+    <resource>
+      <Task>
+        <id value="propose-post-trauma-ataxia"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_propose-post-trauma-ataxia"> </a><p class="res-header-id"><b>Generated Narrative: Task propose-post-trauma-ataxia</b></p><a name="propose-post-trauma-ataxia"> </a><a name="hcpropose-post-trauma-ataxia"> </a><a name="propose-post-trauma-ataxia-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></p><p><b>for</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs propose-diagnosis}">Propose a diagnosis</span></td><td><a href="Condition-proposed-diagnosis-post-trauma-ataxia.html">Condition Ataxia, Post-trauma ataxia</a></td></tr></table></div>
+        </text>
+        <status value="requested"/>
+        <intent value="proposal"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+            <code value="propose-diagnosis"/>
+            <display value="Propose a diagnosis"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="Patient/patient-r"/>
+        </for>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+              <code value="propose-diagnosis"/>
+              <display value="Propose a diagnosis"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="Condition/proposed-diagnosis-post-trauma-ataxia"/>
+          </valueReference>
+        </input>
+      </Task>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-4e639094ad13"/>
+    <resource>
+      <Condition>
+        <id value="proposed-diagnosis-post-trauma-ataxia"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_proposed-diagnosis-post-trauma-ataxia"> </a><p class="res-header-id"><b>Generated Narrative: Condition proposed-diagnosis-post-trauma-ataxia</b></p><a name="proposed-diagnosis-post-trauma-ataxia"> </a><a name="hcproposed-diagnosis-post-trauma-ataxia"> </a><a name="proposed-diagnosis-post-trauma-ataxia-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 3074222}">Ataxia, Post-trauma ataxia</span></p><p><b>subject</b>: <a href="Patient-patient-r.html"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="provisional"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions"/>
+            <code value="3074222"/>
+            <display value="Ataxia, Post-trauma ataxia"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/patient-r"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+</Bundle>

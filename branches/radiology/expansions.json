@@ -1,0 +1,228 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "f36bfe5f-0720-42d6-861d-e7a47cc7fd8c",
+  "meta" : {
+    "lastUpdated" : "2025-02-07T08:52:52.248+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:f7b71489-ef57-4ce4-aa76-132b499688c8",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "condition-valueset",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet condition-valueset</b></p><a name=\"x-condition-valueset\"> </a><a name=\"x-hccondition-valueset\"> </a><a name=\"x-condition-valueset-en-US\"> </a><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr></table></div>"
+      },
+      "url" : "urn:uuid:f7b71489-ef57-4ce4-aa76-132b499688c8",
+      "version" : "1.0.0",
+      "name" : "Conditions",
+      "title" : "Antimicrobiology - Vaginitis-related conditions",
+      "status" : "active",
+      "experimental" : false,
+      "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
+      "expansion" : {
+        "timestamp" : "2015-06-22T13:56:07Z",
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419760006",
+          "display" : "Bacterial vaginosis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "276877003",
+          "display" : "Trichomonal vaginitis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "72934000",
+          "display" : "Candidiasis of vagina"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "condition-valueset",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet condition-valueset</b></p><p>This value set expansion contains 3 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-419760006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419760006\">419760006</a></td><td>http://snomed.info/sct</td><td>Bacterial vaginosis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-276877003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/276877003\">276877003</a></td><td>http://snomed.info/sct</td><td>Trichomonal vaginitis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-condition-valueset-http://snomed.info/sct-72934000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72934000\">72934000</a></td><td>http://snomed.info/sct</td><td>Candidiasis of vagina</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
+      "version" : "1.0.0",
+      "name" : "Conditions",
+      "title" : "Antimicrobiology - Vaginitis-related conditions",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-02-07T08:52:52+00:00",
+      "publisher" : "HL7 Belgium",
+      "contact" : [{
+        "name" : "HL7 Belgium",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7belgium.org"
+        },
+        {
+          "system" : "email",
+          "value" : "hl7belgium@hl7belgium.org"
+        }]
+      },
+      {
+        "name" : "Message Structure eHealth",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "message-structure@ehealth.fgov.be",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "timestamp" : "2015-06-22T13:56:07Z",
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419760006",
+          "display" : "Bacterial vaginosis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "276877003",
+          "display" : "Trichomonal vaginitis"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "72934000",
+          "display" : "Candidiasis of vagina"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/radiation-exposure-rating-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-radiology-exposure-rating.html\">codesystem Radiation exposure rating v1.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating-green\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiology-exposure-rating.html#radiology-exposure-rating-green\">green</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating</td><td>Green</td><td><div><p>Ok.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating-yellow\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiology-exposure-rating.html#radiology-exposure-rating-yellow\">yellow</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating</td><td>Yellow</td><td><div><p>Please reconsider.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating-red\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiology-exposure-rating.html#radiology-exposure-rating-red\">red</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating</td><td>Red</td><td><div><p>Not OK.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/radiation-exposure-rating-vs",
+      "version" : "1.0.0",
+      "name" : "RadiationExposureRatingVS",
+      "title" : "Radiation exposure rating",
+      "status" : "draft",
+      "date" : "2025-02-07T08:52:52+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:265ffca0-aca9-4a00-8196-6ee38984c470",
+        "timestamp" : "2025-02-07T08:53:15+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
+          "code" : "green",
+          "display" : "Green"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
+          "code" : "yellow",
+          "display" : "Yellow"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
+          "code" : "red",
+          "display" : "Red"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/recommendation-rating-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-recommendation-rating.html\">codesystem Recommendation rating v1.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating-green\"> </a>\u00a0\u00a0<a href=\"CodeSystem-recommendation-rating.html#recommendation-rating-green\">green</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating</td><td>Green</td><td><div><p>Ok.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating-yellow\"> </a>\u00a0\u00a0<a href=\"CodeSystem-recommendation-rating.html#recommendation-rating-yellow\">yellow</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating</td><td>Yellow</td><td><div><p>Please reconsider.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating-red\"> </a>\u00a0\u00a0<a href=\"CodeSystem-recommendation-rating.html#recommendation-rating-red\">red</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating</td><td>Red</td><td><div><p>Not OK.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/recommendation-rating-vs",
+      "version" : "1.0.0",
+      "name" : "RecommendationRatingVS",
+      "title" : "Recommendation rating",
+      "status" : "draft",
+      "date" : "2025-02-07T08:52:52+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ec7fabce-986e-40f6-98bc-a7ab203edd29",
+        "timestamp" : "2025-02-07T08:53:15+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
+          "code" : "green",
+          "display" : "Green"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
+          "code" : "yellow",
+          "display" : "Yellow"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
+          "code" : "red",
+          "display" : "Red"
+        }]
+      }
+    }
+  }]
+}

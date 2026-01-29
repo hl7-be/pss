@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PSSFeedbackReasons"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PSSFeedbackReasons</b></p><a name=\"PSSFeedbackReasons\"> </a><a name=\"hcPSSFeedbackReasons\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">patient-preference<a name=\"PSSFeedbackReasons-patient-preference\"> </a></td><td>Due to patient preference</td></tr><tr><td style=\"white-space:nowrap\">patient-refusal<a name=\"PSSFeedbackReasons-patient-refusal\"> </a></td><td>Due to patient refusal</td></tr><tr><td style=\"white-space:nowrap\">not-applicable<a name=\"PSSFeedbackReasons-not-applicable\"> </a></td><td>Not applicable to the current case</td></tr><tr><td style=\"white-space:nowrap\">clinical-concerns<a name=\"PSSFeedbackReasons-clinical-concerns\"> </a></td><td>Recipient has concerns about applying the guidance</td></tr><tr><td style=\"white-space:nowrap\">suboptimal-guidance<a name=\"PSSFeedbackReasons-suboptimal-guidance\"> </a></td><td>Perceived issues with guidelines (not timely, unclear...)</td></tr><tr><td style=\"white-space:nowrap\">guidance-disagreement<a name=\"PSSFeedbackReasons-guidance-disagreement\"> </a></td><td>Recipient disagrees with guidance</td></tr><tr><td style=\"white-space:nowrap\">feasibility<a name=\"PSSFeedbackReasons-feasibility\"> </a></td><td>Guidance is not considered feasible for the case</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.2.51.22.2.16.5" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PSSFeedbackReasons"] ; # 
+  fhir:title [ fhir:v "PSS Feedback Code Reasons"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-07-24T07:35:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Feedback code reasons for PSS"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "patient-preference" ] ;
+     fhir:display [ fhir:v "Due to patient preference" ]
+  ] [
+     fhir:code [ fhir:v "patient-refusal" ] ;
+     fhir:display [ fhir:v "Due to patient refusal" ]
+  ] [
+     fhir:code [ fhir:v "not-applicable" ] ;
+     fhir:display [ fhir:v "Not applicable to the current case" ]
+  ] [
+     fhir:code [ fhir:v "clinical-concerns" ] ;
+     fhir:display [ fhir:v "Recipient has concerns about applying the guidance" ]
+  ] [
+     fhir:code [ fhir:v "suboptimal-guidance" ] ;
+     fhir:display [ fhir:v "Perceived issues with guidelines (not timely, unclear...)" ]
+  ] [
+     fhir:code [ fhir:v "guidance-disagreement" ] ;
+     fhir:display [ fhir:v "Recipient disagrees with guidance" ]
+  ] [
+     fhir:code [ fhir:v "feasibility" ] ;
+     fhir:display [ fhir:v "Guidance is not considered feasible for the case" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

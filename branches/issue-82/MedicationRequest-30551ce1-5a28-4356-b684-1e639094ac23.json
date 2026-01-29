@@ -1,0 +1,58 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "30551ce1-5a28-4356-b684-1e639094ac23",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 30551ce1-5a28-4356-b684-1e639094ac23</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ac23\"> </a><a name=\"30551ce1-5a28-4356-b684-1e639094ac23-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc J01XD01}, {https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg 21436}\">metronidazole</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-2e639094ad48.html\"> Female, DoB Unknown</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 1000 mg per dag in 2 giften gedurende 7 dagen</p><p><b>timing</b>: 2 per 1 day</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1000 mg</td></tr></table></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.whocc.no/atc",
+      "code" : "J01XD01"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/vmpg",
+      "code" : "21436"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/30551ce1-5a28-4356-b684-2e639094ad48"
+  },
+  "dosageInstruction" : [{
+    "text" : "1000 mg per dag in 2 giften gedurende 7 dagen",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "1000 mg par jour en 2 prises pendant 7 jours"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "timing" : {
+      "repeat" : {
+        "boundsDuration" : {
+          "value" : 7,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "d"
+        },
+        "frequency" : 2,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 1000,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org"
+      }
+    }]
+  }]
+}

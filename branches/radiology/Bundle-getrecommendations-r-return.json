@@ -1,0 +1,125 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "getrecommendations-r-return",
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "getrecommendations-r-return-1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RequestGroup_getrecommendations-r-return-1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations-r-return-1</b></p><a name=\"getrecommendations-r-return-1\"> </a><a name=\"hcgetrecommendations-r-return-1\"> </a><a name=\"getrecommendations-r-return-1-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CT Head with or without contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-ct-head-with-or-without-contrast.html\">ServiceRequest CT, head, without or without contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CT Head with IV contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-ct-head-iv-contrast.html\">ServiceRequest CT, head, without IV contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: MR Head without contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-mr-head-without-contrast.html\">ServiceRequest MR, head, without IV contrast</a></p></blockquote></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/patient-x"
+      },
+      "action" : [{
+        "textEquivalent" : "CT Head with or without contrast",
+        "resource" : {
+          "reference" : "ServiceRequest/ct-head-with-or-without-contrast"
+        }
+      },
+      {
+        "textEquivalent" : "CT Head with IV contrast",
+        "resource" : {
+          "reference" : "ServiceRequest/ct-head-iv-contrast"
+        }
+      },
+      {
+        "textEquivalent" : "MR Head without contrast",
+        "resource" : {
+          "reference" : "ServiceRequest/mr-head-without-contrast"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "ct-head-iv-contrast",
+      "meta" : {
+        "versionId" : "v3"
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><a name=\"ct-head-iv-contrast\"> </a><a name=\"hcct-head-iv-contrast\"> </a><a name=\"ct-head-iv-contrast-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p></div><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating green}\">Green</span></p><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating yellow}\">Yellow</span></p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
+            "code" : "green"
+          }]
+        }
+      },
+      {
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
+            "code" : "yellow"
+          }]
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "code" : "114055",
+          "display" : "CT, head, without IV contrast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-x"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "ct-head-iv-contrast",
+      "meta" : {
+        "versionId" : "v3"
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_ct-head-iv-contrast\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ct-head-iv-contrast</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p></div><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating green}\">Green</span></p><p><b>CPG Rating Extension</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating yellow}\">Yellow</span></p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:\">CT, head, without IV contrast</span></p><p><b>subject</b>: <a href=\"Patient-patient-x.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
+            "code" : "green"
+          }]
+        }
+      },
+      {
+        "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
+            "code" : "yellow"
+          }]
+        }
+      }],
+      "status" : "active",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "code" : "114055",
+          "display" : "CT, head, without IV contrast"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-x"
+      }
+    }
+  }]
+}

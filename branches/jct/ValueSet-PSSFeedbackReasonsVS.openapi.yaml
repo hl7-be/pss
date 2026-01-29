@@ -1,0 +1,40 @@
+openapi: 3.0.3
+info:
+  title: PSS Feedback Code Reasons Schema API
+  description: JSON Schema for PSS Feedback Code Reasons ValueSet codes. Generated
+    from FHIR expansions.
+  version: 1.0.0
+paths:
+  /ValueSet-PSSFeedbackReasonsVS.schema.json:
+    get:
+      summary: JSON Schema definition for the enumeration ValueSet-PSSFeedbackReasonsVS
+      description: This endpoint serves the JSON Schema definition for the enumeration
+        ValueSet-PSSFeedbackReasonsVS.
+      responses:
+        '200':
+          description: The JSON Schema for ValueSet-PSSFeedbackReasonsVS
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./ValueSet-PSSFeedbackReasonsVS.schema.json
+components:
+  schemas:
+    ValueSet-PSSFeedbackReasonsVS:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-PSSFeedbackReasonsVS.schema.json
+      title: PSS Feedback Code Reasons Schema
+      description: JSON Schema for PSS Feedback Code Reasons ValueSet codes. Generated
+        from FHIR expansions.
+      type: string
+      enum:
+      - Clinic-Issue
+      - Comorbidities
+      - Fast-Results
+      - Pos-Prev-Exp
+      - Insuff-Effect
+      - Better-Tol
+      - Allergy
+      - Other-Reason
+      fhir:valueSet: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS
+      fhir:version: 1.0.0
+      fhir:expansionTimestamp: '2025-09-04T10:09:26+00:00'

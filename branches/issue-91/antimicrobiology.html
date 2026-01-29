@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Antimicrobiology - Prescription Search Support v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- eHealth Platform Belgium -->
+<!-- active -->
+
+<!-- no fitting stylesheet found (status/publisher)-->
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.2"}
+    h3,h4,h5,h6{--heading-prefix:"2.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<!-- eHealth Platform Belgium -->
+<!-- active -->
+
+<div id="ig-nav">
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
+  </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Prescription Search Support</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Belgium flag" src="assets/images/bel.svg" height="16" title="Belgium"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Changes</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='functional-overview.html'><b>Functional Overview</b></a></li><li><b>Antimicrobiology</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Prescription Search Support, published by eHealth Platform Belgium. This guide is not an authorized publication; it is the continuous build for version 1.0.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-be/pss">https://github.com/hl7-be/pss</a> and changes regularly. See the <a href="https://www.ehealth.fgov.be/standards/fhir/pss/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Antimicrobiology</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#getdatatocollect---request-resource-structure" id="markdown-toc-getdatatocollect---request-resource-structure">GetDataTocollect - request resource structure</a></li>
+  <li><a href="#getdatatocollect---response-resource-structure" id="markdown-toc-getdatatocollect---response-resource-structure">GetDataToCollect - response resource structure</a></li>
+  <li><a href="#getrecommendation---request-resource-structure" id="markdown-toc-getrecommendation---request-resource-structure">GetRecommendation - request resource structure</a></li>
+  <li><a href="#getrecommendation---response-resource-structure" id="markdown-toc-getrecommendation---response-resource-structure">GetRecommendation - response resource structure</a></li>
+</ul>
+
+</div>
+
+<p>Functional overview of data exchange with PSS system - Antimicrobiology</p>
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="735px" preserveAspectRatio="none" style="width:613px;height:735px;background:#FFFFFF;" version="1.1" viewBox="0 0 613 735" width="613px" zoomAndPan="magnify"><title>PSS Functional data exchange - antibiotics</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="338.5225" x="159.7747" y="27.9951">PSS Functional data exchange - antibiotics</text><rect fill="#DDEEFF" height="286.5938" style="stroke:#DDEEFF;stroke-width:1;" width="573.6372" x="8" y="85.5938" /><rect fill="#FFEEDD" height="286.5938" style="stroke:#FFEEDD;stroke-width:1;" width="599.0718" x="8" y="418.1875" /><g><title>EPD</title><rect fill="#000000" fill-opacity="0.00000" height="312.5938" width="8" x="41.5342" y="73.5938" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="45.0342" x2="45.0342" y1="73.5938" y2="386.1875" /></g><line style="stroke:#A80036;stroke-width:1;stroke-dasharray:1.0,4.0;" x1="45.0342" x2="45.0342" y1="386.1875" y2="414.1875" /><g><title>EPD</title><rect fill="#000000" fill-opacity="0.00000" height="314.5938" width="8" x="41.5342" y="414.1875" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="45.0342" x2="45.0342" y1="414.1875" y2="728.7813" /></g><g><title /><rect fill="#FFFFFF" height="273.4609" style="stroke:#FFFFFF;stroke-width:1;" width="10" x="40.0342" y="112.7266" /><line style="stroke:#181818;stroke-width:1;" x1="40.0342" x2="40.0342" y1="112.7266" y2="386.1875" /><line style="stroke:#181818;stroke-width:1;" x1="50.0342" x2="50.0342" y1="112.7266" y2="386.1875" /><line style="stroke:#181818;stroke-width:1;" x1="40.0342" x2="50.0342" y1="112.7266" y2="112.7266" /></g><g><title /><rect fill="#FFFFFF" height="314.5938" style="stroke:#FFFFFF;stroke-width:1;" width="10" x="40.0342" y="414.1875" /><line style="stroke:#181818;stroke-width:1;" x1="40.0342" x2="40.0342" y1="414.1875" y2="728.7813" /><line style="stroke:#181818;stroke-width:1;" x1="50.0342" x2="50.0342" y1="414.1875" y2="728.7813" /><line style="stroke:#181818;stroke-width:1;" x1="40.0342" x2="50.0342" y1="728.7813" y2="728.7813" /></g><g><title>PSS</title><rect fill="#000000" fill-opacity="0.00000" height="312.5938" width="8" x="442.7734" y="73.5938" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="446.2734" x2="446.2734" y1="73.5938" y2="386.1875" /></g><line style="stroke:#A80036;stroke-width:1;stroke-dasharray:1.0,4.0;" x1="446.2734" x2="446.2734" y1="386.1875" y2="414.1875" /><g><title>PSS</title><rect fill="#000000" fill-opacity="0.00000" height="314.5938" width="8" x="442.7734" y="414.1875" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="446.2734" x2="446.2734" y1="414.1875" y2="728.7813" /></g><g><title /><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1;" width="10" x="441.2734" y="194.3906" /></g><g><title /><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1;" width="10" x="441.2734" y="526.9844" /></g><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="42.0684" x="24" y="42.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28.0684" x="31" y="62.292">EPD</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40.2158" x="426.1655" y="42.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26.2158" x="433.1655" y="62.292">PSS</text><path d="M8,85.5938 L423.6079,85.5938 L423.6079,92.7266 L413.6079,102.7266 L8,102.7266 L8,85.5938" fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="286.5938" style="stroke:#000000;stroke-width:1.5;" width="573.6372" x="8" y="85.5938" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="370.6079" x="23" y="98.6606">Service 2 - Given indications, query data to collect</text><polygon fill="#181818" points="429.2734,190.3906,439.2734,194.3906,429.2734,198.3906,433.2734,194.3906" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="50.0342" x2="435.2734" y1="194.3906" y2="194.3906" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.1323" x="57.0342" y="128.7935">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="339.4092" x="57.0342" y="143.9263">POST /PlanDefinition/GetDataToCollect/$apply</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55.6626" x="61.1665" y="159.0591">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65.9521" x="90.0928" y="174.1919">subject=Y</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="85.4331" x="90.0928" y="189.3247">data=Bundle</text><path d="M456.2734,207.3906 L456.2734,232.3906 L560.2734,232.3906 L560.2734,217.3906 L550.2734,207.3906 L456.2734,207.3906" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M550.2734,207.3906 L550.2734,217.3906 L560.2734,217.3906 L550.2734,207.3906" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83.3638" x="462.2734" y="224.4575">See 1. below</text><polygon fill="#181818" points="61.0342,300.0547,51.0342,304.0547,61.0342,308.0547,57.0342,304.0547" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="55.0342" x2="440.2734" y1="304.0547" y2="304.0547" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="165.9468" x="67.0342" y="253.5903">1. Propose data to collect</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55.6626" x="67.0342" y="268.7231">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128.2036" x="100.0928" y="283.856">subject=PSSPatient</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172.7959" x="100.0928" y="298.9888">data=PSSResponseBundle</text><path d="M456.2734,317.0547 L456.2734,342.0547 L560.2734,342.0547 L560.2734,327.0547 L550.2734,317.0547 L456.2734,317.0547" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M550.2734,317.0547 L550.2734,327.0547 L560.2734,327.0547 L550.2734,317.0547" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83.3638" x="462.2734" y="334.1216">See 2. below</text><path d="M8,418.1875 L591.0718,418.1875 L591.0718,425.3203 L581.0718,435.3203 L8,435.3203 L8,418.1875" fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="286.5938" style="stroke:#000000;stroke-width:1.5;" width="599.0718" x="8" y="418.1875" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="538.0718" x="23" y="431.2544">Service 3 - Given the requested data, request recommended medications</text><polygon fill="#181818" points="429.2734,522.9844,439.2734,526.9844,429.2734,530.9844,433.2734,526.9844" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="50.0342" x2="435.2734" y1="526.9844" y2="526.9844" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4.1323" x="57.0342" y="461.3872">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="372.2393" x="57.0342" y="476.52">POST /PlanDefinition/GetRecommendations/$apply</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55.6626" x="61.1665" y="491.6528">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65.9521" x="90.0928" y="506.7856">subject=Y</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="85.4331" x="90.0928" y="521.9185">data=Bundle</text><path d="M451.2734,539.9844 L451.2734,564.9844 L555.2734,564.9844 L555.2734,549.9844 L545.2734,539.9844 L451.2734,539.9844" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M545.2734,539.9844 L545.2734,549.9844 L555.2734,549.9844 L545.2734,539.9844" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83.3638" x="457.2734" y="557.0513">See 3. below</text><polygon fill="#181818" points="61.0342,632.6484,51.0342,636.6484,61.0342,640.6484,57.0342,636.6484" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="55.0342" x2="440.2734" y1="636.6484" y2="636.6484" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="274.6187" x="67.0342" y="586.1841">2. Bundle with RequestGroup with options</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55.6626" x="67.0342" y="601.3169">Payload:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128.2036" x="100.0928" y="616.4497">subject=PSSPatient</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172.7959" x="100.0928" y="631.5825">data=PSSResponseBundle</text><path d="M456.2734,649.6484 L456.2734,674.6484 L560.2734,674.6484 L560.2734,659.6484 L550.2734,649.6484 L456.2734,649.6484" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M550.2734,649.6484 L550.2734,659.6484 L560.2734,659.6484 L550.2734,649.6484" fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83.3638" x="462.2734" y="666.7153">See 4. below</text></g></svg>
+</figure>
+
+<h3 id="getdatatocollect---request-resource-structure">GetDataTocollect - request resource structure</h3>
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="297px" preserveAspectRatio="none" style="width:245px;height:297px;background:#FFFFFF;" version="1.1" viewBox="0 0 245 297" width="245px" zoomAndPan="magnify"><defs /><g><!--cluster Bundle--><g class="cluster" data-entity="Bundle" data-source-line="5" data-uid="ent0002" id="cluster_Bundle"><path d="M8.5,6 L64.4199,6 A3.75,3.75 0 0 1 66.9199,8.5 L73.9199,28.2969 L235.5,28.2969 A2.5,2.5 0 0 1 238,30.7969 L238,198.5 A2.5,2.5 0 0 1 235.5,201 L8.5,201 A2.5,2.5 0 0 1 6,198.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="73.9199" y1="28.2969" y2="28.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54.9199" x="10" y="20.9951">Bundle</text></g><!--class RG--><g class="entity" data-entity="RG" data-source-line="6" data-uid="ent0003" id="entity_RG"><rect fill="#CCFFFF" height="42.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="90.6084" x="130.5" y="41" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66.8076" x="142.4004" y="58.9951">Condition</text><line style="stroke:#181818;stroke-width:0.5;" x1="131.5" x2="220.1084" y1="67.2969" y2="67.2969" /><line style="stroke:#181818;stroke-width:0.5;" x1="131.5" x2="220.1084" y1="75.2969" y2="75.2969" /></g><!--class P--><g class="entity" data-entity="P" data-source-line="9" data-uid="ent0004" id="entity_P"><rect fill="#CCFFFF" height="42.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="73.1768" x="22.5" y="41" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49.376" x="34.4004" y="58.9951">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="23.5" x2="94.6768" y1="67.2969" y2="67.2969" /><line style="stroke:#181818;stroke-width:0.5;" x1="23.5" x2="94.6768" y1="75.2969" y2="75.2969" /></g><!--class T--><g class="entity" data-entity="T" data-source-line="12" data-uid="ent0006" id="entity_T"><rect fill="#CCFFFF" height="42.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72.6982" x="80.5" y="143" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48.8975" x="92.4004" y="160.9951">Allergy</text><line style="stroke:#181818;stroke-width:0.5;" x1="81.5" x2="152.1982" y1="169.2969" y2="169.2969" /><line style="stroke:#181818;stroke-width:0.5;" x1="81.5" x2="152.1982" y1="177.2969" y2="177.2969" /></g><!--link P to RG--><g class="link" data-entity-1="P" data-entity-2="RG" data-source-line="11" data-uid="lnk5" id="link_P_RG"><path codeLine="11" d="M95.9,62 C97.23,62 98,62 98,62 C98,62 119.03,62 130.21,62" fill="none" id="P-RG" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /></g><!--link P to T--><g class="link" data-entity-1="P" data-entity-2="T" data-source-line="12" data-uid="lnk7" id="link_P_T"><path codeLine="12" d="M70.74,83.24 C80.8,100.59 95.22,125.45 105.28,142.79" fill="none" id="P-T" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /></g><!--link RG to T--><rect fill="#DDDDDD" height="58.8906" rx="7.5" ry="7.5" style="stroke:#000000;stroke-width:1;" width="169.4619" x="30.769" y="219" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141.7158" x="35.769" y="236.9951">All data goes in as a</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144.0469" x="35.769" y="253.292">Bundle of resources.</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159.4619" x="35.769" y="269.5889">Patient is anonymized.</text></g></svg>
+</figure>
+
+<hr />
+
+<h3 id="getdatatocollect---response-resource-structure">GetDataToCollect - response resource structure</h3>
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="441px" preserveAspectRatio="none" style="width:371px;height:441px;background:#FFFFFF;" version="1.1" viewBox="0 0 371 441" width="371px" zoomAndPan="magnify"><defs /><g><!--cluster Bundle--><g class="cluster" data-entity="Bundle" data-source-line="6" data-uid="ent0002" id="cluster_Bundle"><path d="M73.9736,6 L129.8936,6 A3.75,3.75 0 0 1 132.3936,8.5 L139.3936,28.2969 L302.9736,28.2969 A2.5,2.5 0 0 1 305.4736,30.7969 L305.4736,276.5 A2.5,2.5 0 0 1 302.9736,279 L73.9736,279 A2.5,2.5 0 0 1 71.4736,276.5 L71.4736,8.5 A2.5,2.5 0 0 1 73.9736,6" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="71.4736" x2="139.3936" y1="28.2969" y2="28.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54.9199" x="75.4736" y="20.9951">Bundle</text></g><!--class RG--><g class="entity" data-entity="RG" data-source-line="7" data-uid="ent0003" id="entity_RG"><rect fill="#CCFFCC" height="34.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124.2275" x="162.4736" y="41" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100.4268" x="174.374" y="58.9951">RequestGroup</text><line style="stroke:#181818;stroke-width:0.5;" x1="163.4736" x2="285.7012" y1="67.2969" y2="67.2969" /></g><!--class P--><g class="entity" data-entity="P" data-source-line="9" data-uid="ent0004" id="entity_P"><rect fill="#CCFFFF" height="34.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="73.1768" x="87.9736" y="135" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49.376" x="99.874" y="152.9951">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="88.9736" x2="160.1504" y1="161.2969" y2="161.2969" /></g><!--class T--><g class="entity" data-entity="T" data-source-line="12" data-uid="ent0007" id="entity_T"><rect fill="#FFFFDD" height="34.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="56.333" x="196.4736" y="135" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32.5322" x="208.374" y="152.9951">Task</text><line style="stroke:#181818;stroke-width:0.5;" x1="197.4736" x2="251.8066" y1="161.2969" y2="161.2969" /></g><!--class CD--><g class="entity" data-entity="CD" data-source-line="13" data-uid="ent0009" id="entity_CD"><rect fill="#FFDDDD" height="34.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113.2285" x="167.9736" y="229" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98.3281" x="175.4238" y="246.9951">Questionnaire</text><line style="stroke:#181818;stroke-width:0.5;" x1="168.9736" x2="280.2021" y1="255.2969" y2="255.2969" /></g><!--link RG to P--><g class="link" data-entity-1="RG" data-entity-2="P" data-source-line="11" data-uid="lnk6" id="link_RG_P"><path codeLine="11" d="M207.0536,75.03 C188.8136,91.81 160.3236,118.02 142.0236,134.85" fill="none" id="RG-P" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /></g><!--link P to T--><g class="link" data-entity-1="P" data-entity-2="T" data-source-line="12" data-uid="lnk8" id="link_P_T"><path codeLine="12" d="M161.1236,152 C169.5536,152 191.1436,152 191.1436,152 C191.1436,152 193.2236,152 196.3536,152" fill="none" id="P-T" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /></g><!--link P to CD--><g class="link" data-entity-1="P" data-entity-2="CD" data-source-line="13" data-uid="lnk10" id="link_P_CD"><path codeLine="13" d="M141.8936,169.03 C160.1336,185.81 188.6236,212.02 206.9236,228.85" fill="none" id="P-CD" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /></g><!--reverse link RG to T--><g class="link" data-entity-1="RG" data-entity-2="T" data-source-line="20" data-uid="lnk11" id="link_RG_T"><path codeLine="20" d="M224.4736,87.03 C224.4736,103.81 224.4736,118.02 224.4736,134.85" fill="none" id="RG-backto-T" style="stroke:#181818;stroke-width:1;" /><polygon fill="none" points="224.4736,75.03,220.4736,81.03,224.4736,87.03,228.4736,81.03,224.4736,75.03" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44.1479" x="172.8975" y="95.5009">.action</text></g><!--reverse link T to CD--><g class="link" data-entity-1="T" data-entity-2="CD" data-source-line="26" data-uid="lnk12" id="link_T_CD"><path codeLine="26" d="M224.4736,181.03 C224.4736,197.81 224.4736,212.02 224.4736,228.85" fill="none" id="T-backto-CD" style="stroke:#181818;stroke-width:1;" /><polygon fill="none" points="224.4736,169.03,220.4736,175.03,224.4736,181.03,228.4736,175.03,224.4736,169.03" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37.5718" x="181.1553" y="189.5009">.input</text></g><!--link RG to CD--><rect fill="#DDDDDD" height="124.0781" rx="7.5" ry="7.5" style="stroke:#000000;stroke-width:1;" width="339.9473" x="12" y="297" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227.7871" x="17" y="314.9951">Response is a Bundle containing</text><ellipse cx="22.5" cy="327.0938" fill="#000000" rx="2.5" ry="2.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113.4561" x="29" y="331.292">a RequestGroup</text><ellipse cx="22.5" cy="343.3906" fill="#000000" rx="2.5" ry="2.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163.8848" x="29" y="347.5889">0..N Tasks as a request</text><rect fill="#000000" height="3.5" width="3.5" x="26" y="357.1875" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="313.9473" x="33" y="363.8857">to present a list of questions (Questionnaire)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4502" x="17" y="380.1826">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="279.0908" x="17" y="396.4795">each Task is an option in RequestGroup</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="279.2275" x="17" y="412.7764">Tasks indicate "Please collect this data"</text></g></svg>
+</figure>
+<hr />
+
+<h3 id="getrecommendation---request-resource-structure">GetRecommendation - request resource structure</h3>
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="297px" preserveAspectRatio="none" style="width:300px;height:297px;background:#FFFFFF;" version="1.1" viewBox="0 0 300 297" width="300px" zoomAndPan="magnify"><defs /><g><!--cluster Bundle--><g class="cluster" data-entity="Bundle" data-source-line="5" data-uid="ent0002" id="cluster_Bundle"><path d="M8.5,6 L64.4199,6 A3.75,3.75 0 0 1 66.9199,8.5 L73.9199,28.2969 L290.5,28.2969 A2.5,2.5 0 0 1 293,30.7969 L293,198.5 A2.5,2.5 0 0 1 290.5,201 L8.5,201 A2.5,2.5 0 0 1 6,198.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="73.9199" y1="28.2969" y2="28.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54.9199" x="10" y="20.9951">Bundle</text></g><!--class C--><g class="entity" data-entity="C" data-source-line="6" data-uid="ent0003" id="entity_C"><rect fill="#CCFFFF" height="42.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="146.1504" x="131" y="41" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140.1504" x="134" y="58.9951">Supposed Condition</text><line style="stroke:#181818;stroke-width:0.5;" x1="132" x2="276.1504" y1="67.2969" y2="67.2969" /><line style="stroke:#181818;stroke-width:0.5;" x1="132" x2="276.1504" y1="75.2969" y2="75.2969" /></g><!--class P--><g class="entity" data-entity="P" data-source-line="11" data-uid="ent0004" id="entity_P"><rect fill="#CCFFFF" height="42.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="73.1768" x="22.5" y="41" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49.376" x="34.4004" y="58.9951">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="23.5" x2="94.6768" y1="67.2969" y2="67.2969" /><line style="stroke:#181818;stroke-width:0.5;" x1="23.5" x2="94.6768" y1="75.2969" y2="75.2969" /></g><!--class CD--><g class="entity" data-entity="CD" data-source-line="14" data-uid="ent0006" id="entity_CD"><rect fill="#CCFFFF" height="42.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147.1074" x="75.5" y="143" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141.1074" x="78.5" y="160.9951">Proposed procedure</text><line style="stroke:#181818;stroke-width:0.5;" x1="76.5" x2="221.6074" y1="169.2969" y2="169.2969" /><line style="stroke:#181818;stroke-width:0.5;" x1="76.5" x2="221.6074" y1="177.2969" y2="177.2969" /></g><!--link P to C--><g class="link" data-entity-1="P" data-entity-2="C" data-source-line="13" data-uid="lnk5" id="link_P_C"><path codeLine="13" d="M95.63,62 C102.37,62 107.33,62 107.33,62 C107.33,62 119.04,62 130.93,62" fill="none" id="P-C" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /></g><!--link P to CD--><g class="link" data-entity-1="P" data-entity-2="CD" data-source-line="14" data-uid="lnk7" id="link_P_CD"><path codeLine="14" d="M77.21,83.24 C92.83,100.59 115.21,125.45 130.81,142.79" fill="none" id="P-CD" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /></g><!--link C to CD--><rect fill="#DDDDDD" height="58.8906" rx="7.5" ry="7.5" style="stroke:#000000;stroke-width:1;" width="169.4619" x="58.269" y="219" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141.7158" x="63.269" y="236.9951">All data goes in as a</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144.0469" x="63.269" y="253.292">Bundle of resources.</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159.4619" x="63.269" y="269.5889">Patient is anonymized.</text></g></svg>
+</figure>
+<hr />
+
+<h3 id="getrecommendation---response-resource-structure">GetRecommendation - response resource structure</h3>
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="346px" preserveAspectRatio="none" style="width:308px;height:346px;background:#FFFFFF;" version="1.1" viewBox="0 0 308 346" width="308px" zoomAndPan="magnify"><defs /><g><!--cluster Bundle--><g class="cluster" data-entity="Bundle" data-source-line="5" data-uid="ent0002" id="cluster_Bundle"><path d="M26.6245,6 L82.5444,6 A3.75,3.75 0 0 1 85.0444,8.5 L92.0444,28.2969 L286.6245,28.2969 A2.5,2.5 0 0 1 289.1245,30.7969 L289.1245,198.5 A2.5,2.5 0 0 1 286.6245,201 L26.6245,201 A2.5,2.5 0 0 1 24.1245,198.5 L24.1245,8.5 A2.5,2.5 0 0 1 26.6245,6" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="24.1245" x2="92.0444" y1="28.2969" y2="28.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54.9199" x="28.1245" y="20.9951">Bundle</text></g><!--class RG--><g class="entity" data-entity="RG" data-source-line="6" data-uid="ent0003" id="entity_RG"><rect fill="#CCFFCC" height="42.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124.2275" x="149.1245" y="41" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100.4268" x="161.0249" y="58.9951">RequestGroup</text><line style="stroke:#181818;stroke-width:0.5;" x1="150.1245" x2="272.3521" y1="67.2969" y2="67.2969" /><line style="stroke:#181818;stroke-width:0.5;" x1="150.1245" x2="272.3521" y1="75.2969" y2="75.2969" /></g><!--class P--><g class="entity" data-entity="P" data-source-line="10" data-uid="ent0004" id="entity_P"><rect fill="#CCFFFF" height="42.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="73.1768" x="40.6245" y="41" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49.376" x="52.5249" y="58.9951">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="41.6245" x2="112.8013" y1="67.2969" y2="67.2969" /><line style="stroke:#181818;stroke-width:0.5;" x1="41.6245" x2="112.8013" y1="75.2969" y2="75.2969" /></g><!--class T--><g class="entity" data-entity="T" data-source-line="13" data-uid="ent0006" id="entity_T"><rect fill="#FFFFEE" height="42.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="157.8604" x="77.1245" y="143" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134.0596" x="89.0249" y="160.9951">MedicationRequest</text><line style="stroke:#181818;stroke-width:0.5;" x1="78.1245" x2="233.9849" y1="169.2969" y2="169.2969" /><line style="stroke:#181818;stroke-width:0.5;" x1="78.1245" x2="233.9849" y1="177.2969" y2="177.2969" /></g><!--link P to RG--><g class="link" data-entity-1="P" data-entity-2="RG" data-source-line="12" data-uid="lnk5" id="link_P_RG"><path codeLine="12" d="M114.0145,62 C118.6445,62 121.7945,62 121.7945,62 C121.7945,62 136.5145,62 149.0645,62" fill="none" id="P-RG" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /></g><!--link P to T--><g class="link" data-entity-1="P" data-entity-2="T" data-source-line="13" data-uid="lnk7" id="link_P_T"><path codeLine="13" d="M93.1145,83.24 C106.8145,100.59 126.4645,125.45 140.1645,142.79" fill="none" id="P-T" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /></g><!--reverse link RG to T--><g class="link" data-entity-1="RG" data-entity-2="T" data-source-line="20" data-uid="lnk8" id="link_RG_T"><path codeLine="20" d="M194.2127,93.7552 C184.6727,111.1052 176.7745,125.45 167.2345,142.79" fill="none" id="RG-backto-T" style="stroke:#181818;stroke-width:1;" /><polygon fill="none" points="199.9945,83.24,193.5985,86.5703,194.2127,93.7552,200.6087,90.4249,199.9945,83.24" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44.1479" x="146.6655" y="103.3669">.action</text></g><rect fill="#DDDDDD" height="107.7813" rx="7.5" ry="7.5" style="stroke:#000000;stroke-width:1;" width="276.249" x="12" y="219" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227.7871" x="17" y="236.9951">Response is a Bundle containing</text><ellipse cx="22.5" cy="249.0938" fill="#000000" rx="2.5" ry="2.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113.4561" x="29" y="253.292">a RequestGroup</text><ellipse cx="22.5" cy="265.3906" fill="#000000" rx="2.5" ry="2.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254.249" x="29" y="269.5889">0..N Requests (MedicationRequests)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4.4502" x="17" y="285.8857">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="250.9199" x="17" y="302.1826">each ServiceRequest is an option in</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="243.7285" x="17" y="318.4795">the requestGroup, and has scoring</text></g></svg>
+</figure>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ehealth.fgov.be/standards/fhir/">eHealth Platform Belgium</a>.  Package hl7.fhir.be.pss#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 28, 2025 07:58+0000">2025-04-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <!-- eHealth Platform Belgium -->
+<!-- active -->
+
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/pss/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

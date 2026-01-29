@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="Feedback"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition Feedback</b></p><a name="Feedback"> </a><a name="hcFeedback"> </a><p>URL: [base]/PlanDefinition/$feedback</p><p>URL: [base]/PlanDefinition/[id]/$feedback</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>pss-id</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>the PSS ID</p>
+</div></td></tr><tr><td>IN</td><td>feedback-resource</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/resource.html">Resource</a> (<a href="StructureDefinition-PSSFeedbackBundle.html" title="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSFeedbackBundle">PSS Response Bundle</a>, <a href="StructureDefinition-FeedbackTask.html" title="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask">PSS Feedback Task</a>)</td><td/><td><div><p>A Task, or a Bundle containing the Task as well as a new request, representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=<code>proposal</code>, and with a new <code>id</code>.
+If the user doesn't accept any of the options provided by PSS, a feedback is still required to finish the PSS process.
+This can be either a set of Task, option by option</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/Feedback"/>
+  <version value="1.0.0"/>
+  <name value="Feedback"/>
+  <title value="PSS Feedback"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <experimental value="false"/>
+  <date value="2026-01-14T16:01:39+00:00"/>
+  <publisher value="eHealth Platform Belgium"/>
+  <contact>
+    <name value="eHealth Platform Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Operation to provide feedback on PSS suggestions"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <affectsState value="false"/>
+  <code value="feedback"/>
+  <resource value="PlanDefinition"/>
+  <system value="false"/>
+  <type value="true"/>
+  <instance value="true"/>
+  <parameter>
+    <name value="pss-id"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="the PSS ID"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="feedback-resource"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="A Task, or a Bundle containing the Task as well as a new request, representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`.&#xA;If the user doesn't accept any of the options provided by PSS, a feedback is still required to finish the PSS process. &#xA;This can be either a set of Task, option by option "/>
+    <type value="Resource"/>
+    <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSFeedbackBundle"/>
+    <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"/>
+  </parameter>
+</OperationDefinition>

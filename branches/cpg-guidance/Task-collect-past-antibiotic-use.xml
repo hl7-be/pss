@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="collect-past-antibiotic-use"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task collect-past-antibiotic-use</b></p><a name="collect-past-antibiotic-use"> </a><a name="hccollect-past-antibiotic-use"> </a><a name="collect-past-antibiotic-use-en-US"> </a><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></p><p><b>for</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}">Collect information</span></td><td><a href="Questionnaire-q-collect-past-antibiotic-use.html">q-collect-past-antibiotic-use</a></td></tr></table></div>
+  </text>
+  <status value="requested"/>
+  <intent value="proposal"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+      <code value="collect-information"/>
+      <display value="Collect information"/>
+    </coding>
+  </code>
+  <for>
+    <reference value="Patient/patient-y"/>
+  </for>
+  <input>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"/>
+        <code value="collect-information"/>
+        <display value="Collect information"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-past-antibiotic-use"/>
+    </valueReference>
+  </input>
+</Task>

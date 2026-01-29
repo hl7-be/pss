@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="Feedback"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition Feedback</b></p><a name="Feedback"> </a><a name="hcFeedback"> </a><p>URL: [base]/PlanDefinition/$feedback</p><p>URL: [base]/PlanDefinition/[id]/$feedback</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>pss-id</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>the PSS ID</p>
+</div></td></tr><tr><td>IN</td><td>feedback-timestamp</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td/><td><div><p>Feedback time stamp</p>
+</div></td></tr><tr><td>IN</td><td>outcome</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td/><td><div><p>Overall outcome</p>
+</div></td></tr><tr><td>IN</td><td>suggestion-feedback</td><td/><td>0..*</td><td/><td/><td><div><p>Feedback on individual suggestions</p>
+</div></td></tr><tr><td>IN</td><td>suggestion-feedback.suggestion-id</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>The suggestion id</p>
+</div></td></tr><tr><td>IN</td><td>suggestion-feedback.outcome</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td><a href="ValueSet-PSSFeedbackCodesVS.html">PSS Feedback Codes</a> (Required)</td><td><div><p>The outcome of the suggestion</p>
+</div></td></tr><tr><td>IN</td><td>suggestion-feedback.override-reason</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td><a href="ValueSet-PSSFeedbackReasonsVS.html">PSS Feedback Code Reasons</a> (Required)</td><td><div><p>The reason for override or rejection</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/OperationDefinition/Feedback"/>
+  <version value="1.0.0"/>
+  <name value="Feedback"/>
+  <title value="PSS Feedback"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <experimental value="false"/>
+  <date value="2025-08-12T08:03:41+00:00"/>
+  <publisher value="eHealth Platform Belgium"/>
+  <contact>
+    <name value="eHealth Platform Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Operation to provide feedback on PSS suggestions"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <affectsState value="false"/>
+  <code value="feedback"/>
+  <resource value="PlanDefinition"/>
+  <system value="false"/>
+  <type value="true"/>
+  <instance value="true"/>
+  <parameter>
+    <name value="pss-id"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="the PSS ID"/>
+    <type value="Identifier"/>
+  </parameter>
+  <parameter>
+    <name value="feedback-timestamp"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Feedback time stamp"/>
+    <type value="dateTime"/>
+  </parameter>
+  <parameter>
+    <name value="outcome"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Overall outcome"/>
+    <type value="Coding"/>
+  </parameter>
+  <parameter>
+    <name value="suggestion-feedback"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="Feedback on individual suggestions"/>
+    <part>
+      <name value="suggestion-id"/>
+      <use value="in"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="The suggestion id"/>
+      <type value="Identifier"/>
+    </part>
+    <part>
+      <name value="outcome"/>
+      <use value="in"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="The outcome of the suggestion"/>
+      <type value="Coding"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS"/>
+      </binding>
+    </part>
+    <part>
+      <name value="override-reason"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <documentation value="The reason for override or rejection"/>
+      <type value="Coding"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS"/>
+      </binding>
+    </part>
+  </parameter>
+</OperationDefinition>

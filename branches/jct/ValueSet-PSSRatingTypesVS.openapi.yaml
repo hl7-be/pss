@@ -1,0 +1,34 @@
+openapi: 3.0.3
+info:
+  title: Types of rating provided by the PSS system Schema API
+  description: JSON Schema for Types of rating provided by the PSS system ValueSet
+    codes. Generated from FHIR expansions.
+  version: 1.0.0
+paths:
+  /ValueSet-PSSRatingTypesVS.schema.json:
+    get:
+      summary: JSON Schema definition for the enumeration ValueSet-PSSRatingTypesVS
+      description: This endpoint serves the JSON Schema definition for the enumeration
+        ValueSet-PSSRatingTypesVS.
+      responses:
+        '200':
+          description: The JSON Schema for ValueSet-PSSRatingTypesVS
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./ValueSet-PSSRatingTypesVS.schema.json
+components:
+  schemas:
+    ValueSet-PSSRatingTypesVS:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-PSSRatingTypesVS.schema.json
+      title: Types of rating provided by the PSS system Schema
+      description: JSON Schema for Types of rating provided by the PSS system ValueSet
+        codes. Generated from FHIR expansions.
+      type: string
+      enum:
+      - overall
+      - radiationexposure
+      fhir:valueSet: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS
+      fhir:version: 1.0.0
+      fhir:expansionTimestamp: '2025-09-04T10:09:26+00:00'

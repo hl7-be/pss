@@ -1,0 +1,34 @@
+openapi: 3.0.3
+info:
+  title: PSS Exception ValueSet Schema API
+  description: JSON Schema for PSS Exception ValueSet ValueSet codes. Generated from
+    FHIR expansions.
+  version: 1.0.0
+paths:
+  /ValueSet-pss-exception-valueset.schema.json:
+    get:
+      summary: JSON Schema definition for the enumeration ValueSet-pss-exception-valueset
+      description: This endpoint serves the JSON Schema definition for the enumeration
+        ValueSet-pss-exception-valueset.
+      responses:
+        '200':
+          description: The JSON Schema for ValueSet-pss-exception-valueset
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./ValueSet-pss-exception-valueset.schema.json
+components:
+  schemas:
+    ValueSet-pss-exception-valueset:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-pss-exception-valueset.schema.json
+      title: PSS Exception ValueSet Schema
+      description: JSON Schema for PSS Exception ValueSet ValueSet codes. Generated
+        from FHIR expansions.
+      type: string
+      enum:
+      - guidance-unavailable
+      - no-consent-found
+      fhir:valueSet: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/pss-exception-valueset
+      fhir:version: 1.0.0
+      fhir:expansionTimestamp: '2025-09-04T10:09:27+00:00'

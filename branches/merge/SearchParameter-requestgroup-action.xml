@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="requestgroup-action"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter requestgroup-action</b></p><a name="requestgroup-action"> </a><a name="hcrequestgroup-action"> </a><h2>RequestGroupActionResource</h2><p>Parameter <code>action</code>:<code>reference</code></p><div><p>Resources referenced anywhere in RequestGroup.action[*.].resource (supports one level of nested actions).</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/requestgroup.html">RequestGroup</a></td></tr><tr><td>Expression</td><td><code>RequestGroup.action.resource | RequestGroup.action.action.resource | RequestGroup.action.action.action.resource</code></td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>, <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>, <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>, <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>, <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>, <a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a>, <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>, <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>, <a href="http://hl7.org/fhir/R4/task.html">Task</a></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/SearchParameter/requestgroup-action"/>
+  <version value="1.0.0"/>
+  <name value="RequestGroupActionResource"/>
+  <status value="active"/>
+  <date value="2026-01-14T16:01:39+00:00"/>
+  <publisher value="eHealth Platform Belgium"/>
+  <contact>
+    <name value="eHealth Platform Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Resources referenced anywhere in RequestGroup.action[*.].resource (supports one level of nested actions)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <code value="action"/>
+  <base value="RequestGroup"/>
+  <type value="reference"/>
+  <expression value="RequestGroup.action.resource | RequestGroup.action.action.resource | RequestGroup.action.action.action.resource"/>
+  <target value="ServiceRequest"/>
+  <target value="MedicationRequest"/>
+  <target value="Procedure"/>
+  <target value="Observation"/>
+  <target value="DiagnosticReport"/>
+  <target value="CommunicationRequest"/>
+  <target value="MedicationDispense"/>
+  <target value="MedicationAdministration"/>
+  <target value="Task"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+</SearchParameter>

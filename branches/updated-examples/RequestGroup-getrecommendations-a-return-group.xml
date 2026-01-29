@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RequestGroup xmlns="http://hl7.org/fhir">
+  <id value="getrecommendations-a-return-group"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseRequestGroup"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-a-return-group</b></p><a name="getrecommendations-a-return-group"> </a><a name="hcgetrecommendations-a-return-group"> </a><a name="getrecommendations-a-return-group-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PSSResponseRequestGroup.html">PSS Response Request Group</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-patient-a.html"> Female, DoB Unknown</a></p><p><b>note</b>: Supporting evidence: [BCFI](https://bcfi.be/nl)</p><blockquote><p><b>action</b></p><p><b>selectionBehavior</b>: At Most One</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td> </td><td>Generic Antibiotic advice</td><td><a href="CommunicationRequest-ab-advice.html">CommunicationRequest: status = active</a></td></tr><tr><td style="display: none">*</td><td/><td>Metronidazol Oraal</td><td><a href="MedicationRequest-metronidazol.html">MedicationRequest: status = active; intent = proposal; medication[x] = metronidazole</a></td></tr><tr><td style="display: none">*</td><td/><td>Clindamycin local</td><td><a href="MedicationRequest-clindamycin.html">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style="display: none">*</td><td/><td>Fluconazol Oraal</td><td><a href="MedicationRequest-fluconazol.html">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr><tr><td style="display: none">*</td><td/><td>Miconazol lokaal</td><td><a href="MedicationRequest-miconazol.html">MedicationRequest: status = active; intent = proposal; medication[x] = </a></td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="proposal"/>
+  <subject>
+    <reference value="Patient/patient-a"/>
+  </subject>
+  <note>
+    <text value="Supporting evidence: [BCFI](https://bcfi.be/nl)"/>
+  </note>
+  <action>
+    <selectionBehavior value="at-most-one"/>
+    <action>
+      <textEquivalent value="Generic Antibiotic advice"/>
+      <resource>
+        <reference value="CommunicationRequest/ab-advice"/>
+      </resource>
+    </action>
+    <action>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="overall"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="2"/>
+            </numerator>
+            <denominator>
+              <value value="3"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <extension url="ratingText">
+          <valueMarkdown value="Recommended"/>
+        </extension>
+      </extension>
+      <textEquivalent value="Metronidazol Oraal"/>
+      <resource>
+        <reference value="MedicationRequest/metronidazol"/>
+      </resource>
+    </action>
+    <action>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="overall"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="2"/>
+            </numerator>
+            <denominator>
+              <value value="3"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <extension url="ratingText">
+          <valueMarkdown value="Recommended"/>
+        </extension>
+      </extension>
+      <textEquivalent value="Clindamycin local"/>
+      <resource>
+        <reference value="MedicationRequest/clindamycin"/>
+      </resource>
+    </action>
+    <action>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="overall"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="2"/>
+            </numerator>
+            <denominator>
+              <value value="3"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <extension url="ratingText">
+          <valueMarkdown value="Recommended"/>
+        </extension>
+      </extension>
+      <textEquivalent value="Fluconazol Oraal"/>
+      <resource>
+        <reference value="MedicationRequest/fluconazol"/>
+      </resource>
+    </action>
+    <action>
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSStructuredRating">
+        <extension url="ratingType">
+          <valueCode value="overall"/>
+        </extension>
+        <extension url="ratingValue">
+          <valueRatio>
+            <numerator>
+              <value value="2"/>
+            </numerator>
+            <denominator>
+              <value value="3"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <extension url="ratingText">
+          <valueMarkdown value="Recommended"/>
+        </extension>
+      </extension>
+      <textEquivalent value="Miconazol lokaal"/>
+      <resource>
+        <reference value="MedicationRequest/miconazol"/>
+      </resource>
+    </action>
+  </action>
+</RequestGroup>

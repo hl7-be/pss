@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="getdatatocollect-data"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad48"/>
+    <resource>
+      <Patient>
+        <id value="patient-y"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-y"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-y</b></p><a name="patient-y"> </a><a name="hcpatient-y"> </a><a name="patient-y-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient Female, DoB Unknown</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr></table></div>
+        </text>
+        <active value="true"/>
+        <gender value="female"/>
+        <deceasedBoolean value="false"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad01"/>
+    <resource>
+      <Condition>
+        <id value="lower-abdominal-pain"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_lower-abdominal-pain"> </a><p class="res-header-id"><b>Generated Narrative: Condition lower-abdominal-pain</b></p><a name="lower-abdominal-pain"> </a><a name="hclower-abdominal-pain"> </a><a name="lower-abdominal-pain-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 54586004}">Lower abdominal pain</span></p><p><b>subject</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+          <text value="Active"/>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="54586004"/>
+            <display value="Lower abdominal pain"/>
+          </coding>
+          <text value="Lower abdominal pain"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-y"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad02"/>
+    <resource>
+      <Condition>
+        <id value="frequent-urination-with-burning-sensation"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_frequent-urination-with-burning-sensation"> </a><p class="res-header-id"><b>Generated Narrative: Condition frequent-urination-with-burning-sensation</b></p><a name="frequent-urination-with-burning-sensation"> </a><a name="hcfrequent-urination-with-burning-sensation"> </a><a name="frequent-urination-with-burning-sensation-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 28442001}">Frequent urination with burning sensation</span></p><p><b>subject</b>: <a href="Patient-patient-y.html">Anonymous Patient Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+          <text value="Active"/>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+          <text value="Confirmed"/>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+            <display value="Encounter Diagnosis"/>
+          </coding>
+          <text value="Encounter Diagnosis"/>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="28442001"/>
+            <display value="Polyuria"/>
+          </coding>
+          <text value="Frequent urination with burning sensation"/>
+        </code>
+        <subject>
+          <reference value="Patient/patient-y"/>
+        </subject>
+        <onsetDateTime value="2024-10-13"/>
+      </Condition>
+    </resource>
+  </entry>
+</Bundle>

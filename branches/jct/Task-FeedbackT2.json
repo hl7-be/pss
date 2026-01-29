@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Task",
+  "id" : "FeedbackT2",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task FeedbackT2</b></p><a name=\"FeedbackT2\"> </a><a name=\"hcFeedbackT2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FeedbackTask.html\">PSS Feedback Task</a></p></div><p><b>status</b>: Rejected</p><p><b>statusReason</b>: <span title=\"Codes:\">patient-refusal</span></p><p><b>intent</b>: option</p><p><b>focus</b>: Identifier: FeedbackT2</p><p><b>lastModified</b>: 2023-10-01 12:00:00+0000</p><p><b>owner</b>: Identifier: Practitioner2</p></div>"
+  },
+  "status" : "rejected",
+  "statusReason" : {
+    "coding" : [{
+      "code" : "patient-refusal"
+    }]
+  },
+  "intent" : "option",
+  "focus" : {
+    "identifier" : {
+      "value" : "FeedbackT2"
+    }
+  },
+  "lastModified" : "2023-10-01T12:00:00Z",
+  "owner" : {
+    "identifier" : {
+      "value" : "Practitioner2"
+    }
+  }
+}

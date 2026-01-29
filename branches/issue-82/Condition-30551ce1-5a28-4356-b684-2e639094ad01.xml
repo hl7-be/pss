@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="30551ce1-5a28-4356-b684-2e639094ad01"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition 30551ce1-5a28-4356-b684-2e639094ad01</b></p><a name="30551ce1-5a28-4356-b684-2e639094ad01"> </a><a name="hc30551ce1-5a28-4356-b684-2e639094ad01"> </a><a name="30551ce1-5a28-4356-b684-2e639094ad01-en-US"> </a><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 54586004}">Lower abdominal pain</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-2e639094ad48.html"> Female, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+    <text value="Encounter Diagnosis"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="54586004"/>
+      <display value="Lower abdominal pain"/>
+    </coding>
+    <text value="Lower abdominal pain"/>
+  </code>
+  <subject>
+    <reference value="Patient/30551ce1-5a28-4356-b684-2e639094ad48"/>
+  </subject>
+  <onsetDateTime value="2024-10-13"/>
+</Condition>

@@ -1,0 +1,192 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSResponseServiceRequest.html" : "PSS Response Service Request"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BacterialCodes",
+      "title" : "Bacterial Codes",
+      "description" : "Bacterial Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.1"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.1"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CandidaCodes",
+      "title" : "Candida Codes",
+      "description" : "Candida Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.2"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.2"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ChlamydiaCodes",
+      "title" : "Chlamydia Codes",
+      "description" : "Chlamydia Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.3"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.3"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CompromisedImmuneSystemCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CompromisedImmuneSystemCodes",
+      "title" : "CompromisedImmuneSystem Codes",
+      "description" : "CompromisedImmuneSystem Codes",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icpc-2",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.4"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.4"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "GonokokCodes",
+      "title" : "Gonokok Codes",
+      "description" : "Gonokok Codes",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.5"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.5"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "MycoplasmaCodes",
+      "title" : "Mycoplasma Codes",
+      "description" : "Mycoplasma Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.6"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.6"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "OncologyPatientCodes",
+      "title" : "OncologyPatient Codes",
+      "description" : "OncologyPatient Codes",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icpc-2",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.7"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.7"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "OtherCodes",
+      "title" : "Other Codes",
+      "description" : "Other Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.8"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.8"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSFeedbackCodesVS",
+      "title" : "PSS Feedback Codes",
+      "description" : "Feedback codes for PSS",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.12"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.12"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSFeedbackReasonsVS",
+      "title" : "PSS Feedback Code Reasons",
+      "description" : "Feedback code reasons for PSS",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.13"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.13"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "description" : "ValueSet - Types of rating provided by the PSS system",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.9"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.9"],
+      "uses" : {
+      },
+      "StructureDefinition-PSSStructuredRating.html" : "PSS Rating Extension"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "description" : "Pregnancy Codes - used for EHRs to consider pregnancy status",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10-cm", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.10"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.10"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "TrichomonasCodes",
+      "title" : "Trichomonas Codes",
+      "description" : "Trichomonas Codes",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.11"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.11"]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/pss-exception-valueset",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSSExceptionValueSet",
+      "title" : "PSS Exception ValueSet",
+      "description" : "ValueSet including exception codes for Patient Summary (PSS).",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes"
+      ],
+      "oids" : ["2.16.840.1.113883.2.51.22.2.48.14"],
+      "sources" : ["2.16.840.1.113883.2.51.22.2.48.14"]
+    }
+  ]
+}

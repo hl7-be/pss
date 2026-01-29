@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="getrecommendations-return"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad21"/>
+    <resource>
+      <RequestGroup>
+        <id value="getrecommendations-return"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RequestGroup_getrecommendations-return"> </a><p class="res-header-id"><b>Generated Narrative: RequestGroup getrecommendations-return</b></p><a name="getrecommendations-return"> </a><a name="hcgetrecommendations-return"> </a><a name="getrecommendations-return-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential medications</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>Nitrofurantoin (9/10), 2x 100mg x 5 days</td><td><a href="Bundle-getrecommendations-return.html#MedicationRequest_nitrofurantoin">Bundle: type = collection</a></td></tr><tr><td style="display: none">*</td><td>Fosfomycin (7/10), single 3g dose</td><td><a href="Bundle-getrecommendations-return.html#MedicationRequest_fosfomycin">Bundle: type = collection</a></td></tr><tr><td style="display: none">*</td><td>Ciprofloxacin (5/10), 250mg twice daily for 3 days</td><td><a href="Bundle-getrecommendations-return.html#MedicationRequest_ciprofloxacin">Bundle: type = collection</a></td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: Potential procedures</p><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TextEquivalent</b></td><td><b>Resource</b></td></tr><tr><td style="display: none">*</td><td>CT Pulmonary Angiography (9/10)</td><td><a href="Bundle-getrecommendations-return.html#ServiceRequest_ct-pulmonary-angiography">Bundle: type = collection</a></td></tr><tr><td style="display: none">*</td><td>Ventilation-Perfusion (V/Q) Scan (7/10)</td><td><a href="Bundle-getrecommendations-return.html#ServiceRequest_ventilation-perfusion-scan">Bundle: type = collection</a></td></tr><tr><td style="display: none">*</td><td>MRI with Gd contrast (5/10)</td><td><a href="Bundle-getrecommendations-return.html#ServiceRequest_mri-with-gd-contrast">Bundle: type = collection</a></td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+        <action>
+          <textEquivalent value="Potential medications"/>
+          <action>
+            <textEquivalent value="Nitrofurantoin (9/10), 2x 100mg x 5 days"/>
+            <resource>
+              <reference value="MedicationRequest/nitrofurantoin"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Fosfomycin (7/10), single 3g dose"/>
+            <resource>
+              <reference value="MedicationRequest/fosfomycin"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Ciprofloxacin (5/10), 250mg twice daily for 3 days"/>
+            <resource>
+              <reference value="MedicationRequest/ciprofloxacin"/>
+            </resource>
+          </action>
+        </action>
+        <action>
+          <textEquivalent value="Potential procedures"/>
+          <action>
+            <textEquivalent value="CT Pulmonary Angiography (9/10)"/>
+            <resource>
+              <reference value="ServiceRequest/ct-pulmonary-angiography"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="Ventilation-Perfusion (V/Q) Scan (7/10)"/>
+            <resource>
+              <reference value="ServiceRequest/ventilation-perfusion-scan"/>
+            </resource>
+          </action>
+          <action>
+            <textEquivalent value="MRI with Gd contrast (5/10)"/>
+            <resource>
+              <reference value="ServiceRequest/mri-with-gd-contrast"/>
+            </resource>
+          </action>
+        </action>
+      </RequestGroup>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad22"/>
+    <resource>
+      <MedicationRequest>
+        <id value="nitrofurantoin"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_nitrofurantoin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest nitrofurantoin</b></p><a name="nitrofurantoin"> </a><a name="hcnitrofurantoin"> </a><a name="nitrofurantoin-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 9/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Nitrofurantoin 2x 100mg x 5 days</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="9"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <text value="Nitrofurantoin 2x 100mg x 5 days"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad23"/>
+    <resource>
+      <MedicationRequest>
+        <id value="fosfomycin"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_fosfomycin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest fosfomycin</b></p><a name="fosfomycin"> </a><a name="hcfosfomycin"> </a><a name="fosfomycin-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 7/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Fosfomycin, single 3g dose</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="7"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <text value="Fosfomycin, single 3g dose"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad24"/>
+    <resource>
+      <MedicationRequest>
+        <id value="ciprofloxacin"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_ciprofloxacin"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest ciprofloxacin</b></p><a name="ciprofloxacin"> </a><a name="hcciprofloxacin"> </a><a name="ciprofloxacin-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 5/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title="Codes:">Ciprofloxacin (250mg twice daily for 3 days)</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="5"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <medicationCodeableConcept>
+          <text value="Ciprofloxacin (250mg twice daily for 3 days)"/>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad25"/>
+    <resource>
+      <ServiceRequest>
+        <id value="ct-pulmonary-angiography"/>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_ct-pulmonary-angiography"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest ct-pulmonary-angiography</b></p><a name="ct-pulmonary-angiography"> </a><a name="hcct-pulmonary-angiography"> </a><a name="ct-pulmonary-angiography-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 9/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">CT Pulmonary Angiography</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="9"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <code>
+          <text value="CT Pulmonary Angiography"/>
+        </code>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad26"/>
+    <resource>
+      <ServiceRequest>
+        <id value="ventilation-perfusion-scan"/>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_ventilation-perfusion-scan"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest ventilation-perfusion-scan</b></p><a name="ventilation-perfusion-scan"> </a><a name="hcventilation-perfusion-scan"> </a><a name="ventilation-perfusion-scan-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 7/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">Ventilation-Perfusion (V/Q) Scan</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="7"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <code>
+          <text value="Ventilation-Perfusion (V/Q) Scan"/>
+        </code>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad27"/>
+    <resource>
+      <ServiceRequest>
+        <id value="mri-with-gd-contrast"/>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="ServiceRequest_mri-with-gd-contrast"> </a><p class="res-header-id"><b>Generated Narrative: ServiceRequest mri-with-gd-contrast</b></p><a name="mri-with-gd-contrast"> </a><a name="hcmri-with-gd-contrast"> </a><a name="mri-with-gd-contrast-en-US"> </a><p><b>org/fhir/uv/cpg/StructureDefinition/cpg-rating</b>: 5/10</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title="Codes:">MRI with Gd Contrast</span></p><p><b>subject</b>: <a href="Patient-X.html">Anonymous Patient Male, DoB: 1972-05-24</a></p></div>
+        </text>
+        <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating">
+          <valueRatio>
+            <numerator>
+              <value value="5"/>
+            </numerator>
+            <denominator>
+              <value value="10"/>
+            </denominator>
+          </valueRatio>
+        </extension>
+        <status value="active"/>
+        <intent value="proposal"/>
+        <code>
+          <text value="MRI with Gd Contrast"/>
+        </code>
+        <subject>
+          <reference value="Patient/X"/>
+        </subject>
+      </ServiceRequest>
+    </resource>
+  </entry>
+</Bundle>

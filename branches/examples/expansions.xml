@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="fc6757f2-c032-4dc8-bc87-091c4bae8bbc"/>
+  <meta>
+    <lastUpdated value="2025-02-19T10:41:07.024+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:70a4e06a-7174-4470-adb1-72227f120615"/>
+    <resource>
+      <ValueSet>
+        <id value="condition-valueset"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet condition-valueset</b>
+            </p>
+            <a name="x-condition-valueset"> </a>
+            <a name="x-hccondition-valueset"> </a>
+            <a name="x-condition-valueset-en-US"> </a>
+            <p>This value set expansion contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-condition-valueset-http://snomed.info/sct-419760006"> </a>  
+                  <a href="http://snomed.info/id/419760006">419760006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bacterial vaginosis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-condition-valueset-http://snomed.info/sct-276877003"> </a>  
+                  <a href="http://snomed.info/id/276877003">276877003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Trichomonal vaginitis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-condition-valueset-http://snomed.info/sct-72934000"> </a>  
+                  <a href="http://snomed.info/id/72934000">72934000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Candidiasis of vagina</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="urn:uuid:70a4e06a-7174-4470-adb1-72227f120615"/>
+        <version value="1.0.0"/>
+        <name value="Conditions"/>
+        <title value="Antimicrobiology - Vaginitis-related conditions"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <description value="Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"/>
+        <expansion>
+          <timestamp value="2015-06-22T13:56:07Z"/>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419760006"/>
+            <display value="Bacterial vaginosis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276877003"/>
+            <display value="Trichomonal vaginitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72934000"/>
+            <display value="Candidiasis of vagina"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>codesystem ICD-10 version2019-covid-expanded</li>
+                <li>SNOMED CT 900000000000207008 edition 01-Aug 2024</li>
+              </ul>
+            </div>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-87527008"> </a>  
+                  <a href="http://snomed.info/id/87527008">87527008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-127364007"> </a>  
+                  <a href="http://snomed.info/id/127364007">127364007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-72892002"> </a>  
+                  <a href="http://snomed.info/id/72892002">72892002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes"/>
+        <version value="1.0.0"/>
+        <name value="PregnancyCodes"/>
+        <title value="Pregnancy Codes"/>
+        <status value="active"/>
+        <expansion>
+          <identifier value="urn:uuid:8434cc12-e0ab-4395-8127-9bc3e2ff33a9"/>
+          <timestamp value="2025-02-19T10:41:27+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="87527008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="127364007"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72892002"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>codesystem ICD-10 version2019-covid-expanded</li>
+                <li>SNOMED CT 900000000000207008 edition 01-Aug 2024</li>
+              </ul>
+            </div>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-87527008"> </a>  
+                  <a href="http://snomed.info/id/87527008">87527008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-127364007"> </a>  
+                  <a href="http://snomed.info/id/127364007">127364007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-72892002"> </a>  
+                  <a href="http://snomed.info/id/72892002">72892002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/PregnancyCodes"/>
+        <version value="1.0.0"/>
+        <name value="PregnancyCodes"/>
+        <title value="Pregnancy Codes"/>
+        <status value="active"/>
+        <expansion>
+          <identifier value="urn:uuid:8434cc12-e0ab-4395-8127-9bc3e2ff33a9"/>
+          <timestamp value="2025-02-19T10:41:27+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="87527008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="127364007"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72892002"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset"/>
+    <resource>
+      <ValueSet>
+        <id value="condition-valueset"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet condition-valueset</b>
+            </p>
+            <p>This value set expansion contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-condition-valueset-http://snomed.info/sct-419760006"> </a>  
+                  <a href="http://snomed.info/id/419760006">419760006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bacterial vaginosis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-condition-valueset-http://snomed.info/sct-276877003"> </a>  
+                  <a href="http://snomed.info/id/276877003">276877003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Trichomonal vaginitis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-condition-valueset-http://snomed.info/sct-72934000"> </a>  
+                  <a href="http://snomed.info/id/72934000">72934000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Candidiasis of vagina</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset"/>
+        <version value="1.0.0"/>
+        <name value="Conditions"/>
+        <title value="Antimicrobiology - Vaginitis-related conditions"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-02-19T10:40:21+00:00"/>
+        <publisher value="HL7 Belgium"/>
+        <contact>
+          <name value="HL7 Belgium"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7belgium.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="hl7belgium@hl7belgium.org"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Message Structure eHealth"/>
+          <telecom>
+            <system value="email"/>
+            <value value="message-structure@ehealth.fgov.be"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Antimicrobiology - S2 Get data to collect - Response - 1.4. ValueSet"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <timestamp value="2015-06-22T13:56:07Z"/>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419760006"/>
+            <display value="Bacterial vaginosis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="276877003"/>
+            <display value="Trichomonal vaginitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72934000"/>
+            <display value="Candidiasis of vagina"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>
