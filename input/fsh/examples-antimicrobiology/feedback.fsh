@@ -89,8 +89,15 @@ Usage: #example
 
 Instance: alternative-request-bundle
 InstanceOf: PSSFeedbackBundle
+Title: "Feedback - alternative"
+Description: "Example of feedback - alternative option."
+
+
 * entry[+].resource = alternative-request
+* entry[=].fullUrl = "urn:uuid:8f3c5b2a-4c3e-4f7d-9a2d-1b6e8c0f2a11"
+
 * entry[+].resource = alternative-request-task
+* entry[=].fullUrl = "urn:uuid:2a9d7e10-6c1b-4e5f-b3a8-9f0d4c6e2b33"
 
 * identifier.value = "response1"
 * timestamp = "2025-05-20T00:00:00Z"
