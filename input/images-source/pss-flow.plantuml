@@ -63,7 +63,7 @@ end
 ...
 group #dfe Service 5 - Consult feedback (optional)
 '        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
-        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_tag=recommendation**
+        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n****
 
         & PSS -[hidden]-> QSI : "                                      "
         activate PSS

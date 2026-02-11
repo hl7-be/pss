@@ -73,7 +73,7 @@ end
 ...
 
 group #fde PSS-5 - Consult prior result
-        EPD -> PSS : \n**GET /Bundle/{PSS-ID}&_tag=recommendation**
+        EPD -> PSS : \n**GET /Bundle?identifier={PSS-ID}**
 '        & PSS -[hidden]-> QSI : "                                      "
 '        activate EPD
 end
@@ -81,6 +81,7 @@ end
 
 group #dfe PSS-6 - Consult feedback
 '        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
+         -> PSS : \n**GET /Bundle?identifier={PSS-ID}**
         activate PSS
         <- PSS   : Bundle (PSSFeedbackBundle)
 '        & PSS -[hidden]-> QSI : "                                      "
