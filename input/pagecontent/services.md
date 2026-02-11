@@ -17,6 +17,8 @@ The consent will have 2 provisions:
 * use system data exchange, 
 * include in statistics for PSS
 
+This consists of a QuestionnaireResponse 
+
 <!-- ask the WG if they prefer a questionnaire 
 
 We need to catch consent:
