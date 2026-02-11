@@ -6,6 +6,7 @@
 
 Instance: radiology-feedback
 Title: "Radiology feedback"
+Description: "Radiology - Feedback Parameters"
 InstanceOf: Parameters
 Usage: #example
 // session identifier
