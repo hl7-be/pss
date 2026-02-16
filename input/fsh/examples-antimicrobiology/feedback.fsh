@@ -61,6 +61,9 @@ Usage: #example
 
 Instance: alternative-request
 InstanceOf: PSSResponseServiceRequest
+Title: "Antimicrobial - Another option that is not in the recommendations"
+Description: "The alternative treatment that is not in the PSS recommendations"
+Usage: #example
 * status = #active
 * intent = #proposal
 * code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
@@ -75,8 +78,8 @@ InstanceOf: PSSResponseServiceRequest
 
 //DELETE ONE OF THESE - Option 1: endpoint can be Task or Bundle
 Instance: alternative-request-task
-Title: "Antimicrobial - Select another option that is not in the recommendations"
-Description: "Prescriber decides to use another treatment that is not in the PSS recommendations"
+Title: "Antimicrobial - Use another option that is not in the recommendations"
+Description: "task indicating the use of another treatment that is not in the PSS recommendations"
 InstanceOf: Task
 Usage: #example
 * id = "alternative-request-task"
