@@ -25,12 +25,12 @@ Usage: #example
 * intent = #option
 * lastModified = "2025-05-28T10:10:00+02:00"
 
-Instance: antimicrobial-feedback-red
+Instance: antimicrobial-feedback-orange
 Title: "Antimicrobial feedback - red recommendation"
 Description: "Prescriber selects an red antimicrobial recommendation with a reason"
 InstanceOf: Parameters
 Usage: #example
-* id = "antimicrobial-feedback-red"
+* id = "antimicrobial-feedback-orange"
 
 // session identifier
 * parameter[+].name = "pss-id"
@@ -38,14 +38,14 @@ Usage: #example
 
 // select orange/red recommendation
 * parameter[+].name = "feedback-task"
-* parameter[=].resource = task-accepted-red-a
+* parameter[=].resource = task-accepted-orange-a
 
 Instance: task-accepted-orange-a
-Title: "Antimicrobial - Select red recommendation"
-Description: "Prescriber selects an red antimicrobial recommendation with a reason"
+Title: "Antimicrobial - Select orange recommendation"
+Description: "Prescriber selects an orange antimicrobial recommendation with a reason"
 InstanceOf: FeedbackTask
 Usage: #example
-* id = "task-accepted-red-a"
+//* id = "task-accepted-orange-a"
 * focus = Reference(30551ce1-5a28-4356-b684-1e639094ad29)  // e.g. another antimicrobial MedicationRequest
 * status = #accepted
 * intent = #option
