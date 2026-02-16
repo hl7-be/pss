@@ -53,7 +53,7 @@ group #fed PSS-3 - Given some data (+ a procedure), request recommended procedur
 end
 ...
 group #efd PSS-4 - Give feedback
-        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={exchangeId}\n        feedback-resource=Task or Bundle
+        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={PSS_ID}\n        feedback-resource=Task or Bundle
         note left of PSS
 |_ Task (FeedbackTask)
   or
@@ -72,8 +72,8 @@ end
 ...
 ...
 
-group #fde PSS-5 - Consult prior result
-        EPD -> PSS : \n**GET /Bundle?identifier={PSS-ID}**
+group #def PSS-5 - Consult prior result
+        EPD -> PSS : \n**GET /Bundle?identifier={identifier}**
 '        & PSS -[hidden]-> QSI : "                                      "
 '        activate EPD
 end
@@ -81,7 +81,7 @@ end
 
 group #dfe PSS-6 - Consult feedback
 '        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
-         -> PSS : \n**GET /Bundle?identifier={PSS-ID}**
+         -> PSS : \n**GET /Bundle?identifier={identifier}**
         activate PSS
         <- PSS   : Bundle (PSSFeedbackBundle)
 '        & PSS -[hidden]-> QSI : "                                      "

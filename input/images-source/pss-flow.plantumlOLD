@@ -45,7 +45,7 @@ group #fed Service 3 - Given some data (+ a procedure), request recommended proc
 end
 ...
 group #efd Service 4 - Give feedback
-        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={exchangeId}\n        feedback-resource=Task or Bundle
+        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={PSS_ID}\n        feedback-resource=Task or Bundle
         note left of PSS
 |_ Task (FeedbackTask)
   or
