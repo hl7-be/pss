@@ -122,8 +122,17 @@ groups:
     name: Feedback
     description: Feedback resources for the PSS services
     resources:
-      - OperationDefinition/Feedback
-#     - Parameters/feedback-example
+      - OperationDefinition/feedback
+      - StructureDefinition/FeedbackTask
+      - StructureDefinition/PSSFeedbackBundle
+      - Parameters/feedback-example
+      - MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad25
+      - ServiceRequest/alternative-request
+      - Task/alternative-request-task
+      - Task/task-accepted-orange-a
+      - Task/task-accepted-green-a
+      - Parameters/antimicrobial-feedback-orange
+      - Parameters/antimicrobial-feedback-green
 
   Common-resources:
     name: Common examples
@@ -204,6 +213,10 @@ groups:
 #      - ServiceRequest/ct-head-with-or-without-contrast
 #      - ServiceRequest/mr-head-without-contrast
 #      - ServiceRequest/ct-head-iv-contrast
+      - Task/task-accepted-orange-r
+      - Task/task-accepted-other-r    
+      - Parameters/radiology-feedback
+      - Bundle/alternative-request-bundle
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
