@@ -6,7 +6,6 @@
 
 Instance: radiology-feedback
 Title: "Radiology feedback"
-Description: "Radiology - Feedback Parameters"
 InstanceOf: Parameters
 Description: "Feedback Parameters example - Radiology"
 Usage: #example
