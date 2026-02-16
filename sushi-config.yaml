@@ -125,7 +125,7 @@ groups:
       - OperationDefinition/feedback
       - StructureDefinition/FeedbackTask
       - StructureDefinition/PSSFeedbackBundle
-      - Parameters/feedback-example
+      # - Parameters/feedback-example
       - MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad25
       - ServiceRequest/alternative-request
       - Task/alternative-request-task
@@ -257,7 +257,7 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'
-#  path-expansion-params: ../../Parameters-terminology-expansion.json
+  path-expansion-params: ../../Parameters-terminology-expansion.json
 
 
 
