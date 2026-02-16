@@ -1,11 +1,12 @@
 Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 
-Instance: Feedback
+Instance: BeOpFeedback
 Title: "PSS Feedback Operation Definition"
 Description: "Operation to provide feedback on PSS suggestions"
 InstanceOf: OperationDefinition
 Usage: #definition
 
+* id = "feedback"
 * name = "Feedback"
 * title = "PSS Feedback"
 * status = #active
@@ -33,9 +34,13 @@ Usage: #definition
 * parameter[=].min = 1
 * parameter[=].max = "*"
 * parameter[=].documentation = """
-A Task, or a Bundle containing the Task as well as a new request, representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`.
+A Task, or a Bundle containing the Task as well as a new request when one exists, representing the decision on the PSS request. In case the decision is to override an original proposal, or go for a completely different proposal that is not among those provided by PSS, the client shall provide that order, anonymized, with intent=`proposal`, and with a new `id`.
 If the user doesn't accept any of the options provided by PSS, a feedback is still required to finish the PSS process. 
-This can be either a set of Task, option by option 
+
+A Task is always required, in either of the possible scenarios:
+- if one of the options is accepted, only the corresponding Task needs to be submitted as feedback (the rejected ones are optional)
+- if the user doesn't select any option but presents an alternative (other), the Task and the Request will be present
+- if the user doesn't select any option does not present an alternative (other), there has to be at least one Task to explain the rejection of each recommendation.
 """
 * parameter[=].type = #Resource
 //* parameter[=].allowedType[+] = #Task
