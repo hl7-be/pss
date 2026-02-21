@@ -57,16 +57,14 @@ Usage: #example
 
 
 
-
-
 Instance: alternative-request
-InstanceOf: PSSResponseServiceRequest
+InstanceOf: PSSResponseMedicationRequest
 Title: "Antimicrobial - Another option that is not in the recommendations"
 Description: "The alternative treatment that is not in the PSS recommendations"
 Usage: #example
 * status = #active
 * intent = #proposal
-* code = PSSQSIProcedures#114055 "CT, head, wo iv contrast"
+* medicationCodeableConcept = $atc#G01AX14 "Dequalinium chloride (vaginal tablet)"
 * subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
 
 * status = #draft
