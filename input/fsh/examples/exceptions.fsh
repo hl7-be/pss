@@ -14,6 +14,7 @@ Id: pss-exception-valueset
 Title: "PSS Exception ValueSet"
 Description: "ValueSet including exception codes for Patient Summary (PSS)."
 * ^status = #active
+* ^experimental = false
 * include codes from system PSSExceptionCodes
 
 
@@ -191,6 +192,7 @@ RuleSet: Question(context, linkId, text, type, required, repeats)
 * {context}item[=].type = #{type}
 * {context}item[=].repeats = {repeats}
 * {context}item[=].required = {required}
+
 
 
 
