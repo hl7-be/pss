@@ -64,7 +64,7 @@ Description: "The alternative treatment that is not in the PSS recommendations"
 Usage: #example
 * status = #active
 * intent = #proposal
-* medicationCodeableConcept = $atc#G01AX14 "Dequalinium chloride (vaginal tablet)"
+* medicationCodeableConcept = $atc#G01AC05 "Dequalinium"
 * subject = Reference(30551ce1-5a28-4356-b684-3e639094ad48)
 
 * status = #draft
@@ -104,3 +104,4 @@ Description: "Example of feedback - alternative option."
 * timestamp = "2025-05-20T00:00:00Z"
 * type = #collection
 // End of Option 1
+
