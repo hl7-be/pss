@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OncologyPatientCodes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OncologyPatientCodes</b></p><a name=\"OncologyPatientCodes\"> </a><a name=\"hcOncologyPatientCodes\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-v3-icpc2E.html\"><code>http://hl7.org/fhir/sid/icpc-2</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>R84</td><td/></tr><tr><td>R85</td><td/></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C00</td><td style=\"color: #cccccc\">Malignant neoplasm of lip</td></tr><tr><td>C01</td><td style=\"color: #cccccc\">Malignant neoplasm of base of tongue</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/363505006\">363505006</a></td><td style=\"color: #cccccc\">Malignant tumor of oral cavity</td></tr><tr><td><a href=\"http://snomed.info/id/363429002\">363429002</a></td><td style=\"color: #cccccc\">Malignant tumour of larynx</td></tr><tr><td><a href=\"http://snomed.info/id/363353009\">363353009</a></td><td style=\"color: #cccccc\">Malignant tumor of gallbladder</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OncologyPatientCodes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.7"
+  }],
+  "version" : "1.0.0",
+  "name" : "OncologyPatientCodes",
+  "title" : "OncologyPatient Codes",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-01-14T15:47:07+00:00",
+  "publisher" : "eHealth Platform Belgium",
+  "contact" : [{
+    "name" : "eHealth Platform Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "OncologyPatient Codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "copyright" : "*   This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\n\n*   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)\n\n*   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icpc-2",
+      "concept" : [{
+        "code" : "R84"
+      },
+      {
+        "code" : "R85"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "concept" : [{
+        "code" : "C00"
+      },
+      {
+        "code" : "C01"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "363505006"
+      },
+      {
+        "code" : "363429002"
+      },
+      {
+        "code" : "363353009"
+      }]
+    }]
+  }
+}

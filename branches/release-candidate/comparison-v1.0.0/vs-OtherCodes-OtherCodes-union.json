@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "6ef4270f-a6e7-4179-9afe-e2b9f089a606-89",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6ef4270f-a6e7-4179-9afe-e2b9f089a606-89",
+  "name" : "UnionOtherCodesAndOtherCodes",
+  "title" : "Union of Other Codes And Other Codes",
+  "status" : "active",
+  "date" : "2026-02-27T13:07:58+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "197903003"
+      },
+      {
+        "code" : "30116001"
+      },
+      {
+        "code" : "236684001"
+      },
+      {
+        "code" : "197850006"
+      }]
+    }]
+  }
+}

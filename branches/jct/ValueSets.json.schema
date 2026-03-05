@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "#/ValueSets.json.schema",
+  "title": "ValueSet Enumeration Schema",
+  "description": "JSON Schema defining the structure of the ValueSet enumeration endpoint response",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "valueset",
+      "description": "The type of schemas enumerated (valueset)"
+    },
+    "count": {
+      "type": "integer",
+      "description": "Total number of schemas available"
+    },
+    "schemas": {
+      "type": "array",
+      "description": "Array of available schemas",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "Schema filename"
+          },
+          "id": {
+            "type": "string",
+            "description": "Schema $id"
+          },
+          "title": {
+            "type": "string",
+            "description": "Schema title"
+          },
+          "description": {
+            "type": "string",
+            "description": "Schema description"
+          },
+          "url": {
+            "type": "string",
+            "description": "Relative URL to the schema file"
+          },
+          "valueSetUrl": {
+            "type": "string",
+            "description": "FHIR canonical URL of the ValueSet"
+          },
+          "codeCount": {
+            "type": "integer",
+            "description": "Number of codes in the ValueSet"
+          }
+        },
+        "required": [
+          "filename",
+          "title",
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "count",
+    "schemas"
+  ],
+  "example": {
+    "type": "valueset",
+    "count": 12,
+    "schemas": [
+      {
+        "filename": "ValueSet-PSSFeedbackCodesVS.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-PSSFeedbackCodesVS.schema.json",
+        "title": "PSS Feedback Codes Schema",
+        "description": "JSON Schema for PSS Feedback Codes ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-PSSFeedbackCodesVS.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS",
+        "codeCount": 3
+      },
+      {
+        "filename": "ValueSet-PSSFeedbackReasonsVS.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-PSSFeedbackReasonsVS.schema.json",
+        "title": "PSS Feedback Code Reasons Schema",
+        "description": "JSON Schema for PSS Feedback Code Reasons ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-PSSFeedbackReasonsVS.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS",
+        "codeCount": 8
+      },
+      {
+        "filename": "ValueSet-PSSRatingTypesVS.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-PSSRatingTypesVS.schema.json",
+        "title": "Types of rating provided by the PSS system Schema",
+        "description": "JSON Schema for Types of rating provided by the PSS system ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-PSSRatingTypesVS.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+        "codeCount": 2
+      },
+      {
+        "filename": "ValueSet-MycoplasmaCodes.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-MycoplasmaCodes.schema.json",
+        "title": "Mycoplasma Codes Schema",
+        "description": "JSON Schema for Mycoplasma Codes ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-MycoplasmaCodes.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/MycoplasmaCodes",
+        "codeCount": 1
+      },
+      {
+        "filename": "ValueSet-pss-exception-valueset.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-pss-exception-valueset.schema.json",
+        "title": "PSS Exception ValueSet Schema",
+        "description": "JSON Schema for PSS Exception ValueSet ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-pss-exception-valueset.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/pss-exception-valueset",
+        "codeCount": 2
+      },
+      {
+        "filename": "ValueSet-ChlamydiaCodes.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-ChlamydiaCodes.schema.json",
+        "title": "Chlamydia Codes Schema",
+        "description": "JSON Schema for Chlamydia Codes ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-ChlamydiaCodes.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+        "codeCount": 4
+      },
+      {
+        "filename": "ValueSet-OtherCodes.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-OtherCodes.schema.json",
+        "title": "Other Codes Schema",
+        "description": "JSON Schema for Other Codes ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-OtherCodes.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/OtherCodes",
+        "codeCount": 4
+      },
+      {
+        "filename": "ValueSet-PregnancyCodes.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-PregnancyCodes.schema.json",
+        "title": "Pregnancy Codes Schema",
+        "description": "JSON Schema for Pregnancy Codes ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-PregnancyCodes.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+        "codeCount": 4
+      },
+      {
+        "filename": "ValueSet-CandidaCodes.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-CandidaCodes.schema.json",
+        "title": "Candida Codes Schema",
+        "description": "JSON Schema for Candida Codes ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-CandidaCodes.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/CandidaCodes",
+        "codeCount": 4
+      },
+      {
+        "filename": "ValueSet-TrichomonasCodes.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-TrichomonasCodes.schema.json",
+        "title": "Trichomonas Codes Schema",
+        "description": "JSON Schema for Trichomonas Codes ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-TrichomonasCodes.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/TrichomonasCodes",
+        "codeCount": 2
+      },
+      {
+        "filename": "ValueSet-BacterialCodes.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-BacterialCodes.schema.json",
+        "title": "Bacterial Codes Schema",
+        "description": "JSON Schema for Bacterial Codes ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-BacterialCodes.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/BacterialCodes",
+        "codeCount": 1
+      },
+      {
+        "filename": "ValueSet-GonokokCodes.schema.json",
+        "id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-GonokokCodes.schema.json",
+        "title": "Gonokok Codes Schema",
+        "description": "JSON Schema for Gonokok Codes ValueSet codes. Generated from FHIR expansions.",
+        "url": "./ValueSet-GonokokCodes.schema.json",
+        "valueSetUrl": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+        "codeCount": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "PathogenicAgentHPV",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PathogenicAgentHPV</b></p><a name=\"PathogenicAgentHPV\"> </a><a name=\"hcPathogenicAgentHPV\"> </a><a name=\"PathogenicAgentHPV-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/HPV123\">HPV123</a></td><td>HPV suspected infection</td></tr><tr><td><a href=\"http://snomed.info/id/HPV234\">HPV234</a></td><td>Confirmed HPV infection</td></tr><tr><td><a href=\"http://snomed.info/id/HPV345\">HPV345</a></td><td>Lab results HPV +</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV",
+  "version" : "1.0.0",
+  "name" : "PathogenicAgentHPV",
+  "title" : "Pathogenic Agents for HPV",
+  "status" : "active",
+  "date" : "2025-03-11T13:29:42+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Pathogenic agents associated with HPV",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "extension" : [{
+          "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/CodeValueSet",
+          "valueCanonical" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PathogenicAgentHPV"
+        }],
+        "code" : "HPV123",
+        "display" : "HPV suspected infection"
+      },
+      {
+        "code" : "HPV234",
+        "display" : "Confirmed HPV infection"
+      },
+      {
+        "code" : "HPV345",
+        "display" : "Lab results HPV +"
+      }]
+    }]
+  }
+}

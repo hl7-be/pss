@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/Parameters/feedback-accepted-green> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "feedback-accepted-green"] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "pss-id" ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "test-500089-2025-50060793"
+     ]
+  ] [
+     fhir:name [ fhir:v "feedback-task" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Task ;
+       fhir:id [ fhir:v "task-accepted-green" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"^^xsd:anyURI ;
+           fhir:l <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask>
+         ] )
+       ] ;
+       fhir:status [ fhir:v "accepted" ] ;
+       fhir:intent [ fhir:v "option" ] ;
+       fhir:focus [
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23> ;
+         fhir:reference [ fhir:v "ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23" ] ;
+         fhir:identifier [
+           fhir:value [ fhir:v "114055" ]
+         ]
+       ] ;
+       fhir:lastModified [ fhir:v "2025-05-28T10:10:00+02:00"^^xsd:dateTime ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="task-accepted-red-a"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task task-accepted-red-a</b></p><a name="task-accepted-red-a"> </a><a name="hctask-accepted-red-a"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-FeedbackTask.html">PSS Feedback Task</a></p></div><p><b>status</b>: Accepted</p><p><b>statusReason</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons OtherReason}">This was the only possible choice, because this patient is alergic to the usual alternative medication</span></p><p><b>intent</b>: option</p><p><b>focus</b>: <a href="MedicationRequest-30551ce1-5a28-4356-b684-1e639094ad29.html">MedicationRequest: status = active; intent = proposal; medication[x] = </a></p><p><b>lastModified</b>: 2025-05-28 10:15:00+0200</p></div>
+  </text>
+  <status value="accepted"/>
+  <statusReason>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+      <code value="OtherReason"/>
+    </coding>
+    <text value="This was the only possible choice, because this patient is alergic to the usual alternative medication"/>
+  </statusReason>
+  <intent value="option"/>
+  <focus>
+    <reference value="MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad29"/>
+  </focus>
+  <lastModified value="2025-05-28T10:15:00+02:00"/>
+</Task>

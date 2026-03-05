@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Task",
+  "id" : "task-accepted-orange",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task task-accepted-orange</b></p><a name=\"task-accepted-orange\"> </a><a name=\"hctask-accepted-orange\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FeedbackTask.html\">PSS Feedback Task</a></p></div><p><b>status</b>: Accepted</p><p><b>statusReason</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons other-reason}\">Some Other Reason</span></p><p><b>intent</b>: option</p><p><b>focus</b>: <a href=\"ServiceRequest-30551ce1-5a28-4356-b684-1e639094ad23.html\">ServiceRequest CT, head, wo iv contrast</a></p><p><b>lastModified</b>: 2025-05-28 10:10:00+0200</p></div>"
+  },
+  "status" : "accepted",
+  "statusReason" : {
+    "coding" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons",
+      "code" : "other-reason"
+    }],
+    "text" : "Some Other Reason"
+  },
+  "intent" : "option",
+  "focus" : {
+    "reference" : "ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad23",
+    "identifier" : {
+      "value" : "114054"
+    }
+  },
+  "lastModified" : "2025-05-28T10:10:00+02:00"
+}

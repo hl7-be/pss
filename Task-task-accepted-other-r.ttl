@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/Task/task-accepted-other-r> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "task-accepted-other-r"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task task-accepted-other-r</b></p><a name=\"task-accepted-other-r\"> </a><a name=\"hctask-accepted-other-r\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FeedbackTask.html\">PSS Feedback Task</a></p></div><p><b>status</b>: Accepted</p><p><b>statusReason</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons OtherReason}\">Better alternative that was not provided by PSS</span></p><p><b>intent</b>: option</p><p><b>focus</b>: MR, cervical spine, wo/w iv contrast (Identifier: <a href=\"http://terminology.hl7.org/6.1.0/NamingSystem-v3-snomed-CT.html\" title=\"SNOMED CT is a core clinical healthcare terminology that contains concepts with unique meanings and formal logic based definitions organized into hierarchies.\">SNOMED CT International Edition</a>/42807009)</p><p><b>lastModified</b>: 2025-05-28 10:10:00+0200</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "accepted"] ; # 
+  fhir:statusReason [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons>
+       ] ;
+       fhir:code [ fhir:v "OtherReason" ]
+     ] ) ;
+     fhir:text [ fhir:v "Better alternative that was not provided by PSS" ]
+  ] ; # 
+  fhir:intent [ fhir:v "option"] ; # 
+  fhir:focus [
+     fhir:identifier [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:value [ fhir:v "42807009" ]
+     ] ;
+     fhir:display [ fhir:v "MR, cervical spine, wo/w iv contrast" ]
+  ] ; # 
+  fhir:lastModified [ fhir:v "2025-05-28T10:10:00+02:00"^^xsd:dateTime] . # 
+
+# -------------------------------------------------------------------------------------
+

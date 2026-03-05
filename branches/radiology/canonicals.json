@@ -1,0 +1,69 @@
+[
+  {
+    "id" : "GetDataToCollect",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetDataToCollect",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "GetRecommendations",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/cqf/cpg/example/PlanDefinition/GetRecommendations",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "radiology-exposure-rating",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/radiology-exposure-rating",
+    "version" : "1.0.0",
+    "name" : "RadiologyExposureRatingCS"
+  },
+  {
+    "id" : "recommendation-rating",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/recommendation-rating",
+    "version" : "1.0.0",
+    "name" : "RecommendationRatingCS"
+  },
+  {
+    "id" : "hl7.fhir.be.pss",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.pss",
+    "version" : "1.0.0",
+    "name" : "PrescriptionSearchSupport"
+  },
+  {
+    "id" : "q-collect-information-a",
+    "type" : "Questionnaire",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/Questionnaire/q-collect-information-a",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "cpg-rating-coded",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/cpg-rating-coded",
+    "version" : "1.0.0",
+    "name" : "CPGRatingCoded"
+  },
+  {
+    "id" : "condition-valueset",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/condition-valueset",
+    "version" : "1.0.0",
+    "name" : "Conditions"
+  },
+  {
+    "id" : "radiation-exposure-rating-vs",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/radiation-exposure-rating-vs",
+    "version" : "1.0.0",
+    "name" : "RadiationExposureRatingVS"
+  },
+  {
+    "id" : "recommendation-rating-vs",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/recommendation-rating-vs",
+    "version" : "1.0.0",
+    "name" : "RecommendationRatingVS"
+  }
+]

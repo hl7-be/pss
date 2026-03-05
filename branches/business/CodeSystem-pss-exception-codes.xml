@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pss-exception-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem pss-exception-codes</b></p><a name="pss-exception-codes"> </a><a name="hcpss-exception-codes"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">guidance-unavailable<a name="pss-exception-codes-guidance-unavailable"> </a></td><td>Guidance unavailable</td></tr><tr><td style="white-space:nowrap">no-consent-found<a name="pss-exception-codes-no-consent-found"> </a></td><td>User Consent not found</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.2.51.22.2.16.6"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="PSSExceptionCodes"/>
+  <title value="PSS Exception Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-11-04T09:37:58+00:00"/>
+  <publisher value="eHealth Platform Belgium"/>
+  <contact>
+    <name value="eHealth Platform Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Exception codes for Patient Summary (PSS) processing."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="guidance-unavailable"/>
+    <display value="Guidance unavailable"/>
+  </concept>
+  <concept>
+    <code value="no-consent-found"/>
+    <display value="User Consent not found"/>
+  </concept>
+</CodeSystem>

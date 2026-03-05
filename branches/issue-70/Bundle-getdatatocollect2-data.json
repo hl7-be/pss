@@ -1,0 +1,115 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "getdatatocollect2-data",
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad48",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-v",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-v\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-v</b></p><a name=\"patient-v\"> </a><a name=\"hcpatient-v\"> </a><a name=\"patient-v-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient Female, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr></table></div>"
+      },
+      "active" : true,
+      "gender" : "female",
+      "deceasedBoolean" : false
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad01",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "vulvovaginitis",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_vulvovaginitis\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition vulvovaginitis</b></p><a name=\"vulvovaginitis\"> </a><a name=\"hcvulvovaginitis\"> </a><a name=\"vulvovaginitis-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 54586004}\">Lower abdominal pain</span></p><p><b>subject</b>: <a href=\"Patient-patient-y.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p><p><b>onset</b>: 2024-10-13</p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }],
+        "text" : "Active"
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmed"
+        }],
+        "text" : "Confirmed"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }],
+        "text" : "Encounter Diagnosis"
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "54586004",
+          "display" : "Lower abdominal pain"
+        }],
+        "text" : "Lower abdominal pain"
+      },
+      "subject" : {
+        "reference" : "Patient/patient-y"
+      },
+      "onsetDateTime" : "2024-10-13"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad02",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "allergy-to-sulfonamide",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_allergy-to-sulfonamide\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance allergy-to-sulfonamide</b></p><a name=\"allergy-to-sulfonamide\"> </a><a name=\"hcallergy-to-sulfonamide\"> </a><a name=\"allergy-to-sulfonamide-en-US\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91939003}\">Allergy to sulfonamide</span></p><p><b>patient</b>: <a href=\"Patient-patient-y.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "91939003",
+          "display" : "Allergy to sulfonamide"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/patient-y"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:30551ce1-5a28-4356-b684-2e639094ad12",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "proposal-clindamycin",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_proposal-clindamycin\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest proposal-clindamycin</b></p><a name=\"proposal-clindamycin\"> </a><a name=\"hcproposal-clindamycin\"> </a><a name=\"proposal-clindamycin-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc G01AA10}\">clindamycin</span></p><p><b>subject</b>: <a href=\"Patient-patient-y.html\">Anonymous Patient Female, DoB: 1989-09-12</a></p></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "G01AA10"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/patient-y"
+      }
+    }
+  }]
+}

@@ -1,0 +1,106 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "feedback-example",
+  "parameter" : [{
+    "name" : "exact",
+    "valueBoolean" : true
+  },
+  {
+    "name" : "property",
+    "part" : [{
+      "name" : "code",
+      "valueCode" : "focus"
+    },
+    {
+      "name" : "value",
+      "valueCode" : "top"
+    }]
+  },
+  {
+    "name" : "PSS-ID",
+    "valueIdentifier" : {
+      "value" : "5146ed13-c240-46e4-bf40-dab28fabc437"
+    }
+  },
+  {
+    "name" : "outcomeTimeStamp",
+    "valueDateTime" : "2025-05-28T10:10:00+02:00"
+  },
+  {
+    "name" : "outcome",
+    "valueCode" : "overridden"
+  },
+  {
+    "name" : "suggestionOutcome",
+    "part" : [{
+      "name" : "suggestionId",
+      "valueIdentifier" : {
+        "value" : "baf274d9-21b9-49a5-bdd1-e593663dd43c"
+      }
+    },
+    {
+      "name" : "outcome",
+      "valueCode" : "overridden"
+    },
+    {
+      "name" : "overrideReason",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons",
+          "code" : "other-reason"
+        }],
+        "text" : "Patient prefers local application"
+      }
+    }]
+  },
+  {
+    "name" : "suggestionOutcome",
+    "part" : [{
+      "name" : "suggestionId",
+      "valueIdentifier" : {
+        "value" : "baf274d9-21b9-49a5-bdd1-e593663dd43c"
+      }
+    },
+    {
+      "name" : "outcome",
+      "valueCode" : "overridden"
+    },
+    {
+      "name" : "overrideReason",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons",
+          "code" : "other-reason"
+        }],
+        "text" : "Patient prefers local application"
+      }
+    }]
+  },
+  {
+    "name" : "suggestionOutcome",
+    "part" : [{
+      "name" : "suggestionId",
+      "valueIdentifier" : {
+        "value" : "other"
+      }
+    },
+    {
+      "name" : "outcome",
+      "valueCode" : "overridden"
+    },
+    {
+      "name" : "overrideReason",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackReasons",
+          "code" : "other-reason"
+        }],
+        "text" : "Patient prefers their own medicine"
+      }
+    },
+    {
+      "name" : "otherOptionSelected",
+      "valueString" : "Patient prefers local application"
+    }]
+  }]
+}

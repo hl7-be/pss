@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/ServiceRequest/30551ce1-5a28-4356-b684-1e639094ad22> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "30551ce1-5a28-4356-b684-1e639094ad22"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "v3" ] ;
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSResponseServiceRequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest 30551ce1-5a28-4356-b684-1e639094ad22</b></p><a name=\"30551ce1-5a28-4356-b684-1e639094ad22\"> </a><a name=\"hc30551ce1-5a28-4356-b684-1e639094ad22\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: v3</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSResponseServiceRequest.html\">PSS Response Service Request</a></p></div><p><b>identifier</b>: urn:uuid:30551ce1-5a28-4356-b684-3e639123ad04</p><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures 114054}\">CT, head, wo/w iv contrast</span></p><p><b>subject</b>: <a href=\"Patient-30551ce1-5a28-4356-b684-3e639094ad48.html\"> Male, DoB Unknown</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "urn:uuid:30551ce1-5a28-4356-b684-3e639123ad04" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIProcedures>
+       ] ;
+       fhir:code [ fhir:v "114054" ] ;
+       fhir:display [ fhir:v "CT, head, wo/w iv contrast" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://www.ehealth.fgov.be/standards/fhir/pss/Patient/30551ce1-5a28-4356-b684-3e639094ad48> ;
+     fhir:reference [ fhir:v "Patient/30551ce1-5a28-4356-b684-3e639094ad48" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

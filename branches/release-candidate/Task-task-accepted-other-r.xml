@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="task-accepted-other-r"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task task-accepted-other-r</b></p><a name="task-accepted-other-r"> </a><a name="hctask-accepted-other-r"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-FeedbackTask.html">PSS Feedback Task</a></p></div><p><b>status</b>: Accepted</p><p><b>statusReason</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons OtherReason}">Better alternative that was not provided by PSS</span></p><p><b>intent</b>: option</p><p><b>focus</b>: MR, cervical spine, wo/w iv contrast (Identifier: <a href="http://terminology.hl7.org/6.1.0/NamingSystem-v3-snomed-CT.html" title="SNOMED CT is a core clinical healthcare terminology that contains concepts with unique meanings and formal logic based definitions organized into hierarchies.">SNOMED CT International Edition</a>/42807009)</p><p><b>lastModified</b>: 2025-05-28 10:10:00+0200</p></div>
+  </text>
+  <status value="accepted"/>
+  <statusReason>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons"/>
+      <code value="OtherReason"/>
+    </coding>
+    <text value="Better alternative that was not provided by PSS"/>
+  </statusReason>
+  <intent value="option"/>
+  <focus>
+    <identifier>
+      <system value="http://snomed.info/sct"/>
+      <value value="42807009"/>
+    </identifier>
+    <display value="MR, cervical spine, wo/w iv contrast"/>
+  </focus>
+  <lastModified value="2025-05-28T10:10:00+02:00"/>
+</Task>

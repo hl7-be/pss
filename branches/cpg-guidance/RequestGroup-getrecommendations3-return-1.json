@@ -1,0 +1,31 @@
+{
+  "resourceType" : "RequestGroup",
+  "id" : "getrecommendations3-return-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RequestGroup getrecommendations3-return-1</b></p><a name=\"getrecommendations3-return-1\"> </a><a name=\"hcgetrecommendations3-return-1\"> </a><a name=\"getrecommendations3-return-1-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>subject</b>: <a href=\"Patient-X.html\">Anonymous Patient Male, DoB: 1972-05-24</a></p><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CD Head with or without contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-ct-head-with-or-without-contrast-v3.html\">ServiceRequest CT, head, without or without contrast</a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CD Head with IV contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-ct-head-iv-contrast.html\">ServiceRequest </a></p></blockquote><blockquote><p><b>action</b></p><p><b>textEquivalent</b>: CD Head with IV contrast</p><p><b>resource</b>: <a href=\"ServiceRequest-mr-head-without-contrast.html\">ServiceRequest MR, head, without IV contrast</a></p></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "subject" : {
+    "reference" : "Patient/X"
+  },
+  "action" : [{
+    "textEquivalent" : "CD Head with or without contrast",
+    "resource" : {
+      "reference" : "ServiceRequest/ct-head-with-or-without-contrast-v3"
+    }
+  },
+  {
+    "textEquivalent" : "CD Head with IV contrast",
+    "resource" : {
+      "reference" : "ServiceRequest/ct-head-iv-contrast"
+    }
+  },
+  {
+    "textEquivalent" : "CD Head with IV contrast",
+    "resource" : {
+      "reference" : "ServiceRequest/mr-head-without-contrast"
+    }
+  }]
+}

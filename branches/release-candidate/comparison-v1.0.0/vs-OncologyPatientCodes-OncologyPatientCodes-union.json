@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "6ef4270f-a6e7-4179-9afe-e2b9f089a606-86",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6ef4270f-a6e7-4179-9afe-e2b9f089a606-86",
+  "name" : "UnionOncologyPatientCodesAndOncologyPatientCodes",
+  "title" : "Union of OncologyPatient Codes And OncologyPatient Codes",
+  "status" : "active",
+  "date" : "2026-02-27T13:07:58+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "R84"
+      },
+      {
+        "code" : "R85"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "C00"
+      },
+      {
+        "code" : "C01"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "363505006"
+      },
+      {
+        "code" : "363429002"
+      },
+      {
+        "code" : "363353009"
+      }]
+    }]
+  }
+}

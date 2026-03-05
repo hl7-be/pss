@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="pss-30551ce1-5a28-4356-b684-4e639094ad11"/>
+  <meta>
+    <versionId value="v2"/>
+    <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition pss-30551ce1-5a28-4356-b684-4e639094ad11</b></p><a name="pss-30551ce1-5a28-4356-b684-4e639094ad11"> </a><a name="hcpss-30551ce1-5a28-4356-b684-4e639094ad11"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: v2</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/cpg/STU2/StructureDefinition-cpg-condition.html">CPG Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions 5000246}">Head trauma, ataxia</span></p><p><b>subject</b>: <a href="Patient-30551ce1-5a28-4356-b684-3e639094ad48.html"> Male, DoB Unknown</a></p><p><b>onset</b>: 2024-10-13</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="provisional"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSQSIConditions"/>
+      <code value="5000246"/>
+      <display value="Head trauma, ataxia"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/30551ce1-5a28-4356-b684-3e639094ad48"/>
+  </subject>
+  <onsetDateTime value="2024-10-13"/>
+</Condition>

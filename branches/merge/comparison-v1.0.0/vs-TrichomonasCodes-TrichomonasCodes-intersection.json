@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "388b8fa5-f16c-4bfe-b8cd-e1dd024b0564-99",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/388b8fa5-f16c-4bfe-b8cd-e1dd024b0564-99",
+  "name" : "IntersectionTrichomonasCodesAndTrichomonasCodes",
+  "title" : "Intersection of Trichomonas Codes And Trichomonas Codes",
+  "status" : "active",
+  "date" : "2026-02-27T08:56:49+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "276877003"
+      },
+      {
+        "code" : "35089004"
+      }]
+    }]
+  }
+}

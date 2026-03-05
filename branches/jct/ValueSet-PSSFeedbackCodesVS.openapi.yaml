@@ -1,0 +1,35 @@
+openapi: 3.0.3
+info:
+  title: PSS Feedback Codes Schema API
+  description: JSON Schema for PSS Feedback Codes ValueSet codes. Generated from FHIR
+    expansions.
+  version: 1.0.0
+paths:
+  /ValueSet-PSSFeedbackCodesVS.schema.json:
+    get:
+      summary: JSON Schema definition for the enumeration ValueSet-PSSFeedbackCodesVS
+      description: This endpoint serves the JSON Schema definition for the enumeration
+        ValueSet-PSSFeedbackCodesVS.
+      responses:
+        '200':
+          description: The JSON Schema for ValueSet-PSSFeedbackCodesVS
+          content:
+            application/schema+json:
+              schema:
+                $ref: ./ValueSet-PSSFeedbackCodesVS.schema.json
+components:
+  schemas:
+    ValueSet-PSSFeedbackCodesVS:
+      $schema: https://json-schema.org/draft/2020-12/schema
+      $id: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-PSSFeedbackCodesVS.schema.json
+      title: PSS Feedback Codes Schema
+      description: JSON Schema for PSS Feedback Codes ValueSet codes. Generated from
+        FHIR expansions.
+      type: string
+      enum:
+      - accepted
+      - rejected
+      - overridden
+      fhir:valueSet: https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS
+      fhir:version: 1.0.0
+      fhir:expansionTimestamp: '2025-09-04T10:09:26+00:00'

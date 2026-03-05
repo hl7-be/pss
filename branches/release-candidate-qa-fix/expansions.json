@@ -1,0 +1,1016 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "7612201f-ba53-463c-baca-d99ca5db6c90",
+  "meta" : {
+    "lastUpdated" : "2026-02-27T08:44:56.615+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version 2024<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/sid/icd-10-cm|2024\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li>SNOMED CT Belgian Edition edition 15-Nov 2023<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20231115\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Other Display (English)</b></td><td><b>Other Display (English (Great Britain))</b></td><td><b>Display (Spanish)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-A56.0\"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0A56.0</td><td>Chlamydial infection of lower genitourinary tract</td><td></td><td></td><td></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;A56.0&quot;, &quot;display&quot;: &quot;Chlamydial infection of lower genitourinary tract&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;A56.0&quot;&gt;&lt;display value=&quot;Chlamydial infection of lower genitourinary tract&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-A56.2\"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0A56.2</td><td>Chlamydial infection of genitourinary tract, unspecified</td><td></td><td></td><td></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;A56.2&quot;, &quot;display&quot;: &quot;Chlamydial infection of genitourinary tract, unspecified&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;A56.2&quot;&gt;&lt;display value=&quot;Chlamydial infection of genitourinary tract, unspecified&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-236683007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/236683007\">236683007</a></td><td>Chlamydial urethritis</td><td>Chlamydial urethritis (disorder)</td><td>urétrite à Chlamydia</td><td>urethritis door Chlamydia</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109/version/20231115&quot;, &quot;code&quot;: &quot;236683007&quot;, &quot;display&quot;: &quot;Chlamydial urethritis&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109/version/20231115&quot;&gt;&lt;code value=&quot;236683007&quot;&gt;&lt;display value=&quot;Chlamydial urethritis&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-186729003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/186729003\">186729003</a></td><td>Chlamydial infection of lower genitourinary tract</td><td>Chlamydial infection of lower genitourinary tract (disorder)</td><td>infection du tractus génito-urinaire inférieur à Chlamydia</td><td>chlamydia urethritis of cystitis</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109/version/20231115&quot;, &quot;code&quot;: &quot;186729003&quot;, &quot;display&quot;: &quot;Chlamydial infection of lower genitourinary tract&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109/version/20231115&quot;&gt;&lt;code value=&quot;186729003&quot;&gt;&lt;display value=&quot;Chlamydial infection of lower genitourinary tract&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes",
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.3"
+      }],
+      "version" : "1.1.0",
+      "name" : "ChlamydiaCodes",
+      "title" : "Chlamydia Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-02-27T08:44:56+00:00",
+      "contact" : [{
+        "name" : "eHealth Platform",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+        },
+        {
+          "system" : "email",
+          "value" : "support@be-ehealth-standards.atlassian.net"
+        }]
+      },
+      {
+        "name" : "Message Structure eHealth",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "support@be-ehealth-standards.atlassian.net",
+          "use" : "work"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:54e45bdb-3045-4fac-9ddc-100458297785",
+        "timestamp" : "2026-02-27T08:49:17.784Z",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "includeDesignations",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/ChlamydiaCodes|1.1.0"
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20231115"
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/11000172109"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "A56.0",
+          "display" : "Chlamydial infection of lower genitourinary tract"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "A56.2",
+          "display" : "Chlamydial infection of genitourinary tract, unspecified"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "236683007",
+          "display" : "Chlamydial urethritis",
+          "designation" : [{
+            "language" : "en",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000003001",
+              "display" : "Fully specified name"
+            },
+            "value" : "Chlamydial urethritis (disorder)"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "urétrite à Chlamydia"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "chlamydia-uretritis"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "urethritis door Chlamydia"
+          }]
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "186729003",
+          "display" : "Chlamydial infection of lower genitourinary tract",
+          "designation" : [{
+            "language" : "en",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000003001",
+              "display" : "Fully specified name"
+            },
+            "value" : "Chlamydial infection of lower genitourinary tract (disorder)"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "cystite ou urétrite à chlamydia"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "infection du tractus urogénital inférieur à Chlamydia"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "infection du tractus génito-urinaire inférieur à Chlamydia"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "infectie van onderste deel van systema urogenitale door Chlamydia"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "infectie van onderste deel van urogenitaal stelsel door Chlamydia"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "infectie van onderste deel van tractus urogenitalis door Chlamydia"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "chlamydia urethritis of cystitis"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version 2024<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/sid/icd-10-cm|2024\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li>SNOMED CT Belgian Edition edition 15-Nov 2023<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20231115\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Other Display (null)</b></td><td><b>Other Display (English)</b></td><td><b>Other Display (English (Great Britain))</b></td><td><b>Display (Spanish)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-A54.0\"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0A54.0</td><td>Gonocl infct of low GU tract w/o periureth or acc glnd abcs</td><td>Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess</td><td></td><td></td><td></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;A54.0&quot;, &quot;display&quot;: &quot;Gonocl infct of low GU tract w/o periureth or acc glnd abcs&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;A54.0&quot;&gt;&lt;display value=&quot;Gonocl infct of low GU tract w/o periureth or acc glnd abcs&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-A54.9\"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0A54.9</td><td>Gonococcal infection, unspecified</td><td></td><td></td><td></td><td></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;A54.9&quot;, &quot;display&quot;: &quot;Gonococcal infection, unspecified&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;A54.9&quot;&gt;&lt;display value=&quot;Gonococcal infection, unspecified&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-236682002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/236682002\">236682002</a></td><td>Gonococcal urethritis</td><td></td><td>Gonococcal urethritis (disorder)</td><td>inflammation de l'urètre causée par une neisseria gonorrhoeae</td><td>gonokokken urethra</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109/version/20231115&quot;, &quot;code&quot;: &quot;236682002&quot;, &quot;display&quot;: &quot;Gonococcal urethritis&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109/version/20231115&quot;&gt;&lt;code value=&quot;236682002&quot;&gt;&lt;display value=&quot;Gonococcal urethritis&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes",
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.5"
+      }],
+      "version" : "1.1.0",
+      "name" : "GonokokCodes",
+      "title" : "Gonokok Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-02-27T08:44:56+00:00",
+      "contact" : [{
+        "name" : "eHealth Platform",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+        },
+        {
+          "system" : "email",
+          "value" : "support@be-ehealth-standards.atlassian.net"
+        }]
+      },
+      {
+        "name" : "Message Structure eHealth",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "support@be-ehealth-standards.atlassian.net",
+          "use" : "work"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e930ccd4-5b52-4f2b-ae85-3c5fc15a73e5",
+        "timestamp" : "2026-02-27T08:49:22.940Z",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "includeDesignations",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/GonokokCodes|1.1.0"
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20231115"
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/11000172109"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "A54.0",
+          "display" : "Gonocl infct of low GU tract w/o periureth or acc glnd abcs",
+          "designation" : [{
+            "use" : {
+              "system" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+              "code" : "preferredForLanguage"
+            },
+            "value" : "Gonococcal infection of lower genitourinary tract without periurethral or accessory gland abscess"
+          }]
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "A54.9",
+          "display" : "Gonococcal infection, unspecified"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "236682002",
+          "display" : "Gonococcal urethritis",
+          "designation" : [{
+            "language" : "en",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000003001",
+              "display" : "Fully specified name"
+            },
+            "value" : "Gonococcal urethritis (disorder)"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "urétrite à gonocoques"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "gonorrhée urétrale"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "gonococcie urétrale"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "gonorrhée avec atteinte de l'urètre"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "urétrite gonococcique"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "inflammation de l'urètre causée par une neisseria gonorrhoeae"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "urethritis door gonokokken"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "urethritis door Neisseria gonorrhoeae"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "gonokokken urethritis"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "urethragonorroe"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "gonokokken urethra"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-PSSFeedbackCodes.html\">codesystem PSS Feedback Codes v1.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes|1.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes-accepted\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSFeedbackCodes.html#PSSFeedbackCodes-accepted\">accepted</a></td><td>Accepted</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;accepted&quot;, &quot;display&quot;: &quot;Accepted&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;accepted&quot;&gt;&lt;display value=&quot;Accepted&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes-rejected\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSFeedbackCodes.html#PSSFeedbackCodes-rejected\">rejected</a></td><td>Rejected</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;rejected&quot;, &quot;display&quot;: &quot;Rejected&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;rejected&quot;&gt;&lt;display value=&quot;Rejected&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes-overridden\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSFeedbackCodes.html#PSSFeedbackCodes-overridden\">overridden</a></td><td>Overridden</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;overridden&quot;, &quot;display&quot;: &quot;Overridden&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;overridden&quot;&gt;&lt;display value=&quot;Overridden&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS",
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.12"
+      }],
+      "version" : "1.1.0",
+      "name" : "PSSFeedbackCodesVS",
+      "title" : "PSS Feedback Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-02-27T08:44:56+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:89818be1-9f3b-4f73-b1b3-884ef11c206c",
+        "timestamp" : "2026-02-27T08:49:29+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "includeDesignations",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes",
+          "code" : "accepted",
+          "display" : "Accepted"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes",
+          "code" : "rejected",
+          "display" : "Rejected"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSFeedbackCodes",
+          "code" : "overridden",
+          "display" : "Overridden"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion performed internally based on:</p><ul><li><a href=\"CodeSystem-PSSaFeedbackReasons.html\">codesystem PSSa Feedback Code Reasons v1.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons|1.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"CodeSystem-PSSrFeedbackReasons.html\">codesystem PSSr Feedback Code Reasons v1.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons|1.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 15 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-ClinicIssue\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-ClinicIssue\">ClinicIssue</a></td><td>Concerning clinical presentation</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;ClinicIssue&quot;, &quot;display&quot;: &quot;Concerning clinical presentation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;ClinicIssue&quot;&gt;&lt;display value=&quot;Concerning clinical presentation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-Comorbidities\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-Comorbidities\">Comorbidities</a></td><td>Comorbidities</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;Comorbidities&quot;, &quot;display&quot;: &quot;Comorbidities&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;Comorbidities&quot;&gt;&lt;display value=&quot;Comorbidities&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-FastResults\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-FastResults\">FastResults</a></td><td>Faster results</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;FastResults&quot;, &quot;display&quot;: &quot;Faster results&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;FastResults&quot;&gt;&lt;display value=&quot;Faster results&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-PosPrevExp\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-PosPrevExp\">PosPrevExp</a></td><td>Positive prior experience</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;PosPrevExp&quot;, &quot;display&quot;: &quot;Positive prior experience&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;PosPrevExp&quot;&gt;&lt;display value=&quot;Positive prior experience&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-InsuffEffect\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-InsuffEffect\">InsuffEffect</a></td><td>Insufficient effect of recommended management in the past</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;InsuffEffect&quot;, &quot;display&quot;: &quot;Insufficient effect of recommended management in the past&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;InsuffEffect&quot;&gt;&lt;display value=&quot;Insufficient effect of recommended management in the past&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-BetterTol\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-BetterTol\">BetterTol</a></td><td>Better tolerated</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;BetterTol&quot;, &quot;display&quot;: &quot;Better tolerated&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;BetterTol&quot;&gt;&lt;display value=&quot;Better tolerated&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-Allergy\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-Allergy\">Allergy</a></td><td>Allergy</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;Allergy&quot;, &quot;display&quot;: &quot;Allergy&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;Allergy&quot;&gt;&lt;display value=&quot;Allergy&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons-OtherReason\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSaFeedbackReasons.html#PSSaFeedbackReasons-OtherReason\">OtherReason</a></td><td>Other reason — which</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;OtherReason&quot;, &quot;display&quot;: &quot;Other reason — which&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;OtherReason&quot;&gt;&lt;display value=&quot;Other reason — which&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-Pregnancy\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-Pregnancy\">Pregnancy</a></td><td>Contraindicated due to pregnancy</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;Pregnancy&quot;, &quot;display&quot;: &quot;Contraindicated due to pregnancy&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;Pregnancy&quot;&gt;&lt;display value=&quot;Contraindicated due to pregnancy&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-ImplantIncompatibility\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-ImplantIncompatibility\">ImplantIncompatibility</a></td><td>Not suitable because of an implanted device</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;ImplantIncompatibility&quot;, &quot;display&quot;: &quot;Not suitable because of an implanted device&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;ImplantIncompatibility&quot;&gt;&lt;display value=&quot;Not suitable because of an implanted device&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-ContrastAllergy\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-ContrastAllergy\">ContrastAllergy</a></td><td>Patient has allergy to contrast agents</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;ContrastAllergy&quot;, &quot;display&quot;: &quot;Patient has allergy to contrast agents&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;ContrastAllergy&quot;&gt;&lt;display value=&quot;Patient has allergy to contrast agents&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-IncompleteRecommendation\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-IncompleteRecommendation\">IncompleteRecommendation</a></td><td>Recommendation lacked needed clinical details</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;IncompleteRecommendation&quot;, &quot;display&quot;: &quot;Recommendation lacked needed clinical details&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;IncompleteRecommendation&quot;&gt;&lt;display value=&quot;Recommendation lacked needed clinical details&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-WaitingTimeTooLong\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-WaitingTimeTooLong\">WaitingTimeTooLong</a></td><td>Expected waiting time is too long</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;WaitingTimeTooLong&quot;, &quot;display&quot;: &quot;Expected waiting time is too long&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;WaitingTimeTooLong&quot;&gt;&lt;display value=&quot;Expected waiting time is too long&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-Emergency\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-Emergency\">Emergency</a></td><td>Urgent situation requiring faster action</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;Emergency&quot;, &quot;display&quot;: &quot;Urgent situation requiring faster action&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;Emergency&quot;&gt;&lt;display value=&quot;Urgent situation requiring faster action&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons-OtherReason\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSrFeedbackReasons.html#PSSrFeedbackReasons-OtherReason\">OtherReason</a></td><td>Other reason — which</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;OtherReason&quot;, &quot;display&quot;: &quot;Other reason — which&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;OtherReason&quot;&gt;&lt;display value=&quot;Other reason — which&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackReasonsVS",
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.13"
+      }],
+      "version" : "1.1.0",
+      "name" : "PSSFeedbackReasonsVS",
+      "title" : "PSS Feedback Code Reasons",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-02-27T08:44:56+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1caae433-9d8a-40da-90c9-b83414f0b640",
+        "timestamp" : "2026-02-27T08:49:29+00:00",
+        "total" : 15,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "includeDesignations",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons|1.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+          "code" : "ClinicIssue",
+          "display" : "Concerning clinical presentation"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+          "code" : "Comorbidities",
+          "display" : "Comorbidities"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+          "code" : "FastResults",
+          "display" : "Faster results"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+          "code" : "PosPrevExp",
+          "display" : "Positive prior experience"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+          "code" : "InsuffEffect",
+          "display" : "Insufficient effect of recommended management in the past"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+          "code" : "BetterTol",
+          "display" : "Better tolerated"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+          "code" : "Allergy",
+          "display" : "Allergy"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+          "code" : "OtherReason",
+          "display" : "Other reason — which"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons",
+          "code" : "Pregnancy",
+          "display" : "Contraindicated due to pregnancy"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons",
+          "code" : "ImplantIncompatibility",
+          "display" : "Not suitable because of an implanted device"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons",
+          "code" : "ContrastAllergy",
+          "display" : "Patient has allergy to contrast agents"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons",
+          "code" : "IncompleteRecommendation",
+          "display" : "Recommendation lacked needed clinical details"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons",
+          "code" : "WaitingTimeTooLong",
+          "display" : "Expected waiting time is too long"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons",
+          "code" : "Emergency",
+          "display" : "Urgent situation requiring faster action"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons",
+          "code" : "OtherReason",
+          "display" : "Other reason — which"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-PSSRatingTypes.html\">codesystem CodeSystem: Types of rating provided by the PSS system v1.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes|1.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes-overall\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSRatingTypes.html#PSSRatingTypes-overall\">overall</a></td><td>Overall score</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;overall&quot;, &quot;display&quot;: &quot;Overall score&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;overall&quot;&gt;&lt;display value=&quot;Overall score&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes-radiationexposure\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-PSSRatingTypes.html#PSSRatingTypes-radiationexposure\">radiationexposure</a></td><td>Radiation exposure score</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;radiationexposure&quot;, &quot;display&quot;: &quot;Radiation exposure score&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;radiationexposure&quot;&gt;&lt;display value=&quot;Radiation exposure score&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSRatingTypesVS",
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.9"
+      }],
+      "version" : "1.1.0",
+      "name" : "PSSRatingTypesVS",
+      "title" : "Types of rating provided by the PSS system",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-02-27T08:44:56+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c8b0cdad-4aac-4b1c-90f1-21c7c0ea92da",
+        "timestamp" : "2026-02-27T08:49:29+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "includeDesignations",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
+          "code" : "overall",
+          "display" : "Overall score"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSRatingTypes",
+          "code" : "radiationexposure",
+          "display" : "Radiation exposure score"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version 2024<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/sid/icd-10-cm|2024\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li>SNOMED CT Belgian Edition edition 15-Nov 2023<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20231115\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Other Display (English)</b></td><td><b>Other Display (English (Great Britain))</b></td><td><b>Display (Spanish)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-cm-Z33.1\"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0Z33.1</td><td>Pregnant state, incidental</td><td></td><td></td><td></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;Z33.1&quot;, &quot;display&quot;: &quot;Pregnant state, incidental&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;Z33.1&quot;&gt;&lt;display value=&quot;Pregnant state, incidental&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-87527008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/87527008\">87527008</a></td><td>Term pregnancy</td><td>Term pregnancy (finding)</td><td>grossesse à terme</td><td>aterme zwangerschap</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109/version/20231115&quot;, &quot;code&quot;: &quot;87527008&quot;, &quot;display&quot;: &quot;Term pregnancy&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109/version/20231115&quot;&gt;&lt;code value=&quot;87527008&quot;&gt;&lt;display value=&quot;Term pregnancy&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-127364007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/127364007\">127364007</a></td><td>Primigravida</td><td>Gravida 1</td><td>Primigravida</td><td>eerste zwangerschap</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109/version/20231115&quot;, &quot;code&quot;: &quot;127364007&quot;, &quot;display&quot;: &quot;Primigravida&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109/version/20231115&quot;&gt;&lt;code value=&quot;127364007&quot;&gt;&lt;display value=&quot;Primigravida&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-72892002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/72892002\">72892002</a></td><td>Normal pregnancy</td><td>Normal pregnancy (finding)</td><td>grossesse normale</td><td>normale zwangerschap</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000172109/version/20231115&quot;, &quot;code&quot;: &quot;72892002&quot;, &quot;display&quot;: &quot;Normal pregnancy&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/11000172109/version/20231115&quot;&gt;&lt;code value=&quot;72892002&quot;&gt;&lt;display value=&quot;Normal pregnancy&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes",
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.10"
+      }],
+      "version" : "1.1.0",
+      "name" : "PregnancyCodes",
+      "title" : "Pregnancy Codes",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-02-27T08:44:56+00:00",
+      "contact" : [{
+        "name" : "eHealth Platform",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+        },
+        {
+          "system" : "email",
+          "value" : "support@be-ehealth-standards.atlassian.net"
+        }]
+      },
+      {
+        "name" : "Message Structure eHealth",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "support@be-ehealth-standards.atlassian.net",
+          "use" : "work"
+        }]
+      }],
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9631e1db-b07a-4902-a159-e894415bb861",
+        "timestamp" : "2026-02-27T08:49:30.864Z",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "includeDesignations",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "warning-experimental",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PregnancyCodes|1.1.0"
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10-cm|2024"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/11000172109/version/20231115"
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/11000172109"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+          "code" : "Z33.1",
+          "display" : "Pregnant state, incidental"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "87527008",
+          "display" : "Term pregnancy",
+          "designation" : [{
+            "language" : "en",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000003001",
+              "display" : "Fully specified name"
+            },
+            "value" : "Term pregnancy (finding)"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "grossesse à terme"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "aterme zwangerschap"
+          }]
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "127364007",
+          "display" : "Primigravida",
+          "designation" : [{
+            "language" : "en",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "First pregnancy"
+          },
+          {
+            "language" : "en",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000003001",
+              "display" : "Fully specified name"
+            },
+            "value" : "Primigravida (finding)"
+          },
+          {
+            "language" : "en",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "Primip"
+          },
+          {
+            "language" : "en",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "Gravida 1"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "primipare"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "Primigravida"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "eerste zwangerschap"
+          }]
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "72892002",
+          "display" : "Normal pregnancy",
+          "designation" : [{
+            "language" : "en",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000003001",
+              "display" : "Fully specified name"
+            },
+            "value" : "Normal pregnancy (finding)"
+          },
+          {
+            "language" : "en-GB",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "grossesse normale"
+          },
+          {
+            "language" : "es",
+            "use" : {
+              "system" : "http://snomed.info/sct",
+              "code" : "900000000000013009",
+              "display" : "Synonym (core metadata concept)"
+            },
+            "value" : "normale zwangerschap"
+          }]
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/pss-exception-valueset",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-pss-exception-codes.html\">codesystem PSS Exception Codes v1.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes|1.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes-guidance-unavailable\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pss-exception-codes.html#pss-exception-codes-guidance-unavailable\">guidance-unavailable</a></td><td>Guidance unavailable</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;guidance-unavailable&quot;, &quot;display&quot;: &quot;Guidance unavailable&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;guidance-unavailable&quot;&gt;&lt;display value=&quot;Guidance unavailable&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes-no-consent-found\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pss-exception-codes.html#pss-exception-codes-no-consent-found\">no-consent-found</a></td><td>User Consent not found</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;no-consent-found&quot;, &quot;display&quot;: &quot;User Consent not found&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;no-consent-found&quot;&gt;&lt;display value=&quot;User Consent not found&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/pss-exception-valueset",
+      "identifier" : [{
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.48.14"
+      }],
+      "version" : "1.1.0",
+      "name" : "PSSExceptionValueSet",
+      "title" : "PSS Exception ValueSet",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-02-27T08:44:56+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:781102b9-113d-429e-8725-f9628a3d762f",
+        "timestamp" : "2026-02-27T08:49:32+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "includeDesignations",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes",
+          "code" : "guidance-unavailable",
+          "display" : "Guidance unavailable"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/pss-exception-codes",
+          "code" : "no-consent-found",
+          "display" : "User Consent not found"
+        }]
+      }
+    }
+  }]
+}

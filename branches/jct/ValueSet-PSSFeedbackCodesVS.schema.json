@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet-PSSFeedbackCodesVS.schema.json",
+  "title": "PSS Feedback Codes Schema",
+  "description": "JSON Schema for PSS Feedback Codes ValueSet codes. Generated from FHIR expansions.",
+  "type": "string",
+  "enum": [
+    "accepted",
+    "rejected",
+    "overridden"
+  ],
+  "fhir:valueSet": "https://www.ehealth.fgov.be/standards/fhir/pss/ValueSet/PSSFeedbackCodesVS",
+  "fhir:version": "1.0.0",
+  "fhir:expansionTimestamp": "2025-09-04T10:09:26+00:00"
+}

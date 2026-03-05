@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/SearchParameter/requestgroup-action> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "requestgroup-action"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter requestgroup-action</b></p><a name=\"requestgroup-action\"> </a><a name=\"hcrequestgroup-action\"> </a><h2>RequestGroupActionResource</h2><p>Parameter <code>action</code>:<code>reference</code></p><div><p>Resources referenced anywhere in RequestGroup.action[*.].resource (supports one level of nested actions).</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/requestgroup.html\">RequestGroup</a></td></tr><tr><td>Expression</td><td><code>RequestGroup.action.resource | RequestGroup.action.action.resource | RequestGroup.action.action.action.resource</code></td></tr><tr><td>Target Resources</td><td><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a>, <a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a>, <a href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a>, <a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a>, <a href=\"http://hl7.org/fhir/R4/diagnosticreport.html\">DiagnosticReport</a>, <a href=\"http://hl7.org/fhir/R4/communicationrequest.html\">CommunicationRequest</a>, <a href=\"http://hl7.org/fhir/R4/medicationdispense.html\">MedicationDispense</a>, <a href=\"http://hl7.org/fhir/R4/medicationadministration.html\">MedicationAdministration</a>, <a href=\"http://hl7.org/fhir/R4/task.html\">Task</a></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/fhir/SearchParameter/requestgroup-action"^^xsd:anyURI ;
+     fhir:l <http://example.org/fhir/SearchParameter/requestgroup-action>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "RequestGroupActionResource"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-01-14T15:47:07+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Resources referenced anywhere in RequestGroup.action[*.].resource (supports one level of nested actions)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:code [ fhir:v "action"] ; # 
+  fhir:base ( [ fhir:v "RequestGroup"] ) ; # 
+  fhir:type [ fhir:v "reference"] ; # 
+  fhir:expression [ fhir:v "RequestGroup.action.resource | RequestGroup.action.action.resource | RequestGroup.action.action.action.resource"] ; # 
+  fhir:target ( [ fhir:v "ServiceRequest"] [ fhir:v "MedicationRequest"] [ fhir:v "Procedure"] [ fhir:v "Observation"] [ fhir:v "DiagnosticReport"] [ fhir:v "CommunicationRequest"] [ fhir:v "MedicationDispense"] [ fhir:v "MedicationAdministration"] [ fhir:v "Task"] ) ; # 
+  fhir:multipleOr [ fhir:v true] ; # 
+  fhir:multipleAnd [ fhir:v true] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/pss/Task/26491cef-c5c7-4c5f-b10b-839e938f6b3d> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "26491cef-c5c7-4c5f-b10b-839e938f6b3d"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/PSSQuestionnaireTask>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task 26491cef-c5c7-4c5f-b10b-839e938f6b3d</b></p><a name=\"26491cef-c5c7-4c5f-b10b-839e938f6b3d\"> </a><a name=\"hc26491cef-c5c7-4c5f-b10b-839e938f6b3d\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSSQuestionnaireTask.html\">PSS Questionnaire Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: proposal</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}\">Collect information</span></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs collect-information}\">Collect information</span></td><td><a href=\"Questionnaire-26491cef-c5c7-4c5f-b10b-839e938f6b3e.html\">TCConsentForm</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs>
+       ] ;
+       fhir:code [ fhir:v "collect-information" ] ;
+       fhir:display [ fhir:v "Collect information" ]
+     ] )
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs>
+         ] ;
+         fhir:code [ fhir:v "collect-information" ] ;
+         fhir:display [ fhir:v "Collect information" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Canonical ;
+       fhir:v "http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire"^^xsd:anyURI ;
+       fhir:l <http://openhie.org/fhir/Questionnaire/hiv-case-report-questionnaire>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

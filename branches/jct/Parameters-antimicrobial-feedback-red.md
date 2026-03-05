@@ -1,0 +1,52 @@
+# Antimicrobial feedback - red recommendation - Prescription Search Support v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Antimicrobial feedback - red recommendation**
+
+## Example Parameters: Antimicrobial feedback - red recommendation
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Parameters",
+  "id" : "antimicrobial-feedback-red",
+  "parameter" : [
+    {
+      "name" : "pss-id",
+      "valueString" : "0051510d-79e7-4bc6-a4f5-6b0654b23c03"
+    },
+    {
+      "name" : "feedback-task",
+      "resource" : {
+        "resourceType" : "Task",
+        "id" : "task-accepted-red-a",
+        "meta" : {
+          "profile" : [
+            "https://www.ehealth.fgov.be/standards/fhir/pss/StructureDefinition/FeedbackTask"
+          ]
+        },
+        "status" : "accepted",
+        "statusReason" : {
+          "coding" : [
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons",
+              "code" : "OtherReason"
+            }
+          ],
+          "text" : "This was the only possible choice, because this patient is alergic to the usual alternative medication"
+        },
+        "intent" : "option",
+        "focus" : {
+          "reference" : "MedicationRequest/30551ce1-5a28-4356-b684-1e639094ad29"
+        },
+        "lastModified" : "2025-05-28T10:15:00+02:00"
+      }
+    }
+  ]
+}
+
+```

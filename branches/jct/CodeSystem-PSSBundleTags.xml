@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="PSSBundleTags"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem PSSBundleTags</b></p><a name="PSSBundleTags"> </a><a name="hcPSSBundleTags"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSBundleTags</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">recommendation<a name="PSSBundleTags-recommendation"> </a></td><td>Recommendation</td></tr><tr><td style="white-space:nowrap">feedback<a name="PSSBundleTags-feedback"> </a></td><td>Feedback</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSBundleTags"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.2.51.22.2.16.7"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <name value="PSSBundleTags"/>
+  <title value="PSS Bundle Tags"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-01-14T15:47:07+00:00"/>
+  <publisher value="eHealth Platform Belgium"/>
+  <contact>
+    <name value="eHealth Platform Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="PSS Bundle Tags - Feedback, Recommendation"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="recommendation"/>
+    <display value="Recommendation"/>
+  </concept>
+  <concept>
+    <code value="feedback"/>
+    <display value="Feedback"/>
+  </concept>
+</CodeSystem>

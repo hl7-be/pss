@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="alternative-request-task"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task alternative-request-task</b></p><a name="alternative-request-task"> </a><a name="hcalternative-request-task"> </a><p><b>status</b>: Accepted</p><p><b>statusReason</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons FastResults}">Alternative treatment proposed due to patient age and need for faster treatment</span></p><p><b>intent</b>: option</p><p><b>lastModified</b>: 2025-05-28 10:15:00+0200</p></div>
+  </text>
+  <status value="accepted"/>
+  <statusReason>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSaFeedbackReasons"/>
+      <code value="FastResults"/>
+    </coding>
+    <text value="Alternative treatment proposed due to patient age and need for faster treatment"/>
+  </statusReason>
+  <intent value="option"/>
+  <lastModified value="2025-05-28T10:15:00+02:00"/>
+</Task>

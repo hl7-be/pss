@@ -1,0 +1,23 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2967a75d-7782-4c04-86c1-4e5ed69e4415-84",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/2967a75d-7782-4c04-86c1-4e5ed69e4415-84",
+  "name" : "IntersectionMycoplasmaCodesAndMycoplasmaCodes",
+  "title" : "Intersection of Mycoplasma Codes And Mycoplasma Codes",
+  "status" : "active",
+  "date" : "2026-02-13T10:18:38+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "240594008"
+      }]
+    }]
+  }
+}

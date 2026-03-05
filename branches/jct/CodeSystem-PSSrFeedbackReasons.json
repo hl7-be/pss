@@ -1,0 +1,78 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PSSrFeedbackReasons",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PSSrFeedbackReasons</b></p><a name=\"PSSrFeedbackReasons\"> </a><a name=\"hcPSSrFeedbackReasons\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Pregnancy<a name=\"PSSrFeedbackReasons-Pregnancy\"> </a></td><td>Contraindicated due to pregnancy</td></tr><tr><td style=\"white-space:nowrap\">ImplantIncompatibility<a name=\"PSSrFeedbackReasons-ImplantIncompatibility\"> </a></td><td>Not suitable because of an implanted device</td></tr><tr><td style=\"white-space:nowrap\">ContrastAllergy<a name=\"PSSrFeedbackReasons-ContrastAllergy\"> </a></td><td>Patient has allergy to contrast agents</td></tr><tr><td style=\"white-space:nowrap\">IncompleteRecommendation<a name=\"PSSrFeedbackReasons-IncompleteRecommendation\"> </a></td><td>Recommendation lacked needed clinical details</td></tr><tr><td style=\"white-space:nowrap\">WaitingTimeTooLong<a name=\"PSSrFeedbackReasons-WaitingTimeTooLong\"> </a></td><td>Expected waiting time is too long</td></tr><tr><td style=\"white-space:nowrap\">Emergency<a name=\"PSSrFeedbackReasons-Emergency\"> </a></td><td>Urgent situation requiring faster action</td></tr><tr><td style=\"white-space:nowrap\">OtherReason<a name=\"PSSrFeedbackReasons-OtherReason\"> </a></td><td>Other reason — which</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/pss/CodeSystem/PSSrFeedbackReasons",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.2.51.22.2.16.9"
+  }],
+  "version" : "1.0.0",
+  "name" : "PSSrFeedbackReasons",
+  "title" : "PSSr Feedback Code Reasons",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-01-14T15:47:07+00:00",
+  "publisher" : "eHealth Platform Belgium",
+  "contact" : [{
+    "name" : "eHealth Platform Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir/"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Feedback code reasons for PSS radiology",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "Pregnancy",
+    "display" : "Contraindicated due to pregnancy"
+  },
+  {
+    "code" : "ImplantIncompatibility",
+    "display" : "Not suitable because of an implanted device"
+  },
+  {
+    "code" : "ContrastAllergy",
+    "display" : "Patient has allergy to contrast agents"
+  },
+  {
+    "code" : "IncompleteRecommendation",
+    "display" : "Recommendation lacked needed clinical details"
+  },
+  {
+    "code" : "WaitingTimeTooLong",
+    "display" : "Expected waiting time is too long"
+  },
+  {
+    "code" : "Emergency",
+    "display" : "Urgent situation requiring faster action"
+  },
+  {
+    "code" : "OtherReason",
+    "display" : "Other reason — which"
+  }]
+}
