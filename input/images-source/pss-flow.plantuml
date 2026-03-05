@@ -3,79 +3,97 @@
 Title PSS Functional data exchange
 hide footbox
 
-group #DFE Service 1 - Given existing data, query the structured list of applicable indications
-        EPD -> PSS : \n**POST /PlanDefinition/GetDiagnoses/$apply**\n Payload:\n        subject=Y\n        data=Bundle
-        & PSS -> QSI 
-        & PSS -[hidden]-> QSI : "                                      "
+group #edf PSS-0 - Confirm consent
+        EPD -> PSS : \n**POST /QuestionnaireResponse**
+        activate PSS
+        deactivate PSS
+        note right of EPD
+|_ HCP-ID
+|_ datetime
+|_ terms&conditions
+  |_ url
+  |_ text
+  |_ version
+  |_ options
+        end note
+        deactivate EPD
+end
+|||
+|||
+group #DFE PSS-1 - Given existing data, query the structured list of applicable indications
+        activate EPD
+        EPD -> PSS : \n**POST /PlanDefinition/GetDiagnoses/$apply**\n Payload:\n        subject=PSSPatient\n        data=PSSRequestBundle
+'        & PSS -> QSI 
+'        & PSS -[hidden]-> QSI : "                                      "
         'PSS -> QSI : GET /indictions
 
         activate PSS
-        activate QSI
-        QSI -> PSS 
-        & PSS -> EPD: Propose Indications
+'        activate QSI
+'        QSI -> PSS 
+        PSS -> EPD: Propose Indications \nPayload:\n        subject=PSSPatient\n        data=PSSResponseBundle
         deactivate PSS
-        deactivate QSI
+'        deactivate QSI
         |||
 end
+
 ...
-group #def Service 2 - Given indications, query data to collect
-
-        EPD -> PSS : \n**POST /PlanDefinition/GetDataToCollect/$apply**\n Payload:\n        subject=Y\n        data=Bundle
-
-        Activate PSS
-
-        PSS -> EPD: Propose data to collect
-        deactivate PSS
-        |||
-end
-...
-group #fed Service 3 - Given some data (+ a procedure), request recommended procedures
+group #fed PSS-3 - Given some data (+ a procedure), request recommended procedures
         EPD -> PSS : \n**POST /PlanDefinition/GetRecommendations/$apply**\n Payload:\n        subject=Y\n        data=Bundle
-        & PSS --> QSI
-        & PSS -[hidden]-> QSI : "                                      "
+'        & PSS --> QSI 
+'        & PSS -[hidden]-> QSI : "                                      "
 
         activate PSS
-        activate QSI
-        QSI --> PSS
-        & PSS -> EPD: Bundle with RequestGroup with options
+'        activate QSI
+'        QSI --> PSS 
+        PSS -> EPD: Reponse\nPayload:\n        subject=PSSPatient\n        data=PSSResponseBundle
         deactivate PSS
-        deactivate QSI
+'        deactivate QSI
         |||
 
 end
 ...
-group #efd Service 4 - Give feedback
-        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={exchangeId}\n        feedback-resource=Task or Bundle
+group #efd PSS-4 - Give feedback
+        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={PSS_ID}\n        feedback-resource=Task or Bundle
         note left of PSS
 |_ Task (FeedbackTask)
   or
 |_ Bundle (PSSFeedbackBundle)
   |_ Task (FeedbackTask)
-  |_ Request (alternative)
+  |_ ServiceRequest (alternative)
         end note
         deactivate EPD
         activate PSS
-        & PSS -[hidden]-> QSI : "                                      "
+'        & PSS -[hidden]-> QSI : "                                      "
         deactivate PSS
         |||
 
+end
+
+...
+...
+
+group #def PSS-5 - Consult prior result
+        EPD -> PSS : \n**GET /Bundle?identifier={identifier}**
+        activate PSS
+        EPD <- PSS   : Bundle (PSSFeedbackBundle)
+'        & PSS -[hidden]-> QSI : "                                      "
+        deactivate PSS
 end
 ...
-group #dfe Service 5 - Consult feedback (optional)
-'        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
-        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_tag=recommendation**
 
-        & PSS -[hidden]-> QSI : "                                      "
+group #dfe PSS-6 - Consult feedback
+'        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
+        EPD -> PSS : \n**GET /Bundle?identifier={identifier}**
         activate PSS
-        |||
-        PSS -> ADM : Bundle (PSSFeedbackBundle)
-                note left of PSS
-|_ Task (FeedbackTask)
-|_ Request (if alternative)
-        end note
-        & PSS -[hidden]-> QSI : "                                      "
+        EPD <- PSS   : Bundle (PSSFeedbackBundle)
+'        & PSS -[hidden]-> QSI : "                                      "
         deactivate PSS
         |||
 
+'        activate EPD
 end
+
+
+
 @enduml
+

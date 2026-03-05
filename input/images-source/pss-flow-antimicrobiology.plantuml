@@ -1,12 +1,12 @@
 @startuml
 !pragma teoz true
-Title PSS Functional data exchange - antibiotics
+Title PSS Functional data exchange - Antibiotics
 hide footbox
 
 
 
 group #edf PSS-0 - Confirm consent
-        EPD -> PSS : \n**POST /Consent**
+        EPD -> PSS : \n**POST /QuestionnaireResponse**
         activate PSS
         note right of EPD
 |_ HCP-ID
@@ -58,7 +58,7 @@ See 4. below
 end
 ...
 group #efd PSS-4 - Give feedback
-        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={exchangeId}\n        feedback-resource=Task or Bundle
+        EPD -> PSS : \n**POST /PlanDefinition/$feedback**\n Payload:\n        pss-id={PSS_ID}\n        feedback-resource=Task or Bundle
 '        activate EPD
         note left of PSS
 |_ Task (FeedbackTask)
@@ -73,23 +73,32 @@ group #efd PSS-4 - Give feedback
 end
 ...
 
-' ...
-' group #fde PSS-5 - Consult prior result
-' EPD -> PSS : \n**GET /Bundle/{PSS-ID}&_tag=recommendation**
-' '        activate EPD
-' end
+
+group #def PSS-5 - Consult prior results
+'        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
+         -> PSS : \n**GET /Bundle?identifier={identifier}**
+        activate PSS
+        <- PSS   : Bundle (PSSResponseBundle)
+'        & PSS -[hidden]-> QSI : "                                      "
+        deactivate PSS
+        |||
+
+'        activate EPD
+end
 
 ...
 
-' group #dfe PSS-6 - Consult feedback
-' '        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
-'          -> PSS : \n**GET /Bundle?identifier={PSS-ID}&_tag=feedback**
-'         activate PSS
-'         <- PSS   : Bundle (PSSFeedbackBundle)
-'         deactivate PSS
-' '        activate EPD
-' end
+group #dfe PSS-6 - Consult feedback
+'        ADM -> PSS : \n**GET /Bundle?identifier={PSS-ID}**\n**&_profile=.../PSSFeedbackBundle**
+         -> PSS : \n**GET /Bundle?identifier={identifier}**
+        activate PSS
+        <- PSS   : Bundle (PSSFeedbackBundle)
+'        & PSS -[hidden]-> QSI : "                                      "
+        deactivate PSS
+        |||
 
+'        activate EPD
+end
 
 
 @enduml

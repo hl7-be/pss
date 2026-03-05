@@ -1,5 +1,6 @@
 Instance: feedback-accepted-green
 Title: "Feedback: accepted green recommendation"
+Description: "Example feedback parameters - accepted recommendation for a green task."
 InstanceOf: Parameters
 Usage: #example
 * id = "feedback-accepted-green"
@@ -8,9 +9,11 @@ Usage: #example
 * parameter[+].name = "feedback-task"
 * parameter[=].resource = task-accepted-green
 
+
 // Conforms to your FeedbackTask profile
 Instance: task-accepted-green
-InstanceOf: PSSFeedbackTask
+InstanceOf: FeedbackTask
+Description: "Example feedback task - accepted recommendation for a green task."
 Usage: #example
 * id = "task-accepted-green"
 * focus = Reference(30551ce1-5a28-4356-b684-1e639094ad23)
@@ -18,3 +21,6 @@ Usage: #example
 * status = #accepted
 * intent = #option
 * lastModified = "2025-05-28T10:10:00+02:00"
+
+
+

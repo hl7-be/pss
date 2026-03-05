@@ -7,6 +7,7 @@
 Instance: radiology-feedback
 Title: "Radiology feedback"
 InstanceOf: Parameters
+Description: "Feedback Parameters example - Radiology"
 Usage: #example
 // session identifier
 * id = "radiology-feedback"

@@ -1,5 +1,5 @@
 Profile: PSSFeedbackBundle
-Title: "PSS Response Bundle"
+Title: "PSS Feedback Bundle"
 Description: "The PSS Response Bundle is used to return data from the PSS system."
 Parent: Bundle
 * identifier 1..1

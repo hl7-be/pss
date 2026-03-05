@@ -1,7 +1,7 @@
 Instance: requestgroup-action
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://example.org/fhir/SearchParameter/requestgroup-action"
+//* url = "http://example.org/fhir/SearchParameter/requestgroup-action"
 * version = "1.0.1"
 * name = "RequestGroupActionResource"
 * status = #active
